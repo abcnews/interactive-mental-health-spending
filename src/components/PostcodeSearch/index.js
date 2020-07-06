@@ -1,11 +1,30 @@
 import React from "react";
 import styles from "./styles.scss";
-import Select from "react-select";
+import AsyncSelect from "react-select/async";
+import postcodes from "./postcodes.json";
+
+const options = postcodes.map(postcode => ({
+  value: postcode,
+  label: postcode
+}));
+
+const filterColors = inputValue => {
+  return options.filter(i =>
+    i.label.toLowerCase().includes(inputValue.toLowerCase())
+  );
+};
+
+const promiseOptions = inputValue =>
+  new Promise(resolve => {
+    setTimeout(() => {
+      resolve(filterColors(inputValue));
+    }, 50);
+  });
 
 export default props => {
   return (
     <div className={styles.root}>
-      <Select />
+      <AsyncSelect cacheOptions loadOptions={promiseOptions} />
     </div>
   );
 };
