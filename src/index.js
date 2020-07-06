@@ -2,12 +2,12 @@ import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 
-const PROJECT_NAME = "interactive-covid-mental-health";
-const root = document.querySelector(`[data-${PROJECT_NAME}-root]`);
+import buildMountPoints from "./lib/buildMountPoints"
 
 function init() {
   console.log(":)");
-  render(<App projectName={PROJECT_NAME} />, root);
+  buildMountPoints(["postcodesearch"])
+  render(<App projectName={"Mental Health"} />, document.querySelector(".postcodesearch"));
 }
 
 init();
@@ -26,5 +26,6 @@ if (module.hot) {
 }
 
 if (process.env.NODE_ENV === "development") {
-  console.debug(`[${PROJECT_NAME}] public path: ${__webpack_public_path__}`);
+  console.debug(`[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`);
 }
+
