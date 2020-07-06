@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.scss";
-import PostcodeSearch from "../PostcodeSearch";
+import Select from "react-select";
 
 export default props => {
   return (
     <div className={styles.root}>
-      <PostcodeSearch></PostcodeSearch>
+      <Select />
     </div>
   );
 };
