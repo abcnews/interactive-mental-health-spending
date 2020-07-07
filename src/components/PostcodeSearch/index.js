@@ -18,7 +18,7 @@ const promiseOptions = inputValue =>
   new Promise(resolve => {
     setTimeout(() => {
       resolve(filterColors(inputValue));
-    }, 50);
+    }, 200);
   });
 
 export default props => {
