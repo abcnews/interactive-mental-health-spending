@@ -5,7 +5,8 @@ import PostcodeSearch from "../PostcodeSearch";
 export default props => {
   return (
     <div className={styles.root}>
-      <PostcodeSearch></PostcodeSearch>
+      
+      <PostcodeSearch />
     </div>
   );
 };

@@ -1,31 +1,40 @@
+import "regenerator-runtime/runtime.js";
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 
-import buildMountPoints from "./lib/buildMountPoints"
+import buildMountPoints from "./lib/buildMountPoints";
 
-function init() {
+import("./module").then(test => {
+  test.default();
+});
+
+buildMountPoints(["postcodesearch"]);
+
+async function init() {
   console.log(":)");
-  buildMountPoints(["postcodesearch"])
-  render(<App projectName={"Mental Health"} />, document.querySelector(".postcodesearch"));
+  render(
+    <App projectName={"Mental Health"} />,
+    document.querySelector(".postcodesearch")
+  );
 }
 
 init();
 
 if (module.hot) {
-  module.hot.accept("./components/App", () => {
+  module.hot.accept("./components/App", async () => {
     try {
       init();
     } catch (err) {
-      import("./components/ErrorBox").then(exports => {
-        const ErrorBox = exports.default;
-        render(<ErrorBox error={err} />, root);
-      });
+      const imported = await import("./components/ErrorBox");
+      const ErrorBox = imported.default;
+      render(<ErrorBox error={err} />, root);
     }
   });
 }
 
 if (process.env.NODE_ENV === "development") {
-  console.debug(`[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`);
+  console.debug(
+    `[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`
+  );
 }
-
