@@ -24,7 +24,7 @@ const promiseOptions = inputValue =>
 export default props => {
   return (
     <div className={styles.root}>
-      <AsyncSelect cacheOptions loadOptions={promiseOptions} />
+      <AsyncSelect placeholder={"Enter postcode..."} cacheOptions loadOptions={promiseOptions} />
     </div>
   );
 };
