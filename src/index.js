@@ -2,6 +2,7 @@ import "regenerator-runtime/runtime.js";
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
+import { loadScrollyteller } from "@abcnews/scrollyteller";
 
 import buildMountPoints from "./lib/buildMountPoints";
 
@@ -9,12 +10,20 @@ import("./module").then(test => {
   test.default();
 });
 
-buildMountPoints(["postcodesearch"]);
+buildMountPoints(["postcodesearch", "scrollystagemount"]);
 
 async function init() {
-  console.log(":)");
+  const scrollyData = loadScrollyteller(
+    "", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
+    "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
+    "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
+  );
+
   render(
-    <App projectName={"Mental Health"} />,
+    <App
+      projectName={"Mental Health"}
+      scrollyData={scrollyData}
+    />,
     document.querySelector(".postcodesearch")
   );
 }
