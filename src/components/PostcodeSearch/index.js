@@ -8,7 +8,11 @@ const options = postcodes.map(postcode => ({
   label: postcode
 }));
 
-const filterColors = inputValue => {
+const handleChange = d => {
+  console.log(d);
+};
+
+const filterPostcodes = inputValue => {
   return options.filter(i =>
     i.label.toLowerCase().includes(inputValue.toLowerCase())
   );
@@ -17,14 +21,19 @@ const filterColors = inputValue => {
 const promiseOptions = inputValue =>
   new Promise(resolve => {
     setTimeout(() => {
-      resolve(filterColors(inputValue));
+      resolve(filterPostcodes(inputValue));
     }, 200);
   });
 
 export default props => {
   return (
     <div className={styles.root}>
-      <AsyncSelect placeholder={"Enter postcode..."} cacheOptions loadOptions={promiseOptions} />
+      <AsyncSelect
+        placeholder={"Enter postcode..."}
+        cacheOptions
+        loadOptions={promiseOptions}
+        onChange={handleChange}
+      />
     </div>
   );
 };

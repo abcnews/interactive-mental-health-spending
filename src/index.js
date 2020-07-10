@@ -5,12 +5,13 @@ import App from "./components/App";
 import { loadScrollyteller } from "@abcnews/scrollyteller";
 
 import buildMountPoints from "./lib/buildMountPoints";
-
-import("./module").then(test => {
-  test.default();
-});
+import { addClass } from "./lib/classHelpers";
 
 buildMountPoints(["postcodesearch", "scrollystagemount"]);
+
+// Make stage full width
+const stage = document.querySelector(".scrollystagemount");
+addClass(stage, "u-full")
 
 async function init() {
   const scrollyData = loadScrollyteller(
@@ -20,10 +21,7 @@ async function init() {
   );
 
   render(
-    <App
-      projectName={"Mental Health"}
-      scrollyData={scrollyData}
-    />,
+    <App projectName={"Mental Health"} scrollyData={scrollyData} />,
     document.querySelector(".postcodesearch")
   );
 }
