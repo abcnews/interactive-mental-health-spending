@@ -12,12 +12,14 @@ export default props => {
   const customStyles = {
     menu: (provided, state) => ({
       ...provided,
-      zIndex: 2
+      zIndex: 2 // So Scrolly stage doesn't go over the top
     })
   };
 
-  const handleChange = d => {
-    console.log(d);
+  // Fires when user sets postcode
+  const handleChange = option => {
+    console.log(option);
+    props.setUserPostcode(option.value)
   };
 
   const filterPostcodes = inputValue => {
