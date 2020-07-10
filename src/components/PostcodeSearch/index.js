@@ -8,24 +8,31 @@ const options = postcodes.map(postcode => ({
   label: postcode
 }));
 
-const handleChange = d => {
-  console.log(d);
-};
-
-const filterPostcodes = inputValue => {
-  return options.filter(i =>
-    i.label.toLowerCase().includes(inputValue.toLowerCase())
-  );
-};
-
-const promiseOptions = inputValue =>
-  new Promise(resolve => {
-    setTimeout(() => {
-      resolve(filterPostcodes(inputValue));
-    }, 200);
-  });
-
 export default props => {
+  const customStyles = {
+    menu: (provided, state) => ({
+      ...provided,
+      zIndex: 2
+    })
+  };
+
+  const handleChange = d => {
+    console.log(d);
+  };
+
+  const filterPostcodes = inputValue => {
+    return options.filter(i =>
+      i.label.toLowerCase().includes(inputValue.toLowerCase())
+    );
+  };
+
+  const promiseOptions = inputValue =>
+    new Promise(resolve => {
+      setTimeout(() => {
+        resolve(filterPostcodes(inputValue));
+      }, 200);
+    });
+
   return (
     <div className={styles.root}>
       <AsyncSelect
@@ -33,6 +40,7 @@ export default props => {
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
+        styles={customStyles}
       />
     </div>
   );
