@@ -12,6 +12,8 @@ export default props => {
   };
 
   useEffect(() => {
+    if (!userPostcode) return;
+    
     console.log(userPostcode);
   }, [userPostcode]);
 
