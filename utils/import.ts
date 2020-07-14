@@ -1,4 +1,4 @@
-// @deno-types="./import.d.ts"
+/** @type {import('./import).Papa} */
 import Papa from "https://jspm.dev/papaparse";
 const data = Deno.readTextFileSync("./mental-health-spending.csv");
 

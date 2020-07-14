@@ -7,13 +7,23 @@ import Scrollyteller from "@abcnews/scrollyteller";
 export default props => {
   const [userPostcode, setUserPostcode] = useState();
 
+  const loadData = async () => {
+    const response = await fetch(
+      `${__webpack_public_path__}postcode-to-sa3-lookup.json`
+    );
+    let data = await response.json();
+
+    console.log(data);
+  };
+
   const onMarker = config => {
     console.log(config);
   };
 
   useEffect(() => {
+    loadData();
     if (!userPostcode) return;
-    
+
     console.log(userPostcode);
   }, [userPostcode]);
 
