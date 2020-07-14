@@ -1,1 +1,9 @@
-
+{
+  "compilerOptions": {
+    // disable `any` checks; also use config for Deno CLI with `-c` arg
+    // deno run -c ./tsconfig.json main.ts 
+    "noImplicitAny": false, // deno default is true
+    // this is just an example - use strong types, whenever possible
+    "checkJs": false
+  }
+}
