@@ -8,6 +8,7 @@ let lookupData;
 
 export default props => {
   const [userPostcode, setUserPostcode] = useState();
+  const [userSa3, setUserSa3] = useState();
 
   const loadLookupData = async () => {
     const response = await fetch(
@@ -44,13 +45,17 @@ export default props => {
     );
 
     console.log(filteredLookup);
-    console.log(largestRatio)
+    console.log(largestRatio);
 
+    setUserSa3(largestRatio.sa3);
   }, [userPostcode]);
 
   return (
     <div className={styles.root}>
       <PostcodeSearch setUserPostcode={setUserPostcode} />
+      <br />
+      <br />
+      <div>SA3: {userSa3}</div>
 
       <Portal node={document.querySelector(".scrollystagemount")}>
         <Scrollyteller panels={props.scrollyData.panels} onMarker={onMarker} />
