@@ -4,16 +4,16 @@ import PostcodeSearch from "../PostcodeSearch";
 import { Portal } from "react-portal";
 import Scrollyteller from "@abcnews/scrollyteller";
 
+let lookupData;
+
 export default props => {
   const [userPostcode, setUserPostcode] = useState();
 
-  const loadData = async () => {
+  const loadLookupData = async () => {
     const response = await fetch(
       `${__webpack_public_path__}postcode-to-sa3-lookup.json`
     );
-    let data = await response.json();
-
-    console.log(data);
+    lookupData = await response.json();
   };
 
   const onMarker = config => {
@@ -21,8 +21,25 @@ export default props => {
   };
 
   useEffect(() => {
-    loadData();
+    // Load initial data
+    loadLookupData();
+  }, []);
+
+  useEffect(() => {
     if (!userPostcode) return;
+    if (typeof lookupData === "undefined") {
+      console.error("There was a problem loading lookup data...")
+      return;
+    }
+
+    const filteredLookup = lookupData.filter(entry => {
+      if (entry.postcode.toString() === userPostcode) {
+        return true;
+      } else return false;
+      
+    });
+
+    console.log(filteredLookup);
 
     console.log(userPostcode);
   }, [userPostcode]);

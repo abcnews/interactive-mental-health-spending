@@ -18,7 +18,6 @@ export default props => {
 
   // Fires when user sets postcode
   const handleChange = option => {
-    console.log(option);
     props.setUserPostcode(option.value);
   };
 
