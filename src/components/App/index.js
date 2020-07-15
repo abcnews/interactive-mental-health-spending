@@ -28,7 +28,7 @@ export default props => {
   useEffect(() => {
     if (!userPostcode) return;
     if (typeof lookupData === "undefined") {
-      console.error("There was a problem loading lookup data...")
+      console.error("There was a problem loading lookup data...");
       return;
     }
 
@@ -36,12 +36,16 @@ export default props => {
       if (entry.postcode.toString() === userPostcode) {
         return true;
       } else return false;
-      
     });
 
-    console.log(filteredLookup);
+    // Get the single largest ratio area
+    const largestRatio = filteredLookup.reduce((prev, current) =>
+      prev.ratio > current.ratio ? prev : current
+    );
 
-    console.log(userPostcode);
+    console.log(filteredLookup);
+    console.log(largestRatio)
+
   }, [userPostcode]);
 
   return (
