@@ -5,7 +5,7 @@ import PapaParse from "https://jspm.dev/papaparse";
 const Papa: any = PapaParse;
 
 // Import data file
-const data = Deno.readTextFileSync("./mental-health-spending.csv");
+const data = await Deno.readTextFile("./mental-health-spending.csv");
 
 const onParseComplete = (results: any) => {
   for (const entry of results.data) {
