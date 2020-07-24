@@ -9,9 +9,13 @@ const data = await Deno.readTextFile("./mental-health-spending.csv");
 
 // Runs after Papaparse parses the csv
 const onParseComplete = (results: any) => {
+  const data: any = {};
+
   for (const entry of results.data) {
-    console.log(entry);
+    data[entry["SA3 code"]] = { name: entry["SA3 name"] };
   }
+
+  console.log(data);
 };
 
 // Parse the file

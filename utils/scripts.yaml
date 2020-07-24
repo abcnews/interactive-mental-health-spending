@@ -1,0 +1,4 @@
+# scripts.yaml
+scripts:
+  start: deno run --allow-read main.ts
+  test: deno test --allow-read main.ts
