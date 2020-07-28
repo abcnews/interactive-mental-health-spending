@@ -1,0 +1,8677 @@
+[
+  {
+    "SA3 code": 0,
+    "SA3 name": "National",
+    "SA3 group": "National"
+  },
+  {
+    "SA3 code": 1,
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10102,
+    "SA3 name": "Queanbeyan",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10103,
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10104,
+    "SA3 name": "South Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10105,
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10106,
+    "SA3 name": "Young - Yass",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10201,
+    "SA3 name": "Gosford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10202,
+    "SA3 name": "Wyong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10301,
+    "SA3 name": "Bathurst",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10302,
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10303,
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10304,
+    "SA3 name": "Orange",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10401,
+    "SA3 name": "Clarence Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10402,
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10501,
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10502,
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10503,
+    "SA3 name": "Dubbo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10601,
+    "SA3 name": "Lower Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10602,
+    "SA3 name": "Maitland",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10603,
+    "SA3 name": "Port Stephens",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10604,
+    "SA3 name": "Upper Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10701,
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10702,
+    "SA3 name": "Illawarra Catchment Reserve",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 10703,
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10704,
+    "SA3 name": "Wollongong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10801,
+    "SA3 name": "Great Lakes",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10802,
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10803,
+    "SA3 name": "Lord Howe Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10804,
+    "SA3 name": "Port Macquarie",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10805,
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10901,
+    "SA3 name": "Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10902,
+    "SA3 name": "Lower Murray",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10903,
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11001,
+    "SA3 name": "Armidale",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11002,
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11003,
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11004,
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11101,
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11102,
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11103,
+    "SA3 name": "Newcastle",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11201,
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11202,
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11203,
+    "SA3 name": "Tweed Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11301,
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11302,
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11303,
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11401,
+    "SA3 name": "Shoalhaven",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11402,
+    "SA3 name": "Southern Highlands",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11501,
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11502,
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11503,
+    "SA3 name": "Hawkesbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11504,
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11601,
+    "SA3 name": "Blacktown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11602,
+    "SA3 name": "Blacktown - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11603,
+    "SA3 name": "Mount Druitt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11701,
+    "SA3 name": "Botany",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11702,
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11703,
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11801,
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11802,
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11901,
+    "SA3 name": "Bankstown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11902,
+    "SA3 name": "Canterbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11903,
+    "SA3 name": "Hurstville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11904,
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12001,
+    "SA3 name": "Canada Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12002,
+    "SA3 name": "Leichhardt",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12003,
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12101,
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12102,
+    "SA3 name": "Hornsby",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12103,
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12104,
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12201,
+    "SA3 name": "Manly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12202,
+    "SA3 name": "Pittwater",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12203,
+    "SA3 name": "Warringah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12301,
+    "SA3 name": "Camden",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12302,
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12303,
+    "SA3 name": "Wollondilly",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 12401,
+    "SA3 name": "Blue Mountains",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12402,
+    "SA3 name": "Blue Mountains - South",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 12403,
+    "SA3 name": "Penrith",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12404,
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12405,
+    "SA3 name": "St Marys",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12501,
+    "SA3 name": "Auburn",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12502,
+    "SA3 name": "Carlingford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12503,
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12504,
+    "SA3 name": "Parramatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12601,
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12602,
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12701,
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12702,
+    "SA3 name": "Fairfield",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12703,
+    "SA3 name": "Liverpool",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12801,
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12802,
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 2,
+    "SA3 name": "Major cities - medium SES",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20101,
+    "SA3 name": "Ballarat",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20102,
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20103,
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20201,
+    "SA3 name": "Bendigo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20202,
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20203,
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20301,
+    "SA3 name": "Barwon - West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20302,
+    "SA3 name": "Geelong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20303,
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20401,
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20402,
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20403,
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20501,
+    "SA3 name": "Baw Baw",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20502,
+    "SA3 name": "Gippsland - East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 20503,
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20504,
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20505,
+    "SA3 name": "Wellington",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20601,
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20602,
+    "SA3 name": "Darebin - South",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20603,
+    "SA3 name": "Essendon",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20604,
+    "SA3 name": "Melbourne City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20605,
+    "SA3 name": "Port Phillip",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20606,
+    "SA3 name": "Stonnington - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20607,
+    "SA3 name": "Yarra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20701,
+    "SA3 name": "Boroondara",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20702,
+    "SA3 name": "Manningham - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20703,
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20801,
+    "SA3 name": "Bayside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20802,
+    "SA3 name": "Glen Eira",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20803,
+    "SA3 name": "Kingston",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20804,
+    "SA3 name": "Stonnington - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20901,
+    "SA3 name": "Banyule",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20902,
+    "SA3 name": "Darebin - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20903,
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20904,
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21001,
+    "SA3 name": "Keilor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21002,
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21003,
+    "SA3 name": "Moreland - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21004,
+    "SA3 name": "Sunbury",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21005,
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21101,
+    "SA3 name": "Knox",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21102,
+    "SA3 name": "Manningham - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 21103,
+    "SA3 name": "Maroondah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21104,
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21105,
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21201,
+    "SA3 name": "Cardinia",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21202,
+    "SA3 name": "Casey - North",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21203,
+    "SA3 name": "Casey - South",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21204,
+    "SA3 name": "Dandenong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21205,
+    "SA3 name": "Monash",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21301,
+    "SA3 name": "Brimbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21302,
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21303,
+    "SA3 name": "Maribyrnong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21304,
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21305,
+    "SA3 name": "Wyndham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21401,
+    "SA3 name": "Frankston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21402,
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21501,
+    "SA3 name": "Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21502,
+    "SA3 name": "Mildura",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21503,
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21601,
+    "SA3 name": "Campaspe",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21602,
+    "SA3 name": "Moira",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21603,
+    "SA3 name": "Shepparton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21701,
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21703,
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21704,
+    "SA3 name": "Warrnambool",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 3,
+    "SA3 name": "Major cities - lower SES",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30101,
+    "SA3 name": "Capalaba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30102,
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30103,
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30201,
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30202,
+    "SA3 name": "Chermside",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30203,
+    "SA3 name": "Nundah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30204,
+    "SA3 name": "Sandgate",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30301,
+    "SA3 name": "Carindale",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30302,
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30303,
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30304,
+    "SA3 name": "Nathan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30305,
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30306,
+    "SA3 name": "Sunnybank",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30401,
+    "SA3 name": "Centenary",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30402,
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30403,
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30404,
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30501,
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30502,
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30503,
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30504,
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30601,
+    "SA3 name": "Cairns - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30602,
+    "SA3 name": "Cairns - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30603,
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30604,
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30605,
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30701,
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30702,
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30703,
+    "SA3 name": "Granite Belt",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30801,
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30803,
+    "SA3 name": "Rockhampton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30804,
+    "SA3 name": "Biloela",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30805,
+    "SA3 name": "Gladstone",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30901,
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30902,
+    "SA3 name": "Coolangatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30903,
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30904,
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30905,
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30906,
+    "SA3 name": "Nerang",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30907,
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30908,
+    "SA3 name": "Robina",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30909,
+    "SA3 name": "Southport",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30910,
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31001,
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31002,
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31003,
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31004,
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31101,
+    "SA3 name": "Beaudesert",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31102,
+    "SA3 name": "Beenleigh",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31103,
+    "SA3 name": "Browns Plains",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31104,
+    "SA3 name": "Jimboomba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31105,
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31106,
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31201,
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31202,
+    "SA3 name": "Mackay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31203,
+    "SA3 name": "Whitsunday",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31301,
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31302,
+    "SA3 name": "Caboolture",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31303,
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31304,
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31305,
+    "SA3 name": "Redcliffe",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31401,
+    "SA3 name": "The Hills District",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 31402,
+    "SA3 name": "North Lakes",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31403,
+    "SA3 name": "Strathpine",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31501,
+    "SA3 name": "Far North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31502,
+    "SA3 name": "Outback - North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31503,
+    "SA3 name": "Outback - South",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31601,
+    "SA3 name": "Buderim",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31602,
+    "SA3 name": "Caloundra",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31603,
+    "SA3 name": "Maroochy",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31605,
+    "SA3 name": "Noosa",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31606,
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31607,
+    "SA3 name": "Nambour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31608,
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31701,
+    "SA3 name": "Toowoomba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31801,
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31802,
+    "SA3 name": "Townsville",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31901,
+    "SA3 name": "Bundaberg",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31902,
+    "SA3 name": "Burnett",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31903,
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31904,
+    "SA3 name": "Hervey Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31905,
+    "SA3 name": "Maryborough",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 4,
+    "SA3 name": "Inner regional",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40101,
+    "SA3 name": "Adelaide City",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40102,
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40103,
+    "SA3 name": "Burnside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40104,
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40105,
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40106,
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40107,
+    "SA3 name": "Unley",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40201,
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40202,
+    "SA3 name": "Playford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40203,
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40204,
+    "SA3 name": "Salisbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40205,
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40301,
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40302,
+    "SA3 name": "Marion",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40303,
+    "SA3 name": "Mitcham",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40304,
+    "SA3 name": "Onkaparinga",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40401,
+    "SA3 name": "Charles Sturt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40402,
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40403,
+    "SA3 name": "West Torrens",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40501,
+    "SA3 name": "Barossa",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40502,
+    "SA3 name": "Lower North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40503,
+    "SA3 name": "Mid North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40504,
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40601,
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40602,
+    "SA3 name": "Outback - North and East",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40701,
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40702,
+    "SA3 name": "Limestone Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40703,
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 5,
+    "SA3 name": "Outer regional",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50101,
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50102,
+    "SA3 name": "Bunbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50103,
+    "SA3 name": "Manjimup",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50201,
+    "SA3 name": "Mandurah",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50301,
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50302,
+    "SA3 name": "Perth City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50401,
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50402,
+    "SA3 name": "Mundaring",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50403,
+    "SA3 name": "Swan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50501,
+    "SA3 name": "Joondalup",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50502,
+    "SA3 name": "Stirling",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50503,
+    "SA3 name": "Wanneroo",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50601,
+    "SA3 name": "Armadale",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50602,
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50603,
+    "SA3 name": "Canning",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50604,
+    "SA3 name": "Gosnells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50605,
+    "SA3 name": "Kalamunda",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50606,
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50607,
+    "SA3 name": "South Perth",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50701,
+    "SA3 name": "Cockburn",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50702,
+    "SA3 name": "Fremantle",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50703,
+    "SA3 name": "Kwinana",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50704,
+    "SA3 name": "Melville",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50705,
+    "SA3 name": "Rockingham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50901,
+    "SA3 name": "Albany",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50902,
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50903,
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 51001,
+    "SA3 name": "Kimberley",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51002,
+    "SA3 name": "East Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51003,
+    "SA3 name": "West Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51101,
+    "SA3 name": "Esperance",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51102,
+    "SA3 name": "Gascoyne",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51103,
+    "SA3 name": "Goldfields",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51104,
+    "SA3 name": "Mid West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 6,
+    "SA3 name": "Remote (incl. very remote)",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 60101,
+    "SA3 name": "Brighton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60102,
+    "SA3 name": "Hobart - North East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60103,
+    "SA3 name": "Hobart - North West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60104,
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60105,
+    "SA3 name": "Hobart Inner",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60106,
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60201,
+    "SA3 name": "Launceston",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60202,
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60203,
+    "SA3 name": "North East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60301,
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60302,
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60303,
+    "SA3 name": "South East Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60401,
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60402,
+    "SA3 name": "Devonport",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60403,
+    "SA3 name": "West Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70101,
+    "SA3 name": "Darwin City",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70102,
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70103,
+    "SA3 name": "Litchfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70104,
+    "SA3 name": "Palmerston",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70201,
+    "SA3 name": "Alice Springs",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70202,
+    "SA3 name": "Barkly",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70203,
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70204,
+    "SA3 name": "East Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70205,
+    "SA3 name": "Katherine",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 80101,
+    "SA3 name": "Belconnen",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80103,
+    "SA3 name": "Canberra East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 80104,
+    "SA3 name": "Gungahlin",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80105,
+    "SA3 name": "North Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80106,
+    "SA3 name": "South Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80107,
+    "SA3 name": "Tuggeranong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80108,
+    "SA3 name": "Weston Creek",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80109,
+    "SA3 name": "Woden Valley",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80110,
+    "SA3 name": "Molonglo",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80111,
+    "SA3 name": "Urriarra - Namadgi",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90101,
+    "SA3 name": "Christmas Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90102,
+    "SA3 name": "Cocos (Keeling) Islands",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90103,
+    "SA3 name": "Jervis Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90104,
+    "SA3 name": "Norfolk Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 0,
+    "SA3 name": "National",
+    "SA3 group": "National"
+  },
+  {
+    "SA3 code": 1,
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10102,
+    "SA3 name": "Queanbeyan",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10103,
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10104,
+    "SA3 name": "South Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10105,
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10106,
+    "SA3 name": "Young - Yass",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10201,
+    "SA3 name": "Gosford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10202,
+    "SA3 name": "Wyong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10301,
+    "SA3 name": "Bathurst",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10302,
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10303,
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10304,
+    "SA3 name": "Orange",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10401,
+    "SA3 name": "Clarence Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10402,
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10501,
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10502,
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10503,
+    "SA3 name": "Dubbo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10601,
+    "SA3 name": "Lower Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10602,
+    "SA3 name": "Maitland",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10603,
+    "SA3 name": "Port Stephens",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10604,
+    "SA3 name": "Upper Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10701,
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10702,
+    "SA3 name": "Illawarra Catchment Reserve",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 10703,
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10704,
+    "SA3 name": "Wollongong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10801,
+    "SA3 name": "Great Lakes",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10802,
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10803,
+    "SA3 name": "Lord Howe Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10804,
+    "SA3 name": "Port Macquarie",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10805,
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10901,
+    "SA3 name": "Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10902,
+    "SA3 name": "Lower Murray",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10903,
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11001,
+    "SA3 name": "Armidale",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11002,
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11003,
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11004,
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11101,
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11102,
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11103,
+    "SA3 name": "Newcastle",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11201,
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11202,
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11203,
+    "SA3 name": "Tweed Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11301,
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11302,
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11303,
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11401,
+    "SA3 name": "Shoalhaven",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11402,
+    "SA3 name": "Southern Highlands",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11501,
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11502,
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11503,
+    "SA3 name": "Hawkesbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11504,
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11601,
+    "SA3 name": "Blacktown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11602,
+    "SA3 name": "Blacktown - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11603,
+    "SA3 name": "Mount Druitt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11701,
+    "SA3 name": "Botany",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11702,
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11703,
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11801,
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11802,
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11901,
+    "SA3 name": "Bankstown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11902,
+    "SA3 name": "Canterbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11903,
+    "SA3 name": "Hurstville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11904,
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12001,
+    "SA3 name": "Canada Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12002,
+    "SA3 name": "Leichhardt",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12003,
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12101,
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12102,
+    "SA3 name": "Hornsby",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12103,
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12104,
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12201,
+    "SA3 name": "Manly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12202,
+    "SA3 name": "Pittwater",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12203,
+    "SA3 name": "Warringah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12301,
+    "SA3 name": "Camden",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12302,
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12303,
+    "SA3 name": "Wollondilly",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 12401,
+    "SA3 name": "Blue Mountains",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12402,
+    "SA3 name": "Blue Mountains - South",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 12403,
+    "SA3 name": "Penrith",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12404,
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12405,
+    "SA3 name": "St Marys",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12501,
+    "SA3 name": "Auburn",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12502,
+    "SA3 name": "Carlingford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12503,
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12504,
+    "SA3 name": "Parramatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12601,
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12602,
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12701,
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12702,
+    "SA3 name": "Fairfield",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12703,
+    "SA3 name": "Liverpool",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12801,
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12802,
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 2,
+    "SA3 name": "Major cities - medium SES",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20101,
+    "SA3 name": "Ballarat",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20102,
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20103,
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20201,
+    "SA3 name": "Bendigo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20202,
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20203,
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20301,
+    "SA3 name": "Barwon - West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20302,
+    "SA3 name": "Geelong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20303,
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20401,
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20402,
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20403,
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20501,
+    "SA3 name": "Baw Baw",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20502,
+    "SA3 name": "Gippsland - East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 20503,
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20504,
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20505,
+    "SA3 name": "Wellington",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20601,
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20602,
+    "SA3 name": "Darebin - South",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20603,
+    "SA3 name": "Essendon",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20604,
+    "SA3 name": "Melbourne City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20605,
+    "SA3 name": "Port Phillip",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20606,
+    "SA3 name": "Stonnington - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20607,
+    "SA3 name": "Yarra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20701,
+    "SA3 name": "Boroondara",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20702,
+    "SA3 name": "Manningham - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20703,
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20801,
+    "SA3 name": "Bayside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20802,
+    "SA3 name": "Glen Eira",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20803,
+    "SA3 name": "Kingston",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20804,
+    "SA3 name": "Stonnington - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20901,
+    "SA3 name": "Banyule",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20902,
+    "SA3 name": "Darebin - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20903,
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20904,
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21001,
+    "SA3 name": "Keilor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21002,
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21003,
+    "SA3 name": "Moreland - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21004,
+    "SA3 name": "Sunbury",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21005,
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21101,
+    "SA3 name": "Knox",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21102,
+    "SA3 name": "Manningham - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 21103,
+    "SA3 name": "Maroondah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21104,
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21105,
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21201,
+    "SA3 name": "Cardinia",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21202,
+    "SA3 name": "Casey - North",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21203,
+    "SA3 name": "Casey - South",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21204,
+    "SA3 name": "Dandenong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21205,
+    "SA3 name": "Monash",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21301,
+    "SA3 name": "Brimbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21302,
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21303,
+    "SA3 name": "Maribyrnong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21304,
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21305,
+    "SA3 name": "Wyndham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21401,
+    "SA3 name": "Frankston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21402,
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21501,
+    "SA3 name": "Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21502,
+    "SA3 name": "Mildura",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21503,
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21601,
+    "SA3 name": "Campaspe",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21602,
+    "SA3 name": "Moira",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21603,
+    "SA3 name": "Shepparton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21701,
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21703,
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21704,
+    "SA3 name": "Warrnambool",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 3,
+    "SA3 name": "Major cities - lower SES",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30101,
+    "SA3 name": "Capalaba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30102,
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30103,
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30201,
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30202,
+    "SA3 name": "Chermside",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30203,
+    "SA3 name": "Nundah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30204,
+    "SA3 name": "Sandgate",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30301,
+    "SA3 name": "Carindale",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30302,
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30303,
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30304,
+    "SA3 name": "Nathan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30305,
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30306,
+    "SA3 name": "Sunnybank",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30401,
+    "SA3 name": "Centenary",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30402,
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30403,
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30404,
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30501,
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30502,
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30503,
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30504,
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30601,
+    "SA3 name": "Cairns - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30602,
+    "SA3 name": "Cairns - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30603,
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30604,
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30605,
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30701,
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30702,
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30703,
+    "SA3 name": "Granite Belt",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30801,
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30803,
+    "SA3 name": "Rockhampton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30804,
+    "SA3 name": "Biloela",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30805,
+    "SA3 name": "Gladstone",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30901,
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30902,
+    "SA3 name": "Coolangatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30903,
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30904,
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30905,
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30906,
+    "SA3 name": "Nerang",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30907,
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30908,
+    "SA3 name": "Robina",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30909,
+    "SA3 name": "Southport",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30910,
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31001,
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31002,
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31003,
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31004,
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31101,
+    "SA3 name": "Beaudesert",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31102,
+    "SA3 name": "Beenleigh",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31103,
+    "SA3 name": "Browns Plains",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31104,
+    "SA3 name": "Jimboomba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31105,
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31106,
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31201,
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31202,
+    "SA3 name": "Mackay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31203,
+    "SA3 name": "Whitsunday",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31301,
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31302,
+    "SA3 name": "Caboolture",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31303,
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31304,
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31305,
+    "SA3 name": "Redcliffe",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31401,
+    "SA3 name": "The Hills District",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 31402,
+    "SA3 name": "North Lakes",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31403,
+    "SA3 name": "Strathpine",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31501,
+    "SA3 name": "Far North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31502,
+    "SA3 name": "Outback - North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31503,
+    "SA3 name": "Outback - South",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31601,
+    "SA3 name": "Buderim",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31602,
+    "SA3 name": "Caloundra",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31603,
+    "SA3 name": "Maroochy",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31605,
+    "SA3 name": "Noosa",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31606,
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31607,
+    "SA3 name": "Nambour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31608,
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31701,
+    "SA3 name": "Toowoomba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31801,
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31802,
+    "SA3 name": "Townsville",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31901,
+    "SA3 name": "Bundaberg",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31902,
+    "SA3 name": "Burnett",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31903,
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31904,
+    "SA3 name": "Hervey Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31905,
+    "SA3 name": "Maryborough",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 4,
+    "SA3 name": "Inner regional",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40101,
+    "SA3 name": "Adelaide City",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40102,
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40103,
+    "SA3 name": "Burnside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40104,
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40105,
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40106,
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40107,
+    "SA3 name": "Unley",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40201,
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40202,
+    "SA3 name": "Playford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40203,
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40204,
+    "SA3 name": "Salisbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40205,
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40301,
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40302,
+    "SA3 name": "Marion",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40303,
+    "SA3 name": "Mitcham",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40304,
+    "SA3 name": "Onkaparinga",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40401,
+    "SA3 name": "Charles Sturt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40402,
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40403,
+    "SA3 name": "West Torrens",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40501,
+    "SA3 name": "Barossa",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40502,
+    "SA3 name": "Lower North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40503,
+    "SA3 name": "Mid North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40504,
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40601,
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40602,
+    "SA3 name": "Outback - North and East",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40701,
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40702,
+    "SA3 name": "Limestone Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40703,
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 5,
+    "SA3 name": "Outer regional",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50101,
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50102,
+    "SA3 name": "Bunbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50103,
+    "SA3 name": "Manjimup",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50201,
+    "SA3 name": "Mandurah",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50301,
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50302,
+    "SA3 name": "Perth City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50401,
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50402,
+    "SA3 name": "Mundaring",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50403,
+    "SA3 name": "Swan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50501,
+    "SA3 name": "Joondalup",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50502,
+    "SA3 name": "Stirling",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50503,
+    "SA3 name": "Wanneroo",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50601,
+    "SA3 name": "Armadale",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50602,
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50603,
+    "SA3 name": "Canning",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50604,
+    "SA3 name": "Gosnells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50605,
+    "SA3 name": "Kalamunda",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50606,
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50607,
+    "SA3 name": "South Perth",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50701,
+    "SA3 name": "Cockburn",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50702,
+    "SA3 name": "Fremantle",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50703,
+    "SA3 name": "Kwinana",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50704,
+    "SA3 name": "Melville",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50705,
+    "SA3 name": "Rockingham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50901,
+    "SA3 name": "Albany",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50902,
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50903,
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 51001,
+    "SA3 name": "Kimberley",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51002,
+    "SA3 name": "East Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51003,
+    "SA3 name": "West Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51101,
+    "SA3 name": "Esperance",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51102,
+    "SA3 name": "Gascoyne",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51103,
+    "SA3 name": "Goldfields",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51104,
+    "SA3 name": "Mid West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 6,
+    "SA3 name": "Remote (incl. very remote)",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 60101,
+    "SA3 name": "Brighton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60102,
+    "SA3 name": "Hobart - North East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60103,
+    "SA3 name": "Hobart - North West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60104,
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60105,
+    "SA3 name": "Hobart Inner",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60106,
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60201,
+    "SA3 name": "Launceston",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60202,
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60203,
+    "SA3 name": "North East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60301,
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60302,
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60303,
+    "SA3 name": "South East Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60401,
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60402,
+    "SA3 name": "Devonport",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60403,
+    "SA3 name": "West Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70101,
+    "SA3 name": "Darwin City",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70102,
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70103,
+    "SA3 name": "Litchfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70104,
+    "SA3 name": "Palmerston",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70201,
+    "SA3 name": "Alice Springs",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70202,
+    "SA3 name": "Barkly",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70203,
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70204,
+    "SA3 name": "East Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70205,
+    "SA3 name": "Katherine",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 80101,
+    "SA3 name": "Belconnen",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80103,
+    "SA3 name": "Canberra East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 80104,
+    "SA3 name": "Gungahlin",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80105,
+    "SA3 name": "North Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80106,
+    "SA3 name": "South Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80107,
+    "SA3 name": "Tuggeranong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80108,
+    "SA3 name": "Weston Creek",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80109,
+    "SA3 name": "Woden Valley",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80110,
+    "SA3 name": "Molonglo",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80111,
+    "SA3 name": "Urriarra - Namadgi",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90101,
+    "SA3 name": "Christmas Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90102,
+    "SA3 name": "Cocos (Keeling) Islands",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90103,
+    "SA3 name": "Jervis Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90104,
+    "SA3 name": "Norfolk Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 0,
+    "SA3 name": "National",
+    "SA3 group": "National"
+  },
+  {
+    "SA3 code": 1,
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10102,
+    "SA3 name": "Queanbeyan",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10103,
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10104,
+    "SA3 name": "South Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10105,
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10106,
+    "SA3 name": "Young - Yass",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10201,
+    "SA3 name": "Gosford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10202,
+    "SA3 name": "Wyong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10301,
+    "SA3 name": "Bathurst",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10302,
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10303,
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10304,
+    "SA3 name": "Orange",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10401,
+    "SA3 name": "Clarence Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10402,
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10501,
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10502,
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10503,
+    "SA3 name": "Dubbo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10601,
+    "SA3 name": "Lower Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10602,
+    "SA3 name": "Maitland",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10603,
+    "SA3 name": "Port Stephens",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10604,
+    "SA3 name": "Upper Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10701,
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10702,
+    "SA3 name": "Illawarra Catchment Reserve",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 10703,
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10704,
+    "SA3 name": "Wollongong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10801,
+    "SA3 name": "Great Lakes",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10802,
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10803,
+    "SA3 name": "Lord Howe Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10804,
+    "SA3 name": "Port Macquarie",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10805,
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10901,
+    "SA3 name": "Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10902,
+    "SA3 name": "Lower Murray",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10903,
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11001,
+    "SA3 name": "Armidale",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11002,
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11003,
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11004,
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11101,
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11102,
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11103,
+    "SA3 name": "Newcastle",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11201,
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11202,
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11203,
+    "SA3 name": "Tweed Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11301,
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11302,
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11303,
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11401,
+    "SA3 name": "Shoalhaven",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11402,
+    "SA3 name": "Southern Highlands",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11501,
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11502,
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11503,
+    "SA3 name": "Hawkesbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11504,
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11601,
+    "SA3 name": "Blacktown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11602,
+    "SA3 name": "Blacktown - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11603,
+    "SA3 name": "Mount Druitt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11701,
+    "SA3 name": "Botany",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11702,
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11703,
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11801,
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11802,
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11901,
+    "SA3 name": "Bankstown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11902,
+    "SA3 name": "Canterbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11903,
+    "SA3 name": "Hurstville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11904,
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12001,
+    "SA3 name": "Canada Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12002,
+    "SA3 name": "Leichhardt",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12003,
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12101,
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12102,
+    "SA3 name": "Hornsby",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12103,
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12104,
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12201,
+    "SA3 name": "Manly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12202,
+    "SA3 name": "Pittwater",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12203,
+    "SA3 name": "Warringah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12301,
+    "SA3 name": "Camden",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12302,
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12303,
+    "SA3 name": "Wollondilly",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 12401,
+    "SA3 name": "Blue Mountains",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12402,
+    "SA3 name": "Blue Mountains - South",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 12403,
+    "SA3 name": "Penrith",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12404,
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12405,
+    "SA3 name": "St Marys",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12501,
+    "SA3 name": "Auburn",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12502,
+    "SA3 name": "Carlingford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12503,
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12504,
+    "SA3 name": "Parramatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12601,
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12602,
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12701,
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12702,
+    "SA3 name": "Fairfield",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12703,
+    "SA3 name": "Liverpool",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12801,
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12802,
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 2,
+    "SA3 name": "Major cities - medium SES",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20101,
+    "SA3 name": "Ballarat",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20102,
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20103,
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20201,
+    "SA3 name": "Bendigo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20202,
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20203,
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20301,
+    "SA3 name": "Barwon - West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20302,
+    "SA3 name": "Geelong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20303,
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20401,
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20402,
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20403,
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20501,
+    "SA3 name": "Baw Baw",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20502,
+    "SA3 name": "Gippsland - East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 20503,
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20504,
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20505,
+    "SA3 name": "Wellington",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20601,
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20602,
+    "SA3 name": "Darebin - South",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20603,
+    "SA3 name": "Essendon",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20604,
+    "SA3 name": "Melbourne City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20605,
+    "SA3 name": "Port Phillip",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20606,
+    "SA3 name": "Stonnington - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20607,
+    "SA3 name": "Yarra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20701,
+    "SA3 name": "Boroondara",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20702,
+    "SA3 name": "Manningham - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20703,
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20801,
+    "SA3 name": "Bayside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20802,
+    "SA3 name": "Glen Eira",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20803,
+    "SA3 name": "Kingston",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20804,
+    "SA3 name": "Stonnington - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20901,
+    "SA3 name": "Banyule",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20902,
+    "SA3 name": "Darebin - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20903,
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20904,
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21001,
+    "SA3 name": "Keilor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21002,
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21003,
+    "SA3 name": "Moreland - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21004,
+    "SA3 name": "Sunbury",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21005,
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21101,
+    "SA3 name": "Knox",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21102,
+    "SA3 name": "Manningham - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 21103,
+    "SA3 name": "Maroondah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21104,
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21105,
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21201,
+    "SA3 name": "Cardinia",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21202,
+    "SA3 name": "Casey - North",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21203,
+    "SA3 name": "Casey - South",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21204,
+    "SA3 name": "Dandenong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21205,
+    "SA3 name": "Monash",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21301,
+    "SA3 name": "Brimbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21302,
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21303,
+    "SA3 name": "Maribyrnong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21304,
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21305,
+    "SA3 name": "Wyndham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21401,
+    "SA3 name": "Frankston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21402,
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21501,
+    "SA3 name": "Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21502,
+    "SA3 name": "Mildura",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21503,
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21601,
+    "SA3 name": "Campaspe",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21602,
+    "SA3 name": "Moira",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21603,
+    "SA3 name": "Shepparton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21701,
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21703,
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21704,
+    "SA3 name": "Warrnambool",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 3,
+    "SA3 name": "Major cities - lower SES",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30101,
+    "SA3 name": "Capalaba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30102,
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30103,
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30201,
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30202,
+    "SA3 name": "Chermside",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30203,
+    "SA3 name": "Nundah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30204,
+    "SA3 name": "Sandgate",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30301,
+    "SA3 name": "Carindale",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30302,
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30303,
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30304,
+    "SA3 name": "Nathan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30305,
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30306,
+    "SA3 name": "Sunnybank",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30401,
+    "SA3 name": "Centenary",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30402,
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30403,
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30404,
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30501,
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30502,
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30503,
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30504,
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30601,
+    "SA3 name": "Cairns - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30602,
+    "SA3 name": "Cairns - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30603,
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30604,
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30605,
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30701,
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30702,
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30703,
+    "SA3 name": "Granite Belt",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30801,
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30803,
+    "SA3 name": "Rockhampton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30804,
+    "SA3 name": "Biloela",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30805,
+    "SA3 name": "Gladstone",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30901,
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30902,
+    "SA3 name": "Coolangatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30903,
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30904,
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30905,
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30906,
+    "SA3 name": "Nerang",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30907,
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30908,
+    "SA3 name": "Robina",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30909,
+    "SA3 name": "Southport",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30910,
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31001,
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31002,
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31003,
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31004,
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31101,
+    "SA3 name": "Beaudesert",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31102,
+    "SA3 name": "Beenleigh",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31103,
+    "SA3 name": "Browns Plains",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31104,
+    "SA3 name": "Jimboomba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31105,
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31106,
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31201,
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31202,
+    "SA3 name": "Mackay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31203,
+    "SA3 name": "Whitsunday",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31301,
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31302,
+    "SA3 name": "Caboolture",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31303,
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31304,
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31305,
+    "SA3 name": "Redcliffe",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31401,
+    "SA3 name": "The Hills District",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 31402,
+    "SA3 name": "North Lakes",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31403,
+    "SA3 name": "Strathpine",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31501,
+    "SA3 name": "Far North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31502,
+    "SA3 name": "Outback - North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31503,
+    "SA3 name": "Outback - South",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31601,
+    "SA3 name": "Buderim",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31602,
+    "SA3 name": "Caloundra",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31603,
+    "SA3 name": "Maroochy",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31605,
+    "SA3 name": "Noosa",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31606,
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31607,
+    "SA3 name": "Nambour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31608,
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31701,
+    "SA3 name": "Toowoomba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31801,
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31802,
+    "SA3 name": "Townsville",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31901,
+    "SA3 name": "Bundaberg",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31902,
+    "SA3 name": "Burnett",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31903,
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31904,
+    "SA3 name": "Hervey Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31905,
+    "SA3 name": "Maryborough",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 4,
+    "SA3 name": "Inner regional",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40101,
+    "SA3 name": "Adelaide City",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40102,
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40103,
+    "SA3 name": "Burnside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40104,
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40105,
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40106,
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40107,
+    "SA3 name": "Unley",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40201,
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40202,
+    "SA3 name": "Playford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40203,
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40204,
+    "SA3 name": "Salisbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40205,
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40301,
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40302,
+    "SA3 name": "Marion",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40303,
+    "SA3 name": "Mitcham",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40304,
+    "SA3 name": "Onkaparinga",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40401,
+    "SA3 name": "Charles Sturt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40402,
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40403,
+    "SA3 name": "West Torrens",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40501,
+    "SA3 name": "Barossa",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40502,
+    "SA3 name": "Lower North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40503,
+    "SA3 name": "Mid North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40504,
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40601,
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40602,
+    "SA3 name": "Outback - North and East",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40701,
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40702,
+    "SA3 name": "Limestone Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40703,
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 5,
+    "SA3 name": "Outer regional",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50101,
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50102,
+    "SA3 name": "Bunbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50103,
+    "SA3 name": "Manjimup",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50201,
+    "SA3 name": "Mandurah",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50301,
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50302,
+    "SA3 name": "Perth City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50401,
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50402,
+    "SA3 name": "Mundaring",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50403,
+    "SA3 name": "Swan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50501,
+    "SA3 name": "Joondalup",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50502,
+    "SA3 name": "Stirling",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50503,
+    "SA3 name": "Wanneroo",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50601,
+    "SA3 name": "Armadale",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50602,
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50603,
+    "SA3 name": "Canning",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50604,
+    "SA3 name": "Gosnells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50605,
+    "SA3 name": "Kalamunda",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50606,
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50607,
+    "SA3 name": "South Perth",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50701,
+    "SA3 name": "Cockburn",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50702,
+    "SA3 name": "Fremantle",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50703,
+    "SA3 name": "Kwinana",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50704,
+    "SA3 name": "Melville",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50705,
+    "SA3 name": "Rockingham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50901,
+    "SA3 name": "Albany",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50902,
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50903,
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 51001,
+    "SA3 name": "Kimberley",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51002,
+    "SA3 name": "East Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51003,
+    "SA3 name": "West Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51101,
+    "SA3 name": "Esperance",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51102,
+    "SA3 name": "Gascoyne",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51103,
+    "SA3 name": "Goldfields",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51104,
+    "SA3 name": "Mid West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 6,
+    "SA3 name": "Remote (incl. very remote)",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 60101,
+    "SA3 name": "Brighton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60102,
+    "SA3 name": "Hobart - North East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60103,
+    "SA3 name": "Hobart - North West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60104,
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60105,
+    "SA3 name": "Hobart Inner",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60106,
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60201,
+    "SA3 name": "Launceston",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60202,
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60203,
+    "SA3 name": "North East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60301,
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60302,
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60303,
+    "SA3 name": "South East Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60401,
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60402,
+    "SA3 name": "Devonport",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60403,
+    "SA3 name": "West Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70101,
+    "SA3 name": "Darwin City",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70102,
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70103,
+    "SA3 name": "Litchfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70104,
+    "SA3 name": "Palmerston",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70201,
+    "SA3 name": "Alice Springs",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70202,
+    "SA3 name": "Barkly",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70203,
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70204,
+    "SA3 name": "East Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70205,
+    "SA3 name": "Katherine",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 80101,
+    "SA3 name": "Belconnen",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80103,
+    "SA3 name": "Canberra East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 80104,
+    "SA3 name": "Gungahlin",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80105,
+    "SA3 name": "North Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80106,
+    "SA3 name": "South Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80107,
+    "SA3 name": "Tuggeranong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80108,
+    "SA3 name": "Weston Creek",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80109,
+    "SA3 name": "Woden Valley",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80110,
+    "SA3 name": "Molonglo",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80111,
+    "SA3 name": "Urriarra - Namadgi",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90101,
+    "SA3 name": "Christmas Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90102,
+    "SA3 name": "Cocos (Keeling) Islands",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90103,
+    "SA3 name": "Jervis Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90104,
+    "SA3 name": "Norfolk Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 0,
+    "SA3 name": "National",
+    "SA3 group": "National"
+  },
+  {
+    "SA3 code": 1,
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10102,
+    "SA3 name": "Queanbeyan",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10103,
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10104,
+    "SA3 name": "South Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10105,
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10106,
+    "SA3 name": "Young - Yass",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10201,
+    "SA3 name": "Gosford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10202,
+    "SA3 name": "Wyong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10301,
+    "SA3 name": "Bathurst",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10302,
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10303,
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10304,
+    "SA3 name": "Orange",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10401,
+    "SA3 name": "Clarence Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10402,
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10501,
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10502,
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10503,
+    "SA3 name": "Dubbo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10601,
+    "SA3 name": "Lower Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10602,
+    "SA3 name": "Maitland",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10603,
+    "SA3 name": "Port Stephens",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10604,
+    "SA3 name": "Upper Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10701,
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10702,
+    "SA3 name": "Illawarra Catchment Reserve",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 10703,
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10704,
+    "SA3 name": "Wollongong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10801,
+    "SA3 name": "Great Lakes",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10802,
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10803,
+    "SA3 name": "Lord Howe Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10804,
+    "SA3 name": "Port Macquarie",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10805,
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10901,
+    "SA3 name": "Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10902,
+    "SA3 name": "Lower Murray",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10903,
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11001,
+    "SA3 name": "Armidale",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11002,
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11003,
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11004,
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11101,
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11102,
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11103,
+    "SA3 name": "Newcastle",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11201,
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11202,
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11203,
+    "SA3 name": "Tweed Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11301,
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11302,
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11303,
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11401,
+    "SA3 name": "Shoalhaven",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11402,
+    "SA3 name": "Southern Highlands",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11501,
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11502,
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11503,
+    "SA3 name": "Hawkesbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11504,
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11601,
+    "SA3 name": "Blacktown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11602,
+    "SA3 name": "Blacktown - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11603,
+    "SA3 name": "Mount Druitt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11701,
+    "SA3 name": "Botany",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11702,
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11703,
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11801,
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11802,
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11901,
+    "SA3 name": "Bankstown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11902,
+    "SA3 name": "Canterbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11903,
+    "SA3 name": "Hurstville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11904,
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12001,
+    "SA3 name": "Canada Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12002,
+    "SA3 name": "Leichhardt",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12003,
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12101,
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12102,
+    "SA3 name": "Hornsby",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12103,
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12104,
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12201,
+    "SA3 name": "Manly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12202,
+    "SA3 name": "Pittwater",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12203,
+    "SA3 name": "Warringah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12301,
+    "SA3 name": "Camden",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12302,
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12303,
+    "SA3 name": "Wollondilly",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 12401,
+    "SA3 name": "Blue Mountains",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12402,
+    "SA3 name": "Blue Mountains - South",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 12403,
+    "SA3 name": "Penrith",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12404,
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12405,
+    "SA3 name": "St Marys",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12501,
+    "SA3 name": "Auburn",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12502,
+    "SA3 name": "Carlingford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12503,
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12504,
+    "SA3 name": "Parramatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12601,
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12602,
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12701,
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12702,
+    "SA3 name": "Fairfield",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12703,
+    "SA3 name": "Liverpool",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12801,
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12802,
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 2,
+    "SA3 name": "Major cities - medium SES",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20101,
+    "SA3 name": "Ballarat",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20102,
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20103,
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20201,
+    "SA3 name": "Bendigo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20202,
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20203,
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20301,
+    "SA3 name": "Barwon - West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20302,
+    "SA3 name": "Geelong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20303,
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20401,
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20402,
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20403,
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20501,
+    "SA3 name": "Baw Baw",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20502,
+    "SA3 name": "Gippsland - East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 20503,
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20504,
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20505,
+    "SA3 name": "Wellington",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20601,
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20602,
+    "SA3 name": "Darebin - South",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20603,
+    "SA3 name": "Essendon",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20604,
+    "SA3 name": "Melbourne City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20605,
+    "SA3 name": "Port Phillip",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20606,
+    "SA3 name": "Stonnington - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20607,
+    "SA3 name": "Yarra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20701,
+    "SA3 name": "Boroondara",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20702,
+    "SA3 name": "Manningham - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20703,
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20801,
+    "SA3 name": "Bayside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20802,
+    "SA3 name": "Glen Eira",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20803,
+    "SA3 name": "Kingston",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20804,
+    "SA3 name": "Stonnington - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20901,
+    "SA3 name": "Banyule",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20902,
+    "SA3 name": "Darebin - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20903,
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20904,
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21001,
+    "SA3 name": "Keilor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21002,
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21003,
+    "SA3 name": "Moreland - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21004,
+    "SA3 name": "Sunbury",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21005,
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21101,
+    "SA3 name": "Knox",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21102,
+    "SA3 name": "Manningham - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 21103,
+    "SA3 name": "Maroondah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21104,
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21105,
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21201,
+    "SA3 name": "Cardinia",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21202,
+    "SA3 name": "Casey - North",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21203,
+    "SA3 name": "Casey - South",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21204,
+    "SA3 name": "Dandenong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21205,
+    "SA3 name": "Monash",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21301,
+    "SA3 name": "Brimbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21302,
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21303,
+    "SA3 name": "Maribyrnong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21304,
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21305,
+    "SA3 name": "Wyndham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21401,
+    "SA3 name": "Frankston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21402,
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21501,
+    "SA3 name": "Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21502,
+    "SA3 name": "Mildura",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21503,
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21601,
+    "SA3 name": "Campaspe",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21602,
+    "SA3 name": "Moira",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21603,
+    "SA3 name": "Shepparton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21701,
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21703,
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21704,
+    "SA3 name": "Warrnambool",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 3,
+    "SA3 name": "Major cities - lower SES",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30101,
+    "SA3 name": "Capalaba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30102,
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30103,
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30201,
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30202,
+    "SA3 name": "Chermside",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30203,
+    "SA3 name": "Nundah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30204,
+    "SA3 name": "Sandgate",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30301,
+    "SA3 name": "Carindale",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30302,
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30303,
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30304,
+    "SA3 name": "Nathan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30305,
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30306,
+    "SA3 name": "Sunnybank",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30401,
+    "SA3 name": "Centenary",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30402,
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30403,
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30404,
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30501,
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30502,
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30503,
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30504,
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30601,
+    "SA3 name": "Cairns - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30602,
+    "SA3 name": "Cairns - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30603,
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30604,
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30605,
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30701,
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30702,
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30703,
+    "SA3 name": "Granite Belt",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30801,
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30803,
+    "SA3 name": "Rockhampton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30804,
+    "SA3 name": "Biloela",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30805,
+    "SA3 name": "Gladstone",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30901,
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30902,
+    "SA3 name": "Coolangatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30903,
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30904,
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30905,
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30906,
+    "SA3 name": "Nerang",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30907,
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30908,
+    "SA3 name": "Robina",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30909,
+    "SA3 name": "Southport",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30910,
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31001,
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31002,
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31003,
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31004,
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31101,
+    "SA3 name": "Beaudesert",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31102,
+    "SA3 name": "Beenleigh",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31103,
+    "SA3 name": "Browns Plains",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31104,
+    "SA3 name": "Jimboomba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31105,
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31106,
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31201,
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31202,
+    "SA3 name": "Mackay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31203,
+    "SA3 name": "Whitsunday",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31301,
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31302,
+    "SA3 name": "Caboolture",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31303,
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31304,
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31305,
+    "SA3 name": "Redcliffe",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31401,
+    "SA3 name": "The Hills District",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 31402,
+    "SA3 name": "North Lakes",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31403,
+    "SA3 name": "Strathpine",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31501,
+    "SA3 name": "Far North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31502,
+    "SA3 name": "Outback - North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31503,
+    "SA3 name": "Outback - South",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31601,
+    "SA3 name": "Buderim",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31602,
+    "SA3 name": "Caloundra",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31603,
+    "SA3 name": "Maroochy",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31605,
+    "SA3 name": "Noosa",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31606,
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31607,
+    "SA3 name": "Nambour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31608,
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31701,
+    "SA3 name": "Toowoomba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31801,
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31802,
+    "SA3 name": "Townsville",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31901,
+    "SA3 name": "Bundaberg",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31902,
+    "SA3 name": "Burnett",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31903,
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31904,
+    "SA3 name": "Hervey Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31905,
+    "SA3 name": "Maryborough",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 4,
+    "SA3 name": "Inner regional",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40101,
+    "SA3 name": "Adelaide City",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40102,
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40103,
+    "SA3 name": "Burnside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40104,
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40105,
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40106,
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40107,
+    "SA3 name": "Unley",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40201,
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40202,
+    "SA3 name": "Playford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40203,
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40204,
+    "SA3 name": "Salisbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40205,
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40301,
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40302,
+    "SA3 name": "Marion",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40303,
+    "SA3 name": "Mitcham",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40304,
+    "SA3 name": "Onkaparinga",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40401,
+    "SA3 name": "Charles Sturt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40402,
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40403,
+    "SA3 name": "West Torrens",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40501,
+    "SA3 name": "Barossa",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40502,
+    "SA3 name": "Lower North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40503,
+    "SA3 name": "Mid North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40504,
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40601,
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40602,
+    "SA3 name": "Outback - North and East",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40701,
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40702,
+    "SA3 name": "Limestone Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40703,
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 5,
+    "SA3 name": "Outer regional",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50101,
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50102,
+    "SA3 name": "Bunbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50103,
+    "SA3 name": "Manjimup",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50201,
+    "SA3 name": "Mandurah",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50301,
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50302,
+    "SA3 name": "Perth City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50401,
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50402,
+    "SA3 name": "Mundaring",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50403,
+    "SA3 name": "Swan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50501,
+    "SA3 name": "Joondalup",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50502,
+    "SA3 name": "Stirling",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50503,
+    "SA3 name": "Wanneroo",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50601,
+    "SA3 name": "Armadale",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50602,
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50603,
+    "SA3 name": "Canning",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50604,
+    "SA3 name": "Gosnells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50605,
+    "SA3 name": "Kalamunda",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50606,
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50607,
+    "SA3 name": "South Perth",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50701,
+    "SA3 name": "Cockburn",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50702,
+    "SA3 name": "Fremantle",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50703,
+    "SA3 name": "Kwinana",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50704,
+    "SA3 name": "Melville",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50705,
+    "SA3 name": "Rockingham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50901,
+    "SA3 name": "Albany",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50902,
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50903,
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 51001,
+    "SA3 name": "Kimberley",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51002,
+    "SA3 name": "East Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51003,
+    "SA3 name": "West Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51101,
+    "SA3 name": "Esperance",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51102,
+    "SA3 name": "Gascoyne",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51103,
+    "SA3 name": "Goldfields",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51104,
+    "SA3 name": "Mid West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 6,
+    "SA3 name": "Remote (incl. very remote)",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 60101,
+    "SA3 name": "Brighton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60102,
+    "SA3 name": "Hobart - North East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60103,
+    "SA3 name": "Hobart - North West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60104,
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60105,
+    "SA3 name": "Hobart Inner",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60106,
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60201,
+    "SA3 name": "Launceston",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60202,
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60203,
+    "SA3 name": "North East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60301,
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60302,
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60303,
+    "SA3 name": "South East Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60401,
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60402,
+    "SA3 name": "Devonport",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60403,
+    "SA3 name": "West Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70101,
+    "SA3 name": "Darwin City",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70102,
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70103,
+    "SA3 name": "Litchfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70104,
+    "SA3 name": "Palmerston",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70201,
+    "SA3 name": "Alice Springs",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70202,
+    "SA3 name": "Barkly",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70203,
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70204,
+    "SA3 name": "East Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70205,
+    "SA3 name": "Katherine",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 80101,
+    "SA3 name": "Belconnen",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80103,
+    "SA3 name": "Canberra East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 80104,
+    "SA3 name": "Gungahlin",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80105,
+    "SA3 name": "North Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80106,
+    "SA3 name": "South Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80107,
+    "SA3 name": "Tuggeranong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80108,
+    "SA3 name": "Weston Creek",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80109,
+    "SA3 name": "Woden Valley",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80110,
+    "SA3 name": "Molonglo",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80111,
+    "SA3 name": "Urriarra - Namadgi",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90101,
+    "SA3 name": "Christmas Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90102,
+    "SA3 name": "Cocos (Keeling) Islands",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90103,
+    "SA3 name": "Jervis Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90104,
+    "SA3 name": "Norfolk Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 0,
+    "SA3 name": "National",
+    "SA3 group": "National"
+  },
+  {
+    "SA3 code": 1,
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10102,
+    "SA3 name": "Queanbeyan",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 10103,
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10104,
+    "SA3 name": "South Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10105,
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10106,
+    "SA3 name": "Young - Yass",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10201,
+    "SA3 name": "Gosford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10202,
+    "SA3 name": "Wyong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10301,
+    "SA3 name": "Bathurst",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10302,
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10303,
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10304,
+    "SA3 name": "Orange",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10401,
+    "SA3 name": "Clarence Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10402,
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10501,
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10502,
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10503,
+    "SA3 name": "Dubbo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10601,
+    "SA3 name": "Lower Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10602,
+    "SA3 name": "Maitland",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10603,
+    "SA3 name": "Port Stephens",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10604,
+    "SA3 name": "Upper Hunter",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10701,
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10702,
+    "SA3 name": "Illawarra Catchment Reserve",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 10703,
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 10704,
+    "SA3 name": "Wollongong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 10801,
+    "SA3 name": "Great Lakes",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10802,
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10803,
+    "SA3 name": "Lord Howe Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 10804,
+    "SA3 name": "Port Macquarie",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10805,
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10901,
+    "SA3 name": "Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 10902,
+    "SA3 name": "Lower Murray",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 10903,
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11001,
+    "SA3 name": "Armidale",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11002,
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11003,
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11004,
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11101,
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11102,
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11103,
+    "SA3 name": "Newcastle",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11201,
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11202,
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11203,
+    "SA3 name": "Tweed Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11301,
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 11302,
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11303,
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11401,
+    "SA3 name": "Shoalhaven",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11402,
+    "SA3 name": "Southern Highlands",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11501,
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11502,
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11503,
+    "SA3 name": "Hawkesbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 11504,
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11601,
+    "SA3 name": "Blacktown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11602,
+    "SA3 name": "Blacktown - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11603,
+    "SA3 name": "Mount Druitt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11701,
+    "SA3 name": "Botany",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11702,
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11703,
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11801,
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11802,
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 11901,
+    "SA3 name": "Bankstown",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11902,
+    "SA3 name": "Canterbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 11903,
+    "SA3 name": "Hurstville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 11904,
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12001,
+    "SA3 name": "Canada Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12002,
+    "SA3 name": "Leichhardt",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12003,
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12101,
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12102,
+    "SA3 name": "Hornsby",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12103,
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12104,
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12201,
+    "SA3 name": "Manly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12202,
+    "SA3 name": "Pittwater",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12203,
+    "SA3 name": "Warringah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12301,
+    "SA3 name": "Camden",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12302,
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12303,
+    "SA3 name": "Wollondilly",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 12401,
+    "SA3 name": "Blue Mountains",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12402,
+    "SA3 name": "Blue Mountains - South",
+    "SA3 group": "Ungrouped"
+  },
+  {
+    "SA3 code": 12403,
+    "SA3 name": "Penrith",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12404,
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12405,
+    "SA3 name": "St Marys",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12501,
+    "SA3 name": "Auburn",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12502,
+    "SA3 name": "Carlingford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12503,
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12504,
+    "SA3 name": "Parramatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12601,
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12602,
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 12701,
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12702,
+    "SA3 name": "Fairfield",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12703,
+    "SA3 name": "Liverpool",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 12801,
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 12802,
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 2,
+    "SA3 name": "Major cities - medium SES",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20101,
+    "SA3 name": "Ballarat",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20102,
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20103,
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20201,
+    "SA3 name": "Bendigo",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20202,
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20203,
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20301,
+    "SA3 name": "Barwon - West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20302,
+    "SA3 name": "Geelong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20303,
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20401,
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20402,
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20403,
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20501,
+    "SA3 name": "Baw Baw",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20502,
+    "SA3 name": "Gippsland - East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 20503,
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20504,
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20505,
+    "SA3 name": "Wellington",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 20601,
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20602,
+    "SA3 name": "Darebin - South",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20603,
+    "SA3 name": "Essendon",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20604,
+    "SA3 name": "Melbourne City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20605,
+    "SA3 name": "Port Phillip",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20606,
+    "SA3 name": "Stonnington - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20607,
+    "SA3 name": "Yarra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20701,
+    "SA3 name": "Boroondara",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20702,
+    "SA3 name": "Manningham - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20703,
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20801,
+    "SA3 name": "Bayside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20802,
+    "SA3 name": "Glen Eira",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20803,
+    "SA3 name": "Kingston",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20804,
+    "SA3 name": "Stonnington - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20901,
+    "SA3 name": "Banyule",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 20902,
+    "SA3 name": "Darebin - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 20903,
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 20904,
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21001,
+    "SA3 name": "Keilor",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21002,
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21003,
+    "SA3 name": "Moreland - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21004,
+    "SA3 name": "Sunbury",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21005,
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21101,
+    "SA3 name": "Knox",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21102,
+    "SA3 name": "Manningham - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 21103,
+    "SA3 name": "Maroondah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21104,
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21105,
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21201,
+    "SA3 name": "Cardinia",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21202,
+    "SA3 name": "Casey - North",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21203,
+    "SA3 name": "Casey - South",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21204,
+    "SA3 name": "Dandenong",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21205,
+    "SA3 name": "Monash",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21301,
+    "SA3 name": "Brimbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21302,
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21303,
+    "SA3 name": "Maribyrnong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21304,
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21305,
+    "SA3 name": "Wyndham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21401,
+    "SA3 name": "Frankston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 21402,
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 21501,
+    "SA3 name": "Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21502,
+    "SA3 name": "Mildura",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21503,
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21601,
+    "SA3 name": "Campaspe",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21602,
+    "SA3 name": "Moira",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21603,
+    "SA3 name": "Shepparton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21701,
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 21703,
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 21704,
+    "SA3 name": "Warrnambool",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 3,
+    "SA3 name": "Major cities - lower SES",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30101,
+    "SA3 name": "Capalaba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30102,
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30103,
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30201,
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30202,
+    "SA3 name": "Chermside",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30203,
+    "SA3 name": "Nundah",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30204,
+    "SA3 name": "Sandgate",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30301,
+    "SA3 name": "Carindale",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30302,
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30303,
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30304,
+    "SA3 name": "Nathan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30305,
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30306,
+    "SA3 name": "Sunnybank",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30401,
+    "SA3 name": "Centenary",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30402,
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30403,
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30404,
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30501,
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30502,
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30503,
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30504,
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 30601,
+    "SA3 name": "Cairns - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30602,
+    "SA3 name": "Cairns - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30603,
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30604,
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30605,
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30701,
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30702,
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30703,
+    "SA3 name": "Granite Belt",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30801,
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30803,
+    "SA3 name": "Rockhampton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30804,
+    "SA3 name": "Biloela",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 30805,
+    "SA3 name": "Gladstone",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30901,
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30902,
+    "SA3 name": "Coolangatta",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30903,
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 30904,
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 30905,
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30906,
+    "SA3 name": "Nerang",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30907,
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30908,
+    "SA3 name": "Robina",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30909,
+    "SA3 name": "Southport",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 30910,
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31001,
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31002,
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31003,
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31004,
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31101,
+    "SA3 name": "Beaudesert",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31102,
+    "SA3 name": "Beenleigh",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31103,
+    "SA3 name": "Browns Plains",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31104,
+    "SA3 name": "Jimboomba",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31105,
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31106,
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31201,
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31202,
+    "SA3 name": "Mackay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31203,
+    "SA3 name": "Whitsunday",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31301,
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31302,
+    "SA3 name": "Caboolture",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31303,
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31304,
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31305,
+    "SA3 name": "Redcliffe",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 31401,
+    "SA3 name": "The Hills District",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 31402,
+    "SA3 name": "North Lakes",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31403,
+    "SA3 name": "Strathpine",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31501,
+    "SA3 name": "Far North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31502,
+    "SA3 name": "Outback - North",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31503,
+    "SA3 name": "Outback - South",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 31601,
+    "SA3 name": "Buderim",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31602,
+    "SA3 name": "Caloundra",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31603,
+    "SA3 name": "Maroochy",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31605,
+    "SA3 name": "Noosa",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31606,
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31607,
+    "SA3 name": "Nambour",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 31608,
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31701,
+    "SA3 name": "Toowoomba",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31801,
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31802,
+    "SA3 name": "Townsville",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 31901,
+    "SA3 name": "Bundaberg",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31902,
+    "SA3 name": "Burnett",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31903,
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31904,
+    "SA3 name": "Hervey Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 31905,
+    "SA3 name": "Maryborough",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 4,
+    "SA3 name": "Inner regional",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40101,
+    "SA3 name": "Adelaide City",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40102,
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40103,
+    "SA3 name": "Burnside",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40104,
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40105,
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40106,
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40107,
+    "SA3 name": "Unley",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40201,
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40202,
+    "SA3 name": "Playford",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40203,
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40204,
+    "SA3 name": "Salisbury",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40205,
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40301,
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40302,
+    "SA3 name": "Marion",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40303,
+    "SA3 name": "Mitcham",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 40304,
+    "SA3 name": "Onkaparinga",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40401,
+    "SA3 name": "Charles Sturt",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40402,
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 40403,
+    "SA3 name": "West Torrens",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 40501,
+    "SA3 name": "Barossa",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40502,
+    "SA3 name": "Lower North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40503,
+    "SA3 name": "Mid North",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40504,
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40601,
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40602,
+    "SA3 name": "Outback - North and East",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 40701,
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 40702,
+    "SA3 name": "Limestone Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 40703,
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 5,
+    "SA3 name": "Outer regional",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50101,
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50102,
+    "SA3 name": "Bunbury",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50103,
+    "SA3 name": "Manjimup",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50201,
+    "SA3 name": "Mandurah",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50301,
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50302,
+    "SA3 name": "Perth City",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50401,
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50402,
+    "SA3 name": "Mundaring",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50403,
+    "SA3 name": "Swan",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50501,
+    "SA3 name": "Joondalup",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50502,
+    "SA3 name": "Stirling",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50503,
+    "SA3 name": "Wanneroo",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50601,
+    "SA3 name": "Armadale",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50602,
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50603,
+    "SA3 name": "Canning",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50604,
+    "SA3 name": "Gosnells",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50605,
+    "SA3 name": "Kalamunda",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50606,
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50607,
+    "SA3 name": "South Perth",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50701,
+    "SA3 name": "Cockburn",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50702,
+    "SA3 name": "Fremantle",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50703,
+    "SA3 name": "Kwinana",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 50704,
+    "SA3 name": "Melville",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 50705,
+    "SA3 name": "Rockingham",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 50901,
+    "SA3 name": "Albany",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 50902,
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 50903,
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 51001,
+    "SA3 name": "Kimberley",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51002,
+    "SA3 name": "East Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51003,
+    "SA3 name": "West Pilbara",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51101,
+    "SA3 name": "Esperance",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51102,
+    "SA3 name": "Gascoyne",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51103,
+    "SA3 name": "Goldfields",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 51104,
+    "SA3 name": "Mid West",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 6,
+    "SA3 name": "Remote (incl. very remote)",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 60101,
+    "SA3 name": "Brighton",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60102,
+    "SA3 name": "Hobart - North East",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60103,
+    "SA3 name": "Hobart - North West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60104,
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60105,
+    "SA3 name": "Hobart Inner",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60106,
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60201,
+    "SA3 name": "Launceston",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60202,
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60203,
+    "SA3 name": "North East",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60301,
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60302,
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60303,
+    "SA3 name": "South East Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60401,
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 60402,
+    "SA3 name": "Devonport",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 60403,
+    "SA3 name": "West Coast",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70101,
+    "SA3 name": "Darwin City",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70102,
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70103,
+    "SA3 name": "Litchfield",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70104,
+    "SA3 name": "Palmerston",
+    "SA3 group": "Outer regional"
+  },
+  {
+    "SA3 code": 70201,
+    "SA3 name": "Alice Springs",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70202,
+    "SA3 name": "Barkly",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70203,
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70204,
+    "SA3 name": "East Arnhem",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 70205,
+    "SA3 name": "Katherine",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 80101,
+    "SA3 name": "Belconnen",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80103,
+    "SA3 name": "Canberra East",
+    "SA3 group": "Major cities - lower SES"
+  },
+  {
+    "SA3 code": 80104,
+    "SA3 name": "Gungahlin",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80105,
+    "SA3 name": "North Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80106,
+    "SA3 name": "South Canberra",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80107,
+    "SA3 name": "Tuggeranong",
+    "SA3 group": "Major cities - medium SES"
+  },
+  {
+    "SA3 code": 80108,
+    "SA3 name": "Weston Creek",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80109,
+    "SA3 name": "Woden Valley",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80110,
+    "SA3 name": "Molonglo",
+    "SA3 group": "Major cities - higher SES"
+  },
+  {
+    "SA3 code": 80111,
+    "SA3 name": "Urriarra - Namadgi",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90101,
+    "SA3 name": "Christmas Island",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90102,
+    "SA3 name": "Cocos (Keeling) Islands",
+    "SA3 group": "Remote (incl. very remote)"
+  },
+  {
+    "SA3 code": 90103,
+    "SA3 name": "Jervis Bay",
+    "SA3 group": "Inner regional"
+  },
+  {
+    "SA3 code": 90104,
+    "SA3 name": "Norfolk Island",
+    "SA3 group": "Remote (incl. very remote)"
+  }
+]

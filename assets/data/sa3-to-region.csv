@@ -1,0 +1,1736 @@
+﻿SA3 code,SA3 name,SA3 group
+0,National,National
+1,Major cities - higher SES,Major cities - higher SES
+10102,Queanbeyan,Major cities - higher SES
+10103,Snowy Mountains,Outer regional
+10104,South Coast,Outer regional
+10105,Goulburn - Mulwaree,Inner regional
+10106,Young - Yass,Inner regional
+10201,Gosford,Major cities - medium SES
+10202,Wyong,Major cities - lower SES
+10301,Bathurst,Inner regional
+10302,Lachlan Valley,Outer regional
+10303,Lithgow - Mudgee,Inner regional
+10304,Orange,Inner regional
+10401,Clarence Valley,Inner regional
+10402,Coffs Harbour,Inner regional
+10501,Bourke - Cobar - Coonamble,Remote (incl. very remote)
+10502,Broken Hill and Far West,Remote (incl. very remote)
+10503,Dubbo,Inner regional
+10601,Lower Hunter,Inner regional
+10602,Maitland,Major cities - lower SES
+10603,Port Stephens,Inner regional
+10604,Upper Hunter,Inner regional
+10701,Dapto - Port Kembla,Major cities - lower SES
+10702,Illawarra Catchment Reserve,Ungrouped
+10703,Kiama - Shellharbour,Major cities - medium SES
+10704,Wollongong,Major cities - lower SES
+10801,Great Lakes,Inner regional
+10802,Kempsey - Nambucca,Outer regional
+10803,Lord Howe Island,Remote (incl. very remote)
+10804,Port Macquarie,Inner regional
+10805,Taree - Gloucester,Inner regional
+10901,Albury,Inner regional
+10902,Lower Murray,Outer regional
+10903,Upper Murray exc. Albury,Inner regional
+11001,Armidale,Inner regional
+11002,Inverell - Tenterfield,Outer regional
+11003,Moree - Narrabri,Outer regional
+11004,Tamworth - Gunnedah,Inner regional
+11101,Lake Macquarie - East,Major cities - medium SES
+11102,Lake Macquarie - West,Major cities - lower SES
+11103,Newcastle,Major cities - lower SES
+11201,Richmond Valley - Coastal,Inner regional
+11202,Richmond Valley - Hinterland,Inner regional
+11203,Tweed Valley,Major cities - lower SES
+11301,Griffith - Murrumbidgee (West),Outer regional
+11302,Tumut - Tumbarumba,Inner regional
+11303,Wagga Wagga,Inner regional
+11401,Shoalhaven,Inner regional
+11402,Southern Highlands,Inner regional
+11501,Baulkham Hills,Major cities - higher SES
+11502,Dural - Wisemans Ferry,Major cities - higher SES
+11503,Hawkesbury,Inner regional
+11504,Rouse Hill - McGraths Hill,Major cities - higher SES
+11601,Blacktown,Major cities - lower SES
+11602,Blacktown - North,Major cities - higher SES
+11603,Mount Druitt,Major cities - lower SES
+11701,Botany,Major cities - medium SES
+11702,Marrickville - Sydenham - Petersham,Major cities - medium SES
+11703,Sydney Inner City,Major cities - higher SES
+11801,Eastern Suburbs - North,Major cities - higher SES
+11802,Eastern Suburbs - South,Major cities - higher SES
+11901,Bankstown,Major cities - lower SES
+11902,Canterbury,Major cities - lower SES
+11903,Hurstville,Major cities - medium SES
+11904,Kogarah - Rockdale,Major cities - medium SES
+12001,Canada Bay,Major cities - medium SES
+12002,Leichhardt,Major cities - higher SES
+12003,Strathfield - Burwood - Ashfield,Major cities - medium SES
+12101,Chatswood - Lane Cove,Major cities - higher SES
+12102,Hornsby,Major cities - higher SES
+12103,Ku-ring-gai,Major cities - higher SES
+12104,North Sydney - Mosman,Major cities - higher SES
+12201,Manly,Major cities - higher SES
+12202,Pittwater,Major cities - higher SES
+12203,Warringah,Major cities - higher SES
+12301,Camden,Major cities - medium SES
+12302,Campbelltown (NSW),Major cities - lower SES
+12303,Wollondilly,Inner regional
+12401,Blue Mountains,Major cities - medium SES
+12402,Blue Mountains - South,Ungrouped
+12403,Penrith,Major cities - medium SES
+12404,Richmond - Windsor,Major cities - medium SES
+12405,St Marys,Major cities - lower SES
+12501,Auburn,Major cities - lower SES
+12502,Carlingford,Major cities - medium SES
+12503,Merrylands - Guildford,Major cities - lower SES
+12504,Parramatta,Major cities - medium SES
+12601,Pennant Hills - Epping,Major cities - higher SES
+12602,Ryde - Hunters Hill,Major cities - medium SES
+12701,Bringelly - Green Valley,Major cities - lower SES
+12702,Fairfield,Major cities - lower SES
+12703,Liverpool,Major cities - lower SES
+12801,Cronulla - Miranda - Caringbah,Major cities - higher SES
+12802,Sutherland - Menai - Heathcote,Major cities - higher SES
+2,Major cities - medium SES,Major cities - medium SES
+20101,Ballarat,Inner regional
+20102,Creswick - Daylesford - Ballan,Inner regional
+20103,Maryborough - Pyrenees,Inner regional
+20201,Bendigo,Inner regional
+20202,Heathcote - Castlemaine - Kyneton,Inner regional
+20203,Loddon - Elmore,Inner regional
+20301,Barwon - West,Inner regional
+20302,Geelong,Major cities - lower SES
+20303,Surf Coast - Bellarine Peninsula,Inner regional
+20401,Upper Goulburn Valley,Inner regional
+20402,Wangaratta - Benalla,Inner regional
+20403,Wodonga - Alpine,Inner regional
+20501,Baw Baw,Inner regional
+20502,Gippsland - East,Outer regional
+20503,Gippsland - South West,Inner regional
+20504,Latrobe Valley,Inner regional
+20505,Wellington,Inner regional
+20601,Brunswick - Coburg,Major cities - medium SES
+20602,Darebin - South,Major cities - medium SES
+20603,Essendon,Major cities - medium SES
+20604,Melbourne City,Major cities - higher SES
+20605,Port Phillip,Major cities - higher SES
+20606,Stonnington - West,Major cities - higher SES
+20607,Yarra,Major cities - higher SES
+20701,Boroondara,Major cities - higher SES
+20702,Manningham - West,Major cities - medium SES
+20703,Whitehorse - West,Major cities - medium SES
+20801,Bayside,Major cities - higher SES
+20802,Glen Eira,Major cities - medium SES
+20803,Kingston,Major cities - medium SES
+20804,Stonnington - East,Major cities - higher SES
+20901,Banyule,Major cities - medium SES
+20902,Darebin - North,Major cities - lower SES
+20903,Nillumbik - Kinglake,Major cities - higher SES
+20904,Whittlesea - Wallan,Major cities - lower SES
+21001,Keilor,Major cities - medium SES
+21002,Macedon Ranges,Inner regional
+21003,Moreland - North,Major cities - lower SES
+21004,Sunbury,Major cities - medium SES
+21005,Tullamarine - Broadmeadows,Major cities - lower SES
+21101,Knox,Major cities - medium SES
+21102,Manningham - East,Major cities - higher SES
+21103,Maroondah,Major cities - medium SES
+21104,Whitehorse - East,Major cities - medium SES
+21105,Yarra Ranges,Major cities - medium SES
+21201,Cardinia,Major cities - medium SES
+21202,Casey - North,Major cities - medium SES
+21203,Casey - South,Major cities - lower SES
+21204,Dandenong,Major cities - lower SES
+21205,Monash,Major cities - medium SES
+21301,Brimbank,Major cities - lower SES
+21302,Hobsons Bay,Major cities - medium SES
+21303,Maribyrnong,Major cities - medium SES
+21304,Melton - Bacchus Marsh,Major cities - medium SES
+21305,Wyndham,Major cities - medium SES
+21401,Frankston,Major cities - lower SES
+21402,Mornington Peninsula,Major cities - medium SES
+21501,Grampians,Outer regional
+21502,Mildura,Outer regional
+21503,Murray River - Swan Hill,Outer regional
+21601,Campaspe,Inner regional
+21602,Moira,Inner regional
+21603,Shepparton,Inner regional
+21701,Glenelg - Southern Grampians,Outer regional
+21703,Colac - Corangamite,Inner regional
+21704,Warrnambool,Inner regional
+3,Major cities - lower SES,Major cities - lower SES
+30101,Capalaba,Major cities - medium SES
+30102,Cleveland - Stradbroke,Major cities - medium SES
+30103,Wynnum - Manly,Major cities - medium SES
+30201,Bald Hills - Everton Park,Major cities - higher SES
+30202,Chermside,Major cities - medium SES
+30203,Nundah,Major cities - medium SES
+30204,Sandgate,Major cities - medium SES
+30301,Carindale,Major cities - higher SES
+30302,Holland Park - Yeronga,Major cities - medium SES
+30303,Mt Gravatt,Major cities - medium SES
+30304,Nathan,Major cities - medium SES
+30305,Rocklea - Acacia Ridge,Major cities - medium SES
+30306,Sunnybank,Major cities - medium SES
+30401,Centenary,Major cities - higher SES
+30402,Kenmore - Brookfield - Moggill,Major cities - higher SES
+30403,Sherwood - Indooroopilly,Major cities - higher SES
+30404,The Gap - Enoggera,Major cities - higher SES
+30501,Brisbane Inner,Major cities - medium SES
+30502,Brisbane Inner - East,Major cities - higher SES
+30503,Brisbane Inner - North,Major cities - higher SES
+30504,Brisbane Inner - West,Major cities - higher SES
+30601,Cairns - North,Outer regional
+30602,Cairns - South,Outer regional
+30603,Innisfail - Cassowary Coast,Outer regional
+30604,Port Douglas - Daintree,Outer regional
+30605,Tablelands (East) - Kuranda,Outer regional
+30701,Darling Downs (West) - Maranoa,Outer regional
+30702,Darling Downs - East,Inner regional
+30703,Granite Belt,Inner regional
+30801,Central Highlands (Qld),Outer regional
+30803,Rockhampton,Inner regional
+30804,Biloela,Outer regional
+30805,Gladstone,Inner regional
+30901,Broadbeach - Burleigh,Major cities - medium SES
+30902,Coolangatta,Major cities - medium SES
+30903,Gold Coast - North,Major cities - lower SES
+30904,Gold Coast Hinterland,Inner regional
+30905,Mudgeeraba - Tallebudgera,Major cities - medium SES
+30906,Nerang,Major cities - medium SES
+30907,Ormeau - Oxenford,Major cities - medium SES
+30908,Robina,Major cities - medium SES
+30909,Southport,Major cities - medium SES
+30910,Surfers Paradise,Major cities - medium SES
+31001,Forest Lake - Oxley,Major cities - lower SES
+31002,Ipswich Hinterland,Inner regional
+31003,Ipswich Inner,Major cities - lower SES
+31004,Springfield - Redbank,Major cities - lower SES
+31101,Beaudesert,Inner regional
+31102,Beenleigh,Major cities - lower SES
+31103,Browns Plains,Major cities - lower SES
+31104,Jimboomba,Major cities - medium SES
+31105,Loganlea - Carbrook,Major cities - medium SES
+31106,Springwood - Kingston,Major cities - lower SES
+31201,Bowen Basin - North,Outer regional
+31202,Mackay,Inner regional
+31203,Whitsunday,Outer regional
+31301,Bribie - Beachmere,Inner regional
+31302,Caboolture,Major cities - lower SES
+31303,Caboolture Hinterland,Inner regional
+31304,Narangba - Burpengary,Major cities - medium SES
+31305,Redcliffe,Major cities - lower SES
+31401,The Hills District,Major cities - higher SES
+31402,North Lakes,Major cities - medium SES
+31403,Strathpine,Major cities - medium SES
+31501,Far North,Remote (incl. very remote)
+31502,Outback - North,Remote (incl. very remote)
+31503,Outback - South,Remote (incl. very remote)
+31601,Buderim,Major cities - medium SES
+31602,Caloundra,Major cities - medium SES
+31603,Maroochy,Major cities - medium SES
+31605,Noosa,Major cities - medium SES
+31606,Sunshine Coast Hinterland,Inner regional
+31607,Nambour,Major cities - medium SES
+31608,Noosa Hinterland,Inner regional
+31701,Toowoomba,Inner regional
+31801,Charters Towers - Ayr - Ingham,Outer regional
+31802,Townsville,Outer regional
+31901,Bundaberg,Inner regional
+31902,Burnett,Inner regional
+31903,Gympie - Cooloola,Inner regional
+31904,Hervey Bay,Inner regional
+31905,Maryborough,Inner regional
+4,Inner regional,Inner regional
+40101,Adelaide City,Major cities - medium SES
+40102,Adelaide Hills,Inner regional
+40103,Burnside,Major cities - higher SES
+40104,Campbelltown (SA),Major cities - medium SES
+40105,Norwood - Payneham - St Peters,Major cities - medium SES
+40106,Prospect - Walkerville,Major cities - medium SES
+40107,Unley,Major cities - medium SES
+40201,Gawler - Two Wells,Major cities - lower SES
+40202,Playford,Major cities - lower SES
+40203,Port Adelaide - East,Major cities - lower SES
+40204,Salisbury,Major cities - lower SES
+40205,Tea Tree Gully,Major cities - medium SES
+40301,Holdfast Bay,Major cities - medium SES
+40302,Marion,Major cities - medium SES
+40303,Mitcham,Major cities - higher SES
+40304,Onkaparinga,Major cities - lower SES
+40401,Charles Sturt,Major cities - lower SES
+40402,Port Adelaide - West,Major cities - lower SES
+40403,West Torrens,Major cities - medium SES
+40501,Barossa,Inner regional
+40502,Lower North,Inner regional
+40503,Mid North,Outer regional
+40504,Yorke Peninsula,Outer regional
+40601,Eyre Peninsula and South West,Remote (incl. very remote)
+40602,Outback - North and East,Remote (incl. very remote)
+40701,Fleurieu - Kangaroo Island,Inner regional
+40702,Limestone Coast,Outer regional
+40703,Murray and Mallee,Outer regional
+5,Outer regional,Outer regional
+50101,Augusta - Margaret River - Busselton,Inner regional
+50102,Bunbury,Inner regional
+50103,Manjimup,Outer regional
+50201,Mandurah,Major cities - lower SES
+50301,Cottesloe - Claremont,Major cities - higher SES
+50302,Perth City,Major cities - higher SES
+50401,Bayswater - Bassendean,Major cities - medium SES
+50402,Mundaring,Major cities - medium SES
+50403,Swan,Major cities - medium SES
+50501,Joondalup,Major cities - medium SES
+50502,Stirling,Major cities - medium SES
+50503,Wanneroo,Major cities - medium SES
+50601,Armadale,Major cities - lower SES
+50602,Belmont - Victoria Park,Major cities - medium SES
+50603,Canning,Major cities - medium SES
+50604,Gosnells,Major cities - lower SES
+50605,Kalamunda,Major cities - medium SES
+50606,Serpentine - Jarrahdale,Major cities - medium SES
+50607,South Perth,Major cities - medium SES
+50701,Cockburn,Major cities - medium SES
+50702,Fremantle,Major cities - medium SES
+50703,Kwinana,Major cities - lower SES
+50704,Melville,Major cities - higher SES
+50705,Rockingham,Major cities - medium SES
+50901,Albany,Outer regional
+50902,Wheat Belt - North,Inner regional
+50903,Wheat Belt - South,Outer regional
+51001,Kimberley,Remote (incl. very remote)
+51002,East Pilbara,Remote (incl. very remote)
+51003,West Pilbara,Remote (incl. very remote)
+51101,Esperance,Remote (incl. very remote)
+51102,Gascoyne,Remote (incl. very remote)
+51103,Goldfields,Remote (incl. very remote)
+51104,Mid West,Remote (incl. very remote)
+6,Remote (incl. very remote),Remote (incl. very remote)
+60101,Brighton,Inner regional
+60102,Hobart - North East,Inner regional
+60103,Hobart - North West,Inner regional
+60104,Hobart - South and West,Inner regional
+60105,Hobart Inner,Inner regional
+60106,Sorell - Dodges Ferry,Inner regional
+60201,Launceston,Inner regional
+60202,Meander Valley - West Tamar,Outer regional
+60203,North East,Outer regional
+60301,Central Highlands (Tas.),Outer regional
+60302,Huon - Bruny Island,Outer regional
+60303,South East Coast,Outer regional
+60401,Burnie - Ulverstone,Outer regional
+60402,Devonport,Inner regional
+60403,West Coast,Outer regional
+70101,Darwin City,Outer regional
+70102,Darwin Suburbs,Outer regional
+70103,Litchfield,Outer regional
+70104,Palmerston,Outer regional
+70201,Alice Springs,Remote (incl. very remote)
+70202,Barkly,Remote (incl. very remote)
+70203,Daly - Tiwi - West Arnhem,Remote (incl. very remote)
+70204,East Arnhem,Remote (incl. very remote)
+70205,Katherine,Remote (incl. very remote)
+80101,Belconnen,Major cities - medium SES
+80103,Canberra East,Major cities - lower SES
+80104,Gungahlin,Major cities - higher SES
+80105,North Canberra,Major cities - higher SES
+80106,South Canberra,Major cities - higher SES
+80107,Tuggeranong,Major cities - medium SES
+80108,Weston Creek,Major cities - higher SES
+80109,Woden Valley,Major cities - higher SES
+80110,Molonglo,Major cities - higher SES
+80111,Urriarra - Namadgi,Inner regional
+90101,Christmas Island,Remote (incl. very remote)
+90102,Cocos (Keeling) Islands,Remote (incl. very remote)
+90103,Jervis Bay,Inner regional
+90104,Norfolk Island,Remote (incl. very remote)
+0,National,National
+1,Major cities - higher SES,Major cities - higher SES
+10102,Queanbeyan,Major cities - higher SES
+10103,Snowy Mountains,Outer regional
+10104,South Coast,Outer regional
+10105,Goulburn - Mulwaree,Inner regional
+10106,Young - Yass,Inner regional
+10201,Gosford,Major cities - medium SES
+10202,Wyong,Major cities - lower SES
+10301,Bathurst,Inner regional
+10302,Lachlan Valley,Outer regional
+10303,Lithgow - Mudgee,Inner regional
+10304,Orange,Inner regional
+10401,Clarence Valley,Inner regional
+10402,Coffs Harbour,Inner regional
+10501,Bourke - Cobar - Coonamble,Remote (incl. very remote)
+10502,Broken Hill and Far West,Remote (incl. very remote)
+10503,Dubbo,Inner regional
+10601,Lower Hunter,Inner regional
+10602,Maitland,Major cities - lower SES
+10603,Port Stephens,Inner regional
+10604,Upper Hunter,Inner regional
+10701,Dapto - Port Kembla,Major cities - lower SES
+10702,Illawarra Catchment Reserve,Ungrouped
+10703,Kiama - Shellharbour,Major cities - medium SES
+10704,Wollongong,Major cities - lower SES
+10801,Great Lakes,Inner regional
+10802,Kempsey - Nambucca,Outer regional
+10803,Lord Howe Island,Remote (incl. very remote)
+10804,Port Macquarie,Inner regional
+10805,Taree - Gloucester,Inner regional
+10901,Albury,Inner regional
+10902,Lower Murray,Outer regional
+10903,Upper Murray exc. Albury,Inner regional
+11001,Armidale,Inner regional
+11002,Inverell - Tenterfield,Outer regional
+11003,Moree - Narrabri,Outer regional
+11004,Tamworth - Gunnedah,Inner regional
+11101,Lake Macquarie - East,Major cities - medium SES
+11102,Lake Macquarie - West,Major cities - lower SES
+11103,Newcastle,Major cities - lower SES
+11201,Richmond Valley - Coastal,Inner regional
+11202,Richmond Valley - Hinterland,Inner regional
+11203,Tweed Valley,Major cities - lower SES
+11301,Griffith - Murrumbidgee (West),Outer regional
+11302,Tumut - Tumbarumba,Inner regional
+11303,Wagga Wagga,Inner regional
+11401,Shoalhaven,Inner regional
+11402,Southern Highlands,Inner regional
+11501,Baulkham Hills,Major cities - higher SES
+11502,Dural - Wisemans Ferry,Major cities - higher SES
+11503,Hawkesbury,Inner regional
+11504,Rouse Hill - McGraths Hill,Major cities - higher SES
+11601,Blacktown,Major cities - lower SES
+11602,Blacktown - North,Major cities - higher SES
+11603,Mount Druitt,Major cities - lower SES
+11701,Botany,Major cities - medium SES
+11702,Marrickville - Sydenham - Petersham,Major cities - medium SES
+11703,Sydney Inner City,Major cities - higher SES
+11801,Eastern Suburbs - North,Major cities - higher SES
+11802,Eastern Suburbs - South,Major cities - higher SES
+11901,Bankstown,Major cities - lower SES
+11902,Canterbury,Major cities - lower SES
+11903,Hurstville,Major cities - medium SES
+11904,Kogarah - Rockdale,Major cities - medium SES
+12001,Canada Bay,Major cities - medium SES
+12002,Leichhardt,Major cities - higher SES
+12003,Strathfield - Burwood - Ashfield,Major cities - medium SES
+12101,Chatswood - Lane Cove,Major cities - higher SES
+12102,Hornsby,Major cities - higher SES
+12103,Ku-ring-gai,Major cities - higher SES
+12104,North Sydney - Mosman,Major cities - higher SES
+12201,Manly,Major cities - higher SES
+12202,Pittwater,Major cities - higher SES
+12203,Warringah,Major cities - higher SES
+12301,Camden,Major cities - medium SES
+12302,Campbelltown (NSW),Major cities - lower SES
+12303,Wollondilly,Inner regional
+12401,Blue Mountains,Major cities - medium SES
+12402,Blue Mountains - South,Ungrouped
+12403,Penrith,Major cities - medium SES
+12404,Richmond - Windsor,Major cities - medium SES
+12405,St Marys,Major cities - lower SES
+12501,Auburn,Major cities - lower SES
+12502,Carlingford,Major cities - medium SES
+12503,Merrylands - Guildford,Major cities - lower SES
+12504,Parramatta,Major cities - medium SES
+12601,Pennant Hills - Epping,Major cities - higher SES
+12602,Ryde - Hunters Hill,Major cities - medium SES
+12701,Bringelly - Green Valley,Major cities - lower SES
+12702,Fairfield,Major cities - lower SES
+12703,Liverpool,Major cities - lower SES
+12801,Cronulla - Miranda - Caringbah,Major cities - higher SES
+12802,Sutherland - Menai - Heathcote,Major cities - higher SES
+2,Major cities - medium SES,Major cities - medium SES
+20101,Ballarat,Inner regional
+20102,Creswick - Daylesford - Ballan,Inner regional
+20103,Maryborough - Pyrenees,Inner regional
+20201,Bendigo,Inner regional
+20202,Heathcote - Castlemaine - Kyneton,Inner regional
+20203,Loddon - Elmore,Inner regional
+20301,Barwon - West,Inner regional
+20302,Geelong,Major cities - lower SES
+20303,Surf Coast - Bellarine Peninsula,Inner regional
+20401,Upper Goulburn Valley,Inner regional
+20402,Wangaratta - Benalla,Inner regional
+20403,Wodonga - Alpine,Inner regional
+20501,Baw Baw,Inner regional
+20502,Gippsland - East,Outer regional
+20503,Gippsland - South West,Inner regional
+20504,Latrobe Valley,Inner regional
+20505,Wellington,Inner regional
+20601,Brunswick - Coburg,Major cities - medium SES
+20602,Darebin - South,Major cities - medium SES
+20603,Essendon,Major cities - medium SES
+20604,Melbourne City,Major cities - higher SES
+20605,Port Phillip,Major cities - higher SES
+20606,Stonnington - West,Major cities - higher SES
+20607,Yarra,Major cities - higher SES
+20701,Boroondara,Major cities - higher SES
+20702,Manningham - West,Major cities - medium SES
+20703,Whitehorse - West,Major cities - medium SES
+20801,Bayside,Major cities - higher SES
+20802,Glen Eira,Major cities - medium SES
+20803,Kingston,Major cities - medium SES
+20804,Stonnington - East,Major cities - higher SES
+20901,Banyule,Major cities - medium SES
+20902,Darebin - North,Major cities - lower SES
+20903,Nillumbik - Kinglake,Major cities - higher SES
+20904,Whittlesea - Wallan,Major cities - lower SES
+21001,Keilor,Major cities - medium SES
+21002,Macedon Ranges,Inner regional
+21003,Moreland - North,Major cities - lower SES
+21004,Sunbury,Major cities - medium SES
+21005,Tullamarine - Broadmeadows,Major cities - lower SES
+21101,Knox,Major cities - medium SES
+21102,Manningham - East,Major cities - higher SES
+21103,Maroondah,Major cities - medium SES
+21104,Whitehorse - East,Major cities - medium SES
+21105,Yarra Ranges,Major cities - medium SES
+21201,Cardinia,Major cities - medium SES
+21202,Casey - North,Major cities - medium SES
+21203,Casey - South,Major cities - lower SES
+21204,Dandenong,Major cities - lower SES
+21205,Monash,Major cities - medium SES
+21301,Brimbank,Major cities - lower SES
+21302,Hobsons Bay,Major cities - medium SES
+21303,Maribyrnong,Major cities - medium SES
+21304,Melton - Bacchus Marsh,Major cities - medium SES
+21305,Wyndham,Major cities - medium SES
+21401,Frankston,Major cities - lower SES
+21402,Mornington Peninsula,Major cities - medium SES
+21501,Grampians,Outer regional
+21502,Mildura,Outer regional
+21503,Murray River - Swan Hill,Outer regional
+21601,Campaspe,Inner regional
+21602,Moira,Inner regional
+21603,Shepparton,Inner regional
+21701,Glenelg - Southern Grampians,Outer regional
+21703,Colac - Corangamite,Inner regional
+21704,Warrnambool,Inner regional
+3,Major cities - lower SES,Major cities - lower SES
+30101,Capalaba,Major cities - medium SES
+30102,Cleveland - Stradbroke,Major cities - medium SES
+30103,Wynnum - Manly,Major cities - medium SES
+30201,Bald Hills - Everton Park,Major cities - higher SES
+30202,Chermside,Major cities - medium SES
+30203,Nundah,Major cities - medium SES
+30204,Sandgate,Major cities - medium SES
+30301,Carindale,Major cities - higher SES
+30302,Holland Park - Yeronga,Major cities - medium SES
+30303,Mt Gravatt,Major cities - medium SES
+30304,Nathan,Major cities - medium SES
+30305,Rocklea - Acacia Ridge,Major cities - medium SES
+30306,Sunnybank,Major cities - medium SES
+30401,Centenary,Major cities - higher SES
+30402,Kenmore - Brookfield - Moggill,Major cities - higher SES
+30403,Sherwood - Indooroopilly,Major cities - higher SES
+30404,The Gap - Enoggera,Major cities - higher SES
+30501,Brisbane Inner,Major cities - medium SES
+30502,Brisbane Inner - East,Major cities - higher SES
+30503,Brisbane Inner - North,Major cities - higher SES
+30504,Brisbane Inner - West,Major cities - higher SES
+30601,Cairns - North,Outer regional
+30602,Cairns - South,Outer regional
+30603,Innisfail - Cassowary Coast,Outer regional
+30604,Port Douglas - Daintree,Outer regional
+30605,Tablelands (East) - Kuranda,Outer regional
+30701,Darling Downs (West) - Maranoa,Outer regional
+30702,Darling Downs - East,Inner regional
+30703,Granite Belt,Inner regional
+30801,Central Highlands (Qld),Outer regional
+30803,Rockhampton,Inner regional
+30804,Biloela,Outer regional
+30805,Gladstone,Inner regional
+30901,Broadbeach - Burleigh,Major cities - medium SES
+30902,Coolangatta,Major cities - medium SES
+30903,Gold Coast - North,Major cities - lower SES
+30904,Gold Coast Hinterland,Inner regional
+30905,Mudgeeraba - Tallebudgera,Major cities - medium SES
+30906,Nerang,Major cities - medium SES
+30907,Ormeau - Oxenford,Major cities - medium SES
+30908,Robina,Major cities - medium SES
+30909,Southport,Major cities - medium SES
+30910,Surfers Paradise,Major cities - medium SES
+31001,Forest Lake - Oxley,Major cities - lower SES
+31002,Ipswich Hinterland,Inner regional
+31003,Ipswich Inner,Major cities - lower SES
+31004,Springfield - Redbank,Major cities - lower SES
+31101,Beaudesert,Inner regional
+31102,Beenleigh,Major cities - lower SES
+31103,Browns Plains,Major cities - lower SES
+31104,Jimboomba,Major cities - medium SES
+31105,Loganlea - Carbrook,Major cities - medium SES
+31106,Springwood - Kingston,Major cities - lower SES
+31201,Bowen Basin - North,Outer regional
+31202,Mackay,Inner regional
+31203,Whitsunday,Outer regional
+31301,Bribie - Beachmere,Inner regional
+31302,Caboolture,Major cities - lower SES
+31303,Caboolture Hinterland,Inner regional
+31304,Narangba - Burpengary,Major cities - medium SES
+31305,Redcliffe,Major cities - lower SES
+31401,The Hills District,Major cities - higher SES
+31402,North Lakes,Major cities - medium SES
+31403,Strathpine,Major cities - medium SES
+31501,Far North,Remote (incl. very remote)
+31502,Outback - North,Remote (incl. very remote)
+31503,Outback - South,Remote (incl. very remote)
+31601,Buderim,Major cities - medium SES
+31602,Caloundra,Major cities - medium SES
+31603,Maroochy,Major cities - medium SES
+31605,Noosa,Major cities - medium SES
+31606,Sunshine Coast Hinterland,Inner regional
+31607,Nambour,Major cities - medium SES
+31608,Noosa Hinterland,Inner regional
+31701,Toowoomba,Inner regional
+31801,Charters Towers - Ayr - Ingham,Outer regional
+31802,Townsville,Outer regional
+31901,Bundaberg,Inner regional
+31902,Burnett,Inner regional
+31903,Gympie - Cooloola,Inner regional
+31904,Hervey Bay,Inner regional
+31905,Maryborough,Inner regional
+4,Inner regional,Inner regional
+40101,Adelaide City,Major cities - medium SES
+40102,Adelaide Hills,Inner regional
+40103,Burnside,Major cities - higher SES
+40104,Campbelltown (SA),Major cities - medium SES
+40105,Norwood - Payneham - St Peters,Major cities - medium SES
+40106,Prospect - Walkerville,Major cities - medium SES
+40107,Unley,Major cities - medium SES
+40201,Gawler - Two Wells,Major cities - lower SES
+40202,Playford,Major cities - lower SES
+40203,Port Adelaide - East,Major cities - lower SES
+40204,Salisbury,Major cities - lower SES
+40205,Tea Tree Gully,Major cities - medium SES
+40301,Holdfast Bay,Major cities - medium SES
+40302,Marion,Major cities - medium SES
+40303,Mitcham,Major cities - higher SES
+40304,Onkaparinga,Major cities - lower SES
+40401,Charles Sturt,Major cities - lower SES
+40402,Port Adelaide - West,Major cities - lower SES
+40403,West Torrens,Major cities - medium SES
+40501,Barossa,Inner regional
+40502,Lower North,Inner regional
+40503,Mid North,Outer regional
+40504,Yorke Peninsula,Outer regional
+40601,Eyre Peninsula and South West,Remote (incl. very remote)
+40602,Outback - North and East,Remote (incl. very remote)
+40701,Fleurieu - Kangaroo Island,Inner regional
+40702,Limestone Coast,Outer regional
+40703,Murray and Mallee,Outer regional
+5,Outer regional,Outer regional
+50101,Augusta - Margaret River - Busselton,Inner regional
+50102,Bunbury,Inner regional
+50103,Manjimup,Outer regional
+50201,Mandurah,Major cities - lower SES
+50301,Cottesloe - Claremont,Major cities - higher SES
+50302,Perth City,Major cities - higher SES
+50401,Bayswater - Bassendean,Major cities - medium SES
+50402,Mundaring,Major cities - medium SES
+50403,Swan,Major cities - medium SES
+50501,Joondalup,Major cities - medium SES
+50502,Stirling,Major cities - medium SES
+50503,Wanneroo,Major cities - medium SES
+50601,Armadale,Major cities - lower SES
+50602,Belmont - Victoria Park,Major cities - medium SES
+50603,Canning,Major cities - medium SES
+50604,Gosnells,Major cities - lower SES
+50605,Kalamunda,Major cities - medium SES
+50606,Serpentine - Jarrahdale,Major cities - medium SES
+50607,South Perth,Major cities - medium SES
+50701,Cockburn,Major cities - medium SES
+50702,Fremantle,Major cities - medium SES
+50703,Kwinana,Major cities - lower SES
+50704,Melville,Major cities - higher SES
+50705,Rockingham,Major cities - medium SES
+50901,Albany,Outer regional
+50902,Wheat Belt - North,Inner regional
+50903,Wheat Belt - South,Outer regional
+51001,Kimberley,Remote (incl. very remote)
+51002,East Pilbara,Remote (incl. very remote)
+51003,West Pilbara,Remote (incl. very remote)
+51101,Esperance,Remote (incl. very remote)
+51102,Gascoyne,Remote (incl. very remote)
+51103,Goldfields,Remote (incl. very remote)
+51104,Mid West,Remote (incl. very remote)
+6,Remote (incl. very remote),Remote (incl. very remote)
+60101,Brighton,Inner regional
+60102,Hobart - North East,Inner regional
+60103,Hobart - North West,Inner regional
+60104,Hobart - South and West,Inner regional
+60105,Hobart Inner,Inner regional
+60106,Sorell - Dodges Ferry,Inner regional
+60201,Launceston,Inner regional
+60202,Meander Valley - West Tamar,Outer regional
+60203,North East,Outer regional
+60301,Central Highlands (Tas.),Outer regional
+60302,Huon - Bruny Island,Outer regional
+60303,South East Coast,Outer regional
+60401,Burnie - Ulverstone,Outer regional
+60402,Devonport,Inner regional
+60403,West Coast,Outer regional
+70101,Darwin City,Outer regional
+70102,Darwin Suburbs,Outer regional
+70103,Litchfield,Outer regional
+70104,Palmerston,Outer regional
+70201,Alice Springs,Remote (incl. very remote)
+70202,Barkly,Remote (incl. very remote)
+70203,Daly - Tiwi - West Arnhem,Remote (incl. very remote)
+70204,East Arnhem,Remote (incl. very remote)
+70205,Katherine,Remote (incl. very remote)
+80101,Belconnen,Major cities - medium SES
+80103,Canberra East,Major cities - lower SES
+80104,Gungahlin,Major cities - higher SES
+80105,North Canberra,Major cities - higher SES
+80106,South Canberra,Major cities - higher SES
+80107,Tuggeranong,Major cities - medium SES
+80108,Weston Creek,Major cities - higher SES
+80109,Woden Valley,Major cities - higher SES
+80110,Molonglo,Major cities - higher SES
+80111,Urriarra - Namadgi,Inner regional
+90101,Christmas Island,Remote (incl. very remote)
+90102,Cocos (Keeling) Islands,Remote (incl. very remote)
+90103,Jervis Bay,Inner regional
+90104,Norfolk Island,Remote (incl. very remote)
+0,National,National
+1,Major cities - higher SES,Major cities - higher SES
+10102,Queanbeyan,Major cities - higher SES
+10103,Snowy Mountains,Outer regional
+10104,South Coast,Outer regional
+10105,Goulburn - Mulwaree,Inner regional
+10106,Young - Yass,Inner regional
+10201,Gosford,Major cities - medium SES
+10202,Wyong,Major cities - lower SES
+10301,Bathurst,Inner regional
+10302,Lachlan Valley,Outer regional
+10303,Lithgow - Mudgee,Inner regional
+10304,Orange,Inner regional
+10401,Clarence Valley,Inner regional
+10402,Coffs Harbour,Inner regional
+10501,Bourke - Cobar - Coonamble,Remote (incl. very remote)
+10502,Broken Hill and Far West,Remote (incl. very remote)
+10503,Dubbo,Inner regional
+10601,Lower Hunter,Inner regional
+10602,Maitland,Major cities - lower SES
+10603,Port Stephens,Inner regional
+10604,Upper Hunter,Inner regional
+10701,Dapto - Port Kembla,Major cities - lower SES
+10702,Illawarra Catchment Reserve,Ungrouped
+10703,Kiama - Shellharbour,Major cities - medium SES
+10704,Wollongong,Major cities - lower SES
+10801,Great Lakes,Inner regional
+10802,Kempsey - Nambucca,Outer regional
+10803,Lord Howe Island,Remote (incl. very remote)
+10804,Port Macquarie,Inner regional
+10805,Taree - Gloucester,Inner regional
+10901,Albury,Inner regional
+10902,Lower Murray,Outer regional
+10903,Upper Murray exc. Albury,Inner regional
+11001,Armidale,Inner regional
+11002,Inverell - Tenterfield,Outer regional
+11003,Moree - Narrabri,Outer regional
+11004,Tamworth - Gunnedah,Inner regional
+11101,Lake Macquarie - East,Major cities - medium SES
+11102,Lake Macquarie - West,Major cities - lower SES
+11103,Newcastle,Major cities - lower SES
+11201,Richmond Valley - Coastal,Inner regional
+11202,Richmond Valley - Hinterland,Inner regional
+11203,Tweed Valley,Major cities - lower SES
+11301,Griffith - Murrumbidgee (West),Outer regional
+11302,Tumut - Tumbarumba,Inner regional
+11303,Wagga Wagga,Inner regional
+11401,Shoalhaven,Inner regional
+11402,Southern Highlands,Inner regional
+11501,Baulkham Hills,Major cities - higher SES
+11502,Dural - Wisemans Ferry,Major cities - higher SES
+11503,Hawkesbury,Inner regional
+11504,Rouse Hill - McGraths Hill,Major cities - higher SES
+11601,Blacktown,Major cities - lower SES
+11602,Blacktown - North,Major cities - higher SES
+11603,Mount Druitt,Major cities - lower SES
+11701,Botany,Major cities - medium SES
+11702,Marrickville - Sydenham - Petersham,Major cities - medium SES
+11703,Sydney Inner City,Major cities - higher SES
+11801,Eastern Suburbs - North,Major cities - higher SES
+11802,Eastern Suburbs - South,Major cities - higher SES
+11901,Bankstown,Major cities - lower SES
+11902,Canterbury,Major cities - lower SES
+11903,Hurstville,Major cities - medium SES
+11904,Kogarah - Rockdale,Major cities - medium SES
+12001,Canada Bay,Major cities - medium SES
+12002,Leichhardt,Major cities - higher SES
+12003,Strathfield - Burwood - Ashfield,Major cities - medium SES
+12101,Chatswood - Lane Cove,Major cities - higher SES
+12102,Hornsby,Major cities - higher SES
+12103,Ku-ring-gai,Major cities - higher SES
+12104,North Sydney - Mosman,Major cities - higher SES
+12201,Manly,Major cities - higher SES
+12202,Pittwater,Major cities - higher SES
+12203,Warringah,Major cities - higher SES
+12301,Camden,Major cities - medium SES
+12302,Campbelltown (NSW),Major cities - lower SES
+12303,Wollondilly,Inner regional
+12401,Blue Mountains,Major cities - medium SES
+12402,Blue Mountains - South,Ungrouped
+12403,Penrith,Major cities - medium SES
+12404,Richmond - Windsor,Major cities - medium SES
+12405,St Marys,Major cities - lower SES
+12501,Auburn,Major cities - lower SES
+12502,Carlingford,Major cities - medium SES
+12503,Merrylands - Guildford,Major cities - lower SES
+12504,Parramatta,Major cities - medium SES
+12601,Pennant Hills - Epping,Major cities - higher SES
+12602,Ryde - Hunters Hill,Major cities - medium SES
+12701,Bringelly - Green Valley,Major cities - lower SES
+12702,Fairfield,Major cities - lower SES
+12703,Liverpool,Major cities - lower SES
+12801,Cronulla - Miranda - Caringbah,Major cities - higher SES
+12802,Sutherland - Menai - Heathcote,Major cities - higher SES
+2,Major cities - medium SES,Major cities - medium SES
+20101,Ballarat,Inner regional
+20102,Creswick - Daylesford - Ballan,Inner regional
+20103,Maryborough - Pyrenees,Inner regional
+20201,Bendigo,Inner regional
+20202,Heathcote - Castlemaine - Kyneton,Inner regional
+20203,Loddon - Elmore,Inner regional
+20301,Barwon - West,Inner regional
+20302,Geelong,Major cities - lower SES
+20303,Surf Coast - Bellarine Peninsula,Inner regional
+20401,Upper Goulburn Valley,Inner regional
+20402,Wangaratta - Benalla,Inner regional
+20403,Wodonga - Alpine,Inner regional
+20501,Baw Baw,Inner regional
+20502,Gippsland - East,Outer regional
+20503,Gippsland - South West,Inner regional
+20504,Latrobe Valley,Inner regional
+20505,Wellington,Inner regional
+20601,Brunswick - Coburg,Major cities - medium SES
+20602,Darebin - South,Major cities - medium SES
+20603,Essendon,Major cities - medium SES
+20604,Melbourne City,Major cities - higher SES
+20605,Port Phillip,Major cities - higher SES
+20606,Stonnington - West,Major cities - higher SES
+20607,Yarra,Major cities - higher SES
+20701,Boroondara,Major cities - higher SES
+20702,Manningham - West,Major cities - medium SES
+20703,Whitehorse - West,Major cities - medium SES
+20801,Bayside,Major cities - higher SES
+20802,Glen Eira,Major cities - medium SES
+20803,Kingston,Major cities - medium SES
+20804,Stonnington - East,Major cities - higher SES
+20901,Banyule,Major cities - medium SES
+20902,Darebin - North,Major cities - lower SES
+20903,Nillumbik - Kinglake,Major cities - higher SES
+20904,Whittlesea - Wallan,Major cities - lower SES
+21001,Keilor,Major cities - medium SES
+21002,Macedon Ranges,Inner regional
+21003,Moreland - North,Major cities - lower SES
+21004,Sunbury,Major cities - medium SES
+21005,Tullamarine - Broadmeadows,Major cities - lower SES
+21101,Knox,Major cities - medium SES
+21102,Manningham - East,Major cities - higher SES
+21103,Maroondah,Major cities - medium SES
+21104,Whitehorse - East,Major cities - medium SES
+21105,Yarra Ranges,Major cities - medium SES
+21201,Cardinia,Major cities - medium SES
+21202,Casey - North,Major cities - medium SES
+21203,Casey - South,Major cities - lower SES
+21204,Dandenong,Major cities - lower SES
+21205,Monash,Major cities - medium SES
+21301,Brimbank,Major cities - lower SES
+21302,Hobsons Bay,Major cities - medium SES
+21303,Maribyrnong,Major cities - medium SES
+21304,Melton - Bacchus Marsh,Major cities - medium SES
+21305,Wyndham,Major cities - medium SES
+21401,Frankston,Major cities - lower SES
+21402,Mornington Peninsula,Major cities - medium SES
+21501,Grampians,Outer regional
+21502,Mildura,Outer regional
+21503,Murray River - Swan Hill,Outer regional
+21601,Campaspe,Inner regional
+21602,Moira,Inner regional
+21603,Shepparton,Inner regional
+21701,Glenelg - Southern Grampians,Outer regional
+21703,Colac - Corangamite,Inner regional
+21704,Warrnambool,Inner regional
+3,Major cities - lower SES,Major cities - lower SES
+30101,Capalaba,Major cities - medium SES
+30102,Cleveland - Stradbroke,Major cities - medium SES
+30103,Wynnum - Manly,Major cities - medium SES
+30201,Bald Hills - Everton Park,Major cities - higher SES
+30202,Chermside,Major cities - medium SES
+30203,Nundah,Major cities - medium SES
+30204,Sandgate,Major cities - medium SES
+30301,Carindale,Major cities - higher SES
+30302,Holland Park - Yeronga,Major cities - medium SES
+30303,Mt Gravatt,Major cities - medium SES
+30304,Nathan,Major cities - medium SES
+30305,Rocklea - Acacia Ridge,Major cities - medium SES
+30306,Sunnybank,Major cities - medium SES
+30401,Centenary,Major cities - higher SES
+30402,Kenmore - Brookfield - Moggill,Major cities - higher SES
+30403,Sherwood - Indooroopilly,Major cities - higher SES
+30404,The Gap - Enoggera,Major cities - higher SES
+30501,Brisbane Inner,Major cities - medium SES
+30502,Brisbane Inner - East,Major cities - higher SES
+30503,Brisbane Inner - North,Major cities - higher SES
+30504,Brisbane Inner - West,Major cities - higher SES
+30601,Cairns - North,Outer regional
+30602,Cairns - South,Outer regional
+30603,Innisfail - Cassowary Coast,Outer regional
+30604,Port Douglas - Daintree,Outer regional
+30605,Tablelands (East) - Kuranda,Outer regional
+30701,Darling Downs (West) - Maranoa,Outer regional
+30702,Darling Downs - East,Inner regional
+30703,Granite Belt,Inner regional
+30801,Central Highlands (Qld),Outer regional
+30803,Rockhampton,Inner regional
+30804,Biloela,Outer regional
+30805,Gladstone,Inner regional
+30901,Broadbeach - Burleigh,Major cities - medium SES
+30902,Coolangatta,Major cities - medium SES
+30903,Gold Coast - North,Major cities - lower SES
+30904,Gold Coast Hinterland,Inner regional
+30905,Mudgeeraba - Tallebudgera,Major cities - medium SES
+30906,Nerang,Major cities - medium SES
+30907,Ormeau - Oxenford,Major cities - medium SES
+30908,Robina,Major cities - medium SES
+30909,Southport,Major cities - medium SES
+30910,Surfers Paradise,Major cities - medium SES
+31001,Forest Lake - Oxley,Major cities - lower SES
+31002,Ipswich Hinterland,Inner regional
+31003,Ipswich Inner,Major cities - lower SES
+31004,Springfield - Redbank,Major cities - lower SES
+31101,Beaudesert,Inner regional
+31102,Beenleigh,Major cities - lower SES
+31103,Browns Plains,Major cities - lower SES
+31104,Jimboomba,Major cities - medium SES
+31105,Loganlea - Carbrook,Major cities - medium SES
+31106,Springwood - Kingston,Major cities - lower SES
+31201,Bowen Basin - North,Outer regional
+31202,Mackay,Inner regional
+31203,Whitsunday,Outer regional
+31301,Bribie - Beachmere,Inner regional
+31302,Caboolture,Major cities - lower SES
+31303,Caboolture Hinterland,Inner regional
+31304,Narangba - Burpengary,Major cities - medium SES
+31305,Redcliffe,Major cities - lower SES
+31401,The Hills District,Major cities - higher SES
+31402,North Lakes,Major cities - medium SES
+31403,Strathpine,Major cities - medium SES
+31501,Far North,Remote (incl. very remote)
+31502,Outback - North,Remote (incl. very remote)
+31503,Outback - South,Remote (incl. very remote)
+31601,Buderim,Major cities - medium SES
+31602,Caloundra,Major cities - medium SES
+31603,Maroochy,Major cities - medium SES
+31605,Noosa,Major cities - medium SES
+31606,Sunshine Coast Hinterland,Inner regional
+31607,Nambour,Major cities - medium SES
+31608,Noosa Hinterland,Inner regional
+31701,Toowoomba,Inner regional
+31801,Charters Towers - Ayr - Ingham,Outer regional
+31802,Townsville,Outer regional
+31901,Bundaberg,Inner regional
+31902,Burnett,Inner regional
+31903,Gympie - Cooloola,Inner regional
+31904,Hervey Bay,Inner regional
+31905,Maryborough,Inner regional
+4,Inner regional,Inner regional
+40101,Adelaide City,Major cities - medium SES
+40102,Adelaide Hills,Inner regional
+40103,Burnside,Major cities - higher SES
+40104,Campbelltown (SA),Major cities - medium SES
+40105,Norwood - Payneham - St Peters,Major cities - medium SES
+40106,Prospect - Walkerville,Major cities - medium SES
+40107,Unley,Major cities - medium SES
+40201,Gawler - Two Wells,Major cities - lower SES
+40202,Playford,Major cities - lower SES
+40203,Port Adelaide - East,Major cities - lower SES
+40204,Salisbury,Major cities - lower SES
+40205,Tea Tree Gully,Major cities - medium SES
+40301,Holdfast Bay,Major cities - medium SES
+40302,Marion,Major cities - medium SES
+40303,Mitcham,Major cities - higher SES
+40304,Onkaparinga,Major cities - lower SES
+40401,Charles Sturt,Major cities - lower SES
+40402,Port Adelaide - West,Major cities - lower SES
+40403,West Torrens,Major cities - medium SES
+40501,Barossa,Inner regional
+40502,Lower North,Inner regional
+40503,Mid North,Outer regional
+40504,Yorke Peninsula,Outer regional
+40601,Eyre Peninsula and South West,Remote (incl. very remote)
+40602,Outback - North and East,Remote (incl. very remote)
+40701,Fleurieu - Kangaroo Island,Inner regional
+40702,Limestone Coast,Outer regional
+40703,Murray and Mallee,Outer regional
+5,Outer regional,Outer regional
+50101,Augusta - Margaret River - Busselton,Inner regional
+50102,Bunbury,Inner regional
+50103,Manjimup,Outer regional
+50201,Mandurah,Major cities - lower SES
+50301,Cottesloe - Claremont,Major cities - higher SES
+50302,Perth City,Major cities - higher SES
+50401,Bayswater - Bassendean,Major cities - medium SES
+50402,Mundaring,Major cities - medium SES
+50403,Swan,Major cities - medium SES
+50501,Joondalup,Major cities - medium SES
+50502,Stirling,Major cities - medium SES
+50503,Wanneroo,Major cities - medium SES
+50601,Armadale,Major cities - lower SES
+50602,Belmont - Victoria Park,Major cities - medium SES
+50603,Canning,Major cities - medium SES
+50604,Gosnells,Major cities - lower SES
+50605,Kalamunda,Major cities - medium SES
+50606,Serpentine - Jarrahdale,Major cities - medium SES
+50607,South Perth,Major cities - medium SES
+50701,Cockburn,Major cities - medium SES
+50702,Fremantle,Major cities - medium SES
+50703,Kwinana,Major cities - lower SES
+50704,Melville,Major cities - higher SES
+50705,Rockingham,Major cities - medium SES
+50901,Albany,Outer regional
+50902,Wheat Belt - North,Inner regional
+50903,Wheat Belt - South,Outer regional
+51001,Kimberley,Remote (incl. very remote)
+51002,East Pilbara,Remote (incl. very remote)
+51003,West Pilbara,Remote (incl. very remote)
+51101,Esperance,Remote (incl. very remote)
+51102,Gascoyne,Remote (incl. very remote)
+51103,Goldfields,Remote (incl. very remote)
+51104,Mid West,Remote (incl. very remote)
+6,Remote (incl. very remote),Remote (incl. very remote)
+60101,Brighton,Inner regional
+60102,Hobart - North East,Inner regional
+60103,Hobart - North West,Inner regional
+60104,Hobart - South and West,Inner regional
+60105,Hobart Inner,Inner regional
+60106,Sorell - Dodges Ferry,Inner regional
+60201,Launceston,Inner regional
+60202,Meander Valley - West Tamar,Outer regional
+60203,North East,Outer regional
+60301,Central Highlands (Tas.),Outer regional
+60302,Huon - Bruny Island,Outer regional
+60303,South East Coast,Outer regional
+60401,Burnie - Ulverstone,Outer regional
+60402,Devonport,Inner regional
+60403,West Coast,Outer regional
+70101,Darwin City,Outer regional
+70102,Darwin Suburbs,Outer regional
+70103,Litchfield,Outer regional
+70104,Palmerston,Outer regional
+70201,Alice Springs,Remote (incl. very remote)
+70202,Barkly,Remote (incl. very remote)
+70203,Daly - Tiwi - West Arnhem,Remote (incl. very remote)
+70204,East Arnhem,Remote (incl. very remote)
+70205,Katherine,Remote (incl. very remote)
+80101,Belconnen,Major cities - medium SES
+80103,Canberra East,Major cities - lower SES
+80104,Gungahlin,Major cities - higher SES
+80105,North Canberra,Major cities - higher SES
+80106,South Canberra,Major cities - higher SES
+80107,Tuggeranong,Major cities - medium SES
+80108,Weston Creek,Major cities - higher SES
+80109,Woden Valley,Major cities - higher SES
+80110,Molonglo,Major cities - higher SES
+80111,Urriarra - Namadgi,Inner regional
+90101,Christmas Island,Remote (incl. very remote)
+90102,Cocos (Keeling) Islands,Remote (incl. very remote)
+90103,Jervis Bay,Inner regional
+90104,Norfolk Island,Remote (incl. very remote)
+0,National,National
+1,Major cities - higher SES,Major cities - higher SES
+10102,Queanbeyan,Major cities - higher SES
+10103,Snowy Mountains,Outer regional
+10104,South Coast,Outer regional
+10105,Goulburn - Mulwaree,Inner regional
+10106,Young - Yass,Inner regional
+10201,Gosford,Major cities - medium SES
+10202,Wyong,Major cities - lower SES
+10301,Bathurst,Inner regional
+10302,Lachlan Valley,Outer regional
+10303,Lithgow - Mudgee,Inner regional
+10304,Orange,Inner regional
+10401,Clarence Valley,Inner regional
+10402,Coffs Harbour,Inner regional
+10501,Bourke - Cobar - Coonamble,Remote (incl. very remote)
+10502,Broken Hill and Far West,Remote (incl. very remote)
+10503,Dubbo,Inner regional
+10601,Lower Hunter,Inner regional
+10602,Maitland,Major cities - lower SES
+10603,Port Stephens,Inner regional
+10604,Upper Hunter,Inner regional
+10701,Dapto - Port Kembla,Major cities - lower SES
+10702,Illawarra Catchment Reserve,Ungrouped
+10703,Kiama - Shellharbour,Major cities - medium SES
+10704,Wollongong,Major cities - lower SES
+10801,Great Lakes,Inner regional
+10802,Kempsey - Nambucca,Outer regional
+10803,Lord Howe Island,Remote (incl. very remote)
+10804,Port Macquarie,Inner regional
+10805,Taree - Gloucester,Inner regional
+10901,Albury,Inner regional
+10902,Lower Murray,Outer regional
+10903,Upper Murray exc. Albury,Inner regional
+11001,Armidale,Inner regional
+11002,Inverell - Tenterfield,Outer regional
+11003,Moree - Narrabri,Outer regional
+11004,Tamworth - Gunnedah,Inner regional
+11101,Lake Macquarie - East,Major cities - medium SES
+11102,Lake Macquarie - West,Major cities - lower SES
+11103,Newcastle,Major cities - lower SES
+11201,Richmond Valley - Coastal,Inner regional
+11202,Richmond Valley - Hinterland,Inner regional
+11203,Tweed Valley,Major cities - lower SES
+11301,Griffith - Murrumbidgee (West),Outer regional
+11302,Tumut - Tumbarumba,Inner regional
+11303,Wagga Wagga,Inner regional
+11401,Shoalhaven,Inner regional
+11402,Southern Highlands,Inner regional
+11501,Baulkham Hills,Major cities - higher SES
+11502,Dural - Wisemans Ferry,Major cities - higher SES
+11503,Hawkesbury,Inner regional
+11504,Rouse Hill - McGraths Hill,Major cities - higher SES
+11601,Blacktown,Major cities - lower SES
+11602,Blacktown - North,Major cities - higher SES
+11603,Mount Druitt,Major cities - lower SES
+11701,Botany,Major cities - medium SES
+11702,Marrickville - Sydenham - Petersham,Major cities - medium SES
+11703,Sydney Inner City,Major cities - higher SES
+11801,Eastern Suburbs - North,Major cities - higher SES
+11802,Eastern Suburbs - South,Major cities - higher SES
+11901,Bankstown,Major cities - lower SES
+11902,Canterbury,Major cities - lower SES
+11903,Hurstville,Major cities - medium SES
+11904,Kogarah - Rockdale,Major cities - medium SES
+12001,Canada Bay,Major cities - medium SES
+12002,Leichhardt,Major cities - higher SES
+12003,Strathfield - Burwood - Ashfield,Major cities - medium SES
+12101,Chatswood - Lane Cove,Major cities - higher SES
+12102,Hornsby,Major cities - higher SES
+12103,Ku-ring-gai,Major cities - higher SES
+12104,North Sydney - Mosman,Major cities - higher SES
+12201,Manly,Major cities - higher SES
+12202,Pittwater,Major cities - higher SES
+12203,Warringah,Major cities - higher SES
+12301,Camden,Major cities - medium SES
+12302,Campbelltown (NSW),Major cities - lower SES
+12303,Wollondilly,Inner regional
+12401,Blue Mountains,Major cities - medium SES
+12402,Blue Mountains - South,Ungrouped
+12403,Penrith,Major cities - medium SES
+12404,Richmond - Windsor,Major cities - medium SES
+12405,St Marys,Major cities - lower SES
+12501,Auburn,Major cities - lower SES
+12502,Carlingford,Major cities - medium SES
+12503,Merrylands - Guildford,Major cities - lower SES
+12504,Parramatta,Major cities - medium SES
+12601,Pennant Hills - Epping,Major cities - higher SES
+12602,Ryde - Hunters Hill,Major cities - medium SES
+12701,Bringelly - Green Valley,Major cities - lower SES
+12702,Fairfield,Major cities - lower SES
+12703,Liverpool,Major cities - lower SES
+12801,Cronulla - Miranda - Caringbah,Major cities - higher SES
+12802,Sutherland - Menai - Heathcote,Major cities - higher SES
+2,Major cities - medium SES,Major cities - medium SES
+20101,Ballarat,Inner regional
+20102,Creswick - Daylesford - Ballan,Inner regional
+20103,Maryborough - Pyrenees,Inner regional
+20201,Bendigo,Inner regional
+20202,Heathcote - Castlemaine - Kyneton,Inner regional
+20203,Loddon - Elmore,Inner regional
+20301,Barwon - West,Inner regional
+20302,Geelong,Major cities - lower SES
+20303,Surf Coast - Bellarine Peninsula,Inner regional
+20401,Upper Goulburn Valley,Inner regional
+20402,Wangaratta - Benalla,Inner regional
+20403,Wodonga - Alpine,Inner regional
+20501,Baw Baw,Inner regional
+20502,Gippsland - East,Outer regional
+20503,Gippsland - South West,Inner regional
+20504,Latrobe Valley,Inner regional
+20505,Wellington,Inner regional
+20601,Brunswick - Coburg,Major cities - medium SES
+20602,Darebin - South,Major cities - medium SES
+20603,Essendon,Major cities - medium SES
+20604,Melbourne City,Major cities - higher SES
+20605,Port Phillip,Major cities - higher SES
+20606,Stonnington - West,Major cities - higher SES
+20607,Yarra,Major cities - higher SES
+20701,Boroondara,Major cities - higher SES
+20702,Manningham - West,Major cities - medium SES
+20703,Whitehorse - West,Major cities - medium SES
+20801,Bayside,Major cities - higher SES
+20802,Glen Eira,Major cities - medium SES
+20803,Kingston,Major cities - medium SES
+20804,Stonnington - East,Major cities - higher SES
+20901,Banyule,Major cities - medium SES
+20902,Darebin - North,Major cities - lower SES
+20903,Nillumbik - Kinglake,Major cities - higher SES
+20904,Whittlesea - Wallan,Major cities - lower SES
+21001,Keilor,Major cities - medium SES
+21002,Macedon Ranges,Inner regional
+21003,Moreland - North,Major cities - lower SES
+21004,Sunbury,Major cities - medium SES
+21005,Tullamarine - Broadmeadows,Major cities - lower SES
+21101,Knox,Major cities - medium SES
+21102,Manningham - East,Major cities - higher SES
+21103,Maroondah,Major cities - medium SES
+21104,Whitehorse - East,Major cities - medium SES
+21105,Yarra Ranges,Major cities - medium SES
+21201,Cardinia,Major cities - medium SES
+21202,Casey - North,Major cities - medium SES
+21203,Casey - South,Major cities - lower SES
+21204,Dandenong,Major cities - lower SES
+21205,Monash,Major cities - medium SES
+21301,Brimbank,Major cities - lower SES
+21302,Hobsons Bay,Major cities - medium SES
+21303,Maribyrnong,Major cities - medium SES
+21304,Melton - Bacchus Marsh,Major cities - medium SES
+21305,Wyndham,Major cities - medium SES
+21401,Frankston,Major cities - lower SES
+21402,Mornington Peninsula,Major cities - medium SES
+21501,Grampians,Outer regional
+21502,Mildura,Outer regional
+21503,Murray River - Swan Hill,Outer regional
+21601,Campaspe,Inner regional
+21602,Moira,Inner regional
+21603,Shepparton,Inner regional
+21701,Glenelg - Southern Grampians,Outer regional
+21703,Colac - Corangamite,Inner regional
+21704,Warrnambool,Inner regional
+3,Major cities - lower SES,Major cities - lower SES
+30101,Capalaba,Major cities - medium SES
+30102,Cleveland - Stradbroke,Major cities - medium SES
+30103,Wynnum - Manly,Major cities - medium SES
+30201,Bald Hills - Everton Park,Major cities - higher SES
+30202,Chermside,Major cities - medium SES
+30203,Nundah,Major cities - medium SES
+30204,Sandgate,Major cities - medium SES
+30301,Carindale,Major cities - higher SES
+30302,Holland Park - Yeronga,Major cities - medium SES
+30303,Mt Gravatt,Major cities - medium SES
+30304,Nathan,Major cities - medium SES
+30305,Rocklea - Acacia Ridge,Major cities - medium SES
+30306,Sunnybank,Major cities - medium SES
+30401,Centenary,Major cities - higher SES
+30402,Kenmore - Brookfield - Moggill,Major cities - higher SES
+30403,Sherwood - Indooroopilly,Major cities - higher SES
+30404,The Gap - Enoggera,Major cities - higher SES
+30501,Brisbane Inner,Major cities - medium SES
+30502,Brisbane Inner - East,Major cities - higher SES
+30503,Brisbane Inner - North,Major cities - higher SES
+30504,Brisbane Inner - West,Major cities - higher SES
+30601,Cairns - North,Outer regional
+30602,Cairns - South,Outer regional
+30603,Innisfail - Cassowary Coast,Outer regional
+30604,Port Douglas - Daintree,Outer regional
+30605,Tablelands (East) - Kuranda,Outer regional
+30701,Darling Downs (West) - Maranoa,Outer regional
+30702,Darling Downs - East,Inner regional
+30703,Granite Belt,Inner regional
+30801,Central Highlands (Qld),Outer regional
+30803,Rockhampton,Inner regional
+30804,Biloela,Outer regional
+30805,Gladstone,Inner regional
+30901,Broadbeach - Burleigh,Major cities - medium SES
+30902,Coolangatta,Major cities - medium SES
+30903,Gold Coast - North,Major cities - lower SES
+30904,Gold Coast Hinterland,Inner regional
+30905,Mudgeeraba - Tallebudgera,Major cities - medium SES
+30906,Nerang,Major cities - medium SES
+30907,Ormeau - Oxenford,Major cities - medium SES
+30908,Robina,Major cities - medium SES
+30909,Southport,Major cities - medium SES
+30910,Surfers Paradise,Major cities - medium SES
+31001,Forest Lake - Oxley,Major cities - lower SES
+31002,Ipswich Hinterland,Inner regional
+31003,Ipswich Inner,Major cities - lower SES
+31004,Springfield - Redbank,Major cities - lower SES
+31101,Beaudesert,Inner regional
+31102,Beenleigh,Major cities - lower SES
+31103,Browns Plains,Major cities - lower SES
+31104,Jimboomba,Major cities - medium SES
+31105,Loganlea - Carbrook,Major cities - medium SES
+31106,Springwood - Kingston,Major cities - lower SES
+31201,Bowen Basin - North,Outer regional
+31202,Mackay,Inner regional
+31203,Whitsunday,Outer regional
+31301,Bribie - Beachmere,Inner regional
+31302,Caboolture,Major cities - lower SES
+31303,Caboolture Hinterland,Inner regional
+31304,Narangba - Burpengary,Major cities - medium SES
+31305,Redcliffe,Major cities - lower SES
+31401,The Hills District,Major cities - higher SES
+31402,North Lakes,Major cities - medium SES
+31403,Strathpine,Major cities - medium SES
+31501,Far North,Remote (incl. very remote)
+31502,Outback - North,Remote (incl. very remote)
+31503,Outback - South,Remote (incl. very remote)
+31601,Buderim,Major cities - medium SES
+31602,Caloundra,Major cities - medium SES
+31603,Maroochy,Major cities - medium SES
+31605,Noosa,Major cities - medium SES
+31606,Sunshine Coast Hinterland,Inner regional
+31607,Nambour,Major cities - medium SES
+31608,Noosa Hinterland,Inner regional
+31701,Toowoomba,Inner regional
+31801,Charters Towers - Ayr - Ingham,Outer regional
+31802,Townsville,Outer regional
+31901,Bundaberg,Inner regional
+31902,Burnett,Inner regional
+31903,Gympie - Cooloola,Inner regional
+31904,Hervey Bay,Inner regional
+31905,Maryborough,Inner regional
+4,Inner regional,Inner regional
+40101,Adelaide City,Major cities - medium SES
+40102,Adelaide Hills,Inner regional
+40103,Burnside,Major cities - higher SES
+40104,Campbelltown (SA),Major cities - medium SES
+40105,Norwood - Payneham - St Peters,Major cities - medium SES
+40106,Prospect - Walkerville,Major cities - medium SES
+40107,Unley,Major cities - medium SES
+40201,Gawler - Two Wells,Major cities - lower SES
+40202,Playford,Major cities - lower SES
+40203,Port Adelaide - East,Major cities - lower SES
+40204,Salisbury,Major cities - lower SES
+40205,Tea Tree Gully,Major cities - medium SES
+40301,Holdfast Bay,Major cities - medium SES
+40302,Marion,Major cities - medium SES
+40303,Mitcham,Major cities - higher SES
+40304,Onkaparinga,Major cities - lower SES
+40401,Charles Sturt,Major cities - lower SES
+40402,Port Adelaide - West,Major cities - lower SES
+40403,West Torrens,Major cities - medium SES
+40501,Barossa,Inner regional
+40502,Lower North,Inner regional
+40503,Mid North,Outer regional
+40504,Yorke Peninsula,Outer regional
+40601,Eyre Peninsula and South West,Remote (incl. very remote)
+40602,Outback - North and East,Remote (incl. very remote)
+40701,Fleurieu - Kangaroo Island,Inner regional
+40702,Limestone Coast,Outer regional
+40703,Murray and Mallee,Outer regional
+5,Outer regional,Outer regional
+50101,Augusta - Margaret River - Busselton,Inner regional
+50102,Bunbury,Inner regional
+50103,Manjimup,Outer regional
+50201,Mandurah,Major cities - lower SES
+50301,Cottesloe - Claremont,Major cities - higher SES
+50302,Perth City,Major cities - higher SES
+50401,Bayswater - Bassendean,Major cities - medium SES
+50402,Mundaring,Major cities - medium SES
+50403,Swan,Major cities - medium SES
+50501,Joondalup,Major cities - medium SES
+50502,Stirling,Major cities - medium SES
+50503,Wanneroo,Major cities - medium SES
+50601,Armadale,Major cities - lower SES
+50602,Belmont - Victoria Park,Major cities - medium SES
+50603,Canning,Major cities - medium SES
+50604,Gosnells,Major cities - lower SES
+50605,Kalamunda,Major cities - medium SES
+50606,Serpentine - Jarrahdale,Major cities - medium SES
+50607,South Perth,Major cities - medium SES
+50701,Cockburn,Major cities - medium SES
+50702,Fremantle,Major cities - medium SES
+50703,Kwinana,Major cities - lower SES
+50704,Melville,Major cities - higher SES
+50705,Rockingham,Major cities - medium SES
+50901,Albany,Outer regional
+50902,Wheat Belt - North,Inner regional
+50903,Wheat Belt - South,Outer regional
+51001,Kimberley,Remote (incl. very remote)
+51002,East Pilbara,Remote (incl. very remote)
+51003,West Pilbara,Remote (incl. very remote)
+51101,Esperance,Remote (incl. very remote)
+51102,Gascoyne,Remote (incl. very remote)
+51103,Goldfields,Remote (incl. very remote)
+51104,Mid West,Remote (incl. very remote)
+6,Remote (incl. very remote),Remote (incl. very remote)
+60101,Brighton,Inner regional
+60102,Hobart - North East,Inner regional
+60103,Hobart - North West,Inner regional
+60104,Hobart - South and West,Inner regional
+60105,Hobart Inner,Inner regional
+60106,Sorell - Dodges Ferry,Inner regional
+60201,Launceston,Inner regional
+60202,Meander Valley - West Tamar,Outer regional
+60203,North East,Outer regional
+60301,Central Highlands (Tas.),Outer regional
+60302,Huon - Bruny Island,Outer regional
+60303,South East Coast,Outer regional
+60401,Burnie - Ulverstone,Outer regional
+60402,Devonport,Inner regional
+60403,West Coast,Outer regional
+70101,Darwin City,Outer regional
+70102,Darwin Suburbs,Outer regional
+70103,Litchfield,Outer regional
+70104,Palmerston,Outer regional
+70201,Alice Springs,Remote (incl. very remote)
+70202,Barkly,Remote (incl. very remote)
+70203,Daly - Tiwi - West Arnhem,Remote (incl. very remote)
+70204,East Arnhem,Remote (incl. very remote)
+70205,Katherine,Remote (incl. very remote)
+80101,Belconnen,Major cities - medium SES
+80103,Canberra East,Major cities - lower SES
+80104,Gungahlin,Major cities - higher SES
+80105,North Canberra,Major cities - higher SES
+80106,South Canberra,Major cities - higher SES
+80107,Tuggeranong,Major cities - medium SES
+80108,Weston Creek,Major cities - higher SES
+80109,Woden Valley,Major cities - higher SES
+80110,Molonglo,Major cities - higher SES
+80111,Urriarra - Namadgi,Inner regional
+90101,Christmas Island,Remote (incl. very remote)
+90102,Cocos (Keeling) Islands,Remote (incl. very remote)
+90103,Jervis Bay,Inner regional
+90104,Norfolk Island,Remote (incl. very remote)
+0,National,National
+1,Major cities - higher SES,Major cities - higher SES
+10102,Queanbeyan,Major cities - higher SES
+10103,Snowy Mountains,Outer regional
+10104,South Coast,Outer regional
+10105,Goulburn - Mulwaree,Inner regional
+10106,Young - Yass,Inner regional
+10201,Gosford,Major cities - medium SES
+10202,Wyong,Major cities - lower SES
+10301,Bathurst,Inner regional
+10302,Lachlan Valley,Outer regional
+10303,Lithgow - Mudgee,Inner regional
+10304,Orange,Inner regional
+10401,Clarence Valley,Inner regional
+10402,Coffs Harbour,Inner regional
+10501,Bourke - Cobar - Coonamble,Remote (incl. very remote)
+10502,Broken Hill and Far West,Remote (incl. very remote)
+10503,Dubbo,Inner regional
+10601,Lower Hunter,Inner regional
+10602,Maitland,Major cities - lower SES
+10603,Port Stephens,Inner regional
+10604,Upper Hunter,Inner regional
+10701,Dapto - Port Kembla,Major cities - lower SES
+10702,Illawarra Catchment Reserve,Ungrouped
+10703,Kiama - Shellharbour,Major cities - medium SES
+10704,Wollongong,Major cities - lower SES
+10801,Great Lakes,Inner regional
+10802,Kempsey - Nambucca,Outer regional
+10803,Lord Howe Island,Remote (incl. very remote)
+10804,Port Macquarie,Inner regional
+10805,Taree - Gloucester,Inner regional
+10901,Albury,Inner regional
+10902,Lower Murray,Outer regional
+10903,Upper Murray exc. Albury,Inner regional
+11001,Armidale,Inner regional
+11002,Inverell - Tenterfield,Outer regional
+11003,Moree - Narrabri,Outer regional
+11004,Tamworth - Gunnedah,Inner regional
+11101,Lake Macquarie - East,Major cities - medium SES
+11102,Lake Macquarie - West,Major cities - lower SES
+11103,Newcastle,Major cities - lower SES
+11201,Richmond Valley - Coastal,Inner regional
+11202,Richmond Valley - Hinterland,Inner regional
+11203,Tweed Valley,Major cities - lower SES
+11301,Griffith - Murrumbidgee (West),Outer regional
+11302,Tumut - Tumbarumba,Inner regional
+11303,Wagga Wagga,Inner regional
+11401,Shoalhaven,Inner regional
+11402,Southern Highlands,Inner regional
+11501,Baulkham Hills,Major cities - higher SES
+11502,Dural - Wisemans Ferry,Major cities - higher SES
+11503,Hawkesbury,Inner regional
+11504,Rouse Hill - McGraths Hill,Major cities - higher SES
+11601,Blacktown,Major cities - lower SES
+11602,Blacktown - North,Major cities - higher SES
+11603,Mount Druitt,Major cities - lower SES
+11701,Botany,Major cities - medium SES
+11702,Marrickville - Sydenham - Petersham,Major cities - medium SES
+11703,Sydney Inner City,Major cities - higher SES
+11801,Eastern Suburbs - North,Major cities - higher SES
+11802,Eastern Suburbs - South,Major cities - higher SES
+11901,Bankstown,Major cities - lower SES
+11902,Canterbury,Major cities - lower SES
+11903,Hurstville,Major cities - medium SES
+11904,Kogarah - Rockdale,Major cities - medium SES
+12001,Canada Bay,Major cities - medium SES
+12002,Leichhardt,Major cities - higher SES
+12003,Strathfield - Burwood - Ashfield,Major cities - medium SES
+12101,Chatswood - Lane Cove,Major cities - higher SES
+12102,Hornsby,Major cities - higher SES
+12103,Ku-ring-gai,Major cities - higher SES
+12104,North Sydney - Mosman,Major cities - higher SES
+12201,Manly,Major cities - higher SES
+12202,Pittwater,Major cities - higher SES
+12203,Warringah,Major cities - higher SES
+12301,Camden,Major cities - medium SES
+12302,Campbelltown (NSW),Major cities - lower SES
+12303,Wollondilly,Inner regional
+12401,Blue Mountains,Major cities - medium SES
+12402,Blue Mountains - South,Ungrouped
+12403,Penrith,Major cities - medium SES
+12404,Richmond - Windsor,Major cities - medium SES
+12405,St Marys,Major cities - lower SES
+12501,Auburn,Major cities - lower SES
+12502,Carlingford,Major cities - medium SES
+12503,Merrylands - Guildford,Major cities - lower SES
+12504,Parramatta,Major cities - medium SES
+12601,Pennant Hills - Epping,Major cities - higher SES
+12602,Ryde - Hunters Hill,Major cities - medium SES
+12701,Bringelly - Green Valley,Major cities - lower SES
+12702,Fairfield,Major cities - lower SES
+12703,Liverpool,Major cities - lower SES
+12801,Cronulla - Miranda - Caringbah,Major cities - higher SES
+12802,Sutherland - Menai - Heathcote,Major cities - higher SES
+2,Major cities - medium SES,Major cities - medium SES
+20101,Ballarat,Inner regional
+20102,Creswick - Daylesford - Ballan,Inner regional
+20103,Maryborough - Pyrenees,Inner regional
+20201,Bendigo,Inner regional
+20202,Heathcote - Castlemaine - Kyneton,Inner regional
+20203,Loddon - Elmore,Inner regional
+20301,Barwon - West,Inner regional
+20302,Geelong,Major cities - lower SES
+20303,Surf Coast - Bellarine Peninsula,Inner regional
+20401,Upper Goulburn Valley,Inner regional
+20402,Wangaratta - Benalla,Inner regional
+20403,Wodonga - Alpine,Inner regional
+20501,Baw Baw,Inner regional
+20502,Gippsland - East,Outer regional
+20503,Gippsland - South West,Inner regional
+20504,Latrobe Valley,Inner regional
+20505,Wellington,Inner regional
+20601,Brunswick - Coburg,Major cities - medium SES
+20602,Darebin - South,Major cities - medium SES
+20603,Essendon,Major cities - medium SES
+20604,Melbourne City,Major cities - higher SES
+20605,Port Phillip,Major cities - higher SES
+20606,Stonnington - West,Major cities - higher SES
+20607,Yarra,Major cities - higher SES
+20701,Boroondara,Major cities - higher SES
+20702,Manningham - West,Major cities - medium SES
+20703,Whitehorse - West,Major cities - medium SES
+20801,Bayside,Major cities - higher SES
+20802,Glen Eira,Major cities - medium SES
+20803,Kingston,Major cities - medium SES
+20804,Stonnington - East,Major cities - higher SES
+20901,Banyule,Major cities - medium SES
+20902,Darebin - North,Major cities - lower SES
+20903,Nillumbik - Kinglake,Major cities - higher SES
+20904,Whittlesea - Wallan,Major cities - lower SES
+21001,Keilor,Major cities - medium SES
+21002,Macedon Ranges,Inner regional
+21003,Moreland - North,Major cities - lower SES
+21004,Sunbury,Major cities - medium SES
+21005,Tullamarine - Broadmeadows,Major cities - lower SES
+21101,Knox,Major cities - medium SES
+21102,Manningham - East,Major cities - higher SES
+21103,Maroondah,Major cities - medium SES
+21104,Whitehorse - East,Major cities - medium SES
+21105,Yarra Ranges,Major cities - medium SES
+21201,Cardinia,Major cities - medium SES
+21202,Casey - North,Major cities - medium SES
+21203,Casey - South,Major cities - lower SES
+21204,Dandenong,Major cities - lower SES
+21205,Monash,Major cities - medium SES
+21301,Brimbank,Major cities - lower SES
+21302,Hobsons Bay,Major cities - medium SES
+21303,Maribyrnong,Major cities - medium SES
+21304,Melton - Bacchus Marsh,Major cities - medium SES
+21305,Wyndham,Major cities - medium SES
+21401,Frankston,Major cities - lower SES
+21402,Mornington Peninsula,Major cities - medium SES
+21501,Grampians,Outer regional
+21502,Mildura,Outer regional
+21503,Murray River - Swan Hill,Outer regional
+21601,Campaspe,Inner regional
+21602,Moira,Inner regional
+21603,Shepparton,Inner regional
+21701,Glenelg - Southern Grampians,Outer regional
+21703,Colac - Corangamite,Inner regional
+21704,Warrnambool,Inner regional
+3,Major cities - lower SES,Major cities - lower SES
+30101,Capalaba,Major cities - medium SES
+30102,Cleveland - Stradbroke,Major cities - medium SES
+30103,Wynnum - Manly,Major cities - medium SES
+30201,Bald Hills - Everton Park,Major cities - higher SES
+30202,Chermside,Major cities - medium SES
+30203,Nundah,Major cities - medium SES
+30204,Sandgate,Major cities - medium SES
+30301,Carindale,Major cities - higher SES
+30302,Holland Park - Yeronga,Major cities - medium SES
+30303,Mt Gravatt,Major cities - medium SES
+30304,Nathan,Major cities - medium SES
+30305,Rocklea - Acacia Ridge,Major cities - medium SES
+30306,Sunnybank,Major cities - medium SES
+30401,Centenary,Major cities - higher SES
+30402,Kenmore - Brookfield - Moggill,Major cities - higher SES
+30403,Sherwood - Indooroopilly,Major cities - higher SES
+30404,The Gap - Enoggera,Major cities - higher SES
+30501,Brisbane Inner,Major cities - medium SES
+30502,Brisbane Inner - East,Major cities - higher SES
+30503,Brisbane Inner - North,Major cities - higher SES
+30504,Brisbane Inner - West,Major cities - higher SES
+30601,Cairns - North,Outer regional
+30602,Cairns - South,Outer regional
+30603,Innisfail - Cassowary Coast,Outer regional
+30604,Port Douglas - Daintree,Outer regional
+30605,Tablelands (East) - Kuranda,Outer regional
+30701,Darling Downs (West) - Maranoa,Outer regional
+30702,Darling Downs - East,Inner regional
+30703,Granite Belt,Inner regional
+30801,Central Highlands (Qld),Outer regional
+30803,Rockhampton,Inner regional
+30804,Biloela,Outer regional
+30805,Gladstone,Inner regional
+30901,Broadbeach - Burleigh,Major cities - medium SES
+30902,Coolangatta,Major cities - medium SES
+30903,Gold Coast - North,Major cities - lower SES
+30904,Gold Coast Hinterland,Inner regional
+30905,Mudgeeraba - Tallebudgera,Major cities - medium SES
+30906,Nerang,Major cities - medium SES
+30907,Ormeau - Oxenford,Major cities - medium SES
+30908,Robina,Major cities - medium SES
+30909,Southport,Major cities - medium SES
+30910,Surfers Paradise,Major cities - medium SES
+31001,Forest Lake - Oxley,Major cities - lower SES
+31002,Ipswich Hinterland,Inner regional
+31003,Ipswich Inner,Major cities - lower SES
+31004,Springfield - Redbank,Major cities - lower SES
+31101,Beaudesert,Inner regional
+31102,Beenleigh,Major cities - lower SES
+31103,Browns Plains,Major cities - lower SES
+31104,Jimboomba,Major cities - medium SES
+31105,Loganlea - Carbrook,Major cities - medium SES
+31106,Springwood - Kingston,Major cities - lower SES
+31201,Bowen Basin - North,Outer regional
+31202,Mackay,Inner regional
+31203,Whitsunday,Outer regional
+31301,Bribie - Beachmere,Inner regional
+31302,Caboolture,Major cities - lower SES
+31303,Caboolture Hinterland,Inner regional
+31304,Narangba - Burpengary,Major cities - medium SES
+31305,Redcliffe,Major cities - lower SES
+31401,The Hills District,Major cities - higher SES
+31402,North Lakes,Major cities - medium SES
+31403,Strathpine,Major cities - medium SES
+31501,Far North,Remote (incl. very remote)
+31502,Outback - North,Remote (incl. very remote)
+31503,Outback - South,Remote (incl. very remote)
+31601,Buderim,Major cities - medium SES
+31602,Caloundra,Major cities - medium SES
+31603,Maroochy,Major cities - medium SES
+31605,Noosa,Major cities - medium SES
+31606,Sunshine Coast Hinterland,Inner regional
+31607,Nambour,Major cities - medium SES
+31608,Noosa Hinterland,Inner regional
+31701,Toowoomba,Inner regional
+31801,Charters Towers - Ayr - Ingham,Outer regional
+31802,Townsville,Outer regional
+31901,Bundaberg,Inner regional
+31902,Burnett,Inner regional
+31903,Gympie - Cooloola,Inner regional
+31904,Hervey Bay,Inner regional
+31905,Maryborough,Inner regional
+4,Inner regional,Inner regional
+40101,Adelaide City,Major cities - medium SES
+40102,Adelaide Hills,Inner regional
+40103,Burnside,Major cities - higher SES
+40104,Campbelltown (SA),Major cities - medium SES
+40105,Norwood - Payneham - St Peters,Major cities - medium SES
+40106,Prospect - Walkerville,Major cities - medium SES
+40107,Unley,Major cities - medium SES
+40201,Gawler - Two Wells,Major cities - lower SES
+40202,Playford,Major cities - lower SES
+40203,Port Adelaide - East,Major cities - lower SES
+40204,Salisbury,Major cities - lower SES
+40205,Tea Tree Gully,Major cities - medium SES
+40301,Holdfast Bay,Major cities - medium SES
+40302,Marion,Major cities - medium SES
+40303,Mitcham,Major cities - higher SES
+40304,Onkaparinga,Major cities - lower SES
+40401,Charles Sturt,Major cities - lower SES
+40402,Port Adelaide - West,Major cities - lower SES
+40403,West Torrens,Major cities - medium SES
+40501,Barossa,Inner regional
+40502,Lower North,Inner regional
+40503,Mid North,Outer regional
+40504,Yorke Peninsula,Outer regional
+40601,Eyre Peninsula and South West,Remote (incl. very remote)
+40602,Outback - North and East,Remote (incl. very remote)
+40701,Fleurieu - Kangaroo Island,Inner regional
+40702,Limestone Coast,Outer regional
+40703,Murray and Mallee,Outer regional
+5,Outer regional,Outer regional
+50101,Augusta - Margaret River - Busselton,Inner regional
+50102,Bunbury,Inner regional
+50103,Manjimup,Outer regional
+50201,Mandurah,Major cities - lower SES
+50301,Cottesloe - Claremont,Major cities - higher SES
+50302,Perth City,Major cities - higher SES
+50401,Bayswater - Bassendean,Major cities - medium SES
+50402,Mundaring,Major cities - medium SES
+50403,Swan,Major cities - medium SES
+50501,Joondalup,Major cities - medium SES
+50502,Stirling,Major cities - medium SES
+50503,Wanneroo,Major cities - medium SES
+50601,Armadale,Major cities - lower SES
+50602,Belmont - Victoria Park,Major cities - medium SES
+50603,Canning,Major cities - medium SES
+50604,Gosnells,Major cities - lower SES
+50605,Kalamunda,Major cities - medium SES
+50606,Serpentine - Jarrahdale,Major cities - medium SES
+50607,South Perth,Major cities - medium SES
+50701,Cockburn,Major cities - medium SES
+50702,Fremantle,Major cities - medium SES
+50703,Kwinana,Major cities - lower SES
+50704,Melville,Major cities - higher SES
+50705,Rockingham,Major cities - medium SES
+50901,Albany,Outer regional
+50902,Wheat Belt - North,Inner regional
+50903,Wheat Belt - South,Outer regional
+51001,Kimberley,Remote (incl. very remote)
+51002,East Pilbara,Remote (incl. very remote)
+51003,West Pilbara,Remote (incl. very remote)
+51101,Esperance,Remote (incl. very remote)
+51102,Gascoyne,Remote (incl. very remote)
+51103,Goldfields,Remote (incl. very remote)
+51104,Mid West,Remote (incl. very remote)
+6,Remote (incl. very remote),Remote (incl. very remote)
+60101,Brighton,Inner regional
+60102,Hobart - North East,Inner regional
+60103,Hobart - North West,Inner regional
+60104,Hobart - South and West,Inner regional
+60105,Hobart Inner,Inner regional
+60106,Sorell - Dodges Ferry,Inner regional
+60201,Launceston,Inner regional
+60202,Meander Valley - West Tamar,Outer regional
+60203,North East,Outer regional
+60301,Central Highlands (Tas.),Outer regional
+60302,Huon - Bruny Island,Outer regional
+60303,South East Coast,Outer regional
+60401,Burnie - Ulverstone,Outer regional
+60402,Devonport,Inner regional
+60403,West Coast,Outer regional
+70101,Darwin City,Outer regional
+70102,Darwin Suburbs,Outer regional
+70103,Litchfield,Outer regional
+70104,Palmerston,Outer regional
+70201,Alice Springs,Remote (incl. very remote)
+70202,Barkly,Remote (incl. very remote)
+70203,Daly - Tiwi - West Arnhem,Remote (incl. very remote)
+70204,East Arnhem,Remote (incl. very remote)
+70205,Katherine,Remote (incl. very remote)
+80101,Belconnen,Major cities - medium SES
+80103,Canberra East,Major cities - lower SES
+80104,Gungahlin,Major cities - higher SES
+80105,North Canberra,Major cities - higher SES
+80106,South Canberra,Major cities - higher SES
+80107,Tuggeranong,Major cities - medium SES
+80108,Weston Creek,Major cities - higher SES
+80109,Woden Valley,Major cities - higher SES
+80110,Molonglo,Major cities - higher SES
+80111,Urriarra - Namadgi,Inner regional
+90101,Christmas Island,Remote (incl. very remote)
+90102,Cocos (Keeling) Islands,Remote (incl. very remote)
+90103,Jervis Bay,Inner regional
+90104,Norfolk Island,Remote (incl. very remote)
