@@ -16,8 +16,6 @@ const sa3ToRegion = require("./sa3-to-region.json");
 const newData = [];
 
 for (const response of calloutResponses) {
-  // console.log(response.Postcode.toString())
-
   const filteredLookup = postcodeLookup.filter(entry => {
     if (entry.postcode.toString() === response.Postcode.toString()) {
       return true;
@@ -33,13 +31,22 @@ for (const response of calloutResponses) {
     );
   }
 
-  // console.log(response.Postcode.toString(), assignedArea);
+  // Add region to our data
+  response["SA3 code"] = assignedArea ? assignedArea.sa3 : "";
 
-  response.sa3 = assignedArea ? assignedArea.sa3 : "";
-  // console.log(response);
+  let sa3Filtered;
+
+  if (response["SA3 code"] !== "") {
+    sa3Filtered = sa3ToRegion.filter(sa3 => {
+      return sa3["SA3 code"].toString() === response["SA3 code"].toString();
+    });
+  }
+
+  // console.log(sa3Filtered[0]);
+  response["SA3 name"] = sa3Filtered ? sa3Filtered[0]["SA3 name"] : "";
+  response["SA3 group"] = sa3Filtered ? sa3Filtered[0]["SA3 group"] : "";
 
   newData.push(response);
 }
 
-console.log(newData);
 fs.writeFileSync("./newData.json", JSON.stringify(newData));
