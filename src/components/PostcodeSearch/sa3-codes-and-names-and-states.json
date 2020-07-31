@@ -1,0 +1,1792 @@
+[
+  {
+    "SA3_CODE": 10102,
+    "SA3_NAME": "Queanbeyan",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10103,
+    "SA3_NAME": "Snowy Mountains",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10104,
+    "SA3_NAME": "South Coast",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10105,
+    "SA3_NAME": "Goulburn - Mulwaree",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10106,
+    "SA3_NAME": "Young - Yass",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10201,
+    "SA3_NAME": "Gosford",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10202,
+    "SA3_NAME": "Wyong",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10301,
+    "SA3_NAME": "Bathurst",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10302,
+    "SA3_NAME": "Lachlan Valley",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10303,
+    "SA3_NAME": "Lithgow - Mudgee",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10304,
+    "SA3_NAME": "Orange",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10401,
+    "SA3_NAME": "Clarence Valley",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10402,
+    "SA3_NAME": "Coffs Harbour",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10501,
+    "SA3_NAME": "Bourke - Cobar - Coonamble",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10502,
+    "SA3_NAME": "Broken Hill and Far West",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10503,
+    "SA3_NAME": "Dubbo",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10601,
+    "SA3_NAME": "Lower Hunter",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10602,
+    "SA3_NAME": "Maitland",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10603,
+    "SA3_NAME": "Port Stephens",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10604,
+    "SA3_NAME": "Upper Hunter",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10701,
+    "SA3_NAME": "Dapto - Port Kembla",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10702,
+    "SA3_NAME": "Illawarra Catchment Reserve",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10703,
+    "SA3_NAME": "Kiama - Shellharbour",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10704,
+    "SA3_NAME": "Wollongong",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10801,
+    "SA3_NAME": "Great Lakes",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10802,
+    "SA3_NAME": "Kempsey - Nambucca",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10803,
+    "SA3_NAME": "Lord Howe Island",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10804,
+    "SA3_NAME": "Port Macquarie",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10805,
+    "SA3_NAME": "Taree - Gloucester",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10901,
+    "SA3_NAME": "Albury",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10902,
+    "SA3_NAME": "Lower Murray",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 10903,
+    "SA3_NAME": "Upper Murray exc. Albury",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11001,
+    "SA3_NAME": "Armidale",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11002,
+    "SA3_NAME": "Inverell - Tenterfield",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11003,
+    "SA3_NAME": "Moree - Narrabri",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11004,
+    "SA3_NAME": "Tamworth - Gunnedah",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11101,
+    "SA3_NAME": "Lake Macquarie - East",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11102,
+    "SA3_NAME": "Lake Macquarie - West",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11103,
+    "SA3_NAME": "Newcastle",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11201,
+    "SA3_NAME": "Richmond Valley - Coastal",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11202,
+    "SA3_NAME": "Richmond Valley - Hinterland",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11203,
+    "SA3_NAME": "Tweed Valley",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11301,
+    "SA3_NAME": "Griffith - Murrumbidgee (West)",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11302,
+    "SA3_NAME": "Tumut - Tumbarumba",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11303,
+    "SA3_NAME": "Wagga Wagga",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11401,
+    "SA3_NAME": "Shoalhaven",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11402,
+    "SA3_NAME": "Southern Highlands",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11501,
+    "SA3_NAME": "Baulkham Hills",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11502,
+    "SA3_NAME": "Dural - Wisemans Ferry",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11503,
+    "SA3_NAME": "Hawkesbury",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11504,
+    "SA3_NAME": "Rouse Hill - McGraths Hill",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11601,
+    "SA3_NAME": "Blacktown",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11602,
+    "SA3_NAME": "Blacktown - North",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11603,
+    "SA3_NAME": "Mount Druitt",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11701,
+    "SA3_NAME": "Botany",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11702,
+    "SA3_NAME": "Marrickville - Sydenham - Petersham",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11703,
+    "SA3_NAME": "Sydney Inner City",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11801,
+    "SA3_NAME": "Eastern Suburbs - North",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11802,
+    "SA3_NAME": "Eastern Suburbs - South",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11901,
+    "SA3_NAME": "Bankstown",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11902,
+    "SA3_NAME": "Canterbury",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11903,
+    "SA3_NAME": "Hurstville",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 11904,
+    "SA3_NAME": "Kogarah - Rockdale",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12001,
+    "SA3_NAME": "Canada Bay",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12002,
+    "SA3_NAME": "Leichhardt",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12003,
+    "SA3_NAME": "Strathfield - Burwood - Ashfield",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12101,
+    "SA3_NAME": "Chatswood - Lane Cove",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12102,
+    "SA3_NAME": "Hornsby",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12103,
+    "SA3_NAME": "Ku-ring-gai",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12104,
+    "SA3_NAME": "North Sydney - Mosman",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12201,
+    "SA3_NAME": "Manly",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12202,
+    "SA3_NAME": "Pittwater",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12203,
+    "SA3_NAME": "Warringah",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12301,
+    "SA3_NAME": "Camden",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12302,
+    "SA3_NAME": "Campbelltown (NSW)",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12303,
+    "SA3_NAME": "Wollondilly",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12401,
+    "SA3_NAME": "Blue Mountains",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12402,
+    "SA3_NAME": "Blue Mountains - South",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12403,
+    "SA3_NAME": "Penrith",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12404,
+    "SA3_NAME": "Richmond - Windsor",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12405,
+    "SA3_NAME": "St Marys",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12501,
+    "SA3_NAME": "Auburn",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12502,
+    "SA3_NAME": "Carlingford",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12503,
+    "SA3_NAME": "Merrylands - Guildford",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12504,
+    "SA3_NAME": "Parramatta",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12601,
+    "SA3_NAME": "Pennant Hills - Epping",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12602,
+    "SA3_NAME": "Ryde - Hunters Hill",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12701,
+    "SA3_NAME": "Bringelly - Green Valley",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12702,
+    "SA3_NAME": "Fairfield",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12703,
+    "SA3_NAME": "Liverpool",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12801,
+    "SA3_NAME": "Cronulla - Miranda - Caringbah",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 12802,
+    "SA3_NAME": "Sutherland - Menai - Heathcote",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 19797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (NSW)",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 19999,
+    "SA3_NAME": "No usual address (NSW)",
+    "STATE_NAME": "New South Wales"
+  },
+  {
+    "SA3_CODE": 20101,
+    "SA3_NAME": "Ballarat",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20102,
+    "SA3_NAME": "Creswick - Daylesford - Ballan",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20103,
+    "SA3_NAME": "Maryborough - Pyrenees",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20201,
+    "SA3_NAME": "Bendigo",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20202,
+    "SA3_NAME": "Heathcote - Castlemaine - Kyneton",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20203,
+    "SA3_NAME": "Loddon - Elmore",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20301,
+    "SA3_NAME": "Barwon - West",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20302,
+    "SA3_NAME": "Geelong",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20303,
+    "SA3_NAME": "Surf Coast - Bellarine Peninsula",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20401,
+    "SA3_NAME": "Upper Goulburn Valley",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20402,
+    "SA3_NAME": "Wangaratta - Benalla",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20403,
+    "SA3_NAME": "Wodonga - Alpine",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20501,
+    "SA3_NAME": "Baw Baw",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20502,
+    "SA3_NAME": "Gippsland - East",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20503,
+    "SA3_NAME": "Gippsland - South West",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20504,
+    "SA3_NAME": "Latrobe Valley",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20505,
+    "SA3_NAME": "Wellington",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20601,
+    "SA3_NAME": "Brunswick - Coburg",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20602,
+    "SA3_NAME": "Darebin - South",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20603,
+    "SA3_NAME": "Essendon",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20604,
+    "SA3_NAME": "Melbourne City",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20605,
+    "SA3_NAME": "Port Phillip",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20606,
+    "SA3_NAME": "Stonnington - West",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20607,
+    "SA3_NAME": "Yarra",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20701,
+    "SA3_NAME": "Boroondara",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20702,
+    "SA3_NAME": "Manningham - West",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20703,
+    "SA3_NAME": "Whitehorse - West",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20801,
+    "SA3_NAME": "Bayside",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20802,
+    "SA3_NAME": "Glen Eira",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20803,
+    "SA3_NAME": "Kingston",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20804,
+    "SA3_NAME": "Stonnington - East",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20901,
+    "SA3_NAME": "Banyule",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20902,
+    "SA3_NAME": "Darebin - North",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20903,
+    "SA3_NAME": "Nillumbik - Kinglake",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 20904,
+    "SA3_NAME": "Whittlesea - Wallan",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21001,
+    "SA3_NAME": "Keilor",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21002,
+    "SA3_NAME": "Macedon Ranges",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21003,
+    "SA3_NAME": "Moreland - North",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21004,
+    "SA3_NAME": "Sunbury",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21005,
+    "SA3_NAME": "Tullamarine - Broadmeadows",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21101,
+    "SA3_NAME": "Knox",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21102,
+    "SA3_NAME": "Manningham - East",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21103,
+    "SA3_NAME": "Maroondah",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21104,
+    "SA3_NAME": "Whitehorse - East",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21105,
+    "SA3_NAME": "Yarra Ranges",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21201,
+    "SA3_NAME": "Cardinia",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21202,
+    "SA3_NAME": "Casey - North",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21203,
+    "SA3_NAME": "Casey - South",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21204,
+    "SA3_NAME": "Dandenong",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21205,
+    "SA3_NAME": "Monash",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21301,
+    "SA3_NAME": "Brimbank",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21302,
+    "SA3_NAME": "Hobsons Bay",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21303,
+    "SA3_NAME": "Maribyrnong",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21304,
+    "SA3_NAME": "Melton - Bacchus Marsh",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21305,
+    "SA3_NAME": "Wyndham",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21401,
+    "SA3_NAME": "Frankston",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21402,
+    "SA3_NAME": "Mornington Peninsula",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21501,
+    "SA3_NAME": "Grampians",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21502,
+    "SA3_NAME": "Mildura",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21503,
+    "SA3_NAME": "Murray River - Swan Hill",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21601,
+    "SA3_NAME": "Campaspe",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21602,
+    "SA3_NAME": "Moira",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21603,
+    "SA3_NAME": "Shepparton",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21701,
+    "SA3_NAME": "Glenelg - Southern Grampians",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21703,
+    "SA3_NAME": "Colac - Corangamite",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 21704,
+    "SA3_NAME": "Warrnambool",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 29797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (Vic.)",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 29999,
+    "SA3_NAME": "No usual address (Vic.)",
+    "STATE_NAME": "Victoria"
+  },
+  {
+    "SA3_CODE": 30101,
+    "SA3_NAME": "Capalaba",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30102,
+    "SA3_NAME": "Cleveland - Stradbroke",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30103,
+    "SA3_NAME": "Wynnum - Manly",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30201,
+    "SA3_NAME": "Bald Hills - Everton Park",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30202,
+    "SA3_NAME": "Chermside",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30203,
+    "SA3_NAME": "Nundah",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30204,
+    "SA3_NAME": "Sandgate",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30301,
+    "SA3_NAME": "Carindale",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30302,
+    "SA3_NAME": "Holland Park - Yeronga",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30303,
+    "SA3_NAME": "Mt Gravatt",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30304,
+    "SA3_NAME": "Nathan",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30305,
+    "SA3_NAME": "Rocklea - Acacia Ridge",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30306,
+    "SA3_NAME": "Sunnybank",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30401,
+    "SA3_NAME": "Centenary",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30402,
+    "SA3_NAME": "Kenmore - Brookfield - Moggill",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30403,
+    "SA3_NAME": "Sherwood - Indooroopilly",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30404,
+    "SA3_NAME": "The Gap - Enoggera",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30501,
+    "SA3_NAME": "Brisbane Inner",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30502,
+    "SA3_NAME": "Brisbane Inner - East",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30503,
+    "SA3_NAME": "Brisbane Inner - North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30504,
+    "SA3_NAME": "Brisbane Inner - West",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30601,
+    "SA3_NAME": "Cairns - North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30602,
+    "SA3_NAME": "Cairns - South",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30603,
+    "SA3_NAME": "Innisfail - Cassowary Coast",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30604,
+    "SA3_NAME": "Port Douglas - Daintree",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30605,
+    "SA3_NAME": "Tablelands (East) - Kuranda",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30701,
+    "SA3_NAME": "Darling Downs (West) - Maranoa",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30702,
+    "SA3_NAME": "Darling Downs - East",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30703,
+    "SA3_NAME": "Granite Belt",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30801,
+    "SA3_NAME": "Central Highlands (Qld)",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30803,
+    "SA3_NAME": "Rockhampton",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30804,
+    "SA3_NAME": "Biloela",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30805,
+    "SA3_NAME": "Gladstone",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30901,
+    "SA3_NAME": "Broadbeach - Burleigh",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30902,
+    "SA3_NAME": "Coolangatta",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30903,
+    "SA3_NAME": "Gold Coast - North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30904,
+    "SA3_NAME": "Gold Coast Hinterland",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30905,
+    "SA3_NAME": "Mudgeeraba - Tallebudgera",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30906,
+    "SA3_NAME": "Nerang",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30907,
+    "SA3_NAME": "Ormeau - Oxenford",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30908,
+    "SA3_NAME": "Robina",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30909,
+    "SA3_NAME": "Southport",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 30910,
+    "SA3_NAME": "Surfers Paradise",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31001,
+    "SA3_NAME": "Forest Lake - Oxley",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31002,
+    "SA3_NAME": "Ipswich Hinterland",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31003,
+    "SA3_NAME": "Ipswich Inner",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31004,
+    "SA3_NAME": "Springfield - Redbank",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31101,
+    "SA3_NAME": "Beaudesert",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31102,
+    "SA3_NAME": "Beenleigh",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31103,
+    "SA3_NAME": "Browns Plains",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31104,
+    "SA3_NAME": "Jimboomba",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31105,
+    "SA3_NAME": "Loganlea - Carbrook",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31106,
+    "SA3_NAME": "Springwood - Kingston",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31201,
+    "SA3_NAME": "Bowen Basin - North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31202,
+    "SA3_NAME": "Mackay",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31203,
+    "SA3_NAME": "Whitsunday",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31301,
+    "SA3_NAME": "Bribie - Beachmere",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31302,
+    "SA3_NAME": "Caboolture",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31303,
+    "SA3_NAME": "Caboolture Hinterland",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31304,
+    "SA3_NAME": "Narangba - Burpengary",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31305,
+    "SA3_NAME": "Redcliffe",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31401,
+    "SA3_NAME": "The Hills District",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31402,
+    "SA3_NAME": "North Lakes",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31403,
+    "SA3_NAME": "Strathpine",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31501,
+    "SA3_NAME": "Far North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31502,
+    "SA3_NAME": "Outback - North",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31503,
+    "SA3_NAME": "Outback - South",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31601,
+    "SA3_NAME": "Buderim",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31602,
+    "SA3_NAME": "Caloundra",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31603,
+    "SA3_NAME": "Maroochy",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31605,
+    "SA3_NAME": "Noosa",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31606,
+    "SA3_NAME": "Sunshine Coast Hinterland",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31607,
+    "SA3_NAME": "Nambour",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31608,
+    "SA3_NAME": "Noosa Hinterland",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31701,
+    "SA3_NAME": "Toowoomba",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31801,
+    "SA3_NAME": "Charters Towers - Ayr - Ingham",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31802,
+    "SA3_NAME": "Townsville",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31901,
+    "SA3_NAME": "Bundaberg",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31902,
+    "SA3_NAME": "Burnett",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31903,
+    "SA3_NAME": "Gympie - Cooloola",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31904,
+    "SA3_NAME": "Hervey Bay",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 31905,
+    "SA3_NAME": "Maryborough",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 39797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (Qld)",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 39999,
+    "SA3_NAME": "No usual address (Qld)",
+    "STATE_NAME": "Queensland"
+  },
+  {
+    "SA3_CODE": 40101,
+    "SA3_NAME": "Adelaide City",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40102,
+    "SA3_NAME": "Adelaide Hills",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40103,
+    "SA3_NAME": "Burnside",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40104,
+    "SA3_NAME": "Campbelltown (SA)",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40105,
+    "SA3_NAME": "Norwood - Payneham - St Peters",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40106,
+    "SA3_NAME": "Prospect - Walkerville",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40107,
+    "SA3_NAME": "Unley",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40201,
+    "SA3_NAME": "Gawler - Two Wells",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40202,
+    "SA3_NAME": "Playford",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40203,
+    "SA3_NAME": "Port Adelaide - East",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40204,
+    "SA3_NAME": "Salisbury",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40205,
+    "SA3_NAME": "Tea Tree Gully",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40301,
+    "SA3_NAME": "Holdfast Bay",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40302,
+    "SA3_NAME": "Marion",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40303,
+    "SA3_NAME": "Mitcham",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40304,
+    "SA3_NAME": "Onkaparinga",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40401,
+    "SA3_NAME": "Charles Sturt",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40402,
+    "SA3_NAME": "Port Adelaide - West",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40403,
+    "SA3_NAME": "West Torrens",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40501,
+    "SA3_NAME": "Barossa",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40502,
+    "SA3_NAME": "Lower North",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40503,
+    "SA3_NAME": "Mid North",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40504,
+    "SA3_NAME": "Yorke Peninsula",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40601,
+    "SA3_NAME": "Eyre Peninsula and South West",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40602,
+    "SA3_NAME": "Outback - North and East",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40701,
+    "SA3_NAME": "Fleurieu - Kangaroo Island",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40702,
+    "SA3_NAME": "Limestone Coast",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 40703,
+    "SA3_NAME": "Murray and Mallee",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 49797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (SA)",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 49999,
+    "SA3_NAME": "No usual address (SA)",
+    "STATE_NAME": "South Australia"
+  },
+  {
+    "SA3_CODE": 50101,
+    "SA3_NAME": "Augusta - Margaret River - Busselton",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50102,
+    "SA3_NAME": "Bunbury",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50103,
+    "SA3_NAME": "Manjimup",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50201,
+    "SA3_NAME": "Mandurah",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50301,
+    "SA3_NAME": "Cottesloe - Claremont",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50302,
+    "SA3_NAME": "Perth City",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50401,
+    "SA3_NAME": "Bayswater - Bassendean",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50402,
+    "SA3_NAME": "Mundaring",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50403,
+    "SA3_NAME": "Swan",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50501,
+    "SA3_NAME": "Joondalup",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50502,
+    "SA3_NAME": "Stirling",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50503,
+    "SA3_NAME": "Wanneroo",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50601,
+    "SA3_NAME": "Armadale",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50602,
+    "SA3_NAME": "Belmont - Victoria Park",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50603,
+    "SA3_NAME": "Canning",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50604,
+    "SA3_NAME": "Gosnells",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50605,
+    "SA3_NAME": "Kalamunda",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50606,
+    "SA3_NAME": "Serpentine - Jarrahdale",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50607,
+    "SA3_NAME": "South Perth",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50701,
+    "SA3_NAME": "Cockburn",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50702,
+    "SA3_NAME": "Fremantle",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50703,
+    "SA3_NAME": "Kwinana",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50704,
+    "SA3_NAME": "Melville",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50705,
+    "SA3_NAME": "Rockingham",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50901,
+    "SA3_NAME": "Albany",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50902,
+    "SA3_NAME": "Wheat Belt - North",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 50903,
+    "SA3_NAME": "Wheat Belt - South",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51001,
+    "SA3_NAME": "Kimberley",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51002,
+    "SA3_NAME": "East Pilbara",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51003,
+    "SA3_NAME": "West Pilbara",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51101,
+    "SA3_NAME": "Esperance",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51102,
+    "SA3_NAME": "Gascoyne",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51103,
+    "SA3_NAME": "Goldfields",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 51104,
+    "SA3_NAME": "Mid West",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 59797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (WA)",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 59999,
+    "SA3_NAME": "No usual address (WA)",
+    "STATE_NAME": "Western Australia"
+  },
+  {
+    "SA3_CODE": 60101,
+    "SA3_NAME": "Brighton",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60102,
+    "SA3_NAME": "Hobart - North East",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60103,
+    "SA3_NAME": "Hobart - North West",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60104,
+    "SA3_NAME": "Hobart - South and West",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60105,
+    "SA3_NAME": "Hobart Inner",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60106,
+    "SA3_NAME": "Sorell - Dodges Ferry",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60201,
+    "SA3_NAME": "Launceston",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60202,
+    "SA3_NAME": "Meander Valley - West Tamar",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60203,
+    "SA3_NAME": "North East",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60301,
+    "SA3_NAME": "Central Highlands (Tas.)",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60302,
+    "SA3_NAME": "Huon - Bruny Island",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60303,
+    "SA3_NAME": "South East Coast",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60401,
+    "SA3_NAME": "Burnie - Ulverstone",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60402,
+    "SA3_NAME": "Devonport",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 60403,
+    "SA3_NAME": "West Coast",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 69797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (Tas.)",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 69999,
+    "SA3_NAME": "No usual address (Tas.)",
+    "STATE_NAME": "Tasmania"
+  },
+  {
+    "SA3_CODE": 70101,
+    "SA3_NAME": "Darwin City",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70102,
+    "SA3_NAME": "Darwin Suburbs",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70103,
+    "SA3_NAME": "Litchfield",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70104,
+    "SA3_NAME": "Palmerston",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70201,
+    "SA3_NAME": "Alice Springs",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70202,
+    "SA3_NAME": "Barkly",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70203,
+    "SA3_NAME": "Daly - Tiwi - West Arnhem",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70204,
+    "SA3_NAME": "East Arnhem",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 70205,
+    "SA3_NAME": "Katherine",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 79797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (NT)",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 79999,
+    "SA3_NAME": "No usual address (NT)",
+    "STATE_NAME": "Northern Territory"
+  },
+  {
+    "SA3_CODE": 80101,
+    "SA3_NAME": "Belconnen",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80103,
+    "SA3_NAME": "Canberra East",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80104,
+    "SA3_NAME": "Gungahlin",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80105,
+    "SA3_NAME": "North Canberra",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80106,
+    "SA3_NAME": "South Canberra",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80107,
+    "SA3_NAME": "Tuggeranong",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80108,
+    "SA3_NAME": "Weston Creek",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80109,
+    "SA3_NAME": "Woden Valley",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80110,
+    "SA3_NAME": "Molonglo",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 80111,
+    "SA3_NAME": "Urriarra - Namadgi",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 89797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (ACT)",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 89999,
+    "SA3_NAME": "No usual address (ACT)",
+    "STATE_NAME": "Australian Capital Territory"
+  },
+  {
+    "SA3_CODE": 90101,
+    "SA3_NAME": "Christmas Island",
+    "STATE_NAME": "Other Territories"
+  },
+  {
+    "SA3_CODE": 90102,
+    "SA3_NAME": "Cocos (Keeling) Islands",
+    "STATE_NAME": "Other Territories"
+  },
+  {
+    "SA3_CODE": 90103,
+    "SA3_NAME": "Jervis Bay",
+    "STATE_NAME": "Other Territories"
+  },
+  {
+    "SA3_CODE": 90104,
+    "SA3_NAME": "Norfolk Island",
+    "STATE_NAME": "Other Territories"
+  },
+  {
+    "SA3_CODE": 99797,
+    "SA3_NAME": "Migratory - Offshore - Shipping (OT)",
+    "STATE_NAME": "Other Territories"
+  },
+  {
+    "SA3_CODE": 99999,
+    "SA3_NAME": "No usual address (OT)",
+    "STATE_NAME": "Other Territories"
+  }
+]
