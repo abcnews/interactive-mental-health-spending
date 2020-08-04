@@ -15,12 +15,13 @@
     "test": "aunty test"
   },
   "devDependencies": {
-    "@abcnews/aunty": "^10.9.4",
+    "@abcnews/aunty": "^10.9.5",
     "papaparse": "^5.2.0",
     "react-test-renderer": "^16.13.1"
   },
   "dependencies": {
     "@abcnews/scrollyteller": "^2.2.1",
+    "d3-selection": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-portal": "^4.2.1",
