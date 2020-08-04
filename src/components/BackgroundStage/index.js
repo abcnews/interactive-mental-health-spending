@@ -1,10 +1,12 @@
-import React from 'react';
-import styles from './styles.scss';
+import React from "react";
+import styles from "./styles.scss";
+
+import MultiChart from "../MultiChart";
 
 export default props => {
   return (
     <div className={styles.root}>
-      Find me in <strong>src/components/BackgroundStage/index.js</strong>
+      <MultiChart />
     </div>
   );
-}
+};
