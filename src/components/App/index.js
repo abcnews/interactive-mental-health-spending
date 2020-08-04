@@ -6,6 +6,7 @@ import Scrollyteller from "@abcnews/scrollyteller";
 import PostcodeSearch from "../PostcodeSearch";
 import MultiChart from "../MultiChart";
 import BackgroundStage from "../BackgroundStage";
+import CustomPanel from "../CustomPanel";
 
 // let lookupData;
 
@@ -63,7 +64,7 @@ export default props => {
       <MultiChart />
 
       <Portal node={document.querySelector(".scrollystagemount")}>
-        <Scrollyteller panels={props.scrollyData.panels} onMarker={onMarker}>
+        <Scrollyteller panels={props.scrollyData.panels} onMarker={onMarker} panelComponent={CustomPanel}>
           <BackgroundStage />
         </Scrollyteller>
       </Portal>
