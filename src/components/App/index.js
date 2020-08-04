@@ -4,7 +4,6 @@ import { Portal } from "react-portal";
 import Scrollyteller from "@abcnews/scrollyteller";
 
 import PostcodeSearch from "../PostcodeSearch";
-import MultiChart from "../MultiChart";
 import BackgroundStage from "../BackgroundStage";
 import CustomPanel from "../CustomPanel";
 
@@ -55,19 +54,20 @@ export default props => {
   // }, [userPostcode]);
 
   return (
-    <div className={styles.root}>
-      <PostcodeSearch />
-
-      <br></br>
-      <br></br>
-
-      <MultiChart />
+    <>
+      <div className={styles.root}>
+        <PostcodeSearch />
+      </div>
 
       <Portal node={document.querySelector(".scrollystagemount")}>
-        <Scrollyteller panels={props.scrollyData.panels} onMarker={onMarker} panelComponent={CustomPanel}>
+        <Scrollyteller
+          panels={props.scrollyData.panels}
+          onMarker={onMarker}
+          panelComponent={CustomPanel}
+        >
           <BackgroundStage />
         </Scrollyteller>
       </Portal>
-    </div>
+    </>
   );
 };
