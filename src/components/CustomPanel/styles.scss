@@ -1,6 +1,444 @@
-.root {
-  border: 1px solid rgb(255, 115, 0);
-  padding: 20px;
-  text-align: center;
-  color: black;
+$fade-height: 50vh;
+
+.base {
+  // Fix for panels going behind the stage
+  -webkit-transform: translate3d(0, 0, 0);
+
+  box-sizing: border-box;
+
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+
+  margin-bottom: 45vh;
+  margin-top: 45vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  z-index: 1;
+
+  width: 61.25rem;
+
+  &:nth-of-type(2) {
+    margin-top: 90vh;
+  }
+
+  &:last-of-type {
+    margin-bottom: 90vh;
+  }
+
+  &::before {
+    content: "";
+
+    background-color: rgba(0, 0, 0, 0.6);
+    // border-radius: 4px;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(66.66667% + 3rem);
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p {
+    font-family: ABCSerif, Book Antiqua, Palatino Linotype, Palatino, serif;
+    font-size: 1.375rem;
+    line-height: 1.666666667;
+    color: #fefefe;
+
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+
+    margin-top: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    width: 66.666667%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    font-size: 1.375rem;
+  }
+
+  li {
+    line-height: 1.666666667;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    width: 66.66667%;
+    margin-bottom: 2.25rem;
+  }
+
+  ul li {
+    padding-left: 1em;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA0IDQiPgogIDxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiM2NjY2NjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K);
+    background-position: 0 0.65em;
+    background-repeat: no-repeat;
+  }
+
+  blockquote {
+    p {
+      color: #315768;
+      padding-left: 8.33333%;
+      padding-right: 8.33333%;
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+.light {
+  &::before {
+    background-color: rgba(250, 250, 250, 0.8);
+    // border: 1px solid darken($color, 15%);
+  }
+
+  p {
+    color: #111;
+  }
+}
+
+.hidden {
+  position: absolute;
+  top: 9999px;
+  left: -9999px;
+}
+
+@media only screen and (min-width: 1023px) {
+  .right {
+    margin-right: calc(30% - 24.75rem) !important;
+    width: 49.5rem !important;
+  }
+
+  .left {
+    margin-left: calc(30% - 24.75rem) !important;
+    width: 49.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 43.75rem) {
+  .base {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+    width: 100% !important;
+
+    &::before {
+      width: calc(83.3333% + 0.75rem);
+    }
+
+    p,
+    ul {
+      width: 83.333333%;
+      font-size: 1.125rem;
+      line-height: 1.555555556;
+    }
+  }
+}
+
+.scrollout {
+  &::before {
+    background-color: rgba(250, 250, 250, 0);
+  }
+
+  margin-top: -($fade-height * 0.8);
+  margin-bottom: -($fade-height * 0.8);
+  padding-top: $fade-height * 0.8;
+  padding-bottom: $fade-height * 0.8;
+
+  width: 100%;
+  background-color: hsla(341, 39%, 90%, 0);
+
+  .inner {
+    // background-color: #e0ffffff;
+    // padding-top: 4em;
+    // padding-bottom: 4em;
+  }
+
+  .panel {
+    width: 61.25rem;
+    margin: auto;
+
+    :global(div.ImageEmbed) {
+      width: 100% !important;
+      margin-bottom: 2.25rem !important;
+
+      @media only screen and (max-width: 43.75rem) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      :global(p.Caption) {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.4rem !important;
+        font-family: "ABCSans", Helvetica, Arial, sans-serif;
+
+        @media only screen and (max-width: 43.75rem) {
+          padding-left: 0.9375rem !important;
+          padding-right: 0.9375rem !important;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 2.25rem;
+  }
+
+  ul {
+    font-size: 1.125rem;
+  }
+
+  h2 {
+    font-family: "ABCSerif", serif;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2.25rem;
+    margin-bottom: 0rem;
+    text-transform: unset;
+    color: black;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.294117647;
+
+    &::before {
+      content: "";
+      display: block;
+      margin: 5rem auto 1.5rem;
+      width: 7.5rem;
+      height: 0.125rem;
+      background-color: rgba(179, 179, 179, 0.7);
+    }
+  }
+
+  h3 {
+    font-family: "ABCSerif", serif;
+    font-weight: bold;
+    color: black;
+    line-height: 1.294117647;
+    text-transform: none;
+    margin-bottom: 2.25rem;
+    margin-top: 0;
+    font-size: 1.375rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    width: 66.66667%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  li {
+    line-height: 1.666666667;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    width: 66.66667%;
+    margin-bottom: 2.25rem;
+  }
+
+  ul li {
+    padding-left: 1em;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA0IDQiPgogIDxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiM2NjY2NjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K);
+    background-position: 0 0.65em;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 43.75rem) {
+    .panel {
+      width: 100% !important;
+
+      p {
+        width: 100%;
+      }
+
+      ul {
+        width: 100%;
+      }
+
+      p,
+      ul {
+        font-size: 1.125rem;
+      }
+
+      h2 {
+        font-size: 1.875rem;
+
+        &::before {
+          margin: 3rem auto 1rem;
+        }
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 43.75rem) and (max-width: 61.1875rem) {
+    .panel {
+      width: 83.33333%;
+
+      p {
+        width: 100%;
+      }
+
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.scrollout-bottom {
+  margin-top: 0 !important;
+  padding-top: 0;
+
+  transform: translateY(-1px);
+
+  .inner {
+    padding-top: 0;
+  }
+
+  background-image: linear-gradient(
+    to top,
+    hsla(341, 39%, 90%, 0) $fade-height * 0,
+    hsla(341, 39%, 90%, 0.013) $fade-height * 0.081,
+    hsla(341, 39%, 90%, 0.049) $fade-height * 0.155,
+    hsla(341, 39%, 90%, 0.104) $fade-height * 0.225,
+    hsla(341, 39%, 90%, 0.175) $fade-height * 0.29,
+    hsla(341, 39%, 90%, 0.259) $fade-height * 0.353,
+    hsla(341, 39%, 90%, 0.352) $fade-height * 0.412,
+    hsla(341, 39%, 90%, 0.45) $fade-height * 0.471,
+    hsla(341, 39%, 90%, 0.55) $fade-height * 0.529,
+    hsla(341, 39%, 90%, 0.648) $fade-height * 0.588,
+    hsla(341, 39%, 90%, 0.741) $fade-height * 0.647,
+    hsla(341, 39%, 90%, 0.825) $fade-height * 0.71,
+    hsla(341, 39%, 90%, 0.896) $fade-height * 0.775,
+    hsla(341, 39%, 90%, 0.951) $fade-height * 0.845,
+    hsla(341, 39%, 90%, 0.987) $fade-height * 0.919,
+    hsla(341, 39%, 90%, 1) $fade-height * 1,
+    hsla(341, 39%, 90%, 1) $fade-height * 1.1,
+    hsla(341, 39%, 90%, 1) 100%
+  );
+}
+
+.scrollout-top {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+
+  p:last-child {
+    padding-bottom: 2.25rem;
+  }
+
+  .inner {
+    padding-bottom: 0;
+
+    .panel p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    :global(.Quote.is-pullquote p) {
+      font-size: 1.875rem;
+      line-height: 1.4;
+      margin-bottom: 2.25rem !important;
+      padding-bottom: 0;
+    }
+
+    @media only screen and (max-width: 43.75rem) {
+      :global(.Quote.is-pullquote p) {
+        font-size: 1.625rem;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  background-image: linear-gradient(
+    to bottom,
+    hsla(341, 39%, 90%, 0) $fade-height * 0,
+    hsla(341, 39%, 90%, 0.013) $fade-height * 0.081,
+    hsla(341, 39%, 90%, 0.049) $fade-height * 0.155,
+    hsla(341, 39%, 90%, 0.104) $fade-height * 0.225,
+    hsla(341, 39%, 90%, 0.175) $fade-height * 0.29,
+    hsla(341, 39%, 90%, 0.259) $fade-height * 0.353,
+    hsla(341, 39%, 90%, 0.352) $fade-height * 0.412,
+    hsla(341, 39%, 90%, 0.45) $fade-height * 0.471,
+    hsla(341, 39%, 90%, 0.55) $fade-height * 0.529,
+    hsla(341, 39%, 90%, 0.648) $fade-height * 0.588,
+    hsla(341, 39%, 90%, 0.741) $fade-height * 0.647,
+    hsla(341, 39%, 90%, 0.825) $fade-height * 0.71,
+    hsla(341, 39%, 90%, 0.896) $fade-height * 0.775,
+    hsla(341, 39%, 90%, 0.951) $fade-height * 0.845,
+    hsla(341, 39%, 90%, 0.987) $fade-height * 0.919,
+    hsla(341, 39%, 90%, 1) $fade-height * 1,
+    hsla(341, 39%, 90%, 1) $fade-height * 1.1,
+    hsla(341, 39%, 90%, 1) 100%
+  );
+}
+
+// Let's make a hidden panel that can trigger a mark
+// but won't take up any space on the page
+// TODO: We're going to have to find a better way
+// .hidden-panel {
+//   visibility: hidden;
+//   height: 0;
+// }
+
+:global {
+  // This is to prevent extra paragraph spacing
+  .u-full {
+    // margin-top: 2rem !important;
+    // margin-bottom: 2rem !important;
+  }
+
+  .inline-content.html-fragment {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .spacer-top {
+    padding-top: 256px;
+  }
+
+  .spacer-bottom {
+    padding-bottom: 256px;
+  }
 }
