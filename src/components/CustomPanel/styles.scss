@@ -108,7 +108,7 @@ $fade-height: 50vh;
 
 .light {
   &::before {
-    background-color: rgba(250, 250, 250, 0.8);
+    background-color: white; //rgba(250, 250, 250, 0.8);
     // border: 1px solid darken($color, 15%);
   }
 
