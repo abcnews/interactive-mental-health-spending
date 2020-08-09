@@ -144,7 +144,7 @@ export default props => {
       className={`${styles.base} ${styles.light} ${
         props.config.scrollout
           ? `${styles.scrollout} custom-scrollout-outer`
-          : styles.right
+          : ""//styles.right
       } ${props.config.scrollouttop ? styles.scrolloutTop : ""} ${
         props.config.scrolloutbottom ? styles.scrolloutBottom : ""
       }`}
