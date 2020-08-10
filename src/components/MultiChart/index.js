@@ -27,8 +27,6 @@ const xAxisHeight = 35;
 const textHeight = 14;
 
 let svg;
-let group;
-let rect;
 
 export default props => {
   const root = useRef();
