@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "aunty serve",
-    "test": "aunty test"
+    "test": "aunty test",
+    "phocks": "echo hey man"
   },
   "devDependencies": {
     "@abcnews/aunty": "^10.9.5",
@@ -21,7 +22,11 @@
   },
   "dependencies": {
     "@abcnews/scrollyteller": "^2.2.1",
+    "d3-array": "^2.5.0",
+    "d3-axis": "^1.0.12",
+    "d3-fetch": "^1.2.0",
     "d3-scale": "^3.2.1",
+    "d3-scale-chromatic": "^1.5.0",
     "d3-selection": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
