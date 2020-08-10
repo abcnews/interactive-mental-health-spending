@@ -18,13 +18,13 @@ const d3 = {
 
 const wineQuality = require("./wineQuality.json");
 
-const xVar = "Fixed Acidity";
-const yVar = "Alcohol";
-const titleHeight = 48;
-const figPadding = 16;
+const xVar = "Alcohol";
+const yVar = "Citric Acid";
+const titleHeight = 40;
+const figPadding = 15;
 const yAxisWidth = 42;
-const xAxisHeight = 29;
-const textHeight = 16;
+const xAxisHeight = 35;
+const textHeight = 14;
 
 let svg;
 let group;
@@ -36,33 +36,21 @@ export default props => {
   useLayoutEffect(() => {
     // Initialise the SVG
     svg = d3.select(root.current).append("svg");
-    console.log(svg);
 
-    // .append("svg")
-    // .attr("width", 400)
-    // .attr("height", 300);
-
-    // group = svg.append('g').attr('fill', 'black');
-
-    // rect = group
-    //   .append('rect')
-    //   .attr('x', 0)
-    //   .attr('y', 0)
-    //   .attr('rx', 3)
-    //   .attr('ry', 3)
-    //   .attr('width', 400)
-    //   .attr('height', 300);
-
-    const width = 400;
-    const height = 600;
+    const width = 600;
+    const height = 400;
 
     svg.classed("scatter-plot", true);
 
     const labels = {
-      Alcohol: "Alcohol (%)",
-      "Citric Acid": "Citric Acid (g/l)"
+      Alcohol: "Y axis",
+      "Citric Acid": "X axis"
     };
+
     const paddings = {};
+
+    svg.attr("width", width);
+    svg.attr("height", height);
 
     scatterPlot({
       width,
@@ -79,7 +67,7 @@ export default props => {
       xpadding: paddings[xVar],
       colorField: "Quality",
       size: 2,
-      title: "Alcohol and Citric Acid by Wine Quality"
+      title: "Scatter plot"
     });
   }, []);
 
@@ -121,7 +109,7 @@ function scatterPlot({
   let topPadding = titleHeight + figPadding;
   let leftPadding = figPadding + yAxisWidth;
   let bottomPadding = figPadding + xAxisHeight;
-  let svg = chart.node();
+  // let svg = chart.node();
   let w = width - leftPadding - figPadding - 1;
   let h = height - topPadding - bottomPadding;
 
@@ -132,7 +120,9 @@ function scatterPlot({
   let xAxis = d3
     .axisBottom(x)
     .tickPadding(4)
+    .ticks(6)
     .tickSizeOuter(0);
+    
   chart
     .append("g")
     .attr("class", "x axis")
@@ -170,8 +160,9 @@ function scatterPlot({
   // Add y axis
   let yAxis = d3
     .axisLeft(y)
-    .tickSizeOuter(0)
-    .ticks(4);
+    .tickSizeOuter(1)
+    .ticks(3);
+
   chart
     .append("g")
     .attr("class", "y axis")
