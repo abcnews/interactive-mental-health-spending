@@ -16,15 +16,18 @@ const d3 = {
   ...d3ScaleChromatic
 };
 
+// Test data
 const wineQuality = require("./wineQuality.json");
 
-const xVar = "Alcohol";
-const yVar = "Citric Acid";
-const titleHeight = 40;
-const figPadding = 15;
-const yAxisWidth = 42;
-const xAxisHeight = 35;
-const textHeight = 14;
+// const xVar = "Alcohol";
+// const yVar = "Citric Acid";
+// const titleHeight = 40;
+// const figPadding = 15;
+// const yAxisWidth = 42;
+// const xAxisHeight = 35;
+// const textHeight = 14;
+
+const margin = 10;
 
 let svg;
 
@@ -32,41 +35,82 @@ export default props => {
   const root = useRef();
 
   useLayoutEffect(() => {
-    // Initialise the SVG
-    svg = d3.select(root.current).append("svg");
+    svg = d3.select(root.current);
 
-    const width = 600;
-    const height = 400;
+    const width = window.innerWidth / 2;
+    const height = window.innerHeight;
 
-    svg.classed("scatter-plot", true);
+    // svg.classed("scatter-plot", true);
 
-    const labels = {
-      Alcohol: "Y axis",
-      "Citric Acid": "X axis"
-    };
+    // const labels = {
+    //   Alcohol: "Y axis",
+    //   "Citric Acid": "X axis"
+    // };
 
-    const paddings = {};
+    // const paddings = {};
 
     svg.attr("width", width);
     svg.attr("height", height);
 
-    scatterPlot({
-      width,
-      height,
-      chart: svg,
-      data: wineQuality,
-      xfield: xVar,
-      xlabel: labels[xVar] || xVar,
-      yfield: yVar,
-      ylabel: labels[yVar] || yVar,
-      xgrid: true,
-      ygrid: true,
-      ypadding: paddings[yVar],
-      xpadding: paddings[xVar],
-      colorField: "Quality",
-      size: 2,
-      title: "Scatter plot"
-    });
+    // const x = d3
+    //   .scaleLinear()
+    //   .domain([0, 100]) // This is what is written on the Axis: from 0 to 100
+    //   .range([10, 550]); // This is where the axis is placed: from 100px to 800px
+
+    const data = [
+      { xfield: 2, yfield: 55 },
+      { xfield: 3, yfield: 66 }
+    ];
+
+    const scaleX = d3
+      .scalePoint()
+      .domain([1, 2, 3, 4, 5]) // This is what is written on the Axis: from 0 to 100
+      .range([0 + margin, width - margin]);
+
+    const axis = d3.axisBottom(scaleX).tickSize(3);
+
+    // Draw the axis
+    svg
+      .append("g")
+      .attr("transform", "translate(0,200)") // This controls the vertical position of the Axis
+      .call(axis);
+
+    // svg
+    //   .append("circle")
+    //   .attr("fill", "#435699")
+    //   .attr("cx", x(3))
+    //   .attr("cy", 50)
+    //   .attr("r", 4);
+
+    let dots = svg
+      .append("g")
+      .attr("class", "dots")
+      .selectAll()
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("fill", "#435699")
+      .attr("cx", d => scaleX(d.xfield))
+      .attr("cy", d => d.yfield)
+      .attr("r", 4);
+
+    // scatterPlot({
+    //   width,
+    //   height,
+    //   chart: svg,
+    //   data: wineQuality,
+    //   xfield: xVar,
+    //   xlabel: labels[xVar] || xVar,
+    //   yfield: yVar,
+    //   ylabel: labels[yVar] || yVar,
+    //   xgrid: true,
+    //   ygrid: true,
+    //   ypadding: paddings[yVar],
+    //   xpadding: paddings[xVar],
+    //   colorField: "Quality",
+    //   size: 2,
+    //   title: "Scatter plot"
+    // });
   }, []);
 
   useEffect(() => {
@@ -84,7 +128,11 @@ export default props => {
     // TODO: update the SVG
   }
 
-  return <div className={styles.root} ref={root}></div>;
+  return (
+    <div className={styles.root}>
+      <svg className={"scatter-plot"} ref={root}></svg>
+    </div>
+  );
 };
 
 function scatterPlot({
@@ -107,7 +155,6 @@ function scatterPlot({
   let topPadding = titleHeight + figPadding;
   let leftPadding = figPadding + yAxisWidth;
   let bottomPadding = figPadding + xAxisHeight;
-  // let svg = chart.node();
   let w = width - leftPadding - figPadding - 1;
   let h = height - topPadding - bottomPadding;
 
@@ -120,7 +167,7 @@ function scatterPlot({
     .tickPadding(4)
     .ticks(6)
     .tickSizeOuter(0);
-    
+
   chart
     .append("g")
     .attr("class", "x axis")
