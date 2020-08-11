@@ -5,9 +5,13 @@
   :global {
     svg.scatter-plot {
       background: #f0f0f0;
-      margin: 5px;
+      // margin: 5px;
       position: relative;
     }
+    // .tick line {
+    //   visibility: hidden;
+    // }
+
     rect.bar {
       fill: lightslategray;
     }
