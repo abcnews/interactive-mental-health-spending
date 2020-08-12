@@ -5,6 +5,7 @@ import * as d3Fetch from "d3-fetch";
 import * as d3Array from "d3-array";
 import * as d3Axis from "d3-axis";
 import * as d3ScaleChromatic from "d3-scale-chromatic";
+import useWindowSize from "./useWindowSize";
 import styles from "./styles.scss";
 
 const d3 = {
@@ -30,59 +31,43 @@ const wineQuality = require("./wineQuality.json");
 const margin = 10;
 
 let svg;
+let scaleX;
+let axis;
+let axisGroup;
+let dots;
 
 export default props => {
   const root = useRef();
+  const windowSize = useWindowSize();
 
-  useLayoutEffect(() => {
+  const initComponent = () => {
     svg = d3.select(root.current);
 
-    const width = window.innerWidth / 2;
+    const width = svg.node().getBoundingClientRect().width;
     const height = window.innerHeight;
-
-    // svg.classed("scatter-plot", true);
-
-    // const labels = {
-    //   Alcohol: "Y axis",
-    //   "Citric Acid": "X axis"
-    // };
-
-    // const paddings = {};
-
-    svg.attr("width", width);
-    svg.attr("height", height);
-
-    // const x = d3
-    //   .scaleLinear()
-    //   .domain([0, 100]) // This is what is written on the Axis: from 0 to 100
-    //   .range([10, 550]); // This is where the axis is placed: from 100px to 800px
 
     const data = [
       { xfield: 2, yfield: 55 },
       { xfield: 3, yfield: 66 }
     ];
 
-    const scaleX = d3
+    scaleX = d3
       .scalePoint()
       .domain([1, 2, 3, 4, 5]) // This is what is written on the Axis: from 0 to 100
       .range([0 + margin, width - margin]);
 
-    const axis = d3.axisBottom(scaleX).tickSize(3);
+    axis = d3.axisBottom(scaleX).tickSize(3);
 
     // Draw the axis
-    svg
+    axisGroup = svg
       .append("g")
       .attr("transform", "translate(0,200)") // This controls the vertical position of the Axis
       .call(axis);
 
-    // svg
-    //   .append("circle")
-    //   .attr("fill", "#435699")
-    //   .attr("cx", x(3))
-    //   .attr("cy", 50)
-    //   .attr("r", 4);
+    svg.attr("width", width);
+    svg.attr("height", height);
 
-    let dots = svg
+    dots = svg
       .append("g")
       .attr("class", "dots")
       .selectAll()
@@ -93,40 +78,46 @@ export default props => {
       .attr("cx", d => scaleX(d.xfield))
       .attr("cy", d => d.yfield)
       .attr("r", 4);
+  };
 
-    // scatterPlot({
-    //   width,
-    //   height,
-    //   chart: svg,
-    //   data: wineQuality,
-    //   xfield: xVar,
-    //   xlabel: labels[xVar] || xVar,
-    //   yfield: yVar,
-    //   ylabel: labels[yVar] || yVar,
-    //   xgrid: true,
-    //   ygrid: true,
-    //   ypadding: paddings[yVar],
-    //   xpadding: paddings[xVar],
-    //   colorField: "Quality",
-    //   size: 2,
-    //   title: "Scatter plot"
-    // });
+  useLayoutEffect(() => {
+    // Init layout effect after delay
+    setTimeout(() => {
+      initComponent();
+    }, 2000);
   }, []);
 
-  useEffect(() => {
-    updateChart(props);
-  }, [props]); // TODO: be more specific with your change checkers
+  useLayoutEffect(() => {
+    if (!svg) return;
+
+    console.log("Resize detected...");
+    console.log(svg.node().getBoundingClientRect());
+
+    const width = svg.node().getBoundingClientRect().width;
+    const height = svg.node().getBoundingClientRect().height;
+
+    scaleX.range([0 + margin, width - margin]);
+
+    svg.attr("width", width);
+    svg.attr("height", height);
+
+    axisGroup.call(axis);
+  }, [windowSize.width, windowSize.height]);
+
+  // useEffect(() => {
+  //   updateChart(props);
+  // }, [props]); // TODO: be more specific with your change checkers
 
   // Example effect to update chart on window resize
-  useEffect(() => {
-    const onResize = () => updateChart(props);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, [props]);
+  // useEffect(() => {
+  //   const onResize = () => updateChart(props);
+  //   window.addEventListener("resize", onResize);
+  //   return () => window.removeEventListener("resize", onResize);
+  // }, [props]);
 
-  function updateChart(props) {
-    // TODO: update the SVG
-  }
+  // function updateChart(props) {
+  //   // TODO: update the SVG
+  // }
 
   return (
     <div className={styles.root}>
