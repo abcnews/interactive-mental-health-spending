@@ -85,8 +85,8 @@ export default props => {
       .domain([100, 1]) // This is what is written on the Axis: from 0 to 100
       .range([margin.top, height - margin.bottom]);
 
-    xAxis = g => {
-      return g.attr("transform", `translate(0,${height - margin.bottom})`).call(
+    xAxis = g =>
+      g.attr("transform", `translate(0,${height - margin.bottom})`).call(
         d3
           .axisBottom(scaleX)
           .tickFormat("")
@@ -101,7 +101,6 @@ export default props => {
           ])
         // .tickSize(-200)
       );
-    };
 
     // yAxis = g => {
     //   return g.attr("transform", `translate(0,${height - margin.bottom})`).call(
@@ -117,7 +116,10 @@ export default props => {
       svg
         .attr("transform", `translate(${margin.left},0)`)
         .call(
-          d3.axisRight(scaleY).tickSize(width - margin.left - margin.right)
+          d3
+            .axisLeft(scaleY)
+            .tickPadding([6])
+            .tickSize(-(width - margin.left - margin.right))
           // .tickFormat(formatTick)
         )
         .call(g => g.select(".domain").remove())
@@ -127,11 +129,10 @@ export default props => {
             .attr("stroke-opacity", 0.5)
             .attr("stroke-dasharray", "2,2")
         )
-        .call(g =>
-          g
-            .selectAll(".tick text")
-            .attr("x", 4)
-            .attr("dy", -4)
+        .call(
+          g => g.selectAll(".tick text")
+          // .attr("x", 0)
+          // .attr("y", 0)
         );
 
     //d3.axisBottom(scaleX).tickSize(3);
@@ -189,6 +190,8 @@ export default props => {
 
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
+
+    dots.attr("cx", d => scaleX(d.xfield)).attr("cy", d => scaleY(d.yfield));
   }, [windowSize.width, windowSize.height]);
 
   // useEffect(() => {
