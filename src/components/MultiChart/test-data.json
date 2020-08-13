@@ -1,0 +1,2690 @@
+[
+  {
+    "SA3 name": "Major cities - higher SES",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.44,
+    "Services per 100 people": 26.4,
+    "Medicare benefits per 100 people ($)": 2906
+  },
+  {
+    "SA3 name": "Queanbeyan",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.31,
+    "Services per 100 people": 18.9,
+    "Medicare benefits per 100 people ($)": 2051
+  },
+  {
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.59,
+    "Services per 100 people": 10.01,
+    "Medicare benefits per 100 people ($)": 979
+  },
+  {
+    "SA3 name": "South Coast",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.79,
+    "Services per 100 people": 21.27,
+    "Medicare benefits per 100 people ($)": 2058
+  },
+  {
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.74,
+    "Services per 100 people": 15.76,
+    "Medicare benefits per 100 people ($)": 1697
+  },
+  {
+    "SA3 name": "Young - Yass",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.09,
+    "Services per 100 people": 12.83,
+    "Medicare benefits per 100 people ($)": 1374
+  },
+  {
+    "SA3 name": "Gosford",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.81,
+    "Services per 100 people": 25.01,
+    "Medicare benefits per 100 people ($)": 2522
+  },
+  {
+    "SA3 name": "Wyong",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.21,
+    "Services per 100 people": 21.09,
+    "Medicare benefits per 100 people ($)": 1998
+  },
+  {
+    "SA3 name": "Bathurst",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.28,
+    "Services per 100 people": 21.64,
+    "Medicare benefits per 100 people ($)": 2185
+  },
+  {
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.4,
+    "Services per 100 people": 9.78,
+    "Medicare benefits per 100 people ($)": 1040
+  },
+  {
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.55,
+    "Services per 100 people": 14.52,
+    "Medicare benefits per 100 people ($)": 1370
+  },
+  {
+    "SA3 name": "Orange",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.63,
+    "Services per 100 people": 19.78,
+    "Medicare benefits per 100 people ($)": 2004
+  },
+  {
+    "SA3 name": "Clarence Valley",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.32,
+    "Services per 100 people": 23.49,
+    "Medicare benefits per 100 people ($)": 2164
+  },
+  {
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.83,
+    "Services per 100 people": 35.05,
+    "Medicare benefits per 100 people ($)": 3603
+  },
+  {
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.52,
+    "Services per 100 people": 5.58,
+    "Medicare benefits per 100 people ($)": 536
+  },
+  {
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.91,
+    "Services per 100 people": 9.31,
+    "Medicare benefits per 100 people ($)": 863
+  },
+  {
+    "SA3 name": "Dubbo",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.41,
+    "Services per 100 people": 13.99,
+    "Medicare benefits per 100 people ($)": 1360
+  },
+  {
+    "SA3 name": "Lower Hunter",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.36,
+    "Services per 100 people": 17.06,
+    "Medicare benefits per 100 people ($)": 1729
+  },
+  {
+    "SA3 name": "Maitland",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.26,
+    "Services per 100 people": 20.81,
+    "Medicare benefits per 100 people ($)": 2125
+  },
+  {
+    "SA3 name": "Port Stephens",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.88,
+    "Services per 100 people": 18.45,
+    "Medicare benefits per 100 people ($)": 1838
+  },
+  {
+    "SA3 name": "Upper Hunter",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.98,
+    "Services per 100 people": 16.76,
+    "Medicare benefits per 100 people ($)": 1540
+  },
+  {
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.06,
+    "Services per 100 people": 26.49,
+    "Medicare benefits per 100 people ($)": 2604
+  },
+  {
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.22,
+    "Services per 100 people": 26.5,
+    "Medicare benefits per 100 people ($)": 2571
+  },
+  {
+    "SA3 name": "Wollongong",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.23,
+    "Services per 100 people": 29.11,
+    "Medicare benefits per 100 people ($)": 3008
+  },
+  {
+    "SA3 name": "Great Lakes",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.27,
+    "Services per 100 people": 21.4,
+    "Medicare benefits per 100 people ($)": 2041
+  },
+  {
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.99,
+    "Services per 100 people": 20.63,
+    "Medicare benefits per 100 people ($)": 1940
+  },
+  {
+    "SA3 name": "Port Macquarie",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.19,
+    "Services per 100 people": 20.65,
+    "Medicare benefits per 100 people ($)": 2025
+  },
+  {
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.46,
+    "Services per 100 people": 21.62,
+    "Medicare benefits per 100 people ($)": 2095
+  },
+  {
+    "SA3 name": "Albury",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.56,
+    "Services per 100 people": 17.48,
+    "Medicare benefits per 100 people ($)": 1680
+  },
+  {
+    "SA3 name": "Lower Murray",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.83,
+    "Services per 100 people": 8.12,
+    "Medicare benefits per 100 people ($)": 836
+  },
+  {
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.04,
+    "Services per 100 people": 11.85,
+    "Medicare benefits per 100 people ($)": 1112
+  },
+  {
+    "SA3 name": "Armidale",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.77,
+    "Services per 100 people": 15.57,
+    "Medicare benefits per 100 people ($)": 1632
+  },
+  {
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.69,
+    "Services per 100 people": 10.3,
+    "Medicare benefits per 100 people ($)": 984
+  },
+  {
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.55,
+    "Services per 100 people": 6.18,
+    "Medicare benefits per 100 people ($)": 587
+  },
+  {
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.93,
+    "Services per 100 people": 11.81,
+    "Medicare benefits per 100 people ($)": 1120
+  },
+  {
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.41,
+    "Services per 100 people": 22.7,
+    "Medicare benefits per 100 people ($)": 2370
+  },
+  {
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.67,
+    "Services per 100 people": 23.31,
+    "Medicare benefits per 100 people ($)": 2342
+  },
+  {
+    "SA3 name": "Newcastle",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.92,
+    "Services per 100 people": 25.37,
+    "Medicare benefits per 100 people ($)": 2615
+  },
+  {
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.97,
+    "Services per 100 people": 31.79,
+    "Medicare benefits per 100 people ($)": 3277
+  },
+  {
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.97,
+    "Services per 100 people": 26.47,
+    "Medicare benefits per 100 people ($)": 2572
+  },
+  {
+    "SA3 name": "Tweed Valley",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.41,
+    "Services per 100 people": 32.91,
+    "Medicare benefits per 100 people ($)": 3419
+  },
+  {
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.14,
+    "Services per 100 people": 8.58,
+    "Medicare benefits per 100 people ($)": 778
+  },
+  {
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.16,
+    "Services per 100 people": 7.73,
+    "Medicare benefits per 100 people ($)": 700
+  },
+  {
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.35,
+    "Services per 100 people": 12.65,
+    "Medicare benefits per 100 people ($)": 1193
+  },
+  {
+    "SA3 name": "Shoalhaven",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.64,
+    "Services per 100 people": 23.12,
+    "Medicare benefits per 100 people ($)": 2262
+  },
+  {
+    "SA3 name": "Southern Highlands",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.81,
+    "Services per 100 people": 20.51,
+    "Medicare benefits per 100 people ($)": 2129
+  },
+  {
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.62,
+    "Services per 100 people": 20.84,
+    "Medicare benefits per 100 people ($)": 2221
+  },
+  {
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.13,
+    "Services per 100 people": 23.47,
+    "Medicare benefits per 100 people ($)": 2547
+  },
+  {
+    "SA3 name": "Hawkesbury",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.37,
+    "Services per 100 people": 23,
+    "Medicare benefits per 100 people ($)": 2346
+  },
+  {
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.84,
+    "Services per 100 people": 21,
+    "Medicare benefits per 100 people ($)": 2189
+  },
+  {
+    "SA3 name": "Blacktown",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.22,
+    "Services per 100 people": 18.19,
+    "Medicare benefits per 100 people ($)": 1774
+  },
+  {
+    "SA3 name": "Blacktown - North",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.35,
+    "Services per 100 people": 18.46,
+    "Medicare benefits per 100 people ($)": 1901
+  },
+  {
+    "SA3 name": "Mount Druitt",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.3,
+    "Services per 100 people": 12.49,
+    "Medicare benefits per 100 people ($)": 1174
+  },
+  {
+    "SA3 name": "Botany",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.16,
+    "Services per 100 people": 20.1,
+    "Medicare benefits per 100 people ($)": 2150
+  },
+  {
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.07,
+    "Services per 100 people": 35.96,
+    "Medicare benefits per 100 people ($)": 3924
+  },
+  {
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.08,
+    "Services per 100 people": 25.56,
+    "Medicare benefits per 100 people ($)": 2790
+  },
+  {
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.53,
+    "Services per 100 people": 34.11,
+    "Medicare benefits per 100 people ($)": 4078
+  },
+  {
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.96,
+    "Services per 100 people": 25.01,
+    "Medicare benefits per 100 people ($)": 2781
+  },
+  {
+    "SA3 name": "Bankstown",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.17,
+    "Services per 100 people": 18.62,
+    "Medicare benefits per 100 people ($)": 1790
+  },
+  {
+    "SA3 name": "Canterbury",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.72,
+    "Services per 100 people": 16.99,
+    "Medicare benefits per 100 people ($)": 1699
+  },
+  {
+    "SA3 name": "Hurstville",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.64,
+    "Services per 100 people": 17.19,
+    "Medicare benefits per 100 people ($)": 1812
+  },
+  {
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.56,
+    "Services per 100 people": 16.26,
+    "Medicare benefits per 100 people ($)": 1712
+  },
+  {
+    "SA3 name": "Canada Bay",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.48,
+    "Services per 100 people": 21.97,
+    "Medicare benefits per 100 people ($)": 2384
+  },
+  {
+    "SA3 name": "Leichhardt",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.91,
+    "Services per 100 people": 35.31,
+    "Medicare benefits per 100 people ($)": 3991
+  },
+  {
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.33,
+    "Services per 100 people": 21.66,
+    "Medicare benefits per 100 people ($)": 2345
+  },
+  {
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.57,
+    "Services per 100 people": 22.8,
+    "Medicare benefits per 100 people ($)": 2659
+  },
+  {
+    "SA3 name": "Hornsby",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.29,
+    "Services per 100 people": 24.74,
+    "Medicare benefits per 100 people ($)": 2709
+  },
+  {
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.88,
+    "Services per 100 people": 23.79,
+    "Medicare benefits per 100 people ($)": 2780
+  },
+  {
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.23,
+    "Services per 100 people": 26.05,
+    "Medicare benefits per 100 people ($)": 3022
+  },
+  {
+    "SA3 name": "Manly",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.07,
+    "Services per 100 people": 24.37,
+    "Medicare benefits per 100 people ($)": 2755
+  },
+  {
+    "SA3 name": "Pittwater",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.31,
+    "Services per 100 people": 24.53,
+    "Medicare benefits per 100 people ($)": 2685
+  },
+  {
+    "SA3 name": "Warringah",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.12,
+    "Services per 100 people": 24.07,
+    "Medicare benefits per 100 people ($)": 2679
+  },
+  {
+    "SA3 name": "Camden",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.41,
+    "Services per 100 people": 23.1,
+    "Medicare benefits per 100 people ($)": 2245
+  },
+  {
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.54,
+    "Services per 100 people": 19.39,
+    "Medicare benefits per 100 people ($)": 1890
+  },
+  {
+    "SA3 name": "Wollondilly",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.13,
+    "Services per 100 people": 21.32,
+    "Medicare benefits per 100 people ($)": 2107
+  },
+  {
+    "SA3 name": "Blue Mountains",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.04,
+    "Services per 100 people": 33.75,
+    "Medicare benefits per 100 people ($)": 3481
+  },
+  {
+    "SA3 name": "Penrith",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.9,
+    "Services per 100 people": 19.95,
+    "Medicare benefits per 100 people ($)": 1952
+  },
+  {
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.5,
+    "Services per 100 people": 23.37,
+    "Medicare benefits per 100 people ($)": 2378
+  },
+  {
+    "SA3 name": "St Marys",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.86,
+    "Services per 100 people": 15.61,
+    "Medicare benefits per 100 people ($)": 1476
+  },
+  {
+    "SA3 name": "Auburn",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.05,
+    "Services per 100 people": 13.86,
+    "Medicare benefits per 100 people ($)": 1342
+  },
+  {
+    "SA3 name": "Carlingford",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.02,
+    "Services per 100 people": 17.6,
+    "Medicare benefits per 100 people ($)": 1816
+  },
+  {
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.8,
+    "Services per 100 people": 16.93,
+    "Medicare benefits per 100 people ($)": 1607
+  },
+  {
+    "SA3 name": "Parramatta",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.87,
+    "Services per 100 people": 17.15,
+    "Medicare benefits per 100 people ($)": 1729
+  },
+  {
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.2,
+    "Services per 100 people": 19.65,
+    "Medicare benefits per 100 people ($)": 2140
+  },
+  {
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.06,
+    "Services per 100 people": 18.82,
+    "Medicare benefits per 100 people ($)": 2023
+  },
+  {
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.81,
+    "Services per 100 people": 16.58,
+    "Medicare benefits per 100 people ($)": 1603
+  },
+  {
+    "SA3 name": "Fairfield",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.65,
+    "Services per 100 people": 16.21,
+    "Medicare benefits per 100 people ($)": 1529
+  },
+  {
+    "SA3 name": "Liverpool",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.21,
+    "Services per 100 people": 19.42,
+    "Medicare benefits per 100 people ($)": 1876
+  },
+  {
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.59,
+    "Services per 100 people": 25.42,
+    "Medicare benefits per 100 people ($)": 2632
+  },
+  {
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.12,
+    "Services per 100 people": 29.66,
+    "Medicare benefits per 100 people ($)": 3063
+  },
+  {
+    "SA3 name": 5,
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.52,
+    "Services per 100 people": 25.49,
+    "Medicare benefits per 100 people ($)": 2673
+  },
+  {
+    "SA3 name": "Ballarat",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.88,
+    "Services per 100 people": 32.03,
+    "Medicare benefits per 100 people ($)": 3264
+  },
+  {
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.35,
+    "Services per 100 people": 30.55,
+    "Medicare benefits per 100 people ($)": 2993
+  },
+  {
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.51,
+    "Services per 100 people": 24.82,
+    "Medicare benefits per 100 people ($)": 2325
+  },
+  {
+    "SA3 name": "Bendigo",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.37,
+    "Services per 100 people": 24.39,
+    "Medicare benefits per 100 people ($)": 2318
+  },
+  {
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.8,
+    "Services per 100 people": 32.6,
+    "Medicare benefits per 100 people ($)": 3110
+  },
+  {
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.8,
+    "Services per 100 people": 17.22,
+    "Medicare benefits per 100 people ($)": 1609
+  },
+  {
+    "SA3 name": "Barwon - West",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.15,
+    "Services per 100 people": 23.17,
+    "Medicare benefits per 100 people ($)": 2430
+  },
+  {
+    "SA3 name": "Geelong",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.98,
+    "Services per 100 people": 27.2,
+    "Medicare benefits per 100 people ($)": 2820
+  },
+  {
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.16,
+    "Services per 100 people": 26.47,
+    "Medicare benefits per 100 people ($)": 2701
+  },
+  {
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.38,
+    "Services per 100 people": 23.69,
+    "Medicare benefits per 100 people ($)": 2321
+  },
+  {
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.38,
+    "Services per 100 people": 17.99,
+    "Medicare benefits per 100 people ($)": 1759
+  },
+  {
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.36,
+    "Services per 100 people": 16.38,
+    "Medicare benefits per 100 people ($)": 1532
+  },
+  {
+    "SA3 name": "Baw Baw",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.79,
+    "Services per 100 people": 23.46,
+    "Medicare benefits per 100 people ($)": 2333
+  },
+  {
+    "SA3 name": "Gippsland - East",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.5,
+    "Services per 100 people": 20.01,
+    "Medicare benefits per 100 people ($)": 1936
+  },
+  {
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.62,
+    "Services per 100 people": 25.4,
+    "Medicare benefits per 100 people ($)": 2569
+  },
+  {
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.69,
+    "Services per 100 people": 21.95,
+    "Medicare benefits per 100 people ($)": 2060
+  },
+  {
+    "SA3 name": "Wellington",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.96,
+    "Services per 100 people": 20.69,
+    "Medicare benefits per 100 people ($)": 1910
+  },
+  {
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 8.34,
+    "Services per 100 people": 44.39,
+    "Medicare benefits per 100 people ($)": 4691
+  },
+  {
+    "SA3 name": "Darebin - South",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 8.94,
+    "Services per 100 people": 46.49,
+    "Medicare benefits per 100 people ($)": 4912
+  },
+  {
+    "SA3 name": "Essendon",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.03,
+    "Services per 100 people": 29.43,
+    "Medicare benefits per 100 people ($)": 3123
+  },
+  {
+    "SA3 name": "Melbourne City",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.1,
+    "Services per 100 people": 20.59,
+    "Medicare benefits per 100 people ($)": 2168
+  },
+  {
+    "SA3 name": "Port Phillip",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.41,
+    "Services per 100 people": 37.58,
+    "Medicare benefits per 100 people ($)": 4039
+  },
+  {
+    "SA3 name": "Stonnington - West",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.37,
+    "Services per 100 people": 31.55,
+    "Medicare benefits per 100 people ($)": 3430
+  },
+  {
+    "SA3 name": "Yarra",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.8,
+    "Services per 100 people": 40.8,
+    "Medicare benefits per 100 people ($)": 4387
+  },
+  {
+    "SA3 name": "Boroondara",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.76,
+    "Services per 100 people": 28.51,
+    "Medicare benefits per 100 people ($)": 3162
+  },
+  {
+    "SA3 name": "Manningham - West",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.35,
+    "Services per 100 people": 20.14,
+    "Medicare benefits per 100 people ($)": 2200
+  },
+  {
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.22,
+    "Services per 100 people": 25.76,
+    "Medicare benefits per 100 people ($)": 2785
+  },
+  {
+    "SA3 name": "Bayside",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.32,
+    "Services per 100 people": 31.1,
+    "Medicare benefits per 100 people ($)": 3464
+  },
+  {
+    "SA3 name": "Glen Eira",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.76,
+    "Services per 100 people": 34.33,
+    "Medicare benefits per 100 people ($)": 3788
+  },
+  {
+    "SA3 name": "Kingston",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.64,
+    "Services per 100 people": 31.75,
+    "Medicare benefits per 100 people ($)": 3329
+  },
+  {
+    "SA3 name": "Stonnington - East",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.15,
+    "Services per 100 people": 30.69,
+    "Medicare benefits per 100 people ($)": 3466
+  },
+  {
+    "SA3 name": "Banyule",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.57,
+    "Services per 100 people": 32.82,
+    "Medicare benefits per 100 people ($)": 3581
+  },
+  {
+    "SA3 name": "Darebin - North",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.77,
+    "Services per 100 people": 28.83,
+    "Medicare benefits per 100 people ($)": 2996
+  },
+  {
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.47,
+    "Services per 100 people": 36.1,
+    "Medicare benefits per 100 people ($)": 3851
+  },
+  {
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.43,
+    "Services per 100 people": 24.88,
+    "Medicare benefits per 100 people ($)": 2513
+  },
+  {
+    "SA3 name": "Keilor",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.5,
+    "Services per 100 people": 25.37,
+    "Medicare benefits per 100 people ($)": 2682
+  },
+  {
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.5,
+    "Services per 100 people": 33.66,
+    "Medicare benefits per 100 people ($)": 3251
+  },
+  {
+    "SA3 name": "Moreland - North",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.66,
+    "Services per 100 people": 27.08,
+    "Medicare benefits per 100 people ($)": 2786
+  },
+  {
+    "SA3 name": "Sunbury",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.53,
+    "Services per 100 people": 35.51,
+    "Medicare benefits per 100 people ($)": 3622
+  },
+  {
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.14,
+    "Services per 100 people": 22.7,
+    "Medicare benefits per 100 people ($)": 2213
+  },
+  {
+    "SA3 name": "Knox",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.98,
+    "Services per 100 people": 27.8,
+    "Medicare benefits per 100 people ($)": 2870
+  },
+  {
+    "SA3 name": "Manningham - East",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.75,
+    "Services per 100 people": 27.97,
+    "Medicare benefits per 100 people ($)": 2940
+  },
+  {
+    "SA3 name": "Maroondah",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.72,
+    "Services per 100 people": 32.36,
+    "Medicare benefits per 100 people ($)": 3334
+  },
+  {
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.49,
+    "Services per 100 people": 26.6,
+    "Medicare benefits per 100 people ($)": 2788
+  },
+  {
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.46,
+    "Services per 100 people": 34.75,
+    "Medicare benefits per 100 people ($)": 3505
+  },
+  {
+    "SA3 name": "Cardinia",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.62,
+    "Services per 100 people": 28.79,
+    "Medicare benefits per 100 people ($)": 2910
+  },
+  {
+    "SA3 name": "Casey - North",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.6,
+    "Services per 100 people": 24.7,
+    "Medicare benefits per 100 people ($)": 2566
+  },
+  {
+    "SA3 name": "Casey - South",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.23,
+    "Services per 100 people": 22.45,
+    "Medicare benefits per 100 people ($)": 2263
+  },
+  {
+    "SA3 name": "Dandenong",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.97,
+    "Services per 100 people": 18.62,
+    "Medicare benefits per 100 people ($)": 1917
+  },
+  {
+    "SA3 name": "Monash",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.22,
+    "Services per 100 people": 20.33,
+    "Medicare benefits per 100 people ($)": 2149
+  },
+  {
+    "SA3 name": "Brimbank",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.48,
+    "Services per 100 people": 20.25,
+    "Medicare benefits per 100 people ($)": 2029
+  },
+  {
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.54,
+    "Services per 100 people": 31.43,
+    "Medicare benefits per 100 people ($)": 3162
+  },
+  {
+    "SA3 name": "Maribyrnong",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.26,
+    "Services per 100 people": 31.1,
+    "Medicare benefits per 100 people ($)": 3225
+  },
+  {
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.65,
+    "Services per 100 people": 25.08,
+    "Medicare benefits per 100 people ($)": 2487
+  },
+  {
+    "SA3 name": "Wyndham",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.78,
+    "Services per 100 people": 21.79,
+    "Medicare benefits per 100 people ($)": 2164
+  },
+  {
+    "SA3 name": "Frankston",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.69,
+    "Services per 100 people": 34.67,
+    "Medicare benefits per 100 people ($)": 3426
+  },
+  {
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.99,
+    "Services per 100 people": 30.85,
+    "Medicare benefits per 100 people ($)": 3110
+  },
+  {
+    "SA3 name": "Grampians",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.28,
+    "Services per 100 people": 9.18,
+    "Medicare benefits per 100 people ($)": 924
+  },
+  {
+    "SA3 name": "Mildura",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.73,
+    "Services per 100 people": 16.95,
+    "Medicare benefits per 100 people ($)": 1682
+  },
+  {
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.97,
+    "Services per 100 people": 11.67,
+    "Medicare benefits per 100 people ($)": 1052
+  },
+  {
+    "SA3 name": "Campaspe",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.28,
+    "Services per 100 people": 17.16,
+    "Medicare benefits per 100 people ($)": 1624
+  },
+  {
+    "SA3 name": "Moira",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.27,
+    "Services per 100 people": 13.78,
+    "Medicare benefits per 100 people ($)": 1392
+  },
+  {
+    "SA3 name": "Shepparton",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.08,
+    "Services per 100 people": 16.87,
+    "Medicare benefits per 100 people ($)": 1711
+  },
+  {
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.58,
+    "Services per 100 people": 17.72,
+    "Medicare benefits per 100 people ($)": 1668
+  },
+  {
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.95,
+    "Services per 100 people": 23.13,
+    "Medicare benefits per 100 people ($)": 2404
+  },
+  {
+    "SA3 name": "Warrnambool",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.75,
+    "Services per 100 people": 18.3,
+    "Medicare benefits per 100 people ($)": 1703
+  },
+  {
+    "SA3 name": 4,
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5,
+    "Services per 100 people": 22.03,
+    "Medicare benefits per 100 people ($)": 2220
+  },
+  {
+    "SA3 name": "Capalaba",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.55,
+    "Services per 100 people": 25.32,
+    "Medicare benefits per 100 people ($)": 2586
+  },
+  {
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.83,
+    "Services per 100 people": 26.41,
+    "Medicare benefits per 100 people ($)": 2670
+  },
+  {
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.67,
+    "Services per 100 people": 25.4,
+    "Medicare benefits per 100 people ($)": 2653
+  },
+  {
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.7,
+    "Services per 100 people": 25.6,
+    "Medicare benefits per 100 people ($)": 2632
+  },
+  {
+    "SA3 name": "Chermside",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.62,
+    "Services per 100 people": 25.72,
+    "Medicare benefits per 100 people ($)": 2648
+  },
+  {
+    "SA3 name": "Nundah",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.32,
+    "Services per 100 people": 23.8,
+    "Medicare benefits per 100 people ($)": 2463
+  },
+  {
+    "SA3 name": "Sandgate",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.38,
+    "Services per 100 people": 24.08,
+    "Medicare benefits per 100 people ($)": 2469
+  },
+  {
+    "SA3 name": "Carindale",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.74,
+    "Services per 100 people": 26.79,
+    "Medicare benefits per 100 people ($)": 2912
+  },
+  {
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.14,
+    "Services per 100 people": 29.21,
+    "Medicare benefits per 100 people ($)": 3128
+  },
+  {
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.86,
+    "Services per 100 people": 22.7,
+    "Medicare benefits per 100 people ($)": 2384
+  },
+  {
+    "SA3 name": "Nathan",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.67,
+    "Services per 100 people": 26.82,
+    "Medicare benefits per 100 people ($)": 2805
+  },
+  {
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.08,
+    "Services per 100 people": 17.96,
+    "Medicare benefits per 100 people ($)": 1829
+  },
+  {
+    "SA3 name": "Sunnybank",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.69,
+    "Services per 100 people": 17.66,
+    "Medicare benefits per 100 people ($)": 1795
+  },
+  {
+    "SA3 name": "Centenary",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.49,
+    "Services per 100 people": 25.99,
+    "Medicare benefits per 100 people ($)": 2842
+  },
+  {
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.82,
+    "Services per 100 people": 28.11,
+    "Medicare benefits per 100 people ($)": 3029
+  },
+  {
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.89,
+    "Services per 100 people": 24.06,
+    "Medicare benefits per 100 people ($)": 2654
+  },
+  {
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.49,
+    "Services per 100 people": 29.34,
+    "Medicare benefits per 100 people ($)": 3021
+  },
+  {
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.79,
+    "Services per 100 people": 27.26,
+    "Medicare benefits per 100 people ($)": 2934
+  },
+  {
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.13,
+    "Services per 100 people": 28.98,
+    "Medicare benefits per 100 people ($)": 3192
+  },
+  {
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.65,
+    "Services per 100 people": 26.56,
+    "Medicare benefits per 100 people ($)": 2799
+  },
+  {
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.98,
+    "Services per 100 people": 28.65,
+    "Medicare benefits per 100 people ($)": 3093
+  },
+  {
+    "SA3 name": "Cairns - North",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.45,
+    "Services per 100 people": 23.95,
+    "Medicare benefits per 100 people ($)": 2429
+  },
+  {
+    "SA3 name": "Cairns - South",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.01,
+    "Services per 100 people": 21.17,
+    "Medicare benefits per 100 people ($)": 2086
+  },
+  {
+    "SA3 name": "Innisfail - Cassowary Coast",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.31,
+    "Services per 100 people": 9.67,
+    "Medicare benefits per 100 people ($)": 955
+  },
+  {
+    "SA3 name": "Port Douglas - Daintree",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.55,
+    "Services per 100 people": 20.39,
+    "Medicare benefits per 100 people ($)": 2218
+  },
+  {
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.05,
+    "Services per 100 people": 15.91,
+    "Medicare benefits per 100 people ($)": 1600
+  },
+  {
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.38,
+    "Services per 100 people": 8.84,
+    "Medicare benefits per 100 people ($)": 845
+  },
+  {
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.02,
+    "Services per 100 people": 15.94,
+    "Medicare benefits per 100 people ($)": 1585
+  },
+  {
+    "SA3 name": "Granite Belt",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.23,
+    "Services per 100 people": 17.54,
+    "Medicare benefits per 100 people ($)": 1803
+  },
+  {
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.69,
+    "Services per 100 people": 9.69,
+    "Medicare benefits per 100 people ($)": 899
+  },
+  {
+    "SA3 name": "Rockhampton",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.35,
+    "Services per 100 people": 17.55,
+    "Medicare benefits per 100 people ($)": 1802
+  },
+  {
+    "SA3 name": "Biloela",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.55,
+    "Services per 100 people": 9.75,
+    "Medicare benefits per 100 people ($)": 953
+  },
+  {
+    "SA3 name": "Gladstone",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.81,
+    "Services per 100 people": 10.72,
+    "Medicare benefits per 100 people ($)": 982
+  },
+  {
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.09,
+    "Services per 100 people": 32.01,
+    "Medicare benefits per 100 people ($)": 3390
+  },
+  {
+    "SA3 name": "Coolangatta",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.4,
+    "Services per 100 people": 33.03,
+    "Medicare benefits per 100 people ($)": 3436
+  },
+  {
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.6,
+    "Services per 100 people": 29.29,
+    "Medicare benefits per 100 people ($)": 2995
+  },
+  {
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.45,
+    "Services per 100 people": 32.71,
+    "Medicare benefits per 100 people ($)": 3345
+  },
+  {
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.83,
+    "Services per 100 people": 30.52,
+    "Medicare benefits per 100 people ($)": 3164
+  },
+  {
+    "SA3 name": "Nerang",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.81,
+    "Services per 100 people": 30.32,
+    "Medicare benefits per 100 people ($)": 3098
+  },
+  {
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.05,
+    "Services per 100 people": 29.69,
+    "Medicare benefits per 100 people ($)": 3009
+  },
+  {
+    "SA3 name": "Robina",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.69,
+    "Services per 100 people": 29.86,
+    "Medicare benefits per 100 people ($)": 3092
+  },
+  {
+    "SA3 name": "Southport",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.81,
+    "Services per 100 people": 30.42,
+    "Medicare benefits per 100 people ($)": 3148
+  },
+  {
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.34,
+    "Services per 100 people": 23.19,
+    "Medicare benefits per 100 people ($)": 2423
+  },
+  {
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.62,
+    "Services per 100 people": 20.26,
+    "Medicare benefits per 100 people ($)": 2103
+  },
+  {
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.11,
+    "Services per 100 people": 22.42,
+    "Medicare benefits per 100 people ($)": 2224
+  },
+  {
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.94,
+    "Services per 100 people": 26.59,
+    "Medicare benefits per 100 people ($)": 2576
+  },
+  {
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.01,
+    "Services per 100 people": 21.88,
+    "Medicare benefits per 100 people ($)": 2181
+  },
+  {
+    "SA3 name": "Beaudesert",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.47,
+    "Services per 100 people": 22.99,
+    "Medicare benefits per 100 people ($)": 2376
+  },
+  {
+    "SA3 name": "Beenleigh",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.44,
+    "Services per 100 people": 24.36,
+    "Medicare benefits per 100 people ($)": 2422
+  },
+  {
+    "SA3 name": "Browns Plains",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.89,
+    "Services per 100 people": 21.34,
+    "Medicare benefits per 100 people ($)": 2141
+  },
+  {
+    "SA3 name": "Jimboomba",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.39,
+    "Services per 100 people": 22.52,
+    "Medicare benefits per 100 people ($)": 2264
+  },
+  {
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.17,
+    "Services per 100 people": 23.17,
+    "Medicare benefits per 100 people ($)": 2313
+  },
+  {
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.65,
+    "Services per 100 people": 24.99,
+    "Medicare benefits per 100 people ($)": 2520
+  },
+  {
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.47,
+    "Services per 100 people": 10.25,
+    "Medicare benefits per 100 people ($)": 1011
+  },
+  {
+    "SA3 name": "Mackay",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.63,
+    "Services per 100 people": 9.77,
+    "Medicare benefits per 100 people ($)": 898
+  },
+  {
+    "SA3 name": "Whitsunday",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.31,
+    "Services per 100 people": 13.52,
+    "Medicare benefits per 100 people ($)": 1282
+  },
+  {
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.84,
+    "Services per 100 people": 20.18,
+    "Medicare benefits per 100 people ($)": 1869
+  },
+  {
+    "SA3 name": "Caboolture",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.35,
+    "Services per 100 people": 22.76,
+    "Medicare benefits per 100 people ($)": 2171
+  },
+  {
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.73,
+    "Services per 100 people": 15.99,
+    "Medicare benefits per 100 people ($)": 1619
+  },
+  {
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.78,
+    "Services per 100 people": 25.43,
+    "Medicare benefits per 100 people ($)": 2530
+  },
+  {
+    "SA3 name": "Redcliffe",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.29,
+    "Services per 100 people": 28.51,
+    "Medicare benefits per 100 people ($)": 2891
+  },
+  {
+    "SA3 name": "The Hills District",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.76,
+    "Services per 100 people": 25.97,
+    "Medicare benefits per 100 people ($)": 2681
+  },
+  {
+    "SA3 name": "North Lakes",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.48,
+    "Services per 100 people": 23.53,
+    "Medicare benefits per 100 people ($)": 2394
+  },
+  {
+    "SA3 name": "Strathpine",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.25,
+    "Services per 100 people": 27.54,
+    "Medicare benefits per 100 people ($)": 2758
+  },
+  {
+    "SA3 name": "Far North",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.01,
+    "Services per 100 people": 4.87,
+    "Medicare benefits per 100 people ($)": 455
+  },
+  {
+    "SA3 name": "Outback - North",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.56,
+    "Services per 100 people": 5.14,
+    "Medicare benefits per 100 people ($)": 464
+  },
+  {
+    "SA3 name": "Outback - South",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.99,
+    "Services per 100 people": 3.5,
+    "Medicare benefits per 100 people ($)": 333
+  },
+  {
+    "SA3 name": "Buderim",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.98,
+    "Services per 100 people": 31.88,
+    "Medicare benefits per 100 people ($)": 3374
+  },
+  {
+    "SA3 name": "Caloundra",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.85,
+    "Services per 100 people": 30.67,
+    "Medicare benefits per 100 people ($)": 3242
+  },
+  {
+    "SA3 name": "Maroochy",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.34,
+    "Services per 100 people": 34.09,
+    "Medicare benefits per 100 people ($)": 3559
+  },
+  {
+    "SA3 name": "Noosa",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.11,
+    "Services per 100 people": 33.61,
+    "Medicare benefits per 100 people ($)": 3364
+  },
+  {
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.36,
+    "Services per 100 people": 34.7,
+    "Medicare benefits per 100 people ($)": 3421
+  },
+  {
+    "SA3 name": "Nambour",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.93,
+    "Services per 100 people": 38.14,
+    "Medicare benefits per 100 people ($)": 3864
+  },
+  {
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.26,
+    "Services per 100 people": 33.69,
+    "Medicare benefits per 100 people ($)": 3270
+  },
+  {
+    "SA3 name": "Toowoomba",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.89,
+    "Services per 100 people": 25.34,
+    "Medicare benefits per 100 people ($)": 2693
+  },
+  {
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.14,
+    "Services per 100 people": 8.56,
+    "Medicare benefits per 100 people ($)": 832
+  },
+  {
+    "SA3 name": "Townsville",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.05,
+    "Services per 100 people": 21.15,
+    "Medicare benefits per 100 people ($)": 2040
+  },
+  {
+    "SA3 name": "Bundaberg",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.59,
+    "Services per 100 people": 18.02,
+    "Medicare benefits per 100 people ($)": 1732
+  },
+  {
+    "SA3 name": "Burnett",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.84,
+    "Services per 100 people": 11.13,
+    "Medicare benefits per 100 people ($)": 1082
+  },
+  {
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.04,
+    "Services per 100 people": 22.75,
+    "Medicare benefits per 100 people ($)": 2069
+  },
+  {
+    "SA3 name": "Hervey Bay",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.54,
+    "Services per 100 people": 23.9,
+    "Medicare benefits per 100 people ($)": 2203
+  },
+  {
+    "SA3 name": "Maryborough",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.09,
+    "Services per 100 people": 26.19,
+    "Medicare benefits per 100 people ($)": 2270
+  },
+  {
+    "SA3 name": 3,
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5,
+    "Services per 100 people": 21.26,
+    "Medicare benefits per 100 people ($)": 2130
+  },
+  {
+    "SA3 name": "Adelaide City",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.34,
+    "Services per 100 people": 25.24,
+    "Medicare benefits per 100 people ($)": 2762
+  },
+  {
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.66,
+    "Services per 100 people": 25.07,
+    "Medicare benefits per 100 people ($)": 2755
+  },
+  {
+    "SA3 name": "Burnside",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.22,
+    "Services per 100 people": 23.71,
+    "Medicare benefits per 100 people ($)": 2644
+  },
+  {
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.84,
+    "Services per 100 people": 21.3,
+    "Medicare benefits per 100 people ($)": 2335
+  },
+  {
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.42,
+    "Services per 100 people": 25.34,
+    "Medicare benefits per 100 people ($)": 2817
+  },
+  {
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.04,
+    "Services per 100 people": 22.78,
+    "Medicare benefits per 100 people ($)": 2475
+  },
+  {
+    "SA3 name": "Unley",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.75,
+    "Services per 100 people": 26.04,
+    "Medicare benefits per 100 people ($)": 2904
+  },
+  {
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.91,
+    "Services per 100 people": 20.4,
+    "Medicare benefits per 100 people ($)": 2224
+  },
+  {
+    "SA3 name": "Playford",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.45,
+    "Services per 100 people": 22.21,
+    "Medicare benefits per 100 people ($)": 2315
+  },
+  {
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.06,
+    "Services per 100 people": 22.15,
+    "Medicare benefits per 100 people ($)": 2391
+  },
+  {
+    "SA3 name": "Salisbury",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.72,
+    "Services per 100 people": 19.08,
+    "Medicare benefits per 100 people ($)": 2021
+  },
+  {
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.58,
+    "Services per 100 people": 24.03,
+    "Medicare benefits per 100 people ($)": 2586
+  },
+  {
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.67,
+    "Services per 100 people": 25.03,
+    "Medicare benefits per 100 people ($)": 2744
+  },
+  {
+    "SA3 name": "Marion",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.53,
+    "Services per 100 people": 25.18,
+    "Medicare benefits per 100 people ($)": 2754
+  },
+  {
+    "SA3 name": "Mitcham",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.99,
+    "Services per 100 people": 29.68,
+    "Medicare benefits per 100 people ($)": 3257
+  },
+  {
+    "SA3 name": "Onkaparinga",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.03,
+    "Services per 100 people": 29.92,
+    "Medicare benefits per 100 people ($)": 3226
+  },
+  {
+    "SA3 name": "Charles Sturt",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.97,
+    "Services per 100 people": 22.17,
+    "Medicare benefits per 100 people ($)": 2404
+  },
+  {
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.92,
+    "Services per 100 people": 21.91,
+    "Medicare benefits per 100 people ($)": 2319
+  },
+  {
+    "SA3 name": "West Torrens",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.88,
+    "Services per 100 people": 22.37,
+    "Medicare benefits per 100 people ($)": 2450
+  },
+  {
+    "SA3 name": "Barossa",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.88,
+    "Services per 100 people": 20.39,
+    "Medicare benefits per 100 people ($)": 2134
+  },
+  {
+    "SA3 name": "Lower North",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.02,
+    "Services per 100 people": 7.93,
+    "Medicare benefits per 100 people ($)": 825
+  },
+  {
+    "SA3 name": "Mid North",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.62,
+    "Services per 100 people": 6.15,
+    "Medicare benefits per 100 people ($)": 641
+  },
+  {
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.4,
+    "Services per 100 people": 9.16,
+    "Medicare benefits per 100 people ($)": 981
+  },
+  {
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.87,
+    "Services per 100 people": 3.28,
+    "Medicare benefits per 100 people ($)": 348
+  },
+  {
+    "SA3 name": "Outback - North and East",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.09,
+    "Services per 100 people": 3.67,
+    "Medicare benefits per 100 people ($)": 367
+  },
+  {
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.13,
+    "Services per 100 people": 21.68,
+    "Medicare benefits per 100 people ($)": 2280
+  },
+  {
+    "SA3 name": "Limestone Coast",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.22,
+    "Services per 100 people": 12.32,
+    "Medicare benefits per 100 people ($)": 1098
+  },
+  {
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.42,
+    "Services per 100 people": 13.55,
+    "Medicare benefits per 100 people ($)": 1391
+  },
+  {
+    "SA3 name": 2,
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.55,
+    "Services per 100 people": 14.66,
+    "Medicare benefits per 100 people ($)": 1446
+  },
+  {
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.52,
+    "Services per 100 people": 26.84,
+    "Medicare benefits per 100 people ($)": 2783
+  },
+  {
+    "SA3 name": "Bunbury",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.56,
+    "Services per 100 people": 18.49,
+    "Medicare benefits per 100 people ($)": 1785
+  },
+  {
+    "SA3 name": "Manjimup",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.82,
+    "Services per 100 people": 16.9,
+    "Medicare benefits per 100 people ($)": 1617
+  },
+  {
+    "SA3 name": "Mandurah",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.95,
+    "Services per 100 people": 15.8,
+    "Medicare benefits per 100 people ($)": 1506
+  },
+  {
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.93,
+    "Services per 100 people": 24.61,
+    "Medicare benefits per 100 people ($)": 2998
+  },
+  {
+    "SA3 name": "Perth City",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.24,
+    "Services per 100 people": 26.55,
+    "Medicare benefits per 100 people ($)": 3089
+  },
+  {
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.95,
+    "Services per 100 people": 23.45,
+    "Medicare benefits per 100 people ($)": 2592
+  },
+  {
+    "SA3 name": "Mundaring",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.51,
+    "Services per 100 people": 25.6,
+    "Medicare benefits per 100 people ($)": 2791
+  },
+  {
+    "SA3 name": "Swan",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.04,
+    "Services per 100 people": 22.93,
+    "Medicare benefits per 100 people ($)": 2408
+  },
+  {
+    "SA3 name": "Joondalup",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.31,
+    "Services per 100 people": 25.12,
+    "Medicare benefits per 100 people ($)": 2800
+  },
+  {
+    "SA3 name": "Stirling",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.47,
+    "Services per 100 people": 21.73,
+    "Medicare benefits per 100 people ($)": 2487
+  },
+  {
+    "SA3 name": "Wanneroo",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.05,
+    "Services per 100 people": 22.9,
+    "Medicare benefits per 100 people ($)": 2424
+  },
+  {
+    "SA3 name": "Armadale",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.74,
+    "Services per 100 people": 21.06,
+    "Medicare benefits per 100 people ($)": 2129
+  },
+  {
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.73,
+    "Services per 100 people": 17.59,
+    "Medicare benefits per 100 people ($)": 1956
+  },
+  {
+    "SA3 name": "Canning",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.45,
+    "Services per 100 people": 16.19,
+    "Medicare benefits per 100 people ($)": 1765
+  },
+  {
+    "SA3 name": "Gosnells",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.87,
+    "Services per 100 people": 17.63,
+    "Medicare benefits per 100 people ($)": 1837
+  },
+  {
+    "SA3 name": "Kalamunda",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.2,
+    "Services per 100 people": 25.17,
+    "Medicare benefits per 100 people ($)": 2678
+  },
+  {
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.32,
+    "Services per 100 people": 17.57,
+    "Medicare benefits per 100 people ($)": 1778
+  },
+  {
+    "SA3 name": "South Perth",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.27,
+    "Services per 100 people": 20.79,
+    "Medicare benefits per 100 people ($)": 2396
+  },
+  {
+    "SA3 name": "Cockburn",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.63,
+    "Services per 100 people": 22.3,
+    "Medicare benefits per 100 people ($)": 2456
+  },
+  {
+    "SA3 name": "Fremantle",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.82,
+    "Services per 100 people": 34.69,
+    "Medicare benefits per 100 people ($)": 3900
+  },
+  {
+    "SA3 name": "Kwinana",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.78,
+    "Services per 100 people": 16.26,
+    "Medicare benefits per 100 people ($)": 1723
+  },
+  {
+    "SA3 name": "Melville",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.78,
+    "Services per 100 people": 24.47,
+    "Medicare benefits per 100 people ($)": 2828
+  },
+  {
+    "SA3 name": "Rockingham",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.51,
+    "Services per 100 people": 18.83,
+    "Medicare benefits per 100 people ($)": 1966
+  },
+  {
+    "SA3 name": "Albany",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.89,
+    "Services per 100 people": 15.54,
+    "Medicare benefits per 100 people ($)": 1580
+  },
+  {
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.13,
+    "Services per 100 people": 12.59,
+    "Medicare benefits per 100 people ($)": 1292
+  },
+  {
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.07,
+    "Services per 100 people": 9.81,
+    "Medicare benefits per 100 people ($)": 1105
+  },
+  {
+    "SA3 name": "Kimberley",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.36,
+    "Services per 100 people": 5.38,
+    "Medicare benefits per 100 people ($)": 570
+  },
+  {
+    "SA3 name": "East Pilbara",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.86,
+    "Services per 100 people": 2.81,
+    "Medicare benefits per 100 people ($)": 273
+  },
+  {
+    "SA3 name": "West Pilbara",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.05,
+    "Services per 100 people": 7.78,
+    "Medicare benefits per 100 people ($)": 682
+  },
+  {
+    "SA3 name": "Esperance",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.65,
+    "Services per 100 people": 11.16,
+    "Medicare benefits per 100 people ($)": 1065
+  },
+  {
+    "SA3 name": "Gascoyne",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.82,
+    "Services per 100 people": 2.66,
+    "Medicare benefits per 100 people ($)": 275
+  },
+  {
+    "SA3 name": "Goldfields",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.25,
+    "Services per 100 people": 4.68,
+    "Medicare benefits per 100 people ($)": 461
+  },
+  {
+    "SA3 name": "Mid West",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.19,
+    "Services per 100 people": 8.59,
+    "Medicare benefits per 100 people ($)": 853
+  },
+  {
+    "SA3 name": 1,
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.4,
+    "Services per 100 people": 5.27,
+    "Medicare benefits per 100 people ($)": 515
+  },
+  {
+    "SA3 name": "Brighton",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.58,
+    "Services per 100 people": 18.41,
+    "Medicare benefits per 100 people ($)": 2053
+  },
+  {
+    "SA3 name": "Hobart - North East",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.58,
+    "Services per 100 people": 29.13,
+    "Medicare benefits per 100 people ($)": 3323
+  },
+  {
+    "SA3 name": "Hobart - North West",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.82,
+    "Services per 100 people": 25.07,
+    "Medicare benefits per 100 people ($)": 2812
+  },
+  {
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.71,
+    "Services per 100 people": 29.58,
+    "Medicare benefits per 100 people ($)": 3359
+  },
+  {
+    "SA3 name": "Hobart Inner",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 7.33,
+    "Services per 100 people": 34.15,
+    "Medicare benefits per 100 people ($)": 3908
+  },
+  {
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 6.15,
+    "Services per 100 people": 26.63,
+    "Medicare benefits per 100 people ($)": 3057
+  },
+  {
+    "SA3 name": "Launceston",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.01,
+    "Services per 100 people": 23.03,
+    "Medicare benefits per 100 people ($)": 2495
+  },
+  {
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.63,
+    "Services per 100 people": 18.93,
+    "Medicare benefits per 100 people ($)": 1930
+  },
+  {
+    "SA3 name": "North East",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.19,
+    "Services per 100 people": 13.92,
+    "Medicare benefits per 100 people ($)": 1425
+  },
+  {
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.52,
+    "Services per 100 people": 23,
+    "Medicare benefits per 100 people ($)": 2506
+  },
+  {
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.98,
+    "Services per 100 people": 24.37,
+    "Medicare benefits per 100 people ($)": 2609
+  },
+  {
+    "SA3 name": "South East Coast",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.02,
+    "Services per 100 people": 12.95,
+    "Medicare benefits per 100 people ($)": 1429
+  },
+  {
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.86,
+    "Services per 100 people": 20.42,
+    "Medicare benefits per 100 people ($)": 1997
+  },
+  {
+    "SA3 name": "Devonport",
+    "SA3 group": 3,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.75,
+    "Services per 100 people": 14.09,
+    "Medicare benefits per 100 people ($)": 1368
+  },
+  {
+    "SA3 name": "West Coast",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.9,
+    "Services per 100 people": 12.27,
+    "Medicare benefits per 100 people ($)": 1289
+  },
+  {
+    "SA3 name": "Darwin City",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 2.29,
+    "Services per 100 people": 8.12,
+    "Medicare benefits per 100 people ($)": 865
+  },
+  {
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.92,
+    "Services per 100 people": 7.64,
+    "Medicare benefits per 100 people ($)": 796
+  },
+  {
+    "SA3 name": "Litchfield",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.55,
+    "Services per 100 people": 5.89,
+    "Medicare benefits per 100 people ($)": 600
+  },
+  {
+    "SA3 name": "Palmerston",
+    "SA3 group": 2,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.71,
+    "Services per 100 people": 6.38,
+    "Medicare benefits per 100 people ($)": 627
+  },
+  {
+    "SA3 name": "Alice Springs",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 1.8,
+    "Services per 100 people": 7.09,
+    "Medicare benefits per 100 people ($)": 753
+  },
+  {
+    "SA3 name": "Barkly",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.63,
+    "Services per 100 people": 2.28,
+    "Medicare benefits per 100 people ($)": 219
+  },
+  {
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.5,
+    "Services per 100 people": 1.87,
+    "Medicare benefits per 100 people ($)": 187
+  },
+  {
+    "SA3 name": "East Arnhem",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.58,
+    "Services per 100 people": 1.98,
+    "Medicare benefits per 100 people ($)": 183
+  },
+  {
+    "SA3 name": "Katherine",
+    "SA3 group": 1,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 0.45,
+    "Services per 100 people": 1.49,
+    "Medicare benefits per 100 people ($)": 147
+  },
+  {
+    "SA3 name": "Belconnen",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.64,
+    "Services per 100 people": 21.98,
+    "Medicare benefits per 100 people ($)": 2401
+  },
+  {
+    "SA3 name": "Canberra East",
+    "SA3 group": 4,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.84,
+    "Services per 100 people": 25.88,
+    "Medicare benefits per 100 people ($)": 2727
+  },
+  {
+    "SA3 name": "Gungahlin",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 3.97,
+    "Services per 100 people": 16.99,
+    "Medicare benefits per 100 people ($)": 1882
+  },
+  {
+    "SA3 name": "North Canberra",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 5.27,
+    "Services per 100 people": 25.91,
+    "Medicare benefits per 100 people ($)": 2897
+  },
+  {
+    "SA3 name": "South Canberra",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.84,
+    "Services per 100 people": 23.78,
+    "Medicare benefits per 100 people ($)": 2678
+  },
+  {
+    "SA3 name": "Tuggeranong",
+    "SA3 group": 5,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.62,
+    "Services per 100 people": 20.44,
+    "Medicare benefits per 100 people ($)": 2228
+  },
+  {
+    "SA3 name": "Woden Valley",
+    "SA3 group": 6,
+    "Service": "Allied Health subtotal - Mental Health Care",
+    "Per cent of people who had the service (%)": 4.57,
+    "Services per 100 people": 21.95,
+    "Medicare benefits per 100 people ($)": 2474
+  }
+]

@@ -18,7 +18,10 @@ const d3 = {
 };
 
 // Test data
-const wineQuality = require("./wineQuality.json");
+// const wineQuality = require("./wineQuality.json");
+const data = require("./test-data.json");
+const X_FIELD = "SA3 group";
+const Y_FIELD = "Medicare benefits per 100 people ($)";
 
 // const xVar = "Alcohol";
 // const yVar = "Citric Acid";
@@ -57,11 +60,11 @@ export default props => {
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
 
-    const data = [
-      { xfield: 4, yfield: 55 },
-      { xfield: 5, yfield: 66 },
-      { xfield: 5, yfield: 76 }
-    ];
+    // const data = [
+    //   { xfield: 4, yfield: 55 },
+    //   { xfield: 5, yfield: 66 },
+    //   { xfield: 5, yfield: 76 }
+    // ];
 
     scaleX = d3
       .scalePoint()
@@ -76,13 +79,15 @@ export default props => {
         4,
         "spacer5",
         5,
+        "spacer6",
+        6,
         "end"
       ])
       .range([margin.left, width - margin.right]);
 
     scaleY = d3
       .scaleLinear()
-      .domain([100, 1]) // This is what is written on the Axis: from 0 to 100
+      .domain([5000, 0]) // This is what is written on the Axis: from 0 to 100
       .range([margin.top, height - margin.bottom]);
 
     xAxis = g =>
@@ -97,6 +102,7 @@ export default props => {
             "spacer3",
             "spacer4",
             "spacer5",
+            "spacer6",
             "end"
           ])
         // .tickSize(-200)
@@ -152,8 +158,8 @@ export default props => {
       .enter()
       .append("circle")
       .attr("fill", "#435699")
-      .attr("cx", d => scaleX(d.xfield))
-      .attr("cy", d => scaleY(d.yfield))
+      .attr("cx", d => scaleX(d[X_FIELD]))
+      .attr("cy", d => scaleY(d[Y_FIELD]))
       .attr("r", 4);
   };
 
@@ -191,7 +197,7 @@ export default props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    dots.attr("cx", d => scaleX(d.xfield)).attr("cy", d => scaleY(d.yfield));
+    dots.attr("cx", d => scaleX(d[X_FIELD])).attr("cy", d => scaleY(d[Y_FIELD]));
   }, [windowSize.width, windowSize.height]);
 
   // useEffect(() => {
