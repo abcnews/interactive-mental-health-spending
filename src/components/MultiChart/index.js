@@ -28,11 +28,11 @@ const wineQuality = require("./wineQuality.json");
 // const xAxisHeight = 35;
 // const textHeight = 14;
 
-const margin = 10;
+const margin = {top: 40, right: 40, bottom: 40, left: 40};
 
 let svg;
 let scaleX;
-let axis;
+let xAxis;
 let axisGroup;
 let dots;
 
@@ -54,15 +54,21 @@ export default props => {
     scaleX = d3
       .scalePoint()
       .domain([1, 2, 3, 4, 5]) // This is what is written on the Axis: from 0 to 100
-      .range([0 + margin, width - margin]);
+      .range([margin.left, width - margin.right]);
 
-    axis = d3.axisBottom(scaleX).tickSize(3);
+    xAxis = g => g
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(scaleX))
+    
+    
+    
+    //d3.axisBottom(scaleX).tickSize(3);
 
     // Draw the axis
     axisGroup = svg
       .append("g")
-      .attr("transform", "translate(0,200)") // This controls the vertical position of the Axis
-      .call(axis);
+      // .attr("transform", "translate(0,200)") // This controls the vertical position of the Axis
+      .call(xAxis);
 
     svg.attr("width", width);
     svg.attr("height", height);
