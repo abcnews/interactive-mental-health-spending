@@ -13,7 +13,7 @@
   "scripts": {
     "start": "aunty serve",
     "test": "aunty test",
-    "phocks": "echo hey man"
+    "deploy": "aunty build && aunty deploy"
   },
   "devDependencies": {
     "@abcnews/aunty": "^10.10.0",
