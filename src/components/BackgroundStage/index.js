@@ -18,7 +18,8 @@ export default props => {
 
   return (
     <div className={styles.root}>
-      <MultiChart />
+      {props.children}
+      {/* <MultiChart /> */}
     </div>
   );
 };

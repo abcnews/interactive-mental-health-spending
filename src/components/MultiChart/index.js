@@ -202,6 +202,15 @@ export default props => {
       .attr("cy", d => scaleY(d[Y_FIELD]));
   }, [windowSize.width, windowSize.height]);
 
+
+  useLayoutEffect(() => {
+    // Wait until chart is mounted
+    if (!svg) return;
+
+    console.log("Props updated...")
+    console.log(props)
+  }, [props]) 
+
   // useEffect(() => {
   //   updateChart(props);
   // }, [props]); // TODO: be more specific with your change checkers
