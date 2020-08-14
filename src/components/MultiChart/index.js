@@ -47,7 +47,7 @@ export default props => {
   const root = useRef();
   const windowSize = useWindowSize();
 
-  const initComponent = () => {
+  const createChart = () => {
     margin = {
       top: window.innerHeight * 0.2,
       right: window.innerWidth * 0.1,
@@ -161,19 +161,11 @@ export default props => {
       .attr("cx", d => scaleX(d[X_FIELD]))
       .attr("cy", d => scaleY(d[Y_FIELD]))
       .attr("r", 4);
+
+    return svg;
   };
 
-  useLayoutEffect(() => {
-    // Init layout effect after delay
-    setTimeout(() => {
-      initComponent();
-    }, 500);
-  }, []);
-
-  // Detect and handle window resize events
-  useLayoutEffect(() => {
-    if (!svg) return;
-
+  const updateChart = () => {
     // Recalculate margins
     margin = {
       top: window.innerHeight * 0.2,
@@ -200,31 +192,33 @@ export default props => {
     dots
       .attr("cx", d => scaleX(d[X_FIELD]))
       .attr("cy", d => scaleY(d[Y_FIELD]));
-  }, [windowSize.width, windowSize.height]);
+  };
 
+  const initComponent = () => {
+    createChart();
+  };
+
+  useLayoutEffect(() => {
+    // Init layout effect after delay
+    setTimeout(() => {
+      initComponent();
+    }, 500);
+  }, []);
+
+  // Detect and handle window resize events
+  useLayoutEffect(() => {
+    if (!svg) return;
+
+    updateChart();
+  }, [windowSize.width, windowSize.height]);
 
   useLayoutEffect(() => {
     // Wait until chart is mounted
     if (!svg) return;
 
-    console.log("Props updated...")
-    console.log(props)
-  }, [props]) 
-
-  // useEffect(() => {
-  //   updateChart(props);
-  // }, [props]); // TODO: be more specific with your change checkers
-
-  // Example effect to update chart on window resize
-  // useEffect(() => {
-  //   const onResize = () => updateChart(props);
-  //   window.addEventListener("resize", onResize);
-  //   return () => window.removeEventListener("resize", onResize);
-  // }, [props]);
-
-  // function updateChart(props) {
-  //   // TODO: update the SVG
-  // }
+    console.log("Props updated...");
+    console.log(props);
+  }, [props]);
 
   return (
     <div className={styles.root}>
