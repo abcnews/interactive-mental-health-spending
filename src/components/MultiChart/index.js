@@ -87,7 +87,7 @@ export default props => {
 
     scaleY = d3
       .scaleLinear()
-      .domain([5000, 0]) // This is what is written on the Axis: from 0 to 100
+      .domain([5000, 1])
       .range([margin.top, height - margin.bottom]);
 
     xAxis = g =>
