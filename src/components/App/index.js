@@ -11,10 +11,17 @@ import MultiChart from "../MultiChart";
 // let lookupData;
 
 let data = require("./allied-data.json");
+let data2 = require("./gp-focus.json");
+
+for (const d of data2) {
+  console.log(d["Medicare benefits per 100 people ($)"])
+}
 
 export default props => {
   // const [userPostcode, setUserPostcode] = useState();
   const [userSa3, setUserSa3] = useState();
+  const [chartData, setChartData] = useState(data);
+  const [chartYMax, setChartYMax] = useState(5000);
 
   // const loadLookupData = async () => {
   //   const response = await fetch(
@@ -23,13 +30,19 @@ export default props => {
   //   lookupData = await response.json();
   // };
 
+
   const onMarker = config => {
     console.log(config);
+    
   };
 
   useEffect(() => {
     // Load initial data
     // loadLookupData();
+    setTimeout(() => {
+      setChartData(data2);
+      setChartYMax(200)
+    }, 3000);
   }, []);
 
   // useEffect(() => {
@@ -69,7 +82,7 @@ export default props => {
           panelComponent={CustomPanel}
         >
           <BackgroundStage>
-            <MultiChart data = {data} style={"line"} />
+            <MultiChart data={chartData} yMax={chartYMax} style={"line"} />
           </BackgroundStage>
         </Scrollyteller>
       </Portal>
