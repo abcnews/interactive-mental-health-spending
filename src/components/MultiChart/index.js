@@ -5,6 +5,7 @@ import * as d3Fetch from "d3-fetch";
 import * as d3Array from "d3-array";
 import * as d3Axis from "d3-axis";
 import * as d3ScaleChromatic from "d3-scale-chromatic";
+import * as d3Transition from "d3-transition";
 import useWindowSize from "./useWindowSize";
 import styles from "./styles.scss";
 
@@ -14,7 +15,8 @@ const d3 = {
   ...d3Fetch,
   ...d3Array,
   ...d3Axis,
-  ...d3ScaleChromatic
+  ...d3ScaleChromatic,
+  ...d3Transition
 };
 
 // Test data
@@ -75,8 +77,8 @@ export default props => {
 
     scaleY = d3
       .scaleLinear()
-      .domain([5000, 1])
-      .range([margin.top, height - margin.bottom]);
+      .domain([0, props.yMax])
+      .range([height - margin.bottom, margin.top]);
 
     xAxis = g =>
       g.attr("transform", `translate(0,${height - margin.bottom})`).call(
@@ -109,6 +111,7 @@ export default props => {
     yAxis = svg =>
       svg
         .attr("transform", `translate(${margin.left},0)`)
+        .attr("id", "y-axis")
         .call(
           d3
             .axisLeft(scaleY)
@@ -139,14 +142,17 @@ export default props => {
     svg.attr("height", height);
 
     dots = svg
-      .append("g")
-      .attr("class", "dots")
-      .selectAll()
+      .selectAll("circle")
       .data(data)
-      .enter()
-      .append("circle")
+      .join("circle")
       .attr("fill", "#435699")
-      .attr("cx", d => scaleX(d[X_FIELD]))
+      .attr("cx", d => {
+        if (d[X_FIELD] === "National") {
+          return 200;
+        }
+
+        return scaleX(d[X_FIELD]);
+      })
       .attr("cy", d => scaleY(d[Y_FIELD]))
       .attr("r", 4);
 
@@ -162,9 +168,6 @@ export default props => {
       left: window.innerWidth * 0.1
     };
 
-    // console.log("Resize detected...");
-    // console.log(svg.node().getBoundingClientRect());
-
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
 
@@ -177,62 +180,15 @@ export default props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    data = [
-      {
-        "SA3 name": "Eastern Suburbs - North",
-        "SA3 group": 6,
-        Service: "Allied Health subtotal - Mental Health Care",
-        "Per cent of people who had the service (%)": 6.53,
-        "Services per 100 people": 34.11,
-        "Medicare benefits per 100 people ($)": 4078
-      },
-      {
-        "SA3 name": "Eastern Suburbs - South",
-        "SA3 group": 6,
-        Service: "Allied Health subtotal - Mental Health Care",
-        "Per cent of people who had the service (%)": 4.96,
-        "Services per 100 people": 25.01,
-        "Medicare benefits per 100 people ($)": 2781
-      },
-      {
-        "SA3 name": "Bankstown",
-        "SA3 group": 4,
-        Service: "Allied Health subtotal - Mental Health Care",
-        "Per cent of people who had the service (%)": 4.17,
-        "Services per 100 people": 18.62,
-        "Medicare benefits per 100 people ($)": 1790
-      }
-    ];
-
     dots
       .attr("cx", d => scaleX(d[X_FIELD]))
       .attr("cy", d => scaleY(d[Y_FIELD]));
   };
 
-  const processNewData = () => {
-    dots.remove();
-
-    dots = svg
-      .append("g")
-      .attr("class", "dots")
-      .selectAll()
-      .data(data)
-      .enter()
-      .append("circle")
-      .attr("fill", "#435699")
-      .attr("cx", d => scaleX(d[X_FIELD]))
-      .attr("cy", d => scaleY(d[Y_FIELD]))
-      .attr("r", 4);
-  };
-
-  const initComponent = () => {
-    createChart();
-  };
-
   useLayoutEffect(() => {
     // Init layout effect after delay
     setTimeout(() => {
-      initComponent();
+      createChart();
     }, 500);
   }, []);
 
@@ -243,17 +199,39 @@ export default props => {
     resizeChart();
   }, [windowSize.width, windowSize.height]);
 
+  // useLayoutEffect(() => {
+  //   // Wait until chart is mounted
+  //   if (!svg) return;
+
+  //   console.log("Props updated...");
+  //   console.log(props);
+  // }, [props]);
+
   useLayoutEffect(() => {
-    // Wait until chart is mounted
     if (!svg) return;
+    console.log(props.yMax);
 
-    console.log("Props updated...");
-    console.log(props);
+    scaleY.domain([0, props.yMax]);
+
+    yAxisGroup
+      .transition()
+      .duration(250)
+      .call(yAxis);
+
+    svg
+      .selectAll("circle")
+      .data(data)
+      .join("circle")
+      // .attr("fill", "#435699")
+      .attr("cx", d => {
+        if (d[X_FIELD] === "National") {
+          return -1000000;
+        }
+
+        return scaleX(d[X_FIELD]);
+      })
+      .attr("cy", d => scaleY(d[Y_FIELD]));
   }, [props]);
-
-  useLayoutEffect(() => {
-    console.log(data);
-  }, [data]);
 
   return (
     <div className={styles.root}>

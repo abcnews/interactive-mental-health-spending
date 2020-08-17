@@ -1,1437 +1,1437 @@
 [
   {
     "SA3 name": "Esperance",
-    "SA3 group": "1",
-    "Per cent of people who had the service (%)": "0.00",
-    "Services per 100 people": "0.00",
-    "Medicare benefits per 100 people ($)": "0.00"
+    "SA3 group": 1,
+    "Per cent of people who had the service (%)": 0,
+    "Services per 100 people": 0,
+    "Medicare benefits per 100 people ($)": 0
   },
   {
     "SA3 name": "Christmas Island",
-    "SA3 group": "1",
-    "Per cent of people who had the service (%)": "0.00",
-    "Services per 100 people": "0.00",
-    "Medicare benefits per 100 people ($)": "0.00"
+    "SA3 group": 1,
+    "Per cent of people who had the service (%)": 0,
+    "Services per 100 people": 0,
+    "Medicare benefits per 100 people ($)": 0
   },
   {
     "SA3 name": "Norfolk Island",
-    "SA3 group": "1",
-    "Per cent of people who had the service (%)": "0.00",
-    "Services per 100 people": "0.00",
-    "Medicare benefits per 100 people ($)": "0.00"
+    "SA3 group": 1,
+    "Per cent of people who had the service (%)": 0,
+    "Services per 100 people": 0,
+    "Medicare benefits per 100 people ($)": 0
   },
   {
     "SA3 name": "Bendigo",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.01",
-    "Services per 100 people": "0.02",
-    "Medicare benefits per 100 people ($)": "3.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.01,
+    "Services per 100 people": 0.02,
+    "Medicare benefits per 100 people ($)": 3
   },
   {
     "SA3 name": "Melville",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.01",
-    "Services per 100 people": "0.03",
-    "Medicare benefits per 100 people ($)": "3.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.01,
+    "Services per 100 people": 0.03,
+    "Medicare benefits per 100 people ($)": 3
   },
   {
     "SA3 name": "Wagga Wagga",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.03",
-    "Medicare benefits per 100 people ($)": "4.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.03,
+    "Medicare benefits per 100 people ($)": 4
   },
   {
     "SA3 name": "Rockingham",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "4.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 4
   },
   {
     "SA3 name": "Port Macquarie",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "5.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 5
   },
   {
     "SA3 name": "Tamworth - Gunnedah",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "5.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 5
   },
   {
     "SA3 name": "Maroochy",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "5.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 5
   },
   {
     "SA3 name": "Queanbeyan",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "6.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 6
   },
   {
     "SA3 name": "Sunshine Coast Hinterland",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.05",
-    "Medicare benefits per 100 people ($)": "6.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.05,
+    "Medicare benefits per 100 people ($)": 6
   },
   {
     "SA3 name": "Wanneroo",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.05",
-    "Medicare benefits per 100 people ($)": "6.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.05,
+    "Medicare benefits per 100 people ($)": 6
   },
   {
     "SA3 name": "South Coast",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.01",
-    "Services per 100 people": "0.04",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.01,
+    "Services per 100 people": 0.04,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
     "SA3 name": "Auburn",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
     "SA3 name": "Toowoomba",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
     "SA3 name": "Armadale",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
-    "SA3 name": "1",
-    "SA3 group": "1",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.05",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 name": 1,
+    "SA3 group": 1,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.05,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
     "SA3 name": "Tuggeranong",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.05",
-    "Medicare benefits per 100 people ($)": "7.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.05,
+    "Medicare benefits per 100 people ($)": 7
   },
   {
     "SA3 name": "Lower Hunter",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "8.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 8
   },
   {
     "SA3 name": "Port Stephens",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "8.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 8
   },
   {
     "SA3 name": "Upper Goulburn Valley",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "8.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 8
   },
   {
     "SA3 name": "Cottesloe - Claremont",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "8.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 8
   },
   {
     "SA3 name": "Wodonga - Alpine",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Caloundra",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.06",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.06,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Campbelltown (SA)",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Tea Tree Gully",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Holdfast Bay",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Marion",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Onkaparinga",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Bayswater - Bassendean",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Hobart - North West",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.07",
-    "Medicare benefits per 100 people ($)": "9.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.07,
+    "Medicare benefits per 100 people ($)": 9
   },
   {
     "SA3 name": "Bathurst",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "Townsville",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "Norwood - Payneham - St Peters",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "Mitcham",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "Fremantle",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.02",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.02,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "North East",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "10.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 10
   },
   {
     "SA3 name": "Lithgow - Mudgee",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "11.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 11
   },
   {
     "SA3 name": "Ballarat",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "11.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 11
   },
   {
     "SA3 name": "Noosa",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "11.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 11
   },
   {
     "SA3 name": "Casey - South",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Mornington Peninsula",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.08",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.08,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Redcliffe",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Burnside",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Perth City",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Stirling",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Belconnen",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.09",
-    "Medicare benefits per 100 people ($)": "12.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.09,
+    "Medicare benefits per 100 people ($)": 12
   },
   {
     "SA3 name": "Dubbo",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Shoalhaven",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Wyndham",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Shepparton",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Browns Plains",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Jimboomba",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "West Torrens",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
-    "SA3 name": "2",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "13.00"
+    "SA3 name": 2,
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 13
   },
   {
     "SA3 name": "Dapto - Port Kembla",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Lake Macquarie - East",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.03",
-    "Services per 100 people": "0.10",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.03,
+    "Services per 100 people": 0.1,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Cardinia",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Melton - Bacchus Marsh",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Frankston",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Gold Coast Hinterland",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "14.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 14
   },
   {
     "SA3 name": "Gosford",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Kiama - Shellharbour",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "St Marys",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Mildura",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Ormeau - Oxenford",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Southport",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Ipswich Inner",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Unley",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "15.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 15
   },
   {
     "SA3 name": "Goulburn - Mulwaree",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "16.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 16
   },
   {
     "SA3 name": "Yarra Ranges",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.11",
-    "Medicare benefits per 100 people ($)": "16.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.11,
+    "Medicare benefits per 100 people ($)": 16
   },
   {
     "SA3 name": "Colac - Corangamite",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "16.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 16
   },
   {
     "SA3 name": "Nerang",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.13",
-    "Medicare benefits per 100 people ($)": "16.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.13,
+    "Medicare benefits per 100 people ($)": 16
   },
   {
     "SA3 name": "Gawler - Two Wells",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.13",
-    "Medicare benefits per 100 people ($)": "16.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.13,
+    "Medicare benefits per 100 people ($)": 16
   },
   {
     "SA3 name": "Keilor",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.13",
-    "Medicare benefits per 100 people ($)": "17.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.13,
+    "Medicare benefits per 100 people ($)": 17
   },
   {
     "SA3 name": "Knox",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "17.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 17
   },
   {
     "SA3 name": "Port Adelaide - West",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "17.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 17
   },
   {
     "SA3 name": "Hurstville",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.13",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.13,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "Innisfail - Cassowary Coast",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "Port Adelaide - East",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "Charles Sturt",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "Gungahlin",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "North Canberra",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "18.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 18
   },
   {
     "SA3 name": "Canada Bay",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.14",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.14,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
     "SA3 name": "Liverpool",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
     "SA3 name": "Geelong",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
     "SA3 name": "Grampians",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
-    "SA3 name": "3",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 name": 3,
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
     "SA3 name": "Playford",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "19.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 19
   },
   {
     "SA3 name": "Wyong",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Rouse Hill - McGraths Hill",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Blacktown",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Carlingford",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Surf Coast - Bellarine Peninsula",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Prospect - Walkerville",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "20.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 20
   },
   {
     "SA3 name": "Blacktown - North",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
     "SA3 name": "Barwon - West",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.11",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.11,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
     "SA3 name": "Manningham - West",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.12",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.12,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
-    "SA3 name": "4",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 name": 4,
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
     "SA3 name": "Centenary",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
     "SA3 name": "Cairns - North",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
     "SA3 name": "Gold Coast - North",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "21.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 21
   },
   {
-    "SA3 name": "5",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.16",
-    "Medicare benefits per 100 people ($)": "22.00"
+    "SA3 name": 5,
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.16,
+    "Medicare benefits per 100 people ($)": 22
   },
   {
     "SA3 name": "Capalaba",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "22.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 22
   },
   {
     "SA3 name": "Cleveland - Stradbroke",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "22.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 22
   },
   {
     "SA3 name": "Forest Lake - Oxley",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "22.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 22
   },
   {
     "SA3 name": "Hobart - South and West",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "22.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 22
   },
   {
     "SA3 name": "National",
     "SA3 group": "National",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "23.00"
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 23
   },
   {
     "SA3 name": "Blue Mountains",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "23.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 23
   },
   {
     "SA3 name": "Kenmore - Brookfield - Moggill",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "23.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 23
   },
   {
     "SA3 name": "Weston Creek",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.04",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "23.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.04,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 23
   },
   {
     "SA3 name": "Newcastle",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Baulkham Hills",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Botany",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Campbelltown (NSW)",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Ryde - Hunters Hill",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Sandgate",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Mudgeeraba - Tallebudgera",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "24.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 24
   },
   {
     "SA3 name": "Richmond Valley - Coastal",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.13",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.13,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Tweed Valley",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.18",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.18,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Manly",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Parramatta",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Cronulla - Miranda - Caringbah",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Brimbank",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Hobart Inner",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.18",
-    "Medicare benefits per 100 people ($)": "25.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.18,
+    "Medicare benefits per 100 people ($)": 25
   },
   {
     "SA3 name": "Maitland",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Kogarah - Rockdale",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Hornsby",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Camden",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Fairfield",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Essendon",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "26.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 26
   },
   {
     "SA3 name": "Sydney Inner City",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.20",
-    "Medicare benefits per 100 people ($)": "27.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.2,
+    "Medicare benefits per 100 people ($)": 27
   },
   {
     "SA3 name": "Brisbane Inner - North",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "27.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 27
   },
   {
     "SA3 name": "Coolangatta",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.13",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "27.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.13,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 27
   },
   {
     "SA3 name": "Eyre Peninsula and South West",
-    "SA3 group": "1",
-    "Per cent of people who had the service (%)": "0.13",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "27.00"
+    "SA3 group": 1,
+    "Per cent of people who had the service (%)": 0.13,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 27
   },
   {
     "SA3 name": "Woden Valley",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.17",
-    "Medicare benefits per 100 people ($)": "27.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.17,
+    "Medicare benefits per 100 people ($)": 27
   },
   {
     "SA3 name": "Sherwood - Indooroopilly",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "28.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 28
   },
   {
     "SA3 name": "Springfield - Redbank",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "28.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 28
   },
   {
     "SA3 name": "South Canberra",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "28.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 28
   },
   {
     "SA3 name": "Pittwater",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "29.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 29
   },
   {
     "SA3 name": "Casey - North",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.05",
-    "Services per 100 people": "0.15",
-    "Medicare benefits per 100 people ($)": "29.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.05,
+    "Services per 100 people": 0.15,
+    "Medicare benefits per 100 people ($)": 29
   },
   {
     "SA3 name": "Bribie - Beachmere",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.11",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "29.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.11,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 29
   },
   {
     "SA3 name": "Marrickville - Sydenham - Petersham",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Strathfield - Burwood - Ashfield",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Warringah",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Sutherland - Menai - Heathcote",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.23",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.23,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Whitehorse - West",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.19",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.19,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Hobsons Bay",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.23",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.23,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Nundah",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.23",
-    "Medicare benefits per 100 people ($)": "30.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.23,
+    "Medicare benefits per 100 people ($)": 30
   },
   {
     "SA3 name": "Richmond - Windsor",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "31.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 31
   },
   {
     "SA3 name": "Chermside",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.24",
-    "Medicare benefits per 100 people ($)": "31.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.24,
+    "Medicare benefits per 100 people ($)": 31
   },
   {
     "SA3 name": "The Gap - Enoggera",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "31.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 31
   },
   {
     "SA3 name": "Monash",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "32.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 32
   },
   {
     "SA3 name": "Pennant Hills - Epping",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "33.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 33
   },
   {
     "SA3 name": "Banyule",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.24",
-    "Medicare benefits per 100 people ($)": "33.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.24,
+    "Medicare benefits per 100 people ($)": 33
   },
   {
     "SA3 name": "Nillumbik - Kinglake",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.23",
-    "Medicare benefits per 100 people ($)": "33.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.23,
+    "Medicare benefits per 100 people ($)": 33
   },
   {
     "SA3 name": "Moreland - North",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.26",
-    "Medicare benefits per 100 people ($)": "33.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.26,
+    "Medicare benefits per 100 people ($)": 33
   },
   {
     "SA3 name": "Holland Park - Yeronga",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "33.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 33
   },
   {
     "SA3 name": "Nathan",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.08",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "34.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.08,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 34
   },
   {
     "SA3 name": "Lachlan Valley",
-    "SA3 group": "2",
-    "Per cent of people who had the service (%)": "0.15",
-    "Services per 100 people": "0.29",
-    "Medicare benefits per 100 people ($)": "35.00"
+    "SA3 group": 2,
+    "Per cent of people who had the service (%)": 0.15,
+    "Services per 100 people": 0.29,
+    "Medicare benefits per 100 people ($)": 35
   },
   {
     "SA3 name": "Hawkesbury",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.27",
-    "Medicare benefits per 100 people ($)": "35.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.27,
+    "Medicare benefits per 100 people ($)": 35
   },
   {
     "SA3 name": "Darebin - North",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.26",
-    "Medicare benefits per 100 people ($)": "35.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.26,
+    "Medicare benefits per 100 people ($)": 35
   },
   {
     "SA3 name": "Brisbane Inner",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.25",
-    "Medicare benefits per 100 people ($)": "35.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.25,
+    "Medicare benefits per 100 people ($)": 35
   },
   {
     "SA3 name": "Springwood - Kingston",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.27",
-    "Medicare benefits per 100 people ($)": "36.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.27,
+    "Medicare benefits per 100 people ($)": 36
   },
   {
     "SA3 name": "Strathpine",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.29",
-    "Medicare benefits per 100 people ($)": "36.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.29,
+    "Medicare benefits per 100 people ($)": 36
   },
   {
     "SA3 name": "Robina",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.26",
-    "Medicare benefits per 100 people ($)": "37.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.26,
+    "Medicare benefits per 100 people ($)": 37
   },
   {
     "SA3 name": "North Sydney - Mosman",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.26",
-    "Medicare benefits per 100 people ($)": "38.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.26,
+    "Medicare benefits per 100 people ($)": 38
   },
   {
     "SA3 name": "Bald Hills - Everton Park",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.30",
-    "Medicare benefits per 100 people ($)": "38.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.3,
+    "Medicare benefits per 100 people ($)": 38
   },
   {
-    "SA3 name": "6",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.28",
-    "Medicare benefits per 100 people ($)": "39.00"
+    "SA3 name": 6,
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.28,
+    "Medicare benefits per 100 people ($)": 39
   },
   {
     "SA3 name": "Ku-ring-gai",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.28",
-    "Medicare benefits per 100 people ($)": "39.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.28,
+    "Medicare benefits per 100 people ($)": 39
   },
   {
     "SA3 name": "Dandenong",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.06",
-    "Services per 100 people": "0.21",
-    "Medicare benefits per 100 people ($)": "39.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.06,
+    "Services per 100 people": 0.21,
+    "Medicare benefits per 100 people ($)": 39
   },
   {
     "SA3 name": "Lake Macquarie - West",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.13",
-    "Services per 100 people": "0.31",
-    "Medicare benefits per 100 people ($)": "40.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.13,
+    "Services per 100 people": 0.31,
+    "Medicare benefits per 100 people ($)": 40
   },
   {
     "SA3 name": "Penrith",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.14",
-    "Services per 100 people": "0.36",
-    "Medicare benefits per 100 people ($)": "40.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.14,
+    "Services per 100 people": 0.36,
+    "Medicare benefits per 100 people ($)": 40
   },
   {
     "SA3 name": "Stonnington - East",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.11",
-    "Services per 100 people": "0.28",
-    "Medicare benefits per 100 people ($)": "40.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.11,
+    "Services per 100 people": 0.28,
+    "Medicare benefits per 100 people ($)": 40
   },
   {
     "SA3 name": "Whitehorse - East",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.07",
-    "Services per 100 people": "0.22",
-    "Medicare benefits per 100 people ($)": "40.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.07,
+    "Services per 100 people": 0.22,
+    "Medicare benefits per 100 people ($)": 40
   },
   {
     "SA3 name": "Dural - Wisemans Ferry",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.32",
-    "Medicare benefits per 100 people ($)": "42.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.32,
+    "Medicare benefits per 100 people ($)": 42
   },
   {
     "SA3 name": "Eastern Suburbs - South",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.31",
-    "Medicare benefits per 100 people ($)": "42.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.31,
+    "Medicare benefits per 100 people ($)": 42
   },
   {
     "SA3 name": "Wollondilly",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.32",
-    "Medicare benefits per 100 people ($)": "42.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.32,
+    "Medicare benefits per 100 people ($)": 42
   },
   {
     "SA3 name": "Whittlesea - Wallan",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.32",
-    "Medicare benefits per 100 people ($)": "42.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.32,
+    "Medicare benefits per 100 people ($)": 42
   },
   {
     "SA3 name": "Wollongong",
-    "SA3 group": "4",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.36",
-    "Medicare benefits per 100 people ($)": "43.00"
+    "SA3 group": 4,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.36,
+    "Medicare benefits per 100 people ($)": 43
   },
   {
     "SA3 name": "Boroondara",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.29",
-    "Medicare benefits per 100 people ($)": "43.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.29,
+    "Medicare benefits per 100 people ($)": 43
   },
   {
     "SA3 name": "Brisbane Inner - West",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.32",
-    "Medicare benefits per 100 people ($)": "43.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.32,
+    "Medicare benefits per 100 people ($)": 43
   },
   {
     "SA3 name": "Broadbeach - Burleigh",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.15",
-    "Services per 100 people": "0.35",
-    "Medicare benefits per 100 people ($)": "44.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.15,
+    "Services per 100 people": 0.35,
+    "Medicare benefits per 100 people ($)": 44
   },
   {
     "SA3 name": "Adelaide Hills",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.35",
-    "Medicare benefits per 100 people ($)": "44.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.35,
+    "Medicare benefits per 100 people ($)": 44
   },
   {
     "SA3 name": "Carindale",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.10",
-    "Services per 100 people": "0.34",
-    "Medicare benefits per 100 people ($)": "45.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.1,
+    "Services per 100 people": 0.34,
+    "Medicare benefits per 100 people ($)": 45
   },
   {
     "SA3 name": "Kingston",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.11",
-    "Services per 100 people": "0.30",
-    "Medicare benefits per 100 people ($)": "46.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.11,
+    "Services per 100 people": 0.3,
+    "Medicare benefits per 100 people ($)": 46
   },
   {
     "SA3 name": "Chatswood - Lane Cove",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.31",
-    "Medicare benefits per 100 people ($)": "47.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.31,
+    "Medicare benefits per 100 people ($)": 47
   },
   {
     "SA3 name": "Melbourne City",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.35",
-    "Medicare benefits per 100 people ($)": "47.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.35,
+    "Medicare benefits per 100 people ($)": 47
   },
   {
     "SA3 name": "Wynnum - Manly",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.09",
-    "Services per 100 people": "0.37",
-    "Medicare benefits per 100 people ($)": "49.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.09,
+    "Services per 100 people": 0.37,
+    "Medicare benefits per 100 people ($)": 49
   },
   {
     "SA3 name": "The Hills District",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.14",
-    "Services per 100 people": "0.39",
-    "Medicare benefits per 100 people ($)": "49.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.14,
+    "Services per 100 people": 0.39,
+    "Medicare benefits per 100 people ($)": 49
   },
   {
     "SA3 name": "Maribyrnong",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.46",
-    "Medicare benefits per 100 people ($)": "61.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.46,
+    "Medicare benefits per 100 people ($)": 61
   },
   {
     "SA3 name": "Coffs Harbour",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.11",
-    "Services per 100 people": "0.49",
-    "Medicare benefits per 100 people ($)": "65.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.11,
+    "Services per 100 people": 0.49,
+    "Medicare benefits per 100 people ($)": 65
   },
   {
     "SA3 name": "Darebin - South",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.15",
-    "Services per 100 people": "0.51",
-    "Medicare benefits per 100 people ($)": "67.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.15,
+    "Services per 100 people": 0.51,
+    "Medicare benefits per 100 people ($)": 67
   },
   {
     "SA3 name": "Bayside",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.15",
-    "Services per 100 people": "0.48",
-    "Medicare benefits per 100 people ($)": "69.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.15,
+    "Services per 100 people": 0.48,
+    "Medicare benefits per 100 people ($)": 69
   },
   {
     "SA3 name": "Glen Eira",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.16",
-    "Services per 100 people": "0.47",
-    "Medicare benefits per 100 people ($)": "71.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.16,
+    "Services per 100 people": 0.47,
+    "Medicare benefits per 100 people ($)": 71
   },
   {
     "SA3 name": "Bunbury",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.12",
-    "Services per 100 people": "0.55",
-    "Medicare benefits per 100 people ($)": "73.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.12,
+    "Services per 100 people": 0.55,
+    "Medicare benefits per 100 people ($)": 73
   },
   {
     "SA3 name": "Leichhardt",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.18",
-    "Services per 100 people": "0.52",
-    "Medicare benefits per 100 people ($)": "76.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.18,
+    "Services per 100 people": 0.52,
+    "Medicare benefits per 100 people ($)": 76
   },
   {
     "SA3 name": "Stonnington - West",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.15",
-    "Services per 100 people": "0.54",
-    "Medicare benefits per 100 people ($)": "76.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.15,
+    "Services per 100 people": 0.54,
+    "Medicare benefits per 100 people ($)": 76
   },
   {
     "SA3 name": "Mt Gravatt",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.16",
-    "Services per 100 people": "0.59",
-    "Medicare benefits per 100 people ($)": "77.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.16,
+    "Services per 100 people": 0.59,
+    "Medicare benefits per 100 people ($)": 77
   },
   {
     "SA3 name": "Yarra",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.19",
-    "Services per 100 people": "0.58",
-    "Medicare benefits per 100 people ($)": "81.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.19,
+    "Services per 100 people": 0.58,
+    "Medicare benefits per 100 people ($)": 81
   },
   {
     "SA3 name": "Brunswick - Coburg",
-    "SA3 group": "5",
-    "Per cent of people who had the service (%)": "0.18",
-    "Services per 100 people": "0.63",
-    "Medicare benefits per 100 people ($)": "82.00"
+    "SA3 group": 5,
+    "Per cent of people who had the service (%)": 0.18,
+    "Services per 100 people": 0.63,
+    "Medicare benefits per 100 people ($)": 82
   },
   {
     "SA3 name": "Port Phillip",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.25",
-    "Services per 100 people": "0.82",
-    "Medicare benefits per 100 people ($)": "107.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.25,
+    "Services per 100 people": 0.82,
+    "Medicare benefits per 100 people ($)": 107
   },
   {
     "SA3 name": "Eastern Suburbs - North",
-    "SA3 group": "6",
-    "Per cent of people who had the service (%)": "0.23",
-    "Services per 100 people": "0.73",
-    "Medicare benefits per 100 people ($)": "113.00"
+    "SA3 group": 6,
+    "Per cent of people who had the service (%)": 0.23,
+    "Services per 100 people": 0.73,
+    "Medicare benefits per 100 people ($)": 113
   },
   {
     "SA3 name": "Southern Highlands",
-    "SA3 group": "3",
-    "Per cent of people who had the service (%)": "0.34",
-    "Services per 100 people": "1.27",
-    "Medicare benefits per 100 people ($)": "170.00"
+    "SA3 group": 3,
+    "Per cent of people who had the service (%)": 0.34,
+    "Services per 100 people": 1.27,
+    "Medicare benefits per 100 people ($)": 170
   }
 ]
