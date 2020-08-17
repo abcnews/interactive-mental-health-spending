@@ -19,18 +19,11 @@ const d3 = {
 
 // Test data
 // const wineQuality = require("./wineQuality.json");
-let data = require("./test-data.json");
+
 const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
 
-// const xVar = "Alcohol";
-// const yVar = "Citric Acid";
-// const titleHeight = 40;
-// const figPadding = 15;
-// const yAxisWidth = 42;
-// const xAxisHeight = 35;
-// const textHeight = 14;
-
+let data;
 let svg;
 let margin;
 let scaleX;
@@ -46,6 +39,7 @@ let height;
 export default props => {
   const root = useRef();
   const windowSize = useWindowSize();
+  data = props.data;
 
   const createChart = () => {
     margin = {
@@ -159,7 +153,7 @@ export default props => {
     return svg;
   };
 
-  const updateChart = () => {
+  const resizeChart = () => {
     // Recalculate margins
     margin = {
       top: window.innerHeight * 0.2,
@@ -210,6 +204,12 @@ export default props => {
       }
     ];
 
+    dots
+      .attr("cx", d => scaleX(d[X_FIELD]))
+      .attr("cy", d => scaleY(d[Y_FIELD]));
+  };
+
+  const processNewData = () => {
     dots.remove();
 
     dots = svg
@@ -240,7 +240,7 @@ export default props => {
   useLayoutEffect(() => {
     if (!svg) return;
 
-    updateChart();
+    resizeChart();
   }, [windowSize.width, windowSize.height]);
 
   useLayoutEffect(() => {
@@ -250,6 +250,10 @@ export default props => {
     console.log("Props updated...");
     console.log(props);
   }, [props]);
+
+  useLayoutEffect(() => {
+    console.log(data);
+  }, [data]);
 
   return (
     <div className={styles.root}>

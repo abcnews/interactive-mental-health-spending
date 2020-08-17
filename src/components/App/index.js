@@ -10,6 +10,8 @@ import MultiChart from "../MultiChart";
 
 // let lookupData;
 
+let data = require("./allied-data.json");
+
 export default props => {
   // const [userPostcode, setUserPostcode] = useState();
   const [userSa3, setUserSa3] = useState();
@@ -67,7 +69,7 @@ export default props => {
           panelComponent={CustomPanel}
         >
           <BackgroundStage>
-            <MultiChart style={"line"} />
+            <MultiChart data = {data} style={"line"} />
           </BackgroundStage>
         </Scrollyteller>
       </Portal>
