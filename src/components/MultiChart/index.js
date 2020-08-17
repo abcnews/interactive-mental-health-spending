@@ -19,7 +19,7 @@ const d3 = {
 
 // Test data
 // const wineQuality = require("./wineQuality.json");
-const data = require("./test-data.json");
+let data = require("./test-data.json");
 const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
 
@@ -59,12 +59,6 @@ export default props => {
 
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
-
-    // const data = [
-    //   { xfield: 4, yfield: 55 },
-    //   { xfield: 5, yfield: 66 },
-    //   { xfield: 5, yfield: 76 }
-    // ];
 
     scaleX = d3
       .scalePoint()
@@ -189,9 +183,46 @@ export default props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    dots
+    data = [
+      {
+        "SA3 name": "Eastern Suburbs - North",
+        "SA3 group": 6,
+        Service: "Allied Health subtotal - Mental Health Care",
+        "Per cent of people who had the service (%)": 6.53,
+        "Services per 100 people": 34.11,
+        "Medicare benefits per 100 people ($)": 4078
+      },
+      {
+        "SA3 name": "Eastern Suburbs - South",
+        "SA3 group": 6,
+        Service: "Allied Health subtotal - Mental Health Care",
+        "Per cent of people who had the service (%)": 4.96,
+        "Services per 100 people": 25.01,
+        "Medicare benefits per 100 people ($)": 2781
+      },
+      {
+        "SA3 name": "Bankstown",
+        "SA3 group": 4,
+        Service: "Allied Health subtotal - Mental Health Care",
+        "Per cent of people who had the service (%)": 4.17,
+        "Services per 100 people": 18.62,
+        "Medicare benefits per 100 people ($)": 1790
+      }
+    ];
+
+    dots.remove();
+
+    dots = svg
+      .append("g")
+      .attr("class", "dots")
+      .selectAll()
+      .data(data)
+      .enter()
+      .append("circle")
+      .attr("fill", "#435699")
       .attr("cx", d => scaleX(d[X_FIELD]))
-      .attr("cy", d => scaleY(d[Y_FIELD]));
+      .attr("cy", d => scaleY(d[Y_FIELD]))
+      .attr("r", 4);
   };
 
   const initComponent = () => {
