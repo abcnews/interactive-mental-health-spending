@@ -8,10 +8,10 @@
       position: relative;
       width: 100%;
     }
-    
-    // .tick line {
-    //   visibility: hidden;
-    // }
+
+    #y-axis .domain {
+      visibility: hidden;
+    }
 
     rect.bar {
       fill: lightslategray;
