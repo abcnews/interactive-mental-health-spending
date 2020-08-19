@@ -199,17 +199,10 @@ export default props => {
     resizeChart();
   }, [windowSize.width, windowSize.height]);
 
-  // useLayoutEffect(() => {
-  //   // Wait until chart is mounted
-  //   if (!svg) return;
-
-  //   console.log("Props updated...");
-  //   console.log(props);
-  // }, [props]);
-
   useLayoutEffect(() => {
     if (!svg) return;
-    console.log(props.yMax);
+    console.log(`New props detected:`)
+    console.log(props);
 
     scaleY.domain([0, props.yMax]);
 
