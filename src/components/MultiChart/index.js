@@ -175,7 +175,7 @@ export default props => {
     height = window.innerHeight;
 
     scaleX.range([margin.left, width - margin.right]);
-    scaleY.range([margin.top, height - margin.bottom]);
+    scaleY.range([height - margin.bottom, margin.top]);
 
     svg.attr("width", width);
     svg.attr("height", height);
@@ -219,6 +219,8 @@ export default props => {
       .data(data)
       .join("circle")
       // .attr("fill", "#435699")
+      .transition()
+      .duration(1000)
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
           return -1000000;
