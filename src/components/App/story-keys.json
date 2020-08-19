@@ -1,8 +1,10 @@
 {
   "one": {
+    "dataKey": "data1",
     "yMax": "5000"
   },
   "two": {
+    "dataKey": "data2",
     "yMax": "300"
   }
 }

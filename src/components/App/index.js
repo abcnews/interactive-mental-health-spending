@@ -8,44 +8,34 @@ import BackgroundStage from "../BackgroundStage";
 import CustomPanel from "../CustomPanel";
 import MultiChart from "../MultiChart";
 
-// let lookupData;
-
-let data = require("./allied-data.json");
-let data2 = require("./gp-focus.json");
 let storyKeys = require("./story-keys.json");
 
+const dataObject = {
+  data1: require("./allied-data.json"),
+  data2: require("./gp-focus.json")
+};
+
 export default props => {
-  // const [userPostcode, setUserPostcode] = useState();
   const [userSa3, setUserSa3] = useState(null);
-  const [chartData, setChartData] = useState(data);
-  const [chartYMax, setChartYMax] = useState(5000);
+  const [chartData, setChartData] = useState(storyKeys.one.dataKey);
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
 
-  // const loadLookupData = async () => {
-  //   const response = await fetch(
-  //     `${__webpack_public_path__}postcode-to-sa3-lookup.json`
-  //   );
-  //   lookupData = await response.json();
-  // };
+  
 
   const onMarker = config => {
     console.log(config);
 
     if (config.key) {
       console.log(storyKeys[config.key]);
-      setChartYMax(storyKeys[config.key].yMax);
       setCurrentKey(storyKeys[config.key]);
+      setChartData(dataObject[storyKeys[config.key].dataKey])
     }
   };
 
+  
   useEffect(() => {
-    // Load initial data
-    // loadLookupData();
-    // setTimeout(() => {
-    //   setChartData(data2);
-    //   setChartYMax(200);
-    // }, 3000);
-  }, []);
+
+  }, []); // Init effect
 
   // useEffect(() => {
   //   if (!userPostcode) return;
