@@ -12,12 +12,14 @@ import MultiChart from "../MultiChart";
 
 let data = require("./allied-data.json");
 let data2 = require("./gp-focus.json");
+let storyKeys = require("./story-keys.json");
 
 export default props => {
   // const [userPostcode, setUserPostcode] = useState();
-  const [userSa3, setUserSa3] = useState();
+  const [userSa3, setUserSa3] = useState(null);
   const [chartData, setChartData] = useState(data);
   const [chartYMax, setChartYMax] = useState(5000);
+  const [currentKey, setCurrentKey] = useState(storyKeys.one);
 
   // const loadLookupData = async () => {
   //   const response = await fetch(
@@ -26,19 +28,23 @@ export default props => {
   //   lookupData = await response.json();
   // };
 
-
   const onMarker = config => {
     console.log(config);
-    
+
+    if (config.key) {
+      console.log(storyKeys[config.key]);
+      setChartYMax(storyKeys[config.key].yMax);
+      setCurrentKey(storyKeys[config.key]);
+    }
   };
 
   useEffect(() => {
     // Load initial data
     // loadLookupData();
-    setTimeout(() => {
-      setChartData(data2);
-      setChartYMax(200)
-    }, 3000);
+    // setTimeout(() => {
+    //   setChartData(data2);
+    //   setChartYMax(200);
+    // }, 3000);
   }, []);
 
   // useEffect(() => {
@@ -78,7 +84,11 @@ export default props => {
           panelComponent={CustomPanel}
         >
           <BackgroundStage>
-            <MultiChart data={chartData} yMax={chartYMax} style={"line"} />
+            <MultiChart
+              data={chartData}
+              yMax={currentKey.yMax}
+              style={"line"}
+            />
           </BackgroundStage>
         </Scrollyteller>
       </Portal>
