@@ -145,7 +145,10 @@ export default props => {
       .selectAll("circle")
       .data(data)
       .join("circle")
-      .attr("fill", "#435699")
+      .style("stroke", "rgba(255, 255, 255, 0.6)")
+      .style("stroke-width", "1.5")
+      .style("fill", "#435699")
+
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
           return 200;
@@ -201,7 +204,7 @@ export default props => {
 
   useLayoutEffect(() => {
     if (!svg) return;
-    console.log(`New props detected:`)
+    console.log(`New props detected:`);
     console.log(props);
 
     scaleY.domain([0, props.yMax]);

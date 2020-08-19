@@ -13,6 +13,10 @@
       visibility: hidden;
     }
 
+    .tick:first-of-type line {
+      visibility: hidden;
+    }
+
     rect.bar {
       fill: lightslategray;
     }
