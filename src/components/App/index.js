@@ -13,10 +13,6 @@ import MultiChart from "../MultiChart";
 let data = require("./allied-data.json");
 let data2 = require("./gp-focus.json");
 
-for (const d of data2) {
-  console.log(d["Medicare benefits per 100 people ($)"])
-}
-
 export default props => {
   // const [userPostcode, setUserPostcode] = useState();
   const [userSa3, setUserSa3] = useState();

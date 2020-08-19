@@ -6,13 +6,6 @@ import postcodes from "./postcodes.json";
 import sa3s from "./sa3-codes-and-names-and-states.json";
 import postcodeToSa3 from "./postcode-to-sa3-lookup.json";
 
-console.log(postcodeToSa3);
-
-// const options = postcodes.map(postcode => ({
-//   value: postcode,
-//   label: postcode
-// }));
-
 const options = sa3s.map(sa3 => ({
   value: sa3.SA3_CODE,
   label: sa3.SA3_NAME
