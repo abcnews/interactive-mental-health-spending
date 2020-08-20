@@ -24,6 +24,7 @@ const d3 = {
 
 const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
+const TRANSITION_DURATION = 250;
 
 let data;
 let svg;
@@ -218,9 +219,9 @@ export default props => {
       .selectAll("circle")
       .data(data)
       .join("circle")
-      // .attr("fill", "#435699")
       .transition()
-      .duration(1000)
+      .duration(0)
+      .delay(TRANSITION_DURATION)
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
           return -1000000;

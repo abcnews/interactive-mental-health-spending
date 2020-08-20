@@ -47,29 +47,39 @@ export default props => {
     // );
   };
 
-  const promiseOptions = inputValue =>
-    new Promise(resolve => {
-      setTimeout(() => {
-        resolve(filterPostcodes(inputValue));
-      }, 200);
-    });
+  const promiseOptions = async inputValue => {
+    console.log(`Input value: ${inputValue}`);
+
+    const filteredPostcodes = postcodeToSa3.filter(
+      entry => entry.postcode.toString() === "4053"
+    );
+
+    console.log(filteredPostcodes);
+
+    return options;
+  };
+  // new Promise(resolve => {
+  //   setTimeout(() => {
+  //     resolve(filterPostcodes(inputValue));
+  //   }, 200);
+  // });
 
   return (
     <div className={styles.root}>
-      <Select
+      {/* <Select
         options={options}
         placeholder={"Search for your area..."}
         styles={customStyles}
         isClearable={true}
         onChange={handleChange}
-      />
-      {/* <AsyncSelect
-        placeholder={"Enter postcode..."}
+      /> */}
+      <AsyncSelect
+        placeholder={"Search for your local area..."}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
-      /> */}
+      />
     </div>
   );
 };
