@@ -21,25 +21,23 @@ const stage = document.querySelector(".scrollystagemount");
 addClass(stage, "u-full");
 
 const preInit = () => {
-
+  // Handle stuff that we don't want to hot reload
   const heroEl = d3.select(".Header").insert("div", ":first-child");
   heroEl.classed("pre-header-hero", true);
-}
+};
 
-async function init() {
+const init = async () => {
   const scrollyData = loadScrollyteller(
     "", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
     "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
     "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
   );
 
-  
-
   render(
     <App projectName={"Mental Health"} scrollyData={scrollyData} />,
     document.querySelector(".postcodesearch")
   );
-}
+};
 
 if (window.__ODYSSEY__) {
   preInit();
