@@ -2,9 +2,11 @@ import React from "react";
 import styles from "./styles.scss";
 import AsyncSelect from "react-select/async";
 import Select from "react-select";
-import postcodes from "./postcodes.json";
-import sa3s from "./sa3-codes-and-names-and-states.json";
+// import postcodes from "./postcodes.json";
+import sa3sImport from "./sa3-codes-and-names-and-states.json";
 import postcodeToSa3 from "./postcode-to-sa3-lookup.json";
+
+const sa3s = sa3sImport.sort((a, b) => a.SA3_NAME.localeCompare(b.SA3_NAME));
 
 const options = sa3s.map(sa3 => ({
   value: sa3.SA3_CODE,
@@ -28,6 +30,21 @@ export default props => {
     })
   };
 
+  const formatOptionLabel = ({ value, label, ratio }) => {
+    const calculatedPercent =
+      Math.round(ratio * 100) < 1 ? "<1" : Math.round(ratio * 100);
+    return (
+      <div style={{ display: "flex" }}>
+        <div>{label}</div>
+        {ratio && (
+          <div style={{ marginLeft: "12px", color: "#666" }}>
+            {calculatedPercent === 100 ? "~100" : calculatedPercent}&#37;
+          </div>
+        )}
+      </div>
+    );
+  };
+
   // Fires when user sets postcode
   const handleChange = option => {
     // props.setUserPostcode(option.value);
@@ -35,28 +52,56 @@ export default props => {
     console.log(option);
   };
 
-  const filterPostcodes = inputValue => {
-    // Only search if user enters at least 2 characters
-    // if (inputValue.length < 2) return [];
-
-    return options;
-
-    // Otherwise filter the postcodes and returns
-    // return options.filter(i =>
-    //   i.label.toLowerCase().includes(inputValue.toLowerCase())
-    // );
-  };
-
   const promiseOptions = async inputValue => {
     console.log(`Input value: ${inputValue}`);
+    console.log(inputValue);
 
-    const filteredPostcodes = postcodeToSa3.filter(
-      entry => entry.postcode.toString() === "4053"
-    );
+    // Don't process yet
+    // TODO: maybe make this a debounce
+    if (inputValue.length <= 2) return [];
 
-    console.log(filteredPostcodes);
+    // Detect postcode
+    // if (inputValue.length === 4) {
+    // Check if string is a postcode
+    if (/^[0-9]{4}$/.test(inputValue)) {
+      console.log(`Maybe postcode!`);
 
-    return options;
+      // Filter matches
+      const filteredPostcodes = postcodeToSa3.filter(
+        entry => entry.postcode.toString() === inputValue
+      );
+
+      // Array of only sa3s for difference comparison
+      const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+
+      // Filter our select box final options
+      const filteredOptions = options.filter(option =>
+        matchingSa3s.includes(option.value)
+      );
+
+      // Add postcode ratio to the options object
+      const optionsWithPostcode = filteredOptions.map(option => {
+        const ratio = filteredPostcodes.find(
+          entry => entry.sa3 === option.value
+        ).ratio;
+
+        return {
+          value: option.value,
+          label: option.label,
+          ratio: ratio
+        };
+      });
+
+      // Sort by ratio
+      const sortedOptions = optionsWithPostcode.sort(
+        (a, b) => b.ratio - a.ratio
+      );
+
+      console.log(sortedOptions);
+      return sortedOptions;
+    }
+
+    return [];
   };
   // new Promise(resolve => {
   //   setTimeout(() => {
@@ -74,11 +119,15 @@ export default props => {
         onChange={handleChange}
       /> */}
       <AsyncSelect
-        placeholder={"Search for your local area..."}
+        placeholder={"Enter postcode or select area..."}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
+        formatOptionLabel={formatOptionLabel}
+        isClearable={true}
+        noOptionsMessage={() => "Please enter a postcode..."}
+        defaultOptions={options}
       />
     </div>
   );

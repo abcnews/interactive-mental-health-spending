@@ -194,6 +194,8 @@ export default props => {
     setTimeout(() => {
       createChart();
     }, 500);
+
+    
   }, []);
 
   // Detect and handle window resize events
