@@ -1,2 +1,18 @@
 .root {
 }
+
+:global {
+  .Header h1 {
+    color: #0A3E52;
+  }
+  .pre-header-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+
+    div {
+      max-width: 640px;
+    }
+  }
+}
