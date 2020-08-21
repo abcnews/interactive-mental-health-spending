@@ -13,6 +13,8 @@ const options = sa3s.map(sa3 => ({
   label: sa3.SA3_NAME
 }));
 
+const MIN_INPUT_LENGTH = 2;
+
 export default props => {
   const customStyles = {
     menu: (provided, state) => ({
@@ -23,7 +25,7 @@ export default props => {
       ...provided,
       borderRadius: 0,
       borderWidth: "2px",
-      borderColor: "#39677B",
+      // borderColor: "#39677B",
       fontSize: "16px",
       cursor: "pointer",
       padding: "4px 4px 3px"
@@ -58,7 +60,7 @@ export default props => {
 
     // Don't process yet
     // TODO: maybe make this a debounce
-    if (inputValue.length <= 2) return [];
+    if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
     // Detect postcode
     // if (inputValue.length === 4) {
@@ -101,13 +103,14 @@ export default props => {
       return sortedOptions;
     }
 
-    return [];
+    // If not a postcode just search the options
+    const filteredOptions = options.filter(option => {
+      return option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
+    });
+
+    return filteredOptions;
   };
-  // new Promise(resolve => {
-  //   setTimeout(() => {
-  //     resolve(filterPostcodes(inputValue));
-  //   }, 200);
-  // });
+ 
 
   return (
     <div className={styles.root}>
@@ -119,14 +122,14 @@ export default props => {
         onChange={handleChange}
       /> */}
       <AsyncSelect
-        placeholder={"Enter postcode or select area..."}
+        placeholder={"Enter postcode or search area..."}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
-        noOptionsMessage={() => "Please enter a postcode..."}
+        noOptionsMessage={() => "Enter your postcode or local area..."}
         defaultOptions={options}
       />
     </div>
