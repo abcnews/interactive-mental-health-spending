@@ -26,6 +26,38 @@ const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
 const TRANSITION_DURATION = 250;
 
+// We have a special weird x-axis that has values
+// mid-way through the "tick" lines 
+const xTicks5 = [
+  "start",
+  1,
+  "spacer2",
+  2,
+  "spacer3",
+  3,
+  "spacer4",
+  4,
+  "spacer5",
+  5,
+  "end"
+];
+
+const xTicks6 = [
+  "start",
+  1,
+  "spacer2",
+  2,
+  "spacer3",
+  3,
+  "spacer4",
+  4,
+  "spacer5",
+  5,
+  "spacer6",
+  6,
+  "end"
+];
+
 let data;
 let svg;
 let margin;
@@ -38,11 +70,13 @@ let yAxisGroup;
 let dots;
 let width;
 let height;
+let xTicks;
 
 export default props => {
   const root = useRef();
   const windowSize = useWindowSize();
   data = props.data;
+  xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6
 
   const createChart = () => {
     margin = {
@@ -59,21 +93,7 @@ export default props => {
 
     scaleX = d3
       .scalePoint()
-      .domain([
-        "start",
-        1,
-        "spacer2",
-        2,
-        "spacer3",
-        3,
-        "spacer4",
-        4,
-        "spacer5",
-        5,
-        "spacer6",
-        6,
-        "end"
-      ])
+      .domain(xTicks)
       .range([margin.left, width - margin.right]);
 
     scaleY = d3
@@ -86,28 +106,10 @@ export default props => {
         d3
           .axisBottom(scaleX)
           .tickFormat("")
-          // .ticks([8])
-          .tickValues([
-            "start",
-            "spacer2",
-            "spacer3",
-            "spacer4",
-            "spacer5",
-            "spacer6",
-            "end"
-          ])
-        // .tickSize(-200)
-      );
 
-    // yAxis = g => {
-    //   return g.attr("transform", `translate(0,${height - margin.bottom})`).call(
-    //     d3
-    //       .axisLeft(scaleX)
-    //       .tickFormat("")
-    //       .ticks(5)
-    //     // .tickSize(-200)
-    //   );
-    // };
+          .tickValues(xTicks.filter(tick => typeof(tick) === "string"))
+
+      );
 
     yAxis = svg =>
       svg
@@ -194,8 +196,6 @@ export default props => {
     setTimeout(() => {
       createChart();
     }, 500);
-
-    
   }, []);
 
   // Detect and handle window resize events
@@ -210,19 +210,27 @@ export default props => {
     console.log(`New props detected:`);
     console.log(props);
 
+    scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
     scaleY.domain([0, props.yMax]);
+
+    xAxisGroup
+      .transition()
+      .duration(250)
+      .call(xAxis);
 
     yAxisGroup
       .transition()
       .duration(250)
       .call(yAxis);
 
+    // TODO: we need to handle extra data in the join I think
+    // see here: https://observablehq.com/@d3/selection-join
     svg
       .selectAll("circle")
       .data(data)
       .join("circle")
       .transition()
-      .duration(0)
+      .duration(1000)
       .delay(TRANSITION_DURATION)
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
