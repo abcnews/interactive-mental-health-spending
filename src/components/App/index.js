@@ -15,8 +15,9 @@ import heroImage from "./hero-top.png"
 let storyKeys = require("./story-keys.json");
 
 const dataObject = {
-  data1: require("./allied-data.json"),
-  data2: require("./gp-focus.json")
+  data1: require("./data/allied-data.json"),
+  // data1: require("./data/distressed-data.json"),
+  data2: require("./data/gp-focus.json")
 };
 
 export default props => {
@@ -76,6 +77,7 @@ export default props => {
             <MultiChart
               data={chartData}
               yMax={currentKey.yMax}
+              xNumberOfTicks={currentKey.xNumberOfTicks}
               style={"line"}
             />
           </BackgroundStage>

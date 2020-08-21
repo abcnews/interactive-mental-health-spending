@@ -1,10 +1,12 @@
 {
   "one": {
     "dataKey": "data1",
-    "yMax": "5000"
+    "yMax": "5000",
+    "xNumberOfTicks": 5
   },
   "two": {
     "dataKey": "data2",
-    "yMax": "300"
+    "yMax": "200",
+    "xNumberOfTicks": 6
   }
 }
