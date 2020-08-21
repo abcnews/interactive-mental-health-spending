@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import styles from "./styles.scss";
 import { Portal } from "react-portal";
 import Scrollyteller from "@abcnews/scrollyteller";
+
 
 import PostcodeSearch from "../PostcodeSearch";
 import BackgroundStage from "../BackgroundStage";
 import CustomPanel from "../CustomPanel";
 import MultiChart from "../MultiChart";
+
+// Load up our hero URL (or data)
+import heroImage from "./hero-top.png"
 
 let storyKeys = require("./story-keys.json");
 
@@ -20,22 +24,17 @@ export default props => {
   const [chartData, setChartData] = useState(storyKeys.one.dataKey);
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
 
-  
-
   const onMarker = config => {
     console.log(config);
 
     if (config.key) {
       console.log(storyKeys[config.key]);
       setCurrentKey(storyKeys[config.key]);
-      setChartData(dataObject[storyKeys[config.key].dataKey])
+      setChartData(dataObject[storyKeys[config.key].dataKey]);
     }
   };
 
-  
-  useEffect(() => {
-
-  }, []); // Init effect
+  useLayoutEffect(() => {}, []); // Init effect
 
   // useEffect(() => {
   //   if (!userPostcode) return;
@@ -81,6 +80,10 @@ export default props => {
             />
           </BackgroundStage>
         </Scrollyteller>
+      </Portal>
+
+      <Portal node={document.querySelector(".pre-header-hero")}>
+        <div><img src={heroImage} /></div>
       </Portal>
     </>
   );
