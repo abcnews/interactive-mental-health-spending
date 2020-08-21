@@ -1,12 +1,15 @@
 // Polyfills
 import "regenerator-runtime/runtime.js";
-import 'whatwg-fetch'
+import "whatwg-fetch";
 
 // Imports
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 import { loadScrollyteller } from "@abcnews/scrollyteller";
+
+import * as d3Selection from "d3-selection";
+const d3 = { ...d3Selection };
 
 import buildMountPoints from "./lib/buildMountPoints";
 import { addClass } from "./lib/classHelpers";
@@ -15,7 +18,13 @@ buildMountPoints(["postcodesearch", "scrollystagemount"]);
 
 // Make stage full width
 const stage = document.querySelector(".scrollystagemount");
-addClass(stage, "u-full")
+addClass(stage, "u-full");
+
+const preInit = () => {
+
+  const heroEl = d3.select(".Header").insert("div", ":first-child");
+  heroEl.classed("pre-header-hero", true);
+}
 
 async function init() {
   const scrollyData = loadScrollyteller(
@@ -24,13 +33,21 @@ async function init() {
     "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
   );
 
+  
+
   render(
     <App projectName={"Mental Health"} scrollyData={scrollyData} />,
     document.querySelector(".postcodesearch")
   );
 }
 
-init();
+if (window.__ODYSSEY__) {
+  preInit();
+  init();
+} else {
+  window.addEventListener("odyssey:api", preInit);
+  window.addEventListener("odyssey:api", init);
+}
 
 if (module.hot) {
   module.hot.accept("./components/App", async () => {
