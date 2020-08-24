@@ -24,7 +24,17 @@ const d3 = {
 
 const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
-const TRANSITION_DURATION = 250;
+const TRANSITION_DURATION = 0;
+const dotRadius = 5;
+
+const calculateMargins = (width, height) => {
+  return {
+    top: height * 0.2,
+    right: width * 0.15,
+    bottom: height * 0.1,
+    left: width * 0.12
+  };
+};
 
 // Load our data and assign to object
 const dataObject = {
@@ -85,17 +95,12 @@ export default props => {
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
   const createChart = () => {
-    margin = {
-      top: window.innerHeight * 0.2,
-      right: window.innerWidth * 0.1,
-      bottom: window.innerHeight * 0.1,
-      left: window.innerWidth * 0.1
-    };
-
     svg = d3.select(root.current);
 
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
+
+    margin = calculateMargins(width, height);
 
     scaleX = d3
       .scalePoint()
@@ -112,7 +117,6 @@ export default props => {
         d3
           .axisBottom(scaleX)
           .tickFormat("")
-
           .tickValues(xTicks.filter(tick => typeof tick === "string"))
       );
 
@@ -128,11 +132,12 @@ export default props => {
           // .tickFormat(formatTick)
         )
         .call(g => g.select(".domain").remove())
-        .call(g =>
-          g
-            .selectAll(".tick line")
-            .attr("stroke-opacity", 0.5)
-            .attr("stroke-dasharray", "2,2")
+        .call(
+          g => g.selectAll(".tick line").style("stroke", "#a4a4a4")
+          .style("stroke-opacity", 0.5)
+          .style("stroke-width", 1)
+          .style("shape-rendering", "crispEdges")
+          // .attr("stroke-dasharray", "2,2")
         )
         .call(
           g => g.selectAll(".tick text")
@@ -165,22 +170,17 @@ export default props => {
         return scaleX(d[X_FIELD]);
       })
       .attr("cy", d => scaleY(d[Y_FIELD]))
-      .attr("r", 4);
+      .attr("r", dotRadius);
 
     return svg;
   };
 
   const resizeChart = () => {
-    // Recalculate margins
-    margin = {
-      top: window.innerHeight * 0.2,
-      right: window.innerWidth * 0.1,
-      bottom: window.innerHeight * 0.1,
-      left: window.innerWidth * 0.1
-    };
-
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
+
+    // Recalculate margins
+    margin = calculateMargins(width, height);
 
     scaleX.range([margin.left, width - margin.right]);
     scaleY.range([height - margin.bottom, margin.top]);
@@ -220,19 +220,19 @@ export default props => {
 
     xAxisGroup
       .transition()
-      .duration(250)
+      .duration(TRANSITION_DURATION)
       .call(xAxis);
 
     yAxisGroup
       .transition()
-      .duration(250)
+      .duration(TRANSITION_DURATION)
       .call(yAxis);
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
     // NOTE: Fixed now. We needed to explicitly set attributes
     // and styles etc.
-    svg
+    dots = svg
       .selectAll("circle")
       .data(dataObject[props.dataKey])
       .join("circle")
@@ -250,17 +250,16 @@ export default props => {
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", "#435699")
-
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
-          return 200;
+          return -200000;
         }
 
         return scaleX(d[X_FIELD]);
       })
       .attr("cy", d => scaleY(d[Y_FIELD]))
-      .attr("r", 4);
-  }, [props]);
+      .attr("r", dotRadius);
+  }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
   return (
     <div className={styles.root}>

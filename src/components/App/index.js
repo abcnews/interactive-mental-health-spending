@@ -14,9 +14,10 @@ import heroImage from "./hero-top.png";
 let storyKeys = require("./story-keys.json");
 
 export default props => {
-  const [userSa3, setUserSa3] = useState(null);
+  // const [userSa3, setUserSa3] = useState(null);
   // const [chartData, setChartData] = useState(storyKeys.one.dataKey);
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
+  const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
     console.log(config);
@@ -28,7 +29,14 @@ export default props => {
     }
   };
 
-  useLayoutEffect(() => {}, []); // Init effect
+  const handleSelection = data => {
+    console.log(`App data:`);
+    console.log(data);
+
+    setUserSelection(data);
+  };
+
+  // useLayoutEffect(() => {}, []); // Init effect
 
   // useEffect(() => {
   //   if (!userPostcode) return;
@@ -56,8 +64,14 @@ export default props => {
 
   return (
     <>
+      <Portal node={document.querySelector(".pre-header-hero")}>
+        <div>
+          <img src={heroImage} />
+        </div>
+      </Portal>
+
       <div className={styles.root}>
-        <PostcodeSearch />
+        <PostcodeSearch handleSelection={handleSelection} />
       </div>
 
       <Portal node={document.querySelector(".scrollystagemount")}>
@@ -68,20 +82,12 @@ export default props => {
         >
           <BackgroundStage>
             <MultiChart
-              // data={chartData}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               xNumberOfTicks={currentKey.xNumberOfTicks}
-              style={"line"}
             />
           </BackgroundStage>
         </Scrollyteller>
-      </Portal>
-
-      <Portal node={document.querySelector(".pre-header-hero")}>
-        <div>
-          <img src={heroImage} />
-        </div>
       </Portal>
     </>
   );

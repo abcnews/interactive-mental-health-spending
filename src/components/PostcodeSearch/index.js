@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./styles.scss";
 import AsyncSelect from "react-select/async";
-import Select from "react-select";
 import sa3sImport from "./sa3-codes-and-names-and-states.json";
 import postcodeToSa3 from "./postcode-to-sa3-lookup.json";
 
 const sa3s = sa3sImport.sort((a, b) => a.SA3_NAME.localeCompare(b.SA3_NAME));
 
 // Import images
-import mapPin from "./DLS_NAV_ICON.png"
+import mapPin from "./DLS_NAV_ICON.png";
 
 const options = sa3s.map(sa3 => ({
   value: sa3.SA3_CODE,
@@ -48,7 +47,7 @@ export default props => {
         <div>{label}</div>
         {ratio && (
           <div style={{ marginLeft: "12px", color: "#666" }}>
-            {calculatedPercent === 100 ? "~100" : calculatedPercent}&#37;
+           <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small> 
           </div>
         )}
       </div>
@@ -57,9 +56,7 @@ export default props => {
 
   // Fires when user sets postcode
   const handleChange = option => {
-    // props.setUserPostcode(option.value);
-
-    console.log(option);
+    props.handleSelection(option);
   };
 
   const promiseOptions = async inputValue => {
@@ -118,17 +115,9 @@ export default props => {
 
     return filteredOptions;
   };
- 
 
   return (
     <div className={styles.root}>
-      {/* <Select
-        options={options}
-        placeholder={"Search for your area..."}
-        styles={customStyles}
-        isClearable={true}
-        onChange={handleChange}
-      /> */}
       <AsyncSelect
         placeholder={"Enter postcode or search area..."}
         cacheOptions
