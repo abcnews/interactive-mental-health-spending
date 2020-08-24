@@ -26,8 +26,15 @@ const X_FIELD = "SA3 group";
 const Y_FIELD = "Medicare benefits per 100 people ($)";
 const TRANSITION_DURATION = 250;
 
+// Load our data and assign to object
+const dataObject = {
+  allied: require("./data/allied-data.json"),
+  distressed: require("./data/distressed-data.json"),
+  gpFocus: require("./data/gp-focus.json")
+};
+
 // We have a special weird x-axis that has values
-// mid-way through the "tick" lines 
+// mid-way through the "tick" lines
 const xTicks5 = [
   "start",
   1,
@@ -75,8 +82,7 @@ let xTicks;
 export default props => {
   const root = useRef();
   const windowSize = useWindowSize();
-  data = props.data;
-  xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6
+  xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
   const createChart = () => {
     margin = {
@@ -107,8 +113,7 @@ export default props => {
           .axisBottom(scaleX)
           .tickFormat("")
 
-          .tickValues(xTicks.filter(tick => typeof(tick) === "string"))
-
+          .tickValues(xTicks.filter(tick => typeof tick === "string"))
       );
 
     yAxis = svg =>
@@ -146,7 +151,7 @@ export default props => {
 
     dots = svg
       .selectAll("circle")
-      .data(data)
+      .data(dataObject[props.dataKey])
       .join("circle")
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
@@ -225,21 +230,36 @@ export default props => {
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
+    // NOTE: Fixed now. We needed to explicitly set attributes
+    // and styles etc.
     svg
       .selectAll("circle")
-      .data(data)
+      .data(dataObject[props.dataKey])
       .join("circle")
-      .transition()
-      .duration(1000)
-      .delay(TRANSITION_DURATION)
+      // .transition()
+      // .duration(1000)
+      // .delay(TRANSITION_DURATION)
+      // .attr("cx", d => {
+      //   if (d[X_FIELD] === "National") {
+      //     return -1000000;
+      //   }
+
+      //   return scaleX(d[X_FIELD]);
+      // })
+      // .attr("cy", d => scaleY(d[Y_FIELD]));
+      .style("stroke", "rgba(255, 255, 255, 0.6)")
+      .style("stroke-width", "1.5")
+      .style("fill", "#435699")
+
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
-          return -1000000;
+          return 200;
         }
 
         return scaleX(d[X_FIELD]);
       })
-      .attr("cy", d => scaleY(d[Y_FIELD]));
+      .attr("cy", d => scaleY(d[Y_FIELD]))
+      .attr("r", 4);
   }, [props]);
 
   return (

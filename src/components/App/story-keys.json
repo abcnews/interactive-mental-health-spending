@@ -1,12 +1,17 @@
 {
   "one": {
-    "dataKey": "data1",
-    "yMax": "5000",
+    "dataKey": "distressed",
+    "yMax": "100",
     "xNumberOfTicks": 5
   },
   "two": {
-    "dataKey": "data2",
-    "yMax": "200",
+    "dataKey": "allied",
+    "yMax": "5000",
+    "xNumberOfTicks": 6
+  },
+  "three": {
+    "dataKey": "gpFocus",
+    "yMax": "4000",
     "xNumberOfTicks": 6
   }
 }
