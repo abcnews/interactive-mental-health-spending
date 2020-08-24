@@ -90,7 +90,7 @@ let width;
 let height;
 let xTicks;
 
-export default props => {
+const MultiChart = props => {
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
@@ -99,7 +99,6 @@ export default props => {
     if (props.yValueType === "percent") return `${x}%`;
     else if (props.yValueType === "dollars") {
       if (x === 0) return `$${x}`;
-
       const commaFormatter = d3.format(",");
       return `${commaFormatter(x)}`;
     } else return x;
@@ -171,8 +170,7 @@ export default props => {
       .join("circle")
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
-      .style("fill", "#435699")
-
+      .style("fill", props.dotColor)
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
           return 200;
@@ -252,7 +250,7 @@ export default props => {
       .join("circle")
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
-      .style("fill", "#435699")
+      .style("fill", props.dotColor)
       .attr("cx", d => {
         if (d[X_FIELD] === "National") {
           return -200000;
@@ -270,3 +268,10 @@ export default props => {
     </div>
   );
 };
+
+// Set default props
+MultiChart.defaultProps = {
+  dotColor: "red"
+};
+
+export default MultiChart;
