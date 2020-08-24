@@ -3,7 +3,8 @@
     "dataKey": "distressed",
     "yMax": "30",
     "xNumberOfTicks": 5,
-    "yValueType": "percent"
+    "yValueType": "percent",
+    "dotColor": "#3C92C8"
   },
   "two": {
     "dataKey": "allied",
