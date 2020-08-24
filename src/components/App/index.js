@@ -3,26 +3,19 @@ import styles from "./styles.scss";
 import { Portal } from "react-portal";
 import Scrollyteller from "@abcnews/scrollyteller";
 
-
 import PostcodeSearch from "../PostcodeSearch";
 import BackgroundStage from "../BackgroundStage";
 import CustomPanel from "../CustomPanel";
 import MultiChart from "../MultiChart";
 
 // Load up our hero URL (or data)
-import heroImage from "./hero-top.png"
+import heroImage from "./hero-top.png";
 
 let storyKeys = require("./story-keys.json");
 
-const dataObject = {
-  data1: require("./data/allied-data.json"),
-  // data1: require("./data/distressed-data.json"),
-  data2: require("./data/gp-focus.json")
-};
-
 export default props => {
   const [userSa3, setUserSa3] = useState(null);
-  const [chartData, setChartData] = useState(storyKeys.one.dataKey);
+  // const [chartData, setChartData] = useState(storyKeys.one.dataKey);
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
 
   const onMarker = config => {
@@ -31,7 +24,7 @@ export default props => {
     if (config.key) {
       console.log(storyKeys[config.key]);
       setCurrentKey(storyKeys[config.key]);
-      setChartData(dataObject[storyKeys[config.key].dataKey]);
+      // setChartData(dataObject[storyKeys[config.key].dataKey]);
     }
   };
 
@@ -75,7 +68,8 @@ export default props => {
         >
           <BackgroundStage>
             <MultiChart
-              data={chartData}
+              // data={chartData}
+              dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               xNumberOfTicks={currentKey.xNumberOfTicks}
               style={"line"}
@@ -85,7 +79,9 @@ export default props => {
       </Portal>
 
       <Portal node={document.querySelector(".pre-header-hero")}>
-        <div><img src={heroImage} /></div>
+        <div>
+          <img src={heroImage} />
+        </div>
       </Portal>
     </>
   );
