@@ -85,6 +85,7 @@ export default props => {
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               xNumberOfTicks={currentKey.xNumberOfTicks}
+              yValueType={currentKey.yValueType}
             />
           </BackgroundStage>
         </Scrollyteller>
