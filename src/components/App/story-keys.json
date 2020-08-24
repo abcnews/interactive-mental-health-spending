@@ -4,7 +4,9 @@
     "yMax": "30",
     "xNumberOfTicks": 5,
     "yValueType": "percent",
-    "dotColor": "#3C92C8"
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent"
   },
   "two": {
     "dataKey": "allied",

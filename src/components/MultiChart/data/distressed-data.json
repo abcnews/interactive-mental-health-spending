@@ -1,37 +1,22 @@
 [
   {
-    "SA3 name": "Esperance",
-    "SA3 group": 1,
-    "Per cent of people who had the service (%)": 0,
-    "Services per 100 people": 0,
-    "Medicare benefits per 100 people ($)": 18.3
+    "quintile": 1,
+    "percent": 18.3
   },
   {
-    "SA3 name": "Christmas Island",
-    "SA3 group": 2,
-    "Per cent of people who had the service (%)": 0,
-    "Services per 100 people": 0,
-    "Medicare benefits per 100 people ($)": 13.7
+    "quintile": 2,
+    "percent": 13.7
   },
   {
-    "SA3 name": "Norfolk Island",
-    "SA3 group": 3,
-    "Per cent of people who had the service (%)": 0,
-    "Services per 100 people": 0,
-    "Medicare benefits per 100 people ($)": 12.4
+    "quintile": 3,
+    "percent": 12.4
   },
   {
-    "SA3 name": "Bendigo",
-    "SA3 group": 4,
-    "Per cent of people who had the service (%)": 0.01,
-    "Services per 100 people": 0.02,
-    "Medicare benefits per 100 people ($)": 12.5
+    "quintile": 4,
+    "percent": 12.5
   },
   {
-    "SA3 name": "Melville",
-    "SA3 group": 5,
-    "Per cent of people who had the service (%)": 0.01,
-    "Services per 100 people": 0.03,
-    "Medicare benefits per 100 people ($)": 9.0
+    "quintile": 5,
+    "percent": 9.0
   }
 ]

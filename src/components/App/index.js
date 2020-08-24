@@ -87,6 +87,8 @@ export default props => {
               xNumberOfTicks={currentKey.xNumberOfTicks}
               yValueType={currentKey.yValueType}
               dotColor={currentKey.dotColor}
+              xField={currentKey.xField}
+              yField={currentKey.yField}
             />
           </BackgroundStage>
         </Scrollyteller>
