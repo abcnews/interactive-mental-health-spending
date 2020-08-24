@@ -1,4 +1,8 @@
 import React, { useRef, useLayoutEffect, useEffect } from "react";
+import useWindowSize from "./useWindowSize";
+import styles from "./styles.scss";
+
+// D3 imports
 import * as d3Select from "d3-selection";
 import * as d3Scale from "d3-scale";
 import * as d3Fetch from "d3-fetch";
@@ -7,8 +11,7 @@ import * as d3Axis from "d3-axis";
 import * as d3ScaleChromatic from "d3-scale-chromatic";
 import * as d3Transition from "d3-transition";
 import * as d3Format from "d3-format";
-import useWindowSize from "./useWindowSize";
-import styles from "./styles.scss";
+import * as d3Shape from "d3-shape";
 
 const d3 = {
   ...d3Select,
@@ -18,14 +21,13 @@ const d3 = {
   ...d3Axis,
   ...d3ScaleChromatic,
   ...d3Transition,
-  ...d3Format
+  ...d3Format,
+  ...d3Shape
 };
 
 // Test data
 // const wineQuality = require("./wineQuality.json");
 
-const X_FIELD = "SA3 group";
-const Y_FIELD = "Medicare benefits per 100 people ($)";
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
 
@@ -91,6 +93,7 @@ let height;
 let xTicks;
 
 const MultiChart = props => {
+  const { xField, yField, ...theRestOfTheProps } = props;
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
@@ -172,14 +175,30 @@ const MultiChart = props => {
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
       .attr("cx", d => {
-        if (d[X_FIELD] === "National") {
+        if (d[xField] === "National") {
           return 200;
         }
 
-        return scaleX(d[X_FIELD]);
+        return scaleX(d[xField]);
       })
-      .attr("cy", d => scaleY(d[Y_FIELD]))
+      .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
+
+    const line = d3
+      .line()
+      .defined(d => !isNaN(d[yField]))
+      .x(d => scaleX(d[xField]))
+      .y(d => scaleY(d[yField]));
+
+    svg
+      .append("path")
+      .data([dataObject[props.dataKey]])
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 1.5)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("d", line);
 
     return svg;
   };
@@ -200,9 +219,7 @@ const MultiChart = props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    dots
-      .attr("cx", d => scaleX(d[X_FIELD]))
-      .attr("cy", d => scaleY(d[Y_FIELD]));
+    dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
   };
 
   useLayoutEffect(() => {
@@ -252,13 +269,13 @@ const MultiChart = props => {
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
       .attr("cx", d => {
-        if (d[X_FIELD] === "National") {
+        if (d[xField] === "National") {
           return -200000;
         }
 
-        return scaleX(d[X_FIELD]);
+        return scaleX(d[xField]);
       })
-      .attr("cy", d => scaleY(d[Y_FIELD]))
+      .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
@@ -271,7 +288,9 @@ const MultiChart = props => {
 
 // Set default props
 MultiChart.defaultProps = {
-  dotColor: "red"
+  dotColor: "red",
+  xField: "SA3 group",
+  yField: "Medicare benefits per 100 people ($)"
 };
 
 export default MultiChart;
