@@ -6,6 +6,7 @@ import * as d3Array from "d3-array";
 import * as d3Axis from "d3-axis";
 import * as d3ScaleChromatic from "d3-scale-chromatic";
 import * as d3Transition from "d3-transition";
+import * as d3Format from "d3-format";
 import useWindowSize from "./useWindowSize";
 import styles from "./styles.scss";
 
@@ -16,7 +17,8 @@ const d3 = {
   ...d3Array,
   ...d3Axis,
   ...d3ScaleChromatic,
-  ...d3Transition
+  ...d3Transition,
+  ...d3Format
 };
 
 // Test data
@@ -75,7 +77,6 @@ const xTicks6 = [
   "end"
 ];
 
-let data;
 let svg;
 let margin;
 let scaleX;
@@ -93,6 +94,39 @@ export default props => {
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
+
+  const formatYTicks = x => {
+    if (props.yValueType === "percent") return `${x}%`;
+    else if (props.yValueType === "dollars") {
+      if (x === 0) return `$${x}`;
+
+      const commaFormatter = d3.format(",");
+      return `${commaFormatter(x)}`;
+    } else return x;
+  };
+
+  const makeYAxis = svg =>
+    svg
+      .attr("transform", `translate(${margin.left},0)`)
+      .attr("id", "y-axis")
+      .call(
+        d3
+          .axisLeft(scaleY)
+          .tickPadding([6])
+          .tickSize(-(width - margin.left - margin.right))
+          .ticks(5)
+          .tickFormat(formatYTicks)
+      )
+      .call(g => g.select(".domain").remove())
+      .call(g =>
+        g
+          .selectAll(".tick line")
+          .style("stroke", "#a4a4a4")
+          .style("stroke-opacity", 0.5)
+          .style("stroke-width", 1)
+          .style("shape-rendering", "crispEdges")
+      )
+      .call(g => g.selectAll(".tick text"));
 
   const createChart = () => {
     svg = d3.select(root.current);
@@ -120,32 +154,9 @@ export default props => {
           .tickValues(xTicks.filter(tick => typeof tick === "string"))
       );
 
-    yAxis = svg =>
-      svg
-        .attr("transform", `translate(${margin.left},0)`)
-        .attr("id", "y-axis")
-        .call(
-          d3
-            .axisLeft(scaleY)
-            .tickPadding([6])
-            .tickSize(-(width - margin.left - margin.right))
-          // .tickFormat(formatTick)
-        )
-        .call(g => g.select(".domain").remove())
-        .call(
-          g => g.selectAll(".tick line").style("stroke", "#a4a4a4")
-          .style("stroke-opacity", 0.5)
-          .style("stroke-width", 1)
-          .style("shape-rendering", "crispEdges")
-          // .attr("stroke-dasharray", "2,2")
-        )
-        .call(
-          g => g.selectAll(".tick text")
-          // .attr("x", 0)
-          // .attr("y", 0)
-        );
+    yAxis = makeYAxis;
 
-    //d3.axisBottom(scaleX).tickSize(3);
+    // d3.axisBottom(scaleX).tickSize(3);
 
     // Draw the axis
     xAxisGroup = svg.append("g").call(xAxis);
@@ -210,6 +221,7 @@ export default props => {
     resizeChart();
   }, [windowSize.width, windowSize.height]);
 
+  // Chart data change
   useLayoutEffect(() => {
     if (!svg) return;
     console.log(`New props detected:`);
@@ -217,6 +229,8 @@ export default props => {
 
     scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
     scaleY.domain([0, props.yMax]);
+
+    yAxis = makeYAxis;
 
     xAxisGroup
       .transition()
@@ -236,17 +250,6 @@ export default props => {
       .selectAll("circle")
       .data(dataObject[props.dataKey])
       .join("circle")
-      // .transition()
-      // .duration(1000)
-      // .delay(TRANSITION_DURATION)
-      // .attr("cx", d => {
-      //   if (d[X_FIELD] === "National") {
-      //     return -1000000;
-      //   }
-
-      //   return scaleX(d[X_FIELD]);
-      // })
-      // .attr("cy", d => scaleY(d[Y_FIELD]));
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", "#435699")

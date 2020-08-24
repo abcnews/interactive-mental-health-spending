@@ -1,13 +1,15 @@
 {
   "one": {
     "dataKey": "distressed",
-    "yMax": "100",
-    "xNumberOfTicks": 5
+    "yMax": "30",
+    "xNumberOfTicks": 5,
+    "yValueType": "percent"
   },
   "two": {
     "dataKey": "allied",
     "yMax": "5000",
-    "xNumberOfTicks": 6
+    "xNumberOfTicks": 6,
+    "yValueType": "dollars"
   },
   "three": {
     "dataKey": "gpFocus",
