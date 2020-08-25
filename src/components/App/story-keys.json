@@ -12,7 +12,8 @@
     "dataKey": "allied",
     "yMax": "5000",
     "xNumberOfTicks": 6,
-    "yValueType": "dollars"
+    "yValueType": "dollars",
+    "dotColor": "#FF4D4D"
   },
   "three": {
     "dataKey": "gpFocus",
