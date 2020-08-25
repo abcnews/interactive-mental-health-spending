@@ -90,6 +90,7 @@ export default props => {
               xField={currentKey.xField}
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
+              averageLine={currentKey.averageLine}
             />
           </BackgroundStage>
         </Scrollyteller>
