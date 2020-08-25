@@ -25,11 +25,9 @@ const d3 = {
   ...d3Shape
 };
 
-// Test data
-// const wineQuality = require("./wineQuality.json");
-
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
+const LINE_ANIMATION_DURATION = 2000;
 
 const calculateMargins = (width, height) => {
   return {
@@ -79,6 +77,7 @@ const xTicks6 = [
   "end"
 ];
 
+// Some scoped vars
 let svg;
 let margin;
 let scaleX;
@@ -91,7 +90,10 @@ let dots;
 let width;
 let height;
 let xTicks;
+let line;
+let path;
 
+// The React function component
 const MultiChart = props => {
   const { xField, yField, ...theRestOfTheProps } = props;
   const root = useRef();
@@ -158,14 +160,41 @@ const MultiChart = props => {
 
     yAxis = makeYAxis;
 
-    // d3.axisBottom(scaleX).tickSize(3);
-
     // Draw the axis
     xAxisGroup = svg.append("g").call(xAxis);
     yAxisGroup = svg.append("g").call(yAxis);
 
     svg.attr("width", width);
     svg.attr("height", height);
+
+    // Create the line from data
+    line = d3
+      .line()
+      .defined(d => !isNaN(d[yField]))
+      .x(d => scaleX(d[xField]))
+      .y(d => scaleY(d[yField]));
+
+    // Create the path
+    path = svg
+      .append("path")
+      .data([dataObject[props.dataKey]])
+      .attr("fill", "none")
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("d", line);
+
+    // Get the length of the line
+    const totalLength = path.node().getTotalLength();
+
+    // Animate the path
+    path
+      .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+      .attr("stroke-dashoffset", totalLength)
+      .transition()
+      .duration(LINE_ANIMATION_DURATION)
+      .attr("stroke-dashoffset", 0);
 
     dots = svg
       .selectAll("circle")
@@ -183,22 +212,6 @@ const MultiChart = props => {
       })
       .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
-
-    const line = d3
-      .line()
-      .defined(d => !isNaN(d[yField]))
-      .x(d => scaleX(d[xField]))
-      .y(d => scaleY(d[yField]));
-
-    svg
-      .append("path")
-      .data([dataObject[props.dataKey]])
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 1.5)
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("d", line);
 
     return svg;
   };
@@ -218,6 +231,9 @@ const MultiChart = props => {
 
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
+
+    // Resize the path
+    path.attr("d", line);
 
     dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
   };
