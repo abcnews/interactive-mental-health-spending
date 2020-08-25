@@ -167,34 +167,37 @@ const MultiChart = props => {
     svg.attr("width", width);
     svg.attr("height", height);
 
-    // Create the line from data
-    line = d3
-      .line()
-      .defined(d => !isNaN(d[yField]))
-      .x(d => scaleX(d[xField]))
-      .y(d => scaleY(d[yField]));
+    if (props.solidLine) {
+      // Create the line from data
+      line = d3
+        .line()
+        .defined(d => !isNaN(d[yField]))
+        .x(d => scaleX(d[xField]))
+        .y(d => scaleY(d[yField]));
 
-    // Create the path
-    path = svg
-      .append("path")
-      .data([dataObject[props.dataKey]])
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 2)
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("d", line);
+      // Create the path
+      path = svg
+        .append("path")
+        .data([dataObject[props.dataKey]])
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 2)
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .attr("d", line);
 
-    // Get the length of the line
-    const totalLength = path.node().getTotalLength();
+      // // Get the length of the line
+      // const totalLength = path.node().getTotalLength();
 
-    // Animate the path
-    path
-      .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-      .attr("stroke-dashoffset", totalLength)
-      .transition()
-      .duration(LINE_ANIMATION_DURATION)
-      .attr("stroke-dashoffset", 0);
+      // // Animate the path
+      // // TODO: focus on animations later
+      // path
+      //   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+      //   .attr("stroke-dashoffset", totalLength)
+      //   .transition()
+      //   .duration(LINE_ANIMATION_DURATION)
+      //   .attr("stroke-dashoffset", 0);
+    }
 
     dots = svg
       .selectAll("circle")
@@ -232,8 +235,10 @@ const MultiChart = props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    // Resize the path
-    path.attr("d", line);
+    if (props.solidLine) {
+      // Resize the path
+      path.attr("d", line);
+    }
 
     dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
   };
@@ -272,6 +277,34 @@ const MultiChart = props => {
       .transition()
       .duration(TRANSITION_DURATION)
       .call(yAxis);
+
+    if (props.solidLine) {
+      line = d3
+        .line()
+        .defined(d => !isNaN(d[yField]))
+        .x(d => scaleX(d[xField]))
+        .y(d => scaleY(d[yField]));
+
+      path
+        .data([dataObject[props.dataKey]])
+        .attr("stroke", props.dotColor)
+        .attr("d", line);
+
+      // // Get the length of the line
+      // const totalLength = path.node().getTotalLength();
+
+      // // Animate the path
+      // // TODO: focus on animations later
+      // path
+      //   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+      //   .attr("stroke-dashoffset", totalLength)
+      //   .transition()
+      //   .duration(LINE_ANIMATION_DURATION)
+      //   .attr("stroke-dashoffset", 0);
+    } else {
+      // Hide path
+      path.attr("stroke", "none")
+    }
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
