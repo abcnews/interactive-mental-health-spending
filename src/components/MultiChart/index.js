@@ -359,12 +359,11 @@ const MultiChart = props => {
       //   .duration(LINE_ANIMATION_DURATION)
       //   .attr("stroke-dashoffset", 0);
     } else if (solidPath) solidPath.remove();
-    
 
     // Check if we want to average the dots and plot a dotted line
     if (props.averageLine) {
-      if (averagePath) averagePath.remove()
-      
+      if (averagePath) averagePath.remove();
+
       const averageData = generateAverageData(
         dataObject[props.dataKey],
         xField,
@@ -380,7 +379,7 @@ const MultiChart = props => {
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", `2, 2`)
         .attr("d", lineGenerator);
-    } else if (averagePath) averagePath.remove()
+    } else if (averagePath) averagePath.remove();
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
@@ -402,6 +401,9 @@ const MultiChart = props => {
       })
       .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
+
+    // Make sure dots are on top
+    dots.raise();
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
   return (
