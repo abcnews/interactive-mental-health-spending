@@ -6,7 +6,8 @@
     "yValueType": "percent",
     "dotColor": "#3C92C8",
     "xField": "quintile",
-    "yField": "percent"
+    "yField": "percent",
+    "solidLine": true
   },
   "two": {
     "dataKey": "allied",
