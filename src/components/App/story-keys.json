@@ -14,7 +14,8 @@
     "yMax": "5000",
     "xNumberOfTicks": 6,
     "yValueType": "dollars",
-    "dotColor": "#3C92C8"
+    "dotColor": "#3C92C8",
+    "averageLine": true
   },
   "three": {
     "dataKey": "gpFocus",
