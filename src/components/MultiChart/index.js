@@ -38,9 +38,13 @@ const calculateMargins = (width, height) => {
   };
 };
 
+const sortData = (data, sortKey) => {
+  return data.sort((a, b) => a[sortKey] - b[sortKey]);
+};
+
 // Load our data and assign to object
 const dataObject = {
-  allied: require("./data/allied-data.json"),
+  allied: sortData(require("./data/allied-data.json"), "Medicare benefits per 100 people ($)"),
   distressed: require("./data/distressed-data.json"),
   gpFocus: require("./data/gp-focus.json")
 };
@@ -260,8 +264,6 @@ const MultiChart = props => {
   // Chart data change
   useLayoutEffect(() => {
     if (!svg) return;
-    console.log(`New props detected:`);
-    console.log(props);
 
     scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
     scaleY.domain([0, props.yMax]);
@@ -303,7 +305,7 @@ const MultiChart = props => {
       //   .attr("stroke-dashoffset", 0);
     } else {
       // Hide path
-      path.attr("stroke", "none")
+      path.attr("stroke", "none");
     }
 
     // TODO: we need to handle extra data in the join I think
