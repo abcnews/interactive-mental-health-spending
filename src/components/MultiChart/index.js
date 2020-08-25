@@ -42,12 +42,49 @@ const sortData = (data, sortKey) => {
   return data.sort((a, b) => a[sortKey] - b[sortKey]);
 };
 
+const generateMeanData = (data, groupName, valueKey) => {
+  const groupHolder = {};
+
+  for (const point of data) {
+    const groupId = point[groupName];
+    if (typeof groupHolder[groupId] === "undefined") groupHolder[groupId] = [];
+    else groupHolder[groupId].push(point);
+  }
+
+  console.log(groupHolder);
+
+  const meanData = [];
+
+  for (const groupId in groupHolder) {
+    let runningTotal = 0;
+    for (const point of groupHolder[groupId]) {
+      runningTotal += point[valueKey];
+    }
+
+    const groupAverage = runningTotal / groupHolder[groupId].length;
+    console.log(groupAverage);
+
+    meanData.push({ [groupName]: groupId, [valueKey]: groupAverage });
+  }
+  console.log(meanData);
+  return meanData;
+};
+
 // Load our data and assign to object
 const dataObject = {
-  allied: sortData(require("./data/allied-data.json"), "Medicare benefits per 100 people ($)"),
+  allied: sortData(
+    require("./data/allied-data.json"),
+    "Medicare benefits per 100 people ($)"
+  ),
   distressed: require("./data/distressed-data.json"),
   gpFocus: require("./data/gp-focus.json")
 };
+
+generateMeanData(
+  dataObject.allied,
+  "SA3 group",
+  "Medicare benefits per 100 people ($)"
+);
 
 // We have a special weird x-axis that has values
 // mid-way through the "tick" lines
