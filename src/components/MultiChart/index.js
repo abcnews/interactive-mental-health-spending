@@ -29,45 +29,8 @@ const TRANSITION_DURATION = 0;
 const dotRadius = 5;
 const LINE_ANIMATION_DURATION = 2000;
 
-const calculateMargins = (width, height) => {
-  return {
-    top: height * 0.2,
-    right: width * 0.15,
-    bottom: height * 0.1,
-    left: width * 0.12
-  };
-};
-
 const sortData = (data, sortKey) => {
   return data.sort((a, b) => a[sortKey] - b[sortKey]);
-};
-
-const generateMeanData = (data, groupName, valueKey) => {
-  const groupHolder = {};
-
-  for (const point of data) {
-    const groupId = point[groupName];
-    if (typeof groupHolder[groupId] === "undefined") groupHolder[groupId] = [];
-    else groupHolder[groupId].push(point);
-  }
-
-  console.log(groupHolder);
-
-  const meanData = [];
-
-  for (const groupId in groupHolder) {
-    let runningTotal = 0;
-    for (const point of groupHolder[groupId]) {
-      runningTotal += point[valueKey];
-    }
-
-    const groupAverage = runningTotal / groupHolder[groupId].length;
-    console.log(groupAverage);
-
-    meanData.push({ [groupName]: groupId, [valueKey]: groupAverage });
-  }
-  console.log(meanData);
-  return meanData;
 };
 
 // Load our data and assign to object
@@ -79,12 +42,6 @@ const dataObject = {
   distressed: require("./data/distressed-data.json"),
   gpFocus: require("./data/gp-focus.json")
 };
-
-generateMeanData(
-  dataObject.allied,
-  "SA3 group",
-  "Medicare benefits per 100 people ($)"
-);
 
 // We have a special weird x-axis that has values
 // mid-way through the "tick" lines
@@ -131,8 +88,44 @@ let dots;
 let width;
 let height;
 let xTicks;
-let line;
-let path;
+let solidLine;
+let solidPath;
+let averageLine;
+let averagePath;
+
+// Some methods to use later
+const calculateMargins = (width, height) => {
+  return {
+    top: height * 0.2,
+    right: width * 0.15,
+    bottom: height * 0.1,
+    left: width * 0.12
+  };
+};
+
+const generateAverageData = (data, groupName, valueKey) => {
+  const groupHolder = {};
+
+  for (const point of data) {
+    const groupId = point[groupName];
+    if (typeof groupHolder[groupId] === "undefined") groupHolder[groupId] = [];
+    else groupHolder[groupId].push(point);
+  }
+
+  const meanData = [];
+
+  for (const groupId in groupHolder) {
+    let runningTotal = 0;
+    for (const point of groupHolder[groupId]) {
+      runningTotal += point[valueKey];
+    }
+
+    const groupAverage = runningTotal / groupHolder[groupId].length;
+
+    meanData.push({ [groupName]: groupId, [valueKey]: groupAverage });
+  }
+  return meanData;
+};
 
 // The React function component
 const MultiChart = props => {
@@ -140,6 +133,12 @@ const MultiChart = props => {
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
+
+  const lineGenerator = d3
+    .line()
+    .defined(d => !isNaN(d[yField]))
+    .x(d => scaleX(d[xField]))
+    .y(d => scaleY(d[yField]));
 
   const formatYTicks = x => {
     if (props.yValueType === "percent") return `${x}%`;
@@ -209,23 +208,17 @@ const MultiChart = props => {
     svg.attr("height", height);
 
     if (props.solidLine) {
-      // Create the line from data
-      line = d3
-        .line()
-        .defined(d => !isNaN(d[yField]))
-        .x(d => scaleX(d[xField]))
-        .y(d => scaleY(d[yField]));
-
       // Create the path
-      path = svg
+      solidPath = svg
         .append("path")
-        .data([dataObject[props.dataKey]])
         .attr("fill", "none")
-        .attr("stroke", "steelblue")
+        .attr("stroke", "none")
         .attr("stroke-width", 2)
+        .attr("stroke", props.dotColor)
         .attr("stroke-linejoin", "round")
         .attr("stroke-linecap", "round")
-        .attr("d", line);
+        .data([dataObject[props.dataKey]])
+        .attr("d", lineGenerator);
 
       // // Get the length of the line
       // const totalLength = path.node().getTotalLength();
@@ -238,6 +231,24 @@ const MultiChart = props => {
       //   .transition()
       //   .duration(LINE_ANIMATION_DURATION)
       //   .attr("stroke-dashoffset", 0);
+    }
+
+    if (props.averageLine) {
+      const averageData = generateAverageData(
+        dataObject[props.dataKey],
+        xField,
+        yField
+      );
+
+      // Create the path
+      averagePath = svg
+        .append("path")
+        .data([averageData])
+        .attr("fill", "none")
+        .attr("stroke", "#929292")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", `2, 2`)
+        .attr("d", lineGenerator);
     }
 
     dots = svg
@@ -278,7 +289,11 @@ const MultiChart = props => {
 
     if (props.solidLine) {
       // Resize the path
-      path.attr("d", line);
+      solidPath.attr("d", lineGenerator);
+    }
+
+    if (props.averageLine) {
+      averagePath.attr("d", lineGenerator);
     }
 
     dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
@@ -317,17 +332,20 @@ const MultiChart = props => {
       .duration(TRANSITION_DURATION)
       .call(yAxis);
 
+    // Check if we want a solid line between dots
     if (props.solidLine) {
-      line = d3
-        .line()
-        .defined(d => !isNaN(d[yField]))
-        .x(d => scaleX(d[xField]))
-        .y(d => scaleY(d[yField]));
+      if (solidPath) solidPath.remove();
 
-      path
-        .data([dataObject[props.dataKey]])
+      solidPath = svg
+        .append("path")
+        .attr("fill", "none")
+        .attr("stroke", "none")
+        .attr("stroke-width", 2)
         .attr("stroke", props.dotColor)
-        .attr("d", line);
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .data([dataObject[props.dataKey]])
+        .attr("d", lineGenerator);
 
       // // Get the length of the line
       // const totalLength = path.node().getTotalLength();
@@ -340,10 +358,29 @@ const MultiChart = props => {
       //   .transition()
       //   .duration(LINE_ANIMATION_DURATION)
       //   .attr("stroke-dashoffset", 0);
-    } else {
-      // Hide path
-      path.attr("stroke", "none");
-    }
+    } else if (solidPath) solidPath.remove();
+    
+
+    // Check if we want to average the dots and plot a dotted line
+    if (props.averageLine) {
+      if (averagePath) averagePath.remove()
+      
+      const averageData = generateAverageData(
+        dataObject[props.dataKey],
+        xField,
+        yField
+      );
+
+      // Create the path
+      averagePath = svg
+        .append("path")
+        .data([averageData])
+        .attr("fill", "none")
+        .attr("stroke", "#929292")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", `2, 2`)
+        .attr("d", lineGenerator);
+    } else if (averagePath) averagePath.remove()
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
