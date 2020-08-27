@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 import styles from "./styles.scss";
 
+// NOTE THIS COMPONENT WAS COPY-PASTED FROM THE VACCINE PIECE
+// IT NEEDS WORK AND MOST OF THE CODE IS NOT RELEVANT
+
 // Controls how far off the screen the top and bottom
 // panels are before the background stage is hidden
 const TOP_HIDE_THRESHOLD = 10;

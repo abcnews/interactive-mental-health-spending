@@ -14,8 +14,6 @@ import heroImage from "./hero-top.png";
 let storyKeys = require("./story-keys.json");
 
 export default props => {
-  // const [userSa3, setUserSa3] = useState(null);
-  // const [chartData, setChartData] = useState(storyKeys.one.dataKey);
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
   const [userSelection, setUserSelection] = useState(null);
 
@@ -64,6 +62,7 @@ export default props => {
 
   return (
     <>
+      {/* Header image up above the H1 */}
       <Portal node={document.querySelector(".pre-header-hero")}>
         <div>
           <img src={heroImage} />
