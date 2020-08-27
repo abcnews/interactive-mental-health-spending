@@ -88,9 +88,7 @@ let dots;
 let width;
 let height;
 let xTicks;
-let solidLine;
 let solidPath;
-let averageLine;
 let averagePath;
 
 // Some methods to use later
@@ -103,6 +101,7 @@ const calculateMargins = (width, height) => {
   };
 };
 
+// Average out all the dots from each x-axis group
 const generateAverageData = (data, groupName, valueKey) => {
   const groupHolder = {};
 
@@ -271,7 +270,17 @@ const MultiChart = props => {
     return svg;
   };
 
-  const resizeChart = () => {
+  useLayoutEffect(() => {
+    // Init layout effect after delay
+    setTimeout(() => {
+      createChart();
+    }, 500);
+  }, []);
+
+  // Detect and handle window resize events
+  useLayoutEffect(() => {
+    if (!svg) return;
+
     width = svg.node().getBoundingClientRect().width;
     height = window.innerHeight;
 
@@ -297,23 +306,9 @@ const MultiChart = props => {
     }
 
     dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
-  };
-
-  useLayoutEffect(() => {
-    // Init layout effect after delay
-    setTimeout(() => {
-      createChart();
-    }, 500);
-  }, []);
-
-  // Detect and handle window resize events
-  useLayoutEffect(() => {
-    if (!svg) return;
-
-    resizeChart();
   }, [windowSize.width, windowSize.height]);
 
-  // Chart data change
+  // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
     if (!svg) return;
 
@@ -402,7 +397,7 @@ const MultiChart = props => {
       .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
 
-    // Make sure dots are on top
+    // Make sure dots are on top so raise them up
     dots.raise();
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 

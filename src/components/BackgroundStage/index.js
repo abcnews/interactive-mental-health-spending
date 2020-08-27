@@ -4,8 +4,6 @@ import * as d3Selection from "d3-selection";
 
 const d3 = { ...d3Selection };
 
-import MultiChart from "../MultiChart";
-
 export default props => {
   useEffect(() => {
     // Override width to account for scroll bar
