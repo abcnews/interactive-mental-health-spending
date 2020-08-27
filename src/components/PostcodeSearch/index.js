@@ -114,6 +114,9 @@ export default props => {
     });
 
     return filteredOptions;
+
+    // TODO: If filtered options is zero then assume a suburb/place search 
+    // and return appropriate data
   };
 
   return (
