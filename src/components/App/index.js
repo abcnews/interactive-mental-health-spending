@@ -81,6 +81,7 @@ export default props => {
         >
           <BackgroundStage>
             <MultiChart
+              componentName={"chart1"}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               xNumberOfTicks={currentKey.xNumberOfTicks}
@@ -98,11 +99,12 @@ export default props => {
       <Portal node={document.querySelector(".scrollystagemount2")}>
         <Scrollyteller
           panels={props.scrollyData2.panels}
-          onMarker={onMarker}
+          onMarker={() => {}}
           panelComponent={CustomPanel}
         >
           <BackgroundStage>
             <MultiChart
+            componentName={"chart1"}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               xNumberOfTicks={currentKey.xNumberOfTicks}
