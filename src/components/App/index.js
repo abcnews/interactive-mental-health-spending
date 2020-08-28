@@ -75,7 +75,29 @@ export default props => {
 
       <Portal node={document.querySelector(".scrollystagemount")}>
         <Scrollyteller
-          panels={props.scrollyData.panels}
+          panels={props.scrollyData1.panels}
+          onMarker={onMarker}
+          panelComponent={CustomPanel}
+        >
+          <BackgroundStage>
+            <MultiChart
+              dataKey={currentKey.dataKey}
+              yMax={currentKey.yMax}
+              xNumberOfTicks={currentKey.xNumberOfTicks}
+              yValueType={currentKey.yValueType}
+              dotColor={currentKey.dotColor}
+              xField={currentKey.xField}
+              yField={currentKey.yField}
+              solidLine={currentKey.solidLine}
+              averageLine={currentKey.averageLine}
+            />
+          </BackgroundStage>
+        </Scrollyteller>
+      </Portal>
+
+      <Portal node={document.querySelector(".scrollystagemount2")}>
+        <Scrollyteller
+          panels={props.scrollyData2.panels}
           onMarker={onMarker}
           panelComponent={CustomPanel}
         >
