@@ -86,15 +86,10 @@ let xAxis;
 let yAxis;
 let initialXAxisGroup;
 let initialYAxisGroup;
-let dots;
 let width;
 let height;
 let xTicks;
-let solidPath;
-let averagePath;
 
-// Globals
-let mounted;
 
 // Some methods to use later
 const calculateMargins = (width, height) => {
@@ -309,17 +304,19 @@ const MultiChart = props => {
     // const solidPath = componentSolidPath;
     // const averagePath = componentAveragePath;
 
-    const width = svg.node().getBoundingClientRect().width;
-    const height = window.innerHeight;
+    width = svg.node().getBoundingClientRect().width;
+    height = window.innerHeight;
 
     // Recalculate margins
-    const margin = calculateMargins(width, height);
+    margin = calculateMargins(width, height);
 
     scaleX.range([margin.left, width - margin.right]);
     scaleY.range([height - margin.bottom, margin.top]);
 
     svg.attr("width", width);
     svg.attr("height", height);
+
+    // yAxis = makeYAxis;
 
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
