@@ -2,9 +2,6 @@
 }
 
 :global {
-  // .Header h1 {
-  //   color: black;
-  // }
   .pre-header-hero {
     display: flex;
     justify-content: center;
@@ -14,5 +11,9 @@
     div {
       max-width: 640px;
     }
+  }
+
+  .no-margin-collapse {
+    padding-bottom: 2rem;
   }
 }

@@ -19,6 +19,7 @@ buildMountPoints(["postcodesearch", "scrollystagemount"]);
 // Make stage full width
 const stage = document.querySelector(".scrollystagemount");
 addClass(stage, "u-full");
+addClass(stage, "no-margin-collapse");
 
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
@@ -27,14 +28,14 @@ const preInit = () => {
 };
 
 const init = async () => {
-  const scrollyData = loadScrollyteller(
-    "", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
+  const scrollyData1 = loadScrollyteller(
+    "one", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
     "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
     "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
   );
 
   render(
-    <App projectName={"Mental Health"} scrollyData={scrollyData} />,
+    <App projectName={"Mental Health"} scrollyData={scrollyData1} />,
     document.querySelector(".postcodesearch")
   );
 };
