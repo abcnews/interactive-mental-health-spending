@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect, useEffect } from "react";
+import React, { useRef, useLayoutEffect, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
 import styles from "./styles.scss";
 
@@ -75,21 +75,26 @@ const xTicks6 = [
   "end"
 ];
 
-// Some scoped vars
-let svg;
+// Some vars
+// TODO: move these into the component
+// We have to attach multiples
+// let svg;
 let margin;
 let scaleX;
 let scaleY;
 let xAxis;
 let yAxis;
-let xAxisGroup;
-let yAxisGroup;
+let initialXAxisGroup;
+let initialYAxisGroup;
 let dots;
 let width;
 let height;
 let xTicks;
 let solidPath;
 let averagePath;
+
+// Globals
+let mounted;
 
 // Some methods to use later
 const calculateMargins = (width, height) => {
@@ -128,10 +133,21 @@ const generateAverageData = (data, groupName, valueKey) => {
 
 // The React function component
 const MultiChart = props => {
+  let chartSolidPath;
+  let chartAveragePath;
+
   const { xField, yField, ...theRestOfTheProps } = props;
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
+
+  // Some component state vars
+  const [svg, setSvg] = useState();
+  const [dots, setDots] = useState();
+  const [solidPath, setSolidPath] = useState();
+  const [averagePath, setAveragePath] = useState();
+  const [xAxisGroup, setXAxisGroup] = useState();
+  const [yAxisGroup, setYAxisGroup] = useState();
 
   const lineGenerator = d3
     .line()
@@ -148,8 +164,8 @@ const MultiChart = props => {
     } else return x;
   };
 
-  const makeYAxis = svg =>
-    svg
+  const makeYAxis = svgLocal =>
+    svgLocal
       .attr("transform", `translate(${margin.left},0)`)
       .attr("id", "y-axis")
       .call(
@@ -172,9 +188,9 @@ const MultiChart = props => {
       .call(g => g.selectAll(".tick text"));
 
   const createChart = () => {
-    svg = d3.select(root.current);
+    const initialSvg = d3.select(root.current);
 
-    width = svg.node().getBoundingClientRect().width;
+    width = initialSvg.node().getBoundingClientRect().width;
     height = window.innerHeight;
 
     margin = calculateMargins(width, height);
@@ -200,15 +216,15 @@ const MultiChart = props => {
     yAxis = makeYAxis;
 
     // Draw the axis
-    xAxisGroup = svg.append("g").call(xAxis);
-    yAxisGroup = svg.append("g").call(yAxis);
+    initialXAxisGroup = initialSvg.append("g").call(xAxis);
+    initialYAxisGroup = initialSvg.append("g").call(yAxis);
 
-    svg.attr("width", width);
-    svg.attr("height", height);
+    initialSvg.attr("width", width);
+    initialSvg.attr("height", height);
 
     if (props.solidLine) {
       // Create the path
-      solidPath = svg
+      chartSolidPath = initialSvg
         .append("path")
         .attr("fill", "none")
         .attr("stroke", "none")
@@ -240,7 +256,7 @@ const MultiChart = props => {
       );
 
       // Create the path
-      averagePath = svg
+      chartAveragePath = initialSvg
         .append("path")
         .data([averageData])
         .attr("fill", "none")
@@ -250,7 +266,7 @@ const MultiChart = props => {
         .attr("d", lineGenerator);
     }
 
-    dots = svg
+    const initialDots = initialSvg
       .selectAll("circle")
       .data(dataObject[props.dataKey])
       .join("circle")
@@ -267,7 +283,12 @@ const MultiChart = props => {
       .attr("cy", d => scaleY(d[yField]))
       .attr("r", dotRadius);
 
-    return svg;
+    setSvg(initialSvg);
+    setDots(initialDots);
+    setSolidPath(chartSolidPath);
+    setAveragePath(chartAveragePath);
+    setXAxisGroup(initialXAxisGroup);
+    setYAxisGroup(initialYAxisGroup);
   };
 
   useLayoutEffect(() => {
@@ -279,13 +300,20 @@ const MultiChart = props => {
 
   // Detect and handle window resize events
   useLayoutEffect(() => {
+    // Wait till we have an svg mounted
     if (!svg) return;
 
-    width = svg.node().getBoundingClientRect().width;
-    height = window.innerHeight;
+    // Load component state into block scope
+    // const svg = componentSvg;
+    // const dots = componentDots;
+    // const solidPath = componentSolidPath;
+    // const averagePath = componentAveragePath;
+
+    const width = svg.node().getBoundingClientRect().width;
+    const height = window.innerHeight;
 
     // Recalculate margins
-    margin = calculateMargins(width, height);
+    const margin = calculateMargins(width, height);
 
     scaleX.range([margin.left, width - margin.right]);
     scaleY.range([height - margin.bottom, margin.top]);
@@ -296,12 +324,12 @@ const MultiChart = props => {
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
 
-    if (props.solidLine) {
+    if (props.solidLine && solidPath) {
       // Resize the path
       solidPath.attr("d", lineGenerator);
     }
 
-    if (props.averageLine) {
+    if (props.averageLine && averagePath) {
       averagePath.attr("d", lineGenerator);
     }
 
@@ -331,7 +359,7 @@ const MultiChart = props => {
     if (props.solidLine) {
       if (solidPath) solidPath.remove();
 
-      solidPath = svg
+      const newSolidPath = svg
         .append("path")
         .attr("fill", "none")
         .attr("stroke", "none")
@@ -353,6 +381,8 @@ const MultiChart = props => {
       //   .transition()
       //   .duration(LINE_ANIMATION_DURATION)
       //   .attr("stroke-dashoffset", 0);
+
+      setSolidPath(newSolidPath);
     } else if (solidPath) solidPath.remove();
 
     // Check if we want to average the dots and plot a dotted line
@@ -366,7 +396,7 @@ const MultiChart = props => {
       );
 
       // Create the path
-      averagePath = svg
+      const newAveragePath = svg
         .append("path")
         .data([averageData])
         .attr("fill", "none")
@@ -374,13 +404,15 @@ const MultiChart = props => {
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", `2, 2`)
         .attr("d", lineGenerator);
+
+        setAveragePath(newAveragePath)
     } else if (averagePath) averagePath.remove();
 
     // TODO: we need to handle extra data in the join I think
     // see here: https://observablehq.com/@d3/selection-join
     // NOTE: Fixed now. We needed to explicitly set attributes
     // and styles etc.
-    dots = svg
+    const newDots = svg
       .selectAll("circle")
       .data(dataObject[props.dataKey])
       .join("circle")
@@ -398,7 +430,9 @@ const MultiChart = props => {
       .attr("r", dotRadius);
 
     // Make sure dots are on top so raise them up
-    dots.raise();
+    newDots.raise();
+
+    setDots(newDots)
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
   return (
