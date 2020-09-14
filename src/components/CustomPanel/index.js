@@ -23,7 +23,7 @@ const opacityScale = d3
   .range([0, 1])
   .clamp(true);
 
-export default props => {
+export default (props) => {
   const base = useRef();
   const [opacity, setOpacity] = useState(1.0);
 
@@ -93,7 +93,7 @@ export default props => {
       const isMobile = window.innerWidth < 440;
 
       // Append CoreMedia nodes
-      props.nodes.forEach(node => {
+      props.nodes.forEach((node) => {
         // Make sure images fit inside the panels
         if (
           node.className.indexOf("ImageEmbed") > -1 ||
@@ -118,7 +118,7 @@ export default props => {
           );
           node.style.setProperty("padding-left", "0.875rem");
           node.style.setProperty("padding-right", "0.875rem");
-          [].slice.call(node.querySelectorAll("img")).forEach(img => {
+          [].slice.call(node.querySelectorAll("img")).forEach((img) => {
             img.removeAttribute("height");
           });
         }
@@ -133,7 +133,7 @@ export default props => {
       if (!base.current) return;
       if (!props.nodes) return;
 
-      props.nodes.forEach(node => {
+      props.nodes.forEach((node) => {
         if (base.current.contains(node)) {
           base.current.removeChild(node);
         }
@@ -144,12 +144,10 @@ export default props => {
 
   return (
     <div
-      className={`${styles.base} ${styles.light} ${
-        props.config.scrollout
-          ? `${styles.scrollout} custom-scrollout-outer`
-          : styles.right
-      } ${props.config.scrollouttop ? styles.scrolloutTop : ""} ${
-        props.config.scrolloutbottom ? styles.scrolloutBottom : ""
+      className={`${styles.base} ${styles.light} ${styles.right} ${
+        props.config.initial
+          ? `${styles.initial} interactive-initial-panel`
+          : ""
       }`}
     >
       <div className={styles.inner}>
