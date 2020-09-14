@@ -45,11 +45,11 @@ export default props => {
     return (
       <div style={{ display: "flex" }}>
         <div>{label}</div>
-        {ratio && (
+        {/* {ratio && (
           <div style={{ marginLeft: "12px", color: "#666" }}>
            <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small> 
           </div>
-        )}
+        )} */}
       </div>
     );
   };

@@ -13,6 +13,7 @@ import * as d3Transition from "d3-transition";
 import * as d3Format from "d3-format";
 import * as d3Shape from "d3-shape";
 
+// Combine them all into a single object
 const d3 = {
   ...d3Select,
   ...d3Scale,
