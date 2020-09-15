@@ -136,6 +136,8 @@ const MultiChart = (props) => {
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
+  const [isDocked, setIsDocked] = useState(false);
+
   // Some component state vars
   const [svg, setSvg] = useState();
   const [dots, setDots] = useState();
@@ -297,6 +299,12 @@ const MultiChart = (props) => {
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
         console.log(entry);
+
+        if (entry.isIntersecting) {
+          setIsDocked(true);
+        } else if (!entry.isIntersecting) {
+          setIsDocked(false);
+        }
         // Each entry describes an intersection change for one observed
         // target element:
         //   entry.boundingClientRect
@@ -312,7 +320,7 @@ const MultiChart = (props) => {
     let observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.8,
+      threshold: 0.99,
     });
 
     observer.observe(root.current);
@@ -456,6 +464,7 @@ const MultiChart = (props) => {
   return (
     <div className={styles.root}>
       <svg className={"scatter-plot"} ref={root}></svg>
+      <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
     </div>
   );
 };
