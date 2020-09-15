@@ -1,6 +1,7 @@
 // Polyfills
 import "regenerator-runtime/runtime.js";
 import "whatwg-fetch";
+import "intersection-observer";
 
 // Imports
 import React from "react";
@@ -47,7 +48,11 @@ const init = async () => {
   );
 
   render(
-    <App projectName={"Mental Health"} scrollyData1={scrollyData1} scrollyData2={scrollyData2} />,
+    <App
+      projectName={"Mental Health"}
+      scrollyData1={scrollyData1}
+      scrollyData2={scrollyData2}
+    />,
     document.querySelector(".postcodesearch")
   );
 };

@@ -131,7 +131,7 @@ const MultiChart = (props) => {
   let chartSolidPath;
   let chartAveragePath;
 
-  const { xField, yField, ...theRestOfTheProps } = props;
+  const { xField, yField, ...remainingProps } = props;
   const root = useRef();
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
@@ -219,31 +219,32 @@ const MultiChart = (props) => {
     initialSvg.attr("width", width);
     initialSvg.attr("height", height);
 
-    if (props.solidLine) {
-      // Create the path
-      chartSolidPath = initialSvg
-        .append("path")
-        .attr("fill", "none")
-        .attr("stroke", "none")
-        .attr("stroke-width", 2)
-        .attr("stroke", props.dotColor)
-        .attr("stroke-linejoin", "round")
-        .attr("stroke-linecap", "round")
-        .data([dataObject[props.dataKey]])
-        .attr("d", lineGenerator);
+    // ADD LINE BACK LATER
+    // if (props.solidLine) {
+    //   // Create the path
+    //   chartSolidPath = initialSvg
+    //     .append("path")
+    //     .attr("fill", "none")
+    //     .attr("stroke", "none")
+    //     .attr("stroke-width", 2)
+    //     .attr("stroke", props.dotColor)
+    //     .attr("stroke-linejoin", "round")
+    //     .attr("stroke-linecap", "round")
+    //     .data([dataObject[props.dataKey]])
+    //     .attr("d", lineGenerator);
 
-      // // Get the length of the line
-      // const totalLength = path.node().getTotalLength();
+    //   // Get the length of the line
+    //   const totalLength = chartSolidPath.node().getTotalLength();
 
-      // // Animate the path
-      // // TODO: focus on animations later
-      // path
-      //   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-      //   .attr("stroke-dashoffset", totalLength)
-      //   .transition()
-      //   .duration(LINE_ANIMATION_DURATION)
-      //   .attr("stroke-dashoffset", 0);
-    }
+    //   // Animate the path
+    //   // TODO: focus on animations later
+    //   chartSolidPath
+    //     .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+    //     .attr("stroke-dashoffset", totalLength)
+    //     .transition()
+    //     .duration(LINE_ANIMATION_DURATION)
+    //     .attr("stroke-dashoffset", 0);
+    // }
 
     if (props.averageLine) {
       const averageData = generateAverageData(
@@ -270,6 +271,8 @@ const MultiChart = (props) => {
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
+      .style("transition", "opacity 1s")
+      .style("opacity", 0.0)
       .attr("cx", (d) => {
         if (d[xField] === "National") {
           return 200;
@@ -445,6 +448,7 @@ const MultiChart = (props) => {
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
+      .style("transition", "opacity 1s")
       .attr("cx", (d) => {
         if (d[xField] === "National") {
           return -200000;
@@ -460,6 +464,17 @@ const MultiChart = (props) => {
 
     setDots(newDots);
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
+
+  // Detect dot changes
+  useLayoutEffect(() => {
+    if (!svg) return;
+
+    if (isDocked) {
+      dots.style("opacity", 1.0);
+    } else {
+      dots.style("opacity", 0.0);
+    }
+  }, [isDocked]);
 
   return (
     <div className={styles.root}>
