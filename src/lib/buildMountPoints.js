@@ -4,6 +4,8 @@
  * @returns unefined
  */
 
+import "@babel/polyfill";
+
 export default nameStrings => {
   for (const name of nameStrings) {
     const tag = document.querySelector(`a[name="${name}"]`);
