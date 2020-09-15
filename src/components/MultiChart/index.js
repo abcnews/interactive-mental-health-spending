@@ -136,7 +136,7 @@ const MultiChart = (props) => {
   const windowSize = useWindowSize();
   xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
-  const [isDocked, setIsDocked] = useState(false);
+  const [isDocked, setIsDocked] = useState();
 
   // Some component state vars
   const [svg, setSvg] = useState();
@@ -264,6 +264,8 @@ const MultiChart = (props) => {
         .attr("d", lineGenerator);
     }
 
+    console.log(isDocked)
+
     const initialDots = initialSvg
       .selectAll("circle")
       .data(dataObject[props.dataKey])
@@ -272,7 +274,7 @@ const MultiChart = (props) => {
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
       .style("transition", "opacity 1s")
-      .style("opacity", 0.0)
+      .style("opacity", isDocked ? 1.0 : 0.0)
       .attr("cx", (d) => {
         if (d[xField] === "National") {
           return 200;
@@ -291,13 +293,7 @@ const MultiChart = (props) => {
     setYAxisGroup(initialYAxisGroup);
   };
 
-  useLayoutEffect(() => {
-    // Init layout effect after delay
-    setTimeout(() => {
-      createChart();
-    }, 500);
-
-    // Use intersection observer to trigger animation to start
+  useLayoutEffect(() => {// Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
@@ -327,6 +323,16 @@ const MultiChart = (props) => {
     });
 
     observer.observe(root.current);
+
+
+
+
+    // Init layout effect after delay
+    setTimeout(() => {
+      createChart();
+    }, 2000);
+
+    
   }, []);
 
   // Detect and handle window resize events
