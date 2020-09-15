@@ -23,7 +23,7 @@ const d3 = {
   ...d3ScaleChromatic,
   ...d3Transition,
   ...d3Format,
-  ...d3Shape
+  ...d3Shape,
 };
 
 const TRANSITION_DURATION = 0;
@@ -41,7 +41,7 @@ const dataObject = {
     "Medicare benefits per 100 people ($)"
   ),
   distressed: require("./data/distressed-data.json"),
-  gpFocus: require("./data/gp-focus.json")
+  gpFocus: require("./data/gp-focus.json"),
 };
 
 // We have a special weird x-axis that has values
@@ -57,7 +57,7 @@ const xTicks5 = [
   4,
   "spacer5",
   5,
-  "end"
+  "end",
 ];
 
 const xTicks6 = [
@@ -73,7 +73,7 @@ const xTicks6 = [
   5,
   "spacer6",
   6,
-  "end"
+  "end",
 ];
 
 // Some vars
@@ -91,14 +91,13 @@ let width;
 let height;
 let xTicks;
 
-
 // Some methods to use later
 const calculateMargins = (width, height) => {
   return {
     top: height * 0.2,
     right: width * 0.15,
     bottom: height * 0.1,
-    left: width * 0.12
+    left: width * 0.12,
   };
 };
 
@@ -128,7 +127,7 @@ const generateAverageData = (data, groupName, valueKey) => {
 };
 
 // The React function component
-const MultiChart = props => {
+const MultiChart = (props) => {
   let chartSolidPath;
   let chartAveragePath;
 
@@ -147,11 +146,11 @@ const MultiChart = props => {
 
   const lineGenerator = d3
     .line()
-    .defined(d => !isNaN(d[yField]))
-    .x(d => scaleX(d[xField]))
-    .y(d => scaleY(d[yField]));
+    .defined((d) => !isNaN(d[yField]))
+    .x((d) => scaleX(d[xField]))
+    .y((d) => scaleY(d[yField]));
 
-  const formatYTicks = x => {
+  const formatYTicks = (x) => {
     if (props.yValueType === "percent") return `${x}%`;
     else if (props.yValueType === "dollars") {
       if (x === 0) return `$${x}`;
@@ -160,7 +159,7 @@ const MultiChart = props => {
     } else return x;
   };
 
-  const makeYAxis = svgLocal =>
+  const makeYAxis = (svgLocal) =>
     svgLocal
       .attr("transform", `translate(${margin.left},0)`)
       .attr("id", "y-axis")
@@ -172,8 +171,8 @@ const MultiChart = props => {
           .ticks(5)
           .tickFormat(formatYTicks)
       )
-      .call(g => g.select(".domain").remove())
-      .call(g =>
+      .call((g) => g.select(".domain").remove())
+      .call((g) =>
         g
           .selectAll(".tick line")
           .style("stroke", "#a4a4a4")
@@ -181,7 +180,7 @@ const MultiChart = props => {
           .style("stroke-width", 1)
           .style("shape-rendering", "crispEdges")
       )
-      .call(g => g.selectAll(".tick text"));
+      .call((g) => g.selectAll(".tick text"));
 
   const createChart = () => {
     const initialSvg = d3.select(root.current);
@@ -201,12 +200,12 @@ const MultiChart = props => {
       .domain([0, props.yMax])
       .range([height - margin.bottom, margin.top]);
 
-    xAxis = g =>
+    xAxis = (g) =>
       g.attr("transform", `translate(0,${height - margin.bottom})`).call(
         d3
           .axisBottom(scaleX)
           .tickFormat("")
-          .tickValues(xTicks.filter(tick => typeof tick === "string"))
+          .tickValues(xTicks.filter((tick) => typeof tick === "string"))
       );
 
     yAxis = makeYAxis;
@@ -269,14 +268,14 @@ const MultiChart = props => {
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
-      .attr("cx", d => {
+      .attr("cx", (d) => {
         if (d[xField] === "National") {
           return 200;
         }
 
         return scaleX(d[xField]);
       })
-      .attr("cy", d => scaleY(d[yField]))
+      .attr("cy", (d) => scaleY(d[yField]))
       .attr("r", dotRadius);
 
     setSvg(initialSvg);
@@ -292,6 +291,31 @@ const MultiChart = props => {
     setTimeout(() => {
       createChart();
     }, 500);
+
+    // Use intersection observer to trigger animation to start
+    // only afer we scroll the chart into view
+    let callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        // Each entry describes an intersection change for one observed
+        // target element:
+        //   entry.boundingClientRect
+        //   entry.intersectionRatio
+        //   entry.intersectionRect
+        //   entry.isIntersecting
+        //   entry.rootBounds
+        //   entry.target
+        //   entry.time
+      });
+    };
+
+    let observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.8,
+    });
+
+    observer.observe(root.current);
   }, []);
 
   // Detect and handle window resize events
@@ -331,7 +355,9 @@ const MultiChart = props => {
       averagePath.attr("d", lineGenerator);
     }
 
-    dots.attr("cx", d => scaleX(d[xField])).attr("cy", d => scaleY(d[yField]));
+    dots
+      .attr("cx", (d) => scaleX(d[xField]))
+      .attr("cy", (d) => scaleY(d[yField]));
   }, [windowSize.width, windowSize.height]);
 
   // Handle chart data change (will usually be via scrollyteller marks)
@@ -343,15 +369,9 @@ const MultiChart = props => {
 
     yAxis = makeYAxis;
 
-    xAxisGroup
-      .transition()
-      .duration(TRANSITION_DURATION)
-      .call(xAxis);
+    xAxisGroup.transition().duration(TRANSITION_DURATION).call(xAxis);
 
-    yAxisGroup
-      .transition()
-      .duration(TRANSITION_DURATION)
-      .call(yAxis);
+    yAxisGroup.transition().duration(TRANSITION_DURATION).call(yAxis);
 
     // Check if we want a solid line between dots
     if (props.solidLine) {
@@ -403,7 +423,7 @@ const MultiChart = props => {
         .attr("stroke-dasharray", `2, 2`)
         .attr("d", lineGenerator);
 
-        setAveragePath(newAveragePath)
+      setAveragePath(newAveragePath);
     } else if (averagePath) averagePath.remove();
 
     // TODO: we need to handle extra data in the join I think
@@ -417,20 +437,20 @@ const MultiChart = props => {
       .style("stroke", "rgba(255, 255, 255, 0.6)")
       .style("stroke-width", "1.5")
       .style("fill", props.dotColor)
-      .attr("cx", d => {
+      .attr("cx", (d) => {
         if (d[xField] === "National") {
           return -200000;
         }
 
         return scaleX(d[xField]);
       })
-      .attr("cy", d => scaleY(d[yField]))
+      .attr("cy", (d) => scaleY(d[yField]))
       .attr("r", dotRadius);
 
     // Make sure dots are on top so raise them up
     newDots.raise();
 
-    setDots(newDots)
+    setDots(newDots);
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
   return (
@@ -444,7 +464,7 @@ const MultiChart = props => {
 MultiChart.defaultProps = {
   dotColor: "red",
   xField: "SA3 group",
-  yField: "Medicare benefits per 100 people ($)"
+  yField: "Medicare benefits per 100 people ($)",
 };
 
 export default MultiChart;
