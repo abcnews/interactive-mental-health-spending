@@ -1,5 +1,5 @@
 // Polyfills
-// import "@babel/polyfill";
+import "@babel/polyfill";
 import "regenerator-runtime/runtime.js";
 // import "whatwg-fetch";
 import "intersection-observer";
