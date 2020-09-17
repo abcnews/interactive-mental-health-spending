@@ -1,10 +1,7 @@
 // Polyfills
-import "@babel/polyfill";
+import "core-js/features/symbol";
 import "regenerator-runtime/runtime.js";
-// import "whatwg-fetch";
 import "intersection-observer";
-
-// TODO: WORK OUT WHY WE ARE GETTING A SEMICOLON ERROR IN IE11
 
 // Imports
 import React from "react";
