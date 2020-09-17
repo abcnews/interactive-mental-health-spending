@@ -66,13 +66,14 @@ const dataObject = {
 
 // The main React function component
 const MultiChart = (props) => {
-  const { xField, yField, ...remainingProps } = props;
+  const { xField, yField, ...restProps } = props;
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
 
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
+  // Init state vars
   const [isDocked, setIsDocked] = useState(null);
 
   let chartSolidPath;
@@ -80,14 +81,16 @@ const MultiChart = (props) => {
 
   // Instance vars using refs
   const svg = useRef();
+  const xAxis = useRef();
+  const yAxis = useRef();
 
   // Some component state vars
   // const [svg, setSvg] = useState();
-  const [dots, setDots] = useState();
-  const [solidPath, setSolidPath] = useState();
-  const [averagePath, setAveragePath] = useState();
-  const [xAxisGroup, setXAxisGroup] = useState();
-  const [yAxisGroup, setYAxisGroup] = useState();
+  // const [dots, setDots] = useState();
+  // const [solidPath, setSolidPath] = useState();
+  // const [averagePath, setAveragePath] = useState();
+  // const [xAxisGroup, setXAxisGroup] = useState();
+  // const [yAxisGroup, setYAxisGroup] = useState();
 
   const lineGenerator = d3
     .line()
@@ -109,60 +112,10 @@ const MultiChart = (props) => {
     // Set component scoped SVG selection
     svg.current = d3.select(root.current);
 
-    // Calculate width height and margins
-    const width = svg.current.node().getBoundingClientRect().width;
-    const height = window.innerHeight;
-    const margin = calculateMargins(width, height);
-
-    // Set attributes on the SVG
-    svg.current.attr("width", width);
-    svg.current.attr("height", height);
-
-    // Set up scale functions
-    const scaleX = d3
-      .scalePoint()
-      .domain(xTicks)
-      .range([margin.left, width - margin.right]);
-
-    const scaleY = d3
-      .scaleLinear()
-      .domain([0, props.yMax])
-      .range([height - margin.bottom, margin.top]);
-
-    const makeXAxis = (g) =>
-      g.attr("transform", `translate(0,${height - margin.bottom})`).call(
-        d3
-          .axisBottom(scaleX)
-          .tickFormat("")
-          .tickValues(xTicks.filter((tick) => typeof tick === "string"))
-      );
-
-    const makeYAxis = (svgLocal) =>
-      svgLocal
-        .attr("transform", `translate(${margin.left},0)`)
-        .attr("id", "y-axis")
-        .call(
-          d3
-            .axisLeft(scaleY)
-            .tickPadding([6])
-            .tickSize(-(width - margin.left - margin.right))
-            .ticks(5)
-            .tickFormat(formatYTicks)
-        )
-        .call((g) => g.select(".domain").remove())
-        .call((g) =>
-          g
-            .selectAll(".tick line")
-            .style("stroke", "#a4a4a4")
-            .style("stroke-opacity", 0.5)
-            .style("stroke-width", 1)
-            .style("shape-rendering", "crispEdges")
-        )
-        .call((g) => g.selectAll(".tick text"));
-
-    // Draw the axis
-    const xAxisGroup = svg.current.append("g").call(makeXAxis);
-    const yAxisGroup = svg.current.append("g").call(makeYAxis);
+    // Add our x & y axes groups to component scoped ref
+    // (We actually draw the axes later in the initial window size effect)
+    xAxis.current = svg.current.append("g");
+    yAxis.current = svg.current.append("g");
   };
 
   // const createChart = () => {
@@ -306,43 +259,89 @@ const MultiChart = (props) => {
     // setTimeout(() => {
     // createChart();
     // }, 2000);
+
+    // Do on unmount
+    return () => {
+      svg.current = null;
+    };
   }, []);
 
-  // // Detect and handle window resize events
-  // useLayoutEffect(() => {
-  //   // Wait till we have an svg mounted
-  //   if (!svg) return;
+  // Detect and handle window resize events
+  // NOTE: This happens on init too, so we are drawing
+  // our X & Y axes here too.
+  useLayoutEffect(() => {
+    // Wait till we have an svg mounted
+    if (!svg.current) return;
 
-  //   width = svg.node().getBoundingClientRect().width;
-  //   height = window.innerHeight;
+    const width = svg.current.node().getBoundingClientRect().width;
+    const height = window.innerHeight;
 
-  //   // Recalculate margins
-  //   margin = calculateMargins(width, height);
+    svg.current.attr("width", width);
+    svg.current.attr("height", height);
 
-  //   scaleX.range([margin.left, width - margin.right]);
-  //   scaleY.range([height - margin.bottom, margin.top]);
+    // Recalculate margins
+    const margin = calculateMargins(width, height);
 
-  //   svg.attr("width", width);
-  //   svg.attr("height", height);
+    // Just make local scale functions again
+    const scaleX = d3
+      .scalePoint()
+      .domain(xTicks)
+      .range([margin.left, width - margin.right]);
 
-  //   // yAxis = makeYAxis;
+    const scaleY = d3
+      .scaleLinear()
+      .domain([0, props.yMax])
+      .range([height - margin.bottom, margin.top]);
 
-  //   xAxisGroup.call(xAxis);
-  //   yAxisGroup.call(yAxis);
+    // Recalculate axis generators
+    const makeXAxis = (g) =>
+      g.attr("transform", `translate(0,${height - margin.bottom})`).call(
+        d3
+          .axisBottom(scaleX)
+          .tickFormat("")
+          .tickValues(xTicks.filter((tick) => typeof tick === "string"))
+      );
 
-  //   if (props.solidLine && solidPath) {
-  //     // Resize the path
-  //     solidPath.attr("d", lineGenerator);
-  //   }
+    const makeYAxis = (group) =>
+      group
+        .attr("transform", `translate(${margin.left},0)`)
+        .attr("id", "y-axis")
+        .call(
+          d3
+            .axisLeft(scaleY)
+            .tickPadding([6])
+            .tickSize(-(width - margin.left - margin.right))
+            .ticks(5)
+            .tickFormat(formatYTicks)
+        )
+        .call((g) => g.select(".domain").remove())
+        .call((g) =>
+          g
+            .selectAll(".tick line")
+            .style("stroke", "#a4a4a4")
+            .style("stroke-opacity", 0.5)
+            .style("stroke-width", 1)
+            .style("shape-rendering", "crispEdges")
+        )
+        .call((g) => g.selectAll(".tick text"));
 
-  //   if (props.averageLine && averagePath) {
-  //     averagePath.attr("d", lineGenerator);
-  //   }
+    xAxis.current.call(makeXAxis);
+    yAxis.current.call(makeYAxis);
 
-  //   dots
-  //     .attr("cx", (d) => scaleX(d[xField]))
-  //     .attr("cy", (d) => scaleY(d[yField]));
-  // }, [windowSize.width, windowSize.height]);
+
+    //   if (props.solidLine && solidPath) {
+    //     // Resize the path
+    //     solidPath.attr("d", lineGenerator);
+    //   }
+
+    //   if (props.averageLine && averagePath) {
+    //     averagePath.attr("d", lineGenerator);
+    //   }
+
+    //   dots
+    //     .attr("cx", (d) => scaleX(d[xField]))
+    //     .attr("cy", (d) => scaleY(d[yField]));
+  }, [windowSize.width, windowSize.height]);
 
   // Handle chart data change (will usually be via scrollyteller marks)
   // useLayoutEffect(() => {
@@ -444,7 +443,7 @@ const MultiChart = (props) => {
   useEffect(() => {
     if (!svg.current) {
       // Attach the chart once we know if we are docked
-      // or not
+      // (or not)
       initChart();
       return;
     }
