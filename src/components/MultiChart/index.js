@@ -26,13 +26,19 @@ const d3 = {
   ...d3Shape,
 };
 
+// Local library imports
+import {
+  sortData,
+  calculateMargins,
+  xTicks5,
+  xTicks6,
+  generateAverageData,
+} from "./lib";
+
+// File scoped constants
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
 const LINE_ANIMATION_DURATION = 2000;
-
-const sortData = (data, sortKey) => {
-  return data.sort((a, b) => a[sortKey] - b[sortKey]);
-};
 
 // Load our data and assign to object
 const dataObject = {
@@ -43,38 +49,6 @@ const dataObject = {
   distressed: require("./data/distressed-data.json"),
   gpFocus: require("./data/gp-focus.json"),
 };
-
-// We have a special weird x-axis that has values
-// mid-way through the "tick" lines
-const xTicks5 = [
-  "start",
-  1,
-  "spacer2",
-  2,
-  "spacer3",
-  3,
-  "spacer4",
-  4,
-  "spacer5",
-  5,
-  "end",
-];
-
-const xTicks6 = [
-  "start",
-  1,
-  "spacer2",
-  2,
-  "spacer3",
-  3,
-  "spacer4",
-  4,
-  "spacer5",
-  5,
-  "spacer6",
-  6,
-  "end",
-];
 
 // Some vars
 // TODO: move these into the component
@@ -89,44 +63,8 @@ let initialXAxisGroup;
 let initialYAxisGroup;
 let width;
 let height;
-let xTicks;
 
-// Some methods to use later
-const calculateMargins = (width, height) => {
-  return {
-    top: height * 0.2,
-    right: width * 0.15,
-    bottom: height * 0.1,
-    left: width * 0.12,
-  };
-};
-
-// Average out all the dots from each x-axis group
-const generateAverageData = (data, groupName, valueKey) => {
-  const groupHolder = {};
-
-  for (const point of data) {
-    const groupId = point[groupName];
-    if (typeof groupHolder[groupId] === "undefined") groupHolder[groupId] = [];
-    else groupHolder[groupId].push(point);
-  }
-
-  const meanData = [];
-
-  for (const groupId in groupHolder) {
-    let runningTotal = 0;
-    for (const point of groupHolder[groupId]) {
-      runningTotal += point[valueKey];
-    }
-
-    const groupAverage = runningTotal / groupHolder[groupId].length;
-
-    meanData.push({ [groupName]: groupId, [valueKey]: groupAverage });
-  }
-  return meanData;
-};
-
-// The React function component
+// The main React function component
 const MultiChart = (props) => {
   let chartSolidPath;
   let chartAveragePath;
@@ -134,7 +72,7 @@ const MultiChart = (props) => {
   const { xField, yField, ...remainingProps } = props;
   const root = useRef();
   const windowSize = useWindowSize();
-  xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
+  const xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
   const [isDocked, setIsDocked] = useState(null);
 
@@ -293,6 +231,7 @@ const MultiChart = (props) => {
     setYAxisGroup(initialYAxisGroup);
   };
 
+  // Initial layout effect run once on mount
   useLayoutEffect(() => {
     // Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
