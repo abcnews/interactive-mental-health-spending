@@ -66,15 +66,20 @@ let height;
 
 // The main React function component
 const MultiChart = (props) => {
-  let chartSolidPath;
-  let chartAveragePath;
-
   const { xField, yField, ...remainingProps } = props;
   const root = useRef();
   const windowSize = useWindowSize();
+
+  // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
 
   const [isDocked, setIsDocked] = useState(null);
+
+  let chartSolidPath;
+  let chartAveragePath;
+
+  // Testing instance properties using refs
+  const chartTitle = useRef();
 
   // Some component state vars
   const [svg, setSvg] = useState();
@@ -223,6 +228,12 @@ const MultiChart = (props) => {
       .attr("cy", (d) => scaleY(d[yField]))
       .attr("r", dotRadius);
 
+    chartTitle.current = initialSvg
+      .append("text")
+      .attr("x", 100)
+      .attr("y", 100)
+      .text("HELLO");
+
     setSvg(initialSvg);
     setDots(initialDots);
     setSolidPath(chartSolidPath);
@@ -315,6 +326,8 @@ const MultiChart = (props) => {
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
     if (!svg) return;
+
+    chartTitle.current.attr("y", 200);
 
     scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
     scaleY.domain([0, props.yMax]);
