@@ -18,7 +18,7 @@ export default props => {
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
-    console.log(config);
+    // console.log(config);
 
     if (config.key) {
       console.log(storyKeys[config.key]);
