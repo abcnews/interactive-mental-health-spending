@@ -99,7 +99,7 @@ const MultiChart = (props) => {
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
     component.xAxis = component.svg.append("g").classed("x-axis", true);
-    component.yAxis = component.svg.append("g");
+    component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
 
   // const createChart = () => {
@@ -294,11 +294,10 @@ const MultiChart = (props) => {
     const makeYAxis = (group) =>
       group
         .attr("transform", `translate(${margin.left},0)`)
-        .classed("y-axis", true)
         .call(
           d3
             .axisLeft(scaleY)
-            .tickPadding([6])
+            .tickPadding([3])
             .tickSize(-(width - margin.left - margin.right))
             .ticks(5)
             .tickFormat(formatYTicks)
@@ -448,12 +447,14 @@ const MultiChart = (props) => {
     <div className={styles.root}>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
-      <div
-        className={styles.chartTitle}
-        style={{ top: margin.top, left: margin.left }}
-      >
-        {props.chartTitle}
-      </div>
+      {props.chartType !== "line" && (
+        <div
+          className={styles.chartTitle}
+          style={{ top: margin.top, left: margin.left }}
+        >
+          Medicare rebates per 100 people ($)
+        </div>
+      )}
       {props.chartType === "line" && (
         <div
           className={styles.tickTextContainer}
@@ -474,6 +475,83 @@ const MultiChart = (props) => {
           <div className={styles.tickDescription}>
             <div
               style={{
+                width: `${
+                  ((svgWidth - margin.left - margin.right + 1) / 5) - 3
+                }px`,
+              }}
+            >
+              Most disadvantaged
+            </div>
+            <div
+              style={{
+                width: `${
+                  ((svgWidth - margin.left - margin.right + 1) / 5) - 3
+                }px`,
+              }}
+            >
+              Least disadvantaged
+            </div>
+          </div>
+        </div>
+      )}
+
+      {props.chartType === "dot" && (
+        <div
+          className={styles.tickTextContainer}
+          style={{
+            bottom: margin.bottom,
+            left: margin.left,
+            width: `${svgWidth - margin.left - margin.right + 1}px`,
+          }}
+        >
+          <div className={styles.dotTickTextBox}>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Remote
+            </span>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Outer regional
+            </span>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Inner regional
+            </span>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Major city low advantage
+            </span>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Major city medium advantage
+            </span>
+            <span
+              style={{
+                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+              }}
+            >
+              Major city high advantage
+            </span>
+          </div>
+
+          {/* <div className={styles.tickDescription}>
+            <div
+              style={{
                 maxWidth: `${
                   (svgWidth - margin.left - margin.right + 1) / 5
                 }px`,
@@ -490,7 +568,7 @@ const MultiChart = (props) => {
             >
               Least disadvantaged
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
@@ -499,7 +577,7 @@ const MultiChart = (props) => {
 
 // Set default props
 MultiChart.defaultProps = {
-  chartType: "line",
+  chartType: "dot",
   chartTitle: "Medicare rebates per 100 people ($)",
   dotColor: "red",
   xField: "SA3 group",

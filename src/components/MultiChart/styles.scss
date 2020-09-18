@@ -30,6 +30,19 @@
     justify-content: space-around;
   }
 
+  .dot-tick-text-box {
+    display: flex;
+    justify-content: space-around;
+
+    span {
+      max-width: 70px;
+      font-size: 9px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   .tick-description {
     padding-top: 4px;
     display: flex;
