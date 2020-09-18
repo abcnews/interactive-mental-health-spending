@@ -98,7 +98,7 @@ const MultiChart = (props) => {
 
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
-    component.xAxis = component.svg.append("g");
+    component.xAxis = component.svg.append("g").classed("x-axis", true);
     component.yAxis = component.svg.append("g");
   };
 
@@ -294,7 +294,7 @@ const MultiChart = (props) => {
     const makeYAxis = (group) =>
       group
         .attr("transform", `translate(${margin.left},0)`)
-        .attr("id", "y-axis")
+        .classed("y-axis", true)
         .call(
           d3
             .axisLeft(scaleY)
@@ -454,20 +454,45 @@ const MultiChart = (props) => {
       >
         {props.chartTitle}
       </div>
-      <div
-        className={styles.tickTextBox}
-        style={{
-          bottom: margin.bottom,
-          left: margin.left,
-          width: `${svgWidth - margin.left - margin.right + 1}px`,
-        }}
-      >
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-      </div>
+      {props.chartType === "line" && (
+        <div
+          className={styles.tickTextContainer}
+          style={{
+            bottom: margin.bottom,
+            left: margin.left,
+            width: `${svgWidth - margin.left - margin.right + 1}px`,
+          }}
+        >
+          <div className={styles.tickTextBox}>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+
+          <div className={styles.tickDescription}>
+            <div
+              style={{
+                maxWidth: `${
+                  (svgWidth - margin.left - margin.right + 1) / 5
+                }px`,
+              }}
+            >
+              Most disadvantaged
+            </div>
+            <div
+              style={{
+                maxWidth: `${
+                  (svgWidth - margin.left - margin.right + 1) / 5
+                }px`,
+              }}
+            >
+              Least disadvantaged
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
