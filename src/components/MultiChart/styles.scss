@@ -1,6 +1,17 @@
 .root {
   font-family: sans-serif;
   font-size: 13px;
+  position: relative;
+
+  .chart-title {
+    position: absolute;
+    font-family: "ABCSerif","Book Antiqua","Palatino Linotype",Palatino,serif;
+    color: #4B4B4B;
+    font-size: 11px;
+    max-width: 100px;
+    top: 10px;
+    left: 10px;
+  }
 
   .dev-info {
     position: absolute;

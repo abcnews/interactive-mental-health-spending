@@ -50,20 +50,6 @@ const dataObject = {
   gpFocus: require("./data/gp-focus.json"),
 };
 
-// Some vars
-// TODO: move these into the component
-// We have to attach multiples
-// let svg;
-// let margin;
-// let scaleX;
-// let scaleY;
-// let xAxis;
-// let yAxis;
-// let initialXAxisGroup;
-// let initialYAxisGroup;
-// let width;
-// let height;
-
 // The main React function component
 const MultiChart = (props) => {
   const { xField, yField, ...restProps } = props;
@@ -455,6 +441,7 @@ const MultiChart = (props) => {
     <div className={styles.root}>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
+      <div className={styles.chartTitle}>Chart title text etc etc to put in later</div>
     </div>
   );
 };
