@@ -1,5 +1,6 @@
 {
   "one": {
+    "chartType": "line",
     "dataKey": "distressed",
     "yMax": "30",
     "xNumberOfTicks": 5,
@@ -10,6 +11,7 @@
     "solidLine": true
   },
   "two": {
+    "chartType": "dot",
     "dataKey": "allied",
     "yMax": "5000",
     "xNumberOfTicks": 6,

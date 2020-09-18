@@ -13,11 +13,11 @@ import heroImage from "./hero-top.png";
 
 let storyKeys = require("./story-keys.json");
 
-export default props => {
+export default (props) => {
   const [currentKey, setCurrentKey] = useState(storyKeys.one);
   const [userSelection, setUserSelection] = useState(null);
 
-  const onMarker = config => {
+  const onMarker = (config) => {
     // console.log(config);
 
     if (config.key) {
@@ -27,7 +27,7 @@ export default props => {
     }
   };
 
-  const handleSelection = data => {
+  const handleSelection = (data) => {
     console.log(`App data:`);
     console.log(data);
 
@@ -82,13 +82,13 @@ export default props => {
               componentName={"chart1"}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
-              xNumberOfTicks={currentKey.xNumberOfTicks}
               yValueType={currentKey.yValueType}
               dotColor={currentKey.dotColor}
               xField={currentKey.xField}
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
+              chartType={currentKey.chartType}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -102,10 +102,9 @@ export default props => {
         >
           <BackgroundStage>
             <MultiChart
-            componentName={"chart1"}
+              componentName={"chart1"}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
-              xNumberOfTicks={currentKey.xNumberOfTicks}
               yValueType={currentKey.yValueType}
               dotColor={currentKey.dotColor}
               xField={currentKey.xField}
