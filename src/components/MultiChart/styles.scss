@@ -1,5 +1,4 @@
 .root {
-  
   font-family: sans-serif;
   font-size: 13px;
   position: relative;
@@ -16,17 +15,37 @@
     transform: translate(0, -100%);
   }
 
-  .tick-text-box {
+  .tick-text-container {
     position: absolute;
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
     font-size: 9px;
     font-weight: bold;
-    // border: 1px solid #ddd;
-    padding-top: 10px;
+    padding-top: 4px;
     transform: translate(0, 100%);
+  }
+
+  .tick-text-box {
     display: flex;
     justify-content: space-around;
+  }
+
+  .tick-description {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      // max-width: 70px;
+      font-size: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    // div:last-of-type {
+    //   text-align: right;
+    // }
   }
 
   .dev-info {
@@ -45,6 +64,12 @@
       max-width: 700px;
     }
 
+    .x-axis .domain,
+    .x-axis .tick line {
+      stroke: #a4a4a4;
+      shape-rendering: crispEdges;
+    }
+
     .y-axis .domain {
       visibility: hidden;
     }
@@ -53,9 +78,10 @@
       visibility: hidden;
     }
 
-    rect.bar {
-      fill: lightslategray;
-    }
+    // rect.bar {
+    //   fill: lightslategray;
+    // }
+
     text {
       font-family: ABCSans, sans-serif;
       font-size: 10px;
@@ -72,25 +98,25 @@
       shape-rendering: crispEdges;
     }
     .axis path {
-      stroke: #333;
+      stroke: #a4a4a4;
     }
     .grid line {
-      stroke: lightgrey;
+      stroke: #a4a4a4;
       stroke-opacity: 0.7;
       shape-rendering: crispEdges;
     }
     .grid path {
       stroke-width: 0;
     }
-    .legend-label {
-      font-weight: 600;
-    }
-    .legend-box {
-      fill: #fff;
-      fill-opacity: 0.5;
-      stroke: gray;
-      stroke-opacity: 0.5;
-    }
+    // .legend-label {
+    //   font-weight: 600;
+    // }
+    // .legend-box {
+    //   fill: #fff;
+    //   fill-opacity: 0.5;
+    //   stroke: gray;
+    //   stroke-opacity: 0.5;
+    // }
 
     .title {
       font-size: 1em;
