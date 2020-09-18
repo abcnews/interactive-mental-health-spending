@@ -5,12 +5,14 @@
 
   .chart-title {
     position: absolute;
-    font-family: "ABCSerif","Book Antiqua","Palatino Linotype",Palatino,serif;
-    color: #4B4B4B;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+      serif;
+    color: #4b4b4b;
     font-size: 11px;
+    font-weight: bold;
     max-width: 100px;
-    top: 10px;
-    left: 10px;
+    padding-bottom: 30px;
+    transform: translate(0, -100%);
   }
 
   .dev-info {
