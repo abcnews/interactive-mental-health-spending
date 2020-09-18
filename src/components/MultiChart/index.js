@@ -57,16 +57,17 @@ const MultiChart = (props) => {
   const windowSize = useWindowSize();
 
   // TODO: change this to have a prop that differentiates between chart types
-  const xTicks = props.xNumberOfTicks === 5 ? xTicks5 : xTicks6;
+  const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
 
   // Initialise state
   const [isDocked, setIsDocked] = useState(null);
   const [margin, setMargin] = useState({
-    top: 0,
+    top: 0, // Proper margins are calculated later
     right: 0,
     bottom: 0,
     left: 0,
   });
+  const [svgWidth, setSvgWidth] = useState(0);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -266,8 +267,9 @@ const MultiChart = (props) => {
     // Recalculate margins
     const margin = calculateMargins(width, height);
 
-    // Update component state margin
+    // Update component state for calculated values
     setMargin(margin);
+    setSvgWidth(width);
 
     // Just make local scale functions again
     const scaleX = d3
@@ -451,6 +453,20 @@ const MultiChart = (props) => {
         style={{ top: margin.top, left: margin.left }}
       >
         {props.chartTitle}
+      </div>
+      <div
+        className={styles.tickTextBox}
+        style={{
+          bottom: margin.bottom,
+          left: margin.left,
+          width: `${svgWidth - margin.left - margin.right + 1}px`,
+        }}
+      >
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
       </div>
     </div>
   );
