@@ -80,17 +80,11 @@ const MultiChart = (props) => {
   let chartAveragePath;
 
   // Instance vars using refs
-  const svg = useRef();
-  const xAxis = useRef();
-  const yAxis = useRef();
-
-  // Some component state vars
-  // const [svg, setSvg] = useState();
-  // const [dots, setDots] = useState();
-  // const [solidPath, setSolidPath] = useState();
-  // const [averagePath, setAveragePath] = useState();
-  // const [xAxisGroup, setXAxisGroup] = useState();
-  // const [yAxisGroup, setYAxisGroup] = useState();
+  // This object will stick around over the lifetime
+  // of the component. We attach SVG elements etc to this
+  // using els.svg = d3.select...... etc etc.
+  const elementsRef = useRef({});
+  const { current: els } = elementsRef;
 
   const lineGenerator = d3
     .line()
@@ -110,12 +104,13 @@ const MultiChart = (props) => {
 
   const initChart = () => {
     // Set component scoped SVG selection
-    svg.current = d3.select(root.current);
+    els.svg = d3.select(root.current);
+    
 
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
-    xAxis.current = svg.current.append("g");
-    yAxis.current = svg.current.append("g");
+    els.xAxis = els.svg.append("g");
+    els.yAxis = els.svg.append("g");
   };
 
   // const createChart = () => {
@@ -262,7 +257,7 @@ const MultiChart = (props) => {
 
     // Do on unmount
     return () => {
-      svg.current = null;
+      els.svg = null;
       observer.disconnect();
     };
   }, []);
@@ -272,13 +267,13 @@ const MultiChart = (props) => {
   // our X & Y axes here too.
   useLayoutEffect(() => {
     // Wait till we have an svg mounted
-    if (!svg.current) return;
+    if (!els.svg) return;
 
-    const width = svg.current.node().getBoundingClientRect().width;
+    const width = els.svg.node().getBoundingClientRect().width;
     const height = window.innerHeight;
 
-    svg.current.attr("width", width);
-    svg.current.attr("height", height);
+    els.svg.attr("width", width);
+    els.svg.attr("height", height);
 
     // Recalculate margins
     const margin = calculateMargins(width, height);
@@ -327,8 +322,8 @@ const MultiChart = (props) => {
         .call((g) => g.selectAll(".tick text"));
 
     // Actually update the axes in the SVG
-    xAxis.current.call(makeXAxis);
-    yAxis.current.call(makeYAxis);
+    els.xAxis.call(makeXAxis);
+    els.yAxis.call(makeYAxis);
 
     //   if (props.solidLine && solidPath) {
     //     // Resize the path
@@ -346,7 +341,7 @@ const MultiChart = (props) => {
 
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
-    if (!svg.current) return;
+    if (!els.svg) return;
 
     //   chartTitle.current.attr("y", 200);
 
@@ -442,7 +437,7 @@ const MultiChart = (props) => {
 
   // Detect docked or not
   useEffect(() => {
-    if (!svg.current) {
+    if (!els.svg) {
       // Attach the chart once we know if we are docked
       // (or not)
       initChart();
@@ -466,6 +461,8 @@ const MultiChart = (props) => {
 
 // Set default props
 MultiChart.defaultProps = {
+  chartType: "line",
+  chartTitle: "The title",
   dotColor: "red",
   xField: "SA3 group",
   yField: "Medicare benefits per 100 people ($)",
