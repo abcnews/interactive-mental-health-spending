@@ -34,8 +34,6 @@ export default props => {
     setUserSelection(data);
   };
 
-  // useLayoutEffect(() => {}, []); // Init effect
-
   // useEffect(() => {
   //   if (!userPostcode) return;
   //   if (typeof lookupData === "undefined") {
