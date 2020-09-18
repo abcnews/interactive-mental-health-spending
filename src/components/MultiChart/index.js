@@ -68,15 +68,12 @@ const MultiChart = (props) => {
     left: 0,
   });
 
-  let chartSolidPath;
-  let chartAveragePath;
-
   // Instance vars using refs
   // This object will stick around over the lifetime
   // of the component. We attach SVG elements etc to this
   // using component.svg = d3.select...... etc etc.
-  const elementsRef = useRef({});
-  const { current: component } = elementsRef;
+  const componentRef = useRef({});
+  const { current: component } = componentRef;
 
   const lineGenerator = d3
     .line()
@@ -449,7 +446,10 @@ const MultiChart = (props) => {
     <div className={styles.root}>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
-      <div className={styles.chartTitle} style={{ left: margin.left }}>
+      <div
+        className={styles.chartTitle}
+        style={{ top: margin.top, left: margin.left }}
+      >
         {props.chartTitle}
       </div>
     </div>
@@ -459,7 +459,7 @@ const MultiChart = (props) => {
 // Set default props
 MultiChart.defaultProps = {
   chartType: "line",
-  chartTitle: "The title of the chart",
+  chartTitle: "Medicare rebates per 100 people ($)",
   dotColor: "red",
   xField: "SA3 group",
   yField: "Medicare benefits per 100 people ($)",
