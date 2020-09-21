@@ -44,7 +44,7 @@
   }
 
   .tick-description {
-    padding-top: 4px;
+    padding-top: 6px;
     display: flex;
     justify-content: space-between;
 
@@ -68,7 +68,7 @@
     justify-content: space-around;
 
     span {
-      background-color: rgba(64, 224, 208, 0.418);
+      transition: all 250ms;
     }
   }
 
