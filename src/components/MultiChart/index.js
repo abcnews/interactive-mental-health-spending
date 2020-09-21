@@ -58,11 +58,15 @@ const MultiChart = (props) => {
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
 
+  // Set up transition function
+  const t = d3.transition().duration(750);
+
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
 
   // Initialise state
   const [isDocked, setIsDocked] = useState(null);
+  const [hasBeenDocked, setHasBeenDocked] = useState(false)
   const [margin, setMargin] = useState({
     top: 0, // Proper margins are calculated later
     right: 0,
@@ -213,6 +217,41 @@ const MultiChart = (props) => {
   //   setYAxisGroup(initialYAxisGroup);
   // };
 
+  const processLine = () => {
+    component.svg
+      .selectAll("circle")
+      .data(dataObject[props.dataKey])
+      .join(
+        (enter) =>
+          enter
+            .append("circle")
+            .attr("cy", (d) => component.scaleY(0))
+            .style("stroke", "rgba(255, 255, 255, 0.6)")
+            .style("stroke-width", "1.5")
+            .style("fill", props.dotColor)
+            .attr("cx", (d) => {
+              if (d[xField] === "National") {
+                return -2000000;
+              }
+
+              return component.scaleX(d[xField]);
+            })
+            .attr("r", dotRadius)
+            .call((enter) =>
+              enter.transition(t).attr("cy", (d) => component.scaleY(d[yField]))
+            ),
+        (update) =>
+          update.attr("cx", (d) => {
+            if (d[xField] === "National") {
+              return -2000000;
+            }
+
+            return component.scaleX(d[xField]);
+          }),
+        (exit) => exit.remove()
+      );
+  };
+
   // Initial layout effect run once on mount
   useLayoutEffect(() => {
     // Use intersection observer to trigger animation to start
@@ -311,6 +350,8 @@ const MultiChart = (props) => {
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
+
+    if (hasBeenDocked) processLine();
 
     //   if (props.solidLine && solidPath) {
     //     // Resize the path
@@ -434,37 +475,9 @@ const MultiChart = (props) => {
     if (isDocked) {
       // Start doing something
       console.log("Attaching dots!");
+      setHasBeenDocked(true);
 
-      const t = d3.transition().duration(750);
-
-      const initialDots = component.svg
-        .selectAll("circle")
-        .data(dataObject[props.dataKey])
-        .join(
-          (enter) =>
-            enter
-              .append("circle")
-              .attr("cy", (d) => component.scaleY(0))
-              .call((enter) =>
-                enter
-                  .transition(t)
-                  .attr("cy", (d) => component.scaleY(d[yField]))
-              ),
-          (update) => update,
-          (exit) => exit.remove()
-        )
-        .style("stroke", "rgba(255, 255, 255, 0.6)")
-        .style("stroke-width", "1.5")
-        .style("fill", props.dotColor)
-        .attr("cx", (d) => {
-          if (d[xField] === "National") {
-            return -2000000;
-          }
-
-          return component.scaleX(d[xField]);
-        })
-        // .attr("cy", (d) => component.scaleY(d[yField]))
-        .attr("r", dotRadius);
+      processLine();
     } else {
       // Do something else (or nothing)
     }
