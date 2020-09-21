@@ -1,6 +1,6 @@
 import React, { useRef, useLayoutEffect, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
-import { Fade } from '@material-ui/core';
+import { Fade } from "@material-ui/core";
 import styles from "./styles.scss";
 
 // D3 imports
@@ -92,15 +92,6 @@ const MultiChart = (props) => {
       return `${commaFormatter(x)}`;
     } else return x;
   };
-
-  // const formatYTicks = (x) => {
-  //   if (props.yValueType === "percent") return `${x}%`;
-  //   else if (props.yValueType === "dollars") {
-  //     if (x === 0) return `$${x}`;
-  //     const commaFormatter = d3.format(",");
-  //     return `${commaFormatter(x)}`;
-  //   } else return x;
-  // };
 
   const initChart = () => {
     // Set component scoped SVG selection
@@ -213,7 +204,6 @@ const MultiChart = (props) => {
   //     .attr("cy", (d) => scaleY(d[yField]))
   //     .attr("r", dotRadius);
 
-
   //   setSvg(initialSvg);
   //   setDots(initialDots);
   //   setSolidPath(chartSolidPath);
@@ -292,6 +282,7 @@ const MultiChart = (props) => {
           .axisBottom(scaleX)
           .tickFormat("")
           .tickValues(xTicks.filter((tick) => typeof tick === "string"))
+          .tickSize(props.chartType === "line" ? 0 : 6)
       );
 
     const makeYAxis = (group) =>
@@ -444,19 +435,133 @@ const MultiChart = (props) => {
     // }
   }, [isDocked]);
 
+  // Calculate values for return
+  const chartWidth = svgWidth - margin.left - margin.right;
+  const chartHeight = window.innerHeight - margin.top - margin.bottom;
+
   return (
     <div className={styles.root}>
+      <div
+        className={styles.highlightBars}
+        style={{ top: margin.top, left: margin.left, width: chartWidth }}
+      >
+        {props.chartType === "line" && (
+          <>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                // width: `${chartWidth / 5 - 3}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: "rgba(191, 191, 191, 0.1)",
+              }}
+            ></span>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                // width: `${chartWidth / 5 - 3}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: "rgba(191, 191, 191, 0.1)",
+              }}
+            ></span>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                // width: `${chartWidth / 5 - 3}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: "rgba(191, 191, 191, 0.1)",
+              }}
+            ></span>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                // width: `${chartWidth / 5 - 3}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: "rgba(191, 191, 191, 0.1)",
+              }}
+            ></span>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                // width: `${chartWidth / 5 - 3}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                backgroundColor: "rgba(191, 191, 191, 0.1)",
+              }}
+            ></span>
+          </>
+        )}
+
+        {props.chartType === "dot" && (
+          <>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+              }}
+            ></span>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+              }}
+            ></span>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+              }}
+            ></span>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+              }}
+            ></span>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "1px solid #f0f0f0",
+              }}
+            ></span>
+            <span
+              style={{
+                // width: `${chartWidth / 6 - 2}px`,
+                height: `${chartHeight}px`,
+                flexGrow: 1,
+              }}
+            ></span>
+          </>
+        )}
+      </div>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
 
-      {props.chartType !== "line" && (
-        <div
-          className={styles.chartTitle}
-          style={{ top: margin.top, left: margin.left }}
-        >
-          <Fade in={true}><span>Medicare rebates per 100 people ($)</span></Fade>
-        </div>
-      )}
+      <div
+        className={styles.chartTitle}
+        style={{ top: margin.top, left: margin.left }}
+      >
+        <Fade in={props.chartType !== "line"}>
+          <span>Medicare rebates per 100 people ($)</span>
+        </Fade>
+      </div>
 
       {props.chartType === "line" && (
         <div
@@ -464,7 +569,7 @@ const MultiChart = (props) => {
           style={{
             bottom: margin.bottom,
             left: margin.left,
-            width: `${svgWidth - margin.left - margin.right + 1}px`,
+            width: `${chartWidth}px`,
           }}
         >
           <div className={styles.tickTextBox}>
@@ -478,18 +583,14 @@ const MultiChart = (props) => {
           <div className={styles.tickDescription}>
             <div
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 5 - 3
-                }px`,
+                width: `${chartWidth / 5 - 3}px`,
               }}
             >
               Most disadvantaged
             </div>
             <div
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 5 - 3
-                }px`,
+                width: `${chartWidth / 5 - 3}px`,
               }}
             >
               Least disadvantaged
@@ -504,86 +605,53 @@ const MultiChart = (props) => {
           style={{
             bottom: margin.bottom,
             left: margin.left,
-            width: `${svgWidth - margin.left - margin.right + 1}px`,
+            width: `${chartWidth}px`,
           }}
         >
           <div className={styles.dotTickTextBox}>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Remote
             </span>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Outer regional
             </span>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Inner regional
             </span>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Major city low advantage
             </span>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Major city medium advantage
             </span>
             <span
               style={{
-                width: `${
-                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
-                }px`,
+                width: `${chartWidth / 6 - 3}px`,
               }}
             >
               Major city high advantage
             </span>
           </div>
-
-          {/* <div className={styles.tickDescription}>
-            <div
-              style={{
-                maxWidth: `${
-                  (svgWidth - margin.left - margin.right + 1) / 5
-                }px`,
-              }}
-            >
-              Most disadvantaged
-            </div>
-            <div
-              style={{
-                maxWidth: `${
-                  (svgWidth - margin.left - margin.right + 1) / 5
-                }px`,
-              }}
-            >
-              Least disadvantaged
-            </div>
-          </div> */}
         </div>
       )}
     </div>
