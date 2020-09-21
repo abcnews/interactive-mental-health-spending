@@ -21,7 +21,7 @@ export default (props) => {
     // console.log(config);
 
     if (config.key) {
-      console.log(storyKeys[config.key]);
+      // console.log(storyKeys[config.key]);
       setCurrentKey(storyKeys[config.key]);
       // setChartData(dataObject[storyKeys[config.key].dataKey]);
     }

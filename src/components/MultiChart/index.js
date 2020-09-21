@@ -266,12 +266,12 @@ const MultiChart = (props) => {
     setSvgWidth(width);
 
     // Just make local scale functions again
-    const scaleX = d3
+    component.scaleX = d3
       .scalePoint()
       .domain(xTicks)
       .range([margin.left, width - margin.right]);
 
-    const scaleY = d3
+    component.scaleY = d3
       .scaleLinear()
       .domain([0, props.yMax])
       .range([height - margin.bottom, margin.top]);
@@ -280,7 +280,7 @@ const MultiChart = (props) => {
     const makeXAxis = (g) =>
       g.attr("transform", `translate(0,${height - margin.bottom})`).call(
         d3
-          .axisBottom(scaleX)
+          .axisBottom(component.scaleX)
           .tickFormat("")
           .tickValues(xTicks.filter((tick) => typeof tick === "string"))
           .tickSize(props.chartType === "line" ? 0 : 6)
@@ -291,7 +291,7 @@ const MultiChart = (props) => {
         .attr("transform", `translate(${margin.left},0)`)
         .call(
           d3
-            .axisLeft(scaleY)
+            .axisLeft(component.scaleY)
             .tickPadding([3])
             .tickSize(-(width - margin.left - margin.right))
             .ticks(5)
@@ -429,11 +429,32 @@ const MultiChart = (props) => {
       return;
     }
 
-    // if (isDocked) {
-    //   dots.style("opacity", 1.0);
-    // } else {
-    //   dots.style("opacity", 0.0);
-    // }
+    console.log(`Component is ${isDocked ? "DOCKED" : "UNDOCKED"}`);
+
+    if (isDocked) {
+      // Start doing something
+      console.log("Attaching dots!");
+      const initialDots = component.svg
+        .selectAll("circle")
+        .data(dataObject[props.dataKey])
+        .join("circle")
+        .style("stroke", "rgba(255, 255, 255, 0.6)")
+        .style("stroke-width", "1.5")
+        .style("fill", props.dotColor)
+        .style("transition", "opacity 1s")
+        .style("opacity", isDocked ? 1.0 : 0.0)
+        .attr("cx", (d) => {
+          if (d[xField] === "National") {
+            return 200;
+          }
+
+          return component.scaleX(d[xField]);
+        })
+        .attr("cy", (d) => component.scaleY(d[yField]))
+        .attr("r", dotRadius);
+    } else {
+      // Do something else (or nothing)
+    }
   }, [isDocked]);
 
   // Calculate values for return
