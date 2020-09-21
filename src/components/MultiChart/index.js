@@ -40,6 +40,7 @@ import {
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
 const LINE_ANIMATION_DURATION = 2000;
+const TICK_TEXT_MARGIN = 4;
 
 // Load our data and assign to object
 const dataObject = {
@@ -453,7 +454,7 @@ const MultiChart = (props) => {
                 // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "1px solid #f0f0f0",
+                borderRight: "2px solid #f0f0f0",
                 backgroundColor: "rgba(191, 191, 191, 0.1)",
               }}
             ></span>
@@ -463,7 +464,7 @@ const MultiChart = (props) => {
                 // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "1px solid #f0f0f0",
+                borderRight: "2px solid #f0f0f0",
                 backgroundColor: "rgba(191, 191, 191, 0.1)",
               }}
             ></span>
@@ -473,7 +474,7 @@ const MultiChart = (props) => {
                 // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "1px solid #f0f0f0",
+                borderRight: "2px solid #f0f0f0",
                 backgroundColor: "rgba(191, 191, 191, 0.1)",
               }}
             ></span>
@@ -483,7 +484,7 @@ const MultiChart = (props) => {
                 // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "1px solid #f0f0f0",
+                borderRight: "2px solid #f0f0f0",
                 backgroundColor: "rgba(191, 191, 191, 0.1)",
               }}
             ></span>
@@ -503,7 +504,6 @@ const MultiChart = (props) => {
           <>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "1px solid #f0f0f0",
@@ -511,7 +511,6 @@ const MultiChart = (props) => {
             ></span>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "1px solid #f0f0f0",
@@ -519,7 +518,6 @@ const MultiChart = (props) => {
             ></span>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "1px solid #f0f0f0",
@@ -527,7 +525,6 @@ const MultiChart = (props) => {
             ></span>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "1px solid #f0f0f0",
@@ -535,7 +532,6 @@ const MultiChart = (props) => {
             ></span>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "1px solid #f0f0f0",
@@ -543,7 +539,6 @@ const MultiChart = (props) => {
             ></span>
             <span
               style={{
-                // width: `${chartWidth / 6 - 2}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
               }}
@@ -583,14 +578,14 @@ const MultiChart = (props) => {
           <div className={styles.tickDescription}>
             <div
               style={{
-                width: `${chartWidth / 5 - 3}px`,
+                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Most disadvantaged
             </div>
             <div
               style={{
-                width: `${chartWidth / 5 - 3}px`,
+                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Least disadvantaged
@@ -611,42 +606,42 @@ const MultiChart = (props) => {
           <div className={styles.dotTickTextBox}>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Remote
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Outer regional
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Inner regional
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Major city low advantage
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Major city medium advantage
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - 3}px`,
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
               Major city high advantage
