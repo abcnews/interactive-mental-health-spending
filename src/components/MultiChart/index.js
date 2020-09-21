@@ -434,23 +434,36 @@ const MultiChart = (props) => {
     if (isDocked) {
       // Start doing something
       console.log("Attaching dots!");
+
+      const t = d3.transition().duration(750);
+
       const initialDots = component.svg
         .selectAll("circle")
         .data(dataObject[props.dataKey])
-        .join("circle")
+        .join(
+          (enter) =>
+            enter
+              .append("circle")
+              .attr("cy", (d) => component.scaleY(0))
+              .call((enter) =>
+                enter
+                  .transition(t)
+                  .attr("cy", (d) => component.scaleY(d[yField]))
+              ),
+          (update) => update,
+          (exit) => exit.remove()
+        )
         .style("stroke", "rgba(255, 255, 255, 0.6)")
         .style("stroke-width", "1.5")
         .style("fill", props.dotColor)
-        .style("transition", "opacity 1s")
-        .style("opacity", isDocked ? 1.0 : 0.0)
         .attr("cx", (d) => {
           if (d[xField] === "National") {
-            return 200;
+            return -2000000;
           }
 
           return component.scaleX(d[xField]);
         })
-        .attr("cy", (d) => component.scaleY(d[yField]))
+        // .attr("cy", (d) => component.scaleY(d[yField]))
         .attr("r", dotRadius);
     } else {
       // Do something else (or nothing)
@@ -472,7 +485,6 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
@@ -482,7 +494,6 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
@@ -492,7 +503,6 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
@@ -502,7 +512,6 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
@@ -512,7 +521,6 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                // width: `${chartWidth / 5 - 3}px`,
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 backgroundColor: "rgba(191, 191, 191, 0.1)",
