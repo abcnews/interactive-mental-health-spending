@@ -14,16 +14,16 @@ import heroImage from "./hero-top.png";
 let storyKeys = require("./story-keys.json");
 
 export default (props) => {
-  const [currentKey, setCurrentKey] = useState(storyKeys.one);
+  const [currentKey, setCurrentKey] = useState(storyKeys.default);
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = (config) => {
-    // console.log(config);
+    console.log(config);
 
     if (config.key) {
-      // console.log(storyKeys[config.key]);
-      setCurrentKey(storyKeys[config.key]);
-      // setChartData(dataObject[storyKeys[config.key].dataKey]);
+      console.log(storyKeys[config.key]);
+      if (typeof storyKeys[config.key] !== "undefined")
+        setCurrentKey(storyKeys[config.key]);
     }
   };
 

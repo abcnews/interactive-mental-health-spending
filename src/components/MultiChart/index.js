@@ -49,6 +49,7 @@ const dataObject = {
     "Medicare benefits per 100 people ($)"
   ),
   distressed: require("./data/distressed-data.json"),
+  mentalCondition: require("./data/mental-condition-data.json"),
   gpFocus: require("./data/gp-focus.json"),
 };
 
@@ -66,7 +67,7 @@ const MultiChart = (props) => {
 
   // Initialise state
   const [isDocked, setIsDocked] = useState(null);
-  const [hasBeenDocked, setHasBeenDocked] = useState(false)
+  const [hasBeenDocked, setHasBeenDocked] = useState(false);
   const [margin, setMargin] = useState({
     top: 0, // Proper margins are calculated later
     right: 0,
@@ -333,7 +334,7 @@ const MultiChart = (props) => {
             .axisLeft(component.scaleY)
             .tickPadding([3])
             .tickSize(-(width - margin.left - margin.right))
-            .ticks(5)
+            .ticks(props.chartType === "line" ? 10 : 5)
             .tickFormat(formatYTicks)
         )
         .call((g) => g.select(".domain").remove())
@@ -351,7 +352,42 @@ const MultiChart = (props) => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
-    if (hasBeenDocked) processLine();
+    console.log(dataObject[props.dataKey])
+
+    if (hasBeenDocked) {
+      component.svg
+      .selectAll("circle")
+      .data(dataObject[props.dataKey])
+      .join(
+        (enter) =>
+          enter
+            .append("circle")
+            .attr("cy", (d) => component.scaleY(0))
+            .style("stroke", "rgba(255, 255, 255, 0.6)")
+            .style("stroke-width", "1.5")
+            .style("fill", props.dotColor)
+            .attr("cx", (d) => {
+              if (d[xField] === "National") {
+                return -2000000;
+              }
+
+              return component.scaleX(d[xField]);
+            })
+            .attr("r", dotRadius)
+            .call((enter) =>
+              enter.transition(t).attr("cy", (d) => component.scaleY(d[yField]))
+            ),
+        (update) =>
+          update.attr("cx", (d) => {
+            if (d[xField] === "National") {
+              return -2000000;
+            }
+
+            return component.scaleX(d[xField]);
+          }).transition(t).attr("cy", (d) => component.scaleY(d[yField])),
+        (exit) => exit.remove()
+      );
+    }
 
     //   if (props.solidLine && solidPath) {
     //     // Resize the path
@@ -365,7 +401,7 @@ const MultiChart = (props) => {
     //   dots
     //     .attr("cx", (d) => scaleX(d[xField]))
     //     .attr("cy", (d) => scaleY(d[yField]));
-  }, [windowSize.width, windowSize.height, props.chartType]);
+  }, [windowSize.width, windowSize.height, props.chartType, props.dataKey]);
 
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
