@@ -85,13 +85,22 @@ const MultiChart = (props) => {
 
   // Format y tick values with $ or % depending on type
   const formatYTicks = (x) => {
-    if (props.yValueType === "percent") return `${x}%`;
-    else if (props.yValueType === "dollars") {
+    if (props.chartType === "line") return `${x}%`;
+    else if (props.chartType === "dot") {
       if (x === 0) return `$${x}`;
       const commaFormatter = d3.format(",");
       return `${commaFormatter(x)}`;
     } else return x;
   };
+
+  // const formatYTicks = (x) => {
+  //   if (props.yValueType === "percent") return `${x}%`;
+  //   else if (props.yValueType === "dollars") {
+  //     if (x === 0) return `$${x}`;
+  //     const commaFormatter = d3.format(",");
+  //     return `${commaFormatter(x)}`;
+  //   } else return x;
+  // };
 
   const initChart = () => {
     // Set component scoped SVG selection
@@ -204,11 +213,6 @@ const MultiChart = (props) => {
   //     .attr("cy", (d) => scaleY(d[yField]))
   //     .attr("r", dotRadius);
 
-  //   chartTitle.current = initialSvg
-  //     .append("text")
-  //     .attr("x", 100)
-  //     .attr("y", 100)
-  //     .text("HELLO");
 
   //   setSvg(initialSvg);
   //   setDots(initialDots);
@@ -333,8 +337,6 @@ const MultiChart = (props) => {
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
     if (!component.svg) return;
-
-    //   chartTitle.current.attr("y", 200);
 
     //   scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
     //   scaleY.domain([0, props.yMax]);
@@ -591,7 +593,6 @@ const MultiChart = (props) => {
 // Set default props
 MultiChart.defaultProps = {
   chartType: "dot",
-  chartTitle: "Medicare rebates per 100 people ($)",
   dotColor: "red",
   xField: "SA3 group",
   yField: "Medicare benefits per 100 people ($)",
