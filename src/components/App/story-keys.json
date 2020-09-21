@@ -1,7 +1,23 @@
 {
-  "one": {
+  "default": {
     "chartType": "line",
     "dataKey": "distressed",
+    "yMax": "30",
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent"
+  },
+  "distressed": {
+    "chartType": "line",
+    "dataKey": "distressed",
+    "yMax": "30",
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent"
+  },
+  "mentalcondition": {
+    "chartType": "line",
+    "dataKey": "mentalCondition",
     "yMax": "30",
     "dotColor": "#3C92C8",
     "xField": "quintile",
@@ -14,10 +30,6 @@
     "xNumberOfTicks": 6,
     "yValueType": "dollars",
     "dotColor": "#3C92C8"
-  },
-  "three": {
-    "dataKey": "gpFocus",
-    "yMax": "4000",
-    "xNumberOfTicks": 6
   }
+  
 }
