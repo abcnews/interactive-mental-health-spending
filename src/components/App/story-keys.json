@@ -3,12 +3,9 @@
     "chartType": "line",
     "dataKey": "distressed",
     "yMax": "30",
-    "xNumberOfTicks": 5,
-    "yValueType": "percent",
     "dotColor": "#3C92C8",
     "xField": "quintile",
-    "yField": "percent",
-    "solidLine": true
+    "yField": "percent"
   },
   "two": {
     "chartType": "dot",
@@ -16,8 +13,7 @@
     "yMax": "5000",
     "xNumberOfTicks": 6,
     "yValueType": "dollars",
-    "dotColor": "#3C92C8",
-    "averageLine": true
+    "dotColor": "#3C92C8"
   },
   "three": {
     "dataKey": "gpFocus",
