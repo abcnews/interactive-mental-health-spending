@@ -1,5 +1,6 @@
 import React, { useRef, useLayoutEffect, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
+import { Fade } from '@material-ui/core';
 import styles from "./styles.scss";
 
 // D3 imports
@@ -251,9 +252,7 @@ const MultiChart = (props) => {
     };
   }, []);
 
-  // Detect and handle window resize events
-  // NOTE: This happens on init too, so we are drawing
-  // our X & Y axes here too.
+  // Handle initial chart draw and also chart updates
   useLayoutEffect(() => {
     // Wait till we have an svg mounted
     if (!component.svg) return;
@@ -329,7 +328,7 @@ const MultiChart = (props) => {
     //   dots
     //     .attr("cx", (d) => scaleX(d[xField]))
     //     .attr("cy", (d) => scaleY(d[yField]));
-  }, [windowSize.width, windowSize.height]);
+  }, [windowSize.width, windowSize.height, props.chartType]);
 
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
@@ -447,14 +446,16 @@ const MultiChart = (props) => {
     <div className={styles.root}>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div>
+
       {props.chartType !== "line" && (
         <div
           className={styles.chartTitle}
           style={{ top: margin.top, left: margin.left }}
         >
-          Medicare rebates per 100 people ($)
+          <Fade in={true}><span>Medicare rebates per 100 people ($)</span></Fade>
         </div>
       )}
+
       {props.chartType === "line" && (
         <div
           className={styles.tickTextContainer}
@@ -476,7 +477,7 @@ const MultiChart = (props) => {
             <div
               style={{
                 width: `${
-                  ((svgWidth - margin.left - margin.right + 1) / 5) - 3
+                  (svgWidth - margin.left - margin.right + 1) / 5 - 3
                 }px`,
               }}
             >
@@ -485,7 +486,7 @@ const MultiChart = (props) => {
             <div
               style={{
                 width: `${
-                  ((svgWidth - margin.left - margin.right + 1) / 5) - 3
+                  (svgWidth - margin.left - margin.right + 1) / 5 - 3
                 }px`,
               }}
             >
@@ -507,42 +508,54 @@ const MultiChart = (props) => {
           <div className={styles.dotTickTextBox}>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Remote
             </span>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Outer regional
             </span>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Inner regional
             </span>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Major city low advantage
             </span>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Major city medium advantage
             </span>
             <span
               style={{
-                width: `${((svgWidth - margin.left - margin.right + 1) / 6) - 3}px`,
+                width: `${
+                  (svgWidth - margin.left - margin.right + 1) / 6 - 3
+                }px`,
               }}
             >
               Major city high advantage

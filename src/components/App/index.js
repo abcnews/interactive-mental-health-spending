@@ -80,6 +80,7 @@ export default (props) => {
           <BackgroundStage>
             <MultiChart
               componentName={"chart1"}
+              chartType={currentKey.chartType}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               yValueType={currentKey.yValueType}
@@ -88,7 +89,6 @@ export default (props) => {
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
-              chartType={currentKey.chartType}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -103,6 +103,7 @@ export default (props) => {
           <BackgroundStage>
             <MultiChart
               componentName={"chart1"}
+              chartType={currentKey.chartType}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               yValueType={currentKey.yValueType}
