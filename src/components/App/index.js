@@ -79,7 +79,6 @@ export default (props) => {
         >
           <BackgroundStage>
             <MultiChart
-              componentName={"chart1"}
               chartType={currentKey.chartType}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
@@ -101,7 +100,6 @@ export default (props) => {
         >
           <BackgroundStage>
             <MultiChart
-              componentName={"chart1"}
               chartType={currentKey.chartType}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
