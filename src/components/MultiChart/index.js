@@ -242,13 +242,16 @@ const MultiChart = (props) => {
               enter.transition(t).attr("cy", (d) => component.scaleY(d[yField]))
             ),
         (update) =>
-          update.attr("cx", (d) => {
-            if (d[xField] === "National") {
-              return -2000000;
-            }
+          update
+            .attr("cx", (d) => {
+              if (d[xField] === "National") {
+                return -2000000;
+              }
 
-            return component.scaleX(d[xField]);
-          }),
+              return component.scaleX(d[xField]);
+            })
+            .transition(t)
+            .attr("cy", (d) => component.scaleY(d[yField])),
         (exit) => exit.remove()
       );
   };
@@ -352,41 +355,10 @@ const MultiChart = (props) => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
-    console.log(dataObject[props.dataKey])
+    console.log(dataObject[props.dataKey]);
 
     if (hasBeenDocked) {
-      component.svg
-      .selectAll("circle")
-      .data(dataObject[props.dataKey])
-      .join(
-        (enter) =>
-          enter
-            .append("circle")
-            .attr("cy", (d) => component.scaleY(0))
-            .style("stroke", "rgba(255, 255, 255, 0.6)")
-            .style("stroke-width", "1.5")
-            .style("fill", props.dotColor)
-            .attr("cx", (d) => {
-              if (d[xField] === "National") {
-                return -2000000;
-              }
-
-              return component.scaleX(d[xField]);
-            })
-            .attr("r", dotRadius)
-            .call((enter) =>
-              enter.transition(t).attr("cy", (d) => component.scaleY(d[yField]))
-            ),
-        (update) =>
-          update.attr("cx", (d) => {
-            if (d[xField] === "National") {
-              return -2000000;
-            }
-
-            return component.scaleX(d[xField]);
-          }).transition(t).attr("cy", (d) => component.scaleY(d[yField])),
-        (exit) => exit.remove()
-      );
+      processLine();
     }
 
     //   if (props.solidLine && solidPath) {
