@@ -8,6 +8,7 @@ import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 import { loadScrollyteller } from "@abcnews/scrollyteller";
+import jankdefer from "jankdefer"
 
 import * as d3Selection from "d3-selection";
 const d3 = { ...d3Selection };
@@ -58,7 +59,7 @@ const init = async () => {
 };
 
 if (window.__ODYSSEY__) {
-  preInit();
+  jankdefer(preInit);
   init();
 } else {
   window.addEventListener("odyssey:api", preInit);
