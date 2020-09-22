@@ -80,7 +80,7 @@ const MultiChart = (props) => {
     left: 0,
   });
   const [svgWidth, setSvgWidth] = useState(0);
-  const [ownBarNumber, setOwnBarNumber] = useState(3);
+  const [ownBarNumber, setOwnBarNumber] = useState(4);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -521,7 +521,9 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: `${chartHeight}px`,
+                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
+                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
                 backgroundColor:
@@ -533,7 +535,9 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: `${chartHeight}px`,
+                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 2
+                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
                 backgroundColor:
@@ -559,7 +563,9 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: `${chartHeight}px`,
+                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 4
+                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
                 backgroundColor:
