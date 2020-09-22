@@ -18,10 +18,10 @@ export default (props) => {
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = (config) => {
-    console.log(config);
+    console.log("Config key:", config.key);
 
     if (config.key) {
-      console.log(storyKeys[config.key]);
+      // console.log(storyKeys[config.key]);
       if (typeof storyKeys[config.key] !== "undefined")
         setCurrentKey(storyKeys[config.key]);
     }
@@ -87,6 +87,7 @@ export default (props) => {
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
+              highlightOwnBar={currentKey.highlightOwnBar}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -108,6 +109,7 @@ export default (props) => {
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
+              highlightOwnBar={currentKey.highlightOwnBar}
             />
           </BackgroundStage>
         </Scrollyteller>

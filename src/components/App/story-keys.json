@@ -13,7 +13,26 @@
     "yMax": "30",
     "dotColor": "#3C92C8",
     "xField": "quintile",
-    "yField": "percent"
+    "yField": "percent",
+    "highlightOwnBar": false
+  },
+  "leastmost": {
+    "chartType": "line",
+    "dataKey": "distressed",
+    "yMax": "30",
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent",
+    "highlightOwnBar": false
+  },
+  "yourquintile": {
+    "chartType": "line",
+    "dataKey": "distressed",
+    "yMax": "30",
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent",
+    "highlightOwnBar": true
   },
   "mentalcondition": {
     "chartType": "line",
@@ -31,5 +50,4 @@
     "yValueType": "dollars",
     "dotColor": "#3C92C8"
   }
-  
 }
