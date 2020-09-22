@@ -42,6 +42,11 @@ const dotRadius = 5;
 const LINE_ANIMATION_DURATION = 2000;
 const TICK_TEXT_MARGIN = 4;
 
+// Chart bar constants
+const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
+const BAR_HIGHLIGHT_COLOR = "rgba(220, 220, 220, 0.59)";
+const BAR_HEIGHT_EXTEND = 25;
+
 // Load our data and assign to object
 const dataObject = {
   allied: sortData(
@@ -75,6 +80,7 @@ const MultiChart = (props) => {
     left: 0,
   });
   const [svgWidth, setSvgWidth] = useState(0);
+  const [ownBarNumber, setOwnBarNumber] = useState(3);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -218,6 +224,12 @@ const MultiChart = (props) => {
   //   setYAxisGroup(initialYAxisGroup);
   // };
 
+  const processMarker = () => {
+    if (!isDocked) return;
+
+    console.log(props);
+  };
+
   const processLine = () => {
     component.svg
       .selectAll("circle")
@@ -355,11 +367,11 @@ const MultiChart = (props) => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
-    console.log(dataObject[props.dataKey]);
+    // console.log(dataObject[props.dataKey]);
 
-    if (hasBeenDocked) {
-      processLine();
-    }
+    // if (hasBeenDocked) {
+    //   processLine();
+    // }
 
     //   if (props.solidLine && solidPath) {
     //     // Resize the path
@@ -373,7 +385,7 @@ const MultiChart = (props) => {
     //   dots
     //     .attr("cx", (d) => scaleX(d[xField]))
     //     .attr("cy", (d) => scaleY(d[yField]));
-  }, [windowSize.width, windowSize.height, props.chartType, props.dataKey]);
+  }, [windowSize.width, windowSize.height, props.chartType]);
 
   // Handle chart data change (will usually be via scrollyteller marks)
   useLayoutEffect(() => {
@@ -469,7 +481,7 @@ const MultiChart = (props) => {
     //   setDots(newDots);
   }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
 
-  // Detect docked or not
+  // Detect docked or not so we can wait to animate
   useEffect(() => {
     if (!component.svg) {
       // Attach the chart once we know if we are docked
@@ -482,14 +494,17 @@ const MultiChart = (props) => {
 
     if (isDocked) {
       // Start doing something
-      console.log("Attaching dots!");
       setHasBeenDocked(true);
 
-      processLine();
+      processMarker();
     } else {
       // Do something else (or nothing)
     }
   }, [isDocked]);
+
+  useEffect(() => {
+    processMarker();
+  }, [props.dataKey]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
@@ -509,7 +524,10 @@ const MultiChart = (props) => {
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: "rgba(191, 191, 191, 0.1)",
+                backgroundColor:
+                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_COLOR,
               }}
             ></span>
             <span
@@ -518,7 +536,24 @@ const MultiChart = (props) => {
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: "rgba(191, 191, 191, 0.1)",
+                backgroundColor:
+                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 2
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_COLOR,
+              }}
+            ></span>
+            <span
+              className={styles.lineHighlightBar}
+              style={{
+                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 3
+                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                : `${chartHeight}px`,
+                flexGrow: 1,
+                borderRight: "2px solid #f0f0f0",
+                backgroundColor:
+                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 3
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_COLOR,
               }}
             ></span>
             <span
@@ -527,24 +562,23 @@ const MultiChart = (props) => {
                 height: `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: "rgba(191, 191, 191, 0.1)",
+                backgroundColor:
+                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 4
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: `${chartHeight}px`,
+                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 5
+                    ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                    : `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "2px solid #f0f0f0",
-                backgroundColor: "rgba(191, 191, 191, 0.1)",
-              }}
-            ></span>
-            <span
-              className={styles.lineHighlightBar}
-              style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                backgroundColor: "rgba(191, 191, 191, 0.1)",
+                backgroundColor:
+                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 5
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_COLOR,
               }}
             ></span>
           </>
