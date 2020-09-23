@@ -1,40 +1,57 @@
 {
   "default": {
     "chartType": "line",
-    "dataKey": "distressed",
-    "yMax": "30",
-    "dotColor": "#3C92C8",
-    "xField": "quintile",
-    "yField": "percent"
+    "yMax": "30"
   },
   "distressed": {
     "chartType": "line",
-    "dataKey": "distressed",
     "yMax": "30",
-    "dotColor": "#3C92C8",
-    "xField": "quintile",
-    "yField": "percent",
     "highlightOwnBar": false,
-    "highlightBars": []
+    "highlightBars": [],
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent"
+      }
+    ]
   },
   "leastmost": {
     "chartType": "line",
     "dataKey": "distressed",
     "yMax": "30",
-    "dotColor": "#3C92C8",
-    "xField": "quintile",
-    "yField": "percent",
     "highlightOwnBar": false,
-    "highlightBars": [1, 5]
+    "highlightBars": [1, 5],
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent"
+      }
+    ]
   },
   "yourquintile": {
     "chartType": "line",
     "dataKey": "distressed",
     "yMax": "30",
-    "dotColor": "#3C92C8",
-    "xField": "quintile",
-    "yField": "percent",
-    "highlightOwnBar": true
+    "highlightOwnBar": true,
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent"
+      },
+      {
+        "lineName": "line2",
+        "dataKey": "empty"
+      }
+    ]
   },
   "mentalcondition": {
     "chartType": "line",
@@ -42,7 +59,23 @@
     "yMax": "30",
     "dotColor": "#3C92C8",
     "xField": "quintile",
-    "yField": "percent"
+    "yField": "percent",
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent"
+      },
+      {
+        "lineName": "line2",
+        "dataKey": "mentalCondition",
+        "dotColor": "#FF1D07",
+        "xField": "quintile",
+        "yField": "percent"
+      }
+    ]
   },
   "two": {
     "chartType": "dot",
