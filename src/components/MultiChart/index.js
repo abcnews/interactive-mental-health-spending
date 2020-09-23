@@ -39,7 +39,7 @@ import {
 // File scoped constants
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
-const LINE_ANIMATION_DURATION = 2000;
+const LINE_ANIMATION_DURATION = 1000;
 const TICK_TEXT_MARGIN = 4;
 
 // Chart bar constants
@@ -233,7 +233,7 @@ const MultiChart = (props) => {
     if (!Array.isArray(props.lines)) return;
 
     for (const line of props.lines) {
-      component.svg
+      const dots = component.svg
         .selectAll(`circle.${line.lineName}`)
         .data(dataObject[line.dataKey])
         .join(
@@ -269,25 +269,13 @@ const MultiChart = (props) => {
           (exit) => exit.transition(t).attr("opacity", 0.0).remove()
         );
 
-      // component.svg
-      //   .datum(dataObject[line.dataKey])
-      //   .append("path")
-      //   .classed(line.lineName, true)
-      //   .attr("fill", "none")
-      //   .attr("stroke", "none")
-      //   .attr("stroke-width", 2)
-      //   .attr("stroke", line.dotColor)
-      //   .attr("stroke-linejoin", "round")
-      //   .attr("stroke-linecap", "round")
-      //   .attr("d", lineGenerator);
-
       const lineGenerator = d3
         .line()
         .defined((d) => !isNaN(d[line.yField]))
         .x((d) => component.scaleX(d[line.xField]))
         .y((d) => component.scaleY(d[line.yField]));
 
-      component.svg
+      const path = component.svg
         .selectAll(`path.${line.lineName}`)
         .data([dataObject[line.dataKey]])
         .join(
@@ -297,11 +285,36 @@ const MultiChart = (props) => {
               .classed(line.lineName, true)
               .attr("fill", "none")
               .attr("stroke-width", 2)
-              .attr("stroke", line.dotColor),
-          (update) => update.attr("stroke", line.dotColor),
-          (exit) => exit.remove()
-        )
-        .attr("d", lineGenerator);
+              .attr("stroke", line.dotColor)
+              .attr("opacity", 1.0)
+              .attr("d", lineGenerator),
+          (update) => update, //.remove(), <---- maybe try in a function
+          (exit) => exit.remove() // Isn't actually exiting just no line data TODO: maybe fix
+        );
+
+        // console.log(path)
+
+        // if (path) {
+        //   console.log(path.attr("d"));
+
+        //   if (path.attr("d")) {
+        //     // Get the length of the line
+        //     const totalLength = path.node().getTotalLength();
+    
+        //     // Animate the path
+        //     path
+        //       .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+        //       .attr("stroke-dashoffset", totalLength)
+        //       .transition()
+        //       .duration(LINE_ANIMATION_DURATION)
+        //       .attr("stroke-dashoffset", 0);
+        //   }
+        // }
+
+      
+
+      // Dots on top (z-axis)
+      dots.raise();
     }
   };
 
