@@ -89,6 +89,7 @@ export default (props) => {
               averageLine={currentKey.averageLine}
               highlightBars={currentKey.highlightBars}
               highlightOwnBar={currentKey.highlightOwnBar}
+              lines={currentKey.lines}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -112,6 +113,7 @@ export default (props) => {
               averageLine={currentKey.averageLine}
               highlightBars={currentKey.highlightBars}
               highlightOwnBar={currentKey.highlightOwnBar}
+              lines={currentKey.lines}
             />
           </BackgroundStage>
         </Scrollyteller>
