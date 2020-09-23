@@ -14,7 +14,8 @@
     "dotColor": "#3C92C8",
     "xField": "quintile",
     "yField": "percent",
-    "highlightOwnBar": false
+    "highlightOwnBar": false,
+    "highlightBars": []
   },
   "leastmost": {
     "chartType": "line",
@@ -23,7 +24,8 @@
     "dotColor": "#3C92C8",
     "xField": "quintile",
     "yField": "percent",
-    "highlightOwnBar": false
+    "highlightOwnBar": false,
+    "highlightBars": [1, 5]
   },
   "yourquintile": {
     "chartType": "line",
