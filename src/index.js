@@ -33,6 +33,8 @@ const preInit = () => {
   // (but do want to wait for Odyssey)
   const heroEl = d3.select(".Header").insert("div", ":first-child");
   heroEl.classed("pre-header-hero", true);
+
+  init()
 };
 
 const init = async () => {
@@ -61,7 +63,6 @@ const init = async () => {
 
 if (window.__ODYSSEY__) {
   jankdefer(preInit);
-  init();
 } else {
   window.addEventListener("odyssey:api", preInit);
   window.addEventListener("odyssey:api", init);
