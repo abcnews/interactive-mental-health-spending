@@ -2,6 +2,7 @@
 import "core-js/features/symbol";
 import "regenerator-runtime/runtime.js";
 import "intersection-observer";
+import 'polyfill-array-includes';
 
 // Imports
 import React from "react";

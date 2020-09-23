@@ -87,6 +87,7 @@ export default (props) => {
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
+              highlightBars={currentKey.highlightBars}
               highlightOwnBar={currentKey.highlightOwnBar}
             />
           </BackgroundStage>
@@ -109,6 +110,7 @@ export default (props) => {
               yField={currentKey.yField}
               solidLine={currentKey.solidLine}
               averageLine={currentKey.averageLine}
+              highlightBars={currentKey.highlightBars}
               highlightOwnBar={currentKey.highlightOwnBar}
             />
           </BackgroundStage>
