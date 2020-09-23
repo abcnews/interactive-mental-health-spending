@@ -45,7 +45,7 @@ const TICK_TEXT_MARGIN = 4;
 // Chart bar constants
 const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
 const BAR_HIGHLIGHT_COLOR = "rgba(220, 220, 220, 0.59)";
-const BAR_HEIGHT_EXTEND = 25;
+const BAR_HEIGHT_EXTEND = 22;
 
 // Load our data and assign to object
 const dataObject = {
@@ -81,6 +81,7 @@ const MultiChart = (props) => {
   });
   const [svgWidth, setSvgWidth] = useState(0);
   const [ownBarNumber, setOwnBarNumber] = useState(4);
+  const [highlightBars, setHighlightBars] = useState([]);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -506,6 +507,27 @@ const MultiChart = (props) => {
     processMarker();
   }, [props.dataKey]);
 
+  useEffect(() => {
+    // TODO: make this logic:
+    // props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
+    // for highlightBars state
+    if (!hasBeenDocked) return;
+
+    let bars = [];
+
+    if (props.highlightBars) {
+      bars.push(...props.highlightBars);
+    }
+
+    if (props.highlightOwnBar) {
+      if (!bars.includes(ownBarNumber)) {
+        bars.push(ownBarNumber);
+      }
+    }
+
+    setHighlightBars(bars);
+  }, [props.highlightOwnBar, props.highlightBars, hasBeenDocked, ownBarNumber]);
+
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
   const chartHeight = window.innerHeight - margin.top - margin.bottom;
@@ -521,70 +543,65 @@ const MultiChart = (props) => {
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
-                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                : `${chartHeight}px`,
+                height: highlightBars.includes(1)
+                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor:
-                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
-                    ? BAR_HIGHLIGHT_COLOR
-                    : BAR_COLOR,
+                backgroundColor: highlightBars.includes(1)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 2
-                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                : `${chartHeight}px`,
+                height: highlightBars.includes(2)
+                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor:
-                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 2
-                    ? BAR_HIGHLIGHT_COLOR
-                    : BAR_COLOR,
+                backgroundColor: highlightBars.includes(2)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 3
-                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                : `${chartHeight}px`,
+                height: highlightBars.includes(3)
+                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor:
-                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 3
-                    ? BAR_HIGHLIGHT_COLOR
-                    : BAR_COLOR,
+                backgroundColor: highlightBars.includes(3)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 4
-                ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                : `${chartHeight}px`,
+                height: highlightBars.includes(4)
+                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor:
-                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 4
-                    ? BAR_HIGHLIGHT_COLOR
-                    : BAR_COLOR,
+                backgroundColor: highlightBars.includes(4)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: props.highlightOwnBar && hasBeenDocked && ownBarNumber === 5
-                    ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                    : `${chartHeight}px`,
+                height: highlightBars.includes(5)
+                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
                 flexGrow: 1,
-                backgroundColor:
-                  props.highlightOwnBar && hasBeenDocked && ownBarNumber === 5
-                    ? BAR_HIGHLIGHT_COLOR
-                    : BAR_COLOR,
+                backgroundColor: highlightBars.includes(5)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
               }}
             ></span>
           </>
