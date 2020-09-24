@@ -80,6 +80,21 @@
     padding: 10px;
   }
 
+  .line-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translate(0px, -135%);
+    font-family: ABCSans, sans-serif;
+    color: #4b4b4b;
+    font-weight: bold;
+    font-size: 10px;
+
+    @media screen and (min-width:641px) {
+      font-size: 11px;
+    }
+  }
+
   :global {
     svg.scatter-plot {
       // background: #f0f0f0;

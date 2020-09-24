@@ -14,7 +14,8 @@
         "dataKey": "distressed",
         "dotColor": "#3C92C8",
         "xField": "quintile",
-        "yField": "percent"
+        "yField": "percent",
+        "labelText": "Highly distressed"
       }
     ]
   },
@@ -30,7 +31,8 @@
         "dataKey": "distressed",
         "dotColor": "#3C92C8",
         "xField": "quintile",
-        "yField": "percent"
+        "yField": "percent",
+        "labelText": "Highly distressed"
       }
     ]
   },
@@ -45,7 +47,8 @@
         "dataKey": "distressed",
         "dotColor": "#3C92C8",
         "xField": "quintile",
-        "yField": "percent"
+        "yField": "percent",
+        "labelText": "Highly distressed"
       },
       {
         "lineName": "line2",
@@ -60,20 +63,23 @@
     "dotColor": "#3C92C8",
     "xField": "quintile",
     "yField": "percent",
+    "highlightOwnBar": true,
     "lines": [
       {
         "lineName": "line1",
         "dataKey": "distressed",
         "dotColor": "#3C92C8",
         "xField": "quintile",
-        "yField": "percent"
+        "yField": "percent",
+        "labelText": "Highly distressed"
       },
       {
         "lineName": "line2",
         "dataKey": "mentalCondition",
         "dotColor": "#FF1D07",
         "xField": "quintile",
-        "yField": "percent"
+        "yField": "percent",
+        "labelText": "Mental condition"
       }
     ]
   },
