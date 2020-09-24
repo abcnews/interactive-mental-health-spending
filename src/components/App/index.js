@@ -13,21 +13,20 @@ import heroImage from "./hero-top.png";
 
 let storyKeys = require("./story-keys.json");
 
-export default (props) => {
+export default props => {
   const [currentKey, setCurrentKey] = useState(storyKeys.default);
   const [userSelection, setUserSelection] = useState(null);
 
-  const onMarker = (config) => {
+  const onMarker = config => {
     console.log("Config key:", config.key);
 
     if (config.key) {
       // console.log(storyKeys[config.key]);
-      if (typeof storyKeys[config.key] !== "undefined")
-        setCurrentKey(storyKeys[config.key]);
+      if (typeof storyKeys[config.key] !== "undefined") setCurrentKey(storyKeys[config.key]);
     }
   };
 
-  const handleSelection = (data) => {
+  const handleSelection = data => {
     console.log(`App data:`);
     console.log(data);
 
@@ -72,11 +71,7 @@ export default (props) => {
       </div>
 
       <Portal node={document.querySelector(".scrollystagemount")}>
-        <Scrollyteller
-          panels={props.scrollyData1.panels}
-          onMarker={onMarker}
-          panelComponent={CustomPanel}
-        >
+        <Scrollyteller panels={props.scrollyData1.panels} onMarker={onMarker} panelComponent={CustomPanel}>
           <BackgroundStage>
             <MultiChart
               chartType={currentKey.chartType}
@@ -96,14 +91,10 @@ export default (props) => {
       </Portal>
 
       <Portal node={document.querySelector(".scrollystagemount2")}>
-        <Scrollyteller
-          panels={props.scrollyData2.panels}
-          onMarker={() => {}}
-          panelComponent={CustomPanel}
-        >
+        <Scrollyteller panels={props.scrollyData2.panels} onMarker={() => {}} panelComponent={CustomPanel}>
           <BackgroundStage>
             <MultiChart
-              chartType={currentKey.chartType}
+              chartType={"dot"}
               dataKey={currentKey.dataKey}
               yMax={currentKey.yMax}
               dotColor={currentKey.dotColor}
