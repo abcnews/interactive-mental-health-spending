@@ -28,14 +28,7 @@ const d3 = {
 };
 
 // Local library imports
-import {
-  sortData,
-  calculateMargins,
-  xTicks5,
-  xTicks6,
-  generateAverageData,
-  usePrevious,
-} from "./lib";
+import { sortData, calculateMargins, xTicks5, xTicks6, generateAverageData, usePrevious } from "./lib";
 
 // File scoped constants
 const TRANSITION_DURATION = 0;
@@ -51,17 +44,14 @@ const BAR_HEIGHT_EXTEND = 22;
 // Load our data and assign to object
 const dataObject = {
   empty: [],
-  allied: sortData(
-    require("./data/allied-data.json"),
-    "Medicare benefits per 100 people ($)"
-  ),
+  allied: sortData(require("./data/allied-data.json"), "Medicare benefits per 100 people ($)"),
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
   gpFocus: require("./data/gp-focus.json"),
 };
 
 // The main React function component
-const MultiChart = (props) => {
+const MultiChart = props => {
   const { xField, yField, ...restProps } = props;
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
@@ -97,7 +87,7 @@ const MultiChart = (props) => {
   const { current: component } = componentRef;
 
   // Format y tick values with $ or % depending on type
-  const formatYTicks = (x) => {
+  const formatYTicks = x => {
     if (props.chartType === "line") return `${x}%`;
     else if (props.chartType === "dot") {
       if (x === 0) return `$${x}`;
@@ -135,24 +125,24 @@ const MultiChart = (props) => {
 
       const lineGenerator = d3
         .line()
-        .defined((d) => !isNaN(d[line.yField]))
-        .x((d) => component.scaleX(d[line.xField]))
-        .y((d) => component.scaleY(d[line.yField]));
+        .defined(d => !isNaN(d[line.yField]))
+        .x(d => component.scaleX(d[line.xField]))
+        .y(d => component.scaleY(d[line.yField]));
 
       const dots = component.svg
         .selectAll(`circle.${line.lineName}`)
         .data(dataObject[line.dataKey])
         .join(
-          (enter) =>
+          enter =>
             enter
               .append("circle")
               .classed(line.lineName, true)
-              .attr("cy", (d) => component.scaleY(d[line.yField]))
+              .attr("cy", d => component.scaleY(d[line.yField]))
               .attr("opacity", 0.0)
               .style("stroke", "rgba(255, 255, 255, 0.6)")
               .style("stroke-width", "1.5")
               .style("fill", line.dotColor)
-              .attr("cx", (d) => {
+              .attr("cx", d => {
                 if (d[line.xField] === "National") {
                   return -2000000;
                 }
@@ -160,7 +150,7 @@ const MultiChart = (props) => {
                 return component.scaleX(d[line.xField]);
               })
               .attr("r", dotRadius)
-              .call((enter) => {
+              .call(enter => {
                 // Fade dots in
                 enter.transition(t).attr("opacity", 1.0);
 
@@ -193,9 +183,9 @@ const MultiChart = (props) => {
                   .duration(LINE_ANIMATION_DURATION)
                   .attr("stroke-dashoffset", 0);
               }),
-          (update) =>
+          update =>
             update
-              .call((update) => {
+              .call(update => {
                 if (update.empty()) return;
 
                 const path = component.svg
@@ -210,17 +200,17 @@ const MultiChart = (props) => {
                 label.x = lineBox.x;
                 label.y = lineBox.y;
               })
-              .attr("cx", (d) => {
+              .attr("cx", d => {
                 if (d[line.xField] === "National") {
                   return -2000000;
                 }
 
                 return component.scaleX(d[line.xField]);
               })
-              .attr("cy", (d) => component.scaleY(d[line.yField])),
-          (exit) =>
+              .attr("cy", d => component.scaleY(d[line.yField])),
+          exit =>
             exit
-              .call((exit) => {
+              .call(exit => {
                 if (exit.empty()) return;
 
                 component.svg.select(`path.${line.lineName}`).remove();
@@ -244,7 +234,7 @@ const MultiChart = (props) => {
     // Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
     let callback = (entries, observer) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsDocked(true);
         } else if (!entry.isIntersecting) {
@@ -298,16 +288,16 @@ const MultiChart = (props) => {
       .range([height - margin.bottom, margin.top]);
 
     // Recalculate axis generators
-    const makeXAxis = (g) =>
+    const makeXAxis = g =>
       g.attr("transform", `translate(0,${height - margin.bottom})`).call(
         d3
           .axisBottom(component.scaleX)
           .tickFormat("")
-          .tickValues(xTicks.filter((tick) => typeof tick === "string"))
+          .tickValues(xTicks.filter(tick => typeof tick === "string"))
           .tickSize(props.chartType === "line" ? 0 : 6)
       );
 
-    const makeYAxis = (group) =>
+    const makeYAxis = group =>
       group
         .attr("transform", `translate(${margin.left},0)`)
         .call(
@@ -318,8 +308,8 @@ const MultiChart = (props) => {
             .ticks(props.chartType === "line" ? 10 : 5)
             .tickFormat(formatYTicks)
         )
-        .call((g) => g.select(".domain").remove())
-        .call((g) =>
+        .call(g => g.select(".domain").remove())
+        .call(g =>
           g
             .selectAll(".tick line")
             .style("stroke", "#a4a4a4")
@@ -327,7 +317,7 @@ const MultiChart = (props) => {
             .style("stroke-width", 1)
             .style("shape-rendering", "crispEdges")
         )
-        .call((g) => g.selectAll(".tick text"));
+        .call(g => g.selectAll(".tick text"));
 
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
@@ -393,74 +383,51 @@ const MultiChart = (props) => {
 
   return (
     <div className={styles.root}>
-      <div
-        className={styles.highlightBars}
-        style={{ top: margin.top, left: margin.left, width: chartWidth }}
-      >
+      <div className={styles.highlightBars} style={{ top: margin.top, left: margin.left, width: chartWidth }}>
         {props.chartType === "line" && (
           <>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: highlightBars.includes(1)
-                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                  : `${chartHeight}px`,
+                height: highlightBars.includes(1) ? `${chartHeight + BAR_HEIGHT_EXTEND}px` : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(1)
-                  ? BAR_HIGHLIGHT_COLOR
-                  : BAR_COLOR,
+                backgroundColor: highlightBars.includes(1) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: highlightBars.includes(2)
-                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                  : `${chartHeight}px`,
+                height: highlightBars.includes(2) ? `${chartHeight + BAR_HEIGHT_EXTEND}px` : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(2)
-                  ? BAR_HIGHLIGHT_COLOR
-                  : BAR_COLOR,
+                backgroundColor: highlightBars.includes(2) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: highlightBars.includes(3)
-                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                  : `${chartHeight}px`,
+                height: highlightBars.includes(3) ? `${chartHeight + BAR_HEIGHT_EXTEND}px` : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(3)
-                  ? BAR_HIGHLIGHT_COLOR
-                  : BAR_COLOR,
+                backgroundColor: highlightBars.includes(3) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: highlightBars.includes(4)
-                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                  : `${chartHeight}px`,
+                height: highlightBars.includes(4) ? `${chartHeight + BAR_HEIGHT_EXTEND}px` : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(4)
-                  ? BAR_HIGHLIGHT_COLOR
-                  : BAR_COLOR,
+                backgroundColor: highlightBars.includes(4) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR,
               }}
             ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
-                height: highlightBars.includes(5)
-                  ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
-                  : `${chartHeight}px`,
+                height: highlightBars.includes(5) ? `${chartHeight + BAR_HEIGHT_EXTEND}px` : `${chartHeight}px`,
                 flexGrow: 1,
-                backgroundColor: highlightBars.includes(5)
-                  ? BAR_HIGHLIGHT_COLOR
-                  : BAR_COLOR,
+                backgroundColor: highlightBars.includes(5) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR,
               }}
             ></span>
           </>
@@ -516,10 +483,7 @@ const MultiChart = (props) => {
 
       {/* <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div> */}
 
-      <div
-        className={styles.chartTitle}
-        style={{ top: margin.top, left: margin.left }}
-      >
+      <div className={styles.chartTitle} style={{ top: margin.top, left: margin.left }}>
         <Fade in={props.chartType !== "line"}>
           <span>Medicare rebates per 100 people ($)</span>
         </Fade>
@@ -527,11 +491,7 @@ const MultiChart = (props) => {
 
       {lineLabels.map((label, index) => {
         return (
-          <div
-            className={styles.lineLabel}
-            key={index}
-            style={{ top: label.y, left: label.x }}
-          >
+          <div className={styles.lineLabel} key={index} style={{ top: label.y, left: label.x }}>
             {label.text}
           </div>
         );

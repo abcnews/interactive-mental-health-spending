@@ -9,18 +9,18 @@ const sa3s = sa3sImport.sort((a, b) => a.SA3_NAME.localeCompare(b.SA3_NAME));
 // Import images
 import mapPin from "./DLS_NAV_ICON.png";
 
-const options = sa3s.map(sa3 => ({
+const options = sa3s.map((sa3) => ({
   value: sa3.SA3_CODE,
-  label: sa3.SA3_NAME
+  label: sa3.SA3_NAME,
 }));
 
 const MIN_INPUT_LENGTH = 2;
 
-export default props => {
+export default (props) => {
   const customStyles = {
     menu: (provided, state) => ({
       ...provided,
-      zIndex: 2 // So Scrolly stage doesn't go over the top
+      zIndex: 2, // So Scrolly stage doesn't go over the top
     }),
     control: (provided, state) => ({
       ...provided,
@@ -35,13 +35,12 @@ export default props => {
       backgroundPosition: "6px 45%",
       fontSize: "16px",
       cursor: "pointer",
-      padding: "5px 4px 3px 30px"
-    })
+      padding: "5px 4px 3px 30px",
+    }),
   };
 
   const formatOptionLabel = ({ value, label, ratio }) => {
-    const calculatedPercent =
-      Math.round(ratio * 100) < 1 ? "<1" : Math.round(ratio * 100);
+    const calculatedPercent = Math.round(ratio * 100) < 1 ? "<1" : Math.round(ratio * 100);
     return (
       <div style={{ display: "flex" }}>
         <div>{label}</div>
@@ -55,11 +54,11 @@ export default props => {
   };
 
   // Fires when user sets postcode
-  const handleChange = option => {
+  const handleChange = (option) => {
     props.handleSelection(option);
   };
 
-  const promiseOptions = async inputValue => {
+  const promiseOptions = async (inputValue) => {
     console.log(`Input value: ${inputValue}`);
     console.log(inputValue);
 
@@ -74,48 +73,40 @@ export default props => {
       console.log(`Maybe postcode!`);
 
       // Filter matches
-      const filteredPostcodes = postcodeToSa3.filter(
-        entry => entry.postcode.toString() === inputValue
-      );
+      const filteredPostcodes = postcodeToSa3.filter((entry) => entry.postcode.toString() === inputValue);
 
       // Array of only sa3s for difference comparison
-      const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+      const matchingSa3s = filteredPostcodes.map((postcode) => postcode.sa3);
 
       // Filter our select box final options
-      const filteredOptions = options.filter(option =>
-        matchingSa3s.includes(option.value)
-      );
+      const filteredOptions = options.filter((option) => matchingSa3s.includes(option.value));
 
       // Add postcode ratio to the options object
-      const optionsWithPostcode = filteredOptions.map(option => {
-        const ratio = filteredPostcodes.find(
-          entry => entry.sa3 === option.value
-        ).ratio;
+      const optionsWithPostcode = filteredOptions.map((option) => {
+        const ratio = filteredPostcodes.find((entry) => entry.sa3 === option.value).ratio;
 
         return {
           value: option.value,
           label: option.label,
-          ratio: ratio
+          ratio: ratio,
         };
       });
 
       // Sort by ratio
-      const sortedOptions = optionsWithPostcode.sort(
-        (a, b) => b.ratio - a.ratio
-      );
+      const sortedOptions = optionsWithPostcode.sort((a, b) => b.ratio - a.ratio);
 
       console.log(sortedOptions);
       return sortedOptions;
     }
 
     // If not a postcode just search the options
-    const filteredOptions = options.filter(option => {
+    const filteredOptions = options.filter((option) => {
       return option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
     });
 
     return filteredOptions;
 
-    // TODO: If filtered options is zero then assume a suburb/place search 
+    // TODO: If filtered options is zero then assume a suburb/place search
     // and return appropriate data
   };
 
