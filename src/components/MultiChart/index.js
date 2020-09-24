@@ -39,7 +39,7 @@ import {
 // File scoped constants
 const TRANSITION_DURATION = 0;
 const dotRadius = 5;
-const LINE_ANIMATION_DURATION = 1000;
+const LINE_ANIMATION_DURATION = 2000;
 const TICK_TEXT_MARGIN = 4;
 
 // Chart bar constants
@@ -111,115 +111,6 @@ const MultiChart = (props) => {
     component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
 
-  // const createChart = () => {
-  //   const initialSvg = d3.select(root.current);
-
-  //   width = initialSvg.node().getBoundingClientRect().width;
-  //   height = window.innerHeight;
-
-  //   margin = calculateMargins(width, height);
-
-  //   scaleX = d3
-  //     .scalePoint()
-  //     .domain(xTicks)
-  //     .range([margin.left, width - margin.right]);
-
-  //   scaleY = d3
-  //     .scaleLinear()
-  //     .domain([0, props.yMax])
-  //     .range([height - margin.bottom, margin.top]);
-
-  //   xAxis = (g) =>
-  //     g.attr("transform", `translate(0,${height - margin.bottom})`).call(
-  //       d3
-  //         .axisBottom(scaleX)
-  //         .tickFormat("")
-  //         .tickValues(xTicks.filter((tick) => typeof tick === "string"))
-  //     );
-
-  //   yAxis = makeYAxis;
-
-  //   // Draw the axis
-  //   initialXAxisGroup = initialSvg.append("g").call(xAxis);
-  //   initialYAxisGroup = initialSvg.append("g").call(yAxis);
-
-  //   initialSvg.attr("width", width);
-  //   initialSvg.attr("height", height);
-
-  //   // ADD LINE BACK LATER
-  //   // if (props.solidLine) {
-  //   //   // Create the path
-  //   //   chartSolidPath = initialSvg
-  //   //     .append("path")
-  //   //     .attr("fill", "none")
-  //   //     .attr("stroke", "none")
-  //   //     .attr("stroke-width", 2)
-  //   //     .attr("stroke", props.dotColor)
-  //   //     .attr("stroke-linejoin", "round")
-  //   //     .attr("stroke-linecap", "round")
-  //   //     .data([dataObject[props.dataKey]])
-  //   //     .attr("d", lineGenerator);
-
-  //   //   // Get the length of the line
-  //   //   const totalLength = chartSolidPath.node().getTotalLength();
-
-  //   //   // Animate the path
-  //   //   // TODO: focus on animations later
-  //   //   chartSolidPath
-  //   //     .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-  //   //     .attr("stroke-dashoffset", totalLength)
-  //   //     .transition()
-  //   //     .duration(LINE_ANIMATION_DURATION)
-  //   //     .attr("stroke-dashoffset", 0);
-  //   // }
-
-  //   if (props.averageLine) {
-  //     const averageData = generateAverageData(
-  //       dataObject[props.dataKey],
-  //       xField,
-  //       yField
-  //     );
-
-  //     // Create the path
-  //     chartAveragePath = initialSvg
-  //       .append("path")
-  //       .data([averageData])
-  //       .attr("fill", "none")
-  //       .attr("stroke", "#929292")
-  //       .attr("stroke-width", 1)
-  //       .attr("stroke-dasharray", `2, 2`)
-  //       .attr("d", lineGenerator);
-  //   }
-
-  //   console.log(isDocked);
-
-  //   const initialDots = initialSvg
-  //     .selectAll("circle")
-  //     .data(dataObject[props.dataKey])
-  //     .join("circle")
-  //     .style("stroke", "rgba(255, 255, 255, 0.6)")
-  //     .style("stroke-width", "1.5")
-  //     .style("fill", props.dotColor)
-  //     .style("transition", "opacity 1s")
-  //     .style("opacity", isDocked ? 1.0 : 0.0)
-  //     .attr("cx", (d) => {
-  //       if (d[xField] === "National") {
-  //         return 200;
-  //       }
-
-  //       return scaleX(d[xField]);
-  //     })
-  //     .attr("cy", (d) => scaleY(d[yField]))
-  //     .attr("r", dotRadius);
-
-  //   setSvg(initialSvg);
-  //   setDots(initialDots);
-  //   setSolidPath(chartSolidPath);
-  //   setAveragePath(chartAveragePath);
-  //   setXAxisGroup(initialXAxisGroup);
-  //   setYAxisGroup(initialYAxisGroup);
-  // };
-
   const processMarker = () => {
     if (!isDocked) return;
 
@@ -233,6 +124,12 @@ const MultiChart = (props) => {
     if (!Array.isArray(props.lines)) return;
 
     for (const line of props.lines) {
+      const lineGenerator = d3
+        .line()
+        .defined((d) => !isNaN(d[line.yField]))
+        .x((d) => component.scaleX(d[line.xField]))
+        .y((d) => component.scaleY(d[line.yField]));
+
       const dots = component.svg
         .selectAll(`circle.${line.lineName}`)
         .data(dataObject[line.dataKey])
@@ -254,9 +151,43 @@ const MultiChart = (props) => {
                 return component.scaleX(d[line.xField]);
               })
               .attr("r", dotRadius)
-              .call((enter) => enter.transition(t).attr("opacity", 1.0)),
+              .call((enter) => {
+                // Fade dots in
+                enter.transition(t).attr("opacity", 1.0);
+
+                if (enter.empty()) return;
+                const path = component.svg
+                  .data([dataObject[line.dataKey]])
+                  .append("path")
+                  .classed(line.lineName, true)
+                  .attr("fill", "none")
+                  .attr("stroke-width", 2)
+                  .attr("stroke", line.dotColor)
+                  .attr("opacity", 1.0)
+                  .attr("d", lineGenerator);
+
+                // Get the length of the line
+                const totalLength = path.node().getTotalLength();
+
+                // Animate the path
+                path
+                  .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+                  .attr("stroke-dashoffset", totalLength)
+                  .transition()
+                  .duration(LINE_ANIMATION_DURATION)
+                  .attr("stroke-dashoffset", 0);
+              }),
           (update) =>
             update
+              .call((update) => {
+                if (update.empty()) return;
+
+                component.svg
+                  .data([dataObject[line.dataKey]])
+                  .select(`path.${line.lineName}`)
+                  .attr("stroke-dasharray", 0)
+                  .attr("d", lineGenerator);
+              })
               .attr("cx", (d) => {
                 if (d[line.xField] === "National") {
                   return -2000000;
@@ -264,54 +195,18 @@ const MultiChart = (props) => {
 
                 return component.scaleX(d[line.xField]);
               })
-              .transition(t)
               .attr("cy", (d) => component.scaleY(d[line.yField])),
-          (exit) => exit.transition(t).attr("opacity", 0.0).remove()
+          (exit) =>
+            exit
+              .call((exit) => {
+                if (exit.empty()) return;
+
+                component.svg.select(`path.${line.lineName}`).remove();
+              })
+              .transition(t)
+              .attr("opacity", 0.0)
+              .remove()
         );
-
-      const lineGenerator = d3
-        .line()
-        .defined((d) => !isNaN(d[line.yField]))
-        .x((d) => component.scaleX(d[line.xField]))
-        .y((d) => component.scaleY(d[line.yField]));
-
-      const path = component.svg
-        .selectAll(`path.${line.lineName}`)
-        .data([dataObject[line.dataKey]])
-        .join(
-          (enter) =>
-            enter
-              .append("path")
-              .classed(line.lineName, true)
-              .attr("fill", "none")
-              .attr("stroke-width", 2)
-              .attr("stroke", line.dotColor)
-              .attr("opacity", 1.0)
-              .attr("d", lineGenerator),
-          (update) => update, //.remove(), <---- maybe try in a function
-          (exit) => exit.remove() // Isn't actually exiting just no line data TODO: maybe fix
-        );
-
-        // console.log(path)
-
-        // if (path) {
-        //   console.log(path.attr("d"));
-
-        //   if (path.attr("d")) {
-        //     // Get the length of the line
-        //     const totalLength = path.node().getTotalLength();
-    
-        //     // Animate the path
-        //     path
-        //       .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-        //       .attr("stroke-dashoffset", totalLength)
-        //       .transition()
-        //       .duration(LINE_ANIMATION_DURATION)
-        //       .attr("stroke-dashoffset", 0);
-        //   }
-        // }
-
-      
 
       // Dots on top (z-axis)
       dots.raise();
@@ -339,11 +234,6 @@ const MultiChart = (props) => {
     });
 
     observer.observe(root.current);
-
-    // Init layout effect after delay
-    // setTimeout(() => {
-    // createChart();
-    // }, 2000);
 
     // Do on unmount
     return () => {
@@ -417,119 +307,13 @@ const MultiChart = (props) => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
-    // console.log(dataObject[props.dataKey]);
-
     if (hasBeenDocked) {
       processLines();
     }
 
-    //   if (props.solidLine && solidPath) {
-    //     // Resize the path
-    //     solidPath.attr("d", lineGenerator);
-    //   }
-
-    //   if (props.averageLine && averagePath) {
-    //     averagePath.attr("d", lineGenerator);
-    //   }
-
-    //   dots
-    //     .attr("cx", (d) => scaleX(d[xField]))
-    //     .attr("cy", (d) => scaleY(d[yField]));
   }, [windowSize.width, windowSize.height, props.chartType]);
 
-  // Handle chart data change (will usually be via scrollyteller marks)
-  // useLayoutEffect(() => {
-  //   if (!component.svg) return;
-
-  //   scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
-  //   scaleY.domain([0, props.yMax]);
-
-  //   yAxis = makeYAxis;
-
-  //   xAxisGroup.transition().duration(TRANSITION_DURATION).call(xAxis);
-
-  //   yAxisGroup.transition().duration(TRANSITION_DURATION).call(yAxis);
-
-  //   // Check if we want a solid line between dots
-  //   if (props.solidLine) {
-  //     if (solidPath) solidPath.remove();
-
-  //     const newSolidPath = svg
-  //       .append("path")
-  //       .attr("fill", "none")
-  //       .attr("stroke", "none")
-  //       .attr("stroke-width", 2)
-  //       .attr("stroke", props.dotColor)
-  //       .attr("stroke-linejoin", "round")
-  //       .attr("stroke-linecap", "round")
-  //       .data([dataObject[props.dataKey]])
-  //       .attr("d", lineGenerator);
-
-  //     // // Get the length of the line
-  //     // const totalLength = path.node().getTotalLength();
-
-  //     // // Animate the path
-  //     // // TODO: focus on animations later
-  //     // path
-  //     //   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-  //     //   .attr("stroke-dashoffset", totalLength)
-  //     //   .transition()
-  //     //   .duration(LINE_ANIMATION_DURATION)
-  //     //   .attr("stroke-dashoffset", 0);
-
-  //     setSolidPath(newSolidPath);
-  //   } else if (solidPath) solidPath.remove();
-
-  //   // Check if we want to average the dots and plot a dotted line
-  //   if (props.averageLine) {
-  //     if (averagePath) averagePath.remove();
-
-  //     const averageData = generateAverageData(
-  //       dataObject[props.dataKey],
-  //       xField,
-  //       yField
-  //     );
-
-  //     // Create the path
-  //     const newAveragePath = svg
-  //       .append("path")
-  //       .data([averageData])
-  //       .attr("fill", "none")
-  //       .attr("stroke", "#929292")
-  //       .attr("stroke-width", 1)
-  //       .attr("stroke-dasharray", `2, 2`)
-  //       .attr("d", lineGenerator);
-
-  //     setAveragePath(newAveragePath);
-  //   } else if (averagePath) averagePath.remove();
-
-  //   // TODO: we need to handle extra data in the join I think
-  //   // see here: https://observablehq.com/@d3/selection-join
-  //   // NOTE: Fixed now. We needed to explicitly set attributes
-  //   // and styles etc.
-  //   const newDots = svg
-  //     .selectAll("circle")
-  //     .data(dataObject[props.dataKey])
-  //     .join("circle")
-  //     .style("stroke", "rgba(255, 255, 255, 0.6)")
-  //     .style("stroke-width", "1.5")
-  //     .style("fill", props.dotColor)
-  //     .style("transition", "opacity 1s")
-  //     .attr("cx", (d) => {
-  //       if (d[xField] === "National") {
-  //         return -200000;
-  //       }
-
-  //       return scaleX(d[xField]);
-  //     })
-  //     .attr("cy", (d) => scaleY(d[yField]))
-  //     .attr("r", dotRadius);
-
-  //   // Make sure dots are on top so raise them up
-  //   newDots.raise();
-
-  //   setDots(newDots);
-  // }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
+  
 
   // Detect docked or not so we can wait to animate
   useEffect(() => {
@@ -821,3 +605,208 @@ MultiChart.defaultProps = {
 };
 
 export default MultiChart;
+
+// OLD CODE
+
+// const createChart = () => {
+//   const initialSvg = d3.select(root.current);
+
+//   width = initialSvg.node().getBoundingClientRect().width;
+//   height = window.innerHeight;
+
+//   margin = calculateMargins(width, height);
+
+//   scaleX = d3
+//     .scalePoint()
+//     .domain(xTicks)
+//     .range([margin.left, width - margin.right]);
+
+//   scaleY = d3
+//     .scaleLinear()
+//     .domain([0, props.yMax])
+//     .range([height - margin.bottom, margin.top]);
+
+//   xAxis = (g) =>
+//     g.attr("transform", `translate(0,${height - margin.bottom})`).call(
+//       d3
+//         .axisBottom(scaleX)
+//         .tickFormat("")
+//         .tickValues(xTicks.filter((tick) => typeof tick === "string"))
+//     );
+
+//   yAxis = makeYAxis;
+
+//   // Draw the axis
+//   initialXAxisGroup = initialSvg.append("g").call(xAxis);
+//   initialYAxisGroup = initialSvg.append("g").call(yAxis);
+
+//   initialSvg.attr("width", width);
+//   initialSvg.attr("height", height);
+
+//   // ADD LINE BACK LATER
+//   // if (props.solidLine) {
+//   //   // Create the path
+//   //   chartSolidPath = initialSvg
+//   //     .append("path")
+//   //     .attr("fill", "none")
+//   //     .attr("stroke", "none")
+//   //     .attr("stroke-width", 2)
+//   //     .attr("stroke", props.dotColor)
+//   //     .attr("stroke-linejoin", "round")
+//   //     .attr("stroke-linecap", "round")
+//   //     .data([dataObject[props.dataKey]])
+//   //     .attr("d", lineGenerator);
+
+//   //   // Get the length of the line
+//   //   const totalLength = chartSolidPath.node().getTotalLength();
+
+//   //   // Animate the path
+//   //   // TODO: focus on animations later
+//   //   chartSolidPath
+//   //     .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+//   //     .attr("stroke-dashoffset", totalLength)
+//   //     .transition()
+//   //     .duration(LINE_ANIMATION_DURATION)
+//   //     .attr("stroke-dashoffset", 0);
+//   // }
+
+//   if (props.averageLine) {
+//     const averageData = generateAverageData(
+//       dataObject[props.dataKey],
+//       xField,
+//       yField
+//     );
+
+//     // Create the path
+//     chartAveragePath = initialSvg
+//       .append("path")
+//       .data([averageData])
+//       .attr("fill", "none")
+//       .attr("stroke", "#929292")
+//       .attr("stroke-width", 1)
+//       .attr("stroke-dasharray", `2, 2`)
+//       .attr("d", lineGenerator);
+//   }
+
+//   console.log(isDocked);
+
+//   const initialDots = initialSvg
+//     .selectAll("circle")
+//     .data(dataObject[props.dataKey])
+//     .join("circle")
+//     .style("stroke", "rgba(255, 255, 255, 0.6)")
+//     .style("stroke-width", "1.5")
+//     .style("fill", props.dotColor)
+//     .style("transition", "opacity 1s")
+//     .style("opacity", isDocked ? 1.0 : 0.0)
+//     .attr("cx", (d) => {
+//       if (d[xField] === "National") {
+//         return 200;
+//       }
+
+//       return scaleX(d[xField]);
+//     })
+//     .attr("cy", (d) => scaleY(d[yField]))
+//     .attr("r", dotRadius);
+
+//   setSvg(initialSvg);
+//   setDots(initialDots);
+//   setSolidPath(chartSolidPath);
+//   setAveragePath(chartAveragePath);
+//   setXAxisGroup(initialXAxisGroup);
+//   setYAxisGroup(initialYAxisGroup);
+// };
+
+// Handle chart data change (will usually be via scrollyteller marks)
+  // useLayoutEffect(() => {
+  //   if (!component.svg) return;
+
+  //   scaleX.domain(props.xNumberOfTicks === 5 ? xTicks5 : xTicks6);
+  //   scaleY.domain([0, props.yMax]);
+
+  //   yAxis = makeYAxis;
+
+  //   xAxisGroup.transition().duration(TRANSITION_DURATION).call(xAxis);
+
+  //   yAxisGroup.transition().duration(TRANSITION_DURATION).call(yAxis);
+
+  //   // Check if we want a solid line between dots
+  //   if (props.solidLine) {
+  //     if (solidPath) solidPath.remove();
+
+  //     const newSolidPath = svg
+  //       .append("path")
+  //       .attr("fill", "none")
+  //       .attr("stroke", "none")
+  //       .attr("stroke-width", 2)
+  //       .attr("stroke", props.dotColor)
+  //       .attr("stroke-linejoin", "round")
+  //       .attr("stroke-linecap", "round")
+  //       .data([dataObject[props.dataKey]])
+  //       .attr("d", lineGenerator);
+
+  //     // // Get the length of the line
+  //     // const totalLength = path.node().getTotalLength();
+
+  //     // // Animate the path
+  //     // // TODO: focus on animations later
+  //     // path
+  //     //   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+  //     //   .attr("stroke-dashoffset", totalLength)
+  //     //   .transition()
+  //     //   .duration(LINE_ANIMATION_DURATION)
+  //     //   .attr("stroke-dashoffset", 0);
+
+  //     setSolidPath(newSolidPath);
+  //   } else if (solidPath) solidPath.remove();
+
+  //   // Check if we want to average the dots and plot a dotted line
+  //   if (props.averageLine) {
+  //     if (averagePath) averagePath.remove();
+
+  //     const averageData = generateAverageData(
+  //       dataObject[props.dataKey],
+  //       xField,
+  //       yField
+  //     );
+
+  //     // Create the path
+  //     const newAveragePath = svg
+  //       .append("path")
+  //       .data([averageData])
+  //       .attr("fill", "none")
+  //       .attr("stroke", "#929292")
+  //       .attr("stroke-width", 1)
+  //       .attr("stroke-dasharray", `2, 2`)
+  //       .attr("d", lineGenerator);
+
+  //     setAveragePath(newAveragePath);
+  //   } else if (averagePath) averagePath.remove();
+
+  //   // TODO: we need to handle extra data in the join I think
+  //   // see here: https://observablehq.com/@d3/selection-join
+  //   // NOTE: Fixed now. We needed to explicitly set attributes
+  //   // and styles etc.
+  //   const newDots = svg
+  //     .selectAll("circle")
+  //     .data(dataObject[props.dataKey])
+  //     .join("circle")
+  //     .style("stroke", "rgba(255, 255, 255, 0.6)")
+  //     .style("stroke-width", "1.5")
+  //     .style("fill", props.dotColor)
+  //     .style("transition", "opacity 1s")
+  //     .attr("cx", (d) => {
+  //       if (d[xField] === "National") {
+  //         return -200000;
+  //       }
+
+  //       return scaleX(d[xField]);
+  //     })
+  //     .attr("cy", (d) => scaleY(d[yField]))
+  //     .attr("r", dotRadius);
+
+  //   // Make sure dots are on top so raise them up
+  //   newDots.raise();
+
+  //   setDots(newDots);
+  // }, [props.yMax, props.xNumberOfTicks, props.dataKey]);
