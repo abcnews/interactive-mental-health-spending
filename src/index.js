@@ -2,14 +2,14 @@
 import "core-js/features/symbol";
 import "regenerator-runtime/runtime.js";
 import "intersection-observer";
-import 'polyfill-array-includes';
+import "polyfill-array-includes";
 
 // Imports
 import React from "react";
 import { render } from "react-dom";
 import App from "./components/App";
 import { loadScrollyteller } from "@abcnews/scrollyteller";
-import jankdefer from "jankdefer"
+import jankdefer from "jankdefer";
 
 import * as d3Selection from "d3-selection";
 const d3 = { ...d3Selection };
@@ -34,7 +34,7 @@ const preInit = () => {
   const heroEl = d3.select(".Header").insert("div", ":first-child");
   heroEl.classed("pre-header-hero", true);
 
-  init()
+  init();
 };
 
 const init = async () => {
@@ -52,11 +52,7 @@ const init = async () => {
   );
 
   render(
-    <App
-      projectName={"Mental Health"}
-      scrollyData1={scrollyData1}
-      scrollyData2={scrollyData2}
-    />,
+    <App projectName={"Mental Health"} scrollyData1={scrollyData1} scrollyData2={scrollyData2} />,
     document.querySelector(".postcodesearch")
   );
 };
@@ -81,7 +77,5 @@ if (module.hot) {
 }
 
 if (process.env.NODE_ENV === "development") {
-  console.debug(
-    `[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`
-  );
+  console.debug(`[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`);
 }

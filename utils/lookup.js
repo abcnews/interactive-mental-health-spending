@@ -26,9 +26,7 @@ for (const response of calloutResponses) {
   let assignedArea;
 
   if (filteredLookup.length > 0) {
-    assignedArea = filteredLookup.reduce((prev, current) =>
-      prev.ratio > current.ratio ? prev : current
-    );
+    assignedArea = filteredLookup.reduce((prev, current) => (prev.ratio > current.ratio ? prev : current));
   }
 
   // Add region to our data

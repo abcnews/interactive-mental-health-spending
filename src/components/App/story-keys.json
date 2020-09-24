@@ -83,7 +83,7 @@
       }
     ]
   },
-  "two": {
+  "one": {
     "chartType": "dot",
     "dataKey": "allied",
     "yMax": "5000",
