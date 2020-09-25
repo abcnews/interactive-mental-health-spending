@@ -16,6 +16,7 @@ let storyKeys = require("./story-keys.json");
 export default props => {
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
+  const [configKey, setConfigKey] = useState(null)
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
@@ -26,6 +27,8 @@ export default props => {
 
     if (storyKeys[config.key].chartType === "line") setLineKey(storyKeys[config.key]);
     if (storyKeys[config.key].chartType === "dot") setDotKey(storyKeys[config.key]);
+
+    setConfigKey(config.key)
   };
 
   const handleSelection = data => {
@@ -91,6 +94,7 @@ export default props => {
               highlightOwnBar={lineKey.highlightOwnBar}
               lines={lineKey.lines}
               triggerOnDock={true}
+              markKey={configKey}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -114,6 +118,7 @@ export default props => {
               highlightBars={dotKey.highlightBars}
               highlightOwnBar={dotKey.highlightOwnBar}
               dots={dotKey.dots}
+              markKey={configKey}
             />
           </BackgroundStage>
         </Scrollyteller>

@@ -50,7 +50,7 @@ const BAR_HEIGHT_EXTEND = 22;
 // Load our data and assign to object
 const dataObject = {
   empty: [],
-  allied: sortData(require("./data/allied-data.json"), "Medicare benefits per 100 people ($)"),
+  allied: require("./data/allied-data.json"),
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
   gpFocus: require("./data/gp-focus.json")
@@ -63,7 +63,7 @@ const MultiChart = props => {
   const windowSize = useWindowSize();
 
   // Set up transition function
-  const t = d3.transition().duration(750);
+  const t = d3.transition().duration(500);
 
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
@@ -242,28 +242,28 @@ const MultiChart = props => {
     );
 
     const dots = component.svg
-      .selectAll("circle")
+      .selectAll("circle.dots")
       .data(dataObject[props.dots.dataKey])
       .join(
         enter =>
           enter
             .append("circle")
+            .classed("dots", true)
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
             .style("fill", props.dots.dotColor)
-            .style("transition", "opacity 1s")
-            .style("opacity", isDocked ? 1.0 : 0.0)
-            .attr("cx", d => {
-              if (d[props.dots.xField] === "National") {
-                return 1;
-              }
-
-              return component.scaleX(d[props.dots.xField]);
-            })
-            .attr("cy", d => component.scaleY(d[props.dots.yField]))
-            .attr("r", dotRadius),
-        update => update,
-        exit => exit
+            .attr("cx", d => component.scaleX(d[props.dots.xField]))
+            .attr("r", dotRadius)
+            .attr("cy", component.scaleY(0))
+            .call(enter => {
+              enter.transition(t).attr("cy", d => component.scaleY(d[props.dots.yField]));
+            }),
+        update =>
+          update
+            .transition(t)
+            .style("fill", props.dots.dotColor)
+            .attr("cy", d => component.scaleY(d[props.dots.yField])),
+        exit => exit.remove()
       );
 
     // const lineGenerator = d3
@@ -401,12 +401,12 @@ const MultiChart = props => {
     }
   }, [isDocked]);
 
-  // Do something if data changes
+  // Do something when mark hit in scrollyteller
   useEffect(() => {
     if (!component.svg) return;
 
     processMarker();
-  }, [props.lines, props.dots]);
+  }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
   useEffect(() => {
