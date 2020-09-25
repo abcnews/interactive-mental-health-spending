@@ -354,6 +354,7 @@ const MultiChart = props => {
     const makeYAxis = group =>
       group
         .attr("transform", `translate(${margin.left},0)`)
+        .transition()
         .call(
           d3
             .axisLeft(component.scaleY)

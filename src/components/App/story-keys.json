@@ -96,7 +96,7 @@
   },
   "alliedgroups": {
     "chartType": "dot",
-    "yMax": "5000",
+    "yMax": "4000",
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C9208",
