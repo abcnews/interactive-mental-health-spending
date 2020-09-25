@@ -233,7 +233,54 @@ const MultiChart = props => {
   };
 
   const processDots = () => {
-    console.log("Process dots");
+    console.log("Processing dots data...");
+
+    const averageData = generateAverageData(
+      dataObject[props.dots.dataKey],
+      props.dots.xField,
+      props.dots.yField
+    );
+
+    const dots = component.svg
+      .selectAll("circle")
+      .data(dataObject[props.dots.dataKey])
+      .join(
+        enter =>
+          enter
+            .append("circle")
+            .style("stroke", "rgba(255, 255, 255, 0.6)")
+            .style("stroke-width", "1.5")
+            .style("fill", props.dots.dotColor)
+            .style("transition", "opacity 1s")
+            .style("opacity", isDocked ? 1.0 : 0.0)
+            .attr("cx", d => {
+              if (d[props.dots.xField] === "National") {
+                return 1;
+              }
+
+              return component.scaleX(d[props.dots.xField]);
+            })
+            .attr("cy", d => component.scaleY(d[props.dots.yField]))
+            .attr("r", dotRadius),
+        update => update,
+        exit => exit
+      );
+
+    // const lineGenerator = d3
+    //   .line()
+    //   .defined(d => !isNaN(d[props.dots.yField]))
+    //   .x(d => component.scaleX(d[props.dots.xField]))
+    //   .y(d => component.scaleY(d[props.dots.yField]));
+
+    // // Create the path
+    // const chartAveragePath = component.svg
+    //   .append("path")
+    //   .data([averageData])
+    //   .attr("fill", "none")
+    //   .attr("stroke", "#929292")
+    //   .attr("stroke-width", 1)
+    //   .attr("stroke-dasharray", `2, 2`)
+    //   .attr("d", lineGenerator);
   };
 
   // Initial layout effect run once on mount
@@ -345,7 +392,7 @@ const MultiChart = props => {
     }
 
     if (isDocked) {
-      if (!hasBeenDocked) {
+      if (!hasBeenDocked && props.triggerOnDock) {
         processMarker();
         setHasBeenDocked(true);
       }
@@ -354,19 +401,12 @@ const MultiChart = props => {
     }
   }, [isDocked]);
 
-  // Do something if lines data changes
+  // Do something if data changes
   useEffect(() => {
     if (!component.svg) return;
 
     processMarker();
-  }, [props.lines]);
-
-  // Do something if dots data changes
-  useEffect(() => {
-    if (!component.svg) return;
-
-    processMarker();
-  }, [props.dots]);
+  }, [props.lines, props.dots]);
 
   // Calculate which vertical bars need to be highlighted
   useEffect(() => {

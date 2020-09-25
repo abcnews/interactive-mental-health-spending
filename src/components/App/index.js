@@ -90,6 +90,7 @@ export default props => {
               highlightBars={lineKey.highlightBars}
               highlightOwnBar={lineKey.highlightOwnBar}
               lines={lineKey.lines}
+              triggerOnDock={true}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -112,7 +113,7 @@ export default props => {
               averageLine={dotKey.averageLine}
               highlightBars={dotKey.highlightBars}
               highlightOwnBar={dotKey.highlightOwnBar}
-              lines={dotKey.lines}
+              dots={dotKey.dots}
             />
           </BackgroundStage>
         </Scrollyteller>
