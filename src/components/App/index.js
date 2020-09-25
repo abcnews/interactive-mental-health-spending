@@ -15,15 +15,18 @@ let storyKeys = require("./story-keys.json");
 
 export default props => {
   const [currentKey, setCurrentKey] = useState(storyKeys.default);
+  const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
+  const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
     console.log("Config:", config);
 
-    if (config.key) {
-      // console.log(storyKeys[config.key]);
-      if (typeof storyKeys[config.key] !== "undefined") setCurrentKey(storyKeys[config.key]);
-    }
+    if (!config.key) return;
+    if (typeof storyKeys[config.key] === "undefined") return;
+
+    if (storyKeys[config.key].chartType === "line") setLineKey(storyKeys[config.key]);
+    if (storyKeys[config.key].chartType === "dot") setDotKey(storyKeys[config.key]);
   };
 
   const handleSelection = data => {
@@ -77,17 +80,17 @@ export default props => {
           panelComponent={CustomPanel}>
           <BackgroundStage>
             <MultiChart
-              chartType={currentKey.chartType}
-              dataKey={currentKey.dataKey}
-              yMax={currentKey.yMax}
-              dotColor={currentKey.dotColor}
-              xField={currentKey.xField}
-              yField={currentKey.yField}
-              solidLine={currentKey.solidLine}
-              averageLine={currentKey.averageLine}
-              highlightBars={currentKey.highlightBars}
-              highlightOwnBar={currentKey.highlightOwnBar}
-              lines={currentKey.lines}
+              chartType={lineKey.chartType}
+              dataKey={lineKey.dataKey}
+              yMax={lineKey.yMax}
+              dotColor={lineKey.dotColor}
+              xField={lineKey.xField}
+              yField={lineKey.yField}
+              solidLine={lineKey.solidLine}
+              averageLine={lineKey.averageLine}
+              highlightBars={lineKey.highlightBars}
+              highlightOwnBar={lineKey.highlightOwnBar}
+              lines={lineKey.lines}
             />
           </BackgroundStage>
         </Scrollyteller>
@@ -101,16 +104,16 @@ export default props => {
           <BackgroundStage>
             <MultiChart
               chartType={"dot"}
-              dataKey={currentKey.dataKey}
-              yMax={currentKey.yMax}
-              dotColor={currentKey.dotColor}
-              xField={currentKey.xField}
-              yField={currentKey.yField}
-              solidLine={currentKey.solidLine}
-              averageLine={currentKey.averageLine}
-              highlightBars={currentKey.highlightBars}
-              highlightOwnBar={currentKey.highlightOwnBar}
-              lines={currentKey.lines}
+              dataKey={dotKey.dataKey}
+              yMax={dotKey.yMax}
+              dotColor={dotKey.dotColor}
+              xField={dotKey.xField}
+              yField={dotKey.yField}
+              solidLine={dotKey.solidLine}
+              averageLine={dotKey.averageLine}
+              highlightBars={dotKey.highlightBars}
+              highlightOwnBar={dotKey.highlightOwnBar}
+              lines={dotKey.lines}
             />
           </BackgroundStage>
         </Scrollyteller>

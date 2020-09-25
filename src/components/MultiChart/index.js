@@ -114,10 +114,8 @@ const MultiChart = props => {
 
   const processMarker = () => {
     if (!isDocked) return;
-
-    if (props.chartType === "line") {
-      processLines();
-    }
+    if (props.chartType === "line") processLines();
+    if (props.chartType === "dot") processDots();
   };
 
   const processLines = () => {
@@ -234,6 +232,10 @@ const MultiChart = props => {
     setLineLabels(collectedLineLabels);
   };
 
+  const processDots = () => {
+    console.log("Process dots")
+  }
+
   // Initial layout effect run once on mount
   useLayoutEffect(() => {
     // Use intersection observer to trigger animation to start
@@ -331,7 +333,7 @@ const MultiChart = props => {
     if (hasBeenDocked) {
       processLines();
     }
-  }, [windowSize.width, windowSize.height, props.chartType]);
+  }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate
   useEffect(() => {
@@ -352,12 +354,21 @@ const MultiChart = props => {
     }
   }, [isDocked]);
 
+  // Do something if lines data changes
   useEffect(() => {
     if (!component.svg) return;
 
     processMarker();
   }, [props.lines]);
 
+  // Do something if dots data changes
+  useEffect(() => {
+    if (!component.svg) return;
+
+    processMarker();
+  }, [props.dots]);
+
+  // Calculate which vertical bars need to be highlighted
   useEffect(() => {
     if (!component.svg) return;
     // TODO: make this logic:
