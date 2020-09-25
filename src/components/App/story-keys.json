@@ -98,7 +98,7 @@
     "chartType": "dot",
     "yMax": "5000",
     "dots": {
-      "dataKey": "gpFocus",
+      "dataKey": "allied",
       "dotColor": "#3C9208",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)"
