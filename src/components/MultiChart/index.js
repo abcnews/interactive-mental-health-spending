@@ -24,7 +24,7 @@ const d3 = {
   ...d3ScaleChromatic,
   ...d3Transition,
   ...d3Format,
-  ...d3Shape
+  ...d3Shape,
 };
 
 // Local library imports
@@ -34,7 +34,7 @@ import {
   xTicks5,
   xTicks6,
   generateAverageData,
-  usePrevious
+  usePrevious,
 } from "./lib";
 
 // File scoped constants
@@ -46,6 +46,8 @@ const TICK_TEXT_MARGIN = 4;
 const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
 const BAR_HIGHLIGHT_COLOR = "rgba(220, 220, 220, 0.59)";
 const BAR_HEIGHT_EXTEND = 22;
+const DOT_BAR_HEIGHT_EXTEND = 45;
+const BACKGROUND_COLOR = "#f0f0f0";
 
 // Load our data and assign to object
 const dataObject = {
@@ -53,7 +55,7 @@ const dataObject = {
   allied: require("./data/allied-data.json"),
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
-  gpFocus: require("./data/gp-focus.json")
+  gpFocus: require("./data/gp-focus.json"),
 };
 
 // The main React function component
@@ -75,10 +77,11 @@ const MultiChart = props => {
     top: 0, // Proper margins are calculated later
     right: 0,
     bottom: 0,
-    left: 0
+    left: 0,
   });
   const [svgWidth, setSvgWidth] = useState(0);
-  const [ownBarNumber, setOwnBarNumber] = useState(4);
+  const [ownQuintile, setOwnQuintile] = useState(4);
+  const [ownRegion, setOwnRegion] = useState(4);
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
 
@@ -256,7 +259,9 @@ const MultiChart = props => {
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
             .call(enter => {
-              enter.transition(t).attr("cy", d => component.scaleY(d[props.dots.yField]));
+              enter
+                .transition(t)
+                .attr("cy", d => component.scaleY(d[props.dots.yField]));
             }),
         update =>
           update
@@ -300,7 +305,7 @@ const MultiChart = props => {
     let observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.99
+      threshold: 0.99,
     });
 
     observer.observe(root.current);
@@ -396,6 +401,10 @@ const MultiChart = props => {
       if (!hasBeenDocked && props.triggerOnDock) {
         processMarker();
         setHasBeenDocked(true);
+
+        // Test data generation
+        setOwnQuintile(getRandomInt(1, 5));
+        setOwnRegion(getRandomInt(1, 6));
       }
     } else {
       // Do something else (or nothing)
@@ -413,7 +422,6 @@ const MultiChart = props => {
   useEffect(() => {
     if (!component.svg) return;
     // TODO: make this logic:
-    // props.highlightOwnBar && hasBeenDocked && ownBarNumber === 1
     // for highlightBars state
     if (!hasBeenDocked) return;
 
@@ -423,14 +431,26 @@ const MultiChart = props => {
       bars.push(...props.highlightBars);
     }
 
-    if (props.highlightOwnBar) {
-      if (!bars.includes(ownBarNumber)) {
-        bars.push(ownBarNumber);
+    if (props.highlightOwnBar & (props.chartType === "line")) {
+      if (!bars.includes(ownQuintile)) {
+        bars.push(ownQuintile);
+      }
+    }
+
+    if (props.highlightOwnBar & (props.chartType === "dot")) {
+      if (!bars.includes(ownRegion)) {
+        bars.push(ownRegion);
       }
     }
 
     setHighlightBars(bars);
-  }, [props.highlightOwnBar, props.highlightBars, hasBeenDocked, ownBarNumber]);
+  }, [
+    props.highlightOwnBar,
+    props.highlightBars,
+    hasBeenDocked,
+    ownQuintile,
+    ownRegion,
+  ]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
@@ -440,7 +460,8 @@ const MultiChart = props => {
     <div className={styles.root}>
       <div
         className={styles.highlightBars}
-        style={{ top: margin.top, left: margin.left, width: chartWidth }}>
+        style={{ top: margin.top, left: margin.left, width: chartWidth }}
+      >
         {props.chartType === "line" && (
           <>
             <span
@@ -451,8 +472,11 @@ const MultiChart = props => {
                   : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(1) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR
-              }}></span>
+                backgroundColor: highlightBars.includes(1)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
+              }}
+            ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
@@ -461,8 +485,11 @@ const MultiChart = props => {
                   : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(2) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR
-              }}></span>
+                backgroundColor: highlightBars.includes(2)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
+              }}
+            ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
@@ -471,8 +498,11 @@ const MultiChart = props => {
                   : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(3) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR
-              }}></span>
+                backgroundColor: highlightBars.includes(3)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
+              }}
+            ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
@@ -481,8 +511,11 @@ const MultiChart = props => {
                   : `${chartHeight}px`,
                 flexGrow: 1,
                 borderRight: "2px solid #f0f0f0",
-                backgroundColor: highlightBars.includes(4) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR
-              }}></span>
+                backgroundColor: highlightBars.includes(4)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
+              }}
+            ></span>
             <span
               className={styles.lineHighlightBar}
               style={{
@@ -490,54 +523,108 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
-                backgroundColor: highlightBars.includes(5) ? BAR_HIGHLIGHT_COLOR : BAR_COLOR
-              }}></span>
+                backgroundColor: highlightBars.includes(5)
+                  ? BAR_HIGHLIGHT_COLOR
+                  : BAR_COLOR,
+              }}
+            ></span>
           </>
         )}
 
         {props.chartType === "dot" && (
           <>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                borderRight: "1px solid #f0f0f0"
-              }}></span>
+                height: highlightBars.includes(1)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: highlightBars.includes(1)
+                  ? ownRegion === 1 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                borderRight: "1px solid #f0f0f0"
-              }}></span>
+                height: highlightBars.includes(2)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: highlightBars.includes(2)
+                  ? ownRegion === 2 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                borderRight: "1px solid #f0f0f0"
-              }}></span>
+                height: highlightBars.includes(3)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: highlightBars.includes(3)
+                  ? ownRegion === 3 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                borderRight: "1px solid #f0f0f0"
-              }}></span>
+                height: highlightBars.includes(4)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: highlightBars.includes(4)
+                  ? ownRegion === 4 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1,
-                borderRight: "1px solid #f0f0f0"
-              }}></span>
+                height: highlightBars.includes(5)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                borderRight: "1px solid #f0f0f0",
+                backgroundColor: highlightBars.includes(5)
+                  ? ownRegion === 5 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
             <span
+              className={styles.dotHighlightBar}
               style={{
-                height: `${chartHeight}px`,
-                flexGrow: 1
-              }}></span>
+                height: highlightBars.includes(6)
+                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  : `${chartHeight}px`,
+                backgroundColor: highlightBars.includes(6)
+                  ? ownRegion === 6 && props.highlightOwnBar
+                    ? "#999"
+                    : props.dots.dotColor
+                  : BACKGROUND_COLOR,
+              }}
+            ></span>
           </>
         )}
       </div>
       <svg className={"scatter-plot"} ref={root}></svg>
 
-      <div className={styles.chartTitle} style={{ top: margin.top, left: margin.left }}>
+      <div
+        className={styles.chartTitle}
+        style={{ top: margin.top, left: margin.left }}
+      >
         <Fade in={props.chartType !== "line"}>
           <span>Medicare rebates per 100 people ($)</span>
         </Fade>
@@ -545,7 +632,11 @@ const MultiChart = props => {
 
       {lineLabels.map((label, index) => {
         return (
-          <div className={styles.lineLabel} key={index} style={{ top: label.y, left: label.x }}>
+          <div
+            className={styles.lineLabel}
+            key={index}
+            style={{ top: label.y, left: label.x }}
+          >
             {label.text}
           </div>
         );
@@ -557,8 +648,9 @@ const MultiChart = props => {
           style={{
             bottom: margin.bottom,
             left: margin.left,
-            width: `${chartWidth}px`
-          }}>
+            width: `${chartWidth}px`,
+          }}
+        >
           <div className={styles.tickTextBox}>
             <span>1</span>
             <span>2</span>
@@ -570,14 +662,16 @@ const MultiChart = props => {
           <div className={styles.tickDescription}>
             <div
               style={{
-                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Most disadvantaged
             </div>
             <div
               style={{
-                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 5 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Least disadvantaged
             </div>
           </div>
@@ -590,43 +684,50 @@ const MultiChart = props => {
           style={{
             bottom: margin.bottom,
             left: margin.left,
-            width: `${chartWidth}px`
-          }}>
+            width: `${chartWidth}px`,
+          }}
+        >
           <div className={styles.dotTickTextBox}>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Remote
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Outer regional
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Inner regional
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Major city low advantage
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Major city medium advantage
             </span>
             <span
               style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`
-              }}>
+                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+              }}
+            >
               Major city high advantage
             </span>
           </div>
@@ -638,10 +739,16 @@ const MultiChart = props => {
 
 // Set default props
 MultiChart.defaultProps = {
-  chartType: "dot"
+  chartType: "dot",
 };
 
 export default MultiChart;
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 // OLD CODE
 

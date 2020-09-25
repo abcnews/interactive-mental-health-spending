@@ -5,8 +5,7 @@
 
   .chart-title {
     position: absolute;
-    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
-      serif;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino, serif;
     color: #4b4b4b;
     font-size: 11px;
     font-weight: bold;
@@ -72,6 +71,11 @@
     }
   }
 
+  .dot-highlight-bar {
+    flex-grow: 1;
+    opacity: 0.15;
+  }
+
   .dev-info {
     position: absolute;
     top: 10px;
@@ -90,7 +94,7 @@
     font-weight: bold;
     font-size: 10px;
 
-    @media screen and (min-width:641px) {
+    @media screen and (min-width: 641px) {
       font-size: 11px;
     }
   }
