@@ -5,7 +5,13 @@
   },
   "dotDefault": {
     "chartType": "dot",
-    "yMax": "5000"
+    "yMax": "5000",
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)"
+    }
   },
   "distressed": {
     "chartType": "line",
@@ -87,6 +93,12 @@
   "allied": {
     "chartType": "dot",
     "dataKey": "allied",
-    "yMax": "5000"
+    "yMax": "5000",
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)"
+    }
   }
 }
