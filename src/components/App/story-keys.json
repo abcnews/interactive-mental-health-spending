@@ -87,6 +87,8 @@
   "allied": {
     "chartType": "dot",
     "yMax": "5000",
+    "highlightBars": [1, 6],
+    "highlightOwnBar": true,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
@@ -97,6 +99,7 @@
   "alliedgroups": {
     "chartType": "dot",
     "yMax": "4000",
+    "highlightBars": [1, 6],
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C9208",
