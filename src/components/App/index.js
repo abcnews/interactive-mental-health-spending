@@ -118,6 +118,7 @@ export default props => {
               highlightBars={dotKey.highlightBars}
               highlightOwnBar={dotKey.highlightOwnBar}
               dots={dotKey.dots}
+              triggerOnDock={true}
               markKey={configKey}
             />
           </BackgroundStage>
