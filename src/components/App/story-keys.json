@@ -1,7 +1,11 @@
 {
-  "default": {
+  "lineDefault": {
     "chartType": "line",
     "yMax": "30"
+  },
+  "dotDefault": {
+    "chartType": "dot",
+    "yMax": "5000"
   },
   "distressed": {
     "chartType": "line",
@@ -21,7 +25,6 @@
   },
   "leastmost": {
     "chartType": "line",
-    "dataKey": "distressed",
     "yMax": "30",
     "highlightOwnBar": false,
     "highlightBars": [1, 5],
@@ -38,7 +41,6 @@
   },
   "yourquintile": {
     "chartType": "line",
-    "dataKey": "distressed",
     "yMax": "30",
     "highlightOwnBar": true,
     "lines": [
@@ -58,7 +60,6 @@
   },
   "mentalcondition": {
     "chartType": "line",
-    "dataKey": "mentalCondition",
     "yMax": "30",
     "dotColor": "#3C92C8",
     "xField": "quintile",
@@ -83,12 +84,9 @@
       }
     ]
   },
-  "one": {
+  "allied": {
     "chartType": "dot",
     "dataKey": "allied",
-    "yMax": "5000",
-    "xNumberOfTicks": 6,
-    "yValueType": "dollars",
-    "dotColor": "#3C92C8"
+    "yMax": "5000"
   }
 }
