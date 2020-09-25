@@ -18,7 +18,7 @@ export default props => {
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
-    console.log("Config key:", config.key);
+    console.log("Config:", config);
 
     if (config.key) {
       // console.log(storyKeys[config.key]);
@@ -71,7 +71,10 @@ export default props => {
       </div>
 
       <Portal node={document.querySelector(".scrollystagemount")}>
-        <Scrollyteller panels={props.scrollyData1.panels} onMarker={onMarker} panelComponent={CustomPanel}>
+        <Scrollyteller
+          panels={props.scrollyData1.panels}
+          onMarker={onMarker}
+          panelComponent={CustomPanel}>
           <BackgroundStage>
             <MultiChart
               chartType={currentKey.chartType}
@@ -91,7 +94,10 @@ export default props => {
       </Portal>
 
       <Portal node={document.querySelector(".scrollystagemount2")}>
-        <Scrollyteller panels={props.scrollyData2.panels} onMarker={() => {}} panelComponent={CustomPanel}>
+        <Scrollyteller
+          panels={props.scrollyData2.panels}
+          onMarker={() => {}}
+          panelComponent={CustomPanel}>
           <BackgroundStage>
             <MultiChart
               chartType={"dot"}
