@@ -14,7 +14,6 @@ import heroImage from "./hero-top.png";
 let storyKeys = require("./story-keys.json");
 
 export default props => {
-  const [currentKey, setCurrentKey] = useState(storyKeys.default);
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
   const [userSelection, setUserSelection] = useState(null);
