@@ -83,7 +83,7 @@ const MultiChart = props => {
   const [lineLabels, setLineLabels] = useState([]);
 
   // Previous state or props of things
-  const prevLineLabels = usePrevious(lineLabels);
+  // const prevLineLabels = usePrevious(lineLabels);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -233,7 +233,7 @@ const MultiChart = props => {
   };
 
   const processDots = () => {
-    console.log("Processing dots data...");
+    if (!props.dots) return;
 
     const averageData = generateAverageData(
       dataObject[props.dots.dataKey],
