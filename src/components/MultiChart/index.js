@@ -233,8 +233,8 @@ const MultiChart = props => {
   };
 
   const processDots = () => {
-    console.log("Process dots")
-  }
+    console.log("Process dots");
+  };
 
   // Initial layout effect run once on mount
   useLayoutEffect(() => {
@@ -496,8 +496,6 @@ const MultiChart = props => {
       </div>
       <svg className={"scatter-plot"} ref={root}></svg>
 
-      {/* <div className={styles.devInfo}>{isDocked ? "DOCKED" : "UNDOCKED"}</div> */}
-
       <div className={styles.chartTitle} style={{ top: margin.top, left: margin.left }}>
         <Fade in={props.chartType !== "line"}>
           <span>Medicare rebates per 100 people ($)</span>
@@ -511,8 +509,6 @@ const MultiChart = props => {
           </div>
         );
       })}
-
-      {/* <div className={styles.lineLabel}>test</div> */}
 
       {props.chartType === "line" && (
         <div
