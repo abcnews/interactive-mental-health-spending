@@ -86,6 +86,8 @@ const MultiChart = props => {
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
   const [linesData, setLinesData] = useState([]);
+  const [dotsData, setDotsData] = useState();
+
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -117,11 +119,12 @@ const MultiChart = props => {
     component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
 
-  const processMarker = () => {
-    if (!isDocked) return;
-    if (props.chartType === "line") processLines();
-    if (props.chartType === "dot") processDots();
-  };
+  // NOW HANDLED WITH DOCK UNDOCK (FOR NOW)
+  // const processMarker = () => {
+  //   if (!isDocked) return;
+  //   if (props.chartType === "line") processLines();
+  //   if (props.chartType === "dot") processDots();
+  // };
 
   const processLines = () => {
     if (!Array.isArray(linesData)) return;
@@ -238,24 +241,24 @@ const MultiChart = props => {
   };
 
   const processDots = () => {
-    if (!props.dots) return;
+    if (!dotsData) return;
 
     const averageData = generateAverageData(
-      dataObject[props.dots.dataKey],
-      props.dots.xField,
-      props.dots.yField
+      dataObject[dotsData.dataKey],
+      dotsData.xField,
+      dotsData.yField
     );
 
     const lineGenerator = d3
       .line()
-      .defined(d => !isNaN(d[props.dots.yField]))
-      .x(d => component.scaleX(d[props.dots.xField]))
-      .y(d => component.scaleY(d[props.dots.yField]));
+      .defined(d => !isNaN(d[dotsData.yField]))
+      .x(d => component.scaleX(d[dotsData.xField]))
+      .y(d => component.scaleY(d[dotsData.yField]));
 
     // Process dots D3 data join
     const dots = component.svg
       .selectAll("circle.dots")
-      .data(dataObject[props.dots.dataKey])
+      .data(dataObject[dotsData.dataKey])
       .join(
         enter =>
           enter
@@ -263,15 +266,15 @@ const MultiChart = props => {
             .classed("dots", true)
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
-            .style("fill", props.dots.dotColor)
-            .attr("cx", d => component.scaleX(d[props.dots.xField]))
+            .style("fill", dotsData.dotColor)
+            .attr("cx", d => component.scaleX(d[dotsData.xField]))
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
             .call(enter => {
               if (enter.empty()) return;
 
               enter.transition(t).attr("cy", d => {
-                return component.scaleY(d[props.dots.yField]);
+                return component.scaleY(d[dotsData.yField]);
               });
 
               component.svg
@@ -299,9 +302,9 @@ const MultiChart = props => {
                 .attr("d", lineGenerator);
             })
             .transition(t)
-            .style("fill", props.dots.dotColor)
+            .style("fill", dotsData.dotColor)
             .attr("cy", d => {
-              return component.scaleY(d[props.dots.yField]);
+              return component.scaleY(d[dotsData.yField]);
             }),
         exit =>
           exit
@@ -442,9 +445,10 @@ const MultiChart = props => {
     if (isDocked) {
       // if (!hasBeenDocked && props.triggerOnDock) {
       if (props.triggerOnDock) {
-        setLinesData(props.lines);
         // processMarker();
         setHasBeenDocked(true);
+        setLinesData(props.lines);
+        processLines();
 
         // Test data generation
         setOwnQuintile(getRandomInt(1, 5));
@@ -471,11 +475,11 @@ const MultiChart = props => {
   }, [isDocked]);
 
   // Do something when mark hit in scrollyteller
-  useEffect(() => {
-    if (!component.svg) return;
+  // useEffect(() => {
+  //   if (!component.svg) return;
 
-    // setLinesData(props.lines);
-  }, [props.markKey]);
+  //   setLinesData(props.lines);
+  // }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
   useEffect(() => {
@@ -516,8 +520,16 @@ const MultiChart = props => {
   }, [props.lines]);
 
   useEffect(() => {
-    processLines();
+    setDotsData(props.dots);
+  }, [props.dots]);
+
+  useEffect(() => {
+    if (hasBeenDocked) processLines();
   }, [linesData]);
+
+  useEffect(() => {
+    if (hasBeenDocked) processDots();
+  }, [dotsData]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
