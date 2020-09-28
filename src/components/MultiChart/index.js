@@ -262,7 +262,6 @@ const MultiChart = props => {
             .attr("cy", component.scaleY(0))
             .call(enter => {
               enter.transition(t).attr("cy", d => {
-                console.log(d["SA3 group"])
                 return component.scaleY(d[props.dots.yField]);
               });
             }),
@@ -276,21 +275,21 @@ const MultiChart = props => {
         exit => exit.remove()
       );
 
-    // const lineGenerator = d3
-    //   .line()
-    //   .defined(d => !isNaN(d[props.dots.yField]))
-    //   .x(d => component.scaleX(d[props.dots.xField]))
-    //   .y(d => component.scaleY(d[props.dots.yField]));
+    const lineGenerator = d3
+      .line()
+      .defined(d => !isNaN(d[props.dots.yField]))
+      .x(d => component.scaleX(d[props.dots.xField]))
+      .y(d => component.scaleY(d[props.dots.yField]));
 
-    // // Create the path
-    // const chartAveragePath = component.svg
-    //   .append("path")
-    //   .data([averageData])
-    //   .attr("fill", "none")
-    //   .attr("stroke", "#929292")
-    //   .attr("stroke-width", 1)
-    //   .attr("stroke-dasharray", `2, 2`)
-    //   .attr("d", lineGenerator);
+    // Create the path
+    const chartAveragePath = component.svg
+      .append("path")
+      .data([averageData])
+      .attr("fill", "none")
+      .attr("stroke", "#929292")
+      .attr("stroke-width", 1)
+      .attr("stroke-dasharray", `2, 2`)
+      .attr("d", lineGenerator);
   };
 
   // Initial layout effect run once on mount
