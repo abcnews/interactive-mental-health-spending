@@ -85,6 +85,7 @@ const MultiChart = props => {
   const [ownRegion, setOwnRegion] = useState(4);
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
+  const [linesData, setLinesData] = useState([]);
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -123,11 +124,11 @@ const MultiChart = props => {
   };
 
   const processLines = () => {
-    if (!Array.isArray(props.lines)) return;
+    if (!Array.isArray(linesData)) return;
 
     const collectedLineLabels = [];
 
-    for (const line of props.lines) {
+    for (const line of linesData) {
       const label = { text: line.labelText };
 
       const lineGenerator = d3
@@ -439,8 +440,10 @@ const MultiChart = props => {
     }
 
     if (isDocked) {
-      if (!hasBeenDocked && props.triggerOnDock) {
-        processMarker();
+      // if (!hasBeenDocked && props.triggerOnDock) {
+      if (props.triggerOnDock) {
+        setLinesData(props.lines);
+        // processMarker();
         setHasBeenDocked(true);
 
         // Test data generation
@@ -448,7 +451,22 @@ const MultiChart = props => {
         setOwnRegion(getRandomInt(1, 6));
       }
     } else {
-      // Do something else (or nothing)
+      // For now let's remove data when un-docking...
+      // (Maybe don't do this in the end product)
+      setLinesData([
+        {
+          lineName: "line1",
+          dataKey: "empty",
+        },
+        {
+          lineName: "line2",
+          dataKey: "empty",
+        },
+      ]);
+
+      setHighlightBars([])
+
+      // processLines();
     }
   }, [isDocked]);
 
@@ -456,7 +474,7 @@ const MultiChart = props => {
   useEffect(() => {
     if (!component.svg) return;
 
-    processMarker();
+    // setLinesData(props.lines);
   }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
@@ -464,7 +482,7 @@ const MultiChart = props => {
     if (!component.svg) return;
     // TODO: make this logic:
     // for highlightBars state
-    if (!hasBeenDocked) return;
+    // if (!hasBeenDocked) return;
 
     let bars = [];
 
@@ -492,6 +510,14 @@ const MultiChart = props => {
     ownQuintile,
     ownRegion,
   ]);
+
+  useEffect(() => {
+    setLinesData(props.lines);
+  }, [props.lines]);
+
+  useEffect(() => {
+    processLines();
+  }, [linesData]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
