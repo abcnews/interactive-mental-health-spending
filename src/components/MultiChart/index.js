@@ -88,7 +88,6 @@ const MultiChart = props => {
   const [linesData, setLinesData] = useState([]);
   const [dotsData, setDotsData] = useState();
 
-
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
 
@@ -270,6 +269,7 @@ const MultiChart = props => {
             .attr("cx", d => component.scaleX(d[dotsData.xField]))
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
+            .attr("opacity", 1.0)
             .call(enter => {
               if (enter.empty()) return;
 
@@ -311,8 +311,12 @@ const MultiChart = props => {
             .call(exit => {
               if (exit.empty()) return;
 
-              console.log("There was an exit......");
+              console.log("There was an exit in dots......");
+
+              component.svg.select(`path.dots`).remove();
             })
+            .transition(t)
+            .attr("opacity", 0.0)
             .remove()
       );
 
@@ -448,7 +452,9 @@ const MultiChart = props => {
         // processMarker();
         setHasBeenDocked(true);
         setLinesData(props.lines);
+        setDotsData(props.dots);
         processLines();
+        processDots();
 
         // Test data generation
         setOwnQuintile(getRandomInt(1, 5));
@@ -468,7 +474,9 @@ const MultiChart = props => {
         },
       ]);
 
-      setHighlightBars([])
+      setDotsData({ dataKey: "empty" });
+
+      setHighlightBars([]);
 
       // processLines();
     }
