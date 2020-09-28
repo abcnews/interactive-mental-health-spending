@@ -192,6 +192,7 @@ const MultiChart = props => {
               }),
           update =>
             update
+              .attr("cy", d => component.scaleY(d[line.yField]))
               .call(update => {
                 if (update.empty()) return;
 
@@ -213,8 +214,7 @@ const MultiChart = props => {
                 }
 
                 return component.scaleX(d[line.xField]);
-              })
-              .attr("cy", d => component.scaleY(d[line.yField])),
+              }),
           exit =>
             exit
               .call(exit => {
@@ -245,6 +245,12 @@ const MultiChart = props => {
       props.dots.yField
     );
 
+    const lineGenerator = d3
+      .line()
+      .defined(d => !isNaN(d[props.dots.yField]))
+      .x(d => component.scaleX(d[props.dots.xField]))
+      .y(d => component.scaleY(d[props.dots.yField]));
+
     // Process dots D3 data join
     const dots = component.svg
       .selectAll("circle.dots")
@@ -261,35 +267,66 @@ const MultiChart = props => {
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
             .call(enter => {
+              if (enter.empty()) return;
+
               enter.transition(t).attr("cy", d => {
                 return component.scaleY(d[props.dots.yField]);
               });
+
+              component.svg
+                .append("path")
+                .classed("dots", true)
+                .data([averageData])
+                .attr("fill", "none")
+                .attr("stroke", "#929292")
+                .attr("stroke-width", 1)
+                .attr("stroke-dasharray", `2, 2`)
+                .attr("d", lineGenerator);
             }),
         update =>
           update
+            .call(update => {
+              if (update.empty()) return;
+
+              console.log("Updating average line......");
+
+              // Update average line
+              component.svg
+                .select(`path.dots`)
+                .data([averageData])
+                .transition(t)
+                .attr("d", lineGenerator);
+            })
             .transition(t)
             .style("fill", props.dots.dotColor)
             .attr("cy", d => {
               return component.scaleY(d[props.dots.yField]);
             }),
-        exit => exit.remove()
+        exit =>
+          exit
+            .call(exit => {
+              if (exit.empty()) return;
+
+              console.log("There was an exit......");
+            })
+            .remove()
       );
 
-    const lineGenerator = d3
-      .line()
-      .defined(d => !isNaN(d[props.dots.yField]))
-      .x(d => component.scaleX(d[props.dots.xField]))
-      .y(d => component.scaleY(d[props.dots.yField]));
+    // const lineGenerator = d3
+    //   .line()
+    //   .defined(d => !isNaN(d[props.dots.yField]))
+    //   .x(d => component.scaleX(d[props.dots.xField]))
+    //   .y(d => component.scaleY(d[props.dots.yField]));
 
     // Create the path
-    const chartAveragePath = component.svg
-      .append("path")
-      .data([averageData])
-      .attr("fill", "none")
-      .attr("stroke", "#929292")
-      .attr("stroke-width", 1)
-      .attr("stroke-dasharray", `2, 2`)
-      .attr("d", lineGenerator);
+    // const chartAveragePath = component.svg
+    //   .append("path")
+    //   .data([averageData])
+    //   .attr("fill", "none")
+    //   .attr("stroke", "#929292")
+    //   .attr("stroke-width", 1)
+    //   .attr("stroke-dasharray", `2, 2`)
+    //   .attr("d", lineGenerator);
   };
 
   // Initial layout effect run once on mount
