@@ -139,7 +139,7 @@ const MultiChart = props => {
         .x(d => component.scaleX(d[line.xField]))
         .y(d => component.scaleY(d[line.yField]));
 
-      const dots = component.svg
+      const lineDots = component.svg
         .selectAll(`circle.${line.lineName}`)
         .data(dataObject[line.dataKey])
         .join(
@@ -233,7 +233,7 @@ const MultiChart = props => {
       collectedLineLabels.push(label);
 
       // Dots on top (z-axis)
-      dots.raise();
+      lineDots.raise();
     }
 
     setLineLabels(collectedLineLabels);
@@ -255,7 +255,7 @@ const MultiChart = props => {
       .y(d => component.scaleY(d[dotsData.yField]));
 
     // Process dots D3 data join
-    const dots = component.svg
+    const dotsDots = component.svg
       .selectAll("circle.dots")
       .data(dataObject[dotsData.dataKey])
       .join(
@@ -273,7 +273,7 @@ const MultiChart = props => {
             .call(enter => {
               if (enter.empty()) return;
 
-              enter.transition(t).attr("cy", d => {
+              enter.transition().duration(1000).attr("cy", d => {
                 return component.scaleY(d[dotsData.yField]);
               });
 
@@ -294,12 +294,12 @@ const MultiChart = props => {
 
               console.log("Updating average line......");
 
-              // Update average line
-              component.svg
-                .select(`path.dots`)
-                .data([averageData])
-                .transition(t)
-                .attr("d", lineGenerator);
+              // // Update average line
+              // component.svg
+              //   .select(`path.dots`)
+              //   .data([averageData])
+              //   .transition(t)
+              //   .attr("d", lineGenerator);
             })
             .transition(t)
             .style("fill", dotsData.dotColor)
@@ -308,6 +308,9 @@ const MultiChart = props => {
             }),
         exit =>
           exit
+            .transition("line-exit")
+            .attr("opacity", 0.0)
+            .remove()
             .call(exit => {
               if (exit.empty()) return;
 
@@ -315,26 +318,10 @@ const MultiChart = props => {
 
               component.svg.select(`path.dots`).remove();
             })
-            .transition(t)
-            .attr("opacity", 0.0)
-            .remove()
       );
 
-    // const lineGenerator = d3
-    //   .line()
-    //   .defined(d => !isNaN(d[props.dots.yField]))
-    //   .x(d => component.scaleX(d[props.dots.xField]))
-    //   .y(d => component.scaleY(d[props.dots.yField]));
-
-    // Create the path
-    // const chartAveragePath = component.svg
-    //   .append("path")
-    //   .data([averageData])
-    //   .attr("fill", "none")
-    //   .attr("stroke", "#929292")
-    //   .attr("stroke-width", 1)
-    //   .attr("stroke-dasharray", `2, 2`)
-    //   .attr("d", lineGenerator);
+    // Dots on top (z-axis)
+    dotsDots.raise();
   };
 
   // Initial layout effect run once on mount
