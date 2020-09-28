@@ -56,6 +56,7 @@ const dataObject = {
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
   gpFocus: require("./data/gp-focus.json"),
+  psychiatrists: require("./data/psychiatrists.json"),
 };
 
 // The main React function component
@@ -244,6 +245,7 @@ const MultiChart = props => {
       props.dots.yField
     );
 
+    // Process dots D3 data join
     const dots = component.svg
       .selectAll("circle.dots")
       .data(dataObject[props.dots.dataKey])
@@ -259,15 +261,18 @@ const MultiChart = props => {
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
             .call(enter => {
-              enter
-                .transition(t)
-                .attr("cy", d => component.scaleY(d[props.dots.yField]));
+              enter.transition(t).attr("cy", d => {
+                console.log(d["SA3 group"])
+                return component.scaleY(d[props.dots.yField]);
+              });
             }),
         update =>
           update
             .transition(t)
             .style("fill", props.dots.dotColor)
-            .attr("cy", d => component.scaleY(d[props.dots.yField])),
+            .attr("cy", d => {
+              return component.scaleY(d[props.dots.yField]);
+            }),
         exit => exit.remove()
       );
 
