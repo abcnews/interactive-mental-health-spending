@@ -276,6 +276,7 @@ const MultiChart = props => {
               enter
                 .transition()
                 .duration(1000)
+                .delay((d, i) => i * 2)
                 .attr("cy", d => {
                   return component.scaleY(d[dotsData.yField]);
                 });
@@ -296,8 +297,8 @@ const MultiChart = props => {
             }),
         update =>
           update
-
             .transition()
+            .delay((d, i) => i * 2)
             .style("fill", dotsData.dotColor)
             .attr("opacity", 1.0)
             .attr("cy", d => {
