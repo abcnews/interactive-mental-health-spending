@@ -87,8 +87,8 @@
   "allied": {
     "chartType": "dot",
     "yMax": "5000",
-    "highlightBars": [1, 6],
-    "highlightOwnBar": true,
+    "highlightBars": [],
+    "highlightOwnBar": false,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
@@ -99,10 +99,10 @@
   "alliedgroups": {
     "chartType": "dot",
     "yMax": "5000",
-    "highlightBars": [1, 6],
+    "highlightBars": [],
     "dots": {
-      "dataKey": "psychiatrists",
-      "dotColor": "#3C9208",
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)"
     }
