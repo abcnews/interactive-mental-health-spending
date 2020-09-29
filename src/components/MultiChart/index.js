@@ -162,7 +162,7 @@ const MultiChart = props => {
               .attr("r", dotRadius)
               .call(enter => {
                 // Fade dots in
-                enter.transition(t).attr("opacity", 1.0);
+                enter.transition().attr("opacity", 1.0);
 
                 if (enter.empty()) return;
 
@@ -225,7 +225,7 @@ const MultiChart = props => {
 
                 component.svg.select(`path.${line.lineName}`).remove();
               })
-              .transition(t)
+              .transition()
               .attr("opacity", 0.0)
               .remove()
         );
@@ -273,9 +273,12 @@ const MultiChart = props => {
             .call(enter => {
               if (enter.empty()) return;
 
-              enter.transition().duration(1000).attr("cy", d => {
-                return component.scaleY(d[dotsData.yField]);
-              });
+              enter
+                .transition()
+                .duration(1000)
+                .attr("cy", d => {
+                  return component.scaleY(d[dotsData.yField]);
+                });
 
               component.svg
                 .append("path")
@@ -285,39 +288,61 @@ const MultiChart = props => {
                 .attr("stroke", "#929292")
                 .attr("stroke-width", 1)
                 .attr("stroke-dasharray", `2, 2`)
-                .attr("d", lineGenerator);
+                .attr("opacity", 0.0)
+                .attr("d", lineGenerator)
+                .transition()
+                .delay(1000)
+                .attr("opacity", 1.0);
             }),
         update =>
           update
+
+            .transition()
+            .style("fill", dotsData.dotColor)
+            .attr("opacity", 1.0)
+            .attr("cy", d => {
+              return component.scaleY(d[dotsData.yField]);
+            })
             .call(update => {
               if (update.empty()) return;
 
-              console.log("Updating average line......");
+              const path = component.svg.select("path.dots");
 
-              // // Update average line
-              // component.svg
-              //   .select(`path.dots`)
-              //   .data([averageData])
-              //   .transition(t)
-              //   .attr("d", lineGenerator);
-            })
-            .transition(t)
-            .style("fill", dotsData.dotColor)
-            .attr("cy", d => {
-              return component.scaleY(d[dotsData.yField]);
+              // Fade line back in if it has been removed
+              if (path.empty()) {
+                component.svg
+                  .append("path")
+                  .classed("dots", true)
+                  .data([averageData])
+                  .attr("fill", "none")
+                  .attr("stroke", "#929292")
+                  .attr("stroke-width", 1)
+                  .attr("stroke-dasharray", `2, 2`)
+                  .attr("opacity", 0.0)
+                  .attr("d", lineGenerator)
+                  .transition()
+                  .delay(250)
+                  .attr("opacity", 1.0);
+
+                return;
+              }
+
+              // Otherwise:
+              // Update average line
+              path.data([averageData]).transition().attr("d", lineGenerator);
             }),
+
         exit =>
           exit
-            .transition("line-exit")
-            .attr("opacity", 0.0)
-            .remove()
             .call(exit => {
               if (exit.empty()) return;
 
-              console.log("There was an exit in dots......");
-
               component.svg.select(`path.dots`).remove();
             })
+            .transition()
+            .duration(750)
+            .attr("opacity", 0.0)
+            .remove()
       );
 
     // Dots on top (z-axis)
