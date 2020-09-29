@@ -110,6 +110,7 @@ export default props => {
               dots={dotKey.dots}
               triggerOnDock={true}
               markKey={configKey}
+              showLowHighDots={dotKey.showLowHighDots}
             />
           </BackgroundStage>
         </Scrollyteller>
