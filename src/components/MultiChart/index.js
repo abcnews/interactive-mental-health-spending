@@ -118,12 +118,11 @@ const MultiChart = props => {
     component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
 
-  // NOW HANDLED WITH DOCK UNDOCK (FOR NOW)
-  // const processMarker = () => {
-  //   if (!isDocked) return;
-  //   if (props.chartType === "line") processLines();
-  //   if (props.chartType === "dot") processDots();
-  // };
+  const processCharts = () => {
+    if (!isDocked) return;
+    if (props.chartType === "line") processLines();
+    if (props.chartType === "dot") processDots();
+  };
 
   const processLines = () => {
     if (!Array.isArray(linesData)) return;
@@ -276,7 +275,7 @@ const MultiChart = props => {
               enter
                 .transition()
                 .duration(1000)
-                .delay((d, i) => i * 2)
+                .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
                   return component.scaleY(d[dotsData.yField]);
                 });
@@ -292,13 +291,16 @@ const MultiChart = props => {
                 .attr("opacity", 0.0)
                 .attr("d", lineGenerator)
                 .transition()
-                .delay(1000)
+                .delay(750)
                 .attr("opacity", 1.0);
             }),
         update =>
           update
+          .attr("cx", d => {
+            return component.scaleX(d[dotsData.xField]);
+          })
             .transition()
-            .delay((d, i) => i * 2)
+            .delay((d, i) => i * 1) // Maybe don't do this effect
             .style("fill", dotsData.dotColor)
             .attr("opacity", 1.0)
             .attr("cy", d => {
@@ -341,7 +343,7 @@ const MultiChart = props => {
               component.svg.select(`path.dots`).remove();
             })
             .transition()
-            .duration(750)
+            .duration(500)
             .attr("opacity", 0.0)
             .remove()
       );
@@ -445,9 +447,7 @@ const MultiChart = props => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
-    if (hasBeenDocked) {
-      processLines();
-    }
+    processCharts();
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate
