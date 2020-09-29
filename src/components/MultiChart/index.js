@@ -65,9 +65,6 @@ const MultiChart = props => {
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
 
-  // Set up transition function
-  const t = d3.transition().duration(500);
-
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
 
@@ -85,8 +82,8 @@ const MultiChart = props => {
   const [ownRegion, setOwnRegion] = useState(4);
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
-  const [linesData, setLinesData] = useState([]);
-  const [dotsData, setDotsData] = useState();
+  const [linesDataKey, setLinesDataKey] = useState([]);
+  const [dotsDataKey, setDotsDataKey] = useState();
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -125,11 +122,11 @@ const MultiChart = props => {
   };
 
   const processLines = () => {
-    if (!Array.isArray(linesData)) return;
+    if (!Array.isArray(linesDataKey)) return;
 
     const collectedLineLabels = [];
 
-    for (const line of linesData) {
+    for (const line of linesDataKey) {
       const label = { text: line.labelText };
 
       const lineGenerator = d3
@@ -239,24 +236,26 @@ const MultiChart = props => {
   };
 
   const processDots = () => {
-    if (!dotsData) return;
+    if (!dotsDataKey) return;
+
+    console.log(dataObject[dotsDataKey.dataKey][dotsDataKey])
 
     const averageData = generateAverageData(
-      dataObject[dotsData.dataKey],
-      dotsData.xField,
-      dotsData.yField
+      dataObject[dotsDataKey.dataKey],
+      dotsDataKey.xField,
+      dotsDataKey.yField
     );
 
     const lineGenerator = d3
       .line()
-      .defined(d => !isNaN(d[dotsData.yField]))
-      .x(d => component.scaleX(d[dotsData.xField]))
-      .y(d => component.scaleY(d[dotsData.yField]));
+      .defined(d => !isNaN(d[dotsDataKey.yField]))
+      .x(d => component.scaleX(d[dotsDataKey.xField]))
+      .y(d => component.scaleY(d[dotsDataKey.yField]));
 
     // Process dots D3 data join
     const dotsDots = component.svg
       .selectAll("circle.dots")
-      .data(dataObject[dotsData.dataKey])
+      .data(dataObject[dotsDataKey.dataKey])
       .join(
         enter =>
           enter
@@ -264,8 +263,12 @@ const MultiChart = props => {
             .classed("dots", true)
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
-            .style("fill", dotsData.dotColor)
-            .attr("cx", d => component.scaleX(d[dotsData.xField]))
+            .style("fill", d => {
+              if (d["SA3 name"] === "Woden Valley") return "black";
+
+              return dotsDataKey.dotColor;
+            })
+            .attr("cx", d => component.scaleX(d[dotsDataKey.xField]))
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
             .attr("opacity", 1.0)
@@ -277,7 +280,7 @@ const MultiChart = props => {
                 .duration(1000)
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
-                  return component.scaleY(d[dotsData.yField]);
+                  return component.scaleY(d[dotsDataKey.yField]);
                 });
 
               component.svg
@@ -296,15 +299,15 @@ const MultiChart = props => {
             }),
         update =>
           update
-          .attr("cx", d => {
-            return component.scaleX(d[dotsData.xField]);
-          })
+            .attr("cx", d => {
+              return component.scaleX(d[dotsDataKey.xField]);
+            })
             .transition()
             .delay((d, i) => i * 1) // Maybe don't do this effect
-            .style("fill", dotsData.dotColor)
+            .style("fill", dotsDataKey.dotColor)
             .attr("opacity", 1.0)
             .attr("cy", d => {
-              return component.scaleY(d[dotsData.yField]);
+              return component.scaleY(d[dotsDataKey.yField]);
             })
             .call(update => {
               if (update.empty()) return;
@@ -464,8 +467,8 @@ const MultiChart = props => {
       if (props.triggerOnDock) {
         // processMarker();
         setHasBeenDocked(true);
-        setLinesData(props.lines);
-        setDotsData(props.dots);
+        setLinesDataKey(props.lines);
+        setDotsDataKey(props.dots);
         processLines();
         processDots();
 
@@ -476,7 +479,7 @@ const MultiChart = props => {
     } else {
       // For now let's remove data when un-docking...
       // (Maybe don't do this in the end product)
-      setLinesData([
+      setLinesDataKey([
         {
           lineName: "line1",
           dataKey: "empty",
@@ -487,7 +490,7 @@ const MultiChart = props => {
         },
       ]);
 
-      setDotsData({ dataKey: "empty" });
+      setDotsDataKey({ dataKey: "empty" });
 
       setHighlightBars([]);
 
@@ -499,7 +502,7 @@ const MultiChart = props => {
   // useEffect(() => {
   //   if (!component.svg) return;
 
-  //   setLinesData(props.lines);
+  //   setLinesDataKey(props.lines);
   // }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
@@ -537,20 +540,20 @@ const MultiChart = props => {
   ]);
 
   useEffect(() => {
-    setLinesData(props.lines);
+    setLinesDataKey(props.lines);
   }, [props.lines]);
 
   useEffect(() => {
-    setDotsData(props.dots);
+    setDotsDataKey(props.dots);
   }, [props.dots]);
 
   useEffect(() => {
     if (hasBeenDocked) processLines();
-  }, [linesData]);
+  }, [linesDataKey]);
 
   useEffect(() => {
     if (hasBeenDocked) processDots();
-  }, [dotsData]);
+  }, [dotsDataKey]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
