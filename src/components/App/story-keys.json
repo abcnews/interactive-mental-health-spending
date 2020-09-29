@@ -100,6 +100,7 @@
     "chartType": "dot",
     "yMax": "5000",
     "highlightBars": [],
+    "showLowHighDots": true,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
