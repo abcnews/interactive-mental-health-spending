@@ -5,7 +5,8 @@
 
   .chart-title {
     position: absolute;
-    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+      serif;
     color: #4b4b4b;
     font-size: 11px;
     font-weight: bold;
@@ -86,8 +87,6 @@
 
   .line-label {
     position: absolute;
-    top: 10px;
-    left: 10px;
     transform: translate(0px, -135%);
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
@@ -96,6 +95,24 @@
 
     @media screen and (min-width: 641px) {
       font-size: 11px;
+    }
+  }
+
+  .dot-label {
+    position: absolute;
+    // top: 100px;
+    // left: 100px;
+    // transform: translate(-100%, 0%);
+    font-family: ABCSans, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 4px 1px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+    @media screen and (min-width: 641px) {
+      font-size: 10px;
     }
   }
 
