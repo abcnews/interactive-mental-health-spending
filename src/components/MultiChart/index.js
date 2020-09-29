@@ -85,6 +85,7 @@ const MultiChart = props => {
   const [lineLabels, setLineLabels] = useState([]);
   const [linesDataKey, setLinesDataKey] = useState([]);
   const [dotsDataKey, setDotsDataKey] = useState();
+  const [dotLabels, setDotLabels] = useState([]);
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -245,6 +246,21 @@ const MultiChart = props => {
     // NOTE: Doesn't detect duplicates TODO: do this later maybe
     const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
 
+    if (lowest && props.showLowHighDots) {
+      setDotLabels([
+        {
+          text: lowest["SA3 name"],
+          x: component.scaleX(lowest[dotsDataKey.xField]),
+          y: component.scaleY(lowest[dotsDataKey.yField]),
+        },
+        {
+          text: highest["SA3 name"],
+          x: component.scaleX(highest[dotsDataKey.xField]),
+          y: component.scaleY(highest[dotsDataKey.yField]),
+        }
+      ]);
+    } else setDotLabels([])
+
     const averageData = generateAverageData(
       dataObject[dotsDataKey.dataKey],
       dotsDataKey.xField,
@@ -285,7 +301,7 @@ const MultiChart = props => {
 
               enter
                 .transition()
-                .duration(1000)
+                .duration(750)
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
                   return component.scaleY(d[dotsDataKey.yField]);
@@ -302,7 +318,7 @@ const MultiChart = props => {
                 .attr("opacity", 0.0)
                 .attr("d", lineGenerator)
                 .transition()
-                .delay(1400)
+                .delay(1000)
                 .attr("opacity", 1.0);
             }),
         update =>
@@ -372,6 +388,8 @@ const MultiChart = props => {
 
   // Initial layout effect run once on mount
   useLayoutEffect(() => {
+    setDotLabels([{ text: "Label test", x: 200, y: 100 }]); // TESTING
+
     // Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
     let callback = (entries, observer) => {
@@ -851,6 +869,18 @@ const MultiChart = props => {
           </div>
         </div>
       )}
+
+      {dotLabels.map((label, index) => {
+        return (
+          <div
+            className={styles.dotLabel}
+            style={{ top: label.y, left: label.x }}
+            key={index}
+          >
+            {label.text}
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -862,6 +892,7 @@ MultiChart.defaultProps = {
 
 export default MultiChart;
 
+// Testing functions
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
