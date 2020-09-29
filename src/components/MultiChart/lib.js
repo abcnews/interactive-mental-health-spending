@@ -84,3 +84,33 @@ export function usePrevious(value) {
   // Return previous value (happens before update in useEffect above)
   return ref.current;
 }
+
+export const lowestHighest = (sa3s, yField) => {
+  // Work out lowest
+  // NOTE: Doesn't detect duplicates
+  let top;
+  let bottom;
+
+  for (const sa3 of sa3s) {
+    if (!top) {
+      top = sa3;
+      continue;
+    }
+    if (!bottom) {
+      bottom = sa3;
+      continue;
+    }
+
+    if (sa3[yField] < bottom[yField]) {
+      bottom = sa3;
+      continue;
+    }
+
+    if (sa3[yField] > top[yField]) {
+      top = sa3;
+      continue;
+    }
+  }
+
+  return { lowest: bottom, highest: top };
+};

@@ -35,6 +35,7 @@ import {
   xTicks6,
   generateAverageData,
   usePrevious,
+  lowestHighest,
 } from "./lib";
 
 // File scoped constants
@@ -238,7 +239,11 @@ const MultiChart = props => {
   const processDots = () => {
     if (!dotsDataKey) return;
 
-    console.log(dataObject[dotsDataKey.dataKey][dotsDataKey])
+    const sa3s = dataObject[dotsDataKey.dataKey];
+
+    // Work out lowest
+    // NOTE: Doesn't detect duplicates TODO: do this later maybe
+    const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
 
     const averageData = generateAverageData(
       dataObject[dotsDataKey.dataKey],
@@ -264,7 +269,10 @@ const MultiChart = props => {
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
             .style("fill", d => {
-              if (d["SA3 name"] === "Woden Valley") return "black";
+              if (props.showLowHighDots) {
+                if (d["SA3 name"] === lowest["SA3 name"]) return "black";
+                if (d["SA3 name"] === highest["SA3 name"]) return "black";
+              }
 
               return dotsDataKey.dotColor;
             })
@@ -294,7 +302,7 @@ const MultiChart = props => {
                 .attr("opacity", 0.0)
                 .attr("d", lineGenerator)
                 .transition()
-                .delay(750)
+                .delay(1400)
                 .attr("opacity", 1.0);
             }),
         update =>
@@ -304,7 +312,14 @@ const MultiChart = props => {
             })
             .transition()
             .delay((d, i) => i * 1) // Maybe don't do this effect
-            .style("fill", dotsDataKey.dotColor)
+            .style("fill", d => {
+              if (props.showLowHighDots) {
+                if (d["SA3 name"] === lowest["SA3 name"]) return "black";
+                if (d["SA3 name"] === highest["SA3 name"]) return "black";
+              }
+
+              return dotsDataKey.dotColor;
+            })
             .attr("opacity", 1.0)
             .attr("cy", d => {
               return component.scaleY(d[dotsDataKey.yField]);
