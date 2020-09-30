@@ -4,7 +4,7 @@ import * as d3Selection from "d3-selection";
 
 const d3 = { ...d3Selection };
 
-const BackgroundStage = (props) => {
+const BackgroundStage = props => {
   const stageRef = useRef();
 
   useEffect(() => {
@@ -20,7 +20,6 @@ const BackgroundStage = (props) => {
   return (
     <div className={styles.root} ref={stageRef}>
       {props.children}
-      {/* <MultiChart /> */}
     </div>
   );
 };
