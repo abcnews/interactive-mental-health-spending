@@ -135,6 +135,13 @@
     }
   }
 
+
+  // Set when a testimony from a particular SA3 is
+  // highlighted in a hash #marker
+  .testimony-target {
+    dummy: value;
+  }
+
   :global {
     svg.scatter-plot {
       // background: #f0f0f0;
@@ -187,15 +194,6 @@
     .grid path {
       stroke-width: 0;
     }
-    // .legend-label {
-    //   font-weight: 600;
-    // }
-    // .legend-box {
-    //   fill: #fff;
-    //   fill-opacity: 0.5;
-    //   stroke: gray;
-    //   stroke-opacity: 0.5;
-    // }
 
     .title {
       font-size: 1em;

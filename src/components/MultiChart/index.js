@@ -229,7 +229,7 @@ const MultiChart = props => {
               .remove()
         );
 
-      collectedLineLabels.push(label);
+      if (label.text) collectedLineLabels.push(label);
 
       // Dots on top (z-axis)
       lineDots.raise();
@@ -288,6 +288,10 @@ const MultiChart = props => {
           enter
             .append("circle")
             .classed("dots", true)
+            .classed(styles.testimonyTarget, d => {
+              if (d["SA3 name"] === highest["SA3 name"]) return true
+              return false;
+            })
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
             .style("fill", d => {
@@ -313,6 +317,7 @@ const MultiChart = props => {
                   return component.scaleY(d[dotsDataKey.yField]);
                 });
 
+              // Add the average line to the chart
               component.svg
                 .append("path")
                 .classed("dots", true)
@@ -865,7 +870,7 @@ const MultiChart = props => {
       <TransitionGroup className={styles.transitionGroup}>
         {lineLabels.map((label, index) => {
           return (
-            <CSSTransition key={index} timeout={500} classNames={"item"}>
+            <CSSTransition key={index} timeout={0} classNames={"item"}>
               <div
                 className={styles.lineLabel}
                 key={index}
