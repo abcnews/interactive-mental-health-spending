@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
 import { Fade } from "@material-ui/core";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "./styles.scss";
 
 // D3 imports
@@ -247,19 +248,24 @@ const MultiChart = props => {
     const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
 
     if (lowest && props.showLowHighDots) {
-      setDotLabels([
-        {
-          text: lowest["SA3 name"],
-          x: component.scaleX(lowest[dotsDataKey.xField]),
-          y: component.scaleY(lowest[dotsDataKey.yField]),
-        },
-        {
-          text: highest["SA3 name"],
-          x: component.scaleX(highest[dotsDataKey.xField]),
-          y: component.scaleY(highest[dotsDataKey.yField]),
-        }
-      ]);
-    } else setDotLabels([])
+      setTimeout(() => {
+        setDotLabels([
+          {
+            text: lowest["SA3 name"],
+            x: component.scaleX(lowest[dotsDataKey.xField]),
+            y: component.scaleY(lowest[dotsDataKey.yField]),
+          },
+          {
+            text: highest["SA3 name"],
+            x: component.scaleX(highest[dotsDataKey.xField]),
+            y: component.scaleY(highest[dotsDataKey.yField]),
+          },
+        ]);
+      }, 500);
+    } else
+      setTimeout(() => {
+        setDotLabels([]);
+      }, 500);
 
     const averageData = generateAverageData(
       dataObject[dotsDataKey.dataKey],
@@ -756,7 +762,6 @@ const MultiChart = props => {
         )}
       </div>
       <svg className={"scatter-plot"} ref={root}></svg>
-
       <div
         className={styles.chartTitle}
         style={{ top: margin.top, left: margin.left }}
@@ -766,17 +771,21 @@ const MultiChart = props => {
         </Fade>
       </div>
 
-      {lineLabels.map((label, index) => {
-        return (
-          <div
-            className={styles.lineLabel}
-            key={index}
-            style={{ top: label.y, left: label.x }}
-          >
-            {label.text}
-          </div>
-        );
-      })}
+      <TransitionGroup className={styles.transitionGroup}>
+        {lineLabels.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={styles.lineLabel}
+                key={index}
+                style={{ top: label.y, left: label.x }}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
 
       {props.chartType === "line" && (
         <div
@@ -813,7 +822,6 @@ const MultiChart = props => {
           </div>
         </div>
       )}
-
       {props.chartType === "dot" && (
         <div
           className={styles.tickTextContainer}
@@ -870,17 +878,21 @@ const MultiChart = props => {
         </div>
       )}
 
-      {dotLabels.map((label, index) => {
-        return (
-          <div
-            className={styles.dotLabel}
-            style={{ top: label.y, left: label.x }}
-            key={index}
-          >
-            {label.text}
-          </div>
-        );
-      })}
+      <TransitionGroup className={styles.transitionGroup}>
+        {dotLabels.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={styles.dotLabel}
+                style={{ top: label.y, left: label.x }}
+                key={index}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
     </div>
   );
 };
