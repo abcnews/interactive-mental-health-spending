@@ -394,8 +394,6 @@ const MultiChart = props => {
 
   // Initial layout effect run once on mount
   useLayoutEffect(() => {
-    setDotLabels([{ text: "Label test", x: 200, y: 100 }]); // TESTING
-
     // Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
     let callback = (entries, observer) => {
@@ -771,22 +769,6 @@ const MultiChart = props => {
         </Fade>
       </div>
 
-      <TransitionGroup className={styles.transitionGroup}>
-        {lineLabels.map((label, index) => {
-          return (
-            <CSSTransition key={index} timeout={500} classNames={"item"}>
-              <div
-                className={styles.lineLabel}
-                key={index}
-                style={{ top: label.y, left: label.x }}
-              >
-                {label.text}
-              </div>
-            </CSSTransition>
-          );
-        })}
-      </TransitionGroup>
-
       {props.chartType === "line" && (
         <div
           className={styles.tickTextContainer}
@@ -877,6 +859,24 @@ const MultiChart = props => {
           </div>
         </div>
       )}
+
+      {/* LABELS */}
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {lineLabels.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={styles.lineLabel}
+                key={index}
+                style={{ top: label.y, left: label.x }}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
 
       <TransitionGroup className={styles.transitionGroup}>
         {dotLabels.map((label, index) => {
