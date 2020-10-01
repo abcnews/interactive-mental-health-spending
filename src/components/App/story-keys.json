@@ -93,7 +93,8 @@
       "dataKey": "allied",
       "dotColor": "#3C92C8",
       "xField": "SA3 group",
-      "yField": "Medicare benefits per 100 people ($)"
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": "Brisbane Inner"
     }
   },
   "alliedgroups": {

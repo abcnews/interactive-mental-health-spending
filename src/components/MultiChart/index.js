@@ -279,17 +279,19 @@ const MultiChart = props => {
       .x(d => component.scaleX(d[dotsDataKey.xField]))
       .y(d => component.scaleY(d[dotsDataKey.yField]));
 
-    // Process dots D3 data join
-    const dotsDots = component.svg
+    component.dotsDots = component.svg
       .selectAll("circle.dots")
-      .data(dataObject[dotsDataKey.dataKey])
+      .data(dataObject[dotsDataKey.dataKey], d => {
+        return d["SA3 name"]
+      })
       .join(
         enter =>
           enter
             .append("circle")
+            .attr("id", d => d["SA3 name"])
             .classed("dots", true)
             .classed("dots-testimony-target", d => {
-              if (d["SA3 name"] === highest["SA3 name"]) return true;
+              if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
               return false;
             })
             .style("stroke", "rgba(255, 255, 255, 0.6)")
@@ -316,22 +318,23 @@ const MultiChart = props => {
                 .attr("cy", d => {
                   return component.scaleY(d[dotsDataKey.yField]);
                 })
+
+                // Experimenting with adding flashing dot on testimonials target
                 .end()
                 .then(() => {
-                  // Animate testimony target
-                  const animatedDot = d3.select(".dots-testimony-target");
+                  const testimonyTarget = d3.select(".dots-testimony-target");
 
-                  // Make a clone of the original circle
-                  const originalOnTop = d3
-                    .select(".dots-testimony-target")
-                    .clone(true);
+                  if (testimonyTarget.empty()) return;
 
-                  animatedDot
+                  const pulseDot = component.svg
+                    .append("circle")
+                    .attr("cx", testimonyTarget.attr("cx"))
+                    .attr("cy", testimonyTarget.attr("cy"))
                     .style("fill", "rgba(39, 172, 255, 0.49)")
                     .style("stroke", null)
-                    .attr("class", null); // Remove from data selections
+                    .classed("dots-animated-pulse", true);
 
-                  pulse(animatedDot);
+                  pulse(pulseDot);
 
                   function pulse(circle) {
                     (function repeat() {
@@ -347,6 +350,11 @@ const MultiChart = props => {
                         .on("end", repeat);
                     })();
                   }
+
+                  // THIS CAUSES ISSUES WHEN WE ARE UPDATING SELECTALL DATA
+                  // CONSIDER MAYBE USING A COMPONENT VAR
+                  pulseDot.raise();
+                  testimonyTarget.raise();
                 });
 
               // Add the average line to the chart
@@ -386,6 +394,10 @@ const MultiChart = props => {
             .call(update => {
               if (update.empty()) return;
 
+              const pulseDot = component.svg.select(
+                "circle.dots-animated-pulse"
+              );
+
               const path = component.svg.select("path.dots");
 
               // Fade line back in if it has been removed
@@ -411,13 +423,14 @@ const MultiChart = props => {
               // Update average line
               path.data([averageData]).transition().attr("d", lineGenerator);
             }),
-
         exit =>
           exit
             .call(exit => {
               if (exit.empty()) return;
 
+              // Remove other elements
               component.svg.select(`path.dots`).remove();
+              component.svg.select(`circle.dots-animated-pulse`).remove();
             })
             .transition()
             .duration(500)
@@ -425,11 +438,52 @@ const MultiChart = props => {
             .remove()
       );
 
+    // Process dots D3 data join
+
     // const test = component.svg.insert("circle", "circle.dots-testimony-target");
     // console.log(test);
 
+    // function processDotPulse() {
+    //   // Just in case there's one there already, remove
+    //   // const pulseFound = d3.select(".dots-animated-pulse");
+    //   // if (!pulseFound.empty()) {
+    //   //   pulseFound.remove();
+    //   // }
+
+    //   // Animate testimony target
+    //   // const pulseDot = d3.select(".dots-testimony-target");
+
+    //   // if (testimonyTarget.empty()) return;
+
+    //   // Make a clone of the original circle
+    //   // d3.select(".dots-testimony-target").clone(true);
+
+    //   pulseDot
+    //     .style("fill", "rgba(39, 172, 255, 0.49)")
+    //     .style("stroke", null)
+    //     .attr("class", null)
+    //     .classed("dots-animated-pulse", true); // Remove from data selections
+
+    //   pulse(pulseDot);
+
+    //   function pulse(circle) {
+    //     (function repeat() {
+    //       circle
+    //         .attr("r", 0)
+    //         .style("opacity", 1.0)
+    //         .transition()
+    //         .duration(1000)
+    //         .attr("r", 12)
+    //         .transition()
+    //         .duration(250)
+    //         .style("opacity", 0.0)
+    //         .on("end", repeat);
+    //     })();
+    //   }
+    // }
+
     // Dots on top (z-axis)
-    dotsDots.raise();
+    // dotsDots.raise();
   };
 
   // Initial layout effect run once on mount
