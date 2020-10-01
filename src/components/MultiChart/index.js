@@ -279,16 +279,17 @@ const MultiChart = props => {
       .x(d => component.scaleX(d[dotsDataKey.xField]))
       .y(d => component.scaleY(d[dotsDataKey.yField]));
 
-    component.dotsDots = component.svg
+    // Process dots D3 data join
+    const dotsDots = component.svg
       .selectAll("circle.dots")
       .data(dataObject[dotsDataKey.dataKey], d => {
-        return d["SA3 name"]
+        return d["SA3 name"];
       })
       .join(
         enter =>
           enter
             .append("circle")
-            .attr("id", d => d["SA3 name"])
+            // .attr("id", d => d["SA3 name"])
             .classed("dots", true)
             .classed("dots-testimony-target", d => {
               if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
@@ -336,23 +337,7 @@ const MultiChart = props => {
 
                   pulse(pulseDot);
 
-                  function pulse(circle) {
-                    (function repeat() {
-                      circle
-                        .attr("r", 0)
-                        .style("opacity", 1.0)
-                        .transition()
-                        .duration(1000)
-                        .attr("r", 12)
-                        .transition()
-                        .duration(250)
-                        .style("opacity", 0.0)
-                        .on("end", repeat);
-                    })();
-                  }
-
-                  // THIS CAUSES ISSUES WHEN WE ARE UPDATING SELECTALL DATA
-                  // CONSIDER MAYBE USING A COMPONENT VAR
+                  // Raise our dots to the top
                   pulseDot.raise();
                   testimonyTarget.raise();
                 });
@@ -374,29 +359,16 @@ const MultiChart = props => {
             }),
         update =>
           update
+            .classed("dots-testimony-target", d => {
+              if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
+              return false;
+            })
+
             .attr("cx", d => {
               return component.scaleX(d[dotsDataKey.xField]);
             })
-            .transition()
-            .delay((d, i) => i * 1) // Maybe don't do this effect
-            .style("fill", d => {
-              if (props.showLowHighDots) {
-                if (d["SA3 name"] === lowest["SA3 name"]) return "black";
-                if (d["SA3 name"] === highest["SA3 name"]) return "black";
-              }
-
-              return dotsDataKey.dotColor;
-            })
-            .style("opacity", 1.0)
-            .attr("cy", d => {
-              return component.scaleY(d[dotsDataKey.yField]);
-            })
             .call(update => {
               if (update.empty()) return;
-
-              const pulseDot = component.svg.select(
-                "circle.dots-animated-pulse"
-              );
 
               const path = component.svg.select("path.dots");
 
@@ -415,13 +387,53 @@ const MultiChart = props => {
                   .transition()
                   .delay(250)
                   .style("opacity", 1.0);
-
-                return;
+              } else {
+                // Otherwise:
+                // Update average line
+                path.data([averageData]).transition().attr("d", lineGenerator);
               }
 
-              // Otherwise:
-              // Update average line
-              path.data([averageData]).transition().attr("d", lineGenerator);
+              return update
+                .transition()
+                .delay((d, i) => i * 1) // Maybe don't do this effect
+                .style("fill", d => {
+                  if (props.showLowHighDots) {
+                    if (d["SA3 name"] === lowest["SA3 name"]) return "black";
+                    if (d["SA3 name"] === highest["SA3 name"]) return "black";
+                  }
+
+                  return dotsDataKey.dotColor;
+                })
+                .style("opacity", 1.0)
+                .attr("cy", d => {
+                  return component.scaleY(d[dotsDataKey.yField]);
+                })
+                .end()
+                .then(() => {
+                  console.log("...ended");
+
+                  component.svg.select(`circle.dots-animated-pulse`).remove();
+
+                  const testimonyTarget = d3.select(".dots-testimony-target");
+
+                  if (!testimonyTarget.empty()) {
+                    const pulseDot = component.svg
+                      .append("circle")
+                      .attr("cx", testimonyTarget.attr("cx"))
+                      .attr("cy", testimonyTarget.attr("cy"))
+                      .style("fill", "rgba(39, 172, 255, 0.49)")
+                      .style("stroke", null)
+                      .classed("dots-animated-pulse", true);
+
+                    pulse(pulseDot);
+
+                    console.log("Update");
+
+                    // Raise our dots to the top
+                    pulseDot.raise();
+                    testimonyTarget.raise();
+                  }
+                });
             }),
         exit =>
           exit
@@ -438,52 +450,23 @@ const MultiChart = props => {
             .remove()
       );
 
-    // Process dots D3 data join
-
-    // const test = component.svg.insert("circle", "circle.dots-testimony-target");
-    // console.log(test);
-
-    // function processDotPulse() {
-    //   // Just in case there's one there already, remove
-    //   // const pulseFound = d3.select(".dots-animated-pulse");
-    //   // if (!pulseFound.empty()) {
-    //   //   pulseFound.remove();
-    //   // }
-
-    //   // Animate testimony target
-    //   // const pulseDot = d3.select(".dots-testimony-target");
-
-    //   // if (testimonyTarget.empty()) return;
-
-    //   // Make a clone of the original circle
-    //   // d3.select(".dots-testimony-target").clone(true);
-
-    //   pulseDot
-    //     .style("fill", "rgba(39, 172, 255, 0.49)")
-    //     .style("stroke", null)
-    //     .attr("class", null)
-    //     .classed("dots-animated-pulse", true); // Remove from data selections
-
-    //   pulse(pulseDot);
-
-    //   function pulse(circle) {
-    //     (function repeat() {
-    //       circle
-    //         .attr("r", 0)
-    //         .style("opacity", 1.0)
-    //         .transition()
-    //         .duration(1000)
-    //         .attr("r", 12)
-    //         .transition()
-    //         .duration(250)
-    //         .style("opacity", 0.0)
-    //         .on("end", repeat);
-    //     })();
-    //   }
-    // }
+    function pulse(circle) {
+      (function repeat() {
+        circle
+          .attr("r", 0)
+          .style("opacity", 1.0)
+          .transition()
+          .duration(1000)
+          .attr("r", 12)
+          .transition()
+          .duration(250)
+          .style("opacity", 0.0)
+          .on("end", repeat);
+      })();
+    }
 
     // Dots on top (z-axis)
-    // dotsDots.raise();
+    dotsDots.raise();
   };
 
   // Initial layout effect run once on mount
