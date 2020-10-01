@@ -147,7 +147,7 @@ const MultiChart = props => {
               .append("circle")
               .classed(line.lineName, true)
               .attr("cy", d => component.scaleY(d[line.yField]))
-              .attr("opacity", 0.0)
+              .style("opacity", 0.0)
               .style("stroke", "rgba(255, 255, 255, 0.6)")
               .style("stroke-width", "1.5")
               .style("fill", line.dotColor)
@@ -161,7 +161,7 @@ const MultiChart = props => {
               .attr("r", dotRadius)
               .call(enter => {
                 // Fade dots in
-                enter.transition().attr("opacity", 1.0);
+                enter.transition().style("opacity", 1.0);
 
                 if (enter.empty()) return;
 
@@ -172,7 +172,7 @@ const MultiChart = props => {
                   .attr("fill", "none")
                   .attr("stroke-width", 2)
                   .attr("stroke", line.dotColor)
-                  .attr("opacity", 1.0)
+                  .style("opacity", 1.0)
                   .attr("d", lineGenerator);
 
                 if (path.empty()) return;
@@ -225,7 +225,7 @@ const MultiChart = props => {
                 component.svg.select(`path.${line.lineName}`).remove();
               })
               .transition()
-              .attr("opacity", 0.0)
+              .style("opacity", 0.0)
               .remove()
         );
 
@@ -288,8 +288,8 @@ const MultiChart = props => {
           enter
             .append("circle")
             .classed("dots", true)
-            .classed(styles.testimonyTarget, d => {
-              if (d["SA3 name"] === highest["SA3 name"]) return true
+            .classed("dots-testimony-target", d => {
+              if (d["SA3 name"] === highest["SA3 name"]) return true;
               return false;
             })
             .style("stroke", "rgba(255, 255, 255, 0.6)")
@@ -305,7 +305,7 @@ const MultiChart = props => {
             .attr("cx", d => component.scaleX(d[dotsDataKey.xField]))
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
-            .attr("opacity", 1.0)
+            .style("opacity", 1.0)
             .call(enter => {
               if (enter.empty()) return;
 
@@ -315,6 +315,38 @@ const MultiChart = props => {
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
                   return component.scaleY(d[dotsDataKey.yField]);
+                })
+                .end()
+                .then(() => {
+                  // Animate testimony target
+                  const animatedDot = d3.select(".dots-testimony-target");
+
+                  // Make a clone of the original circle
+                  const originalOnTop = d3
+                    .select(".dots-testimony-target")
+                    .clone(true);
+
+                  animatedDot
+                    .style("fill", "rgba(39, 172, 255, 0.49)")
+                    .style("stroke", null)
+                    .attr("class", null); // Remove from data selections
+
+                  pulse(animatedDot);
+
+                  function pulse(circle) {
+                    (function repeat() {
+                      circle
+                        .attr("r", 0)
+                        .style("opacity", 1.0)
+                        .transition()
+                        .duration(1000)
+                        .attr("r", 12)
+                        .transition()
+                        .duration(250)
+                        .style("opacity", 0.0)
+                        .on("end", repeat);
+                    })();
+                  }
                 });
 
               // Add the average line to the chart
@@ -326,11 +358,11 @@ const MultiChart = props => {
                 .attr("stroke", "#929292")
                 .attr("stroke-width", 1)
                 .attr("stroke-dasharray", `2, 2`)
-                .attr("opacity", 0.0)
+                .style("opacity", 0.0)
                 .attr("d", lineGenerator)
                 .transition()
                 .delay(1000)
-                .attr("opacity", 1.0);
+                .style("opacity", 1.0);
             }),
         update =>
           update
@@ -347,7 +379,7 @@ const MultiChart = props => {
 
               return dotsDataKey.dotColor;
             })
-            .attr("opacity", 1.0)
+            .style("opacity", 1.0)
             .attr("cy", d => {
               return component.scaleY(d[dotsDataKey.yField]);
             })
@@ -366,11 +398,11 @@ const MultiChart = props => {
                   .attr("stroke", "#929292")
                   .attr("stroke-width", 1)
                   .attr("stroke-dasharray", `2, 2`)
-                  .attr("opacity", 0.0)
+                  .style("opacity", 0.0)
                   .attr("d", lineGenerator)
                   .transition()
                   .delay(250)
-                  .attr("opacity", 1.0);
+                  .style("opacity", 1.0);
 
                 return;
               }
@@ -389,9 +421,12 @@ const MultiChart = props => {
             })
             .transition()
             .duration(500)
-            .attr("opacity", 0.0)
+            .style("opacity", 0.0)
             .remove()
       );
+
+    // const test = component.svg.insert("circle", "circle.dots-testimony-target");
+    // console.log(test);
 
     // Dots on top (z-axis)
     dotsDots.raise();
@@ -909,11 +944,15 @@ MultiChart.defaultProps = {
 
 export default MultiChart;
 
-// Testing functions
+// Helper functions + testing
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function insertBefore(el, referenceNode) {
+  referenceNode.parentNode.insertBefore(el, referenceNode);
 }
 
 // OLD CODE
