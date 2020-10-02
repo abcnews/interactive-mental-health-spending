@@ -117,6 +117,32 @@
     "dots": {
       "dataKey": "empty"
     },
-    "averages": [{ "name": "Psych", "values": [122, 322, 333, 433, 131] }]
+    "averages": [
+      {
+        "name": "Psychiatry",
+        "values": [122, 322, 876, 2433, 3454, 4355],
+        "color": "#559CCC"
+      },
+      {
+        "name": "Psychology",
+        "values": [433, 757, 333, 667, 865, 3432],
+        "color": "#EB6600"
+      },
+      {
+        "name": "Other Psychology",
+        "values": [234, 453, 565, 544, 1234, 2453],
+        "color": "#FF4D4D"
+      },
+      {
+        "name": "\"Other\" Allied Mental Health",
+        "values": [323, 432, 456, 454, 565, 454],
+        "color": "#34978F"
+      },
+      {
+        "name": "GP Focused Care",
+        "values": [243, 565, 454, 534, 467, 300],
+        "color": "#8F83B8"
+      }
+    ]
   }
 }
