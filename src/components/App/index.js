@@ -16,7 +16,7 @@ let storyKeys = require("./story-keys.json");
 export default props => {
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
-  const [configKey, setConfigKey] = useState(null)
+  const [configKey, setConfigKey] = useState(null);
   const [userSelection, setUserSelection] = useState(null);
 
   const onMarker = config => {
@@ -25,10 +25,12 @@ export default props => {
     if (!config.key) return;
     if (typeof storyKeys[config.key] === "undefined") return;
 
-    if (storyKeys[config.key].chartType === "line") setLineKey(storyKeys[config.key]);
-    if (storyKeys[config.key].chartType === "dot") setDotKey(storyKeys[config.key]);
+    if (storyKeys[config.key].chartType === "line")
+      setLineKey(storyKeys[config.key]);
+    if (storyKeys[config.key].chartType === "dot")
+      setDotKey(storyKeys[config.key]);
 
-    setConfigKey(config.key)
+    setConfigKey(config.key);
   };
 
   const handleSelection = data => {
@@ -79,7 +81,8 @@ export default props => {
         <Scrollyteller
           panels={props.scrollyData1.panels}
           onMarker={onMarker}
-          panelComponent={CustomPanel}>
+          panelComponent={CustomPanel}
+        >
           <BackgroundStage>
             <MultiChart
               chartType={lineKey.chartType}
@@ -99,15 +102,17 @@ export default props => {
         <Scrollyteller
           panels={props.scrollyData2.panels}
           onMarker={() => {}}
-          panelComponent={CustomPanel}>
+          panelComponent={CustomPanel}
+        >
           <BackgroundStage>
             <MultiChart
-              chartType={"dot"}
+              chartType={dotKey.chartType}
               dataKey={dotKey.dataKey}
               yMax={dotKey.yMax}
               highlightBars={dotKey.highlightBars}
               highlightOwnBar={dotKey.highlightOwnBar}
               dots={dotKey.dots}
+              averages={dotKey.averages}
               triggerOnDock={true}
               markKey={configKey}
               showLowHighDots={dotKey.showLowHighDots}

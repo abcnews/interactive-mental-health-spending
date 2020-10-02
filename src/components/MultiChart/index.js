@@ -86,7 +86,8 @@ const MultiChart = props => {
   const [lineLabels, setLineLabels] = useState([]);
   const [linesDataKey, setLinesDataKey] = useState([]);
   const [dotsDataKey, setDotsDataKey] = useState();
-  const [dotLabels, setDotLabels] = useState([]);
+  const [dotTopBottomLabels, setDotTopBottomLabels] = useState([]);
+  const [dotCustomLabels, setDotCustomLabels] = useState([]);
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -119,9 +120,11 @@ const MultiChart = props => {
   };
 
   const processCharts = () => {
+    console.log("process charts");
     if (!isDocked) return;
     if (props.chartType === "line") processLines();
     if (props.chartType === "dot") processDots();
+    if (props.chartType === "average") processAverage();
   };
 
   const processLines = () => {
@@ -249,7 +252,7 @@ const MultiChart = props => {
 
     if (lowest && props.showLowHighDots) {
       setTimeout(() => {
-        setDotLabels([
+        setDotTopBottomLabels([
           {
             text: lowest["SA3 name"],
             x: component.scaleX(lowest[dotsDataKey.xField]),
@@ -264,7 +267,7 @@ const MultiChart = props => {
       }, 500);
     } else
       setTimeout(() => {
-        setDotLabels([]);
+        setDotTopBottomLabels([]);
       }, 500);
 
     const averageData = generateAverageData(
@@ -340,7 +343,8 @@ const MultiChart = props => {
                   // Raise our dots to the top
                   pulseDot.raise();
                   testimonyTarget.raise();
-                });
+                })
+                .catch(e => null);
 
               // Add the average line to the chart
               component.svg
@@ -410,8 +414,6 @@ const MultiChart = props => {
                 })
                 .end()
                 .then(() => {
-                  console.log("...ended");
-
                   component.svg.select(`circle.dots-animated-pulse`).remove();
 
                   const testimonyTarget = d3.select(".dots-testimony-target");
@@ -427,13 +429,12 @@ const MultiChart = props => {
 
                     pulse(pulseDot);
 
-                    console.log("Update");
-
                     // Raise our dots to the top
                     pulseDot.raise();
                     testimonyTarget.raise();
                   }
-                });
+                })
+                .catch(e => null);
             }),
         exit =>
           exit
@@ -467,10 +468,34 @@ const MultiChart = props => {
 
     // Dots on top (z-axis)
     dotsDots.raise();
+
+    // Average lines if props.averages
+    const lineAverage = d3
+      .line()
+      .defined(d => !isNaN(d))
+      .x((d, i) => component.scaleX(i + 1))
+      .y(d => component.scaleY(d));
+
+    console.log(props.averages);
+
+    if (props.averages) {
+      const path = component.svg
+        .selectAll("path.average-line")
+        .data(props.averages)
+        .join("path")
+        .classed("average-line", true)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .style("mix-blend-mode", "multiply")
+        .attr("d", d => lineAverage(d.values));
+    }
   };
 
   // Initial layout effect run once on mount
-  useLayoutEffect(() => {
+  useEffect(() => {
     // Use intersection observer to trigger animation to start
     // only afer we scroll the chart into view
     let callback = (entries, observer) => {
@@ -499,7 +524,7 @@ const MultiChart = props => {
   }, []);
 
   // Handle initial chart draw and also chart updates
-  useLayoutEffect(() => {
+  useEffect(() => {
     // Wait till we have an svg mounted
     if (!component.svg) return;
 
@@ -616,7 +641,7 @@ const MultiChart = props => {
   // useEffect(() => {
   //   if (!component.svg) return;
 
-  //   setLinesDataKey(props.lines);
+  //   console.log("marker", props.markKey);
   // }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
@@ -956,11 +981,31 @@ const MultiChart = props => {
       </TransitionGroup>
 
       <TransitionGroup className={styles.transitionGroup}>
-        {dotLabels.map((label, index) => {
+        {dotTopBottomLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
               <div
                 className={styles.dotLabel}
+                style={{ top: label.y, left: label.x }}
+                key={index}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {dotCustomLabels.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={
+                  label.style === "light"
+                    ? styles.dotCustomLabelLight
+                    : styles.dotCustomLabel
+                }
                 style={{ top: label.y, left: label.x }}
                 key={index}
               >
