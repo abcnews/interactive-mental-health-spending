@@ -94,7 +94,7 @@
       "dotColor": "#3C92C8",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
-      "testimonialSa3": "Brisbane Inner"
+      "testimonialSa3": "Gold Coast Hinterland"
     }
   },
   "alliedgroups": {
@@ -106,7 +106,17 @@
       "dataKey": "allied",
       "dotColor": "#3C92C8",
       "xField": "SA3 group",
-      "yField": "Medicare benefits per 100 people ($)"
-    }
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": "Shoalhaven"
+    },
+    "averages": []
+  },
+  "alliedself": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "dots": {
+      "dataKey": "empty"
+    },
+    "averages": [{ "name": "Psych", "values": [122, 322, 333, 433, 131] }]
   }
 }
