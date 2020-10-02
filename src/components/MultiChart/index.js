@@ -485,12 +485,14 @@ const MultiChart = props => {
         .join("path")
         .classed("average-line", true)
         .attr("fill", "none")
-        .attr("stroke", "steelblue")
-        .attr("stroke-width", 1.5)
+        .attr("stroke", d => d.color || "steelblue" )
+        .attr("stroke-width", 4)
         .attr("stroke-linejoin", "round")
         .attr("stroke-linecap", "round")
         .style("mix-blend-mode", "multiply")
         .attr("d", d => lineAverage(d.values));
+
+      console.log(path);
     }
   };
 
