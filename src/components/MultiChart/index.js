@@ -88,6 +88,9 @@ const MultiChart = props => {
   const [dotsDataKey, setDotsDataKey] = useState();
   const [dotTopBottomLabels, setDotTopBottomLabels] = useState([]);
   const [dotCustomLabels, setDotCustomLabels] = useState([]);
+  const [averageLineLabels, setAverageLineLabels] = useState([
+    { text: "Label test", color: "blue", x: 100, y: 100 },
+  ]);
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -469,30 +472,72 @@ const MultiChart = props => {
     // Dots on top (z-axis)
     dotsDots.raise();
 
-    // Average lines if props.averages
-    const lineAverage = d3
-      .line()
-      .defined(d => !isNaN(d))
-      .x((d, i) => component.scaleX(i + 1))
-      .y(d => component.scaleY(d));
-
-    console.log(props.averages);
-
+    // Average lines if props.averages is set
     if (props.averages) {
-      const path = component.svg
+      let collectedAverageLabels = [];
+
+      const lineAverage = d3
+        .line()
+        .defined(d => !isNaN(d))
+        .x((d, i) => component.scaleX(i + 1))
+        .y(d => component.scaleY(d));
+
+      const paths = component.svg
         .selectAll("path.average-line")
         .data(props.averages)
-        .join("path")
-        .classed("average-line", true)
-        .attr("fill", "none")
-        .attr("stroke", d => d.color || "steelblue" )
-        .attr("stroke-width", 4)
-        .attr("stroke-linejoin", "round")
-        .attr("stroke-linecap", "round")
-        .style("mix-blend-mode", "multiply")
-        .attr("d", d => lineAverage(d.values));
+        .join(
+          enter =>
+            enter
+              .append("path")
+              .classed("average-line", true)
+              .attr("fill", "none")
+              .attr("stroke", d => d.color || "steelblue")
+              .attr("stroke-width", 4)
+              .attr("stroke-linejoin", "round")
+              .attr("stroke-linecap", "round")
+              .style("mix-blend-mode", "multiply")
+              .attr("d", d => lineAverage(d.values))
+              .each(function (d) {
+                const path = d3.select(this);
 
-      console.log(path);
+                // Get the length of the line
+                const totalLength = this.getTotalLength();
+
+                const lineBox = path.node().getBBox();
+                console.log(d.values[d.values.length - 1]);
+
+                const lastValue = d.values[d.values.length - 1];
+                const yPos = component.scaleY(lastValue);
+
+                let collectedLabel = {
+                  text: d.name,
+                  color: d.color,
+                  x: lineBox.x + lineBox.width,
+                  y: yPos,
+                };
+
+                collectedAverageLabels.push(collectedLabel);
+
+                // Animate the path
+                path
+                  .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+                  .attr("stroke-dashoffset", totalLength)
+                  .transition()
+                  .duration(LINE_ANIMATION_DURATION)
+                  .attr("stroke-dashoffset", 0)
+                  .end()
+                  .then(() => {
+                    setAverageLineLabels(collectedAverageLabels);
+                  });
+              }),
+          update => update,
+          exit =>
+            exit.remove().call(exit => {
+              if (exit.empty()) return;
+
+              setAverageLineLabels([]);
+            })
+        );
     }
   };
 
@@ -1010,6 +1055,22 @@ const MultiChart = props => {
                 }
                 style={{ top: label.y, left: label.x }}
                 key={index}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {averageLineLabels.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={`${styles.lineLabel} ${styles.averageLabel}`}
+                key={index}
+                style={{ top: label.y, left: label.x, color: label.color }}
               >
                 {label.text}
               </div>

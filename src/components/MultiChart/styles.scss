@@ -98,6 +98,12 @@
     }
   }
 
+  .average-label {
+    transform: translate(calc(-100% + 3px), -120%);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+  }
+
   .dot-label {
     position: absolute;
     font-family: ABCSans, sans-serif;
