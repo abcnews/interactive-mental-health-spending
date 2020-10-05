@@ -100,9 +100,13 @@
 
   .average-label {
     white-space: nowrap;
-    transform: translate(calc(-100% + 3px), -120%);
+    transform: translateX(-100%) translateX(3px) translateY(-120%); //translate(calc(-100% + 3px), -120%);
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
       1px 1px 0 #fff;
+
+    @media screen and (min-width: 641px) {
+      font-size: 10px;
+    }
   }
 
   .dot-label {
