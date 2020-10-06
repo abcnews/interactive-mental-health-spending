@@ -171,12 +171,6 @@ $fade-height: 50vh;
   width: 100%;
   background-color: hsla(341, 39%, 90%, 0);
 
-  .inner {
-    // background-color: #e0ffffff;
-    // padding-top: 4em;
-    // padding-bottom: 4em;
-  }
-
   .panel {
     width: 61.25rem;
     margin: auto;
@@ -413,21 +407,7 @@ $fade-height: 50vh;
   );
 }
 
-// Let's make a hidden panel that can trigger a mark
-// but won't take up any space on the page
-// TODO: We're going to have to find a better way
-// .hidden-panel {
-//   visibility: hidden;
-//   height: 0;
-// }
-
 :global {
-  // This is to prevent extra paragraph spacing
-  .u-full {
-    // margin-top: 2rem !important;
-    // margin-bottom: 2rem !important;
-  }
-
   .inline-content.html-fragment {
     margin-bottom: 0 !important;
   }
