@@ -1,12 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import JsxParser from "react-jsx-parser";
 
 // CSS Styles
 import styles from "./styles.scss";
 
+import { AppContext } from "../../AppContext";
+
 export default props => {
   const base = useRef();
   const [hidePanel, setHidePanel] = useState(false);
+
+  // Global context
+  const { userSelection, setUserSelection } = useContext(AppContext);
 
   // Once on mount we append Core text to the panels/pars
   useEffect(() => {
@@ -67,6 +72,11 @@ export default props => {
     };
   }, []);
 
+  // Handle a change in the user selection
+  useEffect(() => {
+    // console.log(userSelection);
+  }, [userSelection]);
+
   return (
     <div
       className={`${styles.base} ${styles.light} ${styles.right} ${
@@ -81,7 +91,7 @@ export default props => {
               key={index}
               renderInWrapper={false}
               bindings={{
-                testValue: "The Value!!!",
+                testValue: userSelection && userSelection.label,
               }}
               jsx={node.outerHTML}
             />
