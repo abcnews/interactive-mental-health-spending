@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import JsxParser from "react-jsx-parser";
 
+// CSS Styles
 import styles from "./styles.scss";
 
 // NOTE THIS COMPONENT WAS COPY-PASTED FROM THE VACCINE PIECE
@@ -7,75 +9,77 @@ import styles from "./styles.scss";
 
 // Controls how far off the screen the top and bottom
 // panels are before the background stage is hidden
-const TOP_HIDE_THRESHOLD = 10;
-const BOTTOM_HIDE_THRESHOLD = 500;
+// const TOP_HIDE_THRESHOLD = 10;
+// const BOTTOM_HIDE_THRESHOLD = 500;
 
-// How far into the page before full opacity
-const FADE_THRESHOLD = 400;
-// How far to remain invisible
-const FADE_OFFSET = -10;
+// // How far into the page before full opacity
+// const FADE_THRESHOLD = 400;
+// // How far to remain invisible
+// const FADE_OFFSET = -10;
 
-const d3 = { ...require("d3-scale") };
+// const d3 = { ...require("d3-scale") };
 
-const opacityScale = d3.scaleLinear().domain([FADE_OFFSET, FADE_THRESHOLD]).range([0, 1]).clamp(true);
+// const opacityScale = d3.scaleLinear().domain([FADE_OFFSET, FADE_THRESHOLD]).range([0, 1]).clamp(true);
 
 export default props => {
   const base = useRef();
-  const [opacity, setOpacity] = useState(1.0);
+  const [hidePanel, setHidePanel] = useState(false);
+
+  // const [opacity, setOpacity] = useState(1.0);
 
   // Fade in our scrollout panels as they come into view
-  const onScroll = () => {
-    const windowHeight = window.innerHeight;
+  // const onScroll = () => {
+  //   const windowHeight = window.innerHeight;
 
-    // // // Hide Scrolly stage if up top or bottom
-    // const interactive = document.querySelector(
-    //   "div[data-interactive-scrollout-root]"
-    // );
-    // const backgroundStage = document.querySelector(
-    //   "div[data-interactive-scrollout-root] > div > div.sgMpdhCf"
-    // );
+  //   // // // Hide Scrolly stage if up top or bottom
+  //   // const interactive = document.querySelector(
+  //   //   "div[data-interactive-scrollout-root]"
+  //   // );
+  //   // const backgroundStage = document.querySelector(
+  //   //   "div[data-interactive-scrollout-root] > div > div.sgMpdhCf"
+  //   // );
 
-    // // const interactiveTop = interactive.getBoundingClientRect().top;
-    // const interactiveBottom = interactive.getBoundingClientRect().bottom;
+  //   // // const interactiveTop = interactive.getBoundingClientRect().top;
+  //   // const interactiveBottom = interactive.getBoundingClientRect().bottom;
 
-    // // TODO: maybe find a better way of doing this
-    // if (
-    //   // interactiveTop > -TOP_HIDE_THRESHOLD ||
-    //   interactiveBottom <
-    //   windowHeight + BOTTOM_HIDE_THRESHOLD
-    // ) {
-    //   backgroundStage.style.visibility = "hidden";
-    // } else {
-    //   backgroundStage.style.visibility = "visible";
-    // }
+  //   // // TODO: maybe find a better way of doing this
+  //   // if (
+  //   //   // interactiveTop > -TOP_HIDE_THRESHOLD ||
+  //   //   interactiveBottom <
+  //   //   windowHeight + BOTTOM_HIDE_THRESHOLD
+  //   // ) {
+  //   //   backgroundStage.style.visibility = "hidden";
+  //   // } else {
+  //   //   backgroundStage.style.visibility = "visible";
+  //   // }
 
-    // Only run on Scrollout panels
-    if (!props.config.scrollout) return;
+  //   // Only run on Scrollout panels
+  //   if (!props.config.scrollout) return;
 
-    // Get top and bottom positions of panel
-    const top = base.current.getBoundingClientRect().top;
-    const bottom = base.current.getBoundingClientRect().bottom;
+  //   // Get top and bottom positions of panel
+  //   const top = base.current.getBoundingClientRect().top;
+  //   const bottom = base.current.getBoundingClientRect().bottom;
 
-    // If panel is off screen just fade it and do nothing else
-    if (bottom < 0 || (top > windowHeight && !props.config.scrolloutbottom)) {
-      setOpacity(0.1);
-      return;
-    }
+  //   // If panel is off screen just fade it and do nothing else
+  //   if (bottom < 0 || (top > windowHeight && !props.config.scrolloutbottom)) {
+  //     setOpacity(0.1);
+  //     return;
+  //   }
 
-    // Fade in and out top if needed otherwise just make visible
-    if (top < windowHeight && top > 0 && !props.config.scrolloutbottom) {
-      const pixelsAboveFold = windowHeight - top;
-      setOpacity(opacityScale(pixelsAboveFold));
-    } else {
-      setOpacity(1.0);
-    }
+  //   // Fade in and out top if needed otherwise just make visible
+  //   if (top < windowHeight && top > 0 && !props.config.scrolloutbottom) {
+  //     const pixelsAboveFold = windowHeight - top;
+  //     setOpacity(opacityScale(pixelsAboveFold));
+  //   } else {
+  //     setOpacity(1.0);
+  //   }
 
-    // NOTE: We are no longer fading the bottom of the paragraph text
-    // Fade out and in bottom
-    // if (bottom > 0 && bottom < windowHeight) {
-    //   setOpacity(opacityScale(bottom));
-    // }
-  };
+  //   // NOTE: We are no longer fading the bottom of the paragraph text
+  //   // Fade out and in bottom
+  //   // if (bottom > 0 && bottom < windowHeight) {
+  //   //   setOpacity(opacityScale(bottom));
+  //   // }
+  // };
 
   // Once on mount we append Core text to the panels/pars
   useEffect(() => {
@@ -91,10 +95,16 @@ export default props => {
       // Append CoreMedia nodes
       props.nodes.forEach(node => {
         // Make sure images fit inside the panels
-        if (node.className.indexOf("ImageEmbed") > -1 || node.tagName === "IMG") {
+        if (
+          node.className.indexOf("ImageEmbed") > -1 ||
+          node.tagName === "IMG"
+        ) {
           node.style.setProperty("display", "block");
           node.style.setProperty("margin", "auto");
-          node.style.setProperty("width", isMobile ? "83.333333%" : "66.66667%");
+          node.style.setProperty(
+            "width",
+            isMobile ? "83.333333%" : "66.66667%"
+          );
           node.style.setProperty("padding-left", "0.875rem");
           node.style.setProperty("padding-right", "0.875rem");
           if (node.hasAttribute("height")) {
@@ -102,7 +112,10 @@ export default props => {
           }
         } else if (node.querySelector("img")) {
           node.style.setProperty("margin", "auto");
-          node.style.setProperty("width", isMobile ? "83.333333%" : "66.66667%");
+          node.style.setProperty(
+            "width",
+            isMobile ? "83.333333%" : "66.66667%"
+          );
           node.style.setProperty("padding-left", "0.875rem");
           node.style.setProperty("padding-right", "0.875rem");
           [].slice.call(node.querySelectorAll("img")).forEach(img => {
@@ -113,7 +126,7 @@ export default props => {
       });
     }
 
-    window.addEventListener("scroll", onScroll);
+    // window.addEventListener("scroll", onScroll);
 
     // On unmount
     return () => {
@@ -125,25 +138,42 @@ export default props => {
           base.current.removeChild(node);
         }
       });
-      window.removeEventListener("scroll", onScroll);
+      // window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   return (
     <div
       className={`${styles.base} ${styles.light} ${styles.right} ${
-        props.config.initial ? `${styles.initial} interactive-initial-panel` : ""
+        hidePanel ? styles.hidden : ""
       }`}
+      ref={base}
     >
-      <div className={styles.inner}>
+      {props.config.swap &&
+        props.nodes.map((node, index) => {
+          return (
+            <JsxParser
+              key={index}
+              renderInWrapper={false}
+              bindings={{
+                testValue: "Test value",
+              }}
+              jsx={node.outerHTML}
+            />
+          );
+        })}
+      {/* <div className={styles.inner}>
         <div
-          className={`${props.config.scrollout ? "custom-scrollout-panel" : "custom-normal-panel"} ${styles.panel} ${
-            props.config.spacertop ? styles.spacerTop : ""
-          } ${props.config.spacerbottom ? styles.spacerBottom : ""}`}
-          ref={base}
+          className={`${
+            props.config.scrollout
+              ? "custom-scrollout-panel"
+              : "custom-normal-panel"
+          } ${styles.panel} ${props.config.spacertop ? styles.spacerTop : ""} ${
+            props.config.spacerbottom ? styles.spacerBottom : ""
+          }`}
           style={{ opacity: opacity }}
         ></div>
-      </div>
+      </div> */}
     </div>
   );
 };
