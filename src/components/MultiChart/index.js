@@ -125,7 +125,7 @@ const MultiChart = props => {
     if (!isDocked) return;
     if (props.chartType === "line") processLines();
     if (props.chartType === "dot") processDots();
-    if (props.chartType === "average") processAverage();
+    if (props.chartType === "dot") processAverageLines();
   };
 
   const processLines = () => {
@@ -474,95 +474,93 @@ const MultiChart = props => {
 
     // Dots on top (z-axis)
     dotsDots.raise();
+  };
 
-    // // Average lines if props.averages is set
-    // if (props.averages) {
-    //   console.log(props.averages)
-    //   let collectedAverageLabels = [];
+  const processAverageLines = () => {
+    let collectedAverageLabels = [];
 
-    //   const lineAverage = d3
-    //     .line()
-    //     .defined(d => !isNaN(d))
-    //     .x((d, i) => component.scaleX(i + 1))
-    //     .y(d => component.scaleY(d));
+    const lineAverage = d3
+      .line()
+      .defined(d => !isNaN(d))
+      .x((d, i) => component.scaleX(i + 1))
+      .y(d => component.scaleY(d));
 
-    //   component.svg
-    //     .selectAll("path.average-line")
-    //     .data(props.averages)
-    //     .join(
-    //       enter =>
-    //         enter
-    //           .append("path")
-    //           .classed("average-line", true)
-    //           .attr("fill", "none")
-    //           .attr("stroke", d => d.color || "steelblue")
-    //           .attr("stroke-width", 2.3)
-    //           .attr("stroke-linejoin", "round")
-    //           .attr("stroke-linecap", "round")
-    //           .style("mix-blend-mode", "multiply")
-    //           .attr("d", d => lineAverage(d.values))
-    //           .each(function (d) {
-    //             const path = d3.select(this);
+    component.svg
+      .selectAll("path.average-line")
+      .data(averageData)
+      .join(
+        enter =>
+          enter
+            .append("path")
+            .classed("average-line", true)
+            .attr("fill", "none")
+            .attr("stroke", d => d.color || "steelblue")
+            .attr("stroke-width", 2.3)
+            .attr("stroke-linejoin", "round")
+            .attr("stroke-linecap", "round")
+            .style("mix-blend-mode", "multiply")
+            .attr("d", d => lineAverage(d.values))
+            .each(function (d) {
+              const path = d3.select(this);
 
-    //             // Get the length of the line
-    //             const totalLength = this.getTotalLength();
-    //             const lineBox = path.node().getBBox();
-    //             const lastValue = d.values[d.values.length - 1];
-    //             const yPos = component.scaleY(lastValue);
+              // Get the length of the line
+              const totalLength = this.getTotalLength();
+              const lineBox = path.node().getBBox();
+              const lastValue = d.values[d.values.length - 1];
+              const yPos = component.scaleY(lastValue);
 
-    //             let collectedLabel = {
-    //               text: d.name,
-    //               color: d.color,
-    //               x: lineBox.x + lineBox.width,
-    //               y: yPos,
-    //             };
+              let collectedLabel = {
+                text: d.name,
+                color: d.color,
+                x: lineBox.x + lineBox.width,
+                y: yPos,
+              };
 
-    //             collectedAverageLabels.push(collectedLabel);
+              collectedAverageLabels.push(collectedLabel);
 
-    //             // Short circuit label appearance later
-    //             component.dontSetAverageLabels = false;
+              // Short circuit label appearance later
+              component.dontSetAverageLabels = false;
 
-    //             // Animate the path
-    //             path
-    //               .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-    //               .attr("stroke-dashoffset", totalLength)
-    //               .transition()
-    //               .duration(LINE_ANIMATION_DURATION)
-    //               .attr("stroke-dashoffset", 0)
-    //               .end()
-    //               .then(() => {
-    //                 if (!component.dontSetAverageLabels)
-    //                   setAverageLineLabels(collectedAverageLabels);
-    //               });
-    //           }),
-    //       update =>
-    //         update
-    //           .attr("d", d => lineAverage(d.values))
-    //           .each(function (d) {
-    //             const path = d3.select(this);
-    //             const lineBox = path.node().getBBox();
-    //             const lastValue = d.values[d.values.length - 1];
-    //             const yPos = component.scaleY(lastValue);
+              // Animate the path
+              path
+                .attr("stroke-dasharray", `${totalLength},${totalLength}`)
+                .attr("stroke-dashoffset", totalLength)
+                .transition()
+                .duration(LINE_ANIMATION_DURATION)
+                .attr("stroke-dashoffset", 0)
+                .end()
+                .then(() => {
+                  if (!component.dontSetAverageLabels)
+                    setAverageLineLabels(collectedAverageLabels);
+                });
+            }),
+        update =>
+          update
+            .attr("d", d => lineAverage(d.values))
+            .each(function (d) {
+              const path = d3.select(this);
+              const lineBox = path.node().getBBox();
+              const lastValue = d.values[d.values.length - 1];
+              const yPos = component.scaleY(lastValue);
 
-    //             let collectedLabel = {
-    //               text: d.name,
-    //               color: d.color,
-    //               x: lineBox.x + lineBox.width,
-    //               y: yPos,
-    //             };
+              let collectedLabel = {
+                text: d.name,
+                color: d.color,
+                x: lineBox.x + lineBox.width,
+                y: yPos,
+              };
 
-    //             collectedAverageLabels.push(collectedLabel);
+              collectedAverageLabels.push(collectedLabel);
 
-    //             setAverageLineLabels(collectedAverageLabels);
-    //           }),
-    //       exit =>
-    //         exit.remove().call(exit => {
-    //           if (exit.empty()) return;
+              setAverageLineLabels(collectedAverageLabels);
+            }),
+        exit =>
+          exit.remove().call(exit => {
+            if (exit.empty()) return;
 
-    //           setAverageLineLabels([]);
-    //         })
-    //     );
-    // }
+            setAverageLineLabels([]);
+          })
+      );
   };
 
   // Initial layout effect run once on mount
@@ -772,92 +770,8 @@ const MultiChart = props => {
     if (hasBeenDocked) processDots();
   }, [dotsDataKey]);
 
-  // Average lines when 
   useEffect(() => {
-    let collectedAverageLabels = [];
-
-    const lineAverage = d3
-      .line()
-      .defined(d => !isNaN(d))
-      .x((d, i) => component.scaleX(i + 1))
-      .y(d => component.scaleY(d));
-
-    component.svg
-      .selectAll("path.average-line")
-      .data(averageData)
-      .join(
-        enter =>
-          enter
-            .append("path")
-            .classed("average-line", true)
-            .attr("fill", "none")
-            .attr("stroke", d => d.color || "steelblue")
-            .attr("stroke-width", 2.3)
-            .attr("stroke-linejoin", "round")
-            .attr("stroke-linecap", "round")
-            .style("mix-blend-mode", "multiply")
-            .attr("d", d => lineAverage(d.values))
-            .each(function (d) {
-              const path = d3.select(this);
-
-              // Get the length of the line
-              const totalLength = this.getTotalLength();
-              const lineBox = path.node().getBBox();
-              const lastValue = d.values[d.values.length - 1];
-              const yPos = component.scaleY(lastValue);
-
-              let collectedLabel = {
-                text: d.name,
-                color: d.color,
-                x: lineBox.x + lineBox.width,
-                y: yPos,
-              };
-
-              collectedAverageLabels.push(collectedLabel);
-
-              // Short circuit label appearance later
-              component.dontSetAverageLabels = false;
-
-              // Animate the path
-              path
-                .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-                .attr("stroke-dashoffset", totalLength)
-                .transition()
-                .duration(LINE_ANIMATION_DURATION)
-                .attr("stroke-dashoffset", 0)
-                .end()
-                .then(() => {
-                  if (!component.dontSetAverageLabels)
-                    setAverageLineLabels(collectedAverageLabels);
-                });
-            }),
-        update =>
-          update
-            .attr("d", d => lineAverage(d.values))
-            .each(function (d) {
-              const path = d3.select(this);
-              const lineBox = path.node().getBBox();
-              const lastValue = d.values[d.values.length - 1];
-              const yPos = component.scaleY(lastValue);
-
-              let collectedLabel = {
-                text: d.name,
-                color: d.color,
-                x: lineBox.x + lineBox.width,
-                y: yPos,
-              };
-
-              collectedAverageLabels.push(collectedLabel);
-
-              setAverageLineLabels(collectedAverageLabels);
-            }),
-        exit =>
-          exit.remove().call(exit => {
-            if (exit.empty()) return;
-
-            setAverageLineLabels([]);
-          })
-      );
+    if (hasBeenDocked) processAverageLines();
   }, [averageData]);
 
   // Calculate values for return
