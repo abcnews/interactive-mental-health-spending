@@ -13,6 +13,9 @@ import heroImage from "./hero-top.png";
 
 let storyKeys = require("./story-keys.json");
 
+// Using the React context API for global state
+import { AppContext } from "../../AppContext";
+
 export default props => {
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
@@ -65,61 +68,63 @@ export default props => {
   // }, [userPostcode]);
 
   return (
-    <>
-      {/* Header image up above the H1 */}
-      <Portal node={document.querySelector(".pre-header-hero")}>
-        <div>
-          <img src={heroImage} />
+    <AppContext.Provider value={{ userSelection, setUserSelection }}>
+      <>
+        {/* Header image up above the H1 */}
+        <Portal node={document.querySelector(".pre-header-hero")}>
+          <div>
+            <img src={heroImage} />
+          </div>
+        </Portal>
+
+        <div className={styles.root}>
+          <PostcodeSearch handleSelection={handleSelection} />
         </div>
-      </Portal>
 
-      <div className={styles.root}>
-        <PostcodeSearch handleSelection={handleSelection} />
-      </div>
+        <Portal node={document.querySelector(".scrollystagemount")}>
+          <Scrollyteller
+            panels={props.scrollyData1.panels}
+            onMarker={onMarker}
+            panelComponent={CustomPanel}
+          >
+            <BackgroundStage>
+              <MultiChart
+                chartType={lineKey.chartType}
+                dataKey={lineKey.dataKey}
+                yMax={lineKey.yMax}
+                highlightBars={lineKey.highlightBars}
+                highlightOwnBar={lineKey.highlightOwnBar}
+                lines={lineKey.lines}
+                triggerOnDock={true}
+                markKey={configKey}
+              />
+            </BackgroundStage>
+          </Scrollyteller>
+        </Portal>
 
-      <Portal node={document.querySelector(".scrollystagemount")}>
-        <Scrollyteller
-          panels={props.scrollyData1.panels}
-          onMarker={onMarker}
-          panelComponent={CustomPanel}
-        >
-          <BackgroundStage>
-            <MultiChart
-              chartType={lineKey.chartType}
-              dataKey={lineKey.dataKey}
-              yMax={lineKey.yMax}
-              highlightBars={lineKey.highlightBars}
-              highlightOwnBar={lineKey.highlightOwnBar}
-              lines={lineKey.lines}
-              triggerOnDock={true}
-              markKey={configKey}
-            />
-          </BackgroundStage>
-        </Scrollyteller>
-      </Portal>
-
-      <Portal node={document.querySelector(".scrollystagemount2")}>
-        <Scrollyteller
-          panels={props.scrollyData2.panels}
-          onMarker={() => {}}
-          panelComponent={CustomPanel}
-        >
-          <BackgroundStage>
-            <MultiChart
-              chartType={dotKey.chartType}
-              dataKey={dotKey.dataKey}
-              yMax={dotKey.yMax}
-              highlightBars={dotKey.highlightBars}
-              highlightOwnBar={dotKey.highlightOwnBar}
-              dots={dotKey.dots}
-              averages={dotKey.averages}
-              triggerOnDock={true}
-              markKey={configKey}
-              showLowHighDots={dotKey.showLowHighDots}
-            />
-          </BackgroundStage>
-        </Scrollyteller>
-      </Portal>
-    </>
+        <Portal node={document.querySelector(".scrollystagemount2")}>
+          <Scrollyteller
+            panels={props.scrollyData2.panels}
+            onMarker={() => {}}
+            panelComponent={CustomPanel}
+          >
+            <BackgroundStage>
+              <MultiChart
+                chartType={dotKey.chartType}
+                dataKey={dotKey.dataKey}
+                yMax={dotKey.yMax}
+                highlightBars={dotKey.highlightBars}
+                highlightOwnBar={dotKey.highlightOwnBar}
+                dots={dotKey.dots}
+                averages={dotKey.averages}
+                triggerOnDock={true}
+                markKey={configKey}
+                showLowHighDots={dotKey.showLowHighDots}
+              />
+            </BackgroundStage>
+          </Scrollyteller>
+        </Portal>
+      </>
+    </AppContext.Provider>
   );
 };
