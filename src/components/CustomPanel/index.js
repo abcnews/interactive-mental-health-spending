@@ -81,7 +81,7 @@ export default props => {
               key={index}
               renderInWrapper={false}
               bindings={{
-                testValue: "Test value",
+                testValue: "The Value!!!",
               }}
               jsx={node.outerHTML}
             />
