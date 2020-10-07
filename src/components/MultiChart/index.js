@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
 import { Fade } from "@material-ui/core";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
