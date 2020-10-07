@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import JsxParser from "react-jsx-parser";
+import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
 
 // CSS Styles
 import styles from "./styles.scss";
