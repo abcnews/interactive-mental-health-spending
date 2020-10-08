@@ -115,11 +115,6 @@
     "ratio": 0.1283317
   },
   {
-    "postcode": 815,
-    "suburb": "Brinkin",
-    "ratio": 1
-  },
-  {
     "postcode": 820,
     "suburb": "Bayview (NT)",
     "ratio": 0.0862176
@@ -1475,11 +1470,6 @@
     "ratio": 0.0283442
   },
   {
-    "postcode": 2006,
-    "suburb": "Camperdown (NSW)",
-    "ratio": 1
-  },
-  {
     "postcode": 2007,
     "suburb": "Ultimo",
     "ratio": 1
@@ -1916,18 +1906,8 @@
   },
   {
     "postcode": 2042,
-    "suburb": "Camperdown (NSW)",
-    "ratio": 0.0070698
-  },
-  {
-    "postcode": 2042,
     "suburb": "Enmore (Inner West - NSW)",
     "ratio": 0.1983505
-  },
-  {
-    "postcode": 2042,
-    "suburb": "Marrickville",
-    "ratio": 0.0041365
   },
   {
     "postcode": 2042,
@@ -2011,18 +1991,8 @@
   },
   {
     "postcode": 2048,
-    "suburb": "Camperdown (NSW)",
-    "ratio": 0.0078096
-  },
-  {
-    "postcode": 2048,
     "suburb": "Enmore (Inner West - NSW)",
     "ratio": 0.0072732
-  },
-  {
-    "postcode": 2048,
-    "suburb": "Petersham",
-    "ratio": 0.0032063
   },
   {
     "postcode": 2048,
@@ -2038,11 +2008,6 @@
     "postcode": 2049,
     "suburb": "Lewisham (NSW)",
     "ratio": 0.2774963
-  },
-  {
-    "postcode": 2049,
-    "suburb": "Marrickville",
-    "ratio": 0.0037795
   },
   {
     "postcode": 2049,
@@ -2063,11 +2028,6 @@
     "postcode": 2050,
     "suburb": "Stanmore (NSW)",
     "ratio": 0.004494
-  },
-  {
-    "postcode": 2052,
-    "suburb": "Kensington (NSW)",
-    "ratio": 1
   },
   {
     "postcode": 2060,
@@ -3036,11 +2996,6 @@
   },
   {
     "postcode": 2113,
-    "suburb": "Macquarie Park",
-    "ratio": 0.2754769
-  },
-  {
-    "postcode": 2113,
     "suburb": "North Ryde",
     "ratio": 0.5891119
   },
@@ -3235,11 +3190,6 @@
     "ratio": 0.4259331
   },
   {
-    "postcode": 2123,
-    "suburb": "Parramatta",
-    "ratio": 1
-  },
-  {
     "postcode": 2125,
     "suburb": "Beecroft",
     "ratio": 0.0122113
@@ -3282,11 +3232,6 @@
   {
     "postcode": 2128,
     "suburb": "Silverwater (Parramatta - NSW)",
-    "ratio": 1
-  },
-  {
-    "postcode": 2129,
-    "suburb": "Homebush (NSW)",
     "ratio": 1
   },
   {
@@ -3423,11 +3368,6 @@
     "postcode": 2138,
     "suburb": "Rhodes",
     "ratio": 0.5945173
-  },
-  {
-    "postcode": 2139,
-    "suburb": "Concord West",
-    "ratio": 1
   },
   {
     "postcode": 2140,
@@ -3711,11 +3651,6 @@
   },
   {
     "postcode": 2152,
-    "suburb": "Baulkham Hills",
-    "ratio": 0.002244
-  },
-  {
-    "postcode": 2152,
     "suburb": "Northmead",
     "ratio": 0.997756
   },
@@ -3738,11 +3673,6 @@
     "postcode": 2153,
     "suburb": "Winston Hills",
     "ratio": 0.2071968
-  },
-  {
-    "postcode": 2154,
-    "suburb": "Baulkham Hills",
-    "ratio": 0.0024148
   },
   {
     "postcode": 2154,
@@ -4455,11 +4385,6 @@
     "ratio": 0.9933848
   },
   {
-    "postcode": 2204,
-    "suburb": "Petersham",
-    "ratio": 0.0030202
-  },
-  {
     "postcode": 2205,
     "suburb": "Arncliffe",
     "ratio": 0.5369482
@@ -4528,11 +4453,6 @@
     "postcode": 2207,
     "suburb": "Kingsgrove",
     "ratio": 0.0012576
-  },
-  {
-    "postcode": 2207,
-    "suburb": "Kogarah",
-    "ratio": 0.0006215
   },
   {
     "postcode": 2207,
@@ -4711,11 +4631,6 @@
   },
   {
     "postcode": 2216,
-    "suburb": "Kogarah",
-    "ratio": 0.0006148
-  },
-  {
-    "postcode": 2216,
     "suburb": "Kyeemagh",
     "ratio": 0.0328015
   },
@@ -4788,11 +4703,6 @@
     "postcode": 2218,
     "suburb": "Carlton (NSW)",
     "ratio": 0.6389403
-  },
-  {
-    "postcode": 2218,
-    "suburb": "Kogarah",
-    "ratio": 0.0032891
   },
   {
     "postcode": 2219,
@@ -6070,11 +5980,6 @@
     "ratio": 0.2062635
   },
   {
-    "postcode": 2280,
-    "suburb": "Windale",
-    "ratio": 0.0004014
-  },
-  {
     "postcode": 2281,
     "suburb": "Blacksmiths",
     "ratio": 0.1291477
@@ -6480,11 +6385,6 @@
     "ratio": 0.0783878
   },
   {
-    "postcode": 2290,
-    "suburb": "Windale",
-    "ratio": 0.0011168
-  },
-  {
     "postcode": 2291,
     "suburb": "Adamstown",
     "ratio": 0.0056659
@@ -6888,11 +6788,6 @@
     "postcode": 2312,
     "suburb": "Nabiac",
     "ratio": 0.8572404
-  },
-  {
-    "postcode": 2314,
-    "suburb": "Williamtown",
-    "ratio": 1
   },
   {
     "postcode": 2315,
@@ -8935,11 +8830,6 @@
     "ratio": 0.0026372
   },
   {
-    "postcode": 2351,
-    "suburb": "Armidale",
-    "ratio": 1
-  },
-  {
     "postcode": 2352,
     "suburb": "Kootingal",
     "ratio": 0.7819383
@@ -10148,11 +10038,6 @@
     "postcode": 2408,
     "suburb": "Blue Nobby",
     "ratio": 0.0540541
-  },
-  {
-    "postcode": 2408,
-    "suburb": "Croppa Creek",
-    "ratio": 0.1644144
   },
   {
     "postcode": 2408,
@@ -15105,11 +14990,6 @@
     "ratio": 0.0813929
   },
   {
-    "postcode": 2522,
-    "suburb": "Keiraville",
-    "ratio": 1
-  },
-  {
     "postcode": 2525,
     "suburb": "Figtree",
     "ratio": 1
@@ -18406,11 +18286,6 @@
   },
   {
     "postcode": 2615,
-    "suburb": "ACT Remainder - Belconnen",
-    "ratio": 0.0004077
-  },
-  {
-    "postcode": 2615,
     "suburb": "Charnwood",
     "ratio": 0.0669475
   },
@@ -18911,7 +18786,7 @@
   },
   {
     "postcode": 2625,
-    "suburb": "Kosciuszko National Park",
+    "suburb": "Thredbo",
     "ratio": 1
   },
   {
@@ -21785,11 +21660,6 @@
     "ratio": 0.0536893
   },
   {
-    "postcode": 2755,
-    "suburb": "Richmond (NSW)",
-    "ratio": 1
-  },
-  {
     "postcode": 2756,
     "suburb": "Bligh Park",
     "ratio": 0.187152
@@ -22403,11 +22273,6 @@
     "postcode": 2777,
     "suburb": "Yellow Rock (Blue Mountains - NSW)",
     "ratio": 0.059037
-  },
-  {
-    "postcode": 2778,
-    "suburb": "Hazelbrook",
-    "ratio": 0.0058397
   },
   {
     "postcode": 2778,
@@ -25550,11 +25415,6 @@
     "ratio": 0.9984618
   },
   {
-    "postcode": 3000,
-    "suburb": "Parkville (Vic.)",
-    "ratio": 0.0015382
-  },
-  {
     "postcode": 3002,
     "suburb": "East Melbourne",
     "ratio": 1
@@ -25562,11 +25422,6 @@
   {
     "postcode": 3003,
     "suburb": "West Melbourne",
-    "ratio": 1
-  },
-  {
-    "postcode": 3004,
-    "suburb": "Melbourne",
     "ratio": 1
   },
   {
@@ -25582,11 +25437,6 @@
   {
     "postcode": 3008,
     "suburb": "Docklands",
-    "ratio": 1
-  },
-  {
-    "postcode": 3010,
-    "suburb": "Parkville (Vic.)",
     "ratio": 1
   },
   {
@@ -26090,11 +25940,6 @@
     "ratio": 0.629814
   },
   {
-    "postcode": 3050,
-    "suburb": "Parkville (Vic.)",
-    "ratio": 1
-  },
-  {
     "postcode": 3051,
     "suburb": "North Melbourne",
     "ratio": 1
@@ -26203,11 +26048,6 @@
     "postcode": 3062,
     "suburb": "Somerton (Vic.)",
     "ratio": 1
-  },
-  {
-    "postcode": 3063,
-    "suburb": "Clarkefield",
-    "ratio": 0.0124456
   },
   {
     "postcode": 3063,
@@ -26465,11 +26305,6 @@
     "ratio": 0.288053
   },
   {
-    "postcode": 3086,
-    "suburb": "Bundoora (Vic.)",
-    "ratio": 1
-  },
-  {
     "postcode": 3087,
     "suburb": "Bundoora (Vic.)",
     "ratio": 0.0024762
@@ -26611,11 +26446,6 @@
   },
   {
     "postcode": 3096,
-    "suburb": "Kangaroo Ground",
-    "ratio": 0.0027382
-  },
-  {
-    "postcode": 3096,
     "suburb": "Wattle Glen",
     "ratio": 0.9972618
   },
@@ -26720,11 +26550,6 @@
     "ratio": 0.9921615
   },
   {
-    "postcode": 3105,
-    "suburb": "Doncaster",
-    "ratio": 0.0078385
-  },
-  {
     "postcode": 3106,
     "suburb": "Templestowe",
     "ratio": 1
@@ -26733,11 +26558,6 @@
     "postcode": 3107,
     "suburb": "Bulleen",
     "ratio": 0.0031595
-  },
-  {
-    "postcode": 3107,
-    "suburb": "Doncaster",
-    "ratio": 0.0076289
   },
   {
     "postcode": 3107,
@@ -26761,11 +26581,6 @@
   },
   {
     "postcode": 3108,
-    "suburb": "Doncaster East",
-    "ratio": 0.007919
-  },
-  {
-    "postcode": 3108,
     "suburb": "Templestowe Lower",
     "ratio": 0.0009614
   },
@@ -26781,18 +26596,8 @@
   },
   {
     "postcode": 3111,
-    "suburb": "Doncaster East",
-    "ratio": 0.0066117
-  },
-  {
-    "postcode": 3111,
     "suburb": "Donvale",
     "ratio": 0.9933883
-  },
-  {
-    "postcode": 3113,
-    "suburb": "Kangaroo Ground",
-    "ratio": 0.0024889
   },
   {
     "postcode": 3113,
@@ -27011,11 +26816,6 @@
   },
   {
     "postcode": 3134,
-    "suburb": "Ringwood East",
-    "ratio": 0.0013121
-  },
-  {
-    "postcode": 3134,
     "suburb": "Ringwood North",
     "ratio": 0.30029
   },
@@ -27068,11 +26868,6 @@
     "postcode": 3136,
     "suburb": "Croydon South",
     "ratio": 0.10271
-  },
-  {
-    "postcode": 3136,
-    "suburb": "Ringwood East",
-    "ratio": 0.0012644
   },
   {
     "postcode": 3137,
@@ -27966,11 +27761,6 @@
   },
   {
     "postcode": 3206,
-    "suburb": "South Melbourne",
-    "ratio": 0.0136681
-  },
-  {
-    "postcode": 3206,
     "suburb": "St Kilda West",
     "ratio": 0.002181
   },
@@ -28008,11 +27798,6 @@
     "postcode": 3213,
     "suburb": "Bell Post Hill",
     "ratio": 0.001307
-  },
-  {
-    "postcode": 3213,
-    "suburb": "Fyansford",
-    "ratio": 0.0113348
   },
   {
     "postcode": 3213,
@@ -28383,11 +28168,6 @@
     "postcode": 3231,
     "suburb": "Moggs Creek",
     "ratio": 0.0667471
-  },
-  {
-    "postcode": 3232,
-    "suburb": "Big Hill (Surf Coast - Vic.)",
-    "ratio": 0.0134724
   },
   {
     "postcode": 3232,
@@ -30203,11 +29983,6 @@
     "postcode": 3334,
     "suburb": "Mount Doran",
     "ratio": 0.2321428
-  },
-  {
-    "postcode": 3335,
-    "suburb": "Mount Cottrell",
-    "ratio": 0.0175012
   },
   {
     "postcode": 3335,
@@ -33621,11 +33396,6 @@
   },
   {
     "postcode": 3501,
-    "suburb": "Mildura",
-    "ratio": 0.0234144
-  },
-  {
-    "postcode": 3501,
     "suburb": "Nichols Point",
     "ratio": 0.7793491
   },
@@ -34966,11 +34736,6 @@
   },
   {
     "postcode": 3572,
-    "suburb": "Lockington",
-    "ratio": 0.1841831
-  },
-  {
-    "postcode": 3572,
     "suburb": "Milloo",
     "ratio": 0.1456816
   },
@@ -34988,11 +34753,6 @@
     "postcode": 3573,
     "suburb": "Calivil",
     "ratio": 0.4177671
-  },
-  {
-    "postcode": 3573,
-    "suburb": "Lockington",
-    "ratio": 0.212485
   },
   {
     "postcode": 3573,
@@ -36641,11 +36401,6 @@
   },
   {
     "postcode": 3691,
-    "suburb": "Bandiana",
-    "ratio": 0.0544152
-  },
-  {
-    "postcode": 3691,
     "suburb": "Baranduda",
     "ratio": 0.2437888
   },
@@ -36823,11 +36578,6 @@
     "postcode": 3697,
     "suburb": "Tawonga",
     "ratio": 0.9824146
-  },
-  {
-    "postcode": 3697,
-    "suburb": "Tawonga South",
-    "ratio": 0.0175854
   },
   {
     "postcode": 3698,
@@ -37965,11 +37715,6 @@
     "ratio": 0.9620924
   },
   {
-    "postcode": 3787,
-    "suburb": "The Basin (Vic.)",
-    "ratio": 0.0284307
-  },
-  {
     "postcode": 3788,
     "suburb": "Monbulk",
     "ratio": 0.0051253
@@ -38103,11 +37848,6 @@
     "postcode": 3799,
     "suburb": "Wesburn",
     "ratio": 0.1767047
-  },
-  {
-    "postcode": 3800,
-    "suburb": "Clayton",
-    "ratio": 1
   },
   {
     "postcode": 3802,
@@ -40261,11 +40001,6 @@
   },
   {
     "postcode": 3951,
-    "suburb": "Bena",
-    "ratio": 0.040201
-  },
-  {
-    "postcode": 3951,
     "suburb": "Jumbunna",
     "ratio": 0.1276382
   },
@@ -40568,11 +40303,6 @@
     "postcode": 3966,
     "suburb": "Welshpool (Vic.)",
     "ratio": 0.6472945
-  },
-  {
-    "postcode": 3967,
-    "suburb": "Alberton (Vic.)",
-    "ratio": 0.0592592
   },
   {
     "postcode": 3967,
@@ -41400,11 +41130,6 @@
     "ratio": 0.6803278
   },
   {
-    "postcode": 4029,
-    "suburb": "Herston",
-    "ratio": 1
-  },
-  {
     "postcode": 4030,
     "suburb": "Clayfield",
     "ratio": 0.0006552
@@ -41561,11 +41286,6 @@
   },
   {
     "postcode": 4051,
-    "suburb": "Ashgrove",
-    "ratio": 0.0001907
-  },
-  {
-    "postcode": 4051,
     "suburb": "Enoggera",
     "ratio": 0.1853354
   },
@@ -41701,11 +41421,6 @@
   },
   {
     "postcode": 4059,
-    "suburb": "Herston",
-    "ratio": 0.0002587
-  },
-  {
-    "postcode": 4059,
     "suburb": "Kelvin Grove",
     "ratio": 0.5984282
   },
@@ -41738,11 +41453,6 @@
     "postcode": 4060,
     "suburb": "Enoggera",
     "ratio": 0.0046013
-  },
-  {
-    "postcode": 4061,
-    "suburb": "Ashgrove",
-    "ratio": 0.000184
   },
   {
     "postcode": 4061,
@@ -41783,11 +41493,6 @@
     "postcode": 4064,
     "suburb": "Red Hill (Brisbane - Qld)",
     "ratio": 0.0253603
-  },
-  {
-    "postcode": 4065,
-    "suburb": "Ashgrove",
-    "ratio": 0.0029672
   },
   {
     "postcode": 4065,
@@ -42016,11 +41721,6 @@
   },
   {
     "postcode": 4076,
-    "suburb": "Richlands (Qld)",
-    "ratio": 0.0007604
-  },
-  {
-    "postcode": 4076,
     "suburb": "Wacol",
     "ratio": 0.4654313
   },
@@ -42053,11 +41753,6 @@
     "postcode": 4078,
     "suburb": "Forest Lake",
     "ratio": 0.8869492
-  },
-  {
-    "postcode": 4078,
-    "suburb": "Richlands (Qld)",
-    "ratio": 0.0008013
   },
   {
     "postcode": 4101,
@@ -42093,11 +41788,6 @@
     "postcode": 4102,
     "suburb": "East Brisbane",
     "ratio": 0.0007065
-  },
-  {
-    "postcode": 4102,
-    "suburb": "Greenslopes",
-    "ratio": 0.0018134
   },
   {
     "postcode": 4102,
@@ -42426,11 +42116,6 @@
   },
   {
     "postcode": 4121,
-    "suburb": "Greenslopes",
-    "ratio": 0.0009907
-  },
-  {
-    "postcode": 4121,
     "suburb": "Holland Park",
     "ratio": 0.3105812
   },
@@ -42668,11 +42353,6 @@
     "postcode": 4151,
     "suburb": "Coorparoo",
     "ratio": 0.9813869
-  },
-  {
-    "postcode": 4151,
-    "suburb": "Greenslopes",
-    "ratio": 0.0018335
   },
   {
     "postcode": 4151,
@@ -43490,11 +43170,6 @@
     "ratio": 0.5467005
   },
   {
-    "postcode": 4222,
-    "suburb": "Southport (Qld)",
-    "ratio": 1
-  },
-  {
     "postcode": 4223,
     "suburb": "Currumbin",
     "ratio": 0.2088663
@@ -43563,16 +43238,6 @@
     "postcode": 4228,
     "suburb": "Tallebudgera Valley",
     "ratio": 0.3082921
-  },
-  {
-    "postcode": 4229,
-    "suburb": "Robina",
-    "ratio": 1
-  },
-  {
-    "postcode": 4230,
-    "suburb": "Robina",
-    "ratio": 1
   },
   {
     "postcode": 4270,
@@ -52171,11 +51836,6 @@
   },
   {
     "postcode": 4680,
-    "suburb": "Coral Sea",
-    "ratio": 0.0013859
-  },
-  {
-    "postcode": 4680,
     "suburb": "Curtis Island",
     "ratio": 0.0059503
   },
@@ -53906,11 +53566,6 @@
   },
   {
     "postcode": 4740,
-    "suburb": "Coral Sea",
-    "ratio": 0.0002121
-  },
-  {
-    "postcode": 4740,
     "suburb": "Cremorne (Qld)",
     "ratio": 0.0004866
   },
@@ -54586,7 +54241,7 @@
   },
   {
     "postcode": 4801,
-    "suburb": "Whitsundays",
+    "suburb": "Whitsundays (Hayman Island)",
     "ratio": 1
   },
   {
@@ -54636,7 +54291,7 @@
   },
   {
     "postcode": 4803,
-    "suburb": "Whitsundays",
+    "suburb": "Whitsundays (Hamilton Island)",
     "ratio": 1
   },
   {
@@ -59346,11 +59001,6 @@
   },
   {
     "postcode": 5114,
-    "suburb": "Evanston South",
-    "ratio": 0.0011529
-  },
-  {
-    "postcode": 5114,
     "suburb": "Gould Creek",
     "ratio": 0.0071279
   },
@@ -59458,11 +59108,6 @@
     "postcode": 5118,
     "suburb": "Concordia",
     "ratio": 0.0088925
-  },
-  {
-    "postcode": 5118,
-    "suburb": "Evanston South",
-    "ratio": 0.0010612
   },
   {
     "postcode": 5118,
@@ -59626,11 +59271,6 @@
   },
   {
     "postcode": 5132,
-    "suburb": "Millbrook (SA)",
-    "ratio": 0.0477925
-  },
-  {
-    "postcode": 5132,
     "suburb": "Paracombe",
     "ratio": 0.9522075
   },
@@ -59638,11 +59278,6 @@
     "postcode": 5133,
     "suburb": "Inglewood (SA)",
     "ratio": 0.9459873
-  },
-  {
-    "postcode": 5133,
-    "suburb": "Millbrook (SA)",
-    "ratio": 0.0540127
   },
   {
     "postcode": 5134,
@@ -59678,11 +59313,6 @@
     "postcode": 5138,
     "suburb": "Basket Range",
     "ratio": 1
-  },
-  {
-    "postcode": 5139,
-    "suburb": "Basket Range",
-    "ratio": 0.042638
   },
   {
     "postcode": 5139,
@@ -60256,11 +59886,6 @@
   },
   {
     "postcode": 5202,
-    "suburb": "Inman Valley",
-    "ratio": 0.0228123
-  },
-  {
-    "postcode": 5202,
     "suburb": "Myponga",
     "ratio": 0.8369484
   },
@@ -60733,11 +60358,6 @@
     "postcode": 5232,
     "suburb": "Cudlee Creek",
     "ratio": 0.8930913
-  },
-  {
-    "postcode": 5232,
-    "suburb": "Millbrook (SA)",
-    "ratio": 0.1069087
   },
   {
     "postcode": 5233,
@@ -62323,11 +61943,6 @@
     "postcode": 5301,
     "suburb": "Sherlock (SA)",
     "ratio": 0.1186441
-  },
-  {
-    "postcode": 5301,
-    "suburb": "Wynarka",
-    "ratio": 0.0423729
   },
   {
     "postcode": 5302,
@@ -66866,11 +66481,6 @@
   },
   {
     "postcode": 6052,
-    "suburb": "Embleton",
-    "ratio": 0.0040065
-  },
-  {
-    "postcode": 6052,
     "suburb": "Inglewood (WA)",
     "ratio": 0.4987537
   },
@@ -66888,11 +66498,6 @@
     "postcode": 6053,
     "suburb": "Bedford",
     "ratio": 0.0024982
-  },
-  {
-    "postcode": 6053,
-    "suburb": "Embleton",
-    "ratio": 0.0036214
   },
   {
     "postcode": 6053,
@@ -67808,11 +67413,6 @@
     "postcode": 6122,
     "suburb": "Oakford",
     "ratio": 0.0040366
-  },
-  {
-    "postcode": 6123,
-    "suburb": "Jarrahdale",
-    "ratio": 0.0331623
   },
   {
     "postcode": 6123,
@@ -69103,11 +68703,6 @@
     "postcode": 6251,
     "suburb": "Kirup",
     "ratio": 0.508034
-  },
-  {
-    "postcode": 6251,
-    "suburb": "Mullalyup",
-    "ratio": 0.1020794
   },
   {
     "postcode": 6251,
@@ -74111,7 +73706,7 @@
   },
   {
     "postcode": 6711,
-    "suburb": "Onslow",
+    "suburb": "Thevenard Island",
     "ratio": 1
   },
   {
@@ -74366,11 +73961,6 @@
   },
   {
     "postcode": 6728,
-    "suburb": "Kimbolton (WA)",
-    "ratio": 0.0004539
-  },
-  {
-    "postcode": 6728,
     "suburb": "King Leopold Ranges",
     "ratio": 0.0410205
   },
@@ -74390,12 +73980,7 @@
     "ratio": 0.0304675
   },
   {
-    "postcode": 6731,
-    "suburb": "Kimbolton (WA)",
-    "ratio": 1
-  },
-  {
-    "postcode": 6733,
+    "postcode": 6728,
     "suburb": "Kimbolton (WA)",
     "ratio": 1
   },
