@@ -110,4 +110,12 @@ for (const sub of originalSuburbs) {
 
 console.log(newData);
 
+// Check that data is unique
+let seen = new Set();
+var hasDuplicates = newData.some(function (currentObject) {
+  return seen.size === seen.add(currentObject.suburb).size;
+});
+
+console.log(`Has duplicates: ${hasDuplicates}`);
+
 fs.writeFileSync("./uniqueSuburbs.json", JSON.stringify(newData));
