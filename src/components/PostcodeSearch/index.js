@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./styles.scss";
 import AsyncSelect from "react-select/async";
 import axios from "axios";
+import Fuse from "fuse.js";
 
 // Import images
 import mapPin from "./DLS_NAV_ICON.png";
@@ -10,6 +11,9 @@ const MIN_INPUT_LENGTH = 2;
 
 // Start of React component
 export default props => {
+  const componentRef = useRef({});
+  const { current: component } = componentRef;
+
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
   const [options, setOptions] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
@@ -18,6 +22,7 @@ export default props => {
     // Get some data on mount
     // TODO: Maybe make sure we actually have this data
     // and print an error or something
+    // NOTE: We're using let vars here (for some reason)
     let result = await axios.get(
       `${__webpack_public_path__}sa3-codes-and-names-and-states.json`
     );
@@ -45,7 +50,16 @@ export default props => {
       `${__webpack_public_path__}suburb-to-postcode.json`
     );
 
-    setSuburbToPostcodeData(result.data);
+    const s2pLookup = result.data;
+    let suburbPostcodes = [];
+
+    // Turn into array
+    for (const suburb in s2pLookup) {
+      const newSuburbObject = { suburb: suburb, postcode: s2pLookup[suburb] };
+      suburbPostcodes.push(newSuburbObject);
+    }
+
+    setSuburbToPostcodeData(suburbPostcodes);
   };
 
   const customStyles = {
@@ -97,62 +111,103 @@ export default props => {
     // TODO: maybe make this a debounce
     if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
-    // Detect postcode
-    // if (inputValue.length === 4) {
-    // Check if string is a postcode
-    if (/^[0-9]{4}$/.test(inputValue)) {
-      console.log(`Maybe postcode!`);
+    // // Detect postcode
+    // // if (inputValue.length === 4) {
+    // // Check if string is a postcode
+    // if (/^[0-9]{4}$/.test(inputValue)) {
+    //   console.log(`Maybe postcode!`);
 
-      // Filter matches
-      const filteredPostcodes = postcodeToSa3.filter(
-        entry => entry.postcode.toString() === inputValue
-      );
+    //   // Filter matches
+    //   const filteredPostcodes = postcodeToSa3.filter(
+    //     entry => entry.postcode.toString() === inputValue
+    //   );
 
-      // Array of only sa3s for difference comparison
-      const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+    //   // Array of only sa3s for difference comparison
+    //   const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
 
-      // Filter our select box final options
-      const filteredOptions = options.filter(option =>
-        matchingSa3s.includes(option.value)
-      );
+    //   // Filter our select box final options
+    //   const filteredOptions = options.filter(option =>
+    //     matchingSa3s.includes(option.value)
+    //   );
 
-      // Add postcode ratio to the options object
-      const optionsWithPostcode = filteredOptions.map(option => {
-        const ratio = filteredPostcodes.find(
-          entry => entry.sa3 === option.value
-        ).ratio;
+    //   // Add postcode ratio to the options object
+    //   const optionsWithPostcode = filteredOptions.map(option => {
+    //     const ratio = filteredPostcodes.find(
+    //       entry => entry.sa3 === option.value
+    //     ).ratio;
 
-        return {
-          value: option.value,
-          label: option.label,
-          ratio: ratio,
-        };
-      });
+    //     return {
+    //       value: option.value,
+    //       label: option.label,
+    //       ratio: ratio,
+    //     };
+    //   });
 
-      // Sort by ratio
-      const sortedOptions = optionsWithPostcode.sort(
-        (a, b) => b.ratio - a.ratio
-      );
+    //   // Sort by ratio
+    //   const sortedOptions = optionsWithPostcode.sort(
+    //     (a, b) => b.ratio - a.ratio
+    //   );
 
-      console.log(sortedOptions);
-      return sortedOptions;
-    }
+    //   console.log(sortedOptions);
+    //   return sortedOptions;
+    // }
 
-    // If not a postcode just search the options
-    const filteredOptions = options.filter(option => {
-      return option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
+    // // If not a postcode just search the options
+    // const filteredOptions = options.filter(option => {
+    //   return option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
+    // });
+
+    // return filteredOptions;
+
+    // const fuse = new Fuse(suburbToPostcodeData, {
+    //   // isCaseSensitive: false,
+    //   // includeScore: false,
+    //   // shouldSort: true,
+    //   // includeMatches: false,
+    //   // findAllMatches: false,
+    //   minMatchCharLength: 3,
+    //   // location: 0,
+    //   threshold: 0.3,
+    //   // distance: 100,
+    //   // useExtendedSearch: false,
+    //   // ignoreLocation: false,
+    //   // ignoreFieldNorm: false,
+    //   keys: ["suburb", "postcode"],
+    // });
+
+    return component.fuse.search(inputValue).map(entry => {
+      return {
+        value: entry.item.suburb,
+        label: entry.item.suburb,
+        postcode: entry.item.postcode,
+      };
     });
-
-    return filteredOptions;
-
-    // TODO: If filtered options is zero then assume a suburb/place search
-    // and return appropriate data
   };
 
   // Initial effect run once at start
   useEffect(() => {
     init();
   }, []);
+
+  useEffect(() => {
+    if (!suburbToPostcodeData) return;
+
+    component.fuse = new Fuse(suburbToPostcodeData, {
+      // isCaseSensitive: false,
+      // includeScore: false,
+      // shouldSort: true,
+      // includeMatches: false,
+      // findAllMatches: false,
+      minMatchCharLength: 3,
+      // location: 0,
+      threshold: 0.3,
+      // distance: 100,
+      // useExtendedSearch: false,
+      // ignoreLocation: false,
+      // ignoreFieldNorm: false,
+      keys: ["suburb", "postcode"],
+    });
+  }, [suburbToPostcodeData]);
 
   return (
     <div className={styles.root}>
@@ -165,7 +220,7 @@ export default props => {
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
         noOptionsMessage={() => "Enter your postcode or local area..."}
-        defaultOptions={options}
+        // defaultOptions={options}
       />
     </div>
   );
