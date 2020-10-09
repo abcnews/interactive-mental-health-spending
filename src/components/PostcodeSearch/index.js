@@ -3,32 +3,49 @@ import styles from "./styles.scss";
 import AsyncSelect from "react-select/async";
 import axios from "axios";
 
-// TODO: Maybe move to async fetch
-import sa3sImport from "./sa3-codes-and-names-and-states.json";
-import postcodeToSa3 from "./postcode-to-sa3-lookup.json";
-
-// Sort SA3 areas
-const sa3s = sa3sImport.sort((a, b) => a.SA3_NAME.localeCompare(b.SA3_NAME));
-
 // Import images
 import mapPin from "./DLS_NAV_ICON.png";
-
-const options = sa3s.map(sa3 => ({
-  value: sa3.SA3_CODE,
-  label: sa3.SA3_NAME,
-}));
 
 const MIN_INPUT_LENGTH = 2;
 
 // Start of React component
 export default props => {
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
+  const [options, setOptions] = useState(null);
+  const [postcodeToSa3, setPostcodeToSa3] = useState(null);
 
   const init = async () => {
-    const result = await axios.get(
+    // Get some data on mount
+    // TODO: Maybe make sure we actually have this data
+    // and print an error or something
+    let result = await axios.get(
+      `${__webpack_public_path__}sa3-codes-and-names-and-states.json`
+    );
+
+    // Sort SA3 areas
+    const sa3s = result.data.sort((a, b) =>
+      a.SA3_NAME.localeCompare(b.SA3_NAME)
+    );
+
+    // Map to options that React select can use
+    const sa3sAsOptions = sa3s.map(sa3 => ({
+      value: sa3.SA3_CODE,
+      label: sa3.SA3_NAME,
+    }));
+
+    setOptions(sa3sAsOptions);
+
+    result = await axios.get(
+      `${__webpack_public_path__}postcode-to-sa3-lookup.json`
+    );
+
+    setPostcodeToSa3(result);
+
+    result = await axios.get(
       `${__webpack_public_path__}suburb-to-postcode.json`
     );
-    setSuburbToPostcodeData(result);
+
+    setSuburbToPostcodeData(result.data);
   };
 
   const customStyles = {
@@ -75,7 +92,6 @@ export default props => {
 
   const promiseOptions = async inputValue => {
     console.log(`Input value: ${inputValue}`);
-    console.log(inputValue);
 
     // Don't process yet
     // TODO: maybe make this a debounce
