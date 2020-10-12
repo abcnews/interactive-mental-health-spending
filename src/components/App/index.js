@@ -2,6 +2,7 @@ import React, { useState, useEffect, useLayoutEffect } from "react";
 import styles from "./styles.scss";
 import { Portal } from "react-portal";
 import Scrollyteller from "@abcnews/scrollyteller";
+import axios from "axios";
 
 import PostcodeSearch from "../PostcodeSearch";
 import BackgroundStage from "../BackgroundStage";
@@ -21,6 +22,9 @@ export default props => {
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
   const [configKey, setConfigKey] = useState(null);
   const [userSelection, setUserSelection] = useState(null);
+  const [postcodeToDecile, setPostcodeToDecile] = useState(null);
+  const [postcodeToSa3, setPostcodeToSa3] = useState(null);
+  const [userQuintile, setUserQuintile] = useState(null);
 
   const onMarker = config => {
     console.log("Config:", config);
@@ -37,11 +41,24 @@ export default props => {
   };
 
   const handleSelection = data => {
-    //
+    if (!data) return;
+
+    if (!postcodeToDecile) {
+      console.error("Data not loaded correctly.");
+      return;
+    }
+
+    setUserSelection(data);
+
+    // Process when user selects either postcode or suburb
     console.log(`App data:`);
     console.log(data);
 
-    setUserSelection(data);
+    const decile = postcodeToDecile[data.postcode];
+    const quintile = Math.ceil(decile / 2);
+
+    console.log("User quintile:", quintile);
+    setUserQuintile(quintile);
   };
 
   // useEffect(() => {
@@ -67,6 +84,21 @@ export default props => {
 
   //   setUserSa3(largestRatio.sa3);
   // }, [userPostcode]);
+
+  useEffect(() => {
+    // Fetch some data
+    axios
+      .get(`${__webpack_public_path__}postcode-to-decile.json`)
+      .then(result => {
+        setPostcodeToDecile(result.data);
+      });
+
+    axios
+      .get(`${__webpack_public_path__}postcode-to-sa3-lookup.json`)
+      .then(result => {
+        setPostcodeToSa3(result.data);
+      });
+  }, []);
 
   return (
     <AppContext.Provider value={{ userSelection, setUserSelection }}>
@@ -98,6 +130,7 @@ export default props => {
                 lines={lineKey.lines}
                 triggerOnDock={true}
                 markKey={configKey}
+                userQuintile={userQuintile}
               />
             </BackgroundStage>
           </Scrollyteller>
@@ -121,6 +154,7 @@ export default props => {
                 triggerOnDock={true}
                 markKey={configKey}
                 showLowHighDots={dotKey.showLowHighDots}
+                userQuintile={userQuintile}
               />
             </BackgroundStage>
           </Scrollyteller>

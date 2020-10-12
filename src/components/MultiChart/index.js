@@ -80,7 +80,7 @@ const MultiChart = props => {
     left: 0,
   });
   const [svgWidth, setSvgWidth] = useState(0);
-  const [ownQuintile, setOwnQuintile] = useState(4);
+  const [ownQuintile, setOwnQuintile] = useState(null);
   const [ownRegion, setOwnRegion] = useState(4);
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
@@ -682,7 +682,7 @@ const MultiChart = props => {
         processDots();
 
         // Test data generation
-        setOwnQuintile(getRandomInt(1, 5));
+        setOwnQuintile(props.userQuintile);
         setOwnRegion(getRandomInt(1, 6));
       }
     } else {
@@ -773,6 +773,10 @@ const MultiChart = props => {
   useEffect(() => {
     if (hasBeenDocked) processAverageLines();
   }, [averageData]);
+
+  // useEffect(() => {
+  //   setOwnQuintile(props.userQuintile);
+  // }, [props.userQuintile]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;

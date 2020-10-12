@@ -69,6 +69,13 @@ export default props => {
   };
 
   const customStyles = {
+    container: provided => ({ ...provided, fontFamily: "ABCSans, sans-serif" }),
+    input: () => ({
+      fontFamily: "ABCSans, sans-serif",
+      "& input": {
+        font: "inherit",
+      },
+    }),
     menu: (provided, state) => ({
       ...provided,
       borderRadius: 0,
@@ -76,7 +83,7 @@ export default props => {
     }),
     control: (provided, state) => ({
       ...provided,
-      fontFamily: "ABCSans, sans-serif",
+      // fontFamily: "ABCSans, sans-serif",
       borderRadius: 0,
       borderWidth: "2px",
       // borderColor: "#999",
@@ -112,9 +119,6 @@ export default props => {
   };
 
   const promiseOptions = async inputValue => {
-    console.log(`Input value: ${inputValue}`);
-
-    // Don't process yet
     // TODO: maybe make this a debounce
     // if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
@@ -184,6 +188,7 @@ export default props => {
       return mappedOptions;
     }
 
+    // Otherwise we do a fuzzy suburb search
     const fuzzyOptions = component.fuse.search(inputValue).map(entry => {
       return {
         value: entry.item.suburb,
@@ -230,7 +235,7 @@ export default props => {
     <div className={styles.root}>
       <AsyncSelect
         placeholder={"Search your suburb or postcode"}
-        cacheOptions
+        cacheOptions={false}
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
