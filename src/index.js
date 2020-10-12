@@ -4,6 +4,15 @@ import "regenerator-runtime/runtime.js";
 import "intersection-observer";
 import "polyfill-array-includes";
 
+if (!String.prototype.startsWith) {
+  Object.defineProperty(String.prototype, "startsWith", {
+    value: function (search, rawPos) {
+      var pos = rawPos > 0 ? rawPos | 0 : 0;
+      return this.substring(pos, pos + search.length) === search;
+    },
+  });
+}
+
 // Imports
 import React from "react";
 import { render } from "react-dom";
@@ -52,7 +61,11 @@ const init = async () => {
   );
 
   render(
-    <App projectName={"Mental Health"} scrollyData1={scrollyData1} scrollyData2={scrollyData2} />,
+    <App
+      projectName={"Mental Health"}
+      scrollyData1={scrollyData1}
+      scrollyData2={scrollyData2}
+    />,
     document.querySelector(".postcodesearch")
   );
 };
@@ -77,5 +90,7 @@ if (module.hot) {
 }
 
 if (process.env.NODE_ENV === "development") {
-  console.debug(`[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`);
+  console.debug(
+    `[MENTAL HEALTH INTERACTIVE] public path: ${__webpack_public_path__}`
+  );
 }

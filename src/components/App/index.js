@@ -37,6 +37,7 @@ export default props => {
   };
 
   const handleSelection = data => {
+    //
     console.log(`App data:`);
     console.log(data);
 
