@@ -116,7 +116,7 @@ export default props => {
 
     // Don't process yet
     // TODO: maybe make this a debounce
-    if (inputValue.length < MIN_INPUT_LENGTH) return [];
+    // if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
     // Detect postcode
     // Return sorted SA3s that match postcode by area
@@ -166,6 +166,23 @@ export default props => {
     // });
 
     // return filteredOptions;
+
+    // If user enters digits assume postcode search
+    if (/^\d{0,4}$/.test(inputValue)) {
+      const filteredPostcodes = postcodes.filter(entry =>
+        entry.toString().startsWith(inputValue)
+      );
+
+      const mappedOptions = filteredPostcodes.map(postcode => ({
+        value: postcode,
+        label: postcode,
+        postcode: postcode,
+      }));
+
+      await wait(250);
+
+      return mappedOptions;
+    }
 
     const fuzzyOptions = component.fuse.search(inputValue).map(entry => {
       return {
@@ -219,7 +236,10 @@ export default props => {
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
-        noOptionsMessage={(inputValue) => "Search your suburb or postcode"}
+        noOptionsMessage={({ inputValue }) => {
+          if (inputValue.length < 3) return "Search your suburb or postcode";
+          return "Nothing found...";
+        }}
         // defaultOptions={options}
       />
     </div>
