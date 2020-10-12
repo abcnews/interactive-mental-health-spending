@@ -64,7 +64,7 @@
     "dotColor": "#3C92C8",
     "xField": "quintile",
     "yField": "percent",
-    "highlightOwnBar": true,
+    "highlightOwnBar": false,
     "lines": [
       {
         "lineName": "line1",
