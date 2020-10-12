@@ -683,7 +683,7 @@ const MultiChart = props => {
 
         // Test data generation
         setOwnQuintile(props.userQuintile);
-        setOwnRegion(getRandomInt(1, 6));
+        setOwnRegion(4);
       }
     } else {
       // For now let's remove data when un-docking...
