@@ -15,6 +15,7 @@ export default props => {
   const componentRef = useRef({});
   const { current: component } = componentRef;
 
+  const [postcodes, setPostcodes] = useState(null);
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
   const [options, setOptions] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
@@ -61,11 +62,16 @@ export default props => {
     }
 
     setSuburbToPostcodeData(suburbPostcodes);
+
+    result = await axios.get(`${__webpack_public_path__}postcodes.json`);
+
+    setPostcodes(result.data);
   };
 
   const customStyles = {
     menu: (provided, state) => ({
       ...provided,
+      borderRadius: 0,
       zIndex: 2, // So Scrolly stage doesn't go over the top
     }),
     control: (provided, state) => ({
@@ -93,7 +99,7 @@ export default props => {
         <div>{label}</div>
         {/* {ratio && (
           <div style={{ marginLeft: "12px", color: "#666" }}>
-           <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small> 
+           <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small>
           </div>
         )} */}
       </div>
@@ -113,49 +119,46 @@ export default props => {
     if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
     // Detect postcode
+    // Return sorted SA3s that match postcode by area
     // if (inputValue.length === 4) {
     // Check if string is a postcode
-    if (/^[0-9]{4}$/.test(inputValue)) {
-      console.log(`Maybe postcode!`);
+    // NOTE: We are using straight suburb OR postcode search now
+    // if (/^[0-9]{4}$/.test(inputValue)) {
+    //   console.log(`Maybe postcode!`);
 
-      
+    //   // Filter matches
+    //   const filteredPostcodes = postcodeToSa3.filter(
+    //     entry => entry.postcode.toString() === inputValue
+    //   );
 
-      // Filter matches
-      const filteredPostcodes = postcodeToSa3.filter(
-        entry => entry.postcode.toString() === inputValue
-      );
+    //   // Array of only sa3s for difference comparison
+    //   const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
 
-      console.log(filteredPostcodes);
+    //   // Filter our select box final options
+    //   const filteredOptions = options.filter(option =>
+    //     matchingSa3s.includes(option.value)
+    //   );
 
-      // Array of only sa3s for difference comparison
-      const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+    //   // Add postcode ratio to the options object
+    //   const optionsWithPostcode = filteredOptions.map(option => {
+    //     const ratio = filteredPostcodes.find(
+    //       entry => entry.sa3 === option.value
+    //     ).ratio;
 
-      // Filter our select box final options
-      const filteredOptions = options.filter(option =>
-        matchingSa3s.includes(option.value)
-      );
+    //     return {
+    //       value: option.value,
+    //       label: option.label,
+    //       ratio: ratio,
+    //     };
+    //   });
 
-      // Add postcode ratio to the options object
-      const optionsWithPostcode = filteredOptions.map(option => {
-        const ratio = filteredPostcodes.find(
-          entry => entry.sa3 === option.value
-        ).ratio;
+    //   // Sort by ratio
+    //   const sortedOptions = optionsWithPostcode.sort(
+    //     (a, b) => b.ratio - a.ratio
+    //   );
 
-        return {
-          value: option.value,
-          label: option.label,
-          ratio: ratio,
-        };
-      });
-
-      // Sort by ratio
-      const sortedOptions = optionsWithPostcode.sort(
-        (a, b) => b.ratio - a.ratio
-      );
-
-      console.log(sortedOptions);
-      return sortedOptions;
-    }
+    //   return sortedOptions;
+    // }
 
     // // If not a postcode just search the options
     // const filteredOptions = options.filter(option => {
@@ -164,13 +167,18 @@ export default props => {
 
     // return filteredOptions;
 
-    return component.fuse.search(inputValue).map(entry => {
+    const fuzzyOptions = component.fuse.search(inputValue).map(entry => {
       return {
         value: entry.item.suburb,
         label: entry.item.suburb,
         postcode: entry.item.postcode,
       };
     });
+
+    // Fake a delay
+    await wait(750);
+
+    return fuzzyOptions;
   };
 
   // Initial effect run once at start
@@ -204,16 +212,22 @@ export default props => {
   return (
     <div className={styles.root}>
       <AsyncSelect
-        placeholder={"Search your suburb or postcode..."}
+        placeholder={"Search your suburb or postcode"}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
-        noOptionsMessage={() => "Search your suburb or postcode..."}
+        noOptionsMessage={(inputValue) => "Search your suburb or postcode"}
         // defaultOptions={options}
       />
     </div>
   );
 };
+
+async function wait(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
+}
