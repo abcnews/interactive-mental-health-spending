@@ -25,6 +25,8 @@ export default props => {
   const [postcodeToDecile, setPostcodeToDecile] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
   const [userQuintile, setUserQuintile] = useState(null);
+  const [userSa3, setUserSa3] = useState(null);
+  const [sa3s, setSa3s] = useState(null);
 
   const onMarker = config => {
     console.log("Config:", config);
@@ -41,24 +43,56 @@ export default props => {
   };
 
   const handleSelection = data => {
+    // Process when user selects either postcode or suburb
     if (!data) return;
 
-    if (!postcodeToDecile) {
+    if (!postcodeToDecile || !postcodeToSa3) {
       console.error("Data not loaded correctly.");
       return;
     }
 
     setUserSelection(data);
 
-    // Process when user selects either postcode or suburb
-    console.log(`App data:`);
-    console.log(data);
-
+    // Calculate quintile
     const decile = postcodeToDecile[data.postcode];
     const quintile = Math.ceil(decile / 2);
 
     console.log("User quintile:", quintile);
     setUserQuintile(quintile);
+
+    // Calculate user SA3
+
+    // Filter matches
+    const filteredPostcodes = postcodeToSa3.filter(entry => {
+      return +entry.postcode === +data.postcode;
+    });
+
+    // Array of only sa3s for difference comparison
+    const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+
+    // Filter our select box final options
+    const filteredSa3s = sa3s.filter(sa3 => {
+      return matchingSa3s.includes(sa3.SA3_CODE);
+    });
+
+    // Add postcode ratio to the options object
+    const sa3sWithRatio = filteredSa3s.map(sa3 => {
+      const ratio = filteredPostcodes.find(entry => entry.sa3 === sa3.SA3_CODE)
+        .ratio;
+
+      return {
+        code: sa3.SA3_CODE,
+        name: sa3.SA3_NAME,
+        state: sa3.STATE_NAME,
+        ratio: ratio,
+      };
+    });
+
+    // Sort by ratio
+    const sorted = sa3sWithRatio.sort((a, b) => b.ratio - a.ratio);
+
+    console.log(sorted[0]);
+    setUserSa3(sorted[0]);
   };
 
   // useEffect(() => {
@@ -98,6 +132,12 @@ export default props => {
       .then(result => {
         setPostcodeToSa3(result.data);
       });
+
+    axios
+      .get(`${__webpack_public_path__}sa3-codes-and-names-and-states.json`)
+      .then(result => {
+        setSa3s(result.data);
+      });
   }, []);
 
   return (
@@ -131,6 +171,7 @@ export default props => {
                 triggerOnDock={true}
                 markKey={configKey}
                 userQuintile={userQuintile}
+                userSa3={userSa3}
               />
             </BackgroundStage>
           </Scrollyteller>
@@ -155,6 +196,7 @@ export default props => {
                 markKey={configKey}
                 showLowHighDots={dotKey.showLowHighDots}
                 userQuintile={userQuintile}
+                userSa3={userSa3}
               />
             </BackgroundStage>
           </Scrollyteller>
