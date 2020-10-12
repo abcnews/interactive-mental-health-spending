@@ -7,13 +7,15 @@ import Fuse from "fuse.js";
 // Import images
 import mapPin from "./DLS_NAV_ICON.png";
 
-const MIN_INPUT_LENGTH = 2;
+const MIN_INPUT_LENGTH = 3;
 
 // Start of React component
 export default props => {
+  // Use Refs as component vars
   const componentRef = useRef({});
   const { current: component } = componentRef;
 
+  const [postcodes, setPostcodes] = useState(null);
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
   const [options, setOptions] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
@@ -44,7 +46,7 @@ export default props => {
       `${__webpack_public_path__}postcode-to-sa3-lookup.json`
     );
 
-    setPostcodeToSa3(result);
+    setPostcodeToSa3(result.data);
 
     result = await axios.get(
       `${__webpack_public_path__}suburb-to-postcode.json`
@@ -60,11 +62,16 @@ export default props => {
     }
 
     setSuburbToPostcodeData(suburbPostcodes);
+
+    result = await axios.get(`${__webpack_public_path__}postcodes.json`);
+
+    setPostcodes(result.data);
   };
 
   const customStyles = {
     menu: (provided, state) => ({
       ...provided,
+      borderRadius: 0,
       zIndex: 2, // So Scrolly stage doesn't go over the top
     }),
     control: (provided, state) => ({
@@ -92,7 +99,7 @@ export default props => {
         <div>{label}</div>
         {/* {ratio && (
           <div style={{ marginLeft: "12px", color: "#666" }}>
-           <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small> 
+           <small>{calculatedPercent === 100 ? "100" : calculatedPercent}&#37;</small>
           </div>
         )} */}
       </div>
@@ -109,11 +116,13 @@ export default props => {
 
     // Don't process yet
     // TODO: maybe make this a debounce
-    if (inputValue.length < MIN_INPUT_LENGTH) return [];
+    // if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
-    // // Detect postcode
-    // // if (inputValue.length === 4) {
-    // // Check if string is a postcode
+    // Detect postcode
+    // Return sorted SA3s that match postcode by area
+    // if (inputValue.length === 4) {
+    // Check if string is a postcode
+    // NOTE: We are using straight suburb OR postcode search now
     // if (/^[0-9]{4}$/.test(inputValue)) {
     //   console.log(`Maybe postcode!`);
 
@@ -148,7 +157,6 @@ export default props => {
     //     (a, b) => b.ratio - a.ratio
     //   );
 
-    //   console.log(sortedOptions);
     //   return sortedOptions;
     // }
 
@@ -159,29 +167,35 @@ export default props => {
 
     // return filteredOptions;
 
-    // const fuse = new Fuse(suburbToPostcodeData, {
-    //   // isCaseSensitive: false,
-    //   // includeScore: false,
-    //   // shouldSort: true,
-    //   // includeMatches: false,
-    //   // findAllMatches: false,
-    //   minMatchCharLength: 3,
-    //   // location: 0,
-    //   threshold: 0.3,
-    //   // distance: 100,
-    //   // useExtendedSearch: false,
-    //   // ignoreLocation: false,
-    //   // ignoreFieldNorm: false,
-    //   keys: ["suburb", "postcode"],
-    // });
+    // If user enters digits assume postcode search
+    if (/^\d{0,4}$/.test(inputValue)) {
+      const filteredPostcodes = postcodes.filter(entry =>
+        entry.toString().startsWith(inputValue)
+      );
 
-    return component.fuse.search(inputValue).map(entry => {
+      const mappedOptions = filteredPostcodes.map(postcode => ({
+        value: postcode,
+        label: postcode,
+        postcode: postcode,
+      }));
+
+      await wait(250);
+
+      return mappedOptions;
+    }
+
+    const fuzzyOptions = component.fuse.search(inputValue).map(entry => {
       return {
         value: entry.item.suburb,
         label: entry.item.suburb,
         postcode: entry.item.postcode,
       };
     });
+
+    // Fake a delay
+    await wait(750);
+
+    return fuzzyOptions;
   };
 
   // Initial effect run once at start
@@ -200,28 +214,40 @@ export default props => {
       // findAllMatches: false,
       minMatchCharLength: 3,
       // location: 0,
-      threshold: 0.3,
-      // distance: 100,
+      threshold: 0.4,
+      distance: 50,
       // useExtendedSearch: false,
       // ignoreLocation: false,
       // ignoreFieldNorm: false,
-      keys: ["suburb", "postcode"],
+      keys: [
+        "suburb",
+        // "postcode"
+      ],
     });
   }, [suburbToPostcodeData]);
 
   return (
     <div className={styles.root}>
       <AsyncSelect
-        placeholder={"Enter postcode or search area..."}
+        placeholder={"Search your suburb or postcode"}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
-        noOptionsMessage={() => "Enter your postcode or local area..."}
+        noOptionsMessage={({ inputValue }) => {
+          if (inputValue.length < 3) return "Search your suburb or postcode";
+          return "Nothing found...";
+        }}
         // defaultOptions={options}
       />
     </div>
   );
 };
+
+async function wait(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
+}
