@@ -7,10 +7,11 @@ import Fuse from "fuse.js";
 // Import images
 import mapPin from "./DLS_NAV_ICON.png";
 
-const MIN_INPUT_LENGTH = 2;
+const MIN_INPUT_LENGTH = 3;
 
 // Start of React component
 export default props => {
+  // Use Refs as component vars
   const componentRef = useRef({});
   const { current: component } = componentRef;
 
@@ -44,7 +45,7 @@ export default props => {
       `${__webpack_public_path__}postcode-to-sa3-lookup.json`
     );
 
-    setPostcodeToSa3(result);
+    setPostcodeToSa3(result.data);
 
     result = await axios.get(
       `${__webpack_public_path__}suburb-to-postcode.json`
@@ -111,46 +112,50 @@ export default props => {
     // TODO: maybe make this a debounce
     if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
-    // // Detect postcode
-    // // if (inputValue.length === 4) {
-    // // Check if string is a postcode
-    // if (/^[0-9]{4}$/.test(inputValue)) {
-    //   console.log(`Maybe postcode!`);
+    // Detect postcode
+    // if (inputValue.length === 4) {
+    // Check if string is a postcode
+    if (/^[0-9]{4}$/.test(inputValue)) {
+      console.log(`Maybe postcode!`);
 
-    //   // Filter matches
-    //   const filteredPostcodes = postcodeToSa3.filter(
-    //     entry => entry.postcode.toString() === inputValue
-    //   );
+      
 
-    //   // Array of only sa3s for difference comparison
-    //   const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
+      // Filter matches
+      const filteredPostcodes = postcodeToSa3.filter(
+        entry => entry.postcode.toString() === inputValue
+      );
 
-    //   // Filter our select box final options
-    //   const filteredOptions = options.filter(option =>
-    //     matchingSa3s.includes(option.value)
-    //   );
+      console.log(filteredPostcodes);
 
-    //   // Add postcode ratio to the options object
-    //   const optionsWithPostcode = filteredOptions.map(option => {
-    //     const ratio = filteredPostcodes.find(
-    //       entry => entry.sa3 === option.value
-    //     ).ratio;
+      // Array of only sa3s for difference comparison
+      const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
 
-    //     return {
-    //       value: option.value,
-    //       label: option.label,
-    //       ratio: ratio,
-    //     };
-    //   });
+      // Filter our select box final options
+      const filteredOptions = options.filter(option =>
+        matchingSa3s.includes(option.value)
+      );
 
-    //   // Sort by ratio
-    //   const sortedOptions = optionsWithPostcode.sort(
-    //     (a, b) => b.ratio - a.ratio
-    //   );
+      // Add postcode ratio to the options object
+      const optionsWithPostcode = filteredOptions.map(option => {
+        const ratio = filteredPostcodes.find(
+          entry => entry.sa3 === option.value
+        ).ratio;
 
-    //   console.log(sortedOptions);
-    //   return sortedOptions;
-    // }
+        return {
+          value: option.value,
+          label: option.label,
+          ratio: ratio,
+        };
+      });
+
+      // Sort by ratio
+      const sortedOptions = optionsWithPostcode.sort(
+        (a, b) => b.ratio - a.ratio
+      );
+
+      console.log(sortedOptions);
+      return sortedOptions;
+    }
 
     // // If not a postcode just search the options
     // const filteredOptions = options.filter(option => {
@@ -158,22 +163,6 @@ export default props => {
     // });
 
     // return filteredOptions;
-
-    // const fuse = new Fuse(suburbToPostcodeData, {
-    //   // isCaseSensitive: false,
-    //   // includeScore: false,
-    //   // shouldSort: true,
-    //   // includeMatches: false,
-    //   // findAllMatches: false,
-    //   minMatchCharLength: 3,
-    //   // location: 0,
-    //   threshold: 0.3,
-    //   // distance: 100,
-    //   // useExtendedSearch: false,
-    //   // ignoreLocation: false,
-    //   // ignoreFieldNorm: false,
-    //   keys: ["suburb", "postcode"],
-    // });
 
     return component.fuse.search(inputValue).map(entry => {
       return {
@@ -200,26 +189,29 @@ export default props => {
       // findAllMatches: false,
       minMatchCharLength: 3,
       // location: 0,
-      threshold: 0.3,
-      // distance: 100,
+      threshold: 0.4,
+      distance: 50,
       // useExtendedSearch: false,
       // ignoreLocation: false,
       // ignoreFieldNorm: false,
-      keys: ["suburb", "postcode"],
+      keys: [
+        "suburb",
+        // "postcode"
+      ],
     });
   }, [suburbToPostcodeData]);
 
   return (
     <div className={styles.root}>
       <AsyncSelect
-        placeholder={"Enter postcode or search area..."}
+        placeholder={"Search your suburb or postcode..."}
         cacheOptions
         loadOptions={promiseOptions}
         onChange={handleChange}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         isClearable={true}
-        noOptionsMessage={() => "Enter your postcode or local area..."}
+        noOptionsMessage={() => "Search your suburb or postcode..."}
         // defaultOptions={options}
       />
     </div>
