@@ -104,7 +104,7 @@
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": true,
-    "labelOwnDot": true,
+    "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
