@@ -325,15 +325,19 @@ const MultiChart = props => {
       .data(dataObject[dotsDataKey.dataKey], d => {
         return d["SA3 name"];
       })
+      // .order() // don't need actually
       .join(
         enter =>
           enter
             .append("circle")
-            // .attr("id", d => d["SA3 name"])
             .classed("dots", true)
             .classed("dots-testimony-target", d => {
               if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-              return false;
+              else return false;
+            })
+            .classed("dots-own-dot", d => {
+              if (userSa3 && d["SA3 name"] === userSa3.name && props.labelOwnDot) return true;
+              else return false;
             })
             .style("stroke", "rgba(255, 255, 255, 0.6)")
             .style("stroke-width", "1.5")
@@ -367,8 +371,10 @@ const MultiChart = props => {
                 // Experimenting with adding flashing dot on testimonials target
                 .end()
                 .then(() => {
-                  const testimonyTarget = d3.select(".dots-testimony-target");
+                  const ownDotTarget = d3.select(".dots-own-dot");
+                  if (!ownDotTarget.empty()) ownDotTarget.raise();
 
+                  const testimonyTarget = d3.select(".dots-testimony-target");
                   if (testimonyTarget.empty()) return;
 
                   const pulseDot = component.svg
@@ -406,9 +412,12 @@ const MultiChart = props => {
           update
             .classed("dots-testimony-target", d => {
               if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-              return false;
+              else return false;
             })
-
+            .classed("dots-own-dot", d => {
+              if (userSa3 && d["SA3 name"] === userSa3.name && props.labelOwnDot) return true;
+              else return false;
+            })
             .attr("cx", d => {
               return component.scaleX(d[dotsDataKey.xField]);
             })
@@ -460,6 +469,10 @@ const MultiChart = props => {
                 .end()
                 .then(() => {
                   component.svg.select(`circle.dots-animated-pulse`).remove();
+
+                  const ownDotTarget = d3.select(".dots-own-dot");
+                  console.log(ownDotTarget)
+                  if (!ownDotTarget.empty()) ownDotTarget.raise();
 
                   const testimonyTarget = d3.select(".dots-testimony-target");
 
