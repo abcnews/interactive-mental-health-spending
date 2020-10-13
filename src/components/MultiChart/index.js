@@ -259,7 +259,6 @@ const MultiChart = props => {
     // Show low high labels if there is a low and high and if
     // it is set in the key
     if (lowest && highest && props.showLowHighDots) {
-      console.log(lowest[dotsDataKey.xField]);
       setTimeout(() => {
         setDotTopBottomLabels([
           {
@@ -281,18 +280,31 @@ const MultiChart = props => {
         setDotTopBottomLabels([]);
       }, 500);
 
+    const { userSa3 } = props;
+
     // Show own label if there are dots and option is set
-    if (sa3s.length > 0 && props.labelOwnDot) {
-      console.log("try to label own dot");
-      setDotCustomLabels([
-        {
-          text: "Test label",
-          x: component.scaleX(6),
-          y: component.scaleY(2000),
-        },
-      ]);
+    if (sa3s.length > 0 && props.labelOwnDot && userSa3) {
+      setTimeout(() => {
+        const matched = sa3s.find(sa3 => {
+          if (sa3["SA3 name"] === userSa3.name) return true;
+          else return false;
+        });
+
+        if (matched) {
+          setDotCustomLabels([
+            {
+              text: matched["SA3 name"],
+              x: component.scaleX(matched[dotsDataKey.xField]),
+              y: component.scaleY(matched[dotsDataKey.yField]),
+              align: highest[matched.xField] < 5 ? "left" : "right",
+            },
+          ]);
+        }
+      }, 500);
     } else {
-      setDotCustomLabels([]);
+      setTimeout(() => {
+        setDotCustomLabels([]);
+      }, 500);
     }
 
     const averageData = generateAverageData(
@@ -329,6 +341,10 @@ const MultiChart = props => {
               if (props.showLowHighDots) {
                 if (d["SA3 name"] === lowest["SA3 name"]) return "black";
                 if (d["SA3 name"] === highest["SA3 name"]) return "black";
+              }
+
+              if (props.labelOwnDot && userSa3) {
+                if (d["SA3 name"] === userSa3.name) return "black";
               }
 
               return dotsDataKey.dotColor;
@@ -429,6 +445,10 @@ const MultiChart = props => {
                   if (props.showLowHighDots) {
                     if (d["SA3 name"] === lowest["SA3 name"]) return "black";
                     if (d["SA3 name"] === highest["SA3 name"]) return "black";
+                  }
+
+                  if (props.labelOwnDot && userSa3) {
+                    if (d["SA3 name"] === userSa3.name) return "black";
                   }
 
                   return dotsDataKey.dotColor;
