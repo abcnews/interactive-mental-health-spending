@@ -24,9 +24,11 @@ export default props => {
   const [userSelection, setUserSelection] = useState(null);
   const [postcodeToDecile, setPostcodeToDecile] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
+  const [sa3s, setSa3s] = useState(null);
+  const [sa3ToRegionLookup, setSa3ToRegionLookup] = useState(null);
   const [userQuintile, setUserQuintile] = useState(null);
   const [userSa3, setUserSa3] = useState(null);
-  const [sa3s, setSa3s] = useState(null);
+  const [userRegion, setUserRegion] = useState(null);
 
   const onMarker = config => {
     console.log("Config:", config);
@@ -91,8 +93,10 @@ export default props => {
     // Sort by ratio
     const sorted = sa3sWithRatio.sort((a, b) => b.ratio - a.ratio);
 
-    console.log(sorted[0]);
-    setUserSa3(sorted[0]);
+    const topSa3 = sorted[0];
+    setUserSa3(topSa3);
+
+    setUserRegion(sa3ToRegionLookup[topSa3.code])
   };
 
   // useEffect(() => {
@@ -119,6 +123,7 @@ export default props => {
   //   setUserSa3(largestRatio.sa3);
   // }, [userPostcode]);
 
+  // INIT EFFECT!!!!!
   useEffect(() => {
     // Fetch some data
     axios
@@ -138,6 +143,10 @@ export default props => {
       .then(result => {
         setSa3s(result.data);
       });
+
+    axios.get(`${__webpack_public_path__}sa3-to-region.json`).then(result => {
+      setSa3ToRegionLookup(result.data);
+    });
   }, []);
 
   return (
@@ -172,6 +181,7 @@ export default props => {
                 markKey={configKey}
                 userQuintile={userQuintile}
                 userSa3={userSa3}
+                userRegion={userRegion}
               />
             </BackgroundStage>
           </Scrollyteller>
@@ -197,6 +207,7 @@ export default props => {
                 showLowHighDots={dotKey.showLowHighDots}
                 userQuintile={userQuintile}
                 userSa3={userSa3}
+                userRegion={userRegion}
               />
             </BackgroundStage>
           </Scrollyteller>

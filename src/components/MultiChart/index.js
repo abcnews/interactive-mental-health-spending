@@ -81,7 +81,7 @@ const MultiChart = props => {
   });
   const [svgWidth, setSvgWidth] = useState(0);
   const [ownQuintile, setOwnQuintile] = useState(null);
-  const [ownRegion, setOwnRegion] = useState(4);
+  const [ownRegion, setOwnRegion] = useState(null);
   const [highlightBars, setHighlightBars] = useState([]);
   const [lineLabels, setLineLabels] = useState([]);
   const [linesDataKey, setLinesDataKey] = useState([]);
@@ -680,10 +680,8 @@ const MultiChart = props => {
         setAverageData(props.averages);
         processLines();
         processDots();
-
-        // Test data generation
         setOwnQuintile(props.userQuintile);
-        setOwnRegion(4);
+        setOwnRegion(props.userRegion);
       }
     } else {
       // For now let's remove data when un-docking...
@@ -700,10 +698,10 @@ const MultiChart = props => {
       ]);
 
       setDotsDataKey({ dataKey: "empty" });
-
       setHighlightBars([]);
-
       setAverageData([]);
+      setOwnQuintile(null);
+      setOwnRegion(null);
 
       // processLines();
     }
