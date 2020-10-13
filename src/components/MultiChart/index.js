@@ -336,7 +336,12 @@ const MultiChart = props => {
               else return false;
             })
             .classed("dots-own-dot", d => {
-              if (userSa3 && d["SA3 name"] === userSa3.name && props.labelOwnDot) return true;
+              if (
+                userSa3 &&
+                d["SA3 name"] === userSa3.name &&
+                props.labelOwnDot
+              )
+                return true;
               else return false;
             })
             .style("stroke", "rgba(255, 255, 255, 0.6)")
@@ -415,7 +420,12 @@ const MultiChart = props => {
               else return false;
             })
             .classed("dots-own-dot", d => {
-              if (userSa3 && d["SA3 name"] === userSa3.name && props.labelOwnDot) return true;
+              if (
+                userSa3 &&
+                d["SA3 name"] === userSa3.name &&
+                props.labelOwnDot
+              )
+                return true;
               else return false;
             })
             .attr("cx", d => {
@@ -471,7 +481,6 @@ const MultiChart = props => {
                   component.svg.select(`circle.dots-animated-pulse`).remove();
 
                   const ownDotTarget = d3.select(".dots-own-dot");
-                  console.log(ownDotTarget)
                   if (!ownDotTarget.empty()) ownDotTarget.raise();
 
                   const testimonyTarget = d3.select(".dots-testimony-target");
