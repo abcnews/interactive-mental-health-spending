@@ -122,6 +122,10 @@
     @media screen and (min-width: 641px) {
       font-size: 10px;
     }
+
+    &.align-right {
+      transform: translateX(-100%);
+    }
   }
 
   .dot-custom-label {
@@ -134,10 +138,14 @@
     background-color: black;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
-    .dot-custom-label-light {
-      color: black;
-      background-color: white;
+    &.align-right {
+      transform: translateX(-100%);
     }
+
+    // .dot-custom-label-light {
+    //   color: black;
+    //   background-color: white;
+    // }
   }
 
   .transition-group {

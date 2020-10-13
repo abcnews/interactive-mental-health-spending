@@ -252,22 +252,27 @@ const MultiChart = props => {
 
     const sa3s = dataObject[dotsDataKey.dataKey];
 
-    // Work out lowest
+    // Work out lowest and highest
     // NOTE: Doesn't detect duplicates TODO: do this later maybe
     const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
 
-    if (lowest && props.showLowHighDots) {
+    // Show low high labels if there is a low and high and if
+    // it is set in the key
+    if (lowest && highest && props.showLowHighDots) {
+      console.log(lowest[dotsDataKey.xField]);
       setTimeout(() => {
         setDotTopBottomLabels([
           {
             text: lowest["SA3 name"],
             x: component.scaleX(lowest[dotsDataKey.xField]),
             y: component.scaleY(lowest[dotsDataKey.yField]),
+            align: lowest[dotsDataKey.xField] < 5 ? "left" : "right",
           },
           {
             text: highest["SA3 name"],
             x: component.scaleX(highest[dotsDataKey.xField]),
             y: component.scaleY(highest[dotsDataKey.yField]),
+            align: highest[dotsDataKey.xField] < 5 ? "left" : "right",
           },
         ]);
       }, 500);
@@ -275,6 +280,20 @@ const MultiChart = props => {
       setTimeout(() => {
         setDotTopBottomLabels([]);
       }, 500);
+
+    // Show own label if there are dots and option is set
+    if (sa3s.length > 0 && props.labelOwnDot) {
+      console.log("try to label own dot");
+      setDotCustomLabels([
+        {
+          text: "Test label",
+          x: component.scaleX(6),
+          y: component.scaleY(2000),
+        },
+      ]);
+    } else {
+      setDotCustomLabels([]);
+    }
 
     const averageData = generateAverageData(
       dataObject[dotsDataKey.dataKey],
@@ -1067,7 +1086,9 @@ const MultiChart = props => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
               <div
-                className={styles.dotLabel}
+                className={`${styles.dotLabel} ${
+                  label.align === "right" ? styles.alignRight : ""
+                }`}
                 style={{ top: label.y, left: label.x }}
                 key={index}
               >
@@ -1083,11 +1104,9 @@ const MultiChart = props => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
               <div
-                className={
-                  label.style === "light"
-                    ? styles.dotCustomLabelLight
-                    : styles.dotCustomLabel
-                }
+                className={`${styles.dotCustomLabel} ${
+                  label.align === "right" ? styles.alignRight : ""
+                }`}
                 style={{ top: label.y, left: label.x }}
                 key={index}
               >
