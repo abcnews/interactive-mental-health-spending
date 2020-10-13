@@ -96,7 +96,7 @@ export default props => {
     const topSa3 = sorted[0];
     setUserSa3(topSa3);
 
-    setUserRegion(sa3ToRegionLookup[topSa3.code])
+    setUserRegion(sa3ToRegionLookup[topSa3.code]);
   };
 
   // useEffect(() => {
@@ -200,6 +200,7 @@ export default props => {
                 yMax={dotKey.yMax}
                 highlightBars={dotKey.highlightBars}
                 highlightOwnBar={dotKey.highlightOwnBar}
+                labelOwnDot={dotKey.labelOwnDot}
                 dots={dotKey.dots}
                 averages={dotKey.averages}
                 triggerOnDock={true}
