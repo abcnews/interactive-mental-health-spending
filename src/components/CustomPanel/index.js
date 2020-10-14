@@ -92,6 +92,7 @@ export default props => {
               renderInWrapper={false}
               bindings={{
                 testValue: userSelection && userSelection.label,
+                yourQuintile: "This is your quintile (calculated)."
               }}
               jsx={node.outerHTML}
             />
