@@ -26,7 +26,7 @@ const d3 = { ...d3Selection };
 import buildMountPoints from "./lib/buildMountPoints";
 import { addClass } from "./lib/classHelpers";
 
-buildMountPoints(["postcodesearch", "scrollystagemount", "scrollystagemount2"]);
+buildMountPoints(["postcodesearch", "scrollystagemount", "scrollystagemount2", "scrollystagemount3"]);
 
 // Make stage full width
 const stage = document.querySelector(".scrollystagemount");
@@ -36,6 +36,10 @@ addClass(stage, "no-margin-collapse");
 const stage2 = document.querySelector(".scrollystagemount2");
 addClass(stage2, "u-full");
 addClass(stage2, "no-margin-collapse");
+
+const stage3 = document.querySelector(".scrollystagemount3");
+addClass(stage3, "u-full");
+addClass(stage3, "no-margin-collapse");
 
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
@@ -60,11 +64,18 @@ const init = async () => {
     "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
   );
 
+  const scrollyData3 = loadScrollyteller(
+    "three", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
+    "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
+    "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
+  );
+
   render(
     <App
       projectName={"Mental Health"}
       scrollyData1={scrollyData1}
       scrollyData2={scrollyData2}
+      scrollyData3={scrollyData3}
     />,
     document.querySelector(".postcodesearch")
   );

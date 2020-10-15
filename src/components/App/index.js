@@ -20,6 +20,7 @@ import { AppContext } from "../../AppContext";
 export default props => {
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
+  const [dot2Key, setDot2Key] = useState(storyKeys.dotDefault);
   const [configKey, setConfigKey] = useState(null);
   const [userSelection, setUserSelection] = useState(null);
   const [postcodeToDecile, setPostcodeToDecile] = useState(null);
@@ -40,6 +41,8 @@ export default props => {
       setLineKey(storyKeys[config.key]);
     if (storyKeys[config.key].chartType === "dot")
       setDotKey(storyKeys[config.key]);
+    if (storyKeys[config.key].chartType === "dot2")
+      setDot2Key(storyKeys[config.key]);
 
     setConfigKey(config.key);
   };
@@ -206,6 +209,33 @@ export default props => {
                 triggerOnDock={true}
                 markKey={configKey}
                 showLowHighDots={dotKey.showLowHighDots}
+                userQuintile={userQuintile}
+                userSa3={userSa3}
+                userRegion={userRegion}
+              />
+            </BackgroundStage>
+          </Scrollyteller>
+        </Portal>
+
+        <Portal node={document.querySelector(".scrollystagemount3")}>
+          <Scrollyteller
+            panels={props.scrollyData3.panels}
+            onMarker={() => {}}
+            panelComponent={CustomPanel}
+          >
+            <BackgroundStage>
+              <MultiChart
+                chartType={"dot"}
+                dataKey={dot2Key.dataKey}
+                yMax={dot2Key.yMax}
+                highlightBars={dot2Key.highlightBars}
+                highlightOwnBar={dot2Key.highlightOwnBar}
+                labelOwnDot={dot2Key.labelOwnDot}
+                dots={dot2Key.dots}
+                averages={dot2Key.averages}
+                triggerOnDock={true}
+                markKey={configKey}
+                showLowHighDots={dot2Key.showLowHighDots}
                 userQuintile={userQuintile}
                 userSa3={userSa3}
                 userRegion={userRegion}
