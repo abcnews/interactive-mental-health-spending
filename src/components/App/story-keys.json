@@ -128,18 +128,78 @@
     },
     "averages": []
   },
+  "highadvantage": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [6],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
+    },
+    "averages": []
+  },
+  "lowadvantage": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [1],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
+    },
+    "averages": []
+  },
   "kayetestimonial": {
     "chartType": "dot",
     "yMax": "5000",
     "highlightBars": [],
-    "showLowHighDots": true,
-    "labelOwnDot": true,
+    "showLowHighDots": false,
+    "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": "South Coast"
+    },
+    "averages": []
+  },
+  "psychiatrists": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "psychiatrists",
+      "dotColor": "#FF4D4D",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
+    },
+    "averages": []
+  },
+  "clinicalpsychologists": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "clinicalPsychologists",
+      "dotColor": "#FF7D56",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
     },
     "averages": []
   },
