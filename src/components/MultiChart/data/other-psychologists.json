@@ -1,0 +1,2999 @@
+[
+  {
+    "Year": 1045,
+    "SA3 name": "",
+    "SA3 group": "",
+    "Service": "",
+    "Per cent of people who had the service (%)": "",
+    "Services per 100 people": "",
+    "Medicare benefits per 100 people ($)": ""
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 6,
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.75,
+    "Services per 100 people": 12.08,
+    "Medicare benefits per 100 people ($)": 1105
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Queanbeyan",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.35,
+    "Services per 100 people": 9.47,
+    "Medicare benefits per 100 people ($)": 871
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Snowy Mountains",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.9,
+    "Services per 100 people": 7.16,
+    "Medicare benefits per 100 people ($)": 656
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "South Coast",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.01,
+    "Services per 100 people": 11.96,
+    "Medicare benefits per 100 people ($)": 1026
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Goulburn - Mulwaree",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.86,
+    "Services per 100 people": 6.92,
+    "Medicare benefits per 100 people ($)": 602
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Young - Yass",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.53,
+    "Services per 100 people": 6.06,
+    "Medicare benefits per 100 people ($)": 548
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gosford",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.7,
+    "Services per 100 people": 14.69,
+    "Medicare benefits per 100 people ($)": 1299
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wyong",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.79,
+    "Services per 100 people": 14.78,
+    "Medicare benefits per 100 people ($)": 1287
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bathurst",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.21,
+    "Services per 100 people": 12.35,
+    "Medicare benefits per 100 people ($)": 1047
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lachlan Valley",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.13,
+    "Services per 100 people": 4.22,
+    "Medicare benefits per 100 people ($)": 367
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lithgow - Mudgee",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.46,
+    "Services per 100 people": 9.4,
+    "Medicare benefits per 100 people ($)": 772
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Orange",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.82,
+    "Services per 100 people": 10.97,
+    "Medicare benefits per 100 people ($)": 958
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Clarence Valley",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.01,
+    "Services per 100 people": 17.19,
+    "Medicare benefits per 100 people ($)": 1475
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Coffs Harbour",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.31,
+    "Services per 100 people": 16.93,
+    "Medicare benefits per 100 people ($)": 1440
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bourke - Cobar - Coonamble",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.04,
+    "Services per 100 people": 3.51,
+    "Medicare benefits per 100 people ($)": 290
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Broken Hill and Far West",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.02,
+    "Services per 100 people": 5.98,
+    "Medicare benefits per 100 people ($)": 488
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Dubbo",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.08,
+    "Services per 100 people": 7.95,
+    "Medicare benefits per 100 people ($)": 670
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lower Hunter",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.45,
+    "Services per 100 people": 9.13,
+    "Medicare benefits per 100 people ($)": 783
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maitland",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.02,
+    "Services per 100 people": 11,
+    "Medicare benefits per 100 people ($)": 939
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Port Stephens",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.16,
+    "Services per 100 people": 11.36,
+    "Medicare benefits per 100 people ($)": 980
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Upper Hunter",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.18,
+    "Services per 100 people": 13.35,
+    "Medicare benefits per 100 people ($)": 1170
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Dapto - Port Kembla",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.02,
+    "Services per 100 people": 16.1,
+    "Medicare benefits per 100 people ($)": 1395
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kiama - Shellharbour",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.45,
+    "Services per 100 people": 17.89,
+    "Medicare benefits per 100 people ($)": 1530
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wollongong",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.69,
+    "Services per 100 people": 15.46,
+    "Medicare benefits per 100 people ($)": 1357
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Great Lakes",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.43,
+    "Services per 100 people": 13.33,
+    "Medicare benefits per 100 people ($)": 1142
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kempsey - Nambucca",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.52,
+    "Services per 100 people": 14.55,
+    "Medicare benefits per 100 people ($)": 1232
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Port Macquarie",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.82,
+    "Services per 100 people": 10.35,
+    "Medicare benefits per 100 people ($)": 880
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Taree - Gloucester",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.47,
+    "Services per 100 people": 12.77,
+    "Medicare benefits per 100 people ($)": 1088
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Albury",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.72,
+    "Services per 100 people": 9.65,
+    "Medicare benefits per 100 people ($)": 834
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lower Murray",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.89,
+    "Services per 100 people": 3.48,
+    "Medicare benefits per 100 people ($)": 306
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Upper Murray exc. Albury",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.13,
+    "Services per 100 people": 4.07,
+    "Medicare benefits per 100 people ($)": 355
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Armidale",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.86,
+    "Services per 100 people": 7.6,
+    "Medicare benefits per 100 people ($)": 653
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Inverell - Tenterfield",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.67,
+    "Services per 100 people": 6.13,
+    "Medicare benefits per 100 people ($)": 524
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Moree - Narrabri",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.61,
+    "Services per 100 people": 2.13,
+    "Medicare benefits per 100 people ($)": 176
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tamworth - Gunnedah",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.03,
+    "Services per 100 people": 7.9,
+    "Medicare benefits per 100 people ($)": 646
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lake Macquarie - East",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.93,
+    "Services per 100 people": 11.33,
+    "Medicare benefits per 100 people ($)": 999
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lake Macquarie - West",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.33,
+    "Services per 100 people": 13.03,
+    "Medicare benefits per 100 people ($)": 1138
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Newcastle",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.51,
+    "Services per 100 people": 13.92,
+    "Medicare benefits per 100 people ($)": 1222
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Richmond Valley - Coastal",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.96,
+    "Services per 100 people": 16.93,
+    "Medicare benefits per 100 people ($)": 1477
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Richmond Valley - Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.73,
+    "Services per 100 people": 15.71,
+    "Medicare benefits per 100 people ($)": 1323
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tweed Valley",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.79,
+    "Services per 100 people": 15.7,
+    "Medicare benefits per 100 people ($)": 1348
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Griffith - Murrumbidgee (West)",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1,
+    "Services per 100 people": 3.67,
+    "Medicare benefits per 100 people ($)": 333
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tumut - Tumbarumba",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.83,
+    "Services per 100 people": 2.78,
+    "Medicare benefits per 100 people ($)": 251
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wagga Wagga",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.44,
+    "Services per 100 people": 8.62,
+    "Medicare benefits per 100 people ($)": 778
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Shoalhaven",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.37,
+    "Services per 100 people": 13.55,
+    "Medicare benefits per 100 people ($)": 1141
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Southern Highlands",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.78,
+    "Services per 100 people": 11.09,
+    "Medicare benefits per 100 people ($)": 988
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Baulkham Hills",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.74,
+    "Services per 100 people": 11.65,
+    "Medicare benefits per 100 people ($)": 1054
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Dural - Wisemans Ferry",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.9,
+    "Services per 100 people": 12.26,
+    "Medicare benefits per 100 people ($)": 1115
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hawkesbury",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.49,
+    "Services per 100 people": 13.89,
+    "Medicare benefits per 100 people ($)": 1220
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Rouse Hill - McGraths Hill",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.93,
+    "Services per 100 people": 12.12,
+    "Medicare benefits per 100 people ($)": 1080
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Blacktown",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.92,
+    "Services per 100 people": 11.9,
+    "Medicare benefits per 100 people ($)": 1033
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Blacktown - North",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.64,
+    "Services per 100 people": 10.73,
+    "Medicare benefits per 100 people ($)": 945
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mount Druitt",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.47,
+    "Services per 100 people": 8.74,
+    "Medicare benefits per 100 people ($)": 745
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Botany",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.28,
+    "Services per 100 people": 10.19,
+    "Medicare benefits per 100 people ($)": 910
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Marrickville - Sydenham - Petersham",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.49,
+    "Services per 100 people": 15.57,
+    "Medicare benefits per 100 people ($)": 1384
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sydney Inner City",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.56,
+    "Services per 100 people": 11.46,
+    "Medicare benefits per 100 people ($)": 1018
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Eastern Suburbs - North",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.78,
+    "Services per 100 people": 13.12,
+    "Medicare benefits per 100 people ($)": 1293
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Eastern Suburbs - South",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.43,
+    "Services per 100 people": 10.91,
+    "Medicare benefits per 100 people ($)": 998
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bankstown",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.03,
+    "Services per 100 people": 12.8,
+    "Medicare benefits per 100 people ($)": 1096
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Canterbury",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.28,
+    "Services per 100 people": 9.94,
+    "Medicare benefits per 100 people ($)": 852
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hurstville",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.07,
+    "Services per 100 people": 8.84,
+    "Medicare benefits per 100 people ($)": 787
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kogarah - Rockdale",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2,
+    "Services per 100 people": 8.47,
+    "Medicare benefits per 100 people ($)": 753
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Canada Bay",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.45,
+    "Services per 100 people": 11.11,
+    "Medicare benefits per 100 people ($)": 1005
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Leichhardt",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.32,
+    "Services per 100 people": 15.57,
+    "Medicare benefits per 100 people ($)": 1450
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Strathfield - Burwood - Ashfield",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.23,
+    "Services per 100 people": 10.19,
+    "Medicare benefits per 100 people ($)": 907
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Chatswood - Lane Cove",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.15,
+    "Services per 100 people": 9.39,
+    "Medicare benefits per 100 people ($)": 892
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hornsby",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.99,
+    "Services per 100 people": 12.54,
+    "Medicare benefits per 100 people ($)": 1146
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ku-ring-gai",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.4,
+    "Services per 100 people": 10.36,
+    "Medicare benefits per 100 people ($)": 1004
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "North Sydney - Mosman",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.5,
+    "Services per 100 people": 11.02,
+    "Medicare benefits per 100 people ($)": 1049
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Manly",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.41,
+    "Services per 100 people": 10.25,
+    "Medicare benefits per 100 people ($)": 955
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Pittwater",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.82,
+    "Services per 100 people": 12.29,
+    "Medicare benefits per 100 people ($)": 1143
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Warringah",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.44,
+    "Services per 100 people": 10.49,
+    "Medicare benefits per 100 people ($)": 961
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Camden",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.04,
+    "Services per 100 people": 16.29,
+    "Medicare benefits per 100 people ($)": 1432
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Campbelltown (NSW)",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.9,
+    "Services per 100 people": 11.79,
+    "Medicare benefits per 100 people ($)": 1014
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wollondilly",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.61,
+    "Services per 100 people": 13.76,
+    "Medicare benefits per 100 people ($)": 1193
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Blue Mountains",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.05,
+    "Services per 100 people": 18.29,
+    "Medicare benefits per 100 people ($)": 1600
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Penrith",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.52,
+    "Services per 100 people": 13.59,
+    "Medicare benefits per 100 people ($)": 1176
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Richmond - Windsor",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.58,
+    "Services per 100 people": 14.24,
+    "Medicare benefits per 100 people ($)": 1253
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "St Marys",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.92,
+    "Services per 100 people": 11.28,
+    "Medicare benefits per 100 people ($)": 965
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Auburn",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.14,
+    "Services per 100 people": 9.13,
+    "Medicare benefits per 100 people ($)": 779
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Carlingford",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.44,
+    "Services per 100 people": 10.1,
+    "Medicare benefits per 100 people ($)": 889
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Merrylands - Guildford",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.57,
+    "Services per 100 people": 10.98,
+    "Medicare benefits per 100 people ($)": 926
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Parramatta",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.36,
+    "Services per 100 people": 9.91,
+    "Medicare benefits per 100 people ($)": 855
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Pennant Hills - Epping",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.4,
+    "Services per 100 people": 10.21,
+    "Medicare benefits per 100 people ($)": 932
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ryde - Hunters Hill",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.32,
+    "Services per 100 people": 9.81,
+    "Medicare benefits per 100 people ($)": 880
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bringelly - Green Valley",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.64,
+    "Services per 100 people": 11.01,
+    "Medicare benefits per 100 people ($)": 942
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Fairfield",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.35,
+    "Services per 100 people": 9.86,
+    "Medicare benefits per 100 people ($)": 826
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Liverpool",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.92,
+    "Services per 100 people": 12.48,
+    "Medicare benefits per 100 people ($)": 1071
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cronulla - Miranda - Caringbah",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.42,
+    "Services per 100 people": 14.09,
+    "Medicare benefits per 100 people ($)": 1250
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sutherland - Menai - Heathcote",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.77,
+    "Services per 100 people": 16.34,
+    "Medicare benefits per 100 people ($)": 1453
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 5,
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.07,
+    "Services per 100 people": 13.1,
+    "Medicare benefits per 100 people ($)": 1166
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ballarat",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.7,
+    "Services per 100 people": 15.95,
+    "Medicare benefits per 100 people ($)": 1379
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Creswick - Daylesford - Ballan",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.79,
+    "Services per 100 people": 16.44,
+    "Medicare benefits per 100 people ($)": 1404
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maryborough - Pyrenees",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.87,
+    "Services per 100 people": 11.87,
+    "Medicare benefits per 100 people ($)": 1013
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bendigo",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.62,
+    "Services per 100 people": 11.14,
+    "Medicare benefits per 100 people ($)": 972
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Heathcote - Castlemaine - Kyneton",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.78,
+    "Services per 100 people": 16.37,
+    "Medicare benefits per 100 people ($)": 1429
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Loddon - Elmore",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.01,
+    "Services per 100 people": 8.59,
+    "Medicare benefits per 100 people ($)": 751
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Barwon - West",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.87,
+    "Services per 100 people": 11.86,
+    "Medicare benefits per 100 people ($)": 1088
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Geelong",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.27,
+    "Services per 100 people": 13.72,
+    "Medicare benefits per 100 people ($)": 1237
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Surf Coast - Bellarine Peninsula",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.56,
+    "Services per 100 people": 14.51,
+    "Medicare benefits per 100 people ($)": 1295
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Upper Goulburn Valley",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.64,
+    "Services per 100 people": 15.01,
+    "Medicare benefits per 100 people ($)": 1308
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wangaratta - Benalla",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.33,
+    "Services per 100 people": 9.47,
+    "Medicare benefits per 100 people ($)": 827
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wodonga - Alpine",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.23,
+    "Services per 100 people": 8.05,
+    "Medicare benefits per 100 people ($)": 705
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Baw Baw",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.28,
+    "Services per 100 people": 12.8,
+    "Medicare benefits per 100 people ($)": 1139
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gippsland - East",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.79,
+    "Services per 100 people": 11.31,
+    "Medicare benefits per 100 people ($)": 981
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gippsland - South West",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.86,
+    "Services per 100 people": 11.86,
+    "Medicare benefits per 100 people ($)": 1070
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Latrobe Valley",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.68,
+    "Services per 100 people": 13.26,
+    "Medicare benefits per 100 people ($)": 1151
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wellington",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.06,
+    "Services per 100 people": 12.31,
+    "Medicare benefits per 100 people ($)": 1050
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brunswick - Coburg",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.23,
+    "Services per 100 people": 20,
+    "Medicare benefits per 100 people ($)": 1770
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darebin - South",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.48,
+    "Services per 100 people": 20.66,
+    "Medicare benefits per 100 people ($)": 1830
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Essendon",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.17,
+    "Services per 100 people": 14.17,
+    "Medicare benefits per 100 people ($)": 1257
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Melbourne City",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.2,
+    "Services per 100 people": 10,
+    "Medicare benefits per 100 people ($)": 884
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Port Phillip",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.09,
+    "Services per 100 people": 19,
+    "Medicare benefits per 100 people ($)": 1758
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Stonnington - West",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.39,
+    "Services per 100 people": 15.12,
+    "Medicare benefits per 100 people ($)": 1369
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Yarra",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.67,
+    "Services per 100 people": 17.28,
+    "Medicare benefits per 100 people ($)": 1525
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Boroondara",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.95,
+    "Services per 100 people": 13.42,
+    "Medicare benefits per 100 people ($)": 1262
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Manningham - West",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.13,
+    "Services per 100 people": 9.37,
+    "Medicare benefits per 100 people ($)": 870
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Whitehorse - West",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.89,
+    "Services per 100 people": 13.34,
+    "Medicare benefits per 100 people ($)": 1240
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bayside",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.27,
+    "Services per 100 people": 14.88,
+    "Medicare benefits per 100 people ($)": 1423
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Glen Eira",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.58,
+    "Services per 100 people": 16.87,
+    "Medicare benefits per 100 people ($)": 1616
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kingston",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.9,
+    "Services per 100 people": 17.72,
+    "Medicare benefits per 100 people ($)": 1608
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Stonnington - East",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.18,
+    "Services per 100 people": 14.59,
+    "Medicare benefits per 100 people ($)": 1403
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Banyule",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.26,
+    "Services per 100 people": 14.63,
+    "Medicare benefits per 100 people ($)": 1332
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darebin - North",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.28,
+    "Services per 100 people": 14.27,
+    "Medicare benefits per 100 people ($)": 1260
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Nillumbik - Kinglake",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.05,
+    "Services per 100 people": 18.34,
+    "Medicare benefits per 100 people ($)": 1666
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Whittlesea - Wallan",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.28,
+    "Services per 100 people": 14.05,
+    "Medicare benefits per 100 people ($)": 1252
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Keilor",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.07,
+    "Services per 100 people": 13.08,
+    "Medicare benefits per 100 people ($)": 1189
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Macedon Ranges",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.56,
+    "Services per 100 people": 19.71,
+    "Medicare benefits per 100 people ($)": 1719
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Moreland - North",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.22,
+    "Services per 100 people": 13.93,
+    "Medicare benefits per 100 people ($)": 1228
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sunbury",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.47,
+    "Services per 100 people": 20.25,
+    "Medicare benefits per 100 people ($)": 1798
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tullamarine - Broadmeadows",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.03,
+    "Services per 100 people": 12.69,
+    "Medicare benefits per 100 people ($)": 1093
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Knox",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.53,
+    "Services per 100 people": 15.56,
+    "Medicare benefits per 100 people ($)": 1403
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Manningham - East",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.46,
+    "Services per 100 people": 15.59,
+    "Medicare benefits per 100 people ($)": 1417
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maroondah",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.21,
+    "Services per 100 people": 19.18,
+    "Medicare benefits per 100 people ($)": 1751
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Whitehorse - East",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.29,
+    "Services per 100 people": 14.94,
+    "Medicare benefits per 100 people ($)": 1358
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Yarra Ranges",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.7,
+    "Services per 100 people": 20.83,
+    "Medicare benefits per 100 people ($)": 1892
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cardinia",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.91,
+    "Services per 100 people": 16.42,
+    "Medicare benefits per 100 people ($)": 1491
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Casey - North",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.23,
+    "Services per 100 people": 13.7,
+    "Medicare benefits per 100 people ($)": 1251
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Casey - South",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.35,
+    "Services per 100 people": 13.77,
+    "Medicare benefits per 100 people ($)": 1242
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Dandenong",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.28,
+    "Services per 100 people": 10.01,
+    "Medicare benefits per 100 people ($)": 887
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Monash",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.32,
+    "Services per 100 people": 10.5,
+    "Medicare benefits per 100 people ($)": 949
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brimbank",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.84,
+    "Services per 100 people": 11.98,
+    "Medicare benefits per 100 people ($)": 1059
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hobsons Bay",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.24,
+    "Services per 100 people": 18.94,
+    "Medicare benefits per 100 people ($)": 1679
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maribyrnong",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.4,
+    "Services per 100 people": 15.52,
+    "Medicare benefits per 100 people ($)": 1368
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Melton - Bacchus Marsh",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.62,
+    "Services per 100 people": 15.48,
+    "Medicare benefits per 100 people ($)": 1377
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wyndham",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.28,
+    "Services per 100 people": 14.01,
+    "Medicare benefits per 100 people ($)": 1234
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Frankston",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 5.33,
+    "Services per 100 people": 22.62,
+    "Medicare benefits per 100 people ($)": 2020
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mornington Peninsula",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.74,
+    "Services per 100 people": 19.98,
+    "Medicare benefits per 100 people ($)": 1819
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Grampians",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.07,
+    "Services per 100 people": 4.11,
+    "Medicare benefits per 100 people ($)": 358
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mildura",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.07,
+    "Services per 100 people": 8.24,
+    "Medicare benefits per 100 people ($)": 714
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Murray River - Swan Hill",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.37,
+    "Services per 100 people": 5.25,
+    "Medicare benefits per 100 people ($)": 458
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Campaspe",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.29,
+    "Services per 100 people": 9.02,
+    "Medicare benefits per 100 people ($)": 802
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Moira",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.28,
+    "Services per 100 people": 5.02,
+    "Medicare benefits per 100 people ($)": 443
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Shepparton",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.89,
+    "Services per 100 people": 7.6,
+    "Medicare benefits per 100 people ($)": 675
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Glenelg - Southern Grampians",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.6,
+    "Services per 100 people": 9.92,
+    "Medicare benefits per 100 people ($)": 865
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Colac - Corangamite",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.79,
+    "Services per 100 people": 13.1,
+    "Medicare benefits per 100 people ($)": 1173
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Warrnambool",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.82,
+    "Services per 100 people": 10.35,
+    "Medicare benefits per 100 people ($)": 905
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 4,
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.99,
+    "Services per 100 people": 12.25,
+    "Medicare benefits per 100 people ($)": 1068
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Capalaba",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.71,
+    "Services per 100 people": 15.51,
+    "Medicare benefits per 100 people ($)": 1381
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cleveland - Stradbroke",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.84,
+    "Services per 100 people": 16.12,
+    "Medicare benefits per 100 people ($)": 1430
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wynnum - Manly",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.63,
+    "Services per 100 people": 14.87,
+    "Medicare benefits per 100 people ($)": 1344
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bald Hills - Everton Park",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.61,
+    "Services per 100 people": 15.28,
+    "Medicare benefits per 100 people ($)": 1372
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Chermside",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.52,
+    "Services per 100 people": 14.96,
+    "Medicare benefits per 100 people ($)": 1331
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Nundah",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.23,
+    "Services per 100 people": 13.33,
+    "Medicare benefits per 100 people ($)": 1179
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sandgate",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.26,
+    "Services per 100 people": 13.83,
+    "Medicare benefits per 100 people ($)": 1221
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Carindale",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.95,
+    "Services per 100 people": 12.75,
+    "Medicare benefits per 100 people ($)": 1152
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Holland Park - Yeronga",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.13,
+    "Services per 100 people": 13.55,
+    "Medicare benefits per 100 people ($)": 1206
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mt Gravatt",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.58,
+    "Services per 100 people": 11.42,
+    "Medicare benefits per 100 people ($)": 1015
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Nathan",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.21,
+    "Services per 100 people": 13.88,
+    "Medicare benefits per 100 people ($)": 1227
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Rocklea - Acacia Ridge",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.25,
+    "Services per 100 people": 9.25,
+    "Medicare benefits per 100 people ($)": 805
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sunnybank",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.14,
+    "Services per 100 people": 9.87,
+    "Medicare benefits per 100 people ($)": 860
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Centenary",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.25,
+    "Services per 100 people": 9.92,
+    "Medicare benefits per 100 people ($)": 894
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kenmore - Brookfield - Moggill",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.99,
+    "Services per 100 people": 12.91,
+    "Medicare benefits per 100 people ($)": 1162
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sherwood - Indooroopilly",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.29,
+    "Services per 100 people": 10.11,
+    "Medicare benefits per 100 people ($)": 915
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "The Gap - Enoggera",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.11,
+    "Services per 100 people": 17.51,
+    "Medicare benefits per 100 people ($)": 1557
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brisbane Inner",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.85,
+    "Services per 100 people": 12.46,
+    "Medicare benefits per 100 people ($)": 1104
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brisbane Inner - East",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.06,
+    "Services per 100 people": 13.06,
+    "Medicare benefits per 100 people ($)": 1191
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brisbane Inner - North",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.12,
+    "Services per 100 people": 13.65,
+    "Medicare benefits per 100 people ($)": 1213
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brisbane Inner - West",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.08,
+    "Services per 100 people": 13.57,
+    "Medicare benefits per 100 people ($)": 1215
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cairns - North",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.21,
+    "Services per 100 people": 12.74,
+    "Medicare benefits per 100 people ($)": 1097
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cairns - South",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.22,
+    "Services per 100 people": 12.49,
+    "Medicare benefits per 100 people ($)": 1070
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tablelands (East) - Kuranda",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.42,
+    "Services per 100 people": 8.75,
+    "Medicare benefits per 100 people ($)": 750
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darling Downs (West) - Maranoa",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.04,
+    "Services per 100 people": 3.29,
+    "Medicare benefits per 100 people ($)": 282
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darling Downs - East",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.81,
+    "Services per 100 people": 10.8,
+    "Medicare benefits per 100 people ($)": 956
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Granite Belt",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.02,
+    "Services per 100 people": 8.17,
+    "Medicare benefits per 100 people ($)": 697
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Central Highlands (Qld)",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.94,
+    "Services per 100 people": 6.57,
+    "Medicare benefits per 100 people ($)": 573
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Rockhampton",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.56,
+    "Services per 100 people": 9.97,
+    "Medicare benefits per 100 people ($)": 872
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Biloela",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.3,
+    "Services per 100 people": 5.02,
+    "Medicare benefits per 100 people ($)": 438
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gladstone",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.31,
+    "Services per 100 people": 8.75,
+    "Medicare benefits per 100 people ($)": 756
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Broadbeach - Burleigh",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.69,
+    "Services per 100 people": 15.43,
+    "Medicare benefits per 100 people ($)": 1349
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Coolangatta",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.99,
+    "Services per 100 people": 16.47,
+    "Medicare benefits per 100 people ($)": 1435
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gold Coast - North",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.89,
+    "Services per 100 people": 16.6,
+    "Medicare benefits per 100 people ($)": 1436
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gold Coast Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.82,
+    "Services per 100 people": 19.46,
+    "Medicare benefits per 100 people ($)": 1710
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mudgeeraba - Tallebudgera",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.98,
+    "Services per 100 people": 16.36,
+    "Medicare benefits per 100 people ($)": 1433
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Nerang",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.24,
+    "Services per 100 people": 17.49,
+    "Medicare benefits per 100 people ($)": 1529
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ormeau - Oxenford",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.46,
+    "Services per 100 people": 17.56,
+    "Medicare benefits per 100 people ($)": 1544
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Robina",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.82,
+    "Services per 100 people": 15.74,
+    "Medicare benefits per 100 people ($)": 1387
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Southport",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.79,
+    "Services per 100 people": 16.16,
+    "Medicare benefits per 100 people ($)": 1396
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Surfers Paradise",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.01,
+    "Services per 100 people": 12.4,
+    "Medicare benefits per 100 people ($)": 1079
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Forest Lake - Oxley",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.57,
+    "Services per 100 people": 10.32,
+    "Medicare benefits per 100 people ($)": 901
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ipswich Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.87,
+    "Services per 100 people": 11.52,
+    "Medicare benefits per 100 people ($)": 1004
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Ipswich Inner",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.94,
+    "Services per 100 people": 16.66,
+    "Medicare benefits per 100 people ($)": 1457
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Springfield - Redbank",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.9,
+    "Services per 100 people": 11.92,
+    "Medicare benefits per 100 people ($)": 1047
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Beaudesert",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.75,
+    "Services per 100 people": 10,
+    "Medicare benefits per 100 people ($)": 884
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Beenleigh",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.28,
+    "Services per 100 people": 13.69,
+    "Medicare benefits per 100 people ($)": 1200
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Browns Plains",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.72,
+    "Services per 100 people": 10.87,
+    "Medicare benefits per 100 people ($)": 941
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Jimboomba",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.18,
+    "Services per 100 people": 12.13,
+    "Medicare benefits per 100 people ($)": 1057
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Loganlea - Carbrook",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.2,
+    "Services per 100 people": 12.75,
+    "Medicare benefits per 100 people ($)": 1121
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Springwood - Kingston",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.33,
+    "Services per 100 people": 13.24,
+    "Medicare benefits per 100 people ($)": 1168
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bowen Basin - North",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.28,
+    "Services per 100 people": 5.09,
+    "Medicare benefits per 100 people ($)": 437
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mackay",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.12,
+    "Services per 100 people": 7.76,
+    "Medicare benefits per 100 people ($)": 681
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Whitsunday",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.56,
+    "Services per 100 people": 9.92,
+    "Medicare benefits per 100 people ($)": 858
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bribie - Beachmere",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.68,
+    "Services per 100 people": 14.31,
+    "Medicare benefits per 100 people ($)": 1254
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Caboolture",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.9,
+    "Services per 100 people": 15.68,
+    "Medicare benefits per 100 people ($)": 1368
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Caboolture Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.61,
+    "Services per 100 people": 10.25,
+    "Medicare benefits per 100 people ($)": 923
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Narangba - Burpengary",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.8,
+    "Services per 100 people": 15.55,
+    "Medicare benefits per 100 people ($)": 1376
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Redcliffe",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.59,
+    "Services per 100 people": 15.14,
+    "Medicare benefits per 100 people ($)": 1325
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "The Hills District",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.58,
+    "Services per 100 people": 14.87,
+    "Medicare benefits per 100 people ($)": 1329
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "North Lakes",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.34,
+    "Services per 100 people": 13.32,
+    "Medicare benefits per 100 people ($)": 1186
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Strathpine",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.9,
+    "Services per 100 people": 15.7,
+    "Medicare benefits per 100 people ($)": 1394
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Far North",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.63,
+    "Services per 100 people": 2.24,
+    "Medicare benefits per 100 people ($)": 183
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Outback - North",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.27,
+    "Services per 100 people": 3.78,
+    "Medicare benefits per 100 people ($)": 321
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Outback - South",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.5,
+    "Services per 100 people": 1.82,
+    "Medicare benefits per 100 people ($)": 156
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Buderim",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.42,
+    "Services per 100 people": 14.58,
+    "Medicare benefits per 100 people ($)": 1272
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Caloundra",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.09,
+    "Services per 100 people": 13,
+    "Medicare benefits per 100 people ($)": 1124
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maroochy",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.88,
+    "Services per 100 people": 16.2,
+    "Medicare benefits per 100 people ($)": 1404
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Noosa",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.28,
+    "Services per 100 people": 19.35,
+    "Medicare benefits per 100 people ($)": 1694
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sunshine Coast Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.52,
+    "Services per 100 people": 20.62,
+    "Medicare benefits per 100 people ($)": 1773
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Nambour",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.21,
+    "Services per 100 people": 19.1,
+    "Medicare benefits per 100 people ($)": 1640
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Noosa Hinterland",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.25,
+    "Services per 100 people": 18.88,
+    "Medicare benefits per 100 people ($)": 1645
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Toowoomba",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.95,
+    "Services per 100 people": 11.67,
+    "Medicare benefits per 100 people ($)": 1021
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Charters Towers - Ayr - Ingham",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.03,
+    "Services per 100 people": 3.86,
+    "Medicare benefits per 100 people ($)": 334
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Townsville",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.6,
+    "Services per 100 people": 14.19,
+    "Medicare benefits per 100 people ($)": 1227
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bundaberg",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.04,
+    "Services per 100 people": 11.58,
+    "Medicare benefits per 100 people ($)": 1002
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Burnett",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.74,
+    "Services per 100 people": 7.09,
+    "Medicare benefits per 100 people ($)": 629
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gympie - Cooloola",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.78,
+    "Services per 100 people": 16.79,
+    "Medicare benefits per 100 people ($)": 1440
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hervey Bay",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 4.19,
+    "Services per 100 people": 16.85,
+    "Medicare benefits per 100 people ($)": 1454
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Maryborough",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 5.21,
+    "Services per 100 people": 21.97,
+    "Medicare benefits per 100 people ($)": 1847
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 3,
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.82,
+    "Services per 100 people": 11.23,
+    "Medicare benefits per 100 people ($)": 974
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Adelaide City",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.13,
+    "Services per 100 people": 8.62,
+    "Medicare benefits per 100 people ($)": 753
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Adelaide Hills",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.83,
+    "Services per 100 people": 7.2,
+    "Medicare benefits per 100 people ($)": 633
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Burnside",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.86,
+    "Services per 100 people": 7.42,
+    "Medicare benefits per 100 people ($)": 657
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Campbelltown (SA)",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.83,
+    "Services per 100 people": 6.94,
+    "Medicare benefits per 100 people ($)": 613
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Norwood - Payneham - St Peters",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2,
+    "Services per 100 people": 8.33,
+    "Medicare benefits per 100 people ($)": 727
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Prospect - Walkerville",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.09,
+    "Services per 100 people": 8.69,
+    "Medicare benefits per 100 people ($)": 760
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Unley",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2,
+    "Services per 100 people": 7.78,
+    "Medicare benefits per 100 people ($)": 675
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gawler - Two Wells",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.81,
+    "Services per 100 people": 6.93,
+    "Medicare benefits per 100 people ($)": 618
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Playford",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.07,
+    "Services per 100 people": 8.01,
+    "Medicare benefits per 100 people ($)": 692
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Port Adelaide - East",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.39,
+    "Services per 100 people": 8.92,
+    "Medicare benefits per 100 people ($)": 787
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Salisbury",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.99,
+    "Services per 100 people": 7.1,
+    "Medicare benefits per 100 people ($)": 613
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tea Tree Gully",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.29,
+    "Services per 100 people": 8.68,
+    "Medicare benefits per 100 people ($)": 759
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Holdfast Bay",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.31,
+    "Services per 100 people": 9.13,
+    "Medicare benefits per 100 people ($)": 797
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Marion",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.26,
+    "Services per 100 people": 9.03,
+    "Medicare benefits per 100 people ($)": 784
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mitcham",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.87,
+    "Services per 100 people": 7.6,
+    "Medicare benefits per 100 people ($)": 661
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Onkaparinga",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.1,
+    "Services per 100 people": 10.98,
+    "Medicare benefits per 100 people ($)": 944
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Charles Sturt",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.94,
+    "Services per 100 people": 7.59,
+    "Medicare benefits per 100 people ($)": 667
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Port Adelaide - West",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.83,
+    "Services per 100 people": 7.09,
+    "Medicare benefits per 100 people ($)": 624
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "West Torrens",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.91,
+    "Services per 100 people": 7.65,
+    "Medicare benefits per 100 people ($)": 668
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Barossa",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.63,
+    "Services per 100 people": 6.35,
+    "Medicare benefits per 100 people ($)": 560
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Lower North",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.74,
+    "Services per 100 people": 2.83,
+    "Medicare benefits per 100 people ($)": 249
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mid North",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.88,
+    "Services per 100 people": 3.24,
+    "Medicare benefits per 100 people ($)": 282
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Yorke Peninsula",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.93,
+    "Services per 100 people": 3.35,
+    "Medicare benefits per 100 people ($)": 289
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Eyre Peninsula and South West",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.47,
+    "Services per 100 people": 1.56,
+    "Medicare benefits per 100 people ($)": 135
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Outback - North and East",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.36,
+    "Services per 100 people": 1.37,
+    "Medicare benefits per 100 people ($)": 116
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Fleurieu - Kangaroo Island",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.19,
+    "Services per 100 people": 8.67,
+    "Medicare benefits per 100 people ($)": 753
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Limestone Coast",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.05,
+    "Services per 100 people": 3.93,
+    "Medicare benefits per 100 people ($)": 340
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Murray and Mallee",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.47,
+    "Services per 100 people": 5.53,
+    "Medicare benefits per 100 people ($)": 494
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 2,
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.05,
+    "Services per 100 people": 7.99,
+    "Medicare benefits per 100 people ($)": 692
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Augusta - Margaret River - Busselton",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.21,
+    "Services per 100 people": 10.56,
+    "Medicare benefits per 100 people ($)": 938
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bunbury",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.49,
+    "Services per 100 people": 10.27,
+    "Medicare benefits per 100 people ($)": 907
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Manjimup",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.4,
+    "Services per 100 people": 10.97,
+    "Medicare benefits per 100 people ($)": 950
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mandurah",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.7,
+    "Services per 100 people": 10.81,
+    "Medicare benefits per 100 people ($)": 931
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cottesloe - Claremont",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.39,
+    "Services per 100 people": 6.03,
+    "Medicare benefits per 100 people ($)": 571
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Perth City",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.65,
+    "Services per 100 people": 7.12,
+    "Medicare benefits per 100 people ($)": 636
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Bayswater - Bassendean",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.13,
+    "Services per 100 people": 9.08,
+    "Medicare benefits per 100 people ($)": 806
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mundaring",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.46,
+    "Services per 100 people": 10.13,
+    "Medicare benefits per 100 people ($)": 892
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Swan",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.66,
+    "Services per 100 people": 11.25,
+    "Medicare benefits per 100 people ($)": 978
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Joondalup",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.23,
+    "Services per 100 people": 9.37,
+    "Medicare benefits per 100 people ($)": 827
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Stirling",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.59,
+    "Services per 100 people": 6.92,
+    "Medicare benefits per 100 people ($)": 616
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wanneroo",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.62,
+    "Services per 100 people": 10.34,
+    "Medicare benefits per 100 people ($)": 906
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Armadale",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3,
+    "Services per 100 people": 12.54,
+    "Medicare benefits per 100 people ($)": 1077
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Belmont - Victoria Park",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.48,
+    "Services per 100 people": 6.29,
+    "Medicare benefits per 100 people ($)": 557
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Canning",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.62,
+    "Services per 100 people": 6.89,
+    "Medicare benefits per 100 people ($)": 611
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gosnells",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.19,
+    "Services per 100 people": 9.32,
+    "Medicare benefits per 100 people ($)": 811
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kalamunda",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.52,
+    "Services per 100 people": 11.38,
+    "Medicare benefits per 100 people ($)": 1010
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Serpentine - Jarrahdale",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.89,
+    "Services per 100 people": 10.52,
+    "Medicare benefits per 100 people ($)": 912
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "South Perth",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.51,
+    "Services per 100 people": 6.44,
+    "Medicare benefits per 100 people ($)": 582
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Cockburn",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.89,
+    "Services per 100 people": 8.27,
+    "Medicare benefits per 100 people ($)": 738
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Fremantle",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.33,
+    "Services per 100 people": 10.82,
+    "Medicare benefits per 100 people ($)": 966
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kwinana",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.9,
+    "Services per 100 people": 7.35,
+    "Medicare benefits per 100 people ($)": 642
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Melville",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.66,
+    "Services per 100 people": 7.58,
+    "Medicare benefits per 100 people ($)": 685
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Rockingham",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.35,
+    "Services per 100 people": 9.42,
+    "Medicare benefits per 100 people ($)": 831
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Albany",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.85,
+    "Services per 100 people": 7.41,
+    "Medicare benefits per 100 people ($)": 677
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wheat Belt - North",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.91,
+    "Services per 100 people": 6.97,
+    "Medicare benefits per 100 people ($)": 598
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Wheat Belt - South",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.27,
+    "Services per 100 people": 5.95,
+    "Medicare benefits per 100 people ($)": 750
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Kimberley",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.45,
+    "Services per 100 people": 1.52,
+    "Medicare benefits per 100 people ($)": 130
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "East Pilbara",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.53,
+    "Services per 100 people": 1.59,
+    "Medicare benefits per 100 people ($)": 137
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "West Pilbara",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.98,
+    "Services per 100 people": 3.76,
+    "Medicare benefits per 100 people ($)": 321
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Esperance",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.19,
+    "Services per 100 people": 9.32,
+    "Medicare benefits per 100 people ($)": 849
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gascoyne",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.47,
+    "Services per 100 people": 1.33,
+    "Medicare benefits per 100 people ($)": 114
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Goldfields",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.76,
+    "Services per 100 people": 2.81,
+    "Medicare benefits per 100 people ($)": 245
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Mid West",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.44,
+    "Services per 100 people": 5.46,
+    "Medicare benefits per 100 people ($)": 468
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": 1,
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.84,
+    "Services per 100 people": 2.99,
+    "Medicare benefits per 100 people ($)": 258
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Brighton",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.92,
+    "Services per 100 people": 6.2,
+    "Medicare benefits per 100 people ($)": 538
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hobart - North East",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.12,
+    "Services per 100 people": 7.76,
+    "Medicare benefits per 100 people ($)": 671
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hobart - North West",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.17,
+    "Services per 100 people": 7.88,
+    "Medicare benefits per 100 people ($)": 684
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hobart - South and West",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.18,
+    "Services per 100 people": 8.38,
+    "Medicare benefits per 100 people ($)": 732
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Hobart Inner",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.37,
+    "Services per 100 people": 9.3,
+    "Medicare benefits per 100 people ($)": 812
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Sorell - Dodges Ferry",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.84,
+    "Services per 100 people": 6.97,
+    "Medicare benefits per 100 people ($)": 622
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Launceston",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.91,
+    "Services per 100 people": 7.34,
+    "Medicare benefits per 100 people ($)": 632
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Meander Valley - West Tamar",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.66,
+    "Services per 100 people": 9.1,
+    "Medicare benefits per 100 people ($)": 777
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "North East",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.62,
+    "Services per 100 people": 6.42,
+    "Medicare benefits per 100 people ($)": 546
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Central Highlands (Tas.)",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.45,
+    "Services per 100 people": 9.04,
+    "Medicare benefits per 100 people ($)": 780
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Huon - Bruny Island",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.57,
+    "Services per 100 people": 10.27,
+    "Medicare benefits per 100 people ($)": 886
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Burnie - Ulverstone",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.12,
+    "Services per 100 people": 13.15,
+    "Medicare benefits per 100 people ($)": 1114
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Devonport",
+    "SA3 group": 3,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.45,
+    "Services per 100 people": 8.55,
+    "Medicare benefits per 100 people ($)": 728
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darwin City",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.19,
+    "Services per 100 people": 4.15,
+    "Medicare benefits per 100 people ($)": 380
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Darwin Suburbs",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.19,
+    "Services per 100 people": 4.57,
+    "Medicare benefits per 100 people ($)": 428
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Litchfield",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.04,
+    "Services per 100 people": 3.76,
+    "Medicare benefits per 100 people ($)": 345
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Palmerston",
+    "SA3 group": 2,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.09,
+    "Services per 100 people": 3.92,
+    "Medicare benefits per 100 people ($)": 339
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Alice Springs",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.93,
+    "Services per 100 people": 3.63,
+    "Medicare benefits per 100 people ($)": 339
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Barkly",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.47,
+    "Services per 100 people": 1.7,
+    "Medicare benefits per 100 people ($)": 148
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Daly - Tiwi - West Arnhem",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.33,
+    "Services per 100 people": 1.13,
+    "Medicare benefits per 100 people ($)": 99
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "East Arnhem",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.49,
+    "Services per 100 people": 1.64,
+    "Medicare benefits per 100 people ($)": 140
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Katherine",
+    "SA3 group": 1,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 0.28,
+    "Services per 100 people": 0.95,
+    "Medicare benefits per 100 people ($)": 80
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Belconnen",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.52,
+    "Services per 100 people": 11.01,
+    "Medicare benefits per 100 people ($)": 1005
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Canberra East",
+    "SA3 group": 4,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 3.23,
+    "Services per 100 people": 13.88,
+    "Medicare benefits per 100 people ($)": 1256
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Gungahlin",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 1.99,
+    "Services per 100 people": 7.99,
+    "Medicare benefits per 100 people ($)": 736
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "North Canberra",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.44,
+    "Services per 100 people": 10.61,
+    "Medicare benefits per 100 people ($)": 951
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "South Canberra",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.32,
+    "Services per 100 people": 10.3,
+    "Medicare benefits per 100 people ($)": 954
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Tuggeranong",
+    "SA3 group": 5,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.69,
+    "Services per 100 people": 10.8,
+    "Medicare benefits per 100 people ($)": 990
+  },
+  {
+    "Year": "2017-18",
+    "SA3 name": "Woden Valley",
+    "SA3 group": 6,
+    "Service": "Other Psychologist",
+    "Per cent of people who had the service (%)": 2.24,
+    "Services per 100 people": 9.68,
+    "Medicare benefits per 100 people ($)": 900
+  }
+]
