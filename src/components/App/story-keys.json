@@ -203,6 +203,21 @@
     },
     "averages": []
   },
+  "gpmentalhealth": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "gpMentalHealth",
+      "dotColor": "#D96EAE",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
+    },
+    "averages": []
+  },
   "averages": {
     "chartType": "dot",
     "yMax": "5000",

@@ -54,12 +54,13 @@ const BACKGROUND_COLOR = "#f0f0f0";
 // Load our data and assign to object
 const dataObject = {
   empty: [],
-  allied: require("./data/allied-data.json"),
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
-  gpFocus: require("./data/gp-focus.json"),
+  allied: require("./data/allied-data.json"),
   psychiatrists: require("./data/psychiatrists.json"),
   clinicalPsychologists: require("./data/clinical-psychologists.json"),
+  gpMentalHealth: require("./data/gp-mental-health.json"),
+  gpFocus: require("./data/gp-focus.json"),
 };
 
 // The main React function component
