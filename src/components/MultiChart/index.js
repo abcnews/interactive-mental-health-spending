@@ -61,6 +61,7 @@ const dataObject = {
   clinicalPsychologists: require("./data/clinical-psychologists.json"),
   gpMentalHealth: require("./data/gp-mental-health.json"),
   gpFocus: require("./data/gp-focus.json"),
+  otherAllied: require("./data/other-allied.json")
 };
 
 // The main React function component
