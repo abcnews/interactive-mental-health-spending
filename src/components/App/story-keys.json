@@ -118,6 +118,7 @@
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": true,
+    "highlightOwnBar": true,
     "labelOwnDot": true,
     "dots": {
       "dataKey": "allied",
