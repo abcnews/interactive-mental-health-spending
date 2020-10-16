@@ -241,7 +241,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "otherAllied",
-      "dotColor": "#D96EAE",
+      "dotColor": "#9A8EC0",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -256,7 +256,22 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "otherAllied",
-      "dotColor": "#D96EAE",
+      "dotColor": "#9A8EC0",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": ""
+    },
+    "averages": []
+  },
+  "gpfocus": {
+    "chartType": "dot2",
+    "yMax": "700",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "gpFocus",
+      "dotColor": "#34978F",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -292,7 +307,7 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#559CCC"
+        "color": "#34978F"
       }
     ]
   },
@@ -311,12 +326,12 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#559CCC"
+        "color": "#34978F"
       },
       {
-        "name": "Other allied mental health",
-        "values": [50, 150, 190, 140, 130, 120],
-        "color": "#34978F"
+        "name": "A flat line",
+        "values": [50, 50, 50, 50, 50, 50],
+        "color": "#000000"
       }
     ]
   },

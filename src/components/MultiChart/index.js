@@ -310,7 +310,7 @@ const MultiChart = props => {
       }, 500);
     }
 
-    const averageData = generateAverageData(
+    const averageDotsData = generateAverageData(
       dataObject[dotsDataKey.dataKey],
       dotsDataKey.xField,
       dotsDataKey.yField
@@ -405,7 +405,7 @@ const MultiChart = props => {
               component.svg
                 .append("path")
                 .classed("dots", true)
-                .data([averageData])
+                .data([averageDotsData])
                 .attr("fill", "none")
                 .attr("stroke", "#929292")
                 .attr("stroke-width", 1)
@@ -444,7 +444,7 @@ const MultiChart = props => {
                 component.svg
                   .append("path")
                   .classed("dots", true)
-                  .data([averageData])
+                  .data([averageDotsData])
                   .attr("fill", "none")
                   .attr("stroke", "#929292")
                   .attr("stroke-width", 1)
@@ -457,7 +457,7 @@ const MultiChart = props => {
               } else {
                 // Otherwise:
                 // Update average line
-                path.data([averageData]).transition().attr("d", lineGenerator);
+                path.data([averageDotsData]).transition().attr("d", lineGenerator);
               }
 
               return update
@@ -551,7 +551,9 @@ const MultiChart = props => {
 
     component.svg
       .selectAll("path.average-line")
-      .data(averageData)
+      .data(averageData, d => {
+        return d.key;
+      })
       .join(
         enter =>
           enter
