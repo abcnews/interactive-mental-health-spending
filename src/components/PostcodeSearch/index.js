@@ -5,7 +5,7 @@ import axios from "axios";
 import Fuse from "fuse.js";
 
 // Import images
-import mapPin from "./DLS_NAV_ICON.png";
+import mapPin from "./nav-icon-white.png";
 
 const MIN_INPUT_LENGTH = 3;
 
@@ -69,7 +69,12 @@ export default props => {
   };
 
   const customStyles = {
-    container: provided => ({ ...provided, fontFamily: "ABCSans, sans-serif" }),
+    container: provided => ({
+      ...provided,
+      fontFamily: "ABCSans, sans-serif",
+      backgroundImage:
+        "linear-gradient(90deg, rgba(57,103,123,1) 0%, rgba(57,103,123,1) 44px, rgba(8,29,134,0) 44px, rgba(0,212,255,0) 100%);",
+    }),
     input: () => ({
       fontFamily: "ABCSans, sans-serif",
       "& input": {
@@ -86,15 +91,31 @@ export default props => {
       // fontFamily: "ABCSans, sans-serif",
       borderRadius: 0,
       borderWidth: "2px",
-      // borderColor: "#999",
-      // backgroundColor: "#999",
+      borderColor: "#39677B",
+      backgroundColor: "transparent",
       backgroundImage: `url(${mapPin})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto 75%",
       backgroundPosition: "6px 45%",
       fontSize: "16px",
       cursor: "pointer",
-      padding: "5px 4px 3px 30px",
+      padding: "5px 4px 3px 40px",
+      "&:focused": {
+        borderColor: "red",
+      },
+      boxShadow: "none",
+    }),
+    dropdownIndicator: (provided, state) => ({
+      ...provided,
+      display: "none",
+    }),
+    indicatorSeparator: (provided, state) => ({
+      ...provided,
+      display: "none",
+    }),
+    valueContainer: (provided, state) => ({
+      ...provided,
+      minHeight: "40px",
     }),
   };
 
