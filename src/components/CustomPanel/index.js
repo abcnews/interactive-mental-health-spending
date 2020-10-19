@@ -74,7 +74,13 @@ export default props => {
 
   // Handle a change in the user selection
   useEffect(() => {
-    // console.log(userSelection);
+    console.log(userSelection);
+
+    if (props.config.swap && !userSelection) {
+      setHidePanel(true);
+    } else {
+      setHidePanel(false);
+    }
   }, [userSelection]);
 
   return (
