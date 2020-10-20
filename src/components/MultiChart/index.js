@@ -58,11 +58,13 @@ const dataObject = {
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
   allied: processData(require("./data/1-allied-mental-health.json")),
-  psychiatrists: require("./data/psychiatrists.json"),
-  clinicalPsychologists: require("./data/clinical-psychologists.json"),
-  gpMentalHealth: require("./data/gp-mental-health.json"),
-  gpFocus: require("./data/gp-focus.json"),
-  otherAllied: require("./data/other-allied.json"),
+  psychiatrists: processData(require("./data/2-psychiatry.json")),
+  clinicalPsychologists: processData(
+    require("./data/3-clinical-psychologist.json")
+  ),
+  gpMentalHealth: processData(require("./data/4-gp-mental-health.json")),
+  otherAllied: processData(require("./data/5-other-allied-mental-health.json")),
+  gpFocus: processData(require("./data/6-gp-focussed.json")),
 };
 
 // The main React function component
