@@ -254,7 +254,12 @@ const MultiChart = props => {
     // a different marker.
     component.dontSetAverageLabels = true;
 
-    const sa3s = dataObject[dotsDataKey.dataKey];
+    // Filter our dots
+    const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
+      if (dot["SA3 group"] === "ungrouped") return false;
+      if (dot[dotsDataKey.yField] === "NP") return false;
+      return true;
+    });
 
     // Work out lowest and highest
     // NOTE: Doesn't detect duplicates TODO: do this later maybe
@@ -312,7 +317,7 @@ const MultiChart = props => {
     }
 
     const averageDotsData = generateAverageData(
-      dataObject[dotsDataKey.dataKey],
+      sa3s,
       dotsDataKey.xField,
       dotsDataKey.yField
     );
@@ -326,10 +331,9 @@ const MultiChart = props => {
     // Process dots D3 data join
     const dotsDots = component.svg
       .selectAll("circle.dots")
-      .data(dataObject[dotsDataKey.dataKey], d => {
+      .data(sa3s, d => {
         return d["SA3 name"];
       })
-      // .order() // don't need actually
       .join(
         enter =>
           enter
