@@ -74,8 +74,6 @@ export default props => {
 
   // Handle a change in the user selection
   useEffect(() => {
-    console.log(userSelection);
-
     if (props.config.swap && !userSelection) {
       setHidePanel(true);
     } else {
@@ -90,7 +88,7 @@ export default props => {
       }`}
       ref={base}
     >
-      {props.config.swap &&
+      {/* {props.config.swap &&
         props.nodes.map((node, index) => {
           return (
             <JsxParser
@@ -104,7 +102,11 @@ export default props => {
               jsx={node.outerHTML}
             />
           );
-        })}
+        })} */}
+
+      {props.config.swap && true /*props.config.key === "yourquintile"*/ && (
+        <p>Custom text!!!</p>
+      )}
     </div>
   );
 };
