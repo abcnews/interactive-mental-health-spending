@@ -8,7 +8,8 @@
     align-items: center;
     min-height: 100px;
 
-    div, img {
+    div,
+    img {
       width: 100%;
       max-width: 640px;
     }
@@ -16,5 +17,9 @@
 
   .no-margin-collapse {
     padding-bottom: 2rem;
+  }
+
+  .Gallery {
+    background-color: aquamarine;
   }
 }
