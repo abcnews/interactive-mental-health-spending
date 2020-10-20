@@ -1,0 +1,2042 @@
+[
+  {
+    "code": 10102,
+    "name": "Queanbeyan",
+    "group": "Major cities - higher SES",
+    "spending": 584
+  },
+  {
+    "code": 10103,
+    "name": "Snowy Mountains",
+    "group": "Outer regional",
+    "spending": 701
+  },
+  {
+    "code": 10104,
+    "name": "South Coast",
+    "group": "Outer regional",
+    "spending": 832
+  },
+  {
+    "code": 10105,
+    "name": "Goulburn - Mulwaree",
+    "group": "Inner regional",
+    "spending": 768
+  },
+  {
+    "code": 10106,
+    "name": "Young - Yass",
+    "group": "Inner regional",
+    "spending": 713
+  },
+  {
+    "code": 10201,
+    "name": "Gosford",
+    "group": "Major cities - medium SES",
+    "spending": 907
+  },
+  {
+    "code": 10202,
+    "name": "Wyong",
+    "group": "Major cities - lower SES",
+    "spending": 633
+  },
+  {
+    "code": 10301,
+    "name": "Bathurst",
+    "group": "Inner regional",
+    "spending": 713
+  },
+  {
+    "code": 10302,
+    "name": "Lachlan Valley",
+    "group": "Outer regional",
+    "spending": 699
+  },
+  {
+    "code": 10303,
+    "name": "Lithgow - Mudgee",
+    "group": "Inner regional",
+    "spending": 834
+  },
+  {
+    "code": 10304,
+    "name": "Orange",
+    "group": "Inner regional",
+    "spending": 840
+  },
+  {
+    "code": 10401,
+    "name": "Clarence Valley",
+    "group": "Inner regional",
+    "spending": 1370
+  },
+  {
+    "code": 10402,
+    "name": "Coffs Harbour",
+    "group": "Inner regional",
+    "spending": 719
+  },
+  {
+    "code": 10501,
+    "name": "Bourke - Cobar - Coonamble",
+    "group": "Remote (incl. very remote)",
+    "spending": 484
+  },
+  {
+    "code": 10502,
+    "name": "Broken Hill and Far West",
+    "group": "Remote (incl. very remote)",
+    "spending": 457
+  },
+  {
+    "code": 10503,
+    "name": "Dubbo",
+    "group": "Inner regional",
+    "spending": 741
+  },
+  {
+    "code": 10601,
+    "name": "Lower Hunter",
+    "group": "Inner regional",
+    "spending": 681
+  },
+  {
+    "code": 10602,
+    "name": "Maitland",
+    "group": "Major cities - lower SES",
+    "spending": 862
+  },
+  {
+    "code": 10603,
+    "name": "Port Stephens",
+    "group": "Inner regional",
+    "spending": 670
+  },
+  {
+    "code": 10604,
+    "name": "Upper Hunter",
+    "group": "Inner regional",
+    "spending": 450
+  },
+  {
+    "code": 10701,
+    "name": "Dapto - Port Kembla",
+    "group": "Major cities - lower SES",
+    "spending": 1154
+  },
+  {
+    "code": 10702,
+    "name": "Illawarra Catchment Reserve",
+    "group": "Ungrouped",
+    "spending": ""
+  },
+  {
+    "code": 10703,
+    "name": "Kiama - Shellharbour",
+    "group": "Major cities - medium SES",
+    "spending": 1219
+  },
+  {
+    "code": 10704,
+    "name": "Wollongong",
+    "group": "Major cities - lower SES",
+    "spending": 1386
+  },
+  {
+    "code": 10801,
+    "name": "Great Lakes",
+    "group": "Inner regional",
+    "spending": 792
+  },
+  {
+    "code": 10802,
+    "name": "Kempsey - Nambucca",
+    "group": "Outer regional",
+    "spending": 669
+  },
+  {
+    "code": 10803,
+    "name": "Lord Howe Island",
+    "group": "Remote (incl. very remote)",
+    "spending": ""
+  },
+  {
+    "code": 10804,
+    "name": "Port Macquarie",
+    "group": "Inner regional",
+    "spending": 735
+  },
+  {
+    "code": 10805,
+    "name": "Taree - Gloucester",
+    "group": "Inner regional",
+    "spending": 954
+  },
+  {
+    "code": 10901,
+    "name": "Albury",
+    "group": "Inner regional",
+    "spending": 588
+  },
+  {
+    "code": 10902,
+    "name": "Lower Murray",
+    "group": "Outer regional",
+    "spending": 412
+  },
+  {
+    "code": 10903,
+    "name": "Upper Murray exc. Albury",
+    "group": "Inner regional",
+    "spending": 562
+  },
+  {
+    "code": 11001,
+    "name": "Armidale",
+    "group": "Inner regional",
+    "spending": 442
+  },
+  {
+    "code": 11002,
+    "name": "Inverell - Tenterfield",
+    "group": "Outer regional",
+    "spending": 533
+  },
+  {
+    "code": 11003,
+    "name": "Moree - Narrabri",
+    "group": "Outer regional",
+    "spending": 274
+  },
+  {
+    "code": 11004,
+    "name": "Tamworth - Gunnedah",
+    "group": "Inner regional",
+    "spending": 422
+  },
+  {
+    "code": 11101,
+    "name": "Lake Macquarie - East",
+    "group": "Major cities - medium SES",
+    "spending": 968
+  },
+  {
+    "code": 11102,
+    "name": "Lake Macquarie - West",
+    "group": "Major cities - lower SES",
+    "spending": 1027
+  },
+  {
+    "code": 11103,
+    "name": "Newcastle",
+    "group": "Major cities - lower SES",
+    "spending": 1220
+  },
+  {
+    "code": 11201,
+    "name": "Richmond Valley - Coastal",
+    "group": "Inner regional",
+    "spending": 1494
+  },
+  {
+    "code": 11202,
+    "name": "Richmond Valley - Hinterland",
+    "group": "Inner regional",
+    "spending": 1186
+  },
+  {
+    "code": 11203,
+    "name": "Tweed Valley",
+    "group": "Major cities - lower SES",
+    "spending": 1471
+  },
+  {
+    "code": 11301,
+    "name": "Griffith - Murrumbidgee (West)",
+    "group": "Outer regional",
+    "spending": 738
+  },
+  {
+    "code": 11302,
+    "name": "Tumut - Tumbarumba",
+    "group": "Inner regional",
+    "spending": 829
+  },
+  {
+    "code": 11303,
+    "name": "Wagga Wagga",
+    "group": "Inner regional",
+    "spending": 1013
+  },
+  {
+    "code": 11401,
+    "name": "Shoalhaven",
+    "group": "Inner regional",
+    "spending": 1026
+  },
+  {
+    "code": 11402,
+    "name": "Southern Highlands",
+    "group": "Inner regional",
+    "spending": 1776
+  },
+  {
+    "code": 11501,
+    "name": "Baulkham Hills",
+    "group": "Major cities - higher SES",
+    "spending": 1300
+  },
+  {
+    "code": 11502,
+    "name": "Dural - Wisemans Ferry",
+    "group": "Major cities - higher SES",
+    "spending": 1686
+  },
+  {
+    "code": 11503,
+    "name": "Hawkesbury",
+    "group": "Inner regional",
+    "spending": 1222
+  },
+  {
+    "code": 11504,
+    "name": "Rouse Hill - McGraths Hill",
+    "group": "Major cities - higher SES",
+    "spending": 977
+  },
+  {
+    "code": 11601,
+    "name": "Blacktown",
+    "group": "Major cities - lower SES",
+    "spending": 850
+  },
+  {
+    "code": 11602,
+    "name": "Blacktown - North",
+    "group": "Major cities - higher SES",
+    "spending": 704
+  },
+  {
+    "code": 11603,
+    "name": "Mount Druitt",
+    "group": "Major cities - lower SES",
+    "spending": 720
+  },
+  {
+    "code": 11701,
+    "name": "Botany",
+    "group": "Major cities - medium SES",
+    "spending": 1195
+  },
+  {
+    "code": 11702,
+    "name": "Marrickville - Sydenham - Petersham",
+    "group": "Major cities - medium SES",
+    "spending": 3133
+  },
+  {
+    "code": 11703,
+    "name": "Sydney Inner City",
+    "group": "Major cities - higher SES",
+    "spending": 2838
+  },
+  {
+    "code": 11801,
+    "name": "Eastern Suburbs - North",
+    "group": "Major cities - higher SES",
+    "spending": 4111
+  },
+  {
+    "code": 11802,
+    "name": "Eastern Suburbs - South",
+    "group": "Major cities - higher SES",
+    "spending": 2071
+  },
+  {
+    "code": 11901,
+    "name": "Bankstown",
+    "group": "Major cities - lower SES",
+    "spending": 781
+  },
+  {
+    "code": 11902,
+    "name": "Canterbury",
+    "group": "Major cities - lower SES",
+    "spending": 907
+  },
+  {
+    "code": 11903,
+    "name": "Hurstville",
+    "group": "Major cities - medium SES",
+    "spending": 991
+  },
+  {
+    "code": 11904,
+    "name": "Kogarah - Rockdale",
+    "group": "Major cities - medium SES",
+    "spending": 923
+  },
+  {
+    "code": 12001,
+    "name": "Canada Bay",
+    "group": "Major cities - medium SES",
+    "spending": 1637
+  },
+  {
+    "code": 12002,
+    "name": "Leichhardt",
+    "group": "Major cities - higher SES",
+    "spending": 4494
+  },
+  {
+    "code": 12003,
+    "name": "Strathfield - Burwood - Ashfield",
+    "group": "Major cities - medium SES",
+    "spending": 1862
+  },
+  {
+    "code": 12101,
+    "name": "Chatswood - Lane Cove",
+    "group": "Major cities - higher SES",
+    "spending": 2625
+  },
+  {
+    "code": 12102,
+    "name": "Hornsby",
+    "group": "Major cities - higher SES",
+    "spending": 2161
+  },
+  {
+    "code": 12103,
+    "name": "Ku-ring-gai",
+    "group": "Major cities - higher SES",
+    "spending": 2922
+  },
+  {
+    "code": 12104,
+    "name": "North Sydney - Mosman",
+    "group": "Major cities - higher SES",
+    "spending": 3416
+  },
+  {
+    "code": 12201,
+    "name": "Manly",
+    "group": "Major cities - higher SES",
+    "spending": 2150
+  },
+  {
+    "code": 12202,
+    "name": "Pittwater",
+    "group": "Major cities - higher SES",
+    "spending": 1878
+  },
+  {
+    "code": 12203,
+    "name": "Warringah",
+    "group": "Major cities - higher SES",
+    "spending": 1797
+  },
+  {
+    "code": 12301,
+    "name": "Camden",
+    "group": "Major cities - medium SES",
+    "spending": 713
+  },
+  {
+    "code": 12302,
+    "name": "Campbelltown (NSW)",
+    "group": "Major cities - lower SES",
+    "spending": 745
+  },
+  {
+    "code": 12303,
+    "name": "Wollondilly",
+    "group": "Inner regional",
+    "spending": 986
+  },
+  {
+    "code": 12401,
+    "name": "Blue Mountains",
+    "group": "Major cities - medium SES",
+    "spending": 2026
+  },
+  {
+    "code": 12402,
+    "name": "Blue Mountains - South",
+    "group": "Ungrouped",
+    "spending": ""
+  },
+  {
+    "code": 12403,
+    "name": "Penrith",
+    "group": "Major cities - medium SES",
+    "spending": 1021
+  },
+  {
+    "code": 12404,
+    "name": "Richmond - Windsor",
+    "group": "Major cities - medium SES",
+    "spending": 1402
+  },
+  {
+    "code": 12405,
+    "name": "St Marys",
+    "group": "Major cities - lower SES",
+    "spending": 780
+  },
+  {
+    "code": 12501,
+    "name": "Auburn",
+    "group": "Major cities - lower SES",
+    "spending": 737
+  },
+  {
+    "code": 12502,
+    "name": "Carlingford",
+    "group": "Major cities - medium SES",
+    "spending": 1266
+  },
+  {
+    "code": 12503,
+    "name": "Merrylands - Guildford",
+    "group": "Major cities - lower SES",
+    "spending": 878
+  },
+  {
+    "code": 12504,
+    "name": "Parramatta",
+    "group": "Major cities - medium SES",
+    "spending": 1201
+  },
+  {
+    "code": 12601,
+    "name": "Pennant Hills - Epping",
+    "group": "Major cities - higher SES",
+    "spending": 1754
+  },
+  {
+    "code": 12602,
+    "name": "Ryde - Hunters Hill",
+    "group": "Major cities - medium SES",
+    "spending": 1685
+  },
+  {
+    "code": 12701,
+    "name": "Bringelly - Green Valley",
+    "group": "Major cities - lower SES",
+    "spending": 610
+  },
+  {
+    "code": 12702,
+    "name": "Fairfield",
+    "group": "Major cities - lower SES",
+    "spending": 658
+  },
+  {
+    "code": 12703,
+    "name": "Liverpool",
+    "group": "Major cities - lower SES",
+    "spending": 706
+  },
+  {
+    "code": 12801,
+    "name": "Cronulla - Miranda - Caringbah",
+    "group": "Major cities - higher SES",
+    "spending": 1214
+  },
+  {
+    "code": 12802,
+    "name": "Sutherland - Menai - Heathcote",
+    "group": "Major cities - higher SES",
+    "spending": 1221
+  },
+  {
+    "code": 20101,
+    "name": "Ballarat",
+    "group": "Inner regional",
+    "spending": 1494
+  },
+  {
+    "code": 20102,
+    "name": "Creswick - Daylesford - Ballan",
+    "group": "Inner regional",
+    "spending": 1030
+  },
+  {
+    "code": 20103,
+    "name": "Maryborough - Pyrenees",
+    "group": "Inner regional",
+    "spending": 833
+  },
+  {
+    "code": 20201,
+    "name": "Bendigo",
+    "group": "Inner regional",
+    "spending": 1109
+  },
+  {
+    "code": 20202,
+    "name": "Heathcote - Castlemaine - Kyneton",
+    "group": "Inner regional",
+    "spending": 1305
+  },
+  {
+    "code": 20203,
+    "name": "Loddon - Elmore",
+    "group": "Inner regional",
+    "spending": 834
+  },
+  {
+    "code": 20301,
+    "name": "Barwon - West",
+    "group": "Inner regional",
+    "spending": 852
+  },
+  {
+    "code": 20302,
+    "name": "Geelong",
+    "group": "Major cities - lower SES",
+    "spending": 1126
+  },
+  {
+    "code": 20303,
+    "name": "Surf Coast - Bellarine Peninsula",
+    "group": "Inner regional",
+    "spending": 1121
+  },
+  {
+    "code": 20401,
+    "name": "Upper Goulburn Valley",
+    "group": "Inner regional",
+    "spending": 1094
+  },
+  {
+    "code": 20402,
+    "name": "Wangaratta - Benalla",
+    "group": "Inner regional",
+    "spending": 578
+  },
+  {
+    "code": 20403,
+    "name": "Wodonga - Alpine",
+    "group": "Inner regional",
+    "spending": 734
+  },
+  {
+    "code": 20501,
+    "name": "Baw Baw",
+    "group": "Inner regional",
+    "spending": 1259
+  },
+  {
+    "code": 20502,
+    "name": "Gippsland - East",
+    "group": "Outer regional",
+    "spending": 452
+  },
+  {
+    "code": 20503,
+    "name": "Gippsland - South West",
+    "group": "Inner regional",
+    "spending": 860
+  },
+  {
+    "code": 20504,
+    "name": "Latrobe Valley",
+    "group": "Inner regional",
+    "spending": 903
+  },
+  {
+    "code": 20505,
+    "name": "Wellington",
+    "group": "Inner regional",
+    "spending": 623
+  },
+  {
+    "code": 20601,
+    "name": "Brunswick - Coburg",
+    "group": "Major cities - medium SES",
+    "spending": 2971
+  },
+  {
+    "code": 20602,
+    "name": "Darebin - South",
+    "group": "Major cities - medium SES",
+    "spending": 3776
+  },
+  {
+    "code": 20603,
+    "name": "Essendon",
+    "group": "Major cities - medium SES",
+    "spending": 2027
+  },
+  {
+    "code": 20604,
+    "name": "Melbourne City",
+    "group": "Major cities - higher SES",
+    "spending": 2048
+  },
+  {
+    "code": 20605,
+    "name": "Port Phillip",
+    "group": "Major cities - higher SES",
+    "spending": 2951
+  },
+  {
+    "code": 20606,
+    "name": "Stonnington - West",
+    "group": "Major cities - higher SES",
+    "spending": 3535
+  },
+  {
+    "code": 20607,
+    "name": "Yarra",
+    "group": "Major cities - higher SES",
+    "spending": 3446
+  },
+  {
+    "code": 20701,
+    "name": "Boroondara",
+    "group": "Major cities - higher SES",
+    "spending": 2960
+  },
+  {
+    "code": 20702,
+    "name": "Manningham - West",
+    "group": "Major cities - medium SES",
+    "spending": 1542
+  },
+  {
+    "code": 20703,
+    "name": "Whitehorse - West",
+    "group": "Major cities - medium SES",
+    "spending": 2046
+  },
+  {
+    "code": 20801,
+    "name": "Bayside",
+    "group": "Major cities - higher SES",
+    "spending": 2565
+  },
+  {
+    "code": 20802,
+    "name": "Glen Eira",
+    "group": "Major cities - medium SES",
+    "spending": 3246
+  },
+  {
+    "code": 20803,
+    "name": "Kingston",
+    "group": "Major cities - medium SES",
+    "spending": 1538
+  },
+  {
+    "code": 20804,
+    "name": "Stonnington - East",
+    "group": "Major cities - higher SES",
+    "spending": 3127
+  },
+  {
+    "code": 20901,
+    "name": "Banyule",
+    "group": "Major cities - medium SES",
+    "spending": 2161
+  },
+  {
+    "code": 20902,
+    "name": "Darebin - North",
+    "group": "Major cities - lower SES",
+    "spending": 1675
+  },
+  {
+    "code": 20903,
+    "name": "Nillumbik - Kinglake",
+    "group": "Major cities - higher SES",
+    "spending": 1654
+  },
+  {
+    "code": 20904,
+    "name": "Whittlesea - Wallan",
+    "group": "Major cities - lower SES",
+    "spending": 1034
+  },
+  {
+    "code": 21001,
+    "name": "Keilor",
+    "group": "Major cities - medium SES",
+    "spending": 1654
+  },
+  {
+    "code": 21002,
+    "name": "Macedon Ranges",
+    "group": "Inner regional",
+    "spending": 1320
+  },
+  {
+    "code": 21003,
+    "name": "Moreland - North",
+    "group": "Major cities - lower SES",
+    "spending": 1441
+  },
+  {
+    "code": 21004,
+    "name": "Sunbury",
+    "group": "Major cities - medium SES",
+    "spending": 1421
+  },
+  {
+    "code": 21005,
+    "name": "Tullamarine - Broadmeadows",
+    "group": "Major cities - lower SES",
+    "spending": 871
+  },
+  {
+    "code": 21101,
+    "name": "Knox",
+    "group": "Major cities - medium SES",
+    "spending": 1308
+  },
+  {
+    "code": 21102,
+    "name": "Manningham - East",
+    "group": "Major cities - higher SES",
+    "spending": 1360
+  },
+  {
+    "code": 21103,
+    "name": "Maroondah",
+    "group": "Major cities - medium SES",
+    "spending": 1378
+  },
+  {
+    "code": 21104,
+    "name": "Whitehorse - East",
+    "group": "Major cities - medium SES",
+    "spending": 1507
+  },
+  {
+    "code": 21105,
+    "name": "Yarra Ranges",
+    "group": "Major cities - medium SES",
+    "spending": 1170
+  },
+  {
+    "code": 21201,
+    "name": "Cardinia",
+    "group": "Major cities - medium SES",
+    "spending": 1014
+  },
+  {
+    "code": 21202,
+    "name": "Casey - North",
+    "group": "Major cities - medium SES",
+    "spending": 1003
+  },
+  {
+    "code": 21203,
+    "name": "Casey - South",
+    "group": "Major cities - lower SES",
+    "spending": 758
+  },
+  {
+    "code": 21204,
+    "name": "Dandenong",
+    "group": "Major cities - lower SES",
+    "spending": 889
+  },
+  {
+    "code": 21205,
+    "name": "Monash",
+    "group": "Major cities - medium SES",
+    "spending": 1389
+  },
+  {
+    "code": 21301,
+    "name": "Brimbank",
+    "group": "Major cities - lower SES",
+    "spending": 866
+  },
+  {
+    "code": 21302,
+    "name": "Hobsons Bay",
+    "group": "Major cities - medium SES",
+    "spending": 1574
+  },
+  {
+    "code": 21303,
+    "name": "Maribyrnong",
+    "group": "Major cities - medium SES",
+    "spending": 1608
+  },
+  {
+    "code": 21304,
+    "name": "Melton - Bacchus Marsh",
+    "group": "Major cities - medium SES",
+    "spending": 860
+  },
+  {
+    "code": 21305,
+    "name": "Wyndham",
+    "group": "Major cities - medium SES",
+    "spending": 719
+  },
+  {
+    "code": 21401,
+    "name": "Frankston",
+    "group": "Major cities - lower SES",
+    "spending": 1243
+  },
+  {
+    "code": 21402,
+    "name": "Mornington Peninsula",
+    "group": "Major cities - medium SES",
+    "spending": 1161
+  },
+  {
+    "code": 21501,
+    "name": "Grampians",
+    "group": "Outer regional",
+    "spending": 589
+  },
+  {
+    "code": 21502,
+    "name": "Mildura",
+    "group": "Outer regional",
+    "spending": 912
+  },
+  {
+    "code": 21503,
+    "name": "Murray River - Swan Hill",
+    "group": "Outer regional",
+    "spending": 546
+  },
+  {
+    "code": 21601,
+    "name": "Campaspe",
+    "group": "Inner regional",
+    "spending": 696
+  },
+  {
+    "code": 21602,
+    "name": "Moira",
+    "group": "Inner regional",
+    "spending": 761
+  },
+  {
+    "code": 21603,
+    "name": "Shepparton",
+    "group": "Inner regional",
+    "spending": 860
+  },
+  {
+    "code": 21701,
+    "name": "Glenelg - Southern Grampians",
+    "group": "Outer regional",
+    "spending": 567
+  },
+  {
+    "code": 21703,
+    "name": "Colac - Corangamite",
+    "group": "Inner regional",
+    "spending": 630
+  },
+  {
+    "code": 21704,
+    "name": "Warrnambool",
+    "group": "Inner regional",
+    "spending": 912
+  },
+  {
+    "code": 30101,
+    "name": "Capalaba",
+    "group": "Major cities - medium SES",
+    "spending": 1541
+  },
+  {
+    "code": 30102,
+    "name": "Cleveland - Stradbroke",
+    "group": "Major cities - medium SES",
+    "spending": 1576
+  },
+  {
+    "code": 30103,
+    "name": "Wynnum - Manly",
+    "group": "Major cities - medium SES",
+    "spending": 1475
+  },
+  {
+    "code": 30201,
+    "name": "Bald Hills - Everton Park",
+    "group": "Major cities - higher SES",
+    "spending": 1777
+  },
+  {
+    "code": 30202,
+    "name": "Chermside",
+    "group": "Major cities - medium SES",
+    "spending": 1873
+  },
+  {
+    "code": 30203,
+    "name": "Nundah",
+    "group": "Major cities - medium SES",
+    "spending": 1640
+  },
+  {
+    "code": 30204,
+    "name": "Sandgate",
+    "group": "Major cities - medium SES",
+    "spending": 1507
+  },
+  {
+    "code": 30301,
+    "name": "Carindale",
+    "group": "Major cities - higher SES",
+    "spending": 2032
+  },
+  {
+    "code": 30302,
+    "name": "Holland Park - Yeronga",
+    "group": "Major cities - medium SES",
+    "spending": 2568
+  },
+  {
+    "code": 30303,
+    "name": "Mt Gravatt",
+    "group": "Major cities - medium SES",
+    "spending": 1660
+  },
+  {
+    "code": 30304,
+    "name": "Nathan",
+    "group": "Major cities - medium SES",
+    "spending": 2295
+  },
+  {
+    "code": 30305,
+    "name": "Rocklea - Acacia Ridge",
+    "group": "Major cities - medium SES",
+    "spending": 1084
+  },
+  {
+    "code": 30306,
+    "name": "Sunnybank",
+    "group": "Major cities - medium SES",
+    "spending": 1214
+  },
+  {
+    "code": 30401,
+    "name": "Centenary",
+    "group": "Major cities - higher SES",
+    "spending": 2031
+  },
+  {
+    "code": 30402,
+    "name": "Kenmore - Brookfield - Moggill",
+    "group": "Major cities - higher SES",
+    "spending": 2872
+  },
+  {
+    "code": 30403,
+    "name": "Sherwood - Indooroopilly",
+    "group": "Major cities - higher SES",
+    "spending": 2681
+  },
+  {
+    "code": 30404,
+    "name": "The Gap - Enoggera",
+    "group": "Major cities - higher SES",
+    "spending": 2144
+  },
+  {
+    "code": 30501,
+    "name": "Brisbane Inner",
+    "group": "Major cities - medium SES",
+    "spending": 2918
+  },
+  {
+    "code": 30502,
+    "name": "Brisbane Inner - East",
+    "group": "Major cities - higher SES",
+    "spending": 1976
+  },
+  {
+    "code": 30503,
+    "name": "Brisbane Inner - North",
+    "group": "Major cities - higher SES",
+    "spending": 2384
+  },
+  {
+    "code": 30504,
+    "name": "Brisbane Inner - West",
+    "group": "Major cities - higher SES",
+    "spending": 3242
+  },
+  {
+    "code": 30601,
+    "name": "Cairns - North",
+    "group": "Outer regional",
+    "spending": 980
+  },
+  {
+    "code": 30602,
+    "name": "Cairns - South",
+    "group": "Outer regional",
+    "spending": 732
+  },
+  {
+    "code": 30603,
+    "name": "Innisfail - Cassowary Coast",
+    "group": "Outer regional",
+    "spending": 369
+  },
+  {
+    "code": 30604,
+    "name": "Port Douglas - Daintree",
+    "group": "Outer regional",
+    "spending": 270
+  },
+  {
+    "code": 30605,
+    "name": "Tablelands (East) - Kuranda",
+    "group": "Outer regional",
+    "spending": 541
+  },
+  {
+    "code": 30701,
+    "name": "Darling Downs (West) - Maranoa",
+    "group": "Outer regional",
+    "spending": 566
+  },
+  {
+    "code": 30702,
+    "name": "Darling Downs - East",
+    "group": "Inner regional",
+    "spending": 714
+  },
+  {
+    "code": 30703,
+    "name": "Granite Belt",
+    "group": "Inner regional",
+    "spending": 912
+  },
+  {
+    "code": 30801,
+    "name": "Central Highlands (Qld)",
+    "group": "Outer regional",
+    "spending": 588
+  },
+  {
+    "code": 30803,
+    "name": "Rockhampton",
+    "group": "Inner regional",
+    "spending": 732
+  },
+  {
+    "code": 30804,
+    "name": "Biloela",
+    "group": "Outer regional",
+    "spending": 388
+  },
+  {
+    "code": 30805,
+    "name": "Gladstone",
+    "group": "Inner regional",
+    "spending": 676
+  },
+  {
+    "code": 30901,
+    "name": "Broadbeach - Burleigh",
+    "group": "Major cities - medium SES",
+    "spending": 1466
+  },
+  {
+    "code": 30902,
+    "name": "Coolangatta",
+    "group": "Major cities - medium SES",
+    "spending": 1577
+  },
+  {
+    "code": 30903,
+    "name": "Gold Coast - North",
+    "group": "Major cities - lower SES",
+    "spending": 1741
+  },
+  {
+    "code": 30904,
+    "name": "Gold Coast Hinterland",
+    "group": "Inner regional",
+    "spending": 1464
+  },
+  {
+    "code": 30905,
+    "name": "Mudgeeraba - Tallebudgera",
+    "group": "Major cities - medium SES",
+    "spending": 1462
+  },
+  {
+    "code": 30906,
+    "name": "Nerang",
+    "group": "Major cities - medium SES",
+    "spending": 1584
+  },
+  {
+    "code": 30907,
+    "name": "Ormeau - Oxenford",
+    "group": "Major cities - medium SES",
+    "spending": 1328
+  },
+  {
+    "code": 30908,
+    "name": "Robina",
+    "group": "Major cities - medium SES",
+    "spending": 1450
+  },
+  {
+    "code": 30909,
+    "name": "Southport",
+    "group": "Major cities - medium SES",
+    "spending": 1935
+  },
+  {
+    "code": 30910,
+    "name": "Surfers Paradise",
+    "group": "Major cities - medium SES",
+    "spending": 1600
+  },
+  {
+    "code": 31001,
+    "name": "Forest Lake - Oxley",
+    "group": "Major cities - lower SES",
+    "spending": 1229
+  },
+  {
+    "code": 31002,
+    "name": "Ipswich Hinterland",
+    "group": "Inner regional",
+    "spending": 1360
+  },
+  {
+    "code": 31003,
+    "name": "Ipswich Inner",
+    "group": "Major cities - lower SES",
+    "spending": 1478
+  },
+  {
+    "code": 31004,
+    "name": "Springfield - Redbank",
+    "group": "Major cities - lower SES",
+    "spending": 1010
+  },
+  {
+    "code": 31101,
+    "name": "Beaudesert",
+    "group": "Inner regional",
+    "spending": 1243
+  },
+  {
+    "code": 31102,
+    "name": "Beenleigh",
+    "group": "Major cities - lower SES",
+    "spending": 1279
+  },
+  {
+    "code": 31103,
+    "name": "Browns Plains",
+    "group": "Major cities - lower SES",
+    "spending": 1107
+  },
+  {
+    "code": 31104,
+    "name": "Jimboomba",
+    "group": "Major cities - medium SES",
+    "spending": 1051
+  },
+  {
+    "code": 31105,
+    "name": "Loganlea - Carbrook",
+    "group": "Major cities - medium SES",
+    "spending": 1448
+  },
+  {
+    "code": 31106,
+    "name": "Springwood - Kingston",
+    "group": "Major cities - lower SES",
+    "spending": 1477
+  },
+  {
+    "code": 31201,
+    "name": "Bowen Basin - North",
+    "group": "Outer regional",
+    "spending": 382
+  },
+  {
+    "code": 31202,
+    "name": "Mackay",
+    "group": "Inner regional",
+    "spending": 530
+  },
+  {
+    "code": 31203,
+    "name": "Whitsunday",
+    "group": "Outer regional",
+    "spending": 358
+  },
+  {
+    "code": 31301,
+    "name": "Bribie - Beachmere",
+    "group": "Inner regional",
+    "spending": 875
+  },
+  {
+    "code": 31302,
+    "name": "Caboolture",
+    "group": "Major cities - lower SES",
+    "spending": 890
+  },
+  {
+    "code": 31303,
+    "name": "Caboolture Hinterland",
+    "group": "Inner regional",
+    "spending": 594
+  },
+  {
+    "code": 31304,
+    "name": "Narangba - Burpengary",
+    "group": "Major cities - medium SES",
+    "spending": 1002
+  },
+  {
+    "code": 31305,
+    "name": "Redcliffe",
+    "group": "Major cities - lower SES",
+    "spending": 1449
+  },
+  {
+    "code": 31401,
+    "name": "The Hills District",
+    "group": "Major cities - higher SES",
+    "spending": 1614
+  },
+  {
+    "code": 31402,
+    "name": "North Lakes",
+    "group": "Major cities - medium SES",
+    "spending": 1086
+  },
+  {
+    "code": 31403,
+    "name": "Strathpine",
+    "group": "Major cities - medium SES",
+    "spending": 1410
+  },
+  {
+    "code": 31501,
+    "name": "Far North",
+    "group": "Remote (incl. very remote)",
+    "spending": 141
+  },
+  {
+    "code": 31502,
+    "name": "Outback - North",
+    "group": "Remote (incl. very remote)",
+    "spending": 213
+  },
+  {
+    "code": 31503,
+    "name": "Outback - South",
+    "group": "Remote (incl. very remote)",
+    "spending": 305
+  },
+  {
+    "code": 31601,
+    "name": "Buderim",
+    "group": "Major cities - medium SES",
+    "spending": 1195
+  },
+  {
+    "code": 31602,
+    "name": "Caloundra",
+    "group": "Major cities - medium SES",
+    "spending": 1133
+  },
+  {
+    "code": 31603,
+    "name": "Maroochy",
+    "group": "Major cities - medium SES",
+    "spending": 989
+  },
+  {
+    "code": 31605,
+    "name": "Noosa",
+    "group": "Major cities - medium SES",
+    "spending": 930
+  },
+  {
+    "code": 31606,
+    "name": "Sunshine Coast Hinterland",
+    "group": "Inner regional",
+    "spending": 981
+  },
+  {
+    "code": 31607,
+    "name": "Nambour",
+    "group": "Major cities - medium SES",
+    "spending": 1164
+  },
+  {
+    "code": 31608,
+    "name": "Noosa Hinterland",
+    "group": "Inner regional",
+    "spending": 789
+  },
+  {
+    "code": 31701,
+    "name": "Toowoomba",
+    "group": "Inner regional",
+    "spending": 919
+  },
+  {
+    "code": 31801,
+    "name": "Charters Towers - Ayr - Ingham",
+    "group": "Outer regional",
+    "spending": 476
+  },
+  {
+    "code": 31802,
+    "name": "Townsville",
+    "group": "Outer regional",
+    "spending": 761
+  },
+  {
+    "code": 31901,
+    "name": "Bundaberg",
+    "group": "Inner regional",
+    "spending": 1000
+  },
+  {
+    "code": 31902,
+    "name": "Burnett",
+    "group": "Inner regional",
+    "spending": 698
+  },
+  {
+    "code": 31903,
+    "name": "Gympie - Cooloola",
+    "group": "Inner regional",
+    "spending": 754
+  },
+  {
+    "code": 31904,
+    "name": "Hervey Bay",
+    "group": "Inner regional",
+    "spending": 1103
+  },
+  {
+    "code": 31905,
+    "name": "Maryborough",
+    "group": "Inner regional",
+    "spending": 1195
+  },
+  {
+    "code": 40101,
+    "name": "Adelaide City",
+    "group": "Major cities - medium SES",
+    "spending": 2928
+  },
+  {
+    "code": 40102,
+    "name": "Adelaide Hills",
+    "group": "Inner regional",
+    "spending": 1481
+  },
+  {
+    "code": 40103,
+    "name": "Burnside",
+    "group": "Major cities - higher SES",
+    "spending": 2289
+  },
+  {
+    "code": 40104,
+    "name": "Campbelltown (SA)",
+    "group": "Major cities - medium SES",
+    "spending": 1623
+  },
+  {
+    "code": 40105,
+    "name": "Norwood - Payneham - St Peters",
+    "group": "Major cities - medium SES",
+    "spending": 2588
+  },
+  {
+    "code": 40106,
+    "name": "Prospect - Walkerville",
+    "group": "Major cities - medium SES",
+    "spending": 2189
+  },
+  {
+    "code": 40107,
+    "name": "Unley",
+    "group": "Major cities - medium SES",
+    "spending": 2952
+  },
+  {
+    "code": 40201,
+    "name": "Gawler - Two Wells",
+    "group": "Major cities - lower SES",
+    "spending": 879
+  },
+  {
+    "code": 40202,
+    "name": "Playford",
+    "group": "Major cities - lower SES",
+    "spending": 831
+  },
+  {
+    "code": 40203,
+    "name": "Port Adelaide - East",
+    "group": "Major cities - lower SES",
+    "spending": 1170
+  },
+  {
+    "code": 40204,
+    "name": "Salisbury",
+    "group": "Major cities - lower SES",
+    "spending": 956
+  },
+  {
+    "code": 40205,
+    "name": "Tea Tree Gully",
+    "group": "Major cities - medium SES",
+    "spending": 1141
+  },
+  {
+    "code": 40301,
+    "name": "Holdfast Bay",
+    "group": "Major cities - medium SES",
+    "spending": 1628
+  },
+  {
+    "code": 40302,
+    "name": "Marion",
+    "group": "Major cities - medium SES",
+    "spending": 1452
+  },
+  {
+    "code": 40303,
+    "name": "Mitcham",
+    "group": "Major cities - higher SES",
+    "spending": 2122
+  },
+  {
+    "code": 40304,
+    "name": "Onkaparinga",
+    "group": "Major cities - lower SES",
+    "spending": 1228
+  },
+  {
+    "code": 40401,
+    "name": "Charles Sturt",
+    "group": "Major cities - lower SES",
+    "spending": 1384
+  },
+  {
+    "code": 40402,
+    "name": "Port Adelaide - West",
+    "group": "Major cities - lower SES",
+    "spending": 1190
+  },
+  {
+    "code": 40403,
+    "name": "West Torrens",
+    "group": "Major cities - medium SES",
+    "spending": 1516
+  },
+  {
+    "code": 40501,
+    "name": "Barossa",
+    "group": "Inner regional",
+    "spending": 852
+  },
+  {
+    "code": 40502,
+    "name": "Lower North",
+    "group": "Inner regional",
+    "spending": 654
+  },
+  {
+    "code": 40503,
+    "name": "Mid North",
+    "group": "Outer regional",
+    "spending": 1026
+  },
+  {
+    "code": 40504,
+    "name": "Yorke Peninsula",
+    "group": "Outer regional",
+    "spending": 809
+  },
+  {
+    "code": 40601,
+    "name": "Eyre Peninsula and South West",
+    "group": "Remote (incl. very remote)",
+    "spending": 631
+  },
+  {
+    "code": 40602,
+    "name": "Outback - North and East",
+    "group": "Remote (incl. very remote)",
+    "spending": 368
+  },
+  {
+    "code": 40701,
+    "name": "Fleurieu - Kangaroo Island",
+    "group": "Inner regional",
+    "spending": 1032
+  },
+  {
+    "code": 40702,
+    "name": "Limestone Coast",
+    "group": "Outer regional",
+    "spending": 515
+  },
+  {
+    "code": 40703,
+    "name": "Murray and Mallee",
+    "group": "Outer regional",
+    "spending": 669
+  },
+  {
+    "code": 50101,
+    "name": "Augusta - Margaret River - Busselton",
+    "group": "Inner regional",
+    "spending": 262
+  },
+  {
+    "code": 50102,
+    "name": "Bunbury",
+    "group": "Inner regional",
+    "spending": 411
+  },
+  {
+    "code": 50103,
+    "name": "Manjimup",
+    "group": "Outer regional",
+    "spending": 336
+  },
+  {
+    "code": 50201,
+    "name": "Mandurah",
+    "group": "Major cities - lower SES",
+    "spending": 531
+  },
+  {
+    "code": 50301,
+    "name": "Cottesloe - Claremont",
+    "group": "Major cities - higher SES",
+    "spending": 1850
+  },
+  {
+    "code": 50302,
+    "name": "Perth City",
+    "group": "Major cities - higher SES",
+    "spending": 1633
+  },
+  {
+    "code": 50401,
+    "name": "Bayswater - Bassendean",
+    "group": "Major cities - medium SES",
+    "spending": 912
+  },
+  {
+    "code": 50402,
+    "name": "Mundaring",
+    "group": "Major cities - medium SES",
+    "spending": 797
+  },
+  {
+    "code": 50403,
+    "name": "Swan",
+    "group": "Major cities - medium SES",
+    "spending": 624
+  },
+  {
+    "code": 50501,
+    "name": "Joondalup",
+    "group": "Major cities - medium SES",
+    "spending": 898
+  },
+  {
+    "code": 50502,
+    "name": "Stirling",
+    "group": "Major cities - medium SES",
+    "spending": 983
+  },
+  {
+    "code": 50503,
+    "name": "Wanneroo",
+    "group": "Major cities - medium SES",
+    "spending": 500
+  },
+  {
+    "code": 50601,
+    "name": "Armadale",
+    "group": "Major cities - lower SES",
+    "spending": 495
+  },
+  {
+    "code": 50602,
+    "name": "Belmont - Victoria Park",
+    "group": "Major cities - medium SES",
+    "spending": 743
+  },
+  {
+    "code": 50603,
+    "name": "Canning",
+    "group": "Major cities - medium SES",
+    "spending": 687
+  },
+  {
+    "code": 50604,
+    "name": "Gosnells",
+    "group": "Major cities - lower SES",
+    "spending": 549
+  },
+  {
+    "code": 50605,
+    "name": "Kalamunda",
+    "group": "Major cities - medium SES",
+    "spending": 668
+  },
+  {
+    "code": 50606,
+    "name": "Serpentine - Jarrahdale",
+    "group": "Major cities - medium SES",
+    "spending": 469
+  },
+  {
+    "code": 50607,
+    "name": "South Perth",
+    "group": "Major cities - medium SES",
+    "spending": 1124
+  },
+  {
+    "code": 50701,
+    "name": "Cockburn",
+    "group": "Major cities - medium SES",
+    "spending": 751
+  },
+  {
+    "code": 50702,
+    "name": "Fremantle",
+    "group": "Major cities - medium SES",
+    "spending": 1397
+  },
+  {
+    "code": 50703,
+    "name": "Kwinana",
+    "group": "Major cities - lower SES",
+    "spending": 523
+  },
+  {
+    "code": 50704,
+    "name": "Melville",
+    "group": "Major cities - higher SES",
+    "spending": 1129
+  },
+  {
+    "code": 50705,
+    "name": "Rockingham",
+    "group": "Major cities - medium SES",
+    "spending": 569
+  },
+  {
+    "code": 50901,
+    "name": "Albany",
+    "group": "Outer regional",
+    "spending": 367
+  },
+  {
+    "code": 50902,
+    "name": "Wheat Belt - North",
+    "group": "Inner regional",
+    "spending": 352
+  },
+  {
+    "code": 50903,
+    "name": "Wheat Belt - South",
+    "group": "Outer regional",
+    "spending": 325
+  },
+  {
+    "code": 51001,
+    "name": "Kimberley",
+    "group": "Remote (incl. very remote)",
+    "spending": 141
+  },
+  {
+    "code": 51002,
+    "name": "East Pilbara",
+    "group": "Remote (incl. very remote)",
+    "spending": 128
+  },
+  {
+    "code": 51003,
+    "name": "West Pilbara",
+    "group": "Remote (incl. very remote)",
+    "spending": 194
+  },
+  {
+    "code": 51101,
+    "name": "Esperance",
+    "group": "Remote (incl. very remote)",
+    "spending": 127
+  },
+  {
+    "code": 51102,
+    "name": "Gascoyne",
+    "group": "Remote (incl. very remote)",
+    "spending": 220
+  },
+  {
+    "code": 51103,
+    "name": "Goldfields",
+    "group": "Remote (incl. very remote)",
+    "spending": 128
+  },
+  {
+    "code": 51104,
+    "name": "Mid West",
+    "group": "Remote (incl. very remote)",
+    "spending": 383
+  },
+  {
+    "code": 60101,
+    "name": "Brighton",
+    "group": "Inner regional",
+    "spending": 541
+  },
+  {
+    "code": 60102,
+    "name": "Hobart - North East",
+    "group": "Inner regional",
+    "spending": 866
+  },
+  {
+    "code": 60103,
+    "name": "Hobart - North West",
+    "group": "Inner regional",
+    "spending": 936
+  },
+  {
+    "code": 60104,
+    "name": "Hobart - South and West",
+    "group": "Inner regional",
+    "spending": 1114
+  },
+  {
+    "code": 60105,
+    "name": "Hobart Inner",
+    "group": "Inner regional",
+    "spending": 1341
+  },
+  {
+    "code": 60106,
+    "name": "Sorell - Dodges Ferry",
+    "group": "Inner regional",
+    "spending": 757
+  },
+  {
+    "code": 60201,
+    "name": "Launceston",
+    "group": "Inner regional",
+    "spending": 885
+  },
+  {
+    "code": 60202,
+    "name": "Meander Valley - West Tamar",
+    "group": "Outer regional",
+    "spending": 683
+  },
+  {
+    "code": 60203,
+    "name": "North East",
+    "group": "Outer regional",
+    "spending": 471
+  },
+  {
+    "code": 60301,
+    "name": "Central Highlands (Tas.)",
+    "group": "Outer regional",
+    "spending": 812
+  },
+  {
+    "code": 60302,
+    "name": "Huon - Bruny Island",
+    "group": "Outer regional",
+    "spending": 704
+  },
+  {
+    "code": 60303,
+    "name": "South East Coast",
+    "group": "Outer regional",
+    "spending": 676
+  },
+  {
+    "code": 60401,
+    "name": "Burnie - Ulverstone",
+    "group": "Outer regional",
+    "spending": 1433
+  },
+  {
+    "code": 60402,
+    "name": "Devonport",
+    "group": "Inner regional",
+    "spending": 1268
+  },
+  {
+    "code": 60403,
+    "name": "West Coast",
+    "group": "Outer regional",
+    "spending": 863
+  },
+  {
+    "code": 70101,
+    "name": "Darwin City",
+    "group": "Outer regional",
+    "spending": 298
+  },
+  {
+    "code": 70102,
+    "name": "Darwin Suburbs",
+    "group": "Outer regional",
+    "spending": 251
+  },
+  {
+    "code": 70103,
+    "name": "Litchfield",
+    "group": "Outer regional",
+    "spending": 258
+  },
+  {
+    "code": 70104,
+    "name": "Palmerston",
+    "group": "Outer regional",
+    "spending": 175
+  },
+  {
+    "code": 70201,
+    "name": "Alice Springs",
+    "group": "Remote (incl. very remote)",
+    "spending": 428
+  },
+  {
+    "code": 70202,
+    "name": "Barkly",
+    "group": "Remote (incl. very remote)",
+    "spending": 268
+  },
+  {
+    "code": 70203,
+    "name": "Daly - Tiwi - West Arnhem",
+    "group": "Remote (incl. very remote)",
+    "spending": 71
+  },
+  {
+    "code": 70204,
+    "name": "East Arnhem",
+    "group": "Remote (incl. very remote)",
+    "spending": 65
+  },
+  {
+    "code": 70205,
+    "name": "Katherine",
+    "group": "Remote (incl. very remote)",
+    "spending": 60
+  },
+  {
+    "code": 80101,
+    "name": "Belconnen",
+    "group": "Major cities - medium SES",
+    "spending": 759
+  },
+  {
+    "code": 80103,
+    "name": "Canberra East",
+    "group": "Major cities - lower SES",
+    "spending": 658
+  },
+  {
+    "code": 80104,
+    "name": "Gungahlin",
+    "group": "Major cities - higher SES",
+    "spending": 420
+  },
+  {
+    "code": 80105,
+    "name": "North Canberra",
+    "group": "Major cities - higher SES",
+    "spending": 996
+  },
+  {
+    "code": 80106,
+    "name": "South Canberra",
+    "group": "Major cities - higher SES",
+    "spending": 1253
+  },
+  {
+    "code": 80107,
+    "name": "Tuggeranong",
+    "group": "Major cities - medium SES",
+    "spending": 532
+  },
+  {
+    "code": 80108,
+    "name": "Weston Creek",
+    "group": "Major cities - higher SES",
+    "spending": ""
+  },
+  {
+    "code": 80109,
+    "name": "Woden Valley",
+    "group": "Major cities - higher SES",
+    "spending": 917
+  },
+  {
+    "code": 80110,
+    "name": "Molonglo",
+    "group": "Major cities - higher SES",
+    "spending": ""
+  },
+  {
+    "code": 80111,
+    "name": "Urriarra - Namadgi",
+    "group": "Inner regional",
+    "spending": ""
+  },
+  {
+    "code": 90101,
+    "name": "Christmas Island",
+    "group": "Remote (incl. very remote)",
+    "spending": ""
+  },
+  {
+    "code": 90102,
+    "name": "Cocos (Keeling) Islands",
+    "group": "Remote (incl. very remote)",
+    "spending": ""
+  },
+  {
+    "code": 90103,
+    "name": "Jervis Bay",
+    "group": "Inner regional",
+    "spending": ""
+  },
+  {
+    "code": 90104,
+    "name": "Norfolk Island",
+    "group": "Remote (incl. very remote)",
+    "spending": ""
+  }
+]
