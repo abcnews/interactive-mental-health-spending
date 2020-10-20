@@ -114,3 +114,27 @@ export const lowestHighest = (sa3s, yField) => {
 
   return { lowest: bottom, highest: top };
 };
+
+export const processData = data => {
+  const key = {
+    "Remote (incl. very remote)": 1,
+    "Outer regional": 2,
+    "Inner regional": 3,
+    "Major cities - lower SES": 4,
+    "Major cities - medium SES": 5,
+    "Major cities - higher SES": 6,
+  };
+
+  const processedData = data.map(d => {
+    const groupNumber = key[d.group] || "ungrouped";
+
+    return {
+      "SA3 name": d.name,
+      "SA3 group": groupNumber,
+      "Medicare benefits per 100 people ($)":
+        d.spending === "" ? "NP" : d.spending,
+    };
+  });
+
+  return processedData;
+};

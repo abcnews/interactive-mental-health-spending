@@ -37,6 +37,7 @@ import {
   generateAverageData,
   usePrevious,
   lowestHighest,
+  processData,
 } from "./lib";
 
 // File scoped constants
@@ -56,12 +57,12 @@ const dataObject = {
   empty: [],
   distressed: require("./data/distressed-data.json"),
   mentalCondition: require("./data/mental-condition-data.json"),
-  allied: require("./data/allied-data.json"),
+  allied: processData(require("./data/1-allied-mental-health.json")),
   psychiatrists: require("./data/psychiatrists.json"),
   clinicalPsychologists: require("./data/clinical-psychologists.json"),
   gpMentalHealth: require("./data/gp-mental-health.json"),
   gpFocus: require("./data/gp-focus.json"),
-  otherAllied: require("./data/other-allied.json")
+  otherAllied: require("./data/other-allied.json"),
 };
 
 // The main React function component
@@ -457,7 +458,10 @@ const MultiChart = props => {
               } else {
                 // Otherwise:
                 // Update average line
-                path.data([averageDotsData]).transition().attr("d", lineGenerator);
+                path
+                  .data([averageDotsData])
+                  .transition()
+                  .attr("d", lineGenerator);
               }
 
               return update
