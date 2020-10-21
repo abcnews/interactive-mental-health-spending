@@ -17,6 +17,8 @@ let storyKeys = require("./story-keys.json");
 // Using the React context API for global state
 import { AppContext } from "../../AppContext";
 
+const WAYPOINT = 90;
+
 export default props => {
   const [lineKey, setLineKey] = useState(storyKeys.lineDefault);
   const [dotKey, setDotKey] = useState(storyKeys.dotDefault);
@@ -171,7 +173,7 @@ export default props => {
             panels={props.scrollyData1.panels}
             onMarker={onMarker}
             panelComponent={CustomPanel}
-            config={{ waypoint: 90 }}
+            config={{ waypoint: WAYPOINT }}
           >
             <BackgroundStage>
               <MultiChart
@@ -196,6 +198,7 @@ export default props => {
             panels={props.scrollyData2.panels}
             onMarker={() => {}}
             panelComponent={CustomPanel}
+            config={{ waypoint: WAYPOINT }}
           >
             <BackgroundStage>
               <MultiChart
@@ -223,6 +226,7 @@ export default props => {
             panels={props.scrollyData3.panels}
             onMarker={() => {}}
             panelComponent={CustomPanel}
+            config={{ waypoint: WAYPOINT }}
           >
             <BackgroundStage>
               <MultiChart
