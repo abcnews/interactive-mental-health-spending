@@ -56,7 +56,6 @@ const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
 
-
 // Load our data and assign to object
 const dataObject = {
   empty: [],
@@ -167,7 +166,8 @@ const MultiChart = props => {
               .style("stroke-width", "1.5")
               .style("fill", line.dotColor)
               .attr("cx", d => {
-                if (d[line.xField] === "National") { // Probs don't need any more
+                if (d[line.xField] === "National") {
+                  // Probs don't need any more
                   return -2000000;
                 }
 
@@ -262,11 +262,16 @@ const MultiChart = props => {
     component.dontSetAverageLabels = true;
 
     // Filter our dots per data key
-    const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
-      if (dot["SA3 group"] === "ungrouped") return false;
-      if (dot[dotsDataKey.yField] === "NP") return false;
-      return true;
-    });
+    // const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
+    //   if (dot["SA3 group"] === "ungrouped") return false;
+    //   if (dot[dotsDataKey.yField] === "NP") return false;
+    //   return true;
+    // });
+
+    // Try not filtering, just deal with ungrouped and NP later
+    const sa3s = dataObject[dotsDataKey.dataKey];
+
+    console.log(sa3s.length);
 
     // Work out lowest and highest
     // NOTE: Doesn't detect duplicates TODO: do this later maybe
@@ -323,6 +328,7 @@ const MultiChart = props => {
       }, 500);
     }
 
+    // TODO: fix to deal with ungrouped and NP
     const averageDotsData = generateAverageData(
       sa3s,
       dotsDataKey.xField,
@@ -340,9 +346,11 @@ const MultiChart = props => {
     // Process dots D3 data join
     const dotsDots = component.svg
       .selectAll("circle.dots")
+
       .data(sa3s, d => {
         return d["SA3 name"];
       })
+
       .join(
         enter =>
           enter
@@ -361,8 +369,8 @@ const MultiChart = props => {
                 return true;
               else return false;
             })
-            .style("stroke", "rgba(255, 255, 255, 0.6)")
-            .style("stroke-width", "1.5")
+            .style("stroke", "rgba(255, 255, 255, 0.8)")
+            .style("stroke-width", "1.1")
             .style("fill", d => {
               if (props.showLowHighDots) {
                 if (d["SA3 name"] === lowest["SA3 name"]) return "black";
@@ -378,7 +386,10 @@ const MultiChart = props => {
             .attr("cx", d => component.scaleX(d[dotsDataKey.xField]))
             .attr("r", dotRadius)
             .attr("cy", component.scaleY(0))
-            .style("opacity", 1.0)
+            .style("opacity", d => {
+              if (d[dotsDataKey.yField] === "NP") return 0.0;
+              return 1.0;
+            })
             .call(enter => {
               if (enter.empty()) return;
 
@@ -387,6 +398,8 @@ const MultiChart = props => {
                 .duration(DOTS_ENTER_DURATION)
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
+                  if (d[dotsDataKey.yField] === "NP")
+                    return component.scaleY(0);
                   return component.scaleY(d[dotsDataKey.yField]);
                 })
 
@@ -448,6 +461,7 @@ const MultiChart = props => {
             .attr("cx", d => {
               return component.scaleX(d[dotsDataKey.xField]);
             })
+
             .call(update => {
               if (update.empty()) return;
 
@@ -496,8 +510,13 @@ const MultiChart = props => {
 
                   return dotsDataKey.dotColor;
                 })
-                .style("opacity", 1.0)
+                .style("opacity", d => {
+                  if (d[dotsDataKey.yField] === "NP") return 0.0;
+                  return 1.0;
+                })
                 .attr("cy", d => {
+                  if (d[dotsDataKey.yField] === "NP")
+                    return component.scaleY(0);
                   return component.scaleY(d[dotsDataKey.yField]);
                 })
                 .end()
@@ -538,7 +557,12 @@ const MultiChart = props => {
             .duration(DOTS_EXIT_DURATION)
             .style("opacity", 0.0)
             .remove()
-      );
+      )
+      .style("display", d => {
+        if (d["SA3 group"] === "ungrouped") return "none";
+        // if (d[dotsDataKey.yField] === "NP") return "none";
+        return "block";
+      });
 
     // Define a D3 pulse animation
     function pulse(circle) {
