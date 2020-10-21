@@ -256,7 +256,7 @@ const MultiChart = props => {
     // a different marker.
     component.dontSetAverageLabels = true;
 
-    // Filter our dots
+    // Filter our dots per data key
     const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
       if (dot["SA3 group"] === "ungrouped") return false;
       if (dot[dotsDataKey.yField] === "NP") return false;
@@ -323,6 +323,8 @@ const MultiChart = props => {
       dotsDataKey.xField,
       dotsDataKey.yField
     );
+
+    console.log(averageDotsData);
 
     const lineGenerator = d3
       .line()
@@ -409,19 +411,19 @@ const MultiChart = props => {
                 .catch(e => null);
 
               // Add the average line to the chart
-              component.svg
-                .append("path")
-                .classed("dots", true)
-                .data([averageDotsData])
-                .attr("fill", "none")
-                .attr("stroke", "#929292")
-                .attr("stroke-width", 1)
-                .attr("stroke-dasharray", `2, 2`)
-                .style("opacity", 0.0)
-                .attr("d", lineGenerator)
-                .transition()
-                .delay(1000)
-                .style("opacity", 1.0);
+              // component.svg
+              //   .append("path")
+              //   .classed("dots", true)
+              //   .data([averageDotsData])
+              //   .attr("fill", "none")
+              //   .attr("stroke", "#929292")
+              //   .attr("stroke-width", 1)
+              //   .attr("stroke-dasharray", `2, 2`)
+              //   .style("opacity", 0.0)
+              //   .attr("d", lineGenerator)
+              //   .transition()
+              //   .delay(1000)
+              //   .style("opacity", 1.0);
             }),
         update =>
           update
@@ -446,31 +448,34 @@ const MultiChart = props => {
 
               const path = component.svg.select("path.dots");
 
-              // Fade line back in if it has been removed
-              if (path.empty()) {
-                component.svg
-                  .append("path")
-                  .classed("dots", true)
-                  .data([averageDotsData])
-                  .attr("fill", "none")
-                  .attr("stroke", "#929292")
-                  .attr("stroke-width", 1)
-                  .attr("stroke-dasharray", `2, 2`)
-                  .style("opacity", 0.0)
-                  .attr("d", lineGenerator)
-                  .transition()
-                  .delay(250)
-                  .style("opacity", 1.0);
-              } else {
-                // Otherwise:
-                // Update average line
-                path
-                  .data([averageDotsData])
-                  .transition()
-                  .attr("d", lineGenerator);
-              }
+              // // Fade line back in if it has been removed
+              // if (path.empty()) {
+              //   component.svg
+              //     .append("path")
+              //     .classed("dots", true)
+              //     .data([averageDotsData])
+              //     .attr("fill", "none")
+              //     .attr("stroke", "#929292")
+              //     .attr("stroke-width", 1)
+              //     .attr("stroke-dasharray", `2, 2`)
+              //     .style("opacity", 0.0)
+              //     .attr("d", lineGenerator)
+              //     .transition()
+              //     .delay(250)
+              //     .style("opacity", 1.0);
+              // } else {
+              //   // Otherwise:
+              //   // Update average line
+              //   path
+              //     .data([averageDotsData])
+              //     .transition()
+              //     .attr("d", lineGenerator);
+              // }
 
               return update
+                .call(update => {
+                  component.svg.select(`circle.dots-animated-pulse`).remove();
+                })
                 .transition()
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .style("fill", d => {
@@ -491,8 +496,6 @@ const MultiChart = props => {
                 })
                 .end()
                 .then(() => {
-                  component.svg.select(`circle.dots-animated-pulse`).remove();
-
                   const ownDotTarget = d3.select(".dots-own-dot");
                   if (!ownDotTarget.empty()) ownDotTarget.raise();
 
@@ -522,7 +525,7 @@ const MultiChart = props => {
               if (exit.empty()) return;
 
               // Remove other elements
-              component.svg.select(`path.dots`).remove();
+              // component.svg.select(`path.dots`).remove();
               component.svg.select(`circle.dots-animated-pulse`).remove();
             })
             .transition()
@@ -531,6 +534,7 @@ const MultiChart = props => {
             .remove()
       );
 
+    // Define a D3 pulse animation
     function pulse(circle) {
       (function repeat() {
         circle
@@ -734,6 +738,7 @@ const MultiChart = props => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
+    // Re-process all charts up update
     processCharts();
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
@@ -1199,10 +1204,3 @@ MultiChart.defaultProps = {
 };
 
 export default MultiChart;
-
-// Helper functions + testing
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
