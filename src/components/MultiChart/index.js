@@ -44,6 +44,10 @@ import {
 const dotRadius = 5;
 const LINE_ANIMATION_DURATION = 2000;
 const TICK_TEXT_MARGIN = 4;
+const DOTS_UPDATE_DURATION = 1000;
+const DOTS_ENTER_DURATION = 1000;
+const Y_AXIS_DURATION = 1000;
+const DOTS_EXIT_DURATION = 1000;
 
 // Chart bar constants
 const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
@@ -51,6 +55,7 @@ const BAR_HIGHLIGHT_COLOR = "rgba(220, 220, 220, 0.59)";
 const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
+
 
 // Load our data and assign to object
 const dataObject = {
@@ -162,7 +167,7 @@ const MultiChart = props => {
               .style("stroke-width", "1.5")
               .style("fill", line.dotColor)
               .attr("cx", d => {
-                if (d[line.xField] === "National") {
+                if (d[line.xField] === "National") { // Probs don't need any more
                   return -2000000;
                 }
 
@@ -379,7 +384,7 @@ const MultiChart = props => {
 
               enter
                 .transition()
-                .duration(750)
+                .duration(DOTS_ENTER_DURATION)
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .attr("cy", d => {
                   return component.scaleY(d[dotsDataKey.yField]);
@@ -477,6 +482,7 @@ const MultiChart = props => {
                   component.svg.select(`circle.dots-animated-pulse`).remove();
                 })
                 .transition()
+                .duration(DOTS_UPDATE_DURATION)
                 .delay((d, i) => i * 1) // Maybe don't do this effect
                 .style("fill", d => {
                   if (props.showLowHighDots) {
@@ -529,7 +535,7 @@ const MultiChart = props => {
               component.svg.select(`circle.dots-animated-pulse`).remove();
             })
             .transition()
-            .duration(500)
+            .duration(DOTS_EXIT_DURATION)
             .style("opacity", 0.0)
             .remove()
       );
@@ -715,6 +721,7 @@ const MultiChart = props => {
       group
         .attr("transform", `translate(${margin.left},0)`)
         .transition()
+        .duration(Y_AXIS_DURATION)
         .call(
           d3
             .axisLeft(component.scaleY)
