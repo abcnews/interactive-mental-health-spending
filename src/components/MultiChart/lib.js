@@ -8,7 +8,7 @@ export const calculateMargins = (width, height) => {
   return {
     top: height * 0.2,
     right: width * 0.04,
-    bottom: height * 0.15,
+    bottom: height * 0.2,
     left: width * 0.12,
   };
 };
