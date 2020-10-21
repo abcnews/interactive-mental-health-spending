@@ -171,6 +171,7 @@ export default props => {
             panels={props.scrollyData1.panels}
             onMarker={onMarker}
             panelComponent={CustomPanel}
+            config={{ waypoint: 90 }}
           >
             <BackgroundStage>
               <MultiChart
