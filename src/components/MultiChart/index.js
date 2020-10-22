@@ -272,8 +272,6 @@ const MultiChart = props => {
     // Try not filtering, just deal with ungrouped and NP later
     const sa3s = dataObject[dotsDataKey.dataKey];
 
-    console.log(sa3s.length);
-
     // Work out lowest and highest
     // NOTE: Doesn't detect duplicates TODO: do this later maybe
     const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
@@ -342,29 +340,80 @@ const MultiChart = props => {
       dotsDataKey.yField
     );
 
-    console.log(averageDotsData);
-
     const lineGenerator = d3
       .line()
       .defined(d => !isNaN(d[dotsDataKey.yField]))
       .x(d => component.scaleX(d[dotsDataKey.xField]))
       .y(d => component.scaleY(d[dotsDataKey.yField]));
 
+    console.log(averageDotsData);
+
+    const zeroDataLine = [
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 1,
+      },
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 2,
+      },
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 3,
+      },
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 4,
+      },
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 5,
+      },
+      {
+        "Medicare benefits per 100 people ($)": 0,
+        "SA3 group": 6,
+      },
+    ];
+
     // Add average line
+
+    // TODO: find out why lines are removed on exit instantly instead of transitioning......
+    // probably something from down later
     component.svg
       .selectAll("path.dotted")
-      .data([averageDotsData])
+      .data([zeroDataLine])
       .join(
-        enter => enter.append("path").attr("d", lineGenerator),
-        update => update.attr("d", lineGenerator),
-        exit => exit.remove()
-      )
-      .classed("dotted", true)
-      .attr("fill", "none")
-      .attr("stroke", "#929292")
-      .attr("stroke-width", 1)
-      .attr("stroke-dasharray", `2, 2`)
-      .style("opacity", 1.0);
+        enter =>
+          enter
+            .append("path")
+            .attr("d", d => lineGenerator(zeroDataLine))
+            .classed("dotted", true)
+            .attr("fill", "none")
+            .attr("stroke", "#929292")
+            .attr("stroke-width", 1)
+            .attr("stroke-dasharray", `2, 2`)
+            .style("opacity", 1.0)
+            .call(enter =>
+              enter
+                .transition()
+                .duration(DOTS_UPDATE_DURATION)
+                .attr("d", lineGenerator)
+            ),
+        update =>
+          update.call(update =>
+            update
+              .transition()
+              .duration(DOTS_UPDATE_DURATION)
+              .attr("d", lineGenerator)
+          ),
+        exit =>
+          exit.call(exit =>
+            exit
+              .transition()
+              .attr("d", d => lineGenerator(zeroDataLine))
+              .remove()
+          )
+      );
 
     // Process dots D3 data join
     const dotsDots = component.svg
@@ -874,13 +923,6 @@ const MultiChart = props => {
       // processLines();
     }
   }, [isDocked]);
-
-  // Do something when mark hit in scrollyteller
-  // useEffect(() => {
-  //   if (!component.svg) return;
-
-  //   console.log("marker", props.markKey);
-  // }, [props.markKey]);
 
   // Calculate which vertical bars need to be highlighted
   useEffect(() => {
