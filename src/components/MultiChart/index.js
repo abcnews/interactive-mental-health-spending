@@ -48,6 +48,7 @@ const DOTS_UPDATE_DURATION = 1000;
 const DOTS_ENTER_DURATION = 1000;
 const Y_AXIS_DURATION = 1000;
 const DOTS_EXIT_DURATION = 1000;
+const ANIMATION_OFFSET = 0;
 
 // Chart bar constants
 const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
@@ -328,9 +329,15 @@ const MultiChart = props => {
       }, 500);
     }
 
+    const sa3sFiltered = sa3s.filter(dot => {
+        if (dot["SA3 group"] === "ungrouped") return false;
+        if (dot[dotsDataKey.yField] === "NP") return false;
+        return true;
+      });
+
     // TODO: fix to deal with ungrouped and NP
     const averageDotsData = generateAverageData(
-      sa3s,
+      sa3sFiltered,
       dotsDataKey.xField,
       dotsDataKey.yField
     );
@@ -369,8 +376,8 @@ const MultiChart = props => {
                 return true;
               else return false;
             })
-            .style("stroke", "rgba(255, 255, 255, 0.8)")
-            .style("stroke-width", "1.1")
+            .style("stroke", "rgba(255, 255, 255, 1.0)")
+            .style("stroke-width", "0.9")
             .style("fill", d => {
               if (props.showLowHighDots) {
                 if (d["SA3 name"] === lowest["SA3 name"]) return "black";
@@ -393,25 +400,12 @@ const MultiChart = props => {
             .call(enter => {
               if (enter.empty()) return;
 
-              enter
-                .transition()
-                .duration(DOTS_ENTER_DURATION)
-                .delay((d, i) => i * 1) // Maybe don't do this effect
-                .attr("cy", d => {
-                  if (d[dotsDataKey.yField] === "NP")
-                    return component.scaleY(0);
-                  return component.scaleY(d[dotsDataKey.yField]);
-                })
+              setTimeout(() => {
+                const ownDotTarget = d3.select(".dots-own-dot");
+                if (!ownDotTarget.empty()) ownDotTarget.raise();
 
-                // Experimenting with adding flashing dot on testimonials target
-                .end()
-                .then(() => {
-                  const ownDotTarget = d3.select(".dots-own-dot");
-                  if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-                  const testimonyTarget = d3.select(".dots-testimony-target");
-                  if (testimonyTarget.empty()) return;
-
+                const testimonyTarget = d3.select(".dots-testimony-target");
+                if (!testimonyTarget.empty()) {
                   const pulseDot = component.svg
                     .append("circle")
                     .attr("cx", testimonyTarget.attr("cx"))
@@ -425,6 +419,36 @@ const MultiChart = props => {
                   // Raise our dots to the top
                   pulseDot.raise();
                   testimonyTarget.raise();
+                }
+              }, DOTS_ENTER_DURATION);
+
+              enter
+                .transition()
+                .duration(DOTS_ENTER_DURATION)
+                .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
+                .attr("cy", d => {
+                  if (d[dotsDataKey.yField] === "NP")
+                    return component.scaleY(0);
+                  return component.scaleY(d[dotsDataKey.yField]);
+                })
+                // Experimenting with adding flashing dot on testimonials target
+                .end()
+                .then(() => {
+                  // const ownDotTarget = d3.select(".dots-own-dot");
+                  // if (!ownDotTarget.empty()) ownDotTarget.raise();
+                  // const testimonyTarget = d3.select(".dots-testimony-target");
+                  // if (testimonyTarget.empty()) return;
+                  // const pulseDot = component.svg
+                  //   .append("circle")
+                  //   .attr("cx", testimonyTarget.attr("cx"))
+                  //   .attr("cy", testimonyTarget.attr("cy"))
+                  //   .style("fill", "rgba(39, 172, 255, 0.49)")
+                  //   .style("stroke", null)
+                  //   .classed("dots-animated-pulse", true);
+                  // pulse(pulseDot);
+                  // // Raise our dots to the top
+                  // pulseDot.raise();
+                  // testimonyTarget.raise();
                 })
                 .catch(e => null);
 
@@ -465,7 +489,32 @@ const MultiChart = props => {
             .call(update => {
               if (update.empty()) return;
 
-              const path = component.svg.select("path.dots");
+              component.svg.select(`circle.dots-animated-pulse`).remove();
+
+              setTimeout(() => {
+                const ownDotTarget = d3.select(".dots-own-dot");
+                if (!ownDotTarget.empty()) ownDotTarget.raise();
+
+                const testimonyTarget = d3.select(".dots-testimony-target");
+
+                if (!testimonyTarget.empty()) {
+                  const pulseDot = component.svg
+                    .append("circle")
+                    .attr("cx", testimonyTarget.attr("cx"))
+                    .attr("cy", testimonyTarget.attr("cy"))
+                    .style("fill", "rgba(39, 172, 255, 0.49)")
+                    .style("stroke", null)
+                    .classed("dots-animated-pulse", true);
+
+                  pulse(pulseDot);
+
+                  // Raise our dots to the top
+                  pulseDot.raise();
+                  testimonyTarget.raise();
+                }
+              }, DOTS_UPDATE_DURATION);
+
+              // const path = component.svg.select("path.dots");
 
               // // Fade line back in if it has been removed
               // if (path.empty()) {
@@ -492,12 +541,9 @@ const MultiChart = props => {
               // }
 
               return update
-                .call(update => {
-                  component.svg.select(`circle.dots-animated-pulse`).remove();
-                })
                 .transition()
                 .duration(DOTS_UPDATE_DURATION)
-                .delay((d, i) => i * 1) // Maybe don't do this effect
+                .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
                 .style("fill", d => {
                   if (props.showLowHighDots) {
                     if (d["SA3 name"] === lowest["SA3 name"]) return "black";
@@ -521,26 +567,23 @@ const MultiChart = props => {
                 })
                 .end()
                 .then(() => {
-                  const ownDotTarget = d3.select(".dots-own-dot");
-                  if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-                  const testimonyTarget = d3.select(".dots-testimony-target");
-
-                  if (!testimonyTarget.empty()) {
-                    const pulseDot = component.svg
-                      .append("circle")
-                      .attr("cx", testimonyTarget.attr("cx"))
-                      .attr("cy", testimonyTarget.attr("cy"))
-                      .style("fill", "rgba(39, 172, 255, 0.49)")
-                      .style("stroke", null)
-                      .classed("dots-animated-pulse", true);
-
-                    pulse(pulseDot);
-
-                    // Raise our dots to the top
-                    pulseDot.raise();
-                    testimonyTarget.raise();
-                  }
+                  console.log("transition end...")
+                  // const ownDotTarget = d3.select(".dots-own-dot");
+                  // if (!ownDotTarget.empty()) ownDotTarget.raise();
+                  // const testimonyTarget = d3.select(".dots-testimony-target");
+                  // if (!testimonyTarget.empty()) {
+                  //   const pulseDot = component.svg
+                  //     .append("circle")
+                  //     .attr("cx", testimonyTarget.attr("cx"))
+                  //     .attr("cy", testimonyTarget.attr("cy"))
+                  //     .style("fill", "rgba(39, 172, 255, 0.49)")
+                  //     .style("stroke", null)
+                  //     .classed("dots-animated-pulse", true);
+                  //   pulse(pulseDot);
+                  //   // Raise our dots to the top
+                  //   pulseDot.raise();
+                  //   testimonyTarget.raise();
+                  // }
                 })
                 .catch(e => null);
             }),
