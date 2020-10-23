@@ -329,91 +329,134 @@ const MultiChart = props => {
 
     const sa3sFiltered = sa3s.filter(dot => {
       if (dot["SA3 group"] === "ungrouped") return false;
-      if (dot[dotsDataKey.yField] === "NP") return false;
+      if (dot["Medicare benefits per 100 people ($)"] === "NP") return false;
       return true;
     });
 
     // TODO: fix to deal with ungrouped and NP
-    const averageDotsData = generateAverageData(
+    let averageDotsData = generateAverageData(
       sa3sFiltered,
-      dotsDataKey.xField,
-      dotsDataKey.yField
+      "SA3 group",
+      "Medicare benefits per 100 people ($)"
     );
 
     const lineGenerator = d3
       .line()
-      .defined(d => !isNaN(d[dotsDataKey.yField]))
-      .x(d => component.scaleX(d[dotsDataKey.xField]))
-      .y(d => component.scaleY(d[dotsDataKey.yField]));
+      .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
+      .x(d => component.scaleX(d["SA3 group"]))
+      .y(d => component.scaleY(d["Medicare benefits per 100 people ($)"]));
 
     console.log(averageDotsData);
 
     const zeroDataLine = [
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 1,
+        "SA3 group": "1",
       },
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 2,
+        "SA3 group": "2",
       },
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 3,
+        "SA3 group": "3",
       },
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 4,
+        "SA3 group": "4",
       },
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 5,
+        "SA3 group": "5",
       },
       {
         "Medicare benefits per 100 people ($)": 0,
-        "SA3 group": 6,
+        "SA3 group": "6",
       },
     ];
 
-    // Add average line
+    if (!component.averageLine) {
+      console.log("1");
+      component.averageLine = component.svg
+        .append("path")
+        .attr("d", d => lineGenerator(zeroDataLine))
+        .classed("dotted", true)
+        .attr("fill", "none")
+        .attr("stroke", "#929292")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", `2, 2`)
+        .style("opacity", 0.0);
 
-    // TODO: find out why lines are removed on exit instantly instead of transitioning......
-    // probably something from down later
-    component.svg
-      .selectAll("path.dotted")
-      .data([zeroDataLine])
-      .join(
-        enter =>
-          enter
-            .append("path")
-            .attr("d", d => lineGenerator(zeroDataLine))
-            .classed("dotted", true)
-            .attr("fill", "none")
-            .attr("stroke", "#929292")
-            .attr("stroke-width", 1)
-            .attr("stroke-dasharray", `2, 2`)
-            .style("opacity", 1.0)
-            .call(enter =>
-              enter
-                .transition()
-                .duration(DOTS_UPDATE_DURATION)
-                .attr("d", lineGenerator)
-            ),
-        update =>
-          update.call(update =>
-            update
-              .transition()
-              .duration(DOTS_UPDATE_DURATION)
-              .attr("d", lineGenerator)
-          ),
-        exit =>
-          exit.call(exit =>
-            exit
-              .transition()
-              .attr("d", d => lineGenerator(zeroDataLine))
-              .remove()
-          )
-      );
+      component.averageLine
+        .transition()
+        .duration(DOTS_UPDATE_DURATION + sa3s.length)
+        .attr("d", d => lineGenerator(averageDotsData))
+        .style("opacity", 1.0);
+    } else if (averageDotsData.length > 0) {
+      console.log("2");
+      component.averageLine
+        .transition()
+        .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
+        .style("opacity", 1.0)
+        .attr("d", d => lineGenerator(averageDotsData));
+    } else {
+      console.log("3");
+      component.averageLine
+        .transition()
+        .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
+        .style("opacity", 0.0)
+        .end()
+        .then(() => {
+          component.averageLine.attr("d", d => lineGenerator(zeroDataLine));
+        })
+        .catch(e => null);
+    }
+
+    // Add average line
+    // component.svg
+    //   .selectAll("path.dotted")
+    //   .data([averageDotsData], d => "key")
+    //   .join(
+    //     enter =>
+    //       enter
+    //         .append("path")
+    //         .attr("d", d => lineGenerator(zeroDataLine))
+    //         .classed("dotted", true)
+    //         .attr("fill", "none")
+    //         .attr("stroke", "#929292")
+    //         .attr("stroke-width", 1)
+    //         .attr("stroke-dasharray", `2, 2`)
+    //         .style("opacity", 1.0)
+    //         .call(enter => {
+    //           if (enter.empty()) return;
+
+    //           console.log("Enter...");
+    //           return enter
+    //             .transition()
+    //             .duration(DOTS_UPDATE_DURATION)
+    //             .attr("d", d => lineGenerator(d));
+    //         }),
+    //     update =>
+    //       update.attr("d", d => lineGenerator(zeroDataLine)).call(update => {
+    //         if (update.empty()) return;
+    //         console.log("Update...");
+    //         console.log(update)
+
+    //         return update
+    //           .transition()
+    //           .duration(DOTS_UPDATE_DURATION)
+    //           .attr("d", lineGenerator)
+    //       }),
+    //     exit =>
+    //       exit.call(exit => {
+    //         if (exit.empty()) return;
+    //         console.log("Exit...");
+    //         return exit
+    //           .transition()
+    //           .attr("d", d => lineGenerator(zeroDataLine))
+    //           .remove();
+    //       })
+    //   );
 
     // Process dots D3 data join
     const dotsDots = component.svg
