@@ -3,11 +3,13 @@ import styles from "./styles.scss";
 import AsyncSelect from "react-select/async";
 import axios from "axios";
 import Fuse from "fuse.js";
+import debounce from "debounce-promise";
 
 // Import images
 import mapPin from "./nav-icon-white.png";
 
 const MIN_INPUT_LENGTH = 3;
+const BOUNCE_TIMEOUT = 250;
 
 // Start of React component
 export default props => {
@@ -15,12 +17,13 @@ export default props => {
   const componentRef = useRef({});
   const { current: component } = componentRef;
 
-  const [postcodes, setPostcodes] = useState(null);
+  // const [postcodes, setPostcodes] = useState(null);
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
   const [options, setOptions] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
 
   const init = async () => {
+    
     // Get some data on mount
     // TODO: Maybe make sure we actually have this data
     // and print an error or something
@@ -65,7 +68,10 @@ export default props => {
 
     result = await axios.get(`${__webpack_public_path__}postcodes.json`);
 
-    setPostcodes(result.data);
+    // setPostcodes(result.data);
+    // For some reason the debounce has a problem with component state
+    // so let's use this component object thing.
+    component.postcodes = result.data;
   };
 
   const customStyles = {
@@ -139,7 +145,7 @@ export default props => {
     props.handleSelection(option);
   };
 
-  const promiseOptions = async inputValue => {
+  const promiseOptions = async (inputValue) => {
     // TODO: maybe make this a debounce
     // if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
@@ -192,9 +198,13 @@ export default props => {
 
     // return filteredOptions;
 
+    console.log("Searching...")
+
     // If user enters digits assume postcode search
     if (/^\d{0,4}$/.test(inputValue)) {
-      const filteredPostcodes = postcodes.filter(entry =>
+
+
+      const filteredPostcodes = component.postcodes.filter(entry =>
         entry.toString().startsWith(inputValue)
       );
 
@@ -204,7 +214,7 @@ export default props => {
         postcode: postcode,
       }));
 
-      await wait(250);
+      // await wait(250);
 
       return mappedOptions;
     }
@@ -219,14 +229,16 @@ export default props => {
     });
 
     // Fake a delay
-    await wait(750);
+    // await wait(750);
 
+    console.log("Done!")
     return fuzzyOptions;
   };
 
   // Initial effect run once at start
   useEffect(() => {
     init();
+    component.debouncedPromiseOptions = debounce(promiseOptions, BOUNCE_TIMEOUT);
   }, []);
 
   useEffect(() => {
@@ -257,7 +269,7 @@ export default props => {
       <AsyncSelect
         placeholder={"Search your suburb or postcode"}
         cacheOptions={false}
-        loadOptions={promiseOptions}
+        loadOptions={component.debouncedPromiseOptions}
         onChange={handleChange}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
