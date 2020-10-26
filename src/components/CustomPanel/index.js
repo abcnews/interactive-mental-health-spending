@@ -1,17 +1,22 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
+// import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
 
 // CSS Styles
 import styles from "./styles.scss";
 
 import { AppContext } from "../../AppContext";
 
+const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
+console.log(quintileLookup);
+
 export default props => {
   const base = useRef();
   const [hidePanel, setHidePanel] = useState(false);
+  const [suburb, setSuburb] = useState(null);
+  const [postcode, setPostcode] = useState(null);
 
   // Global context
-  const { userSelection, setUserSelection } = useContext(AppContext);
+  const { userSelection, userQuintile } = useContext(AppContext);
 
   // Once on mount we append Core text to the panels/pars
   useEffect(() => {
@@ -74,11 +79,19 @@ export default props => {
 
   // Handle a change in the user selection
   useEffect(() => {
-    console.log(userSelection)
-    if (props.config.swap && !userSelection) {
+    if (!props.config.swap) return;
+
+    if (!userSelection) {
       setHidePanel(true);
-    } else {
-      setHidePanel(false);
+      return;
+    }
+
+    setHidePanel(false);
+    setPostcode(userSelection.postcode);
+
+    // Set suburb if suburb selected
+    if (userSelection.type === "suburb") {
+      setSuburb(userSelection.value);
     }
   }, [userSelection]);
 
@@ -89,25 +102,19 @@ export default props => {
       }`}
       ref={base}
     >
-      {/* {props.config.swap &&
-        props.nodes.map((node, index) => {
-          return (
-            <JsxParser
-              key={index}
-              renderInWrapper={false}
-              bindings={{
-                testValue: userSelection && userSelection.label,
-                yourQuintile:
-                  "This is your quintile NOTE FROM JOSH: CHANGE THIS TO CALCULATED VALUES IF USER SELECTS AN AREA.",
-              }}
-              jsx={node.outerHTML}
-            />
-          );
-        })} */}
-
-      {props.config.swap && true /*props.config.key === "yourquintile"*/ && (
-        <p>Custom text!!!</p>
-      )}
+      {/* First interactive panel */}
+      {props.config.swap &&
+        props.config.key === "yourquintile" &&
+        (suburb ? (
+          <p>
+            Your suburb of <strong>{suburb}</strong> is [] the disadvantage
+            scale
+          </p>
+        ) : (
+          <p>
+            You postcode <strong>{postcode}</strong> is
+          </p>
+        ))}
     </div>
   );
 };

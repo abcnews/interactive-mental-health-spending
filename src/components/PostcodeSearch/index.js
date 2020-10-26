@@ -23,7 +23,6 @@ export default props => {
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
 
   const init = async () => {
-    
     // Get some data on mount
     // TODO: Maybe make sure we actually have this data
     // and print an error or something
@@ -145,7 +144,7 @@ export default props => {
     props.handleSelection(option);
   };
 
-  const promiseOptions = async (inputValue) => {
+  const promiseOptions = async inputValue => {
     // TODO: maybe make this a debounce
     // if (inputValue.length < MIN_INPUT_LENGTH) return [];
 
@@ -198,20 +197,19 @@ export default props => {
 
     // return filteredOptions;
 
-    console.log("Searching...")
+    console.log("Searching...");
 
     // If user enters digits assume postcode search
     if (/^\d{0,4}$/.test(inputValue)) {
-
-
       const filteredPostcodes = component.postcodes.filter(entry =>
         entry.toString().startsWith(inputValue)
       );
 
       const mappedOptions = filteredPostcodes.map(postcode => ({
-        value: postcode,
+        value: parseInt(postcode),
         label: postcode,
-        postcode: postcode,
+        postcode: parseInt(postcode),
+        type: "postcode",
       }));
 
       // await wait(250);
@@ -225,20 +223,24 @@ export default props => {
         value: entry.item.suburb,
         label: entry.item.suburb,
         postcode: entry.item.postcode,
+        type: "suburb",
       };
     });
 
     // Fake a delay
     // await wait(750);
 
-    console.log("Done!")
+    console.log("Done!");
     return fuzzyOptions;
   };
 
   // Initial effect run once at start
   useEffect(() => {
     init();
-    component.debouncedPromiseOptions = debounce(promiseOptions, BOUNCE_TIMEOUT);
+    component.debouncedPromiseOptions = debounce(
+      promiseOptions,
+      BOUNCE_TIMEOUT
+    );
   }, []);
 
   useEffect(() => {
