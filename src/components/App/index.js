@@ -155,7 +155,7 @@ export default props => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ userSelection, setUserSelection }}>
+    <AppContext.Provider value={{ userSelection, userQuintile }}>
       <>
         {/* Header image up above the H1 */}
         <Portal node={document.querySelector(".pre-header-hero")}>
