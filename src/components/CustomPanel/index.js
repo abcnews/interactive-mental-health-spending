@@ -6,17 +6,20 @@ import styles from "./styles.scss";
 
 import { AppContext } from "../../AppContext";
 
+// To get distressed percentage from quintile
 const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
-console.log(quintileLookup);
+const alliedServicesLookup = require("./allied-mental-health.json");
 
 export default props => {
   const base = useRef();
   const [hidePanel, setHidePanel] = useState(false);
   const [suburb, setSuburb] = useState(null);
   const [postcode, setPostcode] = useState(null);
+  const [distressedPercent, setDistressedPercent] = useState(null);
+  const [alliedService, setAlliedService] = useState({});
 
   // Global context
-  const { userSelection, userQuintile } = useContext(AppContext);
+  const { userSelection, userQuintile, userSa3 } = useContext(AppContext);
 
   // Once on mount we append Core text to the panels/pars
   useEffect(() => {
@@ -92,8 +95,16 @@ export default props => {
     // Set suburb if suburb selected
     if (userSelection.type === "suburb") {
       setSuburb(userSelection.value);
+    } else {
+      setSuburb(null);
     }
-  }, [userSelection]);
+
+    // Calculate distressed percent of user quintile
+    setDistressedPercent(quintileLookup[userQuintile]);
+
+    setAlliedService(alliedServicesLookup[userSa3.code]);
+    console.log(alliedServicesLookup[userSa3.code]);
+  }, [userSelection, userQuintile, userSa3]);
 
   return (
     <div
@@ -107,12 +118,18 @@ export default props => {
         props.config.key === "yourquintile" &&
         (suburb ? (
           <p>
-            Your suburb of <strong>{suburb}</strong> is [] the disadvantage
-            scale
+            Your suburb of <strong>{suburb}</strong> is in quintile{" "}
+            <strong>{userQuintile}</strong> with{" "}
+            <strong>{distressedPercent} per cent</strong> of people experiencing
+            a high level of distress.
           </p>
         ) : (
           <p>
-            You postcode <strong>{postcode}</strong> is
+            Your postcode <strong>{postcode}</strong> is in quintile{" "}
+            <strong>{userQuintile}</strong> with{" "}
+            <strong>{distressedPercent} per cent</strong> of people experiencing
+            a high level of distress.{" "}
+            {/* {alliedService.percentOfPeople} <-- move to next panel */}
           </p>
         ))}
     </div>
