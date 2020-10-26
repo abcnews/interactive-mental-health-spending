@@ -133,7 +133,7 @@ const MultiChart = props => {
   };
 
   const processCharts = () => {
-    if (!isDocked) return;
+    // if (!isDocked) return;
     if (props.chartType === "line") processLines();
     if (props.chartType === "dot") processDots();
     if (props.chartType === "dot") processAverageLines();
@@ -237,7 +237,6 @@ const MultiChart = props => {
             exit
               .call(exit => {
                 if (exit.empty()) return;
-
                 component.svg.select(`path.${line.lineName}`).remove();
               })
               .transition()
@@ -345,7 +344,6 @@ const MultiChart = props => {
       .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
       .x(d => component.scaleX(d["SA3 group"]))
       .y(d => component.scaleY(d["Medicare benefits per 100 people ($)"]));
-
 
     const zeroDataLine = [
       {
@@ -888,8 +886,7 @@ const MultiChart = props => {
         setLinesDataKey(props.lines);
         setDotsDataKey(props.dots);
         setAverageData(props.averages);
-        processLines();
-        processDots();
+        processCharts();
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
       }
@@ -912,8 +909,6 @@ const MultiChart = props => {
       setAverageData([]);
       setOwnQuintile(null);
       setOwnRegion(null);
-
-      // processLines();
     }
   }, [isDocked]);
 
@@ -964,16 +959,16 @@ const MultiChart = props => {
   }, [props.averages]);
 
   useEffect(() => {
-    if (hasBeenDocked) processLines();
-  }, [linesDataKey]);
+    if (hasBeenDocked) processCharts();
+  }, [linesDataKey, dotsDataKey, averageData]);
 
-  useEffect(() => {
-    if (hasBeenDocked) processDots();
-  }, [dotsDataKey]);
+  // useEffect(() => {
+  //   if (hasBeenDocked) processCharts();
+  // }, [dotsDataKey]);
 
-  useEffect(() => {
-    if (hasBeenDocked) processAverageLines();
-  }, [averageData]);
+  // useEffect(() => {
+  //   if (hasBeenDocked) processCharts();
+  // }, [averageData]);
 
   // useEffect(() => {
   //   setOwnQuintile(props.userQuintile);
