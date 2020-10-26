@@ -98,6 +98,8 @@ export default props => {
     // Sort by ratio
     const sorted = sa3sWithRatio.sort((a, b) => b.ratio - a.ratio);
 
+    // Choose one for the user
+    // TODO: Maybe find a way to let the user select
     const topSa3 = sorted[0];
     setUserSa3(topSa3);
 
@@ -155,7 +157,7 @@ export default props => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ userSelection, userQuintile }}>
+    <AppContext.Provider value={{ userSelection, userQuintile, userSa3 }}>
       <>
         {/* Header image up above the H1 */}
         <Portal node={document.querySelector(".pre-header-hero")}>

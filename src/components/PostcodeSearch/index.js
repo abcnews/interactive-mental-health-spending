@@ -197,8 +197,6 @@ export default props => {
 
     // return filteredOptions;
 
-    console.log("Searching...");
-
     // If user enters digits assume postcode search
     if (/^\d{0,4}$/.test(inputValue)) {
       const filteredPostcodes = component.postcodes.filter(entry =>
@@ -227,10 +225,6 @@ export default props => {
       };
     });
 
-    // Fake a delay
-    // await wait(750);
-
-    console.log("Done!");
     return fuzzyOptions;
   };
 
