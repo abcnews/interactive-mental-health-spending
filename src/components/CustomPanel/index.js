@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 // import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
+import * as d3Format from "d3-format";
+
+const d3 = { ...d3Format };
+const commaFormatter = d3.format(",");
 
 // CSS Styles
 import styles from "./styles.scss";
@@ -9,6 +13,8 @@ import { AppContext } from "../../AppContext";
 // To get distressed percentage from quintile
 const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
 const alliedServicesLookup = require("./allied-mental-health.json");
+const otherAlliedLookup = require("./other-allied.json");
+const clinicalPsychLookup = require("./cllinical-psych.json");
 
 export default props => {
   const base = useRef();
@@ -115,7 +121,7 @@ export default props => {
     >
       {/* First interactive panel */}
       {props.config.swap &&
-        props.config.key === "yourquintile" &&
+        props.config.panel === "yourquintile" &&
         (suburb ? (
           <p>
             Your suburb of <strong>{suburb}</strong> is in quintile{" "}
@@ -132,6 +138,52 @@ export default props => {
             {/* {alliedService.percentOfPeople} <-- move to next panel */}
           </p>
         ))}
+
+      {/* ---------- */}
+
+      {/* Second interactive panel (First dots scrolly stage) */}
+      {props.config.swap && props.config.panel === "alliedself" && (
+        <p>
+          In your area of <strong>{alliedService.name}</strong>, taxpayers
+          funded <strong>{alliedService.servicesPer100} sessions</strong> of
+          care per 100 people, which cost{" "}
+          <strong>${commaFormatter(alliedService.dollarsPer100)}</strong>.
+          That's{" "}
+          <strong>
+            {alliedService.servicesPer100 === 22.87
+              ? "the same as"
+              : alliedService.servicesPer100 > 22.87
+              ? "more than"
+              : "less than"}
+          </strong>{" "}
+          the national average of <strong>22.87</strong> sessions for{" "}
+          <strong>$2,375</strong>.
+        </p>
+      )}
+
+      {/* Third interactive panel (Subsequent on dots scrolly stage) */}
+      {props.config.swap && props.config.panel === "alliedself2" && (
+        <p>
+          This allowed <strong>{alliedService.percentOfPeople} per cent</strong>{" "}
+          of people in your area to access subsidised mental health care, which
+          is{" "}
+          <strong>
+            {alliedService.percentOfPeople === 5.06
+              ? "the same as"
+              : alliedService.percentOfPeople > 5.06
+              ? "more than"
+              : "less than"}
+          </strong>{" "}
+          the national average of <strong>5.06 per cent</strong>.
+        </p>
+      )}
+
+      {/* ------------ */}
+
+      {/* Third interactive panel (Subsequent on dots scrolly stage) */}
+      {props.config.swap && props.config.panel === "otherallied" && (
+        <p>HELLOOO!! Other allied</p>
+      )}
     </div>
   );
 };
