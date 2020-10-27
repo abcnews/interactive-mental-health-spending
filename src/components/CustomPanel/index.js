@@ -12,9 +12,11 @@ import { AppContext } from "../../AppContext";
 
 // To get distressed percentage from quintile
 const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
+
+// TODO: maybe remove unnecessary data
 const alliedServicesLookup = require("./allied-mental-health.json");
 const otherAlliedLookup = require("./other-allied.json");
-const clinicalPsychLookup = require("./cllinical-psych.json");
+const clinicalPsychLookup = require("./clinical-psych.json");
 
 export default props => {
   const base = useRef();
@@ -23,6 +25,8 @@ export default props => {
   const [postcode, setPostcode] = useState(null);
   const [distressedPercent, setDistressedPercent] = useState(null);
   const [alliedService, setAlliedService] = useState({});
+  const [otherAlliedService, setOtherAlliedService] = useState({});
+  const [clinicalService, setClinicalService] = useState({});
 
   // Global context
   const { userSelection, userQuintile, userSa3 } = useContext(AppContext);
@@ -109,7 +113,8 @@ export default props => {
     setDistressedPercent(quintileLookup[userQuintile]);
 
     setAlliedService(alliedServicesLookup[userSa3.code]);
-    console.log(alliedServicesLookup[userSa3.code]);
+    setOtherAlliedService(otherAlliedLookup[userSa3.code]);
+    setClinicalService(clinicalPsychLookup[userSa3.code]);
   }, [userSelection, userQuintile, userSa3]);
 
   return (
@@ -182,8 +187,16 @@ export default props => {
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
       {props.config.swap && props.config.panel === "otherallied" && (
-        <p>HELLOOO!! Other allied</p>
+        <p>
+          In your area of <strong>{otherAlliedService.name}</strong>, just{" "}
+          <strong>{otherAlliedService.percentOfPeople} per cent</strong> of
+          people received this kind of care, compared with{" "}
+          <strong>{clinicalService.percentOfPeople} per cent</strong> who saw a
+          clinical psychologist.
+        </p>
       )}
     </div>
   );
 };
+
+// TODO: handle NP not published data
