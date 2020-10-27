@@ -77,6 +77,7 @@ const MultiChart = props => {
   const { xField, yField, ...restProps } = props;
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
+  const prevYMax = usePrevious(props.yMax);
 
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
@@ -841,7 +842,7 @@ const MultiChart = props => {
       group
         .attr("transform", `translate(${margin.left},0)`)
         .transition()
-        .duration(Y_AXIS_DURATION)
+        .duration(prevYMax === props.yMax ? 0 : Y_AXIS_DURATION) // Only transition on yMax
         .call(
           d3
             .axisLeft(component.scaleY)

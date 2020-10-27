@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Allied mental health data
-const data = require("./clinicalPsychologist.json");
+const data = require("./other-allied.json");
 const ourData = {};
 
 for (const d of data) {
@@ -23,7 +23,7 @@ for (const d of data) {
 
 console.log(ourData);
 
-fs.writeFileSync("./clinicalPsychologistCombined.json", JSON.stringify(ourData));
+fs.writeFileSync("./otherOurData.json", JSON.stringify(ourData));
 
 // Other allied mental health data
 // const otherData = require("./other-allied.json");
