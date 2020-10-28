@@ -143,6 +143,8 @@ const MultiChart = props => {
   const processLines = () => {
     if (!Array.isArray(linesDataKey)) return;
 
+    console.log("Processing lines...");
+
     const collectedLineLabels = [];
 
     for (const line of linesDataKey) {
@@ -256,6 +258,8 @@ const MultiChart = props => {
 
   const processDots = () => {
     if (!dotsDataKey) return;
+
+    console.log("Processing dots...");
 
     // A kind of hack so average labels don't appear
     // when transition starts but then user moves to
@@ -804,6 +808,8 @@ const MultiChart = props => {
     // Wait till we have an svg mounted
     if (!component.svg) return;
 
+    const isYAxisTransition = prevYMax === props.yMax;
+
     const width = component.svg.node().getBoundingClientRect().width;
     const height = window.innerHeight;
 
@@ -842,7 +848,7 @@ const MultiChart = props => {
       group
         .attr("transform", `translate(${margin.left},0)`)
         .transition()
-        .duration(prevYMax === props.yMax ? 0 : Y_AXIS_DURATION) // Only transition on yMax
+        .duration(isYAxisTransition ? 0 : Y_AXIS_DURATION) // Only transition on yMax
         .call(
           d3
             .axisLeft(component.scaleY)
@@ -866,8 +872,10 @@ const MultiChart = props => {
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
 
+    console.log("Processing axes...");
+
     // Re-process all charts up update
-    processCharts();
+    if (hasBeenDocked) processCharts();
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate
@@ -887,7 +895,7 @@ const MultiChart = props => {
         setLinesDataKey(props.lines);
         setDotsDataKey(props.dots);
         setAverageData(props.averages);
-        processCharts();
+        // processCharts();
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
       }
@@ -910,6 +918,7 @@ const MultiChart = props => {
       setAverageData([]);
       setOwnQuintile(null);
       setOwnRegion(null);
+      // processCharts();
     }
   }, [isDocked]);
 
@@ -960,7 +969,7 @@ const MultiChart = props => {
   }, [props.averages]);
 
   useEffect(() => {
-    if (hasBeenDocked) processCharts();
+    if (isDocked || hasBeenDocked) processCharts();
   }, [linesDataKey, dotsDataKey, averageData]);
 
   // useEffect(() => {
