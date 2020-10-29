@@ -26,7 +26,13 @@ const d3 = { ...d3Selection };
 import buildMountPoints from "./lib/buildMountPoints";
 import { addClass } from "./lib/classHelpers";
 
-buildMountPoints(["postcodesearch", "scrollystagemount", "scrollystagemount2", "scrollystagemount3"]);
+buildMountPoints([
+  "postcodesearch",
+  "scrollystagemount",
+  "scrollystagemount2",
+  "scrollystagemount3",
+  "accessingcaregraphic",
+]);
 
 // Make stage full width
 const stage = document.querySelector(".scrollystagemount");
