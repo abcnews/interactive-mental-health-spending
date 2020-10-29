@@ -32,6 +32,8 @@ buildMountPoints([
   "scrollystagemount2",
   "scrollystagemount3",
   "accessingcaregraphic",
+  "timegraphic",
+  "distancegraphic"
 ]);
 
 // Make stage full width
@@ -49,6 +51,12 @@ addClass(stage3, "no-margin-collapse");
 
 const accessingcaregraphic = document.querySelector(".accessingcaregraphic");
 addClass(accessingcaregraphic, "no-margin-bottom");
+
+const timegraphic = document.querySelector(".timegraphic");
+addClass(timegraphic, "no-margin-bottom");
+
+const distancegraphic = document.querySelector(".distancegraphic");
+addClass(distancegraphic, "no-margin-bottom");
 
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
