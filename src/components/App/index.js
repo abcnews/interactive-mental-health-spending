@@ -12,6 +12,8 @@ import MultiChart from "../MultiChart";
 // Load up our hero URL (or data)
 import heroImage from "./images/hero-top.png";
 import pregnantLady from "./images/pregnant-lady.png";
+import timeGraphic from "./images/time-graphic.png";
+import distanceGraphic from "./images/distance-graphic.png";
 
 let storyKeys = require("./story-keys.json");
 
@@ -170,6 +172,18 @@ export default props => {
         <Portal node={document.querySelector(".accessingcaregraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={pregnantLady} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".timegraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={timeGraphic} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".distancegraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={distanceGraphic} />
           </div>
         </Portal>
 
