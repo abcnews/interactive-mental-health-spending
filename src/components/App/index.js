@@ -168,7 +168,9 @@ export default props => {
         </Portal>
 
         <Portal node={document.querySelector(".accessingcaregraphic")}>
-          <img src={pregnantLady} />
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={pregnantLady} />
+          </div>
         </Portal>
 
         <div className={styles.root}>
