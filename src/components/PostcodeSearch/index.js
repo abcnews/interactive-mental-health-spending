@@ -78,7 +78,7 @@ export default props => {
       ...provided,
       fontFamily: "ABCSans, sans-serif",
       backgroundImage:
-        "linear-gradient(90deg, rgba(57,103,123,1) 0%, rgba(57,103,123,1) 44px, rgba(8,29,134,0) 44px, rgba(0,212,255,0) 100%);",
+        "linear-gradient(90deg, rgb(62, 146, 200) 0%, rgb(62, 146, 200) 52px, rgba(8,29,134,0) 52px, rgba(0,212,255,0) 100%);",
     }),
     input: () => ({
       fontFamily: "ABCSans, sans-serif",
@@ -96,18 +96,19 @@ export default props => {
       // fontFamily: "ABCSans, sans-serif",
       borderRadius: 0,
       borderWidth: "2px",
-      borderColor: "#39677B",
+      borderColor: "rgb(62, 146, 200)",
       backgroundColor: "transparent",
       backgroundImage: `url(${mapPin})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "auto 75%",
-      backgroundPosition: "6px 45%",
+      backgroundPosition: "10px 45%",
       fontSize: "16px",
       cursor: "pointer",
-      padding: "5px 4px 3px 40px",
-      "&:focused": {
-        borderColor: "red",
-      },
+      padding: "5px 4px 3px 58px",
+      fontWeight: "400",
+      // "&:focused": {
+      //   borderColor: "red",
+      // },
       boxShadow: "none",
     }),
     dropdownIndicator: (provided, state) => ({
@@ -263,7 +264,7 @@ export default props => {
   return (
     <div className={styles.root}>
       <AsyncSelect
-        placeholder={"Search your suburb or postcode"}
+        placeholder={"Search your suburb or postcode!"}
         cacheOptions={false}
         loadOptions={component.debouncedPromiseOptions}
         onChange={handleChange}
