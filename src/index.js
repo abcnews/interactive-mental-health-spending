@@ -47,6 +47,9 @@ const stage3 = document.querySelector(".scrollystagemount3");
 addClass(stage3, "u-full");
 addClass(stage3, "no-margin-collapse");
 
+const accessingcaregraphic = document.querySelector(".accessingcaregraphic");
+addClass(accessingcaregraphic, "no-margin-bottom");
+
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
   // (but do want to wait for Odyssey)

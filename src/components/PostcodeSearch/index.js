@@ -247,7 +247,7 @@ export default props => {
       // shouldSort: true,
       // includeMatches: false,
       // findAllMatches: false,
-      minMatchCharLength: 3,
+      minMatchCharLength: 2,
       // location: 0,
       threshold: 0.4,
       distance: 50,
@@ -264,7 +264,7 @@ export default props => {
   return (
     <div className={styles.root}>
       <AsyncSelect
-        placeholder={"Search your suburb or postcode!"}
+        placeholder={"Search your suburb or postcode"}
         cacheOptions={false}
         loadOptions={component.debouncedPromiseOptions}
         onChange={handleChange}

@@ -1,6 +1,16 @@
 .root {
 }
 
+.illustration-container {
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 5px;
+
+  img {
+    max-width: 300px !important;
+  }
+}
+
 :global {
   .pre-header-hero {
     display: flex;
@@ -22,15 +32,17 @@
     padding-bottom: 2rem;
   }
 
+  .no-margin-bottom {
+    margin-bottom: 0;
+  }
+
   .Gallery {
     background-color: aquamarine;
   }
 
-  [class*=u-richtext]>h3 {
+  [class*="u-richtext"] > h3 {
     font-family: ABCSerif, serif;
     text-align: center;
     font-weight: 500;
   }
-
-  
 }
