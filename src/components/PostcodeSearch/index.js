@@ -275,7 +275,7 @@ export default props => {
           if (inputValue.length < 3) return "Search your suburb or postcode";
           return "Nothing found...";
         }}
-        // defaultOptions={options}
+      // defaultOptions={options}
       />
     </div>
   );

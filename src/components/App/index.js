@@ -10,7 +10,8 @@ import CustomPanel from "../CustomPanel";
 import MultiChart from "../MultiChart";
 
 // Load up our hero URL (or data)
-import heroImage from "./hero-top.png";
+import heroImage from "./images/hero-top.png";
+import pregnantLady from "./images/pregnant-lady.png";
 
 let storyKeys = require("./story-keys.json");
 
@@ -164,6 +165,10 @@ export default props => {
           <div>
             <img src={heroImage} />
           </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".accessingcaregraphic")}>
+          <img src={pregnantLady} />
         </Portal>
 
         <div className={styles.root}>
