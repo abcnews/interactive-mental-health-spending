@@ -143,8 +143,6 @@ const MultiChart = props => {
   const processLines = () => {
     if (!Array.isArray(linesDataKey)) return;
 
-    console.log("Processing lines...");
-
     const collectedLineLabels = [];
 
     for (const line of linesDataKey) {
@@ -258,8 +256,6 @@ const MultiChart = props => {
 
   const processDots = () => {
     if (!dotsDataKey) return;
-
-    console.log("Processing dots...");
 
     // A kind of hack so average labels don't appear
     // when transition starts but then user moves to
@@ -871,8 +867,6 @@ const MultiChart = props => {
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
-
-    console.log("Processing axes...");
 
     // Re-process all charts up update
     if (hasBeenDocked) processCharts();

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-// import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
+import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
 import * as d3Format from "d3-format";
 
 const d3 = { ...d3Format };
@@ -17,6 +17,8 @@ const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
 const alliedServicesLookup = require("./allied-mental-health.json");
 const otherAlliedLookup = require("./other-allied.json");
 const clinicalPsychLookup = require("./clinical-psych.json");
+
+import kayeGraphic from "./images/kaye-graphic.png";
 
 export default props => {
   const base = useRef();
@@ -39,7 +41,7 @@ export default props => {
     // Tell scrollyteller that this is a panel
     props.reference(base.current);
 
-    if (!props.config.swap) {
+    if (!props.config.swap || props.config.custom) {
       const isMobile = window.innerWidth < 440;
 
       // Append CoreMedia nodes
@@ -194,6 +196,22 @@ export default props => {
           <strong>{clinicalService.percentOfPeople} per cent</strong> who saw a
           clinical psychologist.
         </p>
+      )}
+
+      {props.config.custom && props.config.panel === "kayeinitial" && (
+        <>
+          <p>
+            <img src={kayeGraphic} />
+          </p>
+          {props.nodes.map((node, index) => (
+            <JsxParser
+              key={index}
+              renderInWrapper={false}
+              bindings={{}}
+              jsx={node.outerHTML}
+            />
+          ))}
+        </>
       )}
     </div>
   );
