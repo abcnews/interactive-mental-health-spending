@@ -1,5 +1,14 @@
 $fade-height: 50vh;
 
+.image-holder {
+  text-align: center;
+  margin-top: -20px;
+
+  img {
+    max-width: 300px;
+  }
+}
+
 .base {
   // Fix for panels going behind the stage
   -webkit-transform: translate3d(0, 0, 0);
@@ -30,7 +39,7 @@ $fade-height: 50vh;
   &::before {
     content: "";
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     // border-radius: 4px;
     // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
@@ -108,7 +117,7 @@ $fade-height: 50vh;
 
 .light {
   &::before {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     // border: 1px solid darken($color, 15%);
   }
 
