@@ -37,7 +37,38 @@
   }
 
   .Gallery {
-    background-color: aquamarine;
+    .Gallery-richtextTileContent {
+      background-color: #f6f6f6;
+    }
+
+    .Quote.is-pullquote {
+      text-align: left;
+    }
+
+    .Quote p {
+      font-size: 0.9rem;
+      color: #2c6488;
+      text-indent: 42px;
+
+      @media (min-width: 600px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    footer {
+      color: #3d7988 !important;
+    }
+
+    .Gallery-step-next,
+    .Gallery-step-prev,
+    .Gallery-index {
+      background-color: #f9f6f3;
+      color: #ea5b36;
+
+      svg polyline {
+        stroke: #ea5b36;
+      }
+    }
   }
 
   [class*="u-richtext"] > h3 {
