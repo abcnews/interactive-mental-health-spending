@@ -19,6 +19,7 @@ const otherAlliedLookup = require("./other-allied.json");
 const clinicalPsychLookup = require("./clinical-psych.json");
 
 import kayeGraphic from "./images/kaye-graphic.png";
+import mikeGraphic from "./images/mike-graphic.png";
 
 export default props => {
   const base = useRef();
@@ -200,9 +201,25 @@ export default props => {
 
       {props.config.custom && props.config.panel === "kayeinitial" && (
         <>
-          <p>
+          <div className={styles.imageHolder}>
             <img src={kayeGraphic} />
-          </p>
+          </div>
+          {props.nodes.map((node, index) => (
+            <JsxParser
+              key={index}
+              renderInWrapper={false}
+              bindings={{}}
+              jsx={node.outerHTML}
+            />
+          ))}
+        </>
+      )}
+
+      {props.config.custom && props.config.panel === "mikeinitial" && (
+        <>
+          <div className={styles.imageHolder}>
+            <img src={mikeGraphic} />
+          </div>
           {props.nodes.map((node, index) => (
             <JsxParser
               key={index}
