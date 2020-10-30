@@ -787,7 +787,7 @@ const MultiChart = props => {
     let observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.99,
+      threshold: 0.95,
     });
 
     observer.observe(root.current);
