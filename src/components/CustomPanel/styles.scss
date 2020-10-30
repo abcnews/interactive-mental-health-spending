@@ -2,10 +2,28 @@ $fade-height: 50vh;
 
 .image-holder {
   text-align: center;
-  margin-top: -20px;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
 
   img {
     max-width: 300px;
+  }
+
+  div.label {
+    position: relative;
+    top: 256px;
+    font-family: ABCSans, sans-serif;
+    color: white;
+    font-size: 21px;
+
+    span {
+      background-color: rgb(83, 145, 195);
+      padding: 6px 6px 8px;
+      -webkit-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.12);
+      -moz-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.12);
+      box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.12);
+    }
   }
 }
 

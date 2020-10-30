@@ -194,6 +194,9 @@ export default props => {
       {props.config.custom && props.config.panel === "kayeinitial" && (
         <>
           <div className={styles.imageHolder}>
+            <div className={styles.label}>
+              <span>Kaye, South Coast (NSW)</span>
+            </div>
             <img src={kayeGraphic} />
           </div>
           {props.nodes.map((node, index) => (
@@ -210,6 +213,9 @@ export default props => {
       {props.config.custom && props.config.panel === "mikeinitial" && (
         <>
           <div className={styles.imageHolder}>
+          <div className={styles.label}>
+              <span>Mike, Wollongong</span>
+            </div>
             <img src={mikeGraphic} />
           </div>
           {props.nodes.map((node, index) => (
