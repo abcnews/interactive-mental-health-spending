@@ -42,43 +42,35 @@ export default props => {
     // Tell scrollyteller that this is a panel
     props.reference(base.current);
 
-    if (!props.config.swap || props.config.custom) {
-      const isMobile = window.innerWidth < 440;
+    if (props.config.swap) return;
+    if (props.config.custom) return;
 
-      // Append CoreMedia nodes
-      props.nodes.forEach(node => {
-        // Make sure images fit inside the panels
-        if (
-          node.className.indexOf("ImageEmbed") > -1 ||
-          node.tagName === "IMG"
-        ) {
-          node.style.setProperty("display", "block");
-          node.style.setProperty("margin", "auto");
-          node.style.setProperty(
-            "width",
-            isMobile ? "83.333333%" : "66.66667%"
-          );
-          node.style.setProperty("padding-left", "0.875rem");
-          node.style.setProperty("padding-right", "0.875rem");
-          if (node.hasAttribute("height")) {
-            node.removeAttribute("height");
-          }
-        } else if (node.querySelector("img")) {
-          node.style.setProperty("margin", "auto");
-          node.style.setProperty(
-            "width",
-            isMobile ? "83.333333%" : "66.66667%"
-          );
-          node.style.setProperty("padding-left", "0.875rem");
-          node.style.setProperty("padding-right", "0.875rem");
-          [].slice.call(node.querySelectorAll("img")).forEach(img => {
-            img.removeAttribute("height");
-          });
+    const isMobile = window.innerWidth < 440;
+
+    // Append CoreMedia nodes
+    props.nodes.forEach(node => {
+      // Make sure images fit inside the panels
+      if (node.className.indexOf("ImageEmbed") > -1 || node.tagName === "IMG") {
+        node.style.setProperty("display", "block");
+        node.style.setProperty("margin", "auto");
+        node.style.setProperty("width", isMobile ? "83.333333%" : "66.66667%");
+        node.style.setProperty("padding-left", "0.875rem");
+        node.style.setProperty("padding-right", "0.875rem");
+        if (node.hasAttribute("height")) {
+          node.removeAttribute("height");
         }
+      } else if (node.querySelector("img")) {
+        node.style.setProperty("margin", "auto");
+        node.style.setProperty("width", isMobile ? "83.333333%" : "66.66667%");
+        node.style.setProperty("padding-left", "0.875rem");
+        node.style.setProperty("padding-right", "0.875rem");
+        [].slice.call(node.querySelectorAll("img")).forEach(img => {
+          img.removeAttribute("height");
+        });
+      }
 
-        base.current.appendChild(node);
-      });
-    }
+      base.current.appendChild(node);
+    });
 
     // On unmount
     return () => {
