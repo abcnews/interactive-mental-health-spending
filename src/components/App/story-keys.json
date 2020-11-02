@@ -121,7 +121,7 @@
     "chartType": "dot",
     "yMax": "5000",
     "highlightBars": [],
-    "showLowHighDots": true,
+    "showLowHighDots": false,
     "highlightOwnBar": true,
     "labelOwnDot": true,
     "dots": {
@@ -190,6 +190,21 @@
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": "South Coast"
+    },
+    "averages": []
+  },
+  "miketestimonial": {
+    "chartType": "dot",
+    "yMax": "5000",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "labelOwnDot": false,
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)",
+      "testimonialSa3": "Wollongong"
     },
     "averages": []
   },
