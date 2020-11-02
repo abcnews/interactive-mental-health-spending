@@ -538,7 +538,6 @@ const MultiChart = props => {
             .attr("cx", d => {
               return component.scaleX(d[dotsDataKey.xField]);
             })
-
             .call(update => {
               if (update.empty()) return;
 
@@ -1286,15 +1285,21 @@ const MultiChart = props => {
         {dotCustomLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
-              <div
-                className={`${styles.dotCustomLabel} ${
-                  label.align === "right" ? styles.alignRight : ""
-                }`}
-                style={{ top: label.y, left: label.x }}
-                key={index}
-              >
-                {label.text}
-              </div>
+              <>
+                <div
+                  className={styles.customLabelDot}
+                  style={{ top: label.y, left: label.x }}
+                ></div>
+                <div
+                  className={`${styles.dotCustomLabel} ${
+                    label.align === "right" ? styles.alignRight : ""
+                  }`}
+                  style={{ top: label.y, left: label.x }}
+                  key={index}
+                >
+                  {label.text}
+                </div>
+              </>
             </CSSTransition>
           );
         })}
