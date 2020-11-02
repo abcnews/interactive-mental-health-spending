@@ -128,6 +128,21 @@
     }
   }
 
+  .custom-label-dot {
+    display: inline;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 0 1px 0 0 white; /* Border bottom */
+    box-shadow: 0 -1px 0 0 white; /* Border top */
+    box-shadow: -1px 0 0 0 white; /* Border left */
+    box-shadow: 1px 0 0 0 white; /* Border right */
+    box-shadow: 0 0 0 1px white; /* All the borders by using the spread properties */
+  }
+
   .dot-custom-label {
     position: absolute;
     font-family: ABCSans, sans-serif;
@@ -141,11 +156,6 @@
     &.align-right {
       transform: translateX(-100%);
     }
-
-    // .dot-custom-label-light {
-    //   color: black;
-    //   background-color: white;
-    // }
   }
 
   .transition-group {
