@@ -310,13 +310,15 @@ const MultiChart = props => {
           else return false;
         });
 
+        console.dir(matched.xField);
+
         if (matched) {
           setDotCustomLabels([
             {
               text: matched["SA3 name"],
               x: component.scaleX(matched[dotsDataKey.xField]),
               y: component.scaleY(matched[dotsDataKey.yField]),
-              align: highest[matched.xField] < 5 ? "left" : "right",
+              align: matched[dotsDataKey.xField] < 5 ? "left" : "right",
             },
           ]);
         }
@@ -1284,22 +1286,29 @@ const MultiChart = props => {
       <TransitionGroup className={styles.transitionGroup}>
         {dotCustomLabels.map((label, index) => {
           return (
+            <CSSTransition key={index} timeout={400} classNames={"item"}>
+              <div
+                className={styles.customLabelDot}
+                style={{ top: label.y, left: label.x }}
+              ></div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {dotCustomLabels.map((label, index) => {
+          return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
-              <>
-                <div
-                  className={styles.customLabelDot}
-                  style={{ top: label.y, left: label.x }}
-                ></div>
-                <div
-                  className={`${styles.dotCustomLabel} ${
-                    label.align === "right" ? styles.alignRight : ""
-                  }`}
-                  style={{ top: label.y, left: label.x }}
-                  key={index}
-                >
-                  {label.text}
-                </div>
-              </>
+              <div
+                className={`${styles.dotCustomLabel} ${
+                  label.align === "right" ? styles.alignRight : ""
+                }`}
+                style={{ top: label.y, left: label.x }}
+                key={index}
+              >
+                {label.text}
+              </div>
             </CSSTransition>
           );
         })}
