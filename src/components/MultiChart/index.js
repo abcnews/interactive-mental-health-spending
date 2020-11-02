@@ -1166,7 +1166,7 @@ const MultiChart = props => {
       <svg className={"scatter-plot"} ref={root}></svg>
       <div
         className={styles.chartTitle}
-        style={{ top: margin.top, left: margin.left }}
+        style={{ top: margin.top, left: margin.left - 30 }}
       >
         <Fade in={props.chartType !== "line"}>
           <span>Medicare rebates per 100 people ($)</span>
