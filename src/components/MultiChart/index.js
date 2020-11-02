@@ -996,18 +996,6 @@ const MultiChart = props => {
     if (isDocked || hasBeenDocked) processCharts();
   }, [linesDataKey, dotsDataKey, averageData]);
 
-  // useEffect(() => {
-  //   if (hasBeenDocked) processCharts();
-  // }, [dotsDataKey]);
-
-  // useEffect(() => {
-  //   if (hasBeenDocked) processCharts();
-  // }, [averageData]);
-
-  // useEffect(() => {
-  //   setOwnQuintile(props.userQuintile);
-  // }, [props.userQuintile]);
-
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
   const chartHeight = window.innerHeight - margin.top - margin.bottom;
