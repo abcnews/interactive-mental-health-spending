@@ -87,7 +87,7 @@
 
   .line-label {
     position: absolute;
-    transform: translate(0px, -135%);
+    transform: translate(0px, -145%);
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
     font-weight: bold;
@@ -115,7 +115,7 @@
     color: black;
     font-weight: bold;
     font-size: 10px;
-    padding: 2px 4px 1px;
+    padding: 2px 4px 2px;
     background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
@@ -131,11 +131,11 @@
   .custom-label-dot {
     display: inline;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
     background-color: black;
-    transform: translateX(-5px) translateY(-5px);
+    transform: translateX(-6px) translateY(-6px);
     box-shadow: 0 1px 0 0 white; /* Border bottom */
     box-shadow: 0 -1px 0 0 white; /* Border top */
     box-shadow: -1px 0 0 0 white; /* Border left */
@@ -144,12 +144,15 @@
   }
 
   .dot-custom-label {
+    display: inline-block;
+    vertical-align: top;
     position: absolute;
     font-family: ABCSans, sans-serif;
     color: white;
+    border: 1px solid white;
     font-weight: bold;
     font-size: 10px;
-    padding: 2px 4px 1px;
+    padding: 2px 4px 2px;
     background-color: black;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
@@ -176,6 +179,103 @@
       }
     }
   }
+
+  .testimonial-replacement-dot {
+    display: inline;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateX(-6px) translateY(-6px);
+    box-shadow: 0 1px 0 0 white; /* Border bottom */
+    box-shadow: 0 -1px 0 0 white; /* Border top */
+    box-shadow: -1px 0 0 0 white; /* Border left */
+    box-shadow: 1px 0 0 0 white; /* Border right */
+    box-shadow: 0 0 0 1px white; /* All the borders by using the spread properties */
+  }
+
+  .testimonial-dot {
+    box-sizing: content-box;
+    position: absolute;
+    background: black; //rgb(60, 146, 200);
+    border-radius: 50%;
+    margin: 20px;
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 0 rgba(60, 146, 200, 1);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      
+      box-shadow: 0 0 0 0 rgba(60, 146, 200, 1.0);
+    }
+
+    70% {
+      
+      box-shadow: 0 0 0 20px rgba(60, 146, 200, 0.0);
+    }
+
+    100% {
+      
+      box-shadow: 0 0 0 0 rgba(60, 146, 200, 0);
+    }
+  }
+
+  // .ring-container {
+  //   position: relative;
+  // }
+
+  // .circle {
+  //   width: 15px;
+  //   height: 15px;
+  //   background-color: #62bd19;
+  //   border-radius: 50%;
+  // }
+
+  // .ring {
+  //   border: 3px solid #62bd19;
+  //   -webkit-border-radius: 30px;
+  //   border-radius: 30px;
+  //   height: 25px;
+  //   width: 25px;
+
+  //   -webkit-animation: pulsate 1s ease-out;
+  //   animation: pulsate 1s ease-out;
+  //   -webkit-animation-iteration-count: infinite;
+  //   animation-iteration-count: infinite;
+  //   opacity: 0;
+  // }
+
+  // @-webkit-keyframes pulsate {
+  //   0% {
+  //     -webkit-transform: scale(0.1, 0.1);
+  //     opacity: 0;
+  //   }
+  //   50% {
+  //     opacity: 1;
+  //   }
+  //   100% {
+  //     -webkit-transform: scale(1.2, 1.2);
+  //     opacity: 0;
+  //   }
+  // }
+
+  // @keyframes pulsate {
+  //   0% {
+  //     transform: scale(0.1, 0.1);
+  //     opacity: 0;
+  //   }
+  //   50% {
+  //     opacity: 1;
+  //   }
+  //   100% {
+  //     transform: scale(1.2, 1.2);
+  //     opacity: 0;
+  //   }
+  // }
 
   // Set when a testimony from a particular SA3 is
   // highlighted in a hash #marker

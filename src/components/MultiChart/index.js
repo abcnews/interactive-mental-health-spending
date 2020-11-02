@@ -41,7 +41,7 @@ import {
 } from "./lib";
 
 // File scoped constants
-const dotRadius = 5;
+const dotRadius = 6;
 const LINE_ANIMATION_DURATION = 2000;
 const TICK_TEXT_MARGIN = 4;
 const DOTS_UPDATE_DURATION = 1000;
@@ -49,10 +49,11 @@ const DOTS_ENTER_DURATION = 1000;
 const Y_AXIS_DURATION = 1000;
 const DOTS_EXIT_DURATION = 1000;
 const ANIMATION_OFFSET = 0.5;
+const PULSE_RADIUS = 26;
 
 // Chart bar constants
 const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
-const BAR_HIGHLIGHT_COLOR = "rgba(220, 220, 220, 0.59)";
+const BAR_HIGHLIGHT_COLOR = "rgba(200, 200, 200, 0.59)";
 const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
@@ -102,6 +103,7 @@ const MultiChart = props => {
   const [dotCustomLabels, setDotCustomLabels] = useState([]);
   const [averageLineLabels, setAverageLineLabels] = useState([]);
   const [averageData, setAverageData] = useState([]);
+  const [testimonalDots, setTestimonialDots] = useState([]);
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -310,8 +312,6 @@ const MultiChart = props => {
           else return false;
         });
 
-        console.dir(matched.xField);
-
         if (matched) {
           setDotCustomLabels([
             {
@@ -327,6 +327,31 @@ const MultiChart = props => {
       setTimeout(() => {
         setDotCustomLabels([]);
       }, 500);
+    }
+
+    // Set testimonial dot
+    if (sa3s.length > 0) {
+      const foundTesimonial = sa3s.find(sa3 => {
+        if (sa3["SA3 name"] === dotsDataKey.testimonialSa3) return true;
+        else return false;
+      });
+
+      if (foundTesimonial) {
+        setTimeout(() => {
+          setTestimonialDots([
+            {
+              text: foundTesimonial["SA3 name"],
+              x: component.scaleX(foundTesimonial[dotsDataKey.xField]),
+              y: component.scaleY(foundTesimonial[dotsDataKey.yField]),
+              align: foundTesimonial[dotsDataKey.xField] < 5 ? "left" : "right",
+            },
+          ]);
+        }, 1000);
+      } else {
+        setTimeout(() => {
+          setTestimonialDots([]);
+        }, 0);
+      }
     }
 
     const sa3sFiltered = sa3s.filter(dot => {
@@ -1283,6 +1308,7 @@ const MultiChart = props => {
         })}
       </TransitionGroup>
 
+      {/* When a user selects an area these show up in the scrollyteller */}
       <TransitionGroup className={styles.transitionGroup}>
         {dotCustomLabels.map((label, index) => {
           return (
@@ -1314,14 +1340,63 @@ const MultiChart = props => {
         })}
       </TransitionGroup>
 
+      {/* Average line labels */}
       <TransitionGroup className={styles.transitionGroup}>
         {averageLineLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
               <div
                 className={`${styles.lineLabel} ${styles.averageLabel}`}
-                key={index}
                 style={{ top: label.y, left: label.x, color: label.color }}
+              >
+                {label.text}
+              </div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      {/* Testimonial animated dot */}
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {testimonalDots.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={400} classNames={"item"}>
+              <div
+                className={styles.testimonialDot}
+                style={{
+                  top: label.y - PULSE_RADIUS,
+                  left: label.x - PULSE_RADIUS,
+                }}
+              ></div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {testimonalDots.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={400} classNames={"item"}>
+              <div
+                className={styles.testimonialReplacementDot}
+                style={{ top: label.y, left: label.x }}
+              ></div>
+            </CSSTransition>
+          );
+        })}
+      </TransitionGroup>
+
+      <TransitionGroup className={styles.transitionGroup}>
+        {testimonalDots.map((label, index) => {
+          return (
+            <CSSTransition key={index} timeout={500} classNames={"item"}>
+              <div
+                className={`${styles.dotCustomLabel} ${
+                  label.align === "right" ? styles.alignRight : ""
+                }`}
+                style={{ top: label.y, left: label.x }}
+                key={index}
               >
                 {label.text}
               </div>
