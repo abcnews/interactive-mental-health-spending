@@ -129,6 +129,10 @@ const MultiChart = props => {
     // Set component scoped SVG selection
     component.svg = d3.select(root.current);
 
+    // TODO: Maybe find a way to detect if animating
+    // and modify transitions based on this (if there's time)
+    // component.isAnimating = false;
+
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
     component.xAxis = component.svg.append("g").classed("x-axis", true);
@@ -330,14 +334,14 @@ const MultiChart = props => {
     }
 
     // Set testimonial dot
-    if (sa3s.length > 0) {
-      const foundTesimonial = sa3s.find(sa3 => {
-        if (sa3["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-        else return false;
-      });
+    if (sa3s.length > 0 && dotsDataKey.testimonialSa3) {
+      setTimeout(() => {
+        const foundTesimonial = sa3s.find(sa3 => {
+          if (sa3["SA3 name"] === dotsDataKey.testimonialSa3) return true;
+          else return false;
+        });
 
-      if (foundTesimonial) {
-        setTimeout(() => {
+        if (foundTesimonial) {
           setTestimonialDots([
             {
               text: foundTesimonial["SA3 name"],
@@ -346,12 +350,12 @@ const MultiChart = props => {
               align: foundTesimonial[dotsDataKey.xField] < 5 ? "left" : "right",
             },
           ]);
-        }, 1000);
-      } else {
-        setTimeout(() => {
-          setTestimonialDots([]);
-        }, 0);
-      }
+        }
+      }, 500);
+    } else {
+      setTimeout(() => {
+        setTestimonialDots([]);
+      }, 500);
     }
 
     const sa3sFiltered = sa3s.filter(dot => {
@@ -1361,7 +1365,7 @@ const MultiChart = props => {
       <TransitionGroup className={styles.transitionGroup}>
         {testimonalDots.map((label, index) => {
           return (
-            <CSSTransition key={index} timeout={400} classNames={"item"}>
+            <CSSTransition key={label.text} timeout={400} classNames={"item"}>
               <div
                 className={styles.testimonialDot}
                 style={{
@@ -1377,7 +1381,7 @@ const MultiChart = props => {
       <TransitionGroup className={styles.transitionGroup}>
         {testimonalDots.map((label, index) => {
           return (
-            <CSSTransition key={index} timeout={400} classNames={"item"}>
+            <CSSTransition key={label.text} timeout={400} classNames={"item"}>
               <div
                 className={styles.testimonialReplacementDot}
                 style={{ top: label.y, left: label.x }}
@@ -1390,13 +1394,12 @@ const MultiChart = props => {
       <TransitionGroup className={styles.transitionGroup}>
         {testimonalDots.map((label, index) => {
           return (
-            <CSSTransition key={index} timeout={500} classNames={"item"}>
+            <CSSTransition key={label.text} timeout={500} classNames={"item"}>
               <div
                 className={`${styles.dotCustomLabel} ${
                   label.align === "right" ? styles.alignRight : ""
                 }`}
                 style={{ top: label.y, left: label.x }}
-                key={index}
               >
                 {label.text}
               </div>
