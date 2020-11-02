@@ -90,6 +90,7 @@
   },
   "allied": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -104,6 +105,7 @@
   },
   "alliedgroups": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": true,
@@ -119,6 +121,7 @@
   },
   "alliedself": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -135,6 +138,7 @@
   },
   "highadvantage": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [6],
     "showLowHighDots": false,
@@ -150,6 +154,7 @@
   },
   "lowadvantage": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [1],
     "showLowHighDots": false,
@@ -165,6 +170,7 @@
   },
   "lowhighadvantage": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [1, 6],
     "showLowHighDots": false,
@@ -180,6 +186,7 @@
   },
   "kayetestimonial": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -195,6 +202,7 @@
   },
   "miketestimonial": {
     "chartType": "dot",
+    "title": "Allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -210,6 +218,7 @@
   },
   "psychiatrists": {
     "chartType": "dot",
+    "title": "Psychiatry",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -225,6 +234,7 @@
   },
   "clinicalpsychologists": {
     "chartType": "dot",
+    "title": "Clinical psychologist",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -240,6 +250,7 @@
   },
   "gpmentalhealth": {
     "chartType": "dot",
+    "title": "GP mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -255,6 +266,7 @@
   },
   "otherallied": {
     "chartType": "dot2",
+    "title": "Other allied mental health",
     "yMax": "5000",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -270,6 +282,7 @@
   },
   "otheralliedzoom": {
     "chartType": "dot2",
+    "title": "Other allied mental health",
     "yMax": "700",
     "highlightBars": [],
     "showLowHighDots": false,
@@ -285,6 +298,7 @@
   },
   "gpfocus": {
     "chartType": "dot2",
+    "title": "GP focussed care",
     "yMax": "700",
     "highlightBars": [],
     "showLowHighDots": false,
