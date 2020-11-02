@@ -225,7 +225,7 @@ export default props => {
           >
             <BackgroundStage>
               <MultiChart
-                chartType={dotKey.chartType}
+                chartType={"dot"}
                 dataKey={dotKey.dataKey}
                 yMax={dotKey.yMax}
                 highlightBars={dotKey.highlightBars}
@@ -239,6 +239,7 @@ export default props => {
                 userQuintile={userQuintile}
                 userSa3={userSa3}
                 userRegion={userRegion}
+                chartTitle={dotKey.title}
               />
             </BackgroundStage>
           </Scrollyteller>

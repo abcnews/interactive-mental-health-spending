@@ -3,7 +3,7 @@
   font-size: 13px;
   position: relative;
 
-  .chart-title {
+  .chart-axis-key {
     position: absolute;
     font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
       serif;
@@ -11,6 +11,18 @@
     font-size: 11px;
     font-weight: bold;
     max-width: 100px;
+    padding-bottom: 30px;
+    transform: translate(0, -100%);
+  }
+
+  .chart-title {
+    position: absolute;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+      serif;
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 300px;
     padding-bottom: 30px;
     transform: translate(0, -100%);
   }

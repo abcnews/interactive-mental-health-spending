@@ -104,6 +104,7 @@ const MultiChart = props => {
   const [averageLineLabels, setAverageLineLabels] = useState([]);
   const [averageData, setAverageData] = useState([]);
   const [testimonalDots, setTestimonialDots] = useState([]);
+  const [chartTitle, setChartTitle] = useState("Chart title");
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -996,6 +997,10 @@ const MultiChart = props => {
     if (isDocked || hasBeenDocked) processCharts();
   }, [linesDataKey, dotsDataKey, averageData]);
 
+  useEffect(() => {
+    setChartTitle(props.chartTitle)
+  }, [props.chartTitle]) 
+
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
   const chartHeight = window.innerHeight - margin.top - margin.bottom;
@@ -1165,11 +1170,20 @@ const MultiChart = props => {
       </div>
       <svg className={"scatter-plot"} ref={root}></svg>
       <div
-        className={styles.chartTitle}
+        className={styles.chartAxisKey}
         style={{ top: margin.top, left: margin.left - 30 }}
       >
         <Fade in={props.chartType !== "line"}>
           <span>Medicare rebates per 100 people ($)</span>
+        </Fade>
+      </div>
+
+      <div
+        className={styles.chartTitle}
+        style={{ top: margin.top, left: margin.left + 100 }}
+      >
+        <Fade in={props.chartType !== "line"}>
+          <span>{chartTitle}</span>
         </Fade>
       </div>
 
