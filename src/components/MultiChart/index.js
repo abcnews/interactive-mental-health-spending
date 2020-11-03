@@ -104,7 +104,8 @@ const MultiChart = props => {
   const [averageLineLabels, setAverageLineLabels] = useState([]);
   const [averageData, setAverageData] = useState([]);
   const [testimonalDots, setTestimonialDots] = useState([]);
-  const [chartTitle, setChartTitle] = useState("Chart title");
+  const [chartTitle, setChartTitle] = useState("");
+  const [rightEdge, setRightEdge] = useState();
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -895,6 +896,8 @@ const MultiChart = props => {
         )
         .call(g => g.selectAll(".tick text"));
 
+    setRightEdge(width - margin.right);
+
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
@@ -1175,7 +1178,9 @@ const MultiChart = props => {
         style={{ top: margin.top, left: margin.left - 30 }}
       >
         {props.chartType !== "line" ? (
-          <div className={styles.rebatesY}>Medicare rebates per 100 people ($)</div>
+          <div className={styles.rebatesY}>
+            Medicare rebates per 100 people ($)
+          </div>
         ) : (
           <div className={styles.proportionY}>Proportion of persons</div>
         )}
@@ -1183,7 +1188,7 @@ const MultiChart = props => {
 
       <div
         className={styles.chartTitle}
-        style={{ top: margin.top, left: margin.left + 100 }}
+        style={{ top: margin.top, left: rightEdge }}
       >
         <Fade in={props.chartType !== "line"}>
           <span>{chartTitle}</span>
