@@ -1,6 +1,331 @@
 .root {
-  border: 1px solid rgb(255, 115, 0);
-  padding: 20px;
-  text-align: center;
-  color: black;
+  font-family: sans-serif;
+  font-size: 13px;
+  position: relative;
+
+  .chart-axis-key {
+    position: absolute;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+      serif;
+    color: #4b4b4b;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 100px;
+    padding-bottom: 30px;
+    transform: translate(0, -100%);
+
+    .rebates-y {
+      padding-left: 1px;
+    }
+
+    .proportionY {
+      padding-left: 7px;
+    }
+  }
+
+  .chart-title {
+    position: absolute;
+    font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+      serif;
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 300px;
+    padding-bottom: 30px;
+    transform: translate(-100%, -100%);
+  }
+
+  .tick-text-container {
+    position: absolute;
+    font-family: ABCSans, sans-serif;
+    color: #4b4b4b;
+    font-size: 9px;
+    font-weight: bold;
+    padding-top: 3px;
+    transform: translate(0, 100%);
+  }
+
+  .tick-text-box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .dot-tick-text-box {
+    display: flex;
+    justify-content: space-around;
+
+    span {
+      max-width: 70px;
+      font-size: 9px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .tick-description {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      font-size: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    // div:last-of-type {
+    //   text-align: right;
+    // }
+  }
+
+  .highlight-bars {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    span {
+      transition: all 500ms;
+    }
+  }
+
+  .dot-highlight-bar {
+    flex-grow: 1;
+    opacity: 0.15;
+  }
+
+  .dev-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid red;
+    padding: 10px;
+  }
+
+  .line-label {
+    position: absolute;
+    transform: translate(0px, -145%);
+    font-family: ABCSans, sans-serif;
+    color: #4b4b4b;
+    font-weight: bold;
+    font-size: 10px;
+
+    @media screen and (min-width: 641px) {
+      font-size: 11px;
+    }
+  }
+
+  .average-label {
+    white-space: nowrap;
+    transform: translateX(-100%) translateX(3px) translateY(-120%); //translate(calc(-100% + 3px), -120%);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
+
+    @media screen and (min-width: 641px) {
+      font-size: 10px;
+    }
+  }
+
+  .dot-label {
+    position: absolute;
+    font-family: ABCSans, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 4px 2px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+    @media screen and (min-width: 641px) {
+      font-size: 10px;
+    }
+
+    &.align-right {
+      transform: translateX(-100%);
+    }
+  }
+
+  .custom-label-dot {
+    display: inline;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateX(-6px) translateY(-6px);
+    box-shadow: 0 1px 0 0 white; /* Border bottom */
+    box-shadow: 0 -1px 0 0 white; /* Border top */
+    box-shadow: -1px 0 0 0 white; /* Border left */
+    box-shadow: 1px 0 0 0 white; /* Border right */
+    box-shadow: 0 0 0 1px white; /* All the borders by using the spread properties */
+  }
+
+  .dot-custom-label {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    font-family: ABCSans, sans-serif;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 4px 2px;
+    background-color: black;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+    &.align-right {
+      transform: translateX(-100%);
+    }
+  }
+
+  .transition-group {
+    :global {
+      .item-enter {
+        opacity: 0;
+      }
+      .item-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+      }
+      .item-exit {
+        opacity: 1;
+      }
+      .item-exit-active {
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+      }
+    }
+  }
+
+  .testimonial-replacement-dot {
+    display: inline;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateX(-6px) translateY(-6px);
+    box-shadow: 0 1px 0 0 white; /* Border bottom */
+    box-shadow: 0 -1px 0 0 white; /* Border top */
+    box-shadow: -1px 0 0 0 white; /* Border left */
+    box-shadow: 1px 0 0 0 white; /* Border right */
+    box-shadow: 0 0 0 1px white; /* All the borders by using the spread properties */
+  }
+
+  .testimonial-dot {
+    box-sizing: content-box;
+    position: absolute;
+    background: black; //rgb(60, 146, 200);
+    border-radius: 50%;
+    margin: 20px;
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 0 rgba(60, 146, 200, 1);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(60, 146, 200, 1);
+    }
+
+    80% {
+      box-shadow: 0 0 0 20px rgba(60, 146, 200, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(60, 146, 200, 0);
+    }
+  }
+
+  // Set when a testimony from a particular SA3 is
+  // highlighted in a hash #marker
+  .testimony-target {
+    dummy: value;
+  }
+
+  :global {
+    svg.scatter-plot {
+      // background: #f0f0f0;
+      position: relative;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .x-axis .domain,
+    .x-axis .tick line {
+      stroke: #a4a4a4;
+      shape-rendering: crispEdges;
+    }
+
+    .y-axis .domain {
+      visibility: hidden;
+    }
+
+    .tick:first-of-type line {
+      visibility: hidden;
+    }
+
+    // rect.bar {
+    //   fill: lightslategray;
+    // }
+
+    text {
+      font-family: ABCSans, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      color: #4b4b4b;
+    }
+
+    .axis text {
+      font-size: 10px;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      shape-rendering: crispEdges;
+    }
+    .axis path {
+      stroke: #a4a4a4;
+    }
+    .grid line {
+      stroke: #a4a4a4;
+      stroke-opacity: 0.7;
+      shape-rendering: crispEdges;
+    }
+    .grid path {
+      stroke-width: 0;
+    }
+
+    .title {
+      font-size: 1em;
+      font-weight: 600;
+      fill: #333;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid lightgray;
+      padding: 5px;
+      opacity: 0;
+      transition: 0.2s all ease-in;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .tooltip.active {
+      opacity: 1;
+    }
+    .tooltip b {
+      font-weight: 600;
+      display: inline-block;
+      width: 4.5em;
+      text-align: right;
+    }
+  }
 }

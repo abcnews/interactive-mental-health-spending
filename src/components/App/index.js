@@ -37,6 +37,37 @@ export default props => {
   const [userSa3, setUserSa3] = useState(null);
   const [userRegion, setUserRegion] = useState(null);
 
+  // TODO: Make this more elegant later
+  // When fed straght into the component props it registers as
+  // a change on each render. So we set it once here.
+  const [averageChartData, setAverageChartData] = useState([
+    {
+      name: "Psychiatry",
+      values: [122, 322, 876, 2433, 3454, 4355],
+      color: "#559CCC",
+    },
+    {
+      name: "Psychology",
+      values: [433, 757, 333, 667, 865, 3432],
+      color: "#EB6600",
+    },
+    {
+      name: "Other Psychology",
+      values: [234, 453, 565, 544, 1234, 2453],
+      color: "#FF4D4D",
+    },
+    {
+      name: '"Other" Allied Mental Health',
+      values: [323, 432, 456, 454, 565, 754],
+      color: "#34978F",
+    },
+    {
+      name: "GP Focused Care",
+      values: [243, 565, 454, 534, 467, 1100],
+      color: "#8F83B8",
+    },
+  ]);
+
   const onMarker = config => {
     console.log("Config:", config);
 
@@ -110,31 +141,7 @@ export default props => {
     setUserRegion(sa3ToRegionLookup[topSa3.code]);
   };
 
-  // useEffect(() => {
-  //   if (!userPostcode) return;
-  //   if (typeof lookupData === "undefined") {
-  //     console.error("There was a problem loading lookup data...");
-  //     return;
-  //   }
-
-  //   const filteredLookup = lookupData.filter(entry => {
-  //     if (entry.postcode.toString() === userPostcode) {
-  //       return true;
-  //     } else return false;
-  //   });
-
-  //   // Get the single largest ratio area
-  //   const largestRatio = filteredLookup.reduce((prev, current) =>
-  //     prev.ratio > current.ratio ? prev : current
-  //   );
-
-  //   console.log(filteredLookup);
-  //   console.log(largestRatio);
-
-  //   setUserSa3(largestRatio.sa3);
-  // }, [userPostcode]);
-
-  // INIT EFFECT!!!!!
+  // Do once on render
   useEffect(() => {
     // Fetch some data
     axios
@@ -227,7 +234,6 @@ export default props => {
             <BackgroundStage>
               <MultiChart
                 chartType={"dot"}
-                dataKey={dotKey.dataKey}
                 yMax={dotKey.yMax}
                 highlightBars={dotKey.highlightBars}
                 highlightOwnBar={dotKey.highlightOwnBar}
@@ -235,7 +241,6 @@ export default props => {
                 dots={dotKey.dots}
                 averages={dotKey.averages}
                 triggerOnDock={true}
-                markKey={configKey}
                 showLowHighDots={dotKey.showLowHighDots}
                 userQuintile={userQuintile}
                 userSa3={userSa3}
@@ -256,7 +261,6 @@ export default props => {
             <BackgroundStage>
               <MultiChart
                 chartType={"dot"}
-                dataKey={dot2Key.dataKey}
                 yMax={dot2Key.yMax}
                 highlightBars={dot2Key.highlightBars}
                 highlightOwnBar={dot2Key.highlightOwnBar}
@@ -264,7 +268,6 @@ export default props => {
                 dots={dot2Key.dots}
                 averages={dot2Key.averages}
                 triggerOnDock={true}
-                markKey={configKey}
                 showLowHighDots={dot2Key.showLowHighDots}
                 userQuintile={userQuintile}
                 userSa3={userSa3}
@@ -275,7 +278,12 @@ export default props => {
         </Portal>
 
         <Portal node={document.querySelector(".averagechartmount")}>
-          <AverageLineChart></AverageLineChart>
+          <AverageLineChart
+            chartType={"average"}
+            yMax={5000}
+            triggerOnDock={true}
+            averages={averageChartData}
+          ></AverageLineChart>
         </Portal>
       </>
     </AppContext.Provider>
