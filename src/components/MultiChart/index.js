@@ -998,8 +998,8 @@ const MultiChart = props => {
   }, [linesDataKey, dotsDataKey, averageData]);
 
   useEffect(() => {
-    setChartTitle(props.chartTitle)
-  }, [props.chartTitle]) 
+    setChartTitle(props.chartTitle);
+  }, [props.chartTitle]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
@@ -1169,13 +1169,16 @@ const MultiChart = props => {
         )}
       </div>
       <svg className={"scatter-plot"} ref={root}></svg>
+
       <div
         className={styles.chartAxisKey}
         style={{ top: margin.top, left: margin.left - 30 }}
       >
-        <Fade in={props.chartType !== "line"}>
-          <span>Medicare rebates per 100 people ($)</span>
-        </Fade>
+        {props.chartType !== "line" ? (
+          <div className={styles.rebatesY}>Medicare rebates per 100 people ($)</div>
+        ) : (
+          <div className={styles.proportionY}>Proportion of persons</div>
+        )}
       </div>
 
       <div
