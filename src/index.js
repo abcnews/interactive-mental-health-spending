@@ -50,8 +50,8 @@ const stage3 = document.querySelector(".scrollystagemount3");
 addClass(stage3, "u-full");
 addClass(stage3, "no-margin-collapse");
 
-// Don't need this if mounting inline
-// const averagechartmount = document.querySelector(".scrollystagemount3");
+
+// const averagechartmount = document.querySelector(".averagechartmount");
 // addClass(averagechartmount, "u-full");
 // addClass(averagechartmount, "no-margin-collapse");
 
