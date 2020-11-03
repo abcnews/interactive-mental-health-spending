@@ -84,7 +84,7 @@
         "dotColor": "#FF1D07",
         "xField": "quintile",
         "yField": "percent",
-        "labelText": "Mental condition"
+        "labelText": "Mental or behavioural condition"
       }
     ]
   },
