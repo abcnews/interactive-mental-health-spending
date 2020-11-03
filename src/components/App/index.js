@@ -42,29 +42,34 @@ export default props => {
   // a change on each render. So we set it once here.
   const [averageChartData, setAverageChartData] = useState([
     {
+      name: "Allied mental health",
+      values: [472, 1360, 2130, 2248, 2734, 2915],
+      color: "#3c92c8",
+    },
+    {
       name: "Psychiatry",
-      values: [122, 322, 876, 2433, 3454, 4355],
-      color: "#559CCC",
-    },
-    {
-      name: "Psychology",
-      values: [433, 757, 333, 667, 865, 3432],
-      color: "#EB6600",
-    },
-    {
-      name: "Other Psychology",
-      values: [234, 453, 565, 544, 1234, 2453],
+      values: [240, 579, 897, 1010, 1456, 2138],
       color: "#FF4D4D",
     },
     {
-      name: '"Other" Allied Mental Health',
-      values: [323, 432, 456, 454, 565, 754],
-      color: "#34978F",
+      name: "Clinical psychology",
+      values: [225, 627, 980, 1049, 1444, 1678],
+      color: "#FF7D56",
+    },
+    {
+      name: "GP mental health",
+      values: [445, 907, 1182, 1270, 1232, 1103],
+      color: "#D96EAE",
+    },
+    {
+      name: "Other allied mental health services",
+      values: [27, 145, 179, 143, 130, 125],
+      color: "#9A8EC0",
     },
     {
       name: "GP Focused Care",
-      values: [243, 565, 454, 534, 467, 1100],
-      color: "#8F83B8",
+      values: [0, 18, 24, 22, 25, 37],
+      color: "#34978F",
     },
   ]);
 
@@ -272,6 +277,7 @@ export default props => {
                 userQuintile={userQuintile}
                 userSa3={userSa3}
                 userRegion={userRegion}
+                chartTitle={dot2Key.title}
               />
             </BackgroundStage>
           </Scrollyteller>

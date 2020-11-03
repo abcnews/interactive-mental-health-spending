@@ -373,6 +373,8 @@ const MultiChart = props => {
       "Medicare benefits per 100 people ($)"
     );
 
+    console.log(averageDotsData);
+
     const lineGenerator = d3
       .line()
       .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
