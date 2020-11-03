@@ -8,6 +8,7 @@ import PostcodeSearch from "../PostcodeSearch";
 import BackgroundStage from "../BackgroundStage";
 import CustomPanel from "../CustomPanel";
 import MultiChart from "../MultiChart";
+import AverageLineChart from "../AverageLineChart";
 
 // Load up our hero URL (or data)
 import heroImage from "./images/hero-top.png";
@@ -271,6 +272,10 @@ export default props => {
               />
             </BackgroundStage>
           </Scrollyteller>
+        </Portal>
+
+        <Portal node={document.querySelector(".averagechartmount")}>
+          <AverageLineChart></AverageLineChart>
         </Portal>
       </>
     </AppContext.Provider>

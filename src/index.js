@@ -33,7 +33,8 @@ buildMountPoints([
   "scrollystagemount3",
   "accessingcaregraphic",
   "timegraphic",
-  "distancegraphic"
+  "distancegraphic",
+  "averagechartmount",
 ]);
 
 // Make stage full width
@@ -49,14 +50,19 @@ const stage3 = document.querySelector(".scrollystagemount3");
 addClass(stage3, "u-full");
 addClass(stage3, "no-margin-collapse");
 
-// const accessingcaregraphic = document.querySelector(".accessingcaregraphic");
-// addClass(accessingcaregraphic, "no-margin-bottom");
+// Don't need this if mounting inline
+// const averagechartmount = document.querySelector(".scrollystagemount3");
+// addClass(averagechartmount, "u-full");
+// addClass(averagechartmount, "no-margin-collapse");
 
-// const timegraphic = document.querySelector(".timegraphic");
-// addClass(timegraphic, "no-margin-bottom");
+const accessingcaregraphic = document.querySelector(".accessingcaregraphic");
+addClass(accessingcaregraphic, "no-margin-bottom");
 
-// const distancegraphic = document.querySelector(".distancegraphic");
-// addClass(distancegraphic, "no-margin-bottom");
+const timegraphic = document.querySelector(".timegraphic");
+addClass(timegraphic, "no-margin-bottom");
+
+const distancegraphic = document.querySelector(".distancegraphic");
+addClass(distancegraphic, "no-margin-bottom");
 
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
