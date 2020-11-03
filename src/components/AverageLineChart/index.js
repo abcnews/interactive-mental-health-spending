@@ -38,7 +38,7 @@ import {
   usePrevious,
   lowestHighest,
   processData,
-} from "../MultiChart/lib";
+} from "./lib";
 
 // File scoped constants
 const dotRadius = 6;
@@ -148,7 +148,6 @@ const AverageLineChart = props => {
   };
 
   const processAverageLines = () => {
-    console.log("process average lines");
     console.dir(averageData);
     let collectedAverageLabels = [];
 
@@ -351,8 +350,6 @@ const AverageLineChart = props => {
       return;
     }
 
-    console.log(isDocked);
-
     if (isDocked) {
       // if (!hasBeenDocked && props.triggerOnDock) {
       if (props.triggerOnDock) {
@@ -367,22 +364,21 @@ const AverageLineChart = props => {
     } else {
       // For now let's remove data when un-docking...
       // (Maybe don't do this in the end product)
-      setLinesDataKey([
-        {
-          lineName: "line1",
-          dataKey: "empty",
-        },
-        {
-          lineName: "line2",
-          dataKey: "empty",
-        },
-      ]);
-
-      setDotsDataKey({ dataKey: "empty" });
-      setHighlightBars([]);
-      setAverageData([]);
-      setOwnQuintile(null);
-      setOwnRegion(null);
+      // setLinesDataKey([
+      //   {
+      //     lineName: "line1",
+      //     dataKey: "empty",
+      //   },
+      //   {
+      //     lineName: "line2",
+      //     dataKey: "empty",
+      //   },
+      // ]);
+      // setDotsDataKey({ dataKey: "empty" });
+      // setHighlightBars([]);
+      // setAverageData([]);
+      // setOwnQuintile(null);
+      // setOwnRegion(null);
     }
   }, [isDocked]);
 
@@ -429,11 +425,10 @@ const AverageLineChart = props => {
   }, [props.dots]);
 
   useEffect(() => {
-    setAverageData(props.averages);
+    if (isDocked || hasBeenDocked) setAverageData(props.averages);
   }, [props.averages]);
 
   useEffect(() => {
-    console.log("average data changed");
     if (isDocked || hasBeenDocked) processAverageLines();
   }, [averageData]);
 
