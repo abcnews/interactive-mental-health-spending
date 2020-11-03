@@ -1191,7 +1191,7 @@ const MultiChart = props => {
         style={{ top: margin.top, left: rightEdge }}
       >
         <Fade in={props.chartType !== "line"}>
-          <span>{chartTitle}</span>
+          <div>{chartTitle}</div>
         </Fade>
       </div>
 

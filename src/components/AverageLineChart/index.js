@@ -59,25 +59,25 @@ const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
 
 // Load our data and assign to object
-const dataObject = {
-  empty: [],
-  distressed: require("../MultiChart/data/distressed-data.json"),
-  mentalCondition: require("../MultiChart/data/mental-condition-data.json"),
-  allied: processData(
-    require("../MultiChart/data/1-allied-mental-health.json")
-  ),
-  psychiatrists: processData(require("../MultiChart/data/2-psychiatry.json")),
-  clinicalPsychologists: processData(
-    require("../MultiChart/data/3-clinical-psychologist.json")
-  ),
-  gpMentalHealth: processData(
-    require("../MultiChart/data/4-gp-mental-health.json")
-  ),
-  otherAllied: processData(
-    require("../MultiChart/data/5-other-allied-mental-health.json")
-  ),
-  gpFocus: processData(require("../MultiChart/data/6-gp-focussed.json")),
-};
+// const dataObject = {
+//   empty: [],
+//   distressed: require("../MultiChart/data/distressed-data.json"),
+//   mentalCondition: require("../MultiChart/data/mental-condition-data.json"),
+//   allied: processData(
+//     require("../MultiChart/data/1-allied-mental-health.json")
+//   ),
+//   psychiatrists: processData(require("../MultiChart/data/2-psychiatry.json")),
+//   clinicalPsychologists: processData(
+//     require("../MultiChart/data/3-clinical-psychologist.json")
+//   ),
+//   gpMentalHealth: processData(
+//     require("../MultiChart/data/4-gp-mental-health.json")
+//   ),
+//   otherAllied: processData(
+//     require("../MultiChart/data/5-other-allied-mental-health.json")
+//   ),
+//   gpFocus: processData(require("../MultiChart/data/6-gp-focussed.json")),
+// };
 
 // The main React function component
 const AverageLineChart = props => {
@@ -146,575 +146,6 @@ const AverageLineChart = props => {
     component.xAxis = component.svg.append("g").classed("x-axis", true);
     component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
-
-  const processCharts = () => {
-    processAverageLines();
-  };
-
-  // const processLines = () => {
-  //   if (!Array.isArray(linesDataKey)) return;
-
-  //   const collectedLineLabels = [];
-
-  //   for (const line of linesDataKey) {
-  //     const label = { text: line.labelText };
-
-  //     const lineGenerator = d3
-  //       .line()
-  //       .defined(d => !isNaN(d[line.yField]))
-  //       .x(d => component.scaleX(d[line.xField]))
-  //       .y(d => component.scaleY(d[line.yField]));
-
-  //     const lineDots = component.svg
-  //       .selectAll(`circle.${line.lineName}`)
-  //       .data(dataObject[line.dataKey])
-  //       .join(
-  //         enter =>
-  //           enter
-  //             .append("circle")
-  //             .classed(line.lineName, true)
-  //             .attr("cy", d => component.scaleY(d[line.yField]))
-  //             .style("opacity", 0.0)
-  //             .style("stroke", "rgba(255, 255, 255, 0.6)")
-  //             .style("stroke-width", "1.5")
-  //             .style("fill", line.dotColor)
-  //             .attr("cx", d => {
-  //               if (d[line.xField] === "National") {
-  //                 // Probs don't need any more
-  //                 return -2000000;
-  //               }
-
-  //               return component.scaleX(d[line.xField]);
-  //             })
-  //             .attr("r", dotRadius)
-  //             .call(enter => {
-  //               // Fade dots in
-  //               enter.transition().style("opacity", 1.0);
-
-  //               if (enter.empty()) return;
-
-  //               const path = component.svg
-  //                 .data([dataObject[line.dataKey]])
-  //                 .append("path")
-  //                 .classed(line.lineName, true)
-  //                 .attr("fill", "none")
-  //                 .attr("stroke-width", 2)
-  //                 .attr("stroke", line.dotColor)
-  //                 .style("opacity", 1.0)
-  //                 .attr("d", lineGenerator);
-
-  //               if (path.empty()) return;
-
-  //               // Get the length of the line
-  //               const totalLength = path.node().getTotalLength();
-
-  //               const lineBox = path.node().getBBox();
-  //               label.x = lineBox.x;
-  //               label.y = lineBox.y;
-
-  //               // Animate the path
-  //               path
-  //                 .attr("stroke-dasharray", `${totalLength},${totalLength}`)
-  //                 .attr("stroke-dashoffset", totalLength)
-  //                 .transition()
-  //                 .duration(LINE_ANIMATION_DURATION)
-  //                 .attr("stroke-dashoffset", 0);
-  //             }),
-  //         update =>
-  //           update
-  //             .attr("cy", d => component.scaleY(d[line.yField]))
-  //             .call(update => {
-  //               if (update.empty()) return;
-
-  //               const path = component.svg
-  //                 .data([dataObject[line.dataKey]])
-  //                 .select(`path.${line.lineName}`)
-  //                 .attr("stroke-dasharray", 0)
-  //                 .attr("d", lineGenerator);
-
-  //               if (path.empty()) return;
-
-  //               const lineBox = path.node().getBBox();
-  //               label.x = lineBox.x;
-  //               label.y = lineBox.y;
-  //             })
-  //             .attr("cx", d => {
-  //               if (d[line.xField] === "National") {
-  //                 return -2000000;
-  //               }
-
-  //               return component.scaleX(d[line.xField]);
-  //             }),
-  //         exit =>
-  //           exit
-  //             .call(exit => {
-  //               if (exit.empty()) return;
-  //               component.svg.select(`path.${line.lineName}`).remove();
-  //             })
-  //             .transition()
-  //             .style("opacity", 0.0)
-  //             .remove()
-  //       );
-
-  //     if (label.text) collectedLineLabels.push(label);
-
-  //     // Dots on top (z-axis)
-  //     lineDots.raise();
-  //   }
-
-  //   setLineLabels(collectedLineLabels);
-  // };
-
-  // const processDots = () => {
-  //   if (!dotsDataKey) return;
-
-  //   // A kind of hack so average labels don't appear
-  //   // when transition starts but then user moves to
-  //   // a different marker.
-  //   component.dontSetAverageLabels = true;
-
-  //   // Filter our dots per data key
-  //   // const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
-  //   //   if (dot["SA3 group"] === "ungrouped") return false;
-  //   //   if (dot[dotsDataKey.yField] === "NP") return false;
-  //   //   return true;
-  //   // });
-
-  //   // Try not filtering, just deal with ungrouped and NP later
-  //   const sa3s = dataObject[dotsDataKey.dataKey];
-
-  //   // Work out lowest and highest
-  //   // NOTE: Doesn't detect duplicates TODO: do this later maybe
-  //   const { lowest, highest } = lowestHighest(sa3s, dotsDataKey.yField);
-
-  //   // Show low high labels if there is a low and high and if
-  //   // it is set in the key
-  //   if (lowest && highest && props.showLowHighDots) {
-  //     setTimeout(() => {
-  //       setDotTopBottomLabels([
-  //         {
-  //           text: lowest["SA3 name"],
-  //           x: component.scaleX(lowest[dotsDataKey.xField]),
-  //           y: component.scaleY(lowest[dotsDataKey.yField]),
-  //           align: lowest[dotsDataKey.xField] < 5 ? "left" : "right",
-  //         },
-  //         {
-  //           text: highest["SA3 name"],
-  //           x: component.scaleX(highest[dotsDataKey.xField]),
-  //           y: component.scaleY(highest[dotsDataKey.yField]),
-  //           align: highest[dotsDataKey.xField] < 5 ? "left" : "right",
-  //         },
-  //       ]);
-  //     }, 500);
-  //   } else
-  //     setTimeout(() => {
-  //       setDotTopBottomLabels([]);
-  //     }, 500);
-
-  //   const { userSa3 } = props;
-
-  //   // Show own label if there are dots and option is set
-  //   if (sa3s.length > 0 && props.labelOwnDot && userSa3) {
-  //     setTimeout(() => {
-  //       const matched = sa3s.find(sa3 => {
-  //         if (sa3["SA3 name"] === userSa3.name) return true;
-  //         else return false;
-  //       });
-
-  //       if (matched) {
-  //         setDotCustomLabels([
-  //           {
-  //             text: matched["SA3 name"],
-  //             x: component.scaleX(matched[dotsDataKey.xField]),
-  //             y: component.scaleY(matched[dotsDataKey.yField]),
-  //             align: matched[dotsDataKey.xField] < 5 ? "left" : "right",
-  //           },
-  //         ]);
-  //       }
-  //     }, 500);
-  //   } else {
-  //     setTimeout(() => {
-  //       setDotCustomLabels([]);
-  //     }, 500);
-  //   }
-
-  //   // Set testimonial dot
-  //   if (sa3s.length > 0 && dotsDataKey.testimonialSa3) {
-  //     setTimeout(() => {
-  //       const foundTesimonial = sa3s.find(sa3 => {
-  //         if (sa3["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-  //         else return false;
-  //       });
-
-  //       if (foundTesimonial) {
-  //         setTestimonialDots([
-  //           {
-  //             text: foundTesimonial["SA3 name"],
-  //             x: component.scaleX(foundTesimonial[dotsDataKey.xField]),
-  //             y: component.scaleY(foundTesimonial[dotsDataKey.yField]),
-  //             align: foundTesimonial[dotsDataKey.xField] < 5 ? "left" : "right",
-  //           },
-  //         ]);
-  //       }
-  //     }, 500);
-  //   } else {
-  //     setTimeout(() => {
-  //       setTestimonialDots([]);
-  //     }, 500);
-  //   }
-
-  //   const sa3sFiltered = sa3s.filter(dot => {
-  //     if (dot["SA3 group"] === "ungrouped") return false;
-  //     if (dot["Medicare benefits per 100 people ($)"] === "NP") return false;
-  //     return true;
-  //   });
-
-  //   // TODO: fix to deal with ungrouped and NP
-  //   let averageDotsData = generateAverageData(
-  //     sa3sFiltered,
-  //     "SA3 group",
-  //     "Medicare benefits per 100 people ($)"
-  //   );
-
-  //   const lineGenerator = d3
-  //     .line()
-  //     .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
-  //     .x(d => component.scaleX(d["SA3 group"]))
-  //     .y(d => component.scaleY(d["Medicare benefits per 100 people ($)"]));
-
-  //   const zeroDataLine = [
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "1",
-  //     },
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "2",
-  //     },
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "3",
-  //     },
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "4",
-  //     },
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "5",
-  //     },
-  //     {
-  //       "Medicare benefits per 100 people ($)": 0,
-  //       "SA3 group": "6",
-  //     },
-  //   ];
-
-  //   if (!component.averageLine) {
-  //     component.averageLine = component.svg
-  //       .append("path")
-  //       .attr("d", d => lineGenerator(zeroDataLine))
-  //       .classed("dotted", true)
-  //       .attr("fill", "none")
-  //       .attr("stroke", "#929292")
-  //       .attr("stroke-width", 1)
-  //       .attr("stroke-dasharray", `2, 2`)
-  //       .style("opacity", 0.0);
-
-  //     component.averageLine
-  //       .transition()
-  //       .duration(DOTS_UPDATE_DURATION + sa3s.length)
-  //       .attr("d", d => lineGenerator(averageDotsData))
-  //       .style("opacity", 1.0);
-  //   } else if (averageDotsData.length > 0) {
-  //     component.averageLine
-  //       .transition()
-  //       .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
-  //       .style("opacity", 1.0)
-  //       .attr("d", d => lineGenerator(averageDotsData));
-  //   } else {
-  //     component.averageLine
-  //       .transition()
-  //       .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
-  //       .style("opacity", 0.0)
-  //       .end()
-  //       .then(() => {
-  //         component.averageLine.attr("d", d => lineGenerator(zeroDataLine));
-  //       })
-  //       .catch(e => null);
-  //   }
-
-  //   // Process dots D3 data join
-  //   const dotsDots = component.svg
-  //     .selectAll("circle.dots")
-  //     .data(sa3s, d => d["SA3 name"])
-  //     .join(
-  //       enter =>
-  //         enter
-  //           .append("circle")
-  //           .classed("dots", true)
-  //           .classed("dots-testimony-target", d => {
-  //             if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-  //             else return false;
-  //           })
-  //           .classed("dots-own-dot", d => {
-  //             if (
-  //               userSa3 &&
-  //               d["SA3 name"] === userSa3.name &&
-  //               props.labelOwnDot
-  //             )
-  //               return true;
-  //             else return false;
-  //           })
-  //           .style("stroke", "rgba(255, 255, 255, 1.0)")
-  //           .style("stroke-width", "0.9")
-  //           .style("fill", d => {
-  //             if (props.showLowHighDots) {
-  //               if (d["SA3 name"] === lowest["SA3 name"]) return "black";
-  //               if (d["SA3 name"] === highest["SA3 name"]) return "black";
-  //             }
-
-  //             if (props.labelOwnDot && userSa3) {
-  //               if (d["SA3 name"] === userSa3.name) return "black";
-  //             }
-
-  //             return dotsDataKey.dotColor;
-  //           })
-  //           .attr("cx", d => component.scaleX(d[dotsDataKey.xField]))
-  //           .attr("r", dotRadius)
-  //           .attr("cy", component.scaleY(0))
-  //           .style("opacity", d => {
-  //             if (d[dotsDataKey.yField] === "NP") return 0.0;
-  //             return 1.0;
-  //           })
-  //           .call(enter => {
-  //             if (enter.empty()) return;
-
-  //             const ownDotTarget = d3.select(".dots-own-dot");
-  //             if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-  //             // setTimeout(() => {
-  //             //   const testimonyTarget = d3.select(".dots-testimony-target");
-  //             //   if (!testimonyTarget.empty()) {
-  //             //     const pulseDot = component.svg
-  //             //       .append("circle")
-  //             //       .attr("cx", testimonyTarget.attr("cx"))
-  //             //       .attr("cy", testimonyTarget.attr("cy"))
-  //             //       .style("fill", "rgba(39, 172, 255, 0.49)")
-  //             //       .style("stroke", null)
-  //             //       .classed("dots-animated-pulse", true);
-
-  //             //     pulse(pulseDot);
-
-  //             //     // Raise our dots to the top
-  //             //     pulseDot.raise();
-  //             //     testimonyTarget.raise();
-  //             //   }
-  //             // }, DOTS_ENTER_DURATION);
-
-  //             enter
-  //               .transition()
-  //               .duration(DOTS_ENTER_DURATION)
-  //               .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
-  //               .attr("cy", d => {
-  //                 if (d[dotsDataKey.yField] === "NP")
-  //                   return component.scaleY(0);
-  //                 return component.scaleY(d[dotsDataKey.yField]);
-  //               });
-  //             // Experimenting with adding flashing dot on testimonials target
-  //             // .end()
-  //             // .then(() => {
-  //             // const ownDotTarget = d3.select(".dots-own-dot");
-  //             // if (!ownDotTarget.empty()) ownDotTarget.raise();
-  //             // const testimonyTarget = d3.select(".dots-testimony-target");
-  //             // if (testimonyTarget.empty()) return;
-  //             // const pulseDot = component.svg
-  //             //   .append("circle")
-  //             //   .attr("cx", testimonyTarget.attr("cx"))
-  //             //   .attr("cy", testimonyTarget.attr("cy"))
-  //             //   .style("fill", "rgba(39, 172, 255, 0.49)")
-  //             //   .style("stroke", null)
-  //             //   .classed("dots-animated-pulse", true);
-  //             // pulse(pulseDot);
-  //             // // Raise our dots to the top
-  //             // pulseDot.raise();
-  //             // testimonyTarget.raise();
-  //             // })
-  //             // .catch(e => null);
-
-  //             // Add the average line to the chart
-  //             // component.svg
-  //             //   .append("path")
-  //             //   .classed("dots", true)
-  //             //   .data([averageDotsData])
-  //             //   .attr("fill", "none")
-  //             //   .attr("stroke", "#929292")
-  //             //   .attr("stroke-width", 1)
-  //             //   .attr("stroke-dasharray", `2, 2`)
-  //             //   .style("opacity", 0.0)
-  //             //   .attr("d", lineGenerator)
-  //             //   .transition()
-  //             //   .delay(1000)
-  //             //   .style("opacity", 1.0);
-  //           }),
-  //       update =>
-  //         update
-  //           .classed("dots-testimony-target", d => {
-  //             if (d["SA3 name"] === dotsDataKey.testimonialSa3) return true;
-  //             else return false;
-  //           })
-  //           .classed("dots-own-dot", d => {
-  //             if (
-  //               userSa3 &&
-  //               d["SA3 name"] === userSa3.name &&
-  //               props.labelOwnDot
-  //             )
-  //               return true;
-  //             else return false;
-  //           })
-  //           .attr("cx", d => {
-  //             return component.scaleX(d[dotsDataKey.xField]);
-  //           })
-  //           .call(update => {
-  //             if (update.empty()) return;
-
-  //             // component.svg.select(`circle.dots-animated-pulse`).remove();
-
-  //             // setTimeout(() => {
-  //             //   const ownDotTarget = d3.select(".dots-own-dot");
-  //             //   if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-  //             //   const testimonyTarget = d3.select(".dots-testimony-target");
-
-  //             //   if (!testimonyTarget.empty()) {
-  //             //     const pulseDot = component.svg
-  //             //       .append("circle")
-  //             //       .attr("cx", testimonyTarget.attr("cx"))
-  //             //       .attr("cy", testimonyTarget.attr("cy"))
-  //             //       .style("fill", "rgba(39, 172, 255, 0.49)")
-  //             //       .style("stroke", null)
-  //             //       .classed("dots-animated-pulse", true);
-
-  //             //     pulse(pulseDot);
-
-  //             //     // Raise our dots to the top
-  //             //     pulseDot.raise();
-  //             //     testimonyTarget.raise();
-  //             //   }
-  //             // }, DOTS_UPDATE_DURATION);
-
-  //             // const path = component.svg.select("path.dots");
-
-  //             // // Fade line back in if it has been removed
-  //             // if (path.empty()) {
-  //             //   component.svg
-  //             //     .append("path")
-  //             //     .classed("dots", true)
-  //             //     .data([averageDotsData])
-  //             //     .attr("fill", "none")
-  //             //     .attr("stroke", "#929292")
-  //             //     .attr("stroke-width", 1)
-  //             //     .attr("stroke-dasharray", `2, 2`)
-  //             //     .style("opacity", 0.0)
-  //             //     .attr("d", lineGenerator)
-  //             //     .transition()
-  //             //     .delay(250)
-  //             //     .style("opacity", 1.0);
-  //             // } else {
-  //             //   // Otherwise:
-  //             //   // Update average line
-  //             //   path
-  //             //     .data([averageDotsData])
-  //             //     .transition()
-  //             //     .attr("d", lineGenerator);
-  //             // }
-
-  //             return update
-  //               .transition()
-  //               .duration(DOTS_UPDATE_DURATION)
-  //               .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
-  //               .style("fill", d => {
-  //                 if (props.showLowHighDots) {
-  //                   if (d["SA3 name"] === lowest["SA3 name"]) return "black";
-  //                   if (d["SA3 name"] === highest["SA3 name"]) return "black";
-  //                 }
-
-  //                 if (props.labelOwnDot && userSa3) {
-  //                   if (d["SA3 name"] === userSa3.name) return "black";
-  //                 }
-
-  //                 return dotsDataKey.dotColor;
-  //               })
-  //               .style("opacity", d => {
-  //                 if (d[dotsDataKey.yField] === "NP") return 0.0;
-  //                 return 1.0;
-  //               })
-  //               .attr("cy", d => {
-  //                 if (d[dotsDataKey.yField] === "NP")
-  //                   return component.scaleY(0);
-  //                 return component.scaleY(d[dotsDataKey.yField]);
-  //               });
-  //             // .end()
-  //             // .then(() => {
-
-  //             // const ownDotTarget = d3.select(".dots-own-dot");
-  //             // if (!ownDotTarget.empty()) ownDotTarget.raise();
-  //             // const testimonyTarget = d3.select(".dots-testimony-target");
-  //             // if (!testimonyTarget.empty()) {
-  //             //   const pulseDot = component.svg
-  //             //     .append("circle")
-  //             //     .attr("cx", testimonyTarget.attr("cx"))
-  //             //     .attr("cy", testimonyTarget.attr("cy"))
-  //             //     .style("fill", "rgba(39, 172, 255, 0.49)")
-  //             //     .style("stroke", null)
-  //             //     .classed("dots-animated-pulse", true);
-  //             //   pulse(pulseDot);
-  //             //   // Raise our dots to the top
-  //             //   pulseDot.raise();
-  //             //   testimonyTarget.raise();
-  //             // }
-  //             // })
-  //             // .catch(e => null);
-  //           }),
-  //       exit =>
-  //         exit
-  //           .call(exit => {
-  //             if (exit.empty()) return;
-
-  //             // Remove other elements
-  //             // component.svg.select(`path.dots`).remove();
-  //             // component.svg.select(`circle.dots-animated-pulse`).remove();
-  //           })
-  //           .transition()
-  //           .duration(DOTS_EXIT_DURATION)
-  //           .style("opacity", 0.0)
-  //           .remove()
-  //     )
-  //     .style("display", d => {
-  //       // Hide ungrouped SA3s
-  //       if (d["SA3 group"] === "ungrouped") return "none";
-  //       // if (d[dotsDataKey.yField] === "NP") return "none";
-  //       return "block";
-  //     });
-
-  //   // Define a D3 pulse animation
-  //   function pulse(circle) {
-  //     (function repeat() {
-  //       circle
-  //         .attr("r", 0)
-  //         .style("opacity", 1.0)
-  //         .transition()
-  //         .duration(1000)
-  //         .attr("r", 12)
-  //         .transition()
-  //         .duration(250)
-  //         .style("opacity", 0.0)
-  //         .on("end", repeat);
-  //     })();
-  //   }
-
-  //   // Dots on top (z-axis)
-  //   dotsDots.raise();
-  // };
 
   const processAverageLines = () => {
     console.log("process average lines");
@@ -844,7 +275,7 @@ const AverageLineChart = props => {
     const isYAxisTransition = prevYMax === props.yMax;
 
     const width = component.svg.node().getBoundingClientRect().width;
-    const height = window.innerHeight;
+    const height = window.innerHeight * 0.8;
 
     component.svg.attr("width", width);
     component.svg.attr("height", height);
@@ -908,8 +339,8 @@ const AverageLineChart = props => {
     component.yAxis.call(makeYAxis);
 
     // Re-process all charts up update
-    if (hasBeenDocked) processCharts();
-  }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
+    if (hasBeenDocked) processAverageLines();
+  }, [windowSize.width, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate
   useEffect(() => {
@@ -930,7 +361,6 @@ const AverageLineChart = props => {
         setLinesDataKey(props.lines);
         setDotsDataKey(props.dots);
         setAverageData(props.averages);
-        // processCharts();
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
       }
@@ -953,7 +383,6 @@ const AverageLineChart = props => {
       setAverageData([]);
       setOwnQuintile(null);
       setOwnRegion(null);
-      // processCharts();
     }
   }, [isDocked]);
 
@@ -1005,7 +434,7 @@ const AverageLineChart = props => {
 
   useEffect(() => {
     console.log("average data changed");
-    if (isDocked || hasBeenDocked) processCharts();
+    if (isDocked || hasBeenDocked) processAverageLines();
   }, [averageData]);
 
   useEffect(() => {
@@ -1238,61 +667,60 @@ const AverageLineChart = props => {
           </div>
         </div>
       )}
-      {props.chartType === "dot" && (
-        <div
-          className={styles.tickTextContainer}
-          style={{
-            bottom: margin.bottom,
-            left: margin.left,
-            width: `${chartWidth}px`,
-          }}
-        >
-          <div className={styles.dotTickTextBox}>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Remote
-            </span>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Outer regional
-            </span>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Inner regional
-            </span>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Major city low advantage
-            </span>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Major city medium advantage
-            </span>
-            <span
-              style={{
-                width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
-              }}
-            >
-              Major city high advantage
-            </span>
-          </div>
+
+      <div
+        className={styles.tickTextContainer}
+        style={{
+          bottom: margin.bottom,
+          left: margin.left,
+          width: `${chartWidth}px`,
+        }}
+      >
+        <div className={styles.dotTickTextBox}>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Remote
+          </span>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Outer regional
+          </span>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Inner regional
+          </span>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Major city low advantage
+          </span>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Major city medium advantage
+          </span>
+          <span
+            style={{
+              width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
+            }}
+          >
+            Major city high advantage
+          </span>
         </div>
-      )}
+      </div>
 
       {/* LABELS */}
 

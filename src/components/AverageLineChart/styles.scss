@@ -2,6 +2,7 @@
   font-family: sans-serif;
   font-size: 13px;
   position: relative;
+  text-align: center;
 
   .chart-axis-key {
     position: absolute;
@@ -327,5 +328,11 @@
       width: 4.5em;
       text-align: right;
     }
+  }
+}
+
+:global {
+  .averagechartmount {
+    padding: 0;
   }
 }
