@@ -286,7 +286,7 @@ export default props => {
         <Portal node={document.querySelector(".averagechartmount")}>
           <AverageLineChart
             chartType={"average"}
-            yMax={5000}
+            yMax={3500}
             triggerOnDock={true}
             averages={averageChartData}
           ></AverageLineChart>
