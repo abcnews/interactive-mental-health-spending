@@ -42,11 +42,6 @@ export default props => {
   // a change on each render. So we set it once here.
   const [averageChartData, setAverageChartData] = useState([
     {
-      name: "Allied mental health",
-      values: [472, 1360, 2130, 2248, 2734, 2915],
-      color: "#3c92c8",
-    },
-    {
       name: "Psychiatry",
       values: [240, 579, 897, 1010, 1456, 2138],
       color: "#FF4D4D",
@@ -286,7 +281,7 @@ export default props => {
         <Portal node={document.querySelector(".averagechartmount")}>
           <AverageLineChart
             chartType={"average"}
-            yMax={3500}
+            yMax={2500}
             triggerOnDock={true}
             averages={averageChartData}
           ></AverageLineChart>
