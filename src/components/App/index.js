@@ -42,17 +42,22 @@ export default props => {
   // a change on each render. So we set it once here.
   const [averageChartData, setAverageChartData] = useState([
     {
-      name: "Psychiatry",
+      name: "Psychiatry (private practice)",
       values: [240, 579, 897, 1010, 1456, 2138],
       color: "#FF4D4D",
     },
     {
-      name: "Clinical psychology",
+      name: "Clinical psychologists",
       values: [225, 627, 980, 1049, 1444, 1678],
       color: "#FF7D56",
     },
     {
-      name: "GP mental health",
+      name: "Other psychologists",
+      values: [258, 692, 974, 1068, 1166, 1105],
+      color: "#3c92c8",
+    },
+    {
+      name: "GP mental health appointments",
       values: [445, 907, 1182, 1270, 1232, 1103],
       color: "#D96EAE",
     },
@@ -62,7 +67,7 @@ export default props => {
       color: "#9A8EC0",
     },
     {
-      name: "GP Focused Care",
+      name: "Therapy provided by GPs",
       values: [0, 18, 24, 22, 25, 37],
       color: "#34978F",
     },
