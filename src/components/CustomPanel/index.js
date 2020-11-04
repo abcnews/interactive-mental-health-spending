@@ -12,6 +12,24 @@ import { AppContext } from "../../AppContext";
 
 // To get distressed percentage from quintile
 const quintileLookup = { 1: 18.3, 2: 13.7, 3: 12.4, 4: 12.5, 5: 9.0 };
+const quintileWording = {
+  1: "in the most disadvantaged fifth of suburbs",
+  2: "somewhat disadvantaged",
+  3: "in the middle of the disadvantage scale",
+  4: "less disadvantaged",
+  5: "among the least disadvantaged",
+};
+const spendingLookup = spending => {
+  const difference = 22.87 - spending;
+
+  if (Math.abs(difference) < 2) return "around";
+
+  if (difference < -8) return "a much higher spend";
+  if (difference > 8) return "a much lower spend";
+
+  if (difference < -2) return "a higher spend";
+  if (difference > 2) return "a lower spend";
+};
 
 // TODO: maybe remove unnecessary data
 const alliedServicesLookup = require("./allied-mental-health.json");
@@ -124,72 +142,112 @@ export default props => {
         props.config.panel === "yourquintile" &&
         (suburb ? (
           <p>
-            Your suburb of <strong>{suburb}</strong> is in quintile{" "}
-            <strong>{userQuintile}</strong> with{" "}
-            <strong>{distressedPercent} per cent</strong> of people experiencing
-            a high level of distress.
+            Your suburb of <strong>{suburb}</strong> is{" "}
+            <strong>{quintileWording[userQuintile]}</strong>
+            {userQuintile === 1 ? ", where" : " so"}{" "}
+            <strong>{distressedPercent} per cent</strong> of people are{" "}
+            {userQuintile === 1 && "likely to be"} highly distressed.
           </p>
         ) : (
           <p>
-            Your postcode <strong>{postcode}</strong> is in quintile{" "}
-            <strong>{userQuintile}</strong> with{" "}
-            <strong>{distressedPercent} per cent</strong> of people experiencing
-            a high level of distress.{" "}
-            {/* {alliedService.percentOfPeople} <-- move to next panel */}
+            Your postcode <strong>{postcode}</strong> is{" "}
+            <strong>{quintileWording[userQuintile]}</strong>
+            {userQuintile === 1 ? ", where" : " so"}{" "}
+            <strong>{distressedPercent} per cent</strong> of people are{" "}
+            {userQuintile === 1 && "likely to be"} highly distressed.
           </p>
         ))}
 
       {/* ---------- */}
 
       {/* Second interactive panel (First dots scrolly stage) */}
-      {props.config.swap && props.config.panel === "alliedself" && (
-        <p>
-          In your area of <strong>{alliedService.name}</strong>, taxpayers
-          funded <strong>{alliedService.servicesPer100} sessions</strong> of
-          care per 100 people, which cost{" "}
-          <strong>${commaFormatter(alliedService.dollarsPer100)}</strong>.
-          That's{" "}
-          <strong>
-            {alliedService.servicesPer100 === 22.87
-              ? "the same as"
-              : alliedService.servicesPer100 > 22.87
-              ? "more than"
-              : "less than"}
-          </strong>{" "}
-          the national average of <strong>22.87</strong> sessions for{" "}
-          <strong>$2,375</strong>.
-        </p>
-      )}
+      {props.config.swap &&
+        props.config.panel === "alliedself" &&
+        alliedService.servicesPer100 !== "" && (
+          <p>
+            In your area of <strong>{alliedService.name}</strong>, taxpayers
+            funded <strong>{alliedService.servicesPer100} sessions</strong> of
+            care per 100 people, which cost{" "}
+            <strong>${commaFormatter(alliedService.dollarsPer100)}</strong>.
+            That's{" "}
+            <strong>{spendingLookup(alliedService.servicesPer100)}</strong>{" "}
+            {spendingLookup(alliedService.servicesPer100) !== "around" &&
+              "than "}
+            the national average of <strong>22.87</strong> sessions for{" "}
+            <strong>$2,375</strong>.
+          </p>
+        )}
+
+      {props.config.swap &&
+        props.config.panel === "alliedself" &&
+        alliedService.servicesPer100 === "" && (
+          <p>
+            Taxpayers spent the most on people in{" "}
+            <strong>Darebin - South</strong> area, spending
+            <strong>$4912</strong> for <strong>46.49</strong> sessions of care
+            per 100 people. In <strong>Katherine</strong>, we spent $147 for
+            1.49 sessions.
+          </p>
+        )}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap && props.config.panel === "alliedself2" && (
-        <p>
-          This allowed <strong>{alliedService.percentOfPeople} per cent</strong>{" "}
-          of people in your area to access subsidised mental health care, which
-          is{" "}
-          <strong>
-            {alliedService.percentOfPeople === 5.06
-              ? "the same as"
-              : alliedService.percentOfPeople > 5.06
-              ? "more than"
-              : "less than"}
-          </strong>{" "}
-          the national average of <strong>5.06 per cent</strong>.
-        </p>
-      )}
+      {props.config.swap &&
+        props.config.panel === "alliedself2" &&
+        alliedService.servicesPer100 !== "" && (
+          <p>
+            This allowed{" "}
+            <strong>{alliedService.percentOfPeople} per cent</strong> of people
+            in your area to access subsidised mental health care, which is{" "}
+            <strong>
+              {Math.abs(alliedService.percentOfPeople - 5.06) < 1
+                ? "around"
+                : alliedService.percentOfPeople > 5.06
+                ? "more than"
+                : "less than"}
+            </strong>{" "}
+            the national average of <strong>5.06 per cent</strong>.
+          </p>
+        )}
+
+      {/* This care was used more in the south of WA’s Wheat Belt region than anywhere else, but still, just X% of people received it, compared with X% who saw a clinical psychologist. */}
+
+      {props.config.swap &&
+        props.config.panel === "alliedself2" &&
+        alliedService.servicesPer100 === "" && (
+          <p>
+            This allowed <strong>8.94 per cent</strong> of people in{" "}
+            <strong>Darebin - South</strong> to access subsidised care, compared
+            with <strong>0.45 per cent</strong> in <strong>Katherine</strong>.
+          </p>
+        )}
 
       {/* ------------ */}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap && props.config.panel === "otherallied" && (
-        <p>
-          In your area of <strong>{otherAlliedService.name}</strong>, just{" "}
-          <strong>{otherAlliedService.percentOfPeople} per cent</strong> of
-          people received this kind of care, compared with{" "}
-          <strong>{clinicalService.percentOfPeople} per cent</strong> who saw a
-          clinical psychologist.
-        </p>
-      )}
+      {props.config.swap &&
+        props.config.panel === "otherallied" &&
+        otherAlliedService.percentOfPeople !== "" && (
+          <p>
+            In your area of <strong>{otherAlliedService.name}</strong>, just{" "}
+            <strong>{otherAlliedService.percentOfPeople} per cent</strong> of
+            people received this kind of care, compared with{" "}
+            <strong>{clinicalService.percentOfPeople} per cent</strong> who saw
+            a clinical psychologist.
+          </p>
+        )}
+
+      {props.config.swap &&
+        props.config.panel === "otherallied" &&
+        otherAlliedService.percentOfPeople === "" && (
+          <p>
+            <p>
+              This care was used more in the south of WA’s{" "}
+              <strong>Wheat Belt</strong> region than anywhere else, but still,
+              just 1.14 per cent of people received it, compared with 1.14 per cent who saw
+              a clinical psychologist.
+            </p>
+          </p>
+        )}
 
       {props.config.custom && props.config.panel === "kayeinitial" && (
         <>
@@ -213,7 +271,7 @@ export default props => {
       {props.config.custom && props.config.panel === "mikeinitial" && (
         <>
           <div className={styles.imageHolder}>
-          <div className={styles.label}>
+            <div className={styles.label}>
               <span>Mike, Wollongong</span>
             </div>
             <img src={mikeGraphic} />
