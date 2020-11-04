@@ -187,7 +187,12 @@ const AverageLineChart = props => {
                 text: d.name,
                 color: d.color,
                 x: lineBox.x + lineBox.width,
-                y: yPos,
+                y:
+                  d.name === "Other psychologists"
+                    ? yPos - 2
+                    : d.name === "GP mental health appointments"
+                    ? yPos + 13
+                    : yPos,
               };
 
               collectedAverageLabels.push(collectedLabel);
@@ -221,7 +226,12 @@ const AverageLineChart = props => {
                 text: d.name,
                 color: d.color,
                 x: lineBox.x + lineBox.width,
-                y: yPos,
+                y:
+                  d.name === "Other psychologists"
+                    ? yPos - 2
+                    : d.name === "GP mental health appointments"
+                    ? yPos + 13
+                    : yPos,
               };
 
               collectedAverageLabels.push(collectedLabel);
