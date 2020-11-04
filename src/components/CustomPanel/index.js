@@ -240,12 +240,8 @@ export default props => {
         props.config.panel === "otherallied" &&
         otherAlliedService.percentOfPeople === "" && (
           <p>
-            <p>
-              This care was used more in the south of WA’s{" "}
-              <strong>Wheat Belt</strong> region than anywhere else, but still,
-              just 1.14 per cent of people received it, compared with 1.14 per cent who saw
-              a clinical psychologist.
-            </p>
+            <strong>Limestone</strong> is the place using it the most and yet
+            just <strong>1.7 per cent</strong> are getting care.
           </p>
         )}
 

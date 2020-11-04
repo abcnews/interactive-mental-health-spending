@@ -373,8 +373,6 @@ const MultiChart = props => {
       "Medicare benefits per 100 people ($)"
     );
 
-    console.log(averageDotsData);
-
     const lineGenerator = d3
       .line()
       .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
@@ -821,7 +819,7 @@ const MultiChart = props => {
     let observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
-      threshold: 0.95,
+      threshold: 0.9,
     });
 
     observer.observe(root.current);
