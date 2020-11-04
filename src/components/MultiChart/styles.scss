@@ -3,6 +3,10 @@
   font-size: 13px;
   position: relative;
 
+  // @media only screen and (max-device-width: 600px) {
+    user-select: none;
+  // }
+
   .chart-axis-key {
     position: absolute;
     font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,

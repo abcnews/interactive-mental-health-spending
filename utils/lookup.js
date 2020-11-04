@@ -26,7 +26,9 @@ for (const response of calloutResponses) {
   let assignedArea;
 
   if (filteredLookup.length > 0) {
-    assignedArea = filteredLookup.reduce((prev, current) => (prev.ratio > current.ratio ? prev : current));
+    assignedArea = filteredLookup.reduce((prev, current) =>
+      prev.ratio > current.ratio ? prev : current
+    );
   }
 
   // Add region to our data
@@ -40,7 +42,6 @@ for (const response of calloutResponses) {
     });
   }
 
-  // console.log(sa3Filtered[0]);
   response["SA3 name"] = sa3Filtered ? sa3Filtered[0]["SA3 name"] : "";
   response["SA3 group"] = sa3Filtered ? sa3Filtered[0]["SA3 group"] : "";
 

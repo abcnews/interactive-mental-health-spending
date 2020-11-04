@@ -3,6 +3,7 @@ import "core-js/features/symbol";
 import "regenerator-runtime/runtime.js";
 import "intersection-observer";
 import "polyfill-array-includes";
+import 'nodelist-foreach-polyfill';
 
 if (!String.prototype.startsWith) {
   Object.defineProperty(String.prototype, "startsWith", {

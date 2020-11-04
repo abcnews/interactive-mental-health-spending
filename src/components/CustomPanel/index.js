@@ -87,6 +87,59 @@ export default props => {
         });
       }
 
+      // Highlight text to match charts
+      if (props.config.key === "psychiatrists") {
+        const highlighted = node.querySelector("strong");
+
+        if (
+          highlighted &&
+          highlighted.innerText === "psychiatrists in private practice"
+        ) {
+          highlighted.style.setProperty("color", "#FF4D4D");
+        }
+      }
+
+      if (props.config.key === "clinicalpsychologists") {
+        const highlighted = node.querySelector("strong");
+
+        if (highlighted && highlighted.innerText === "clinical psychologists") {
+          highlighted.style.setProperty("color", "#FF7D56");
+        }
+      }
+
+      if (props.config.key === "gpmentalhealth") {
+        const highlighted = node.querySelector("strong");
+
+        if (
+          highlighted &&
+          highlighted.innerText === "GPs for mental health reasons"
+        ) {
+          highlighted.style.setProperty("color", "#D96EAE");
+        }
+      }
+
+      if (props.config.key === "otherallied") {
+        const highlighted = node.querySelector("strong");
+
+        if (
+          highlighted &&
+          highlighted.innerText.includes("allied mental health")
+        ) {
+          highlighted.style.setProperty("color", "#9A8EC0");
+        }
+      }
+
+      if (props.config.key === "gpfocus") {
+        const highlighted = node.querySelectorAll("strong");
+
+        if (highlighted) {
+          highlighted.forEach(text => {
+            text.style.setProperty("color", "#34978F");
+          });
+        }
+      }
+
+      // Finally attach the node to the panel
       base.current.appendChild(node);
     });
 
