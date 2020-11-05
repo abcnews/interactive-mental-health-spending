@@ -146,58 +146,6 @@ export default props => {
   };
 
   const promiseOptions = async inputValue => {
-    // TODO: maybe make this a debounce
-    // if (inputValue.length < MIN_INPUT_LENGTH) return [];
-
-    // Detect postcode
-    // Return sorted SA3s that match postcode by area
-    // if (inputValue.length === 4) {
-    // Check if string is a postcode
-    // NOTE: We are using straight suburb OR postcode search now
-    // if (/^[0-9]{4}$/.test(inputValue)) {
-    //   console.log(`Maybe postcode!`);
-
-    //   // Filter matches
-    //   const filteredPostcodes = postcodeToSa3.filter(
-    //     entry => entry.postcode.toString() === inputValue
-    //   );
-
-    //   // Array of only sa3s for difference comparison
-    //   const matchingSa3s = filteredPostcodes.map(postcode => postcode.sa3);
-
-    //   // Filter our select box final options
-    //   const filteredOptions = options.filter(option =>
-    //     matchingSa3s.includes(option.value)
-    //   );
-
-    //   // Add postcode ratio to the options object
-    //   const optionsWithPostcode = filteredOptions.map(option => {
-    //     const ratio = filteredPostcodes.find(
-    //       entry => entry.sa3 === option.value
-    //     ).ratio;
-
-    //     return {
-    //       value: option.value,
-    //       label: option.label,
-    //       ratio: ratio,
-    //     };
-    //   });
-
-    //   // Sort by ratio
-    //   const sortedOptions = optionsWithPostcode.sort(
-    //     (a, b) => b.ratio - a.ratio
-    //   );
-
-    //   return sortedOptions;
-    // }
-
-    // // If not a postcode just search the options
-    // const filteredOptions = options.filter(option => {
-    //   return option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1;
-    // });
-
-    // return filteredOptions;
-
     // If user enters digits assume postcode search
     if (/^\d{0,4}$/.test(inputValue)) {
       const filteredPostcodes = component.postcodes.filter(entry =>
@@ -242,22 +190,10 @@ export default props => {
     if (!suburbToPostcodeData) return;
 
     component.fuse = new Fuse(suburbToPostcodeData, {
-      // isCaseSensitive: false,
-      // includeScore: false,
-      // shouldSort: true,
-      // includeMatches: false,
-      // findAllMatches: false,
       minMatchCharLength: 2,
-      // location: 0,
       threshold: 0.4,
       distance: 50,
-      // useExtendedSearch: false,
-      // ignoreLocation: false,
-      // ignoreFieldNorm: false,
-      keys: [
-        "suburb",
-        // "postcode"
-      ],
+      keys: ["suburb"],
     });
   }, [suburbToPostcodeData]);
 
@@ -275,7 +211,6 @@ export default props => {
           if (inputValue.length < 3) return "Search your suburb or postcode";
           return "Nothing found...";
         }}
-      // defaultOptions={options}
       />
     </div>
   );
