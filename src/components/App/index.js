@@ -104,11 +104,9 @@ export default props => {
     const decile = postcodeToDecile[data.postcode];
     const quintile = Math.ceil(decile / 2);
 
-    console.log("User quintile:", quintile);
     setUserQuintile(quintile);
 
     // Calculate user SA3
-
     // Filter matches
     const filteredPostcodes = postcodeToSa3.filter(entry => {
       return +entry.postcode === +data.postcode;

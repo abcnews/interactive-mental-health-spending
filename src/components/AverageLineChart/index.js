@@ -58,27 +58,6 @@ const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
 
-// Load our data and assign to object
-// const dataObject = {
-//   empty: [],
-//   distressed: require("../MultiChart/data/distressed-data.json"),
-//   mentalCondition: require("../MultiChart/data/mental-condition-data.json"),
-//   allied: processData(
-//     require("../MultiChart/data/1-allied-mental-health.json")
-//   ),
-//   psychiatrists: processData(require("../MultiChart/data/2-psychiatry.json")),
-//   clinicalPsychologists: processData(
-//     require("../MultiChart/data/3-clinical-psychologist.json")
-//   ),
-//   gpMentalHealth: processData(
-//     require("../MultiChart/data/4-gp-mental-health.json")
-//   ),
-//   otherAllied: processData(
-//     require("../MultiChart/data/5-other-allied-mental-health.json")
-//   ),
-//   gpFocus: processData(require("../MultiChart/data/6-gp-focussed.json")),
-// };
-
 // The main React function component
 const AverageLineChart = props => {
   // const { xField, yField, ...restProps } = props;
