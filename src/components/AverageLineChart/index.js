@@ -116,10 +116,6 @@ const AverageLineChart = props => {
     // Set component scoped SVG selection
     component.svg = d3.select(root.current);
 
-    // TODO: Maybe find a way to detect if animating
-    // and modify transitions based on this (if there's time)
-    // component.isAnimating = false;
-
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
     component.xAxis = component.svg.append("g").classed("x-axis", true);

@@ -3,7 +3,7 @@ import "core-js/features/symbol";
 import "regenerator-runtime/runtime.js";
 import "intersection-observer";
 import "polyfill-array-includes";
-import 'nodelist-foreach-polyfill';
+import "nodelist-foreach-polyfill";
 
 if (!String.prototype.startsWith) {
   Object.defineProperty(String.prototype, "startsWith", {
@@ -51,11 +51,6 @@ const stage3 = document.querySelector(".scrollystagemount3");
 addClass(stage3, "u-full");
 addClass(stage3, "no-margin-collapse");
 
-
-// const averagechartmount = document.querySelector(".averagechartmount");
-// addClass(averagechartmount, "u-full");
-// addClass(averagechartmount, "no-margin-collapse");
-
 const accessingcaregraphic = document.querySelector(".accessingcaregraphic");
 addClass(accessingcaregraphic, "no-margin-bottom");
 
@@ -76,23 +71,9 @@ const preInit = () => {
 
 const init = async () => {
   // Let's mount our scrollytellers
-  const scrollyData1 = loadScrollyteller(
-    "one", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
-    "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
-    "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
-  );
-
-  const scrollyData2 = loadScrollyteller(
-    "two", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
-    "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
-    "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
-  );
-
-  const scrollyData3 = loadScrollyteller(
-    "three", // If set to eg. "one" use #scrollytellerNAMEone in CoreMedia
-    "u-full", // Class to apply to mount point u-full makes it full width in Odyssey
-    "mark" // Name of marker in CoreMedia eg. for "point" use #point default: #mark
-  );
+  const scrollyData1 = loadScrollyteller("one", "u-full", "mark");
+  const scrollyData2 = loadScrollyteller("two", "u-full", "mark");
+  const scrollyData3 = loadScrollyteller("three", "u-full", "mark");
 
   render(
     <App
