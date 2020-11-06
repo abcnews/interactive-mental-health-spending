@@ -248,8 +248,8 @@
     "title": "Psychiatry",
     "yMax": "5000",
     "highlightBars": [],
-    "showLowHighDots": false,
-    "labelOwnDot": false,
+    "showLowHighDots": true,
+    "labelOwnDot": true,
     "dots": {
       "dataKey": "psychiatrists",
       "dotColor": "#FF4D4D",
@@ -264,8 +264,8 @@
     "title": "Clinical psychologist",
     "yMax": "5000",
     "highlightBars": [],
-    "showLowHighDots": false,
-    "labelOwnDot": false,
+    "showLowHighDots": true,
+    "labelOwnDot": true,
     "dots": {
       "dataKey": "clinicalPsychologists",
       "dotColor": "#FF7D56",
@@ -280,8 +280,8 @@
     "title": "GP mental health",
     "yMax": "5000",
     "highlightBars": [],
-    "showLowHighDots": false,
-    "labelOwnDot": false,
+    "showLowHighDots": true,
+    "labelOwnDot": true,
     "dots": {
       "dataKey": "gpMentalHealth",
       "dotColor": "#D96EAE",
