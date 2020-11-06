@@ -198,16 +198,16 @@ export default props => {
             Your suburb of <strong>{suburb}</strong> is{" "}
             <strong>{quintileWording[userQuintile]}</strong>
             {userQuintile === 1 ? ", where" : " so"}{" "}
-            <strong>{distressedPercent} per cent</strong> of people are{" "}
-            {userQuintile === 1 && "likely to be"} highly distressed.
+            <strong>{distressedPercent} per cent</strong> of people are likely
+            to be highly distressed.
           </p>
         ) : (
           <p>
             Your postcode <strong>{postcode}</strong> is{" "}
             <strong>{quintileWording[userQuintile]}</strong>
             {userQuintile === 1 ? ", where" : " so"}{" "}
-            <strong>{distressedPercent} per cent</strong> of people are{" "}
-            {userQuintile === 1 && "likely to be"} highly distressed.
+            <strong>{distressedPercent} per cent</strong> of people are likely
+            to be highly distressed.
           </p>
         ))}
 
@@ -239,7 +239,8 @@ export default props => {
             Taxpayers spent the most on people in{" "}
             <strong>Darebin - South</strong> area, spending
             <strong>$4912</strong> for <strong>46.49</strong> sessions of care
-            per 100 people. In <strong>Katherine</strong>, we spent <strong>$147</strong> for
+            per 100 people. In <strong>Katherine</strong>, we spent{" "}
+            <strong>$147</strong> for
             <strong>1.49</strong> sessions.
           </p>
         )}
