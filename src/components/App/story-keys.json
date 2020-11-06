@@ -312,8 +312,8 @@
     "title": "Other allied mental health",
     "yMax": "700",
     "highlightBars": [],
-    "showLowHighDots": false,
-    "labelOwnDot": false,
+    "showLowHighDots": true,
+    "labelOwnDot": true,
     "dots": {
       "dataKey": "otherAllied",
       "dotColor": "#9A8EC0",
@@ -328,8 +328,8 @@
     "title": "GP focussed care",
     "yMax": "700",
     "highlightBars": [],
-    "showLowHighDots": false,
-    "labelOwnDot": false,
+    "showLowHighDots": true,
+    "labelOwnDot": true,
     "dots": {
       "dataKey": "gpFocus",
       "dotColor": "#34978F",
