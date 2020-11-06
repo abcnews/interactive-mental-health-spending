@@ -923,7 +923,7 @@ const MultiChart = props => {
         setLinesDataKey(props.lines);
         setDotsDataKey(props.dots);
         setAverageData(props.averages);
-        // processCharts();
+        setHighlightBars(props.highlightBars);
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
       }
