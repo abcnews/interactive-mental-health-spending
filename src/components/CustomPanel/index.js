@@ -220,7 +220,7 @@ export default props => {
           <p>
             In your area of <strong>{alliedService.name}</strong>, taxpayers
             funded <strong>{alliedService.servicesPer100} sessions</strong> of
-            care per 100 people, which cost{" "}
+            care per 100 people in 2017-18, which cost{" "}
             <strong>${commaFormatter(alliedService.dollarsPer100)}</strong>.
             That's{" "}
             <strong>{spendingLookup(alliedService.servicesPer100)}</strong>{" "}
