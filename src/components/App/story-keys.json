@@ -68,7 +68,34 @@
     "dotColor": "#3C92C8",
     "xField": "quintile",
     "yField": "percent",
-    "highlightOwnBar": true,
+    "highlightOwnBar": false,
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent",
+        "labelText": "Highly distressed"
+      },
+      {
+        "lineName": "line2",
+        "dataKey": "mentalCondition",
+        "dotColor": "#FF1D07",
+        "xField": "quintile",
+        "yField": "percent",
+        "labelText": "Mental or behavioural condition"
+      }
+    ]
+  },
+  "endspectrum": {
+    "chartType": "line",
+    "yMax": "30",
+    "dotColor": "#3C92C8",
+    "xField": "quintile",
+    "yField": "percent",
+    "highlightBars": [1, 2],
+    "highlightOwnBar": false,
     "lines": [
       {
         "lineName": "line1",
