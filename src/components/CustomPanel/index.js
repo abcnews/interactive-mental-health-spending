@@ -254,7 +254,7 @@ export default props => {
             <strong>{alliedService.percentOfPeople} per cent</strong> of people
             in your area to access subsidised mental health care, which is{" "}
             <strong>
-              {Math.abs(alliedService.percentOfPeople - 5.06) < 1
+              {Math.abs(alliedService.percentOfPeople - 5.06) < 0.3
                 ? "around"
                 : alliedService.percentOfPeople > 5.06
                 ? "more than"
