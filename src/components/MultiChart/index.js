@@ -918,12 +918,12 @@ const MultiChart = props => {
     if (isDocked) {
       // if (!hasBeenDocked && props.triggerOnDock) {
       if (props.triggerOnDock) {
-        // processMarker();
         setHasBeenDocked(true);
         setLinesDataKey(props.lines);
         setDotsDataKey(props.dots);
         setAverageData(props.averages);
-        setHighlightBars(props.highlightBars);
+        component.renderBars = true;
+        setHighlightBars(props.highlightBars || []);
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
       }
@@ -942,11 +942,12 @@ const MultiChart = props => {
       ]);
 
       setDotsDataKey({ dataKey: "empty" });
+      component.renderBars = false;
       setHighlightBars([]);
-      setAverageData([]);
       setOwnQuintile(null);
       setOwnRegion(null);
-      // processCharts();
+      setAverageData([]);
+      console.log("Undocking!!!");
     }
   }, [isDocked]);
 
@@ -956,6 +957,13 @@ const MultiChart = props => {
     // TODO: make this logic:
     // for highlightBars state
     // if (!hasBeenDocked) return;
+
+    // Dirty hack to force hide the bars on undock
+    // due to ownQuintile and ownRegion putting them back in...
+    if (!component.renderBars) {
+      setHighlightBars([]);
+      return;
+    }
 
     let bars = [];
 
@@ -976,13 +984,7 @@ const MultiChart = props => {
     }
 
     setHighlightBars(bars);
-  }, [
-    props.highlightOwnBar,
-    props.highlightBars,
-    hasBeenDocked,
-    ownQuintile,
-    ownRegion,
-  ]);
+  }, [props.highlightOwnBar, props.highlightBars, ownQuintile, ownRegion]);
 
   useEffect(() => {
     setLinesDataKey(props.lines);
@@ -1007,6 +1009,8 @@ const MultiChart = props => {
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
   const chartHeight = window.innerHeight - margin.top - margin.bottom;
+
+  console.log(highlightBars);
 
   return (
     <div className={styles.root}>
