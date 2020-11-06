@@ -231,6 +231,7 @@ export default props => {
           </p>
         )}
 
+      {/* Second panel fallback text if NP data */}
       {props.config.swap &&
         props.config.panel === "alliedself" &&
         alliedService.servicesPer100 === "" && (
@@ -238,8 +239,8 @@ export default props => {
             Taxpayers spent the most on people in{" "}
             <strong>Darebin - South</strong> area, spending
             <strong>$4912</strong> for <strong>46.49</strong> sessions of care
-            per 100 people. In <strong>Katherine</strong>, we spent $147 for
-            1.49 sessions.
+            per 100 people. In <strong>Katherine</strong>, we spent <strong>$147</strong> for
+            <strong>1.49</strong> sessions.
           </p>
         )}
 
