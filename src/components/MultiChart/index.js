@@ -947,7 +947,6 @@ const MultiChart = props => {
       setOwnQuintile(null);
       setOwnRegion(null);
       setAverageData([]);
-      console.log("Undocking!!!");
     }
   }, [isDocked]);
 
@@ -1009,8 +1008,6 @@ const MultiChart = props => {
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
   const chartHeight = window.innerHeight - margin.top - margin.bottom;
-
-  console.log(highlightBars);
 
   return (
     <div className={styles.root}>
