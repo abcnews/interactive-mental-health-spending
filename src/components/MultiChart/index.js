@@ -270,13 +270,6 @@ const MultiChart = props => {
     // a different marker.
     component.dontSetAverageLabels = true;
 
-    // Filter our dots per data key
-    // const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
-    //   if (dot["SA3 group"] === "ungrouped") return false;
-    //   if (dot[dotsDataKey.yField] === "NP") return false;
-    //   return true;
-    // });
-
     // Try not filtering, just deal with ungrouped and NP later
     const sa3s = dataObject[dotsDataKey.dataKey];
 
@@ -366,7 +359,7 @@ const MultiChart = props => {
       return true;
     });
 
-    // TODO: fix to deal with ungrouped and NP
+    // Process dots and get average of each group
     let averageDotsData = generateAverageData(
       sa3sFiltered,
       "SA3 group",
@@ -406,15 +399,18 @@ const MultiChart = props => {
       },
     ];
 
+    console.log(props.highlightDottedLine);
+
+    // Dotted line average
     if (!component.averageLine) {
       component.averageLine = component.svg
         .append("path")
         .attr("d", d => lineGenerator(zeroDataLine))
         .classed("dotted", true)
         .attr("fill", "none")
-        .attr("stroke", "#929292")
-        .attr("stroke-width", 1)
-        .attr("stroke-dasharray", `2, 2`)
+        .attr("stroke", props.highlightDottedLine ? "red" : "black")
+        .attr("stroke-width", 2)
+        .attr("stroke-dasharray", `5, 2`)
         .style("opacity", 0.0);
 
       component.averageLine
@@ -426,6 +422,7 @@ const MultiChart = props => {
       component.averageLine
         .transition()
         .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
+        .attr("stroke", props.highlightDottedLine ? "red" : "black")
         .style("opacity", 1.0)
         .attr("d", d => lineGenerator(averageDotsData));
     } else {
@@ -489,25 +486,6 @@ const MultiChart = props => {
               const ownDotTarget = d3.select(".dots-own-dot");
               if (!ownDotTarget.empty()) ownDotTarget.raise();
 
-              // setTimeout(() => {
-              //   const testimonyTarget = d3.select(".dots-testimony-target");
-              //   if (!testimonyTarget.empty()) {
-              //     const pulseDot = component.svg
-              //       .append("circle")
-              //       .attr("cx", testimonyTarget.attr("cx"))
-              //       .attr("cy", testimonyTarget.attr("cy"))
-              //       .style("fill", "rgba(39, 172, 255, 0.49)")
-              //       .style("stroke", null)
-              //       .classed("dots-animated-pulse", true);
-
-              //     pulse(pulseDot);
-
-              //     // Raise our dots to the top
-              //     pulseDot.raise();
-              //     testimonyTarget.raise();
-              //   }
-              // }, DOTS_ENTER_DURATION);
-
               enter
                 .transition()
                 .duration(DOTS_ENTER_DURATION)
@@ -517,41 +495,6 @@ const MultiChart = props => {
                     return component.scaleY(0);
                   return component.scaleY(d[dotsDataKey.yField]);
                 });
-              // Experimenting with adding flashing dot on testimonials target
-              // .end()
-              // .then(() => {
-              // const ownDotTarget = d3.select(".dots-own-dot");
-              // if (!ownDotTarget.empty()) ownDotTarget.raise();
-              // const testimonyTarget = d3.select(".dots-testimony-target");
-              // if (testimonyTarget.empty()) return;
-              // const pulseDot = component.svg
-              //   .append("circle")
-              //   .attr("cx", testimonyTarget.attr("cx"))
-              //   .attr("cy", testimonyTarget.attr("cy"))
-              //   .style("fill", "rgba(39, 172, 255, 0.49)")
-              //   .style("stroke", null)
-              //   .classed("dots-animated-pulse", true);
-              // pulse(pulseDot);
-              // // Raise our dots to the top
-              // pulseDot.raise();
-              // testimonyTarget.raise();
-              // })
-              // .catch(e => null);
-
-              // Add the average line to the chart
-              // component.svg
-              //   .append("path")
-              //   .classed("dots", true)
-              //   .data([averageDotsData])
-              //   .attr("fill", "none")
-              //   .attr("stroke", "#929292")
-              //   .attr("stroke-width", 1)
-              //   .attr("stroke-dasharray", `2, 2`)
-              //   .style("opacity", 0.0)
-              //   .attr("d", lineGenerator)
-              //   .transition()
-              //   .delay(1000)
-              //   .style("opacity", 1.0);
             }),
         update =>
           update
@@ -573,57 +516,6 @@ const MultiChart = props => {
             })
             .call(update => {
               if (update.empty()) return;
-
-              // component.svg.select(`circle.dots-animated-pulse`).remove();
-
-              // setTimeout(() => {
-              //   const ownDotTarget = d3.select(".dots-own-dot");
-              //   if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-              //   const testimonyTarget = d3.select(".dots-testimony-target");
-
-              //   if (!testimonyTarget.empty()) {
-              //     const pulseDot = component.svg
-              //       .append("circle")
-              //       .attr("cx", testimonyTarget.attr("cx"))
-              //       .attr("cy", testimonyTarget.attr("cy"))
-              //       .style("fill", "rgba(39, 172, 255, 0.49)")
-              //       .style("stroke", null)
-              //       .classed("dots-animated-pulse", true);
-
-              //     pulse(pulseDot);
-
-              //     // Raise our dots to the top
-              //     pulseDot.raise();
-              //     testimonyTarget.raise();
-              //   }
-              // }, DOTS_UPDATE_DURATION);
-
-              // const path = component.svg.select("path.dots");
-
-              // // Fade line back in if it has been removed
-              // if (path.empty()) {
-              //   component.svg
-              //     .append("path")
-              //     .classed("dots", true)
-              //     .data([averageDotsData])
-              //     .attr("fill", "none")
-              //     .attr("stroke", "#929292")
-              //     .attr("stroke-width", 1)
-              //     .attr("stroke-dasharray", `2, 2`)
-              //     .style("opacity", 0.0)
-              //     .attr("d", lineGenerator)
-              //     .transition()
-              //     .delay(250)
-              //     .style("opacity", 1.0);
-              // } else {
-              //   // Otherwise:
-              //   // Update average line
-              //   path
-              //     .data([averageDotsData])
-              //     .transition()
-              //     .attr("d", lineGenerator);
-              // }
 
               return update
                 .transition()
@@ -650,27 +542,6 @@ const MultiChart = props => {
                     return component.scaleY(0);
                   return component.scaleY(d[dotsDataKey.yField]);
                 });
-              // .end()
-              // .then(() => {
-
-              // const ownDotTarget = d3.select(".dots-own-dot");
-              // if (!ownDotTarget.empty()) ownDotTarget.raise();
-              // const testimonyTarget = d3.select(".dots-testimony-target");
-              // if (!testimonyTarget.empty()) {
-              //   const pulseDot = component.svg
-              //     .append("circle")
-              //     .attr("cx", testimonyTarget.attr("cx"))
-              //     .attr("cy", testimonyTarget.attr("cy"))
-              //     .style("fill", "rgba(39, 172, 255, 0.49)")
-              //     .style("stroke", null)
-              //     .classed("dots-animated-pulse", true);
-              //   pulse(pulseDot);
-              //   // Raise our dots to the top
-              //   pulseDot.raise();
-              //   testimonyTarget.raise();
-              // }
-              // })
-              // .catch(e => null);
             }),
         exit =>
           exit
@@ -692,22 +563,6 @@ const MultiChart = props => {
         // if (d[dotsDataKey.yField] === "NP") return "none";
         return "block";
       });
-
-    // Define a D3 pulse animation
-    function pulse(circle) {
-      (function repeat() {
-        circle
-          .attr("r", 0)
-          .style("opacity", 1.0)
-          .transition()
-          .duration(1000)
-          .attr("r", 12)
-          .transition()
-          .duration(250)
-          .style("opacity", 0.0)
-          .on("end", repeat);
-      })();
-    }
 
     // Dots on top (z-axis)
     dotsDots.raise();
@@ -1428,3 +1283,156 @@ MultiChart.defaultProps = {
 };
 
 export default MultiChart;
+
+// Unused code - delete later
+
+// Filter our dots per data key
+// const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
+//   if (dot["SA3 group"] === "ungrouped") return false;
+//   if (dot[dotsDataKey.yField] === "NP") return false;
+//   return true;
+// });
+
+// setTimeout(() => {
+//   const testimonyTarget = d3.select(".dots-testimony-target");
+//   if (!testimonyTarget.empty()) {
+//     const pulseDot = component.svg
+//       .append("circle")
+//       .attr("cx", testimonyTarget.attr("cx"))
+//       .attr("cy", testimonyTarget.attr("cy"))
+//       .style("fill", "rgba(39, 172, 255, 0.49)")
+//       .style("stroke", null)
+//       .classed("dots-animated-pulse", true);
+
+//     pulse(pulseDot);
+
+//     // Raise our dots to the top
+//     pulseDot.raise();
+//     testimonyTarget.raise();
+//   }
+// }, DOTS_ENTER_DURATION);
+
+// Experimenting with adding flashing dot on testimonials target
+// .end()
+// .then(() => {
+// const ownDotTarget = d3.select(".dots-own-dot");
+// if (!ownDotTarget.empty()) ownDotTarget.raise();
+// const testimonyTarget = d3.select(".dots-testimony-target");
+// if (testimonyTarget.empty()) return;
+// const pulseDot = component.svg
+//   .append("circle")
+//   .attr("cx", testimonyTarget.attr("cx"))
+//   .attr("cy", testimonyTarget.attr("cy"))
+//   .style("fill", "rgba(39, 172, 255, 0.49)")
+//   .style("stroke", null)
+//   .classed("dots-animated-pulse", true);
+// pulse(pulseDot);
+// // Raise our dots to the top
+// pulseDot.raise();
+// testimonyTarget.raise();
+// })
+// .catch(e => null);
+
+// Add the average line to the chart
+// component.svg
+//   .append("path")
+//   .classed("dots", true)
+//   .data([averageDotsData])
+//   .attr("fill", "none")
+//   .attr("stroke", "#929292")
+//   .attr("stroke-width", 1)
+//   .attr("stroke-dasharray", `2, 2`)
+//   .style("opacity", 0.0)
+//   .attr("d", lineGenerator)
+//   .transition()
+//   .delay(1000)
+//   .style("opacity", 1.0);
+
+// component.svg.select(`circle.dots-animated-pulse`).remove();
+
+// setTimeout(() => {
+//   const ownDotTarget = d3.select(".dots-own-dot");
+//   if (!ownDotTarget.empty()) ownDotTarget.raise();
+
+//   const testimonyTarget = d3.select(".dots-testimony-target");
+
+//   if (!testimonyTarget.empty()) {
+//     const pulseDot = component.svg
+//       .append("circle")
+//       .attr("cx", testimonyTarget.attr("cx"))
+//       .attr("cy", testimonyTarget.attr("cy"))
+//       .style("fill", "rgba(39, 172, 255, 0.49)")
+//       .style("stroke", null)
+//       .classed("dots-animated-pulse", true);
+
+//     pulse(pulseDot);
+
+//     // Raise our dots to the top
+//     pulseDot.raise();
+//     testimonyTarget.raise();
+//   }
+// }, DOTS_UPDATE_DURATION);
+
+// const path = component.svg.select("path.dots");
+
+// // Fade line back in if it has been removed
+// if (path.empty()) {
+//   component.svg
+//     .append("path")
+//     .classed("dots", true)
+//     .data([averageDotsData])
+//     .attr("fill", "none")
+//     .attr("stroke", "#929292")
+//     .attr("stroke-width", 1)
+//     .attr("stroke-dasharray", `2, 2`)
+//     .style("opacity", 0.0)
+//     .attr("d", lineGenerator)
+//     .transition()
+//     .delay(250)
+//     .style("opacity", 1.0);
+// } else {
+//   // Otherwise:
+//   // Update average line
+//   path
+//     .data([averageDotsData])
+//     .transition()
+//     .attr("d", lineGenerator);
+// }
+
+// .end()
+// .then(() => {
+
+// const ownDotTarget = d3.select(".dots-own-dot");
+// if (!ownDotTarget.empty()) ownDotTarget.raise();
+// const testimonyTarget = d3.select(".dots-testimony-target");
+// if (!testimonyTarget.empty()) {
+//   const pulseDot = component.svg
+//     .append("circle")
+//     .attr("cx", testimonyTarget.attr("cx"))
+//     .attr("cy", testimonyTarget.attr("cy"))
+//     .style("fill", "rgba(39, 172, 255, 0.49)")
+//     .style("stroke", null)
+//     .classed("dots-animated-pulse", true);
+//   pulse(pulseDot);
+//   // Raise our dots to the top
+//   pulseDot.raise();
+//   testimonyTarget.raise();
+// }
+// })
+// .catch(e => null);
+
+// Define a D3 pulse animation
+// function pulse(circle) {
+//   (function repeat() {
+//     circle
+//       .attr("r", 0)
+//       .style("opacity", 1.0)
+//       .transition()
+//       .duration(1000)
+//       .attr("r", 12)
+//       .transition()
+//       .duration(250)
+//       .style("opacity", 0.0)
+//       .on("end", repeat);
+//   })();
+// }

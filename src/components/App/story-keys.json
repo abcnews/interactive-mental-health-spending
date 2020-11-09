@@ -137,6 +137,7 @@
     "highlightBars": [],
     "showLowHighDots": true,
     "labelOwnDot": false,
+    "highlightDottedLine": true,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
@@ -170,6 +171,7 @@
     "highlightBars": [6],
     "showLowHighDots": false,
     "labelOwnDot": false,
+    "highlightDottedLine": true,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
@@ -186,6 +188,7 @@
     "highlightBars": [1],
     "showLowHighDots": false,
     "labelOwnDot": false,
+    "highlightDottedLine": true,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",
