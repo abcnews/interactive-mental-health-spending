@@ -4,7 +4,7 @@
   position: relative;
 
   // @media only screen and (max-device-width: 600px) {
-    user-select: none;
+  user-select: none;
   // }
 
   .chart-axis-key {
@@ -43,7 +43,7 @@
     position: absolute;
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
     padding-top: 3px;
     transform: translate(0, 100%);
@@ -60,10 +60,15 @@
 
     span {
       max-width: 70px;
-      font-size: 9px;
+      font-size: 10px;
       text-align: center;
       display: flex;
       justify-content: center;
+
+      // For iPhone 5 size
+      @media screen and (max-width: 340px) {
+        font-size: 9px;
+      }
     }
   }
 
