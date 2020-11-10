@@ -429,7 +429,7 @@ const MultiChart = props => {
           "stroke",
           props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black"
         )
-        .style("opacity", 1.0)
+        .style("opacity", props.hideDottedLine ? 0.0 : 1.0)
         .attr("d", d => lineGenerator(averageDotsData));
     } else {
       component.averageLine
