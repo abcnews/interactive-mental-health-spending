@@ -57,10 +57,15 @@
 
     span {
       max-width: 70px;
-      font-size: 9px;
+      font-size: 10px;
       text-align: center;
       display: flex;
       justify-content: center;
+
+      // For iPhone 5 size
+      @media screen and (max-width: 340px) {
+        font-size: 9px;
+      }
     }
   }
 
