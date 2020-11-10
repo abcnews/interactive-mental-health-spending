@@ -62,6 +62,26 @@
       }
     ]
   },
+  "advantagedareas": {
+    "chartType": "line",
+    "yMax": "30",
+    "highlightOwnBar": false,
+    "highlightBars": [5],
+    "lines": [
+      {
+        "lineName": "line1",
+        "dataKey": "distressed",
+        "dotColor": "#3C92C8",
+        "xField": "quintile",
+        "yField": "percent",
+        "labelText": "Highly distressed"
+      },
+      {
+        "lineName": "line2",
+        "dataKey": "empty"
+      }
+    ]
+  },
   "mentalcondition": {
     "chartType": "line",
     "yMax": "30",
@@ -69,6 +89,7 @@
     "xField": "quintile",
     "yField": "percent",
     "highlightOwnBar": false,
+    "highlightBars": [5],
     "lines": [
       {
         "lineName": "line1",
@@ -124,6 +145,21 @@
     "highlightOwnBar": false,
     "labelOwnDot": false,
     "hideDottedLine": true,
+    "dots": {
+      "dataKey": "allied",
+      "dotColor": "#3C92C8",
+      "xField": "SA3 group",
+      "yField": "Medicare benefits per 100 people ($)"
+    }
+  },
+  "averageline": {
+    "chartType": "dot",
+    "title": "Allied mental health",
+    "yMax": "5000",
+    "highlightBars": [],
+    "showLowHighDots": false,
+    "highlightOwnBar": false,
+    "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
       "dotColor": "#3C92C8",

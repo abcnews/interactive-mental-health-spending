@@ -366,6 +366,8 @@ const MultiChart = props => {
       "Medicare benefits per 100 people ($)"
     );
 
+    console.log(averageDotsData);
+
     const lineGenerator = d3
       .line()
       .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
@@ -406,7 +408,10 @@ const MultiChart = props => {
         .attr("d", d => lineGenerator(zeroDataLine))
         .classed("dotted", true)
         .attr("fill", "none")
-        .attr("stroke", props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black")
+        .attr(
+          "stroke",
+          props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black"
+        )
         .attr("stroke-width", 2)
         .attr("stroke-dasharray", `5, 2`)
         .style("opacity", 0.0);
@@ -420,7 +425,10 @@ const MultiChart = props => {
       component.averageLine
         .transition()
         .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
-        .attr("stroke", props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black")
+        .attr(
+          "stroke",
+          props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black"
+        )
         .style("opacity", 1.0)
         .attr("d", d => lineGenerator(averageDotsData));
     } else {
@@ -949,7 +957,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(1)
                   ? ownRegion === 1 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -963,7 +971,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(2)
                   ? ownRegion === 2 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -977,7 +985,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(3)
                   ? ownRegion === 3 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -991,7 +999,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(4)
                   ? ownRegion === 4 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -1005,7 +1013,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(5)
                   ? ownRegion === 5 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -1018,7 +1026,7 @@ const MultiChart = props => {
                 backgroundColor: highlightBars.includes(6)
                   ? ownRegion === 6 && props.highlightOwnBar
                     ? "#999"
-                    : props.dots.dotColor
+                    : "#999" //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
