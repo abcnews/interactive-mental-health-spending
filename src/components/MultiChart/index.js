@@ -366,8 +366,6 @@ const MultiChart = props => {
       "Medicare benefits per 100 people ($)"
     );
 
-    console.log(averageDotsData);
-
     const lineGenerator = d3
       .line()
       .defined(d => !isNaN(d["Medicare benefits per 100 people ($)"]))
@@ -403,6 +401,7 @@ const MultiChart = props => {
 
     // Dotted line average
     if (!component.averageLine) {
+      // Add line
       component.averageLine = component.svg
         .append("path")
         .attr("d", d => lineGenerator(zeroDataLine))
@@ -420,8 +419,9 @@ const MultiChart = props => {
         .transition()
         .duration(DOTS_UPDATE_DURATION + sa3s.length)
         .attr("d", d => lineGenerator(averageDotsData))
-        .style("opacity", 1.0);
+        .style("opacity", props.hideDottedLine ? 0.0 : 1.0);
     } else if (averageDotsData.length > 0) {
+      // Update line
       component.averageLine
         .transition()
         .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
@@ -526,7 +526,7 @@ const MultiChart = props => {
               return update
                 .transition()
                 .duration(DOTS_UPDATE_DURATION)
-                .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
+                .delay((d, i) => i * ANIMATION_OFFSET) // Animation effect
                 .style("fill", d => {
                   if (props.showLowHighDots) {
                     if (d["SA3 name"] === lowest["SA3 name"]) return "black";
@@ -553,10 +553,6 @@ const MultiChart = props => {
           exit
             .call(exit => {
               if (exit.empty()) return;
-
-              // Remove other elements
-              // component.svg.select(`path.dots`).remove();
-              // component.svg.select(`circle.dots-animated-pulse`).remove();
             })
             .transition()
             .duration(DOTS_EXIT_DURATION)

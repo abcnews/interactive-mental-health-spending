@@ -88,10 +88,14 @@ export function usePrevious(value) {
 export const lowestHighest = (sa3s, yField) => {
   // Work out lowest
   // NOTE: Doesn't detect duplicates
+
   let top;
   let bottom;
 
   for (const sa3 of sa3s) {
+    // Disregard NP (Not Published)
+    if (sa3[yField] === "NP") continue;
+
     if (!top) {
       top = sa3;
       continue;
