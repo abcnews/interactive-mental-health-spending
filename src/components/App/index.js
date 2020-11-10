@@ -249,7 +249,7 @@ export default props => {
                 userSa3={userSa3}
                 userRegion={userRegion}
                 chartTitle={dotKey.title}
-                highlightDottedLine={dotKey.highlightDottedLine}
+                hideDottedLine={dotKey.hideDottedLine}
               />
             </BackgroundStage>
           </Scrollyteller>

@@ -102,7 +102,7 @@ export default props => {
       if (props.config.key === "clinicalpsychologists") {
         const highlighted = node.querySelector("strong");
 
-        if (highlighted && highlighted.innerText === "clinical psychologists") {
+        if (highlighted && highlighted.innerText.includes("clinical")) {
           highlighted.style.setProperty("color", "#FF7D56");
         }
       }
