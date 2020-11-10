@@ -399,8 +399,6 @@ const MultiChart = props => {
       },
     ];
 
-    console.log(props.highlightDottedLine);
-
     // Dotted line average
     if (!component.averageLine) {
       component.averageLine = component.svg
@@ -408,7 +406,7 @@ const MultiChart = props => {
         .attr("d", d => lineGenerator(zeroDataLine))
         .classed("dotted", true)
         .attr("fill", "none")
-        .attr("stroke", props.highlightDottedLine ? "red" : "black")
+        .attr("stroke", props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black")
         .attr("stroke-width", 2)
         .attr("stroke-dasharray", `5, 2`)
         .style("opacity", 0.0);
@@ -422,7 +420,7 @@ const MultiChart = props => {
       component.averageLine
         .transition()
         .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
-        .attr("stroke", props.highlightDottedLine ? "red" : "black")
+        .attr("stroke", props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black")
         .style("opacity", 1.0)
         .attr("d", d => lineGenerator(averageDotsData));
     } else {
