@@ -1,7 +1,47 @@
+// Mix in for 100% correct responsive layout
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
 .root {
   font-family: sans-serif;
   font-size: 13px;
-  position: relative;
+  width: 100%;
+
+  @include for-size(tablet-landscape-up) {
+    position: absolute;
+    max-width: 500px;
+    right: 50%;
+  }
+
+  @include for-size(desktop-up) {
+    max-width: 650px;
+  }
 
   // @media only screen and (max-device-width: 600px) {
   user-select: none;
@@ -263,10 +303,8 @@
 
   :global {
     svg.scatter-plot {
-      // background: #f0f0f0;
       position: relative;
       width: 100%;
-      max-width: 640px;
     }
 
     .x-axis .domain,
