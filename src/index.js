@@ -36,6 +36,7 @@ buildMountPoints([
   "timegraphic",
   "distancegraphic",
   "averagechartmount",
+  "postcodetext",
 ]);
 
 // Make stage full width
@@ -57,8 +58,20 @@ addClass(accessingcaregraphic, "no-margin-bottom");
 const timegraphic = document.querySelector(".timegraphic");
 addClass(timegraphic, "no-margin-bottom");
 
-// const distancegraphic = document.querySelector(".distancegraphic");
-// addClass(distancegraphic, "no-margin-bottom");
+// Some text in the article only for interactives
+const postcodetext = document.querySelector(".postcodetext");
+postcodetext.innerHTML = `<h2>Is your area getting care?</h2>
+<p>We're about to show you some fancy charts, but to make them more relevant for you we'll need your postcode, or a postcode you're curious about. Don't worry, we're not storing or re-using this information.</p>`;
+
+// get the element's parent node
+var parent = postcodetext.parentNode;
+
+// move all children out of the element
+while (postcodetext.firstChild)
+  parent.insertBefore(postcodetext.firstChild, postcodetext);
+
+// remove the empty element
+parent.removeChild(postcodetext);
 
 const preInit = () => {
   // Handle stuff that we don't want to hot reload
