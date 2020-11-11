@@ -147,7 +147,7 @@ const AverageLineChart = props => {
             .attr("stroke-width", 2.3)
             .attr("stroke-linejoin", "round")
             .attr("stroke-linecap", "round")
-            .style("mix-blend-mode", "multiply")
+            // .style("mix-blend-mode", "multiply")
             .attr("d", d => lineAverage(d.values))
             .each(function (d) {
               const path = d3.select(this);

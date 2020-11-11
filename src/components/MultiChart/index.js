@@ -55,7 +55,7 @@ const PULSE_RADIUS = 26;
 const BAR_COLOR = "rgba(191, 191, 191, 0.0)";
 const BAR_HIGHLIGHT_COLOR = "#D9D9D9";
 const BAR_HEIGHT_EXTEND = 22;
-const DOT_BAR_HEIGHT_EXTEND = 45;
+const DOT_BAR_HEIGHT_EXTEND = 52;
 const BACKGROUND_COLOR = "#f0f0f0";
 const BAR_BORDER_COLOR = "white";
 
