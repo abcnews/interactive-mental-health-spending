@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
-import { Fade } from "@material-ui/core";
+// import { Fade } from "@material-ui/core";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "./styles.scss";
 
@@ -1043,22 +1043,30 @@ const MultiChart = props => {
         style={{ top: margin.top, left: margin.left - 30 }}
       >
         {props.chartType !== "line" ? (
-          <div className={styles.rebatesY}>
-            Medicare rebates per 100 people ($)
-          </div>
+          <>
+            <div className={styles.rebatesY}>
+              Medicare rebates per 100 people ($)
+            </div>
+            <div
+              className={styles.titleUnder}
+              style={{ color: props.dots ? props.dots.dotColor : "inherit" }}
+            >
+              {chartTitle}
+            </div>
+          </>
         ) : (
           <div className={styles.proportionY}>Proportion of persons</div>
         )}
       </div>
 
-      <div
+      {/* <div
         className={styles.chartTitle}
         style={{ top: margin.top, left: rightEdge }}
       >
         <Fade in={props.chartType !== "line"}>
-          <div>{chartTitle}</div>
+        <div>{chartTitle}</div>
         </Fade>
-      </div>
+      </div> */}
 
       {props.chartType === "line" && (
         <div
