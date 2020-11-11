@@ -957,10 +957,11 @@ const MultiChart = props => {
                   ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
+                // Previously we had different colours for own bar
                 backgroundColor: highlightBars.includes(1)
                   ? ownRegion === 1 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -973,8 +974,8 @@ const MultiChart = props => {
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(2)
                   ? ownRegion === 2 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -987,8 +988,8 @@ const MultiChart = props => {
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(3)
                   ? ownRegion === 3 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -1001,8 +1002,8 @@ const MultiChart = props => {
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(4)
                   ? ownRegion === 4 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -1015,8 +1016,8 @@ const MultiChart = props => {
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(5)
                   ? ownRegion === 5 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
@@ -1028,8 +1029,8 @@ const MultiChart = props => {
                   : `${chartHeight}px`,
                 backgroundColor: highlightBars.includes(6)
                   ? ownRegion === 6 && props.highlightOwnBar
-                    ? "#999"
-                    : "#999" //props.dots.dotColor
+                    ? BAR_HIGHLIGHT_COLOR
+                    : BAR_HIGHLIGHT_COLOR //props.dots.dotColor
                   : BACKGROUND_COLOR,
               }}
             ></span>
