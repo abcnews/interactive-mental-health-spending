@@ -1,3 +1,4 @@
+// Mix in for 100% correct responsive layout
 @mixin for-size($range) {
   $phone-upper-boundary: 600px;
   $tablet-portrait-upper-boundary: 900px;
