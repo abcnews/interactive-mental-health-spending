@@ -6,9 +6,9 @@ export const sortData = (data, sortKey) => {
 
 export const calculateMargins = (width, height) => {
   return {
-    top: height * 0.16,
+    top: height * 0.14,
     right: width * 0.05,
-    bottom: height * 0.13,
+    bottom: height * 0.15,
     left: width * 0.12,
   };
 };
