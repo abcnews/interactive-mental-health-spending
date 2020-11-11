@@ -44,32 +44,32 @@ export default props => {
     {
       name: "Psychiatry (private practice)",
       values: [240, 579, 897, 1010, 1456, 2138],
-      color: "#FF4D4D",
+      color: "#980400",
     },
     {
       name: "Clinical psychologists",
       values: [225, 627, 980, 1049, 1444, 1678],
-      color: "#FF7D56",
+      color: "#DB4731",
     },
     {
       name: "Other psychologists",
       values: [258, 692, 974, 1068, 1166, 1105],
-      color: "#3c92c8",
+      color: "#2E7FC5",
     },
     {
       name: "GP mental health appointments",
       values: [445, 907, 1182, 1270, 1232, 1103],
-      color: "#D96EAE",
+      color: "#C54F9A",
     },
     {
       name: "Other allied mental health services",
       values: [27, 145, 179, 143, 130, 125],
-      color: "#9A8EC0",
+      color: "#8569D3",
     },
     {
       name: "Therapy provided by GPs",
       values: [0, 18, 24, 22, 25, 37],
-      color: "#34978F",
+      color: "#2B8884",
     },
   ]);
 

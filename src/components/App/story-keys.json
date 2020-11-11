@@ -16,7 +16,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -32,7 +32,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -51,7 +51,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -71,7 +71,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -85,7 +85,7 @@
   "mentalcondition": {
     "chartType": "line",
     "yMax": "30",
-    "dotColor": "#3C92C8",
+    "dotColor": "#2E7FC5",
     "xField": "quintile",
     "yField": "percent",
     "highlightOwnBar": false,
@@ -94,7 +94,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -112,7 +112,7 @@
   "endspectrum": {
     "chartType": "line",
     "yMax": "30",
-    "dotColor": "#3C92C8",
+    "dotColor": "#2E7FC5",
     "xField": "quintile",
     "yField": "percent",
     "highlightBars": [1, 2],
@@ -121,7 +121,7 @@
       {
         "lineName": "line1",
         "dataKey": "distressed",
-        "dotColor": "#3C92C8",
+        "dotColor": "#2E7FC5",
         "xField": "quintile",
         "yField": "percent",
         "labelText": "Highly distressed"
@@ -147,7 +147,7 @@
     "hideDottedLine": true,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)"
     }
@@ -162,7 +162,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)"
     }
@@ -176,7 +176,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -193,7 +193,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -209,7 +209,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -225,7 +225,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -241,7 +241,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -257,7 +257,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": "South Coast"
@@ -273,7 +273,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "allied",
-      "dotColor": "#3C92C8",
+      "dotColor": "#2E7FC5",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": "Wollongong"
@@ -289,7 +289,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "psychiatrists",
-      "dotColor": "#FF4D4D",
+      "dotColor": "#980400",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -305,7 +305,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "clinicalPsychologists",
-      "dotColor": "#FF7D56",
+      "dotColor": "#DB4731",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -321,7 +321,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "gpMentalHealth",
-      "dotColor": "#D96EAE",
+      "dotColor": "#C54F9A",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -337,7 +337,7 @@
     "labelOwnDot": false,
     "dots": {
       "dataKey": "otherAllied",
-      "dotColor": "#9A8EC0",
+      "dotColor": "#8569D3",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -353,7 +353,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "otherAllied",
-      "dotColor": "#9A8EC0",
+      "dotColor": "#8569D3",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -369,7 +369,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "gpFocus",
-      "dotColor": "#34978F",
+      "dotColor": "#2B8884",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -405,7 +405,7 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#34978F"
+        "color": "#2B8884"
       }
     ]
   },
@@ -424,7 +424,7 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#34978F"
+        "color": "#2B8884"
       },
       {
         "name": "A flat line",
@@ -453,12 +453,12 @@
       {
         "name": "Other Psychology",
         "values": [234, 453, 565, 544, 1234, 2453],
-        "color": "#FF4D4D"
+        "color": "#980400"
       },
       {
         "name": "\"Other\" Allied Mental Health",
         "values": [323, 432, 456, 454, 565, 754],
-        "color": "#34978F"
+        "color": "#2B8884"
       },
       {
         "name": "GP Focused Care",

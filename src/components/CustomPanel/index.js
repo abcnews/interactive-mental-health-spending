@@ -95,7 +95,7 @@ export default props => {
           highlighted &&
           highlighted.innerText === "psychiatrists in private practice"
         ) {
-          highlighted.style.setProperty("color", "#FF4D4D");
+          highlighted.style.setProperty("color", "#980400");
         }
       }
 
@@ -103,7 +103,7 @@ export default props => {
         const highlighted = node.querySelector("strong");
 
         if (highlighted && highlighted.innerText.includes("clinical")) {
-          highlighted.style.setProperty("color", "#FF7D56");
+          highlighted.style.setProperty("color", "#DB4731");
         }
       }
 
@@ -114,7 +114,7 @@ export default props => {
           highlighted &&
           highlighted.innerText === "GPs for mental health reasons"
         ) {
-          highlighted.style.setProperty("color", "#D96EAE");
+          highlighted.style.setProperty("color", "#C54F9A");
         }
       }
 
@@ -125,7 +125,7 @@ export default props => {
           highlighted &&
           highlighted.innerText.includes("allied mental health")
         ) {
-          highlighted.style.setProperty("color", "#9A8EC0");
+          highlighted.style.setProperty("color", "#8569D3");
         }
       }
 
@@ -134,7 +134,7 @@ export default props => {
 
         if (highlighted) {
           highlighted.forEach(text => {
-            text.style.setProperty("color", "#34978F");
+            text.style.setProperty("color", "#2B8884");
           });
         }
       }

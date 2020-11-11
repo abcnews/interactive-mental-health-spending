@@ -52,11 +52,12 @@ const ANIMATION_OFFSET = 0.5;
 const PULSE_RADIUS = 26;
 
 // Chart bar constants
-const BAR_COLOR = "rgba(191, 191, 191, 0.1)";
-const BAR_HIGHLIGHT_COLOR = "rgba(200, 200, 200, 0.59)";
+const BAR_COLOR = "rgba(191, 191, 191, 0.0)";
+const BAR_HIGHLIGHT_COLOR = "#D9D9D9";
 const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 45;
 const BACKGROUND_COLOR = "#f0f0f0";
+const BAR_BORDER_COLOR = "white";
 
 // Load our data and assign to object
 const dataObject = {
@@ -881,7 +882,8 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "2px solid #f0f0f0",
+                borderLeft: `2px solid ${BAR_BORDER_COLOR}`,
+                borderRight: `1px solid ${BAR_BORDER_COLOR}`,
                 backgroundColor: highlightBars.includes(1)
                   ? BAR_HIGHLIGHT_COLOR
                   : BAR_COLOR,
@@ -894,7 +896,8 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "2px solid #f0f0f0",
+                borderLeft: `1px solid ${BAR_BORDER_COLOR}`,
+                borderRight: `1px solid ${BAR_BORDER_COLOR}`,
                 backgroundColor: highlightBars.includes(2)
                   ? BAR_HIGHLIGHT_COLOR
                   : BAR_COLOR,
@@ -907,7 +910,8 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "2px solid #f0f0f0",
+                borderLeft: `1px solid ${BAR_BORDER_COLOR}`,
+                borderRight: `1px solid ${BAR_BORDER_COLOR}`,
                 backgroundColor: highlightBars.includes(3)
                   ? BAR_HIGHLIGHT_COLOR
                   : BAR_COLOR,
@@ -920,7 +924,8 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
-                borderRight: "2px solid #f0f0f0",
+                borderLeft: `1px solid ${BAR_BORDER_COLOR}`,
+                borderRight: `1px solid ${BAR_BORDER_COLOR}`,
                 backgroundColor: highlightBars.includes(4)
                   ? BAR_HIGHLIGHT_COLOR
                   : BAR_COLOR,
@@ -933,6 +938,8 @@ const MultiChart = props => {
                   ? `${chartHeight + BAR_HEIGHT_EXTEND}px`
                   : `${chartHeight}px`,
                 flexGrow: 1,
+                borderLeft: `1px solid ${BAR_BORDER_COLOR}`,
+                borderRight: `2px solid ${BAR_BORDER_COLOR}`,
                 backgroundColor: highlightBars.includes(5)
                   ? BAR_HIGHLIGHT_COLOR
                   : BAR_COLOR,
