@@ -7,6 +7,7 @@
 export default nameStrings => {
   for (const name of nameStrings) {
     const tag = document.querySelector(`a[name="${name}"]`);
+    if (!tag) continue;
 
     const el = document.createElement("div");
     el.className = name;
