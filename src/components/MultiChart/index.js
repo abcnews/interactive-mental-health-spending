@@ -105,7 +105,7 @@ const MultiChart = props => {
   const [averageLineLabels, setAverageLineLabels] = useState([]);
   const [averageData, setAverageData] = useState([]);
   const [testimonalDots, setTestimonialDots] = useState([]);
-  const [chartTitle, setChartTitle] = useState("");
+  const [chartTitle, setChartTitle] = useState(null);
   const [rightEdge, setRightEdge] = useState();
 
   // Previous state or props of things
@@ -1052,7 +1052,7 @@ const MultiChart = props => {
               className={styles.titleUnder}
               style={{ color: props.dots ? props.dots.dotColor : "inherit" }}
             >
-              {chartTitle}
+              {chartTitle? chartTitle : <span>&nbsp;</span>}
             </div>
           </>
         ) : (
