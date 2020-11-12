@@ -49,7 +49,7 @@ export default props => {
     {
       name: "Clinical psychologists",
       values: [225, 627, 980, 1049, 1444, 1678],
-      color: "#DB4731",
+      color: "#db4731",
     },
     {
       name: "Other psychologists",
@@ -69,7 +69,7 @@ export default props => {
     {
       name: "Therapy provided by GPs",
       values: [0, 18, 24, 22, 25, 37],
-      color: "#2B8884",
+      color: "#db4731",
     },
   ]);
 

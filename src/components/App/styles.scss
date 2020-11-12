@@ -76,22 +76,22 @@
     }
 
     .Quote p {
-      font-size: 14px;
+      font-size: 14px !important;
 
       @include for-size(tablet-portrait-up) {
-        font-size: 16px;
+        font-size: 16px !important;
       }
 
       @include for-size(tablet-landscape-up) {
-        font-size: 18px;
+        font-size: 18px !important;
       }
 
       @include for-size(desktop-up) {
-        font-size: 19px;
+        font-size: 19px !important;
       }
 
       @include for-size(big-desktop-up) {
-        font-size: 20px;
+        font-size: 20px !important;
       }
 
 
@@ -105,22 +105,22 @@
         serif;
       color: #3a6485 !important;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 14px !important;
 
       @include for-size(tablet-portrait-up) {
-        font-size: 16px;
+        font-size: 16px !important;
       }
 
       @include for-size(tablet-landscape-up) {
-        font-size: 18px;
+        font-size: 18px !important;
       }
 
       @include for-size(desktop-up) {
-        font-size: 19px;
+        font-size: 19px !important;
       }
 
       @include for-size(big-desktop-up) {
-        font-size: 20px;
+        font-size: 20px !important;
       }
     }
 
