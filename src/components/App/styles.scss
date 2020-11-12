@@ -71,6 +71,10 @@
       background-color: #e5f2f9;
     }
 
+    .Gallery-controls {
+      justify-content: flex-end;
+    }
+
     .Quote.is-pullquote {
       text-align: left;
     }
@@ -93,7 +97,6 @@
       @include for-size(big-desktop-up) {
         font-size: 20px !important;
       }
-
 
       color: #3a6485;
       font-style: italic;
