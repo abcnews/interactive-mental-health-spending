@@ -151,50 +151,43 @@
     // opacity: 0.15;
   }
 
-  .dev-info {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid red;
-    padding: 10px;
-  }
-
   .line-label {
     position: absolute;
     transform: translate(0px, -145%);
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 11px;
 
-    @media screen and (min-width: 641px) {
-      font-size: 11px;
+    @include for-size(tablet-portrait-up) {
+      font-size: 12px;
     }
   }
 
-  .average-label {
-    white-space: nowrap;
-    transform: translateX(-100%) translateX(3px) translateY(-120%); //translate(calc(-100% + 3px), -120%);
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-      1px 1px 0 #fff;
+  // .average-label {
+  //   white-space: nowrap;
+  //   transform: translateX(-100%) translateX(3px) translateY(-120%); //translate(calc(-100% + 3px), -120%);
+  //   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+  //     1px 1px 0 #fff;
+  //   font-size: 11px;
 
-    @media screen and (min-width: 641px) {
-      font-size: 10px;
-    }
-  }
+  //   @include for-size(tablet-portrait-up) {
+  //     font-size: 12px;
+  //   }
+  // }
 
   .dot-label {
     position: absolute;
     font-family: ABCSans, sans-serif;
     color: black;
     font-weight: bold;
-    font-size: 10px;
-    padding: 2px 4px 2px;
+    font-size: 11px;
+    padding: 2px 6px 2px;
     background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 
-    @media screen and (min-width: 641px) {
-      font-size: 10px;
+    @include for-size(tablet-portrait-up) {
+      font-size: 12px;
     }
 
     &.align-right {
@@ -225,10 +218,14 @@
     color: white;
     border: 1px solid white;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 11px;
     padding: 2px 4px 2px;
     background-color: black;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 12px;
+    }
 
     &.align-right {
       transform: translateX(-100%);

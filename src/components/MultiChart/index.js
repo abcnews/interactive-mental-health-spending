@@ -1060,15 +1060,6 @@ const MultiChart = props => {
         )}
       </div>
 
-      {/* <div
-        className={styles.chartTitle}
-        style={{ top: margin.top, left: rightEdge }}
-      >
-        <Fade in={props.chartType !== "line"}>
-        <div>{chartTitle}</div>
-        </Fade>
-      </div> */}
-
       {props.chartType === "line" && (
         <div
           className={styles.tickTextContainer}
