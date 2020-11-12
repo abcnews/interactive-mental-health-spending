@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import JsxParser from "react-jsx-parser/lib/es5/react-jsx-parser.min.js";
+// import JsxParser from "react-jsx-parser";
+// import JsxParser from "react-jsx-parser/dist/es5/react-jsx-parser.min.js";
 import * as d3Format from "d3-format";
 
 const d3 = { ...d3Format };
@@ -103,7 +105,7 @@ export default props => {
         const highlighted = node.querySelector("strong");
 
         if (highlighted && highlighted.innerText.includes("clinical")) {
-          highlighted.style.setProperty("color", "#DB4731");
+          highlighted.style.setProperty("color", "#db4731");
         }
       }
 
@@ -134,7 +136,7 @@ export default props => {
 
         if (highlighted) {
           highlighted.forEach(text => {
-            text.style.setProperty("color", "#2B8884");
+            text.style.setProperty("color", "#db4731");
           });
         }
       }

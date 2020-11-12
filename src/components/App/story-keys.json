@@ -305,7 +305,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "clinicalPsychologists",
-      "dotColor": "#DB4731",
+      "dotColor": "#db4731",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -369,7 +369,7 @@
     "labelOwnDot": true,
     "dots": {
       "dataKey": "gpFocus",
-      "dotColor": "#2B8884",
+      "dotColor": "#db4731",
       "xField": "SA3 group",
       "yField": "Medicare benefits per 100 people ($)",
       "testimonialSa3": ""
@@ -405,7 +405,7 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#2B8884"
+        "color": "#db4731"
       }
     ]
   },
@@ -424,7 +424,7 @@
       {
         "name": "Other allied mental health",
         "values": [50, 150, 190, 140, 130, 120],
-        "color": "#2B8884"
+        "color": "#db4731"
       },
       {
         "name": "A flat line",
@@ -458,7 +458,7 @@
       {
         "name": "\"Other\" Allied Mental Health",
         "values": [323, 432, 456, 454, 565, 754],
-        "color": "#2B8884"
+        "color": "#db4731"
       },
       {
         "name": "GP Focused Care",

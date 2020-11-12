@@ -18,6 +18,7 @@ module.exports = {
       resolve(__dirname, "node_modules/d3-scale-chromatic"),
       resolve(__dirname, "node_modules/d3-shape"),
       resolve(__dirname, "node_modules/d3-transition"),
+      resolve(__dirname, "node_modules/fuse.js"),
       // resolve(__dirname, "node_modules/d3-force"),
       // resolve(__dirname, "node_modules/d3-scale"),
       // resolve(__dirname, "node_modules/delaunator")
