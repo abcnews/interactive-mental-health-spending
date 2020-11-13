@@ -37,6 +37,10 @@ buildMountPoints([
   "distancegraphic",
   "averagechartmount",
   "postcodetext",
+  "itsavedmegraphic",
+  "affordablecaregraphic",
+  "whatsgoingongraphic",
+  "taxdollarsgraphic"
 ]);
 
 // Make stage full width
@@ -78,6 +82,35 @@ const preInit = () => {
   // (but do want to wait for Odyssey)
   const heroEl = d3.select(".Header").insert("div", ":first-child");
   heroEl.classed("pre-header-hero", true);
+
+  // Remove spaces from the gallery count
+  const galleryIndex = document.querySelectorAll(".Gallery-index");
+
+  setTimeout(() => {
+    galleryIndex.forEach(el => {
+      el.innerHTML = el.innerHTML.replace(/\s/g, "");
+    });
+  }, 100);
+
+  const mutationObserver = new MutationObserver(removeSpacesInCount);
+
+  for (const el of galleryIndex) {
+    mutationObserver.observe(el, {
+      characterData: true,
+      attributes: false,
+      childList: false,
+      subtree: true,
+    });
+  }
+
+  function removeSpacesInCount(mutations) {
+    mutations.forEach(function (mutation) {
+      mutation.target.parentElement.innerHTML = mutation.target.parentElement.innerHTML.replace(
+        /\s/g,
+        ""
+      );
+    });
+  }
 
   init();
 };
