@@ -12,9 +12,13 @@ import AverageLineChart from "../AverageLineChart";
 
 // Load up our hero URL (or data)
 import heroImage from "./images/hero-top.png";
-import pregnantLady from "./images/pregnant-lady.png";
-import timeGraphic from "./images/time-graphic.png";
-import distanceGraphic from "./images/distance-graphic.png";
+import accessingCareGraphic from "./images/accessingcaregraphic.png";
+import timeGraphic from "./images/timegraphic.png";
+import distanceGraphic from "./images/distancegraphic.png";
+import taxdollarsgraphic from "./images/taxdollarsgraphic.png";
+import whatsgoingongraphic from "./images/whatsgoingongraphic.png";
+import affordablecaregraphic from "./images/affordablecaregraphic.png";
+import itsavedmegraphic from "./images/itsavedmegraphic.png";
 
 let storyKeys = require("./story-keys.json");
 
@@ -182,7 +186,7 @@ export default props => {
 
         <Portal node={document.querySelector(".accessingcaregraphic")}>
           <div className={styles.illustrationContainer}>
-            <img className={styles.illustration} src={pregnantLady} />
+            <img className={styles.illustration} src={accessingCareGraphic} />
           </div>
         </Portal>
 
@@ -195,6 +199,30 @@ export default props => {
         <Portal node={document.querySelector(".distancegraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={distanceGraphic} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".taxdollarsgraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={taxdollarsgraphic} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".whatsgoingongraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={whatsgoingongraphic} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".affordablecaregraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={affordablecaregraphic} />
+          </div>
+        </Portal>
+
+        <Portal node={document.querySelector(".itsavedmegraphic")}>
+          <div className={styles.illustrationContainer}>
+            <img className={styles.illustration} src={itsavedmegraphic} />
           </div>
         </Portal>
 

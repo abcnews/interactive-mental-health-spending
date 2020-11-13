@@ -75,6 +75,19 @@
       justify-content: flex-end;
     }
 
+    .Gallery-index {
+      position: absolute;
+      right: 68px;
+      transform: translateX(50%);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .Gallery-step-prev {
+      position: relative;
+      right: 25px;
+    }
+
     .Quote.is-pullquote {
       text-align: left;
     }
@@ -138,6 +151,11 @@
       }
     }
 
+    .Gallery-step-next:focus,
+    .Gallery-step-prev:focus {
+      outline: 0;
+    }
+
     .Gallery-controls {
     }
   }
@@ -153,7 +171,24 @@
   }
 
   .distancegraphic,
-  .accessingcaregraphic {
-    margin-bottom: -64px;
+  .accessingcaregraphic
+  
+  {
+    padding-top: 48px;
+    margin-bottom: -60px;
+  }
+
+  .taxdollarsgraphic {
+    padding-top: 55px;
+    margin-bottom: -80px;
+  }
+
+  .whatsgoingongraphic, .itsavedmegraphic {
+    padding-top: 40px;
+    margin-bottom: -68px;
+  }
+
+  .affordablecaregraphic {
+    margin-bottom: 0px;
   }
 }
