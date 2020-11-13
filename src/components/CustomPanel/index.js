@@ -41,6 +41,10 @@ const clinicalPsychLookup = require("./clinical-psych.json");
 import kayeGraphic from "./images/kaye-graphic.png";
 import mikeGraphic from "./images/mike-graphic.png";
 
+import cathy from "./images/cathy.png";
+import mike from "./images/mike.png";
+import laura from "./images/laura.png";
+
 export default props => {
   const base = useRef();
   const [hidePanel, setHidePanel] = useState(false);
@@ -305,10 +309,7 @@ export default props => {
       {props.config.custom && props.config.panel === "kayeinitial" && (
         <>
           <div className={styles.imageHolder}>
-            <div className={styles.label}>
-              <span>Kaye, South Coast (NSW)</span>
-            </div>
-            <img src={kayeGraphic} />
+            <img src={cathy} />
           </div>
           {props.nodes.map((node, index) => (
             <JsxParser
@@ -324,10 +325,23 @@ export default props => {
       {props.config.custom && props.config.panel === "mikeinitial" && (
         <>
           <div className={styles.imageHolder}>
-            <div className={styles.label}>
-              <span>Mike, Wollongong</span>
-            </div>
-            <img src={mikeGraphic} />
+            <img src={mike} />
+          </div>
+          {props.nodes.map((node, index) => (
+            <JsxParser
+              key={index}
+              renderInWrapper={false}
+              bindings={{}}
+              jsx={node.outerHTML}
+            />
+          ))}
+        </>
+      )}
+
+      {props.config.custom && props.config.panel === "laurainitial" && (
+        <>
+          <div className={styles.imageHolder}>
+            <img src={laura} />
           </div>
           {props.nodes.map((node, index) => (
             <JsxParser
