@@ -44,8 +44,11 @@ import laura from "./images/laura.png";
 
 const windowLocation = window.location.href;
 console.log(windowLocation);
-const isDarkPublish = windowLocation === "https://www.abc.net.au/res/sites/news-projects/interactive-covid-mental-health/master/"
-console.log(isDarkPublish)
+const isDarkPublish =
+  windowLocation ===
+  // "http://nucwed.aus.aunty.abc.net.au/news/mobile/2020-11-16/covid-mental-health/12512378?proxy_interactive-covid-mental-health=ws204914#devmode";
+  "https://www.abc.net.au/res/sites/news-projects/interactive-covid-mental-health/master/";
+console.log(isDarkPublish);
 
 export default props => {
   const base = useRef();
@@ -68,8 +71,8 @@ export default props => {
     // Tell scrollyteller that this is a panel
     props.reference(base.current);
 
-    if (props.config.swap) return;
-    if (props.config.custom) return;
+    if (props.config.swap && !isDarkPublish) return;
+    if (props.config.custom && !isDarkPublish) return;
 
     const isMobile = window.innerWidth < 440;
 
@@ -199,7 +202,8 @@ export default props => {
       ref={base}
     >
       {/* First interactive panel */}
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "yourquintile" &&
         (suburb ? (
           <p>
@@ -222,7 +226,8 @@ export default props => {
       {/* ---------- */}
 
       {/* Second interactive panel (First dots scrolly stage) */}
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "alliedself" &&
         alliedService.servicesPer100 !== "" && (
           <p>
@@ -240,7 +245,8 @@ export default props => {
         )}
 
       {/* Second panel fallback text if NP data */}
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "alliedself" &&
         alliedService.servicesPer100 === "" && (
           <p>
@@ -254,7 +260,8 @@ export default props => {
         )}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "alliedself2" &&
         alliedService.servicesPer100 !== "" && (
           <p>
@@ -274,7 +281,8 @@ export default props => {
 
       {/* This care was used more in the south of WA’s Wheat Belt region than anywhere else, but still, just X% of people received it, compared with X% who saw a clinical psychologist. */}
 
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "alliedself2" &&
         alliedService.servicesPer100 === "" && (
           <p>
@@ -287,7 +295,8 @@ export default props => {
       {/* ------------ */}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "otherallied" &&
         otherAlliedService.percentOfPeople !== "" && (
           <p>
@@ -299,12 +308,14 @@ export default props => {
           </p>
         )}
 
-      {props.config.swap &&
+      {!isDarkPublish &&
+        props.config.swap &&
         props.config.panel === "otherallied" &&
         otherAlliedService.percentOfPeople === "" && (
           <p>
-            <strong>Limestone</strong> is the place using it the most and yet
-            just <strong>1.7 per cent</strong> are getting care.
+            For example, we're spending the most per person in WA's{" "}
+            <strong>Wheat Belt - South</strong> region, yet this is helping just{" "}
+            <strong>1.14 per cent</strong> of people.
           </p>
         )}
 
