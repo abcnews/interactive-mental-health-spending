@@ -284,8 +284,8 @@
     height: 12px;
     width: 12px;
     box-shadow: 0 0 0 0 rgba(46, 127, 197, 1);
-    // animation: pulseblue 2s infinite;
-    box-shadow: 0 0 0 32px rgba(46, 127, 197, 0.5);
+    animation: pulseblue 2s infinite;
+    // box-shadow: 0 0 0 32px rgba(46, 127, 197, 0.5);
   }
 
   @keyframes pulseblue {
@@ -311,8 +311,8 @@
     height: 12px;
     width: 12px;
     box-shadow: 0 0 0 0 rgb(152, 4, 0, 1); //rgb(152, 4, 0)
-    // animation: pulsered 2s infinite;
-    box-shadow: 0 0 0 32px rgb(152, 4, 0, 0.5);
+    animation: pulsered 2s infinite;
+    // box-shadow: 0 0 0 32px rgb(152, 4, 0, 0.5);
   }
 
   @keyframes pulsered {
