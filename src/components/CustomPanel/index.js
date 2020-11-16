@@ -194,7 +194,7 @@ export default props => {
   return (
     <div
       className={`${styles.base} ${styles.light} ${styles.right} ${
-        hidePanel ? styles.hidden : ""
+        hidePanel && !isDarkPublish ? styles.hidden : ""
       }`}
       ref={base}
     >
