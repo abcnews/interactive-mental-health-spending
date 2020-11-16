@@ -164,9 +164,13 @@ const AverageLineChart = props => {
                 x: lineBox.x + lineBox.width,
                 y:
                   d.name === "Other psychologists"
-                    ? yPos - 2
+                    ? yPos + 20
                     : d.name === "GP mental health appointments"
-                    ? yPos + 13
+                    ? yPos - 7
+                    : d.name === "Other allied mental health services"
+                    ? yPos - 7
+                    : d.name === "Therapy provided by GPs"
+                    ? yPos + 2
                     : yPos,
               };
 
