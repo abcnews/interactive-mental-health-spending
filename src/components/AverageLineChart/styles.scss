@@ -1,17 +1,73 @@
+// Mix in for 100% correct responsive layout
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+
 .root {
   font-family: sans-serif;
   font-size: 13px;
   position: relative;
   text-align: center;
 
+  // .chart-axis-key {
+  //   position: absolute;
+  //   font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
+  //     serif;
+  //   color: #4b4b4b;
+  //   font-size: 11px;
+  //   font-weight: bold;
+  //   max-width: 100px;
+  //   padding-bottom: 30px;
+  //   transform: translate(0, -100%);
+
+  //   .rebates-y {
+  //     padding-left: 1px;
+  //   }
+
+  //   .proportionY {
+  //     padding-left: 7px;
+  //   }
+  // }
+
   .chart-axis-key {
     position: absolute;
     font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
       serif;
     color: #4b4b4b;
-    font-size: 11px;
+    font-size: 14px;
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 15px;
+    }
+
     font-weight: bold;
-    max-width: 100px;
+    // max-width: 100px;
     padding-bottom: 30px;
     transform: translate(0, -100%);
 
@@ -21,6 +77,10 @@
 
     .proportionY {
       padding-left: 7px;
+    }
+
+    .title-under {
+      margin-top: 4px;
     }
   }
 
@@ -40,7 +100,7 @@
     position: absolute;
     font-family: ABCSans, sans-serif;
     color: #4b4b4b;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
     padding-top: 3px;
     transform: translate(0, 100%);
@@ -130,8 +190,15 @@
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
       1px 1px 0 #fff;
 
-    @media screen and (min-width: 641px) {
-      font-size: 10px;
+    font-size: 13px;
+
+    @include for-size(tablet-portrait-up) {
+      font-size: 14px;
+    }
+
+    // For iPhone 5 size
+    @media screen and (max-width: 340px) {
+      font-size: 11px;
     }
   }
 
@@ -336,8 +403,8 @@
   }
 }
 
-:global {
-  .averagechartmount {
-    padding: 0;
-  }
-}
+// :global {
+//   .averagechartmount {
+//     padding: 0;
+//   }
+// }

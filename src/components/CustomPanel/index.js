@@ -38,9 +38,6 @@ const alliedServicesLookup = require("./allied-mental-health.json");
 const otherAlliedLookup = require("./other-allied.json");
 const clinicalPsychLookup = require("./clinical-psych.json");
 
-import kayeGraphic from "./images/kaye-graphic.png";
-import mikeGraphic from "./images/mike-graphic.png";
-
 import cathy from "./images/cathy.png";
 import mike from "./images/mike.png";
 import laura from "./images/laura.png";

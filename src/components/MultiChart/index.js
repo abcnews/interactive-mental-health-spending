@@ -49,7 +49,7 @@ const DOTS_ENTER_DURATION = 1000;
 const Y_AXIS_DURATION = 1000;
 const DOTS_EXIT_DURATION = 1000;
 const ANIMATION_OFFSET = 0.5;
-const PULSE_RADIUS = 26;
+const PULSE_RADIUS = 64;
 
 // Chart bar constants
 const BAR_COLOR = "rgba(191, 191, 191, 0.0)";
@@ -106,7 +106,7 @@ const MultiChart = props => {
   const [averageData, setAverageData] = useState([]);
   const [testimonalDots, setTestimonialDots] = useState([]);
   const [chartTitle, setChartTitle] = useState(null);
-  const [rightEdge, setRightEdge] = useState();
+  // const [rightEdge, setRightEdge] = useState();
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -266,6 +266,8 @@ const MultiChart = props => {
   const processDots = () => {
     if (!dotsDataKey) return;
 
+    console.log(dotsDataKey)
+
     // A kind of hack so average labels don't appear
     // when transition starts but then user moves to
     // a different marker.
@@ -288,12 +290,14 @@ const MultiChart = props => {
             x: component.scaleX(lowest[dotsDataKey.xField]),
             y: component.scaleY(lowest[dotsDataKey.yField]),
             align: lowest[dotsDataKey.xField] < 5 ? "left" : "right",
+            type: "low",
           },
           {
             text: highest["SA3 name"],
             x: component.scaleX(highest[dotsDataKey.xField]),
             y: component.scaleY(highest[dotsDataKey.yField]),
             align: highest[dotsDataKey.xField] < 5 ? "left" : "right",
+            type: "high",
           },
         ]);
       }, 500);
@@ -337,6 +341,8 @@ const MultiChart = props => {
           else return false;
         });
 
+        console.log(dotsDataKey.dotColor)
+
         if (foundTesimonial) {
           setTestimonialDots([
             {
@@ -344,6 +350,7 @@ const MultiChart = props => {
               x: component.scaleX(foundTesimonial[dotsDataKey.xField]),
               y: component.scaleY(foundTesimonial[dotsDataKey.yField]),
               align: foundTesimonial[dotsDataKey.xField] < 5 ? "left" : "right",
+              color: dotsDataKey.dotColor
             },
           ]);
         }
@@ -754,7 +761,7 @@ const MultiChart = props => {
         )
         .call(g => g.selectAll(".tick text"));
 
-    setRightEdge(width - margin.right);
+    // setRightEdge(width - margin.right);
 
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
@@ -1052,7 +1059,7 @@ const MultiChart = props => {
               className={styles.titleUnder}
               style={{ color: props.dots ? props.dots.dotColor : "inherit" }}
             >
-              {chartTitle? chartTitle : <span>&nbsp;</span>}
+              {chartTitle ? chartTitle : <span>&nbsp;</span>}
             </div>
           </>
         ) : (
@@ -1176,7 +1183,7 @@ const MultiChart = props => {
               <div
                 className={`${styles.dotLabel} ${
                   label.align === "right" ? styles.alignRight : ""
-                }`}
+                } ${label.type === "low" ? styles.baseline : ""}`}
                 style={{ top: label.y, left: label.x }}
                 key={index}
               >
@@ -1242,7 +1249,7 @@ const MultiChart = props => {
           return (
             <CSSTransition key={label.text} timeout={400} classNames={"item"}>
               <div
-                className={styles.testimonialDot}
+                className={label.color === "#980400" ? styles.testimonialDotRed : styles.testimonialDot}
                 style={{
                   top: label.y - PULSE_RADIUS,
                   left: label.x - PULSE_RADIUS,
