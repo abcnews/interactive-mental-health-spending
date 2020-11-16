@@ -123,7 +123,6 @@ const AverageLineChart = props => {
   };
 
   const processAverageLines = () => {
-    console.dir(averageData);
     let collectedAverageLabels = [];
 
     const lineAverage = d3
