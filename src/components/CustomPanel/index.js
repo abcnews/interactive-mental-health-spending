@@ -42,6 +42,11 @@ import cathy from "./images/cathy.png";
 import mike from "./images/mike.png";
 import laura from "./images/laura.png";
 
+const windowLocation = window.location.href;
+console.log(windowLocation);
+const isDarkPublish = windowLocation === "https://www.abc.net.au/res/sites/news-projects/interactive-covid-mental-health/master/"
+console.log(isDarkPublish)
+
 export default props => {
   const base = useRef();
   const [hidePanel, setHidePanel] = useState(false);

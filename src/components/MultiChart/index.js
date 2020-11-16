@@ -266,8 +266,6 @@ const MultiChart = props => {
   const processDots = () => {
     if (!dotsDataKey) return;
 
-    console.log(dotsDataKey)
-
     // A kind of hack so average labels don't appear
     // when transition starts but then user moves to
     // a different marker.
@@ -341,8 +339,6 @@ const MultiChart = props => {
           else return false;
         });
 
-        console.log(dotsDataKey.dotColor)
-
         if (foundTesimonial) {
           setTestimonialDots([
             {
@@ -350,7 +346,7 @@ const MultiChart = props => {
               x: component.scaleX(foundTesimonial[dotsDataKey.xField]),
               y: component.scaleY(foundTesimonial[dotsDataKey.yField]),
               align: foundTesimonial[dotsDataKey.xField] < 5 ? "left" : "right",
-              color: dotsDataKey.dotColor
+              color: dotsDataKey.dotColor,
             },
           ]);
         }
@@ -1249,7 +1245,11 @@ const MultiChart = props => {
           return (
             <CSSTransition key={label.text} timeout={400} classNames={"item"}>
               <div
-                className={label.color === "#980400" ? styles.testimonialDotRed : styles.testimonialDot}
+                className={
+                  label.color === "#980400"
+                    ? styles.testimonialDotRed
+                    : styles.testimonialDot
+                }
                 style={{
                   top: label.y - PULSE_RADIUS,
                   left: label.x - PULSE_RADIUS,
