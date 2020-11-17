@@ -38,6 +38,7 @@ import {
   usePrevious,
   lowestHighest,
   processData,
+  mobileAndTabletCheck,
 } from "./lib";
 
 // File scoped constants
@@ -107,6 +108,7 @@ const MultiChart = props => {
   const [averageData, setAverageData] = useState([]);
   const [testimonalDots, setTestimonialDots] = useState([]);
   const [chartTitle, setChartTitle] = useState(null);
+  const [chartHeight, setChartHeight] = useState(100);
   // const [rightEdge, setRightEdge] = useState();
 
   // Previous state or props of things
@@ -264,7 +266,7 @@ const MultiChart = props => {
     setLineLabels(collectedLineLabels);
   };
 
-  const processDots = (transitionTime) => {
+  const processDots = transitionTime => {
     if (!dotsDataKey) return;
 
     // A kind of hack so average labels don't appear
@@ -581,7 +583,7 @@ const MultiChart = props => {
     dotsDots.raise();
   };
 
-  const processAverageLines = (transitionTime) => {
+  const processAverageLines = transitionTime => {
     let collectedAverageLabels = [];
 
     const lineAverage = d3
@@ -705,8 +707,14 @@ const MultiChart = props => {
     if (!component.svg) return;
 
     const isYAxisTransition = prevYMax === props.yMax;
+    const yResizeAmount = Math.abs(windowSize.height - prevWindowSize.height);
+    const xResizeAmount = Math.abs(windowSize.width - prevWindowSize.width);
 
-    console.log(windowSize.height, prevWindowSize.height);
+    // Don't resize on trivial resizes (eg. mobile browser scroll hide address bar)
+    if (mobileAndTabletCheck()) {
+      if (yResizeAmount > 0 && yResizeAmount < 150 && xResizeAmount === 0)
+        return;
+    }
 
     const width = component.svg.node().getBoundingClientRect().width;
     const height = window.innerHeight;
@@ -778,6 +786,10 @@ const MultiChart = props => {
     // in JS land.
     if (hasBeenDocked) processCharts(1);
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
+
+  useEffect(() => {
+    setChartHeight(window.innerHeight - margin.top - margin.bottom);
+  }, [margin]);
 
   // Detect docked or not so we can wait to animate
   useEffect(() => {
@@ -880,7 +892,7 @@ const MultiChart = props => {
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
-  const chartHeight = window.innerHeight - margin.top - margin.bottom;
+  // const chartHeight = window.innerHeight - margin.top - margin.bottom;
 
   return (
     <div className={styles.root}>
@@ -1079,7 +1091,7 @@ const MultiChart = props => {
         <div
           className={styles.tickTextContainer}
           style={{
-            bottom: margin.bottom,
+            top: chartHeight + margin.top,
             left: margin.left,
             width: `${chartWidth}px`,
           }}
@@ -1114,7 +1126,7 @@ const MultiChart = props => {
         <div
           className={styles.tickTextContainer}
           style={{
-            bottom: margin.bottom,
+            top: chartHeight + margin.top,
             left: margin.left,
             width: `${chartWidth}px`,
           }}
