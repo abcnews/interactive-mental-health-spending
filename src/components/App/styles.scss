@@ -131,7 +131,7 @@
       font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
         serif;
       color: #3a6485 !important;
-      font-weight: bold;
+      font-weight: 900 !important;
 
       font-size: 14px !important;
 
@@ -229,5 +229,10 @@
     .affordablecaregraphic {
       margin-bottom: 0px;
     }
+  }
+
+  .averagechartmount {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
