@@ -712,7 +712,7 @@ const MultiChart = props => {
 
     // Don't resize on trivial resizes (eg. mobile browser scroll hide address bar)
     if (mobileAndTabletCheck()) {
-      if (yResizeAmount > 0 && yResizeAmount < 150 && xResizeAmount === 0)
+      if (yResizeAmount > 0 && yResizeAmount < 128 && xResizeAmount === 0)
         return;
     }
 

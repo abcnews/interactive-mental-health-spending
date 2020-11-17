@@ -60,10 +60,10 @@
     font-family: "ABCSerif", "Book Antiqua", "Palatino Linotype", Palatino,
       serif;
     color: #4b4b4b;
-    font-size: 14px;
+    font-size: 15px;
 
     @include for-size(tablet-portrait-up) {
-      font-size: 15px;
+      font-size: 16px;
     }
 
     font-weight: bold;

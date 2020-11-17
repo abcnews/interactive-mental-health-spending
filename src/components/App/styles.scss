@@ -106,15 +106,15 @@
       }
 
       @include for-size(tablet-landscape-up) {
-        font-size: 18px !important;
+        font-size: 22px !important;
       }
 
       @include for-size(desktop-up) {
-        font-size: 19px !important;
+        font-size: 22px !important;
       }
 
       @include for-size(big-desktop-up) {
-        font-size: 20px !important;
+        font-size: 22px !important;
       }
 
       // iPhone 5 is tiny
@@ -132,6 +132,7 @@
         serif;
       color: #3a6485 !important;
       font-weight: bold;
+
       font-size: 14px !important;
 
       @include for-size(tablet-portrait-up) {
@@ -139,15 +140,15 @@
       }
 
       @include for-size(tablet-landscape-up) {
-        font-size: 18px !important;
+        font-size: 22px !important;
       }
 
       @include for-size(desktop-up) {
-        font-size: 19px !important;
+        font-size: 22px !important;
       }
 
       @include for-size(big-desktop-up) {
-        font-size: 20px !important;
+        font-size: 22px !important;
       }
 
       // iPhone 5 is tiny
