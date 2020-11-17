@@ -716,8 +716,13 @@ const MultiChart = props => {
         return;
     }
 
+    // const iOS =
+    //   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // const iw = iOS ? screen.width : window.innerWidth,
+    //   ih = iOS ? screen.height : window.innerHeight;
+
     const width = component.svg.node().getBoundingClientRect().width;
-    const height = window.innerHeight;
+    const height = windowSize.height; //window.innerHeight;
 
     component.svg.attr("width", width);
     component.svg.attr("height", height);
@@ -788,7 +793,13 @@ const MultiChart = props => {
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   useEffect(() => {
-    setChartHeight(window.innerHeight - margin.top - margin.bottom);
+    // const iOS =
+    //   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // const iw = iOS ? screen.width : window.innerWidth,
+    //   ih = iOS ? screen.height : window.innerHeight;
+
+    // setChartHeight(ih - margin.top - margin.bottom);
+    setChartHeight(windowSize.height - margin.top - margin.bottom);
   }, [margin]);
 
   // Detect docked or not so we can wait to animate
