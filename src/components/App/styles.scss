@@ -90,6 +90,12 @@
 
     .Quote.is-pullquote {
       text-align: left;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .Quote.is-pullquote footer::before {
+      content: "";
     }
 
     .Quote p {
@@ -109,6 +115,11 @@
 
       @include for-size(big-desktop-up) {
         font-size: 20px !important;
+      }
+
+      // iPhone 5 is tiny
+      @media screen and (max-width: 321px) {
+        font-size: 12px !important;
       }
 
       color: #3a6485;
@@ -137,6 +148,11 @@
 
       @include for-size(big-desktop-up) {
         font-size: 20px !important;
+      }
+
+      // iPhone 5 is tiny
+      @media screen and (max-width: 321px) {
+        font-size: 12px !important;
       }
     }
 
@@ -171,24 +187,46 @@
   }
 
   .distancegraphic,
-  .accessingcaregraphic
-  
-  {
+  .accessingcaregraphic {
     padding-top: 48px;
-    margin-bottom: -60px;
+    margin-bottom: -30px;
   }
 
   .taxdollarsgraphic {
     padding-top: 55px;
-    margin-bottom: -80px;
+    margin-bottom: -40px;
   }
 
-  .whatsgoingongraphic, .itsavedmegraphic {
+  .whatsgoingongraphic,
+  .itsavedmegraphic {
     padding-top: 40px;
-    margin-bottom: -68px;
+    margin-bottom: -38px;
   }
 
   .affordablecaregraphic {
     margin-bottom: 0px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    .distancegraphic,
+    .accessingcaregraphic {
+      padding-top: 48px;
+      margin-bottom: -60px;
+    }
+
+    .taxdollarsgraphic {
+      padding-top: 55px;
+      margin-bottom: -80px;
+    }
+
+    .whatsgoingongraphic,
+    .itsavedmegraphic {
+      padding-top: 40px;
+      margin-bottom: -68px;
+    }
+
+    .affordablecaregraphic {
+      margin-bottom: 0px;
+    }
   }
 }
