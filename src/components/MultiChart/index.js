@@ -773,7 +773,10 @@ const MultiChart = props => {
     component.yAxis.call(makeYAxis);
 
     // Re-process all charts up update
-    if (hasBeenDocked) processCharts(0);
+    // The param sets transition time
+    // First tried at 0 but of course this means false
+    // in JS land.
+    if (hasBeenDocked) processCharts(1);
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate
