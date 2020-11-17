@@ -80,6 +80,7 @@ const MultiChart = props => {
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
   const prevYMax = usePrevious(props.yMax);
+  const prevWindowSize = usePrevious(windowSize);
 
   // TODO: change this to have a prop that differentiates between chart types
   const xTicks = props.chartType === "line" ? xTicks5 : xTicks6;
@@ -142,14 +143,14 @@ const MultiChart = props => {
     component.yAxis = component.svg.append("g").classed("y-axis", true);
   };
 
-  const processCharts = () => {
+  const processCharts = transitionTime => {
     // if (!isDocked) return;
-    if (props.chartType === "line") processLines();
-    if (props.chartType === "dot") processDots();
-    if (props.chartType === "dot") processAverageLines();
+    if (props.chartType === "line") processLines(transitionTime);
+    if (props.chartType === "dot") processDots(transitionTime);
+    if (props.chartType === "dot") processAverageLines(transitionTime);
   };
 
-  const processLines = () => {
+  const processLines = transitionTime => {
     if (!Array.isArray(linesDataKey)) return;
 
     const collectedLineLabels = [];
@@ -215,7 +216,7 @@ const MultiChart = props => {
                   .attr("stroke-dasharray", `${totalLength},${totalLength}`)
                   .attr("stroke-dashoffset", totalLength)
                   .transition()
-                  .duration(LINE_ANIMATION_DURATION)
+                  .duration(transitionTime || LINE_ANIMATION_DURATION)
                   .attr("stroke-dashoffset", 0);
               }),
           update =>
@@ -263,7 +264,7 @@ const MultiChart = props => {
     setLineLabels(collectedLineLabels);
   };
 
-  const processDots = () => {
+  const processDots = (transitionTime) => {
     if (!dotsDataKey) return;
 
     // A kind of hack so average labels don't appear
@@ -421,14 +422,17 @@ const MultiChart = props => {
 
       component.averageLine
         .transition()
-        .duration(DOTS_UPDATE_DURATION + sa3s.length)
+        .duration(transitionTime || DOTS_UPDATE_DURATION + sa3s.length)
         .attr("d", d => lineGenerator(averageDotsData))
         .style("opacity", props.hideDottedLine ? 0.0 : 1.0);
     } else if (averageDotsData.length > 0) {
       // Update line
       component.averageLine
         .transition()
-        .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
+        .duration(
+          transitionTime ||
+            DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET
+        )
         .attr(
           "stroke",
           props.hideDottedLine ? "rgba(255, 255, 255, 0.0)" : "black"
@@ -438,7 +442,10 @@ const MultiChart = props => {
     } else {
       component.averageLine
         .transition()
-        .duration(DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET)
+        .duration(
+          transitionTime ||
+            DOTS_UPDATE_DURATION + sa3s.length * ANIMATION_OFFSET
+        )
         .style("opacity", 0.0)
         .end()
         .then(() => {
@@ -498,7 +505,7 @@ const MultiChart = props => {
 
               enter
                 .transition()
-                .duration(DOTS_ENTER_DURATION)
+                .duration(transitionTime || DOTS_ENTER_DURATION)
                 .delay((d, i) => i * ANIMATION_OFFSET) // Maybe don't do this effect
                 .attr("cy", d => {
                   if (d[dotsDataKey.yField] === "NP")
@@ -529,7 +536,7 @@ const MultiChart = props => {
 
               return update
                 .transition()
-                .duration(DOTS_UPDATE_DURATION)
+                .duration(transitionTime || DOTS_UPDATE_DURATION)
                 .delay((d, i) => i * ANIMATION_OFFSET) // Animation effect
                 .style("fill", d => {
                   if (props.showLowHighDots) {
@@ -559,7 +566,7 @@ const MultiChart = props => {
               if (exit.empty()) return;
             })
             .transition()
-            .duration(DOTS_EXIT_DURATION)
+            .duration(transitionTime || DOTS_EXIT_DURATION)
             .style("opacity", 0.0)
             .remove()
       )
@@ -574,7 +581,7 @@ const MultiChart = props => {
     dotsDots.raise();
   };
 
-  const processAverageLines = () => {
+  const processAverageLines = (transitionTime) => {
     let collectedAverageLabels = [];
 
     const lineAverage = d3
@@ -626,7 +633,7 @@ const MultiChart = props => {
                 .attr("stroke-dasharray", `${totalLength},${totalLength}`)
                 .attr("stroke-dashoffset", totalLength)
                 .transition()
-                .duration(LINE_ANIMATION_DURATION)
+                .duration(transitionTime || LINE_ANIMATION_DURATION)
                 .attr("stroke-dashoffset", 0)
                 .end()
                 .then(() => {
@@ -699,6 +706,8 @@ const MultiChart = props => {
 
     const isYAxisTransition = prevYMax === props.yMax;
 
+    console.log(windowSize.height, prevWindowSize.height);
+
     const width = component.svg.node().getBoundingClientRect().width;
     const height = window.innerHeight;
 
@@ -764,7 +773,7 @@ const MultiChart = props => {
     component.yAxis.call(makeYAxis);
 
     // Re-process all charts up update
-    if (hasBeenDocked) processCharts();
+    if (hasBeenDocked) processCharts(0);
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   // Detect docked or not so we can wait to animate

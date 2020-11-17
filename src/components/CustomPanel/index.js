@@ -220,10 +220,15 @@ export default props => {
       {props.config.swap &&
         props.config.panel === "alliedself" &&
         alliedService.servicesPer100 !== "" && (
+          // Most people in your postcode fall into the area SA3 NAME. In <<SA3 NAME>>,
+          // taxpayers funded <<25.6 sessions>> of care per 100 people, which cost <<$2,790>>.
+          // That’s <<a higher spend>> than the national average of 22.87 sessions for $2,375.
           <p>
-            In your area of <strong>{alliedService.name}</strong>, taxpayers
-            funded <strong>{alliedService.servicesPer100} sessions</strong> of
-            care per 100 people in 2017-18, which cost{" "}
+            Most people in your postcode fall into the area{" "}
+            <strong>{alliedService.name}</strong>. In{" "}
+            <strong>{alliedService.name}</strong>, taxpayers funded{" "}
+            <strong>{alliedService.servicesPer100} sessions</strong> of care per
+            100 people, which cost{" "}
             <strong>${commaFormatter(alliedService.dollarsPer100)}</strong>.
             That's{" "}
             <strong>{spendingLookup(alliedService.servicesPer100)}</strong>{" "}
@@ -257,7 +262,7 @@ export default props => {
             <strong>{alliedService.percentOfPeople} per cent</strong> of people
             in your area to access subsidised mental health care, which is{" "}
             <strong>
-              {Math.abs(alliedService.percentOfPeople - 5.06) < 0.3
+              {Math.abs(alliedService.percentOfPeople - 5.06) < 0.2
                 ? "around"
                 : alliedService.percentOfPeople > 5.06
                 ? "more than"
