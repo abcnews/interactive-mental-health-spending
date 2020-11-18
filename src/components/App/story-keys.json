@@ -378,7 +378,7 @@
   },
   "gpfocus": {
     "chartType": "dot2",
-    "title": "GP focussed care",
+    "title": "GP individual/family therapy",
     "yMax": "700",
     "highlightBars": [],
     "showLowHighDots": true,
