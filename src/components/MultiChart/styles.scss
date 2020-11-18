@@ -184,6 +184,10 @@
     @include for-size(tablet-portrait-up) {
       font-size: 14px;
     }
+
+    @media screen and (max-width: 340px) {
+      font-size: 12px;
+    }
   }
 
   // .average-label {
