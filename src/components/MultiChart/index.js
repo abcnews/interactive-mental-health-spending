@@ -789,7 +789,7 @@ const MultiChart = props => {
     // The param sets transition time
     // First tried at 0 but of course this means false
     // in JS land.
-    if (hasBeenDocked) processCharts(1);
+    if (hasBeenDocked) processCharts(!isYAxisTransition ? false : 1);
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
   useEffect(() => {
@@ -799,7 +799,7 @@ const MultiChart = props => {
     //   ih = iOS ? screen.height : window.innerHeight;
 
     // setChartHeight(ih - margin.top - margin.bottom);
-    setChartHeight(windowSize.height - margin.top - margin.bottom);
+    setChartHeight(windowSize.height - margin.top - margin.bottom || 100);
   }, [margin]);
 
   // Detect docked or not so we can wait to animate
@@ -1169,21 +1169,21 @@ const MultiChart = props => {
                 width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
-              Major city low advantage
+              Major city low advan&shy;tage
             </span>
             <span
               style={{
                 width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
-              Major city medium advantage
+              Major city medium advan&shy;tage
             </span>
             <span
               style={{
                 width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
               }}
             >
-              Major city high advantage
+              Major city high advan&shy;tage
             </span>
           </div>
         </div>
