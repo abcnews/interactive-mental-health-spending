@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import useWindowSize from "./useWindowSize";
-// import { Fade } from "@material-ui/core";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "./styles.scss";
 
@@ -109,10 +108,6 @@ const MultiChart = props => {
   const [testimonalDots, setTestimonialDots] = useState([]);
   const [chartTitle, setChartTitle] = useState(null);
   const [chartHeight, setChartHeight] = useState(100);
-  // const [rightEdge, setRightEdge] = useState();
-
-  // Previous state or props of things
-  // const prevLineLabels = usePrevious(lineLabels);
 
   // Instance vars using refs
   // This object will stick around over the lifetime
@@ -135,10 +130,6 @@ const MultiChart = props => {
     // Set component scoped SVG selection
     component.svg = d3.select(root.current);
 
-    // TODO: Maybe find a way to detect if animating
-    // and modify transitions based on this (if there's time)
-    // component.isAnimating = false;
-
     // Add our x & y axes groups to component scoped ref
     // (We actually draw the axes later in the initial window size effect)
     component.xAxis = component.svg.append("g").classed("x-axis", true);
@@ -146,7 +137,6 @@ const MultiChart = props => {
   };
 
   const processCharts = transitionTime => {
-    // if (!isDocked) return;
     if (props.chartType === "line") processLines(transitionTime);
     if (props.chartType === "dot") processDots(transitionTime);
     if (props.chartType === "dot") processAverageLines(transitionTime);

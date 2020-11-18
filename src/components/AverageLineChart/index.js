@@ -686,21 +686,21 @@ const AverageLineChart = props => {
               width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
             }}
           >
-            Major city low advantage
+            Major city low advan&shy;tage
           </span>
           <span
             style={{
               width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
             }}
           >
-            Major city medium advantage
+            Major city medium advan&shy;tage
           </span>
           <span
             style={{
               width: `${chartWidth / 6 - TICK_TEXT_MARGIN}px`,
             }}
           >
-            Major city high advantage
+            Major city high advan&shy;tage
           </span>
         </div>
       </div>

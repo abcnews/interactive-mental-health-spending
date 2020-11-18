@@ -110,7 +110,7 @@
     font-size: 10px;
     font-weight: bold;
     padding-top: 3px;
-    // transform: translate(0, 100%);
+
     @include for-size(tablet-portrait-up) {
       hyphens: none;
     }
