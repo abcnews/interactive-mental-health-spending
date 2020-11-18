@@ -30,7 +30,6 @@ const d3 = {
 
 // Local library imports
 import {
-  sortData,
   calculateMargins,
   xTicks5,
   xTicks6,
@@ -57,6 +56,7 @@ const BAR_COLOR = "rgba(191, 191, 191, 0.0)";
 const BAR_HIGHLIGHT_COLOR = "#D9D9D9";
 const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 52;
+const DOT_BAR_HEIGHT_EXTEND_MOBILE = 62;
 const BACKGROUND_COLOR = "#f0f0f0";
 const BAR_BORDER_COLOR = "white";
 
@@ -992,7 +992,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(1)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
                 // Previously we had different colours for own bar
@@ -1007,7 +1012,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(2)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(2)
@@ -1021,7 +1031,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(3)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(3)
@@ -1035,7 +1050,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(4)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(4)
@@ -1049,7 +1069,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(5)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 borderRight: "1px solid #f0f0f0",
                 backgroundColor: highlightBars.includes(5)
@@ -1063,7 +1088,12 @@ const MultiChart = props => {
               className={styles.dotHighlightBar}
               style={{
                 height: highlightBars.includes(6)
-                  ? `${chartHeight + DOT_BAR_HEIGHT_EXTEND}px`
+                  ? `${
+                      chartHeight +
+                      (windowSize.width < 600
+                        ? DOT_BAR_HEIGHT_EXTEND_MOBILE
+                        : DOT_BAR_HEIGHT_EXTEND)
+                    }px`
                   : `${chartHeight}px`,
                 backgroundColor: highlightBars.includes(6)
                   ? ownRegion === 6 && props.highlightOwnBar
@@ -1334,156 +1364,3 @@ MultiChart.defaultProps = {
 };
 
 export default MultiChart;
-
-// Unused code - delete later
-
-// Filter our dots per data key
-// const sa3s = dataObject[dotsDataKey.dataKey].filter(dot => {
-//   if (dot["SA3 group"] === "ungrouped") return false;
-//   if (dot[dotsDataKey.yField] === "NP") return false;
-//   return true;
-// });
-
-// setTimeout(() => {
-//   const testimonyTarget = d3.select(".dots-testimony-target");
-//   if (!testimonyTarget.empty()) {
-//     const pulseDot = component.svg
-//       .append("circle")
-//       .attr("cx", testimonyTarget.attr("cx"))
-//       .attr("cy", testimonyTarget.attr("cy"))
-//       .style("fill", "rgba(39, 172, 255, 0.49)")
-//       .style("stroke", null)
-//       .classed("dots-animated-pulse", true);
-
-//     pulse(pulseDot);
-
-//     // Raise our dots to the top
-//     pulseDot.raise();
-//     testimonyTarget.raise();
-//   }
-// }, DOTS_ENTER_DURATION);
-
-// Experimenting with adding flashing dot on testimonials target
-// .end()
-// .then(() => {
-// const ownDotTarget = d3.select(".dots-own-dot");
-// if (!ownDotTarget.empty()) ownDotTarget.raise();
-// const testimonyTarget = d3.select(".dots-testimony-target");
-// if (testimonyTarget.empty()) return;
-// const pulseDot = component.svg
-//   .append("circle")
-//   .attr("cx", testimonyTarget.attr("cx"))
-//   .attr("cy", testimonyTarget.attr("cy"))
-//   .style("fill", "rgba(39, 172, 255, 0.49)")
-//   .style("stroke", null)
-//   .classed("dots-animated-pulse", true);
-// pulse(pulseDot);
-// // Raise our dots to the top
-// pulseDot.raise();
-// testimonyTarget.raise();
-// })
-// .catch(e => null);
-
-// Add the average line to the chart
-// component.svg
-//   .append("path")
-//   .classed("dots", true)
-//   .data([averageDotsData])
-//   .attr("fill", "none")
-//   .attr("stroke", "#929292")
-//   .attr("stroke-width", 1)
-//   .attr("stroke-dasharray", `2, 2`)
-//   .style("opacity", 0.0)
-//   .attr("d", lineGenerator)
-//   .transition()
-//   .delay(1000)
-//   .style("opacity", 1.0);
-
-// component.svg.select(`circle.dots-animated-pulse`).remove();
-
-// setTimeout(() => {
-//   const ownDotTarget = d3.select(".dots-own-dot");
-//   if (!ownDotTarget.empty()) ownDotTarget.raise();
-
-//   const testimonyTarget = d3.select(".dots-testimony-target");
-
-//   if (!testimonyTarget.empty()) {
-//     const pulseDot = component.svg
-//       .append("circle")
-//       .attr("cx", testimonyTarget.attr("cx"))
-//       .attr("cy", testimonyTarget.attr("cy"))
-//       .style("fill", "rgba(39, 172, 255, 0.49)")
-//       .style("stroke", null)
-//       .classed("dots-animated-pulse", true);
-
-//     pulse(pulseDot);
-
-//     // Raise our dots to the top
-//     pulseDot.raise();
-//     testimonyTarget.raise();
-//   }
-// }, DOTS_UPDATE_DURATION);
-
-// const path = component.svg.select("path.dots");
-
-// // Fade line back in if it has been removed
-// if (path.empty()) {
-//   component.svg
-//     .append("path")
-//     .classed("dots", true)
-//     .data([averageDotsData])
-//     .attr("fill", "none")
-//     .attr("stroke", "#929292")
-//     .attr("stroke-width", 1)
-//     .attr("stroke-dasharray", `2, 2`)
-//     .style("opacity", 0.0)
-//     .attr("d", lineGenerator)
-//     .transition()
-//     .delay(250)
-//     .style("opacity", 1.0);
-// } else {
-//   // Otherwise:
-//   // Update average line
-//   path
-//     .data([averageDotsData])
-//     .transition()
-//     .attr("d", lineGenerator);
-// }
-
-// .end()
-// .then(() => {
-
-// const ownDotTarget = d3.select(".dots-own-dot");
-// if (!ownDotTarget.empty()) ownDotTarget.raise();
-// const testimonyTarget = d3.select(".dots-testimony-target");
-// if (!testimonyTarget.empty()) {
-//   const pulseDot = component.svg
-//     .append("circle")
-//     .attr("cx", testimonyTarget.attr("cx"))
-//     .attr("cy", testimonyTarget.attr("cy"))
-//     .style("fill", "rgba(39, 172, 255, 0.49)")
-//     .style("stroke", null)
-//     .classed("dots-animated-pulse", true);
-//   pulse(pulseDot);
-//   // Raise our dots to the top
-//   pulseDot.raise();
-//   testimonyTarget.raise();
-// }
-// })
-// .catch(e => null);
-
-// Define a D3 pulse animation
-// function pulse(circle) {
-//   (function repeat() {
-//     circle
-//       .attr("r", 0)
-//       .style("opacity", 1.0)
-//       .transition()
-//       .duration(1000)
-//       .attr("r", 12)
-//       .transition()
-//       .duration(250)
-//       .style("opacity", 0.0)
-//       .on("end", repeat);
-//   })();
-// }
