@@ -134,6 +134,8 @@ const MultiChart = props => {
     // (We actually draw the axes later in the initial window size effect)
     component.xAxis = component.svg.append("g").classed("x-axis", true);
     component.yAxis = component.svg.append("g").classed("y-axis", true);
+
+    component.initialScreenHeight = window.innerHeight;
   };
 
   const processCharts = transitionTime => {
@@ -696,14 +698,16 @@ const MultiChart = props => {
     // Wait till we have an svg mounted
     if (!component.svg) return;
 
-    const isYAxisTransition = prevYMax === props.yMax;
+    const isNotYAxisTransition = prevYMax === props.yMax;
     const yResizeAmount = Math.abs(windowSize.height - prevWindowSize.height);
     const xResizeAmount = Math.abs(windowSize.width - prevWindowSize.width);
+    const isAddressBarHide =
+      yResizeAmount > 0 && yResizeAmount < 128 && xResizeAmount === 0;
+    const isMobile = mobileAndTabletCheck();
 
     // Don't resize on trivial resizes (eg. mobile browser scroll hide address bar)
-    if (mobileAndTabletCheck()) {
-      if (yResizeAmount > 0 && yResizeAmount < 128 && xResizeAmount === 0)
-        return;
+    if (isMobile) {
+      if (isAddressBarHide) return;
     }
 
     // const iOS =
@@ -712,32 +716,43 @@ const MultiChart = props => {
     //   ih = iOS ? screen.height : window.innerHeight;
 
     const width = component.svg.node().getBoundingClientRect().width;
-    const height = windowSize.height; //window.innerHeight;
+    const height =
+      isMobile && !isNotYAxisTransition
+        ? component.initialScreenHeight
+        : windowSize.height; //window.innerHeight;
 
     component.svg.attr("width", width);
     component.svg.attr("height", height);
 
     // Recalculate margins
-    const margin = calculateMargins(width, height);
+    const newMargin = calculateMargins(width, height);
+
+    setChartHeight(
+      (isMobile && !isNotYAxisTransition
+        ? component.initialScreenHeight
+        : windowSize.height) -
+        newMargin.top -
+        newMargin.bottom || 100
+    );
 
     // Update component state for calculated values
-    setMargin(margin);
+    setMargin(newMargin);
     setSvgWidth(width);
 
     // Just make local scale functions again
     component.scaleX = d3
       .scalePoint()
       .domain(xTicks)
-      .range([margin.left, width - margin.right]);
+      .range([newMargin.left, width - newMargin.right]);
 
     component.scaleY = d3
       .scaleLinear()
       .domain([0, props.yMax])
-      .range([height - margin.bottom, margin.top]);
+      .range([height - newMargin.bottom, newMargin.top]);
 
     // Recalculate axis generators
     const makeXAxis = g =>
-      g.attr("transform", `translate(0,${height - margin.bottom})`).call(
+      g.attr("transform", `translate(0,${height - newMargin.bottom})`).call(
         d3
           .axisBottom(component.scaleX)
           .tickFormat("")
@@ -747,14 +762,14 @@ const MultiChart = props => {
 
     const makeYAxis = group =>
       group
-        .attr("transform", `translate(${margin.left},0)`)
+        .attr("transform", `translate(${newMargin.left},0)`)
         .transition()
-        .duration(isYAxisTransition ? 0 : Y_AXIS_DURATION) // Only transition on yMax
+        .duration(isNotYAxisTransition ? 0 : Y_AXIS_DURATION) // Only transition on yMax
         .call(
           d3
             .axisLeft(component.scaleY)
             .tickPadding([3])
-            .tickSize(-(width - margin.left - margin.right))
+            .tickSize(-(width - newMargin.left - newMargin.right))
             .ticks(props.chartType === "line" ? 10 : 5)
             .tickFormat(formatYTicks)
         )
@@ -769,8 +784,6 @@ const MultiChart = props => {
         )
         .call(g => g.selectAll(".tick text"));
 
-    // setRightEdge(width - margin.right);
-
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
     component.yAxis.call(makeYAxis);
@@ -779,18 +792,24 @@ const MultiChart = props => {
     // The param sets transition time
     // First tried at 0 but of course this means false
     // in JS land.
-    if (hasBeenDocked) processCharts(!isYAxisTransition ? false : 1);
+    if (hasBeenDocked) processCharts(!isNotYAxisTransition ? false : 1);
   }, [windowSize.width, windowSize.height, props.chartType, props.yMax]);
 
-  useEffect(() => {
-    // const iOS =
-    //   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    // const iw = iOS ? screen.width : window.innerWidth,
-    //   ih = iOS ? screen.height : window.innerHeight;
+  // useEffect(() => {
+  //   // const iOS =
+  //   //   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  //   // const iw = iOS ? screen.width : window.innerWidth,
+  //   //   ih = iOS ? screen.height : window.innerHeight;
 
-    // setChartHeight(ih - margin.top - margin.bottom);
-    setChartHeight(windowSize.height - margin.top - margin.bottom || 100);
-  }, [margin]);
+  //   // setChartHeight(ih - margin.top - margin.bottom);
+  //   // setChartHeight(
+  //   //   (mobileAndTabletCheck()
+  //   //     ? component.initialScreenHeight
+  //   //     : windowSize.height) -
+  //   //     margin.top -
+  //   //     margin.bottom || 100
+  //   // );
+  // }, [margin]);
 
   // Detect docked or not so we can wait to animate
   useEffect(() => {
