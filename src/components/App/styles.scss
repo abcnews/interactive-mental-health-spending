@@ -73,6 +73,11 @@
 
     .Gallery-controls {
       justify-content: flex-end;
+      top: unset;
+      left: unset;
+      transform: unset !important;
+      bottom: 0px;
+      right: 4px;
     }
 
     .Gallery-index {
