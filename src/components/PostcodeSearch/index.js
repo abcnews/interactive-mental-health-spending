@@ -4,11 +4,15 @@ import AsyncSelect from "react-select/async";
 import axios from "axios";
 import Fuse from "fuse.js";
 import debounce from "debounce-promise";
+import smoothScroll from "smoothscroll";
+
+import smoothScrollPollyfill from "smoothscroll-polyfill";
+smoothScrollPollyfill.polyfill();
 
 // Import images
 import mapPin from "./nav-icon-white.png";
 
-const MIN_INPUT_LENGTH = 3;
+// const MIN_INPUT_LENGTH = 3;
 const BOUNCE_TIMEOUT = 250;
 
 // Start of React component
@@ -143,6 +147,19 @@ export default props => {
   // Fires when user sets postcode
   const handleChange = option => {
     props.handleSelection(option);
+
+    console.log(option);
+
+    // Handle clear the select
+    if (option == null) return;
+
+    // Select element and scroll to it
+    let firstPanel = document.querySelector(".scrollystagemount");
+
+    if (!firstPanel) return;
+
+    // Use an NPM module to scroll because native scolling is not consistent across browsers
+    smoothScroll(firstPanel);
   };
 
   const promiseOptions = async inputValue => {
