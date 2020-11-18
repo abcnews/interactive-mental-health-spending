@@ -58,7 +58,7 @@ const BAR_HEIGHT_EXTEND = 22;
 const DOT_BAR_HEIGHT_EXTEND = 52;
 const DOT_BAR_HEIGHT_EXTEND_MOBILE = 66;
 const BACKGROUND_COLOR = "#f0f0f0";
-const BAR_BORDER_COLOR = "white";
+const BAR_BORDER_COLOR = "#f9f9f9";
 
 // Load our data and assign to object
 const dataObject = {
