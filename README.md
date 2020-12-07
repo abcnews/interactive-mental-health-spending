@@ -1,6 +1,6 @@
-# interactive-covid-mental-health
+# Far from care
 
-Interactive code for an ABC project.
+Interactive code for our story on Mental Health spending.
 
 A project generated from [aunty](https://github.com/abcnews/aunty)'s `react` project template.
 
@@ -8,4 +8,6 @@ A project generated from [aunty](https://github.com/abcnews/aunty)'s `react` pro
 
 - Joshua Byrd ([phocks@gmail.com](mailto:phocks@gmail.com))
 
-http://nucwed.aus.aunty.abc.net.au/news/2020-08-07/covid-mental-health/12512378?proxy_interactive-covid-mental-health=WS204914#devmode
+## Live article
+
+https://www.abc.net.au/news/2020-12-08/covid-mental-health-system-medicare-inequality/12512378?nw=0
