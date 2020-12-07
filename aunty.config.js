@@ -2,7 +2,7 @@ const { resolve } = require("path");
 
 module.exports = {
   build: {
-    addModernJS: true
+    addModernJS: true,
   },
   webpack: config => {
     const rules = config.module.rules;
@@ -18,7 +18,7 @@ module.exports = {
       resolve(__dirname, "node_modules/d3-scale-chromatic"),
       resolve(__dirname, "node_modules/d3-shape"),
       resolve(__dirname, "node_modules/d3-transition"),
-      resolve(__dirname, "node_modules/fuse.js"),
+      resolve(__dirname, "node_modules/fuse.js")
       // resolve(__dirname, "node_modules/d3-force"),
       // resolve(__dirname, "node_modules/d3-scale"),
       // resolve(__dirname, "node_modules/delaunator")
@@ -36,6 +36,13 @@ module.exports = {
     //   ]
     // });
 
-    return config;
-  }
+    return {
+      ...config,
+      performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000,
+      },
+    };
+  },
 };

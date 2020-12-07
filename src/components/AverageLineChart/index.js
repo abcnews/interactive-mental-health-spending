@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import useWindowSize from "../MultiChart/useWindowSize";
-import { Fade } from "@material-ui/core";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "./styles.scss";
 
@@ -30,25 +29,16 @@ const d3 = {
 
 // Local library imports
 import {
-  sortData,
   calculateMargins,
   xTicks5,
   xTicks6,
-  generateAverageData,
   usePrevious,
-  lowestHighest,
-  processData,
 } from "./lib";
 
 // File scoped constants
-const dotRadius = 6;
 const LINE_ANIMATION_DURATION = 2000;
 const TICK_TEXT_MARGIN = 4;
-const DOTS_UPDATE_DURATION = 1000;
-const DOTS_ENTER_DURATION = 1000;
 const Y_AXIS_DURATION = 1000;
-const DOTS_EXIT_DURATION = 1000;
-const ANIMATION_OFFSET = 0.5;
 const PULSE_RADIUS = 26;
 
 // Chart bar constants
@@ -60,7 +50,6 @@ const BACKGROUND_COLOR = "#f0f0f0";
 
 // The main React function component
 const AverageLineChart = props => {
-  // const { xField, yField, ...restProps } = props;
   const root = useRef(); // SVG element ref
   const windowSize = useWindowSize();
   const prevYMax = usePrevious(props.yMax);
@@ -81,16 +70,16 @@ const AverageLineChart = props => {
   const [ownQuintile, setOwnQuintile] = useState(null);
   const [ownRegion, setOwnRegion] = useState(null);
   const [highlightBars, setHighlightBars] = useState([]);
-  const [lineLabels, setLineLabels] = useState([]);
-  const [linesDataKey, setLinesDataKey] = useState([]);
-  const [dotsDataKey, setDotsDataKey] = useState();
-  const [dotTopBottomLabels, setDotTopBottomLabels] = useState([]);
-  const [dotCustomLabels, setDotCustomLabels] = useState([]);
+  // const [lineLabels, setLineLabels] = useState([]);
+  // const [linesDataKey, setLinesDataKey] = useState([]);
+  // const [dotsDataKey, setDotsDataKey] = useState();
+  // const [dotTopBottomLabels, setDotTopBottomLabels] = useState([]);
+  // const [dotCustomLabels, setDotCustomLabels] = useState([]);
   const [averageLineLabels, setAverageLineLabels] = useState([]);
   const [averageData, setAverageData] = useState([]);
-  const [testimonalDots, setTestimonialDots] = useState([]);
-  const [chartTitle, setChartTitle] = useState("");
-  const [rightEdge, setRightEdge] = useState();
+  // const [testimonalDots, setTestimonialDots] = useState([]);
+  // const [chartTitle, setChartTitle] = useState("");
+  // const [rightEdge, setRightEdge] = useState();
 
   // Previous state or props of things
   // const prevLineLabels = usePrevious(lineLabels);
@@ -319,7 +308,7 @@ const AverageLineChart = props => {
         )
         .call(g => g.selectAll(".tick text"));
 
-    setRightEdge(width - margin.right);
+    // setRightEdge(width - margin.right);
 
     // Actually update the axes in the SVG
     component.xAxis.call(makeXAxis);
@@ -343,8 +332,8 @@ const AverageLineChart = props => {
       if (props.triggerOnDock) {
         // processMarker();
         setHasBeenDocked(true);
-        setLinesDataKey(props.lines);
-        setDotsDataKey(props.dots);
+        // setLinesDataKey(props.lines);
+        // setDotsDataKey(props.dots);
         setAverageData(props.averages);
         setOwnQuintile(props.userQuintile);
         setOwnRegion(props.userRegion);
@@ -404,13 +393,13 @@ const AverageLineChart = props => {
     ownRegion,
   ]);
 
-  useEffect(() => {
-    setLinesDataKey(props.lines);
-  }, [props.lines]);
+  // useEffect(() => {
+  //   setLinesDataKey(props.lines);
+  // }, [props.lines]);
 
-  useEffect(() => {
-    setDotsDataKey(props.dots);
-  }, [props.dots]);
+  // useEffect(() => {
+  //   setDotsDataKey(props.dots);
+  // }, [props.dots]);
 
   useEffect(() => {
     if (isDocked || hasBeenDocked) setAverageData(props.averages);
@@ -420,9 +409,9 @@ const AverageLineChart = props => {
     if (isDocked || hasBeenDocked) processAverageLines();
   }, [averageData]);
 
-  useEffect(() => {
-    setChartTitle(props.chartTitle);
-  }, [props.chartTitle]);
+  // useEffect(() => {
+  //   setChartTitle(props.chartTitle);
+  // }, [props.chartTitle]);
 
   // Calculate values for return
   const chartWidth = svgWidth - margin.left - margin.right;
@@ -606,14 +595,14 @@ const AverageLineChart = props => {
         )}
       </div>
 
-      <div
+      {/* <div
         className={styles.chartTitle}
         style={{ top: margin.top, left: rightEdge }}
       >
         <Fade in={props.chartType !== "line"}>
           <span>{chartTitle}</span>
         </Fade>
-      </div>
+      </div> */}
 
       {props.chartType === "line" && (
         <div
@@ -707,7 +696,7 @@ const AverageLineChart = props => {
 
       {/* LABELS */}
 
-      <TransitionGroup className={styles.transitionGroup}>
+      {/* <TransitionGroup className={styles.transitionGroup}>
         {lineLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={0} classNames={"item"}>
@@ -721,9 +710,9 @@ const AverageLineChart = props => {
             </CSSTransition>
           );
         })}
-      </TransitionGroup>
+      </TransitionGroup> */}
 
-      <TransitionGroup className={styles.transitionGroup}>
+      {/* <TransitionGroup className={styles.transitionGroup}>
         {dotTopBottomLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={500} classNames={"item"}>
@@ -739,10 +728,10 @@ const AverageLineChart = props => {
             </CSSTransition>
           );
         })}
-      </TransitionGroup>
+      </TransitionGroup> */}
 
       {/* When a user selects an area these show up in the scrollyteller */}
-      <TransitionGroup className={styles.transitionGroup}>
+      {/* <TransitionGroup className={styles.transitionGroup}>
         {dotCustomLabels.map((label, index) => {
           return (
             <CSSTransition key={index} timeout={400} classNames={"item"}>
@@ -771,7 +760,7 @@ const AverageLineChart = props => {
             </CSSTransition>
           );
         })}
-      </TransitionGroup>
+      </TransitionGroup> */}
 
       {/* Average line labels */}
       <TransitionGroup className={styles.transitionGroup}>
@@ -791,7 +780,7 @@ const AverageLineChart = props => {
 
       {/* Testimonial animated dot */}
 
-      <TransitionGroup className={styles.transitionGroup}>
+      {/* <TransitionGroup className={styles.transitionGroup}>
         {testimonalDots.map((label, index) => {
           return (
             <CSSTransition key={label.text} timeout={400} classNames={"item"}>
@@ -835,7 +824,7 @@ const AverageLineChart = props => {
             </CSSTransition>
           );
         })}
-      </TransitionGroup>
+      </TransitionGroup> */}
     </div>
   );
 };
