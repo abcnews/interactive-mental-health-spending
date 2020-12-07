@@ -148,8 +148,6 @@ export default props => {
   const handleChange = option => {
     props.handleSelection(option);
 
-    console.log(option);
-
     // Handle clear the select
     if (option == null) return;
 

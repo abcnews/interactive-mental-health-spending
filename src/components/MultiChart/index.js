@@ -309,8 +309,6 @@ const MultiChart = props => {
           else return false;
         });
 
-        console.log(matched[dotsDataKey.yField]);
-
         if (matched && matched[dotsDataKey.yField] !== "NP") {
           setDotCustomLabels([
             {

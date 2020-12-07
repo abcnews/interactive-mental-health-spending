@@ -78,8 +78,6 @@ export default props => {
   ]);
 
   const onMarker = config => {
-    // console.log("Config:", config);
-
     if (!config.key) return;
     if (typeof storyKeys[config.key] === "undefined") return;
 
