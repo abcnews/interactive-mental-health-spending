@@ -309,7 +309,9 @@ const MultiChart = props => {
           else return false;
         });
 
-        if (matched) {
+        console.log(matched[dotsDataKey.yField]);
+
+        if (matched && matched[dotsDataKey.yField] !== "NP") {
           setDotCustomLabels([
             {
               text: matched["SA3 name"],
@@ -318,6 +320,8 @@ const MultiChart = props => {
               align: matched[dotsDataKey.xField] < 5 ? "left" : "right",
             },
           ]);
+        } else {
+          setDotCustomLabels([]);
         }
       }, 500);
     } else {
