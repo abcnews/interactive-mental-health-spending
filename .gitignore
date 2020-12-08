@@ -8,3 +8,9 @@
 # misc
 .DS_Store
 npm-debug.log
+
+# data files
+/utils/callout-responses.csv
+/utils/callout-response.json
+/assets/data/callout-responses.csv
+/assets/data/callout-sa3-mapped.csv
