@@ -264,7 +264,7 @@ export default props => {
           }
 
           if (action === "input-blur") {
-            if (typeof component.filteredOptions[0] !== undefined) {
+            if (component.filteredOptions[0]) {
               const option = component.filteredOptions[0].data;
               // console.log(option);
               props.handleSelection(option);
@@ -277,6 +277,9 @@ export default props => {
           }
         }}
         blurInputOnSelect={true}
+        onFocus={(() => {
+console.log("focuudssssss")
+        })}
       />
     </div>
   );
