@@ -25,8 +25,11 @@ export default props => {
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
   const [options, setOptions] = useState(null);
   const [postcodeToSa3, setPostcodeToSa3] = useState(null);
+  const [closestMatch, setClosestMatch] = useState(null);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const init = async () => {
+    component.filteredOptions = [];
     // Get some data on mount
     // TODO: Maybe make sure we actually have this data
     // and print an error or something
@@ -149,7 +152,10 @@ export default props => {
     props.handleSelection(option);
 
     // Handle clear the select
-    if (option == null) return;
+    if (option === null) {
+      component.filteredOptions = [];
+      return;
+    }
 
     // Select element and scroll to it
     let firstPanel = document.querySelector(".scrollystagemount");
@@ -174,8 +180,8 @@ export default props => {
         type: "postcode",
       }));
 
-      // await wait(250);
-
+      // console.log(mappedOptions);
+      setClosestMatch(mappedOptions[0]);
       return mappedOptions;
     }
 
@@ -212,27 +218,72 @@ export default props => {
     });
   }, [suburbToPostcodeData]);
 
+  // useEffect(() => {
+  //   console.log(closestMatch);
+  // }, closestMatch);
+
+  const customFilterOption = (option, rawInput) => {
+    const words = rawInput.split(" ");
+    const pleaseInclude = words.reduce(
+      (acc, cur) =>
+        acc && option.label.toLowerCase().includes(cur.toLowerCase()),
+      true
+    );
+
+    if (pleaseInclude)
+      component.filteredOptions = [...component.filteredOptions, option];
+
+    return pleaseInclude;
+  };
+
   return (
     <div className={styles.root}>
       <AsyncSelect
         placeholder={"Search your suburb or postcode"}
         cacheOptions={false}
         loadOptions={component.debouncedPromiseOptions}
-        onChange={handleChange}
+        // onChange={(option, { action }) => {
+        //   console.log(action);
+        //   if (action === "clear") {
+        //     component.filteredOptions = [];
+        //     props.handleSelection(null);
+        //   }
+        // }}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
-        isClearable={true}
+        // isClearable={true}
         noOptionsMessage={({ inputValue }) => {
           if (inputValue.length < 3) return "Search your suburb or postcode";
           return "Nothing found...";
         }}
+        filterOption={customFilterOption}
+        onInputChange={(input, { action }) => {
+          // console.log(action);
+          if (action === "input-change") {
+            component.filteredOptions = [];
+          }
+
+          if (action === "input-blur") {
+            if (typeof component.filteredOptions[0] !== undefined) {
+              const option = component.filteredOptions[0].data;
+              // console.log(option);
+              props.handleSelection(option);
+              handleChange(component.filteredOptions[0].data);
+            } 
+            
+            // else {
+            //   handleChange(null);
+            // }
+          }
+        }}
+        blurInputOnSelect={true}
       />
     </div>
   );
 };
 
-async function wait(ms) {
-  return new Promise(resolve => {
-    setTimeout(resolve, ms);
-  });
-}
+// async function wait(ms) {
+//   return new Promise(resolve => {
+//     setTimeout(resolve, ms);
+//   });
+// }
