@@ -21,43 +21,45 @@ export default props => {
   const componentRef = useRef({});
   const { current: component } = componentRef;
 
-  // const [postcodes, setPostcodes] = useState(null);
   const [suburbToPostcodeData, setSuburbToPostcodeData] = useState(null);
-  const [options, setOptions] = useState(null);
-  const [postcodeToSa3, setPostcodeToSa3] = useState(null);
-  const [closestMatch, setClosestMatch] = useState(null);
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+  // const [postcodes, setPostcodes] = useState(null);
+  // const [options, setOptions] = useState(null);
+  // const [postcodeToSa3, setPostcodeToSa3] = useState(null);
 
   const init = async () => {
     component.filteredOptions = [];
+
+    // NOTE: MOST OF THIS IS HANDLED BY FUSE FUZZY SEARCH NOW
+
     // Get some data on mount
     // TODO: Maybe make sure we actually have this data
     // and print an error or something
     // NOTE: We're using let vars here (for some reason)
-    let result = await axios.get(
-      `${__webpack_public_path__}sa3-codes-and-names-and-states.json`
-    );
+    // let result = await axios.get(
+    //   `${__webpack_public_path__}sa3-codes-and-names-and-states.json`
+    // );
 
-    // Sort SA3 areas
-    const sa3s = result.data.sort((a, b) =>
-      a.SA3_NAME.localeCompare(b.SA3_NAME)
-    );
+    // // Sort SA3 areas
+    // const sa3s = result.data.sort((a, b) =>
+    //   a.SA3_NAME.localeCompare(b.SA3_NAME)
+    // );
 
     // Map to options that React select can use
-    const sa3sAsOptions = sa3s.map(sa3 => ({
-      value: sa3.SA3_CODE,
-      label: sa3.SA3_NAME,
-    }));
+    // const sa3sAsOptions = sa3s.map(sa3 => ({
+    //   value: sa3.SA3_CODE,
+    //   label: sa3.SA3_NAME,
+    // }));
 
-    setOptions(sa3sAsOptions);
+    // setOptions(sa3sAsOptions);
 
-    result = await axios.get(
-      `${__webpack_public_path__}postcode-to-sa3-lookup.json`
-    );
+    // result = await axios.get(
+    //   `${__webpack_public_path__}postcode-to-sa3-lookup.json`
+    // );
 
-    setPostcodeToSa3(result.data);
+    // setPostcodeToSa3(result.data);
 
-    result = await axios.get(
+    let result = await axios.get(
       `${__webpack_public_path__}suburb-to-postcode.json`
     );
 
@@ -113,9 +115,6 @@ export default props => {
       cursor: "pointer",
       padding: "5px 4px 3px 58px",
       fontWeight: "400",
-      // "&:focused": {
-      //   borderColor: "red",
-      // },
       boxShadow: "none",
     }),
     dropdownIndicator: (provided, state) => ({
@@ -150,6 +149,7 @@ export default props => {
   // Fires when user sets postcode
   const handleChange = option => {
     props.handleSelection(option);
+    setSelectedOption(option);
 
     // Handle clear the select
     if (option === null) {
@@ -180,8 +180,6 @@ export default props => {
         type: "postcode",
       }));
 
-      // console.log(mappedOptions);
-      setClosestMatch(mappedOptions[0]);
       return mappedOptions;
     }
 
@@ -217,10 +215,6 @@ export default props => {
       keys: ["suburb"],
     });
   }, [suburbToPostcodeData]);
-
-  // useEffect(() => {
-  //   console.log(closestMatch);
-  // }, closestMatch);
 
   const customFilterOption = (option, rawInput) => {
     const words = rawInput.split(" ");
@@ -258,7 +252,6 @@ export default props => {
         }}
         filterOption={customFilterOption}
         onInputChange={(input, { action }) => {
-          // console.log(action);
           if (action === "input-change") {
             component.filteredOptions = [];
           }
@@ -269,24 +262,12 @@ export default props => {
               // console.log(option);
               props.handleSelection(option);
               handleChange(component.filteredOptions[0].data);
-            } 
-            
-            // else {
-            //   handleChange(null);
-            // }
+            }
           }
         }}
         blurInputOnSelect={true}
-        onFocus={(() => {
-console.log("focuudssssss")
-        })}
+        value={selectedOption}
       />
     </div>
   );
 };
-
-// async function wait(ms) {
-//   return new Promise(resolve => {
-//     setTimeout(resolve, ms);
-//   });
-// }
