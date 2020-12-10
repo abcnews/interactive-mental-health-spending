@@ -263,8 +263,8 @@ export default props => {
             }
           }
         }}
-        blurInputOnSelect={true}
-        // value={selectedOption}
+        // blurInputOnSelect={true}
+        value={selectedOption}
       />
     </div>
   );
