@@ -236,13 +236,12 @@ export default props => {
         placeholder={"Search your suburb or postcode"}
         cacheOptions={false}
         loadOptions={component.debouncedPromiseOptions}
-        // onChange={(option, { action }) => {
-        //   console.log(action);
-        //   if (action === "clear") {
-        //     component.filteredOptions = [];
-        //     props.handleSelection(null);
-        //   }
-        // }}
+        onChange={(option, { action }) => {
+          if (action === "select-option") {
+            component.filteredOptions = [];
+            handleChange(option);
+          }
+        }}
         styles={customStyles}
         formatOptionLabel={formatOptionLabel}
         // isClearable={true}
@@ -259,14 +258,13 @@ export default props => {
           if (action === "input-blur") {
             if (component.filteredOptions[0]) {
               const option = component.filteredOptions[0].data;
-              // console.log(option);
               props.handleSelection(option);
               handleChange(component.filteredOptions[0].data);
             }
           }
         }}
         blurInputOnSelect={true}
-        value={selectedOption}
+        // value={selectedOption}
       />
     </div>
   );
