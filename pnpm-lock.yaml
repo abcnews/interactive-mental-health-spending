@@ -2,7 +2,7 @@ dependencies:
   '@abcnews/scrollyteller': 2.2.1_react@16.14.0
   '@babel/polyfill': 7.12.1
   '@material-ui/core': 4.11.2_react-dom@16.14.0+react@16.14.0
-  axios: 0.20.0
+  axios: 0.21.1
   core-js: 3.8.1
   d3-array: 2.9.1
   d3-axis: 1.0.12
@@ -2381,15 +2381,16 @@ packages:
     dependencies:
       follow-redirects: 1.5.10
       is-buffer: 2.0.5
+    deprecated: 'Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410'
     dev: true
     resolution:
       integrity: sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
-  /axios/0.20.0:
+  /axios/0.21.1:
     dependencies:
-      follow-redirects: 1.13.1
+      follow-redirects: 1.13.1_debug@4.3.1
     dev: false
     resolution:
-      integrity: sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+      integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /babel-core/7.0.0-bridge.0_@babel+core@7.12.10:
     dependencies:
       '@babel/core': 7.12.10
@@ -5138,7 +5139,9 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3Z4XhFZ3992uIq0XOqb9AreonueSYphE6oYbpt5+3u06JWklbsPkNv3ZKkP9Bz/r+1MWCaMoSQ28P85+1Yc77w==
-  /follow-redirects/1.13.1:
+  /follow-redirects/1.13.1_debug@4.3.1:
+    dependencies:
+      debug: 4.3.1_supports-color@6.1.0
     engines:
       node: '>=4.0'
     peerDependencies:
@@ -5932,7 +5935,7 @@ packages:
   /http-proxy/1.18.1_debug@4.3.1:
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.13.1
+      follow-redirects: 1.13.1_debug@4.3.1
       requires-port: 1.0.0
     dev: true
     engines:
@@ -12769,7 +12772,7 @@ specifiers:
   '@abcnews/scrollyteller': ^2.2.1
   '@babel/polyfill': ^7.11.5
   '@material-ui/core': ^4.11.0
-  axios: ^0.20.0
+  axios: ^0.21.1
   core-js: ^3.6.5
   d3-array: ^2.5.0
   d3-axis: ^1.0.12
