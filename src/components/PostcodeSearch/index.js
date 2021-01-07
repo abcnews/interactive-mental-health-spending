@@ -158,7 +158,9 @@ export default props => {
     }
 
     // Select element and scroll to it
-    let firstPanel = document.querySelector(".scrollystagemount");
+    let [firstPanel] = Array.from(
+      document.querySelectorAll("#postcodesearch ~ [data-mount]")
+    );
 
     if (!firstPanel) return;
 

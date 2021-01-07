@@ -77,18 +77,32 @@ export default props => {
     },
   ]);
 
-  const onMarker = config => {
-    if (!config.key) return;
-    if (typeof storyKeys[config.key] === "undefined") return;
+  const onMarker = ({ key }) => {
+    if (!key) {
+      return;
+    }
 
-    if (storyKeys[config.key].chartType === "line")
-      setLineKey(storyKeys[config.key]);
-    if (storyKeys[config.key].chartType === "dot")
-      setDotKey(storyKeys[config.key]);
-    if (storyKeys[config.key].chartType === "dot2")
-      setDot2Key(storyKeys[config.key]);
+    const storyKey = storyKeys[key];
 
-    setConfigKey(config.key);
+    if (typeof storyKey === "undefined") {
+      return;
+    }
+
+    switch (storyKey.chartType) {
+      case "line":
+        setLineKey(storyKey);
+        break;
+      case "dot":
+        setDotKey(storyKey);
+        break;
+      case "dot2":
+        setDot2Key(storyKey);
+        break;
+      default:
+        break;
+    }
+
+    setConfigKey(key);
   };
 
   const handleSelection = data => {
@@ -228,7 +242,7 @@ export default props => {
           <PostcodeSearch handleSelection={handleSelection} />
         </div>
 
-        <Portal node={document.getElementById("scrollystagemount")}>
+        <Portal node={props.scrollyData1.mountNode}>
           <Scrollyteller
             panels={props.scrollyData1.panels}
             onMarker={onMarker}
@@ -253,10 +267,10 @@ export default props => {
           </Scrollyteller>
         </Portal>
 
-        <Portal node={document.getElementById("scrollystagemount2")}>
+        <Portal node={props.scrollyData2.mountNode}>
           <Scrollyteller
             panels={props.scrollyData2.panels}
-            onMarker={() => {}}
+            onMarker={onMarker}
             panelComponent={CustomPanel}
             config={{ waypoint: WAYPOINT }}
           >
@@ -281,10 +295,10 @@ export default props => {
           </Scrollyteller>
         </Portal>
 
-        <Portal node={document.getElementById("scrollystagemount3")}>
+        <Portal node={props.scrollyData3.mountNode}>
           <Scrollyteller
             panels={props.scrollyData3.panels}
-            onMarker={() => {}}
+            onMarker={onMarker}
             panelComponent={CustomPanel}
             config={{ waypoint: WAYPOINT }}
           >

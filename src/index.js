@@ -12,9 +12,9 @@ const d3 = { ...d3Selection };
 
 const MOUNT_IDS = [
   "postcodesearch",
-  "scrollystagemount",
-  "scrollystagemount2",
-  "scrollystagemount3",
+  "scrollytellerNAMEone",
+  "scrollytellerNAMEtwo",
+  "scrollytellerNAMEthree",
   "accessingcaregraphic",
   "timegraphic",
   "distancegraphic",
@@ -36,10 +36,9 @@ const init = () => {
     const [mountEl] = selectMounts(id, { markAsUsed: false });
 
     switch (id) {
-      case "scrollystagemount":
-      case "scrollystagemount2":
-      case "scrollystagemount3":
-        addClass(mountEl, "u-full");
+      case "scrollytellerNAMEone":
+      case "scrollytellerNAMEtwo":
+      case "scrollytellerNAMEthree":
         addClass(mountEl, "no-margin-collapse");
         break;
       case "accessingcaregraphic":
