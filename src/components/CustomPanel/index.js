@@ -63,8 +63,8 @@ export default props => {
     // Tell scrollyteller that this is a panel
     props.reference(base.current);
 
-    if (props.config.swap) return;
-    if (props.config.custom) return;
+    if (props.data.swap) return;
+    if (props.data.custom) return;
 
     const isMobile = window.innerWidth < 440;
 
@@ -91,7 +91,7 @@ export default props => {
       }
 
       // Highlight text to match charts
-      if (props.config.key === "psychiatrists") {
+      if (props.data.key === "psychiatrists") {
         const highlighted = node.querySelector("strong");
 
         if (
@@ -102,7 +102,7 @@ export default props => {
         }
       }
 
-      if (props.config.key === "clinicalpsychologists") {
+      if (props.data.key === "clinicalpsychologists") {
         const highlighted = node.querySelector("strong");
 
         if (highlighted && highlighted.innerText.includes("clinical")) {
@@ -110,7 +110,7 @@ export default props => {
         }
       }
 
-      if (props.config.key === "gpmentalhealth") {
+      if (props.data.key === "gpmentalhealth") {
         const highlighted = node.querySelector("strong");
 
         if (
@@ -121,7 +121,7 @@ export default props => {
         }
       }
 
-      if (props.config.key === "otherallied") {
+      if (props.data.key === "otherallied") {
         const highlighted = node.querySelector("strong");
 
         if (
@@ -132,7 +132,7 @@ export default props => {
         }
       }
 
-      if (props.config.key === "gpfocus") {
+      if (props.data.key === "gpfocus") {
         const highlighted = node.querySelectorAll("strong");
 
         if (highlighted) {
@@ -161,7 +161,7 @@ export default props => {
 
   // Handle a change in the user selection
   useEffect(() => {
-    if (!props.config.swap) return;
+    if (!props.data.swap) return;
 
     if (!userSelection) {
       setHidePanel(true);
@@ -194,8 +194,8 @@ export default props => {
       ref={base}
     >
       {/* First interactive panel */}
-      {props.config.swap &&
-        props.config.panel === "yourquintile" &&
+      {props.data.swap &&
+        props.data.panel === "yourquintile" &&
         (suburb ? (
           <p>
             Your suburb of <strong>{suburb}</strong> is{" "}
@@ -217,8 +217,8 @@ export default props => {
       {/* ---------- */}
 
       {/* Second interactive panel (First dots scrolly stage) */}
-      {props.config.swap &&
-        props.config.panel === "alliedself" &&
+      {props.data.swap &&
+        props.data.panel === "alliedself" &&
         alliedService.servicesPer100 !== "" && (
           // Most people in your postcode fall into the area SA3 NAME. In <<SA3 NAME>>,
           // taxpayers funded <<25.6 sessions>> of care per 100 people, which cost <<$2,790>>.
@@ -240,8 +240,8 @@ export default props => {
         )}
 
       {/* Second panel fallback text if NP data */}
-      {props.config.swap &&
-        props.config.panel === "alliedself" &&
+      {props.data.swap &&
+        props.data.panel === "alliedself" &&
         alliedService.servicesPer100 === "" && (
           <p>
             Taxpayers spent the most on people in{" "}
@@ -254,8 +254,8 @@ export default props => {
         )}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap &&
-        props.config.panel === "alliedself2" &&
+      {props.data.swap &&
+        props.data.panel === "alliedself2" &&
         alliedService.servicesPer100 !== "" && (
           <p>
             This allowed{" "}
@@ -274,8 +274,8 @@ export default props => {
 
       {/* This care was used more in the south of WA’s Wheat Belt region than anywhere else, but still, just X% of people received it, compared with X% who saw a clinical psychologist. */}
 
-      {props.config.swap &&
-        props.config.panel === "alliedself2" &&
+      {props.data.swap &&
+        props.data.panel === "alliedself2" &&
         alliedService.servicesPer100 === "" && (
           <p>
             This allowed <strong>8.94 per cent</strong> of people in{" "}
@@ -287,8 +287,8 @@ export default props => {
       {/* ------------ */}
 
       {/* Third interactive panel (Subsequent on dots scrolly stage) */}
-      {props.config.swap &&
-        props.config.panel === "otherallied" &&
+      {props.data.swap &&
+        props.data.panel === "otherallied" &&
         otherAlliedService.percentOfPeople !== "" && (
           <p>
             In your area of <strong>{otherAlliedService.name}</strong>, just{" "}
@@ -299,8 +299,8 @@ export default props => {
           </p>
         )}
 
-      {props.config.swap &&
-        props.config.panel === "otherallied" &&
+      {props.data.swap &&
+        props.data.panel === "otherallied" &&
         otherAlliedService.percentOfPeople === "" && (
           <p>
             For example, we're spending the most per person in WA's{" "}
@@ -309,7 +309,7 @@ export default props => {
           </p>
         )}
 
-      {props.config.custom && props.config.panel === "kayeinitial" && (
+      {props.data.custom && props.data.panel === "kayeinitial" && (
         <>
           <div className={styles.imageHolder}>
             <img src={cathy} />
@@ -325,7 +325,7 @@ export default props => {
         </>
       )}
 
-      {props.config.custom && props.config.panel === "mikeinitial" && (
+      {props.data.custom && props.data.panel === "mikeinitial" && (
         <>
           <div className={styles.imageHolder}>
             <img src={mike} />
@@ -341,7 +341,7 @@ export default props => {
         </>
       )}
 
-      {props.config.custom && props.config.panel === "laurainitial" && (
+      {props.data.custom && props.data.panel === "laurainitial" && (
         <>
           <div className={styles.imageHolder}>
             <img src={laura} />

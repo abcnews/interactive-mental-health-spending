@@ -95,9 +95,9 @@ const init = () => {
   }
 
   root = document.getElementById("postcodesearch");
-  scrollyData1 = loadScrollyteller("one", "u-full", "mark");
-  scrollyData2 = loadScrollyteller("two", "u-full", "mark");
-  scrollyData3 = loadScrollyteller("three", "u-full", "mark");
+  scrollyData1 = loadScrollyteller("one", "u-full");
+  scrollyData2 = loadScrollyteller("two", "u-full");
+  scrollyData3 = loadScrollyteller("three", "u-full");
 
   renderApp();
 };
