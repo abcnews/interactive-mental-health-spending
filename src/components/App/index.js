@@ -176,49 +176,49 @@ export default props => {
     <AppContext.Provider value={{ userSelection, userQuintile, userSa3 }}>
       <>
         {/* Header image up above the H1 */}
-        <Portal node={document.querySelector(".pre-header-hero")}>
+        <Portal node={document.getElementById("pre-header-hero")}>
           <div>
             <img src={heroImage} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".accessingcaregraphic")}>
+        <Portal node={document.getElementById("accessingcaregraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={accessingCareGraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".timegraphic")}>
+        <Portal node={document.getElementById("timegraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={timeGraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".distancegraphic")}>
+        <Portal node={document.getElementById("distancegraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={distanceGraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".taxdollarsgraphic")}>
+        <Portal node={document.getElementById("taxdollarsgraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={taxdollarsgraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".whatsgoingongraphic")}>
+        <Portal node={document.getElementById("whatsgoingongraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={whatsgoingongraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".affordablecaregraphic")}>
+        <Portal node={document.getElementById("affordablecaregraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={affordablecaregraphic} />
           </div>
         </Portal>
 
-        <Portal node={document.querySelector(".itsavedmegraphic")}>
+        <Portal node={document.getElementById("itsavedmegraphic")}>
           <div className={styles.illustrationContainer}>
             <img className={styles.illustration} src={itsavedmegraphic} />
           </div>
@@ -228,7 +228,7 @@ export default props => {
           <PostcodeSearch handleSelection={handleSelection} />
         </div>
 
-        <Portal node={document.querySelector(".scrollystagemount")}>
+        <Portal node={document.getElementById("scrollystagemount")}>
           <Scrollyteller
             panels={props.scrollyData1.panels}
             onMarker={onMarker}
@@ -253,7 +253,7 @@ export default props => {
           </Scrollyteller>
         </Portal>
 
-        <Portal node={document.querySelector(".scrollystagemount2")}>
+        <Portal node={document.getElementById("scrollystagemount2")}>
           <Scrollyteller
             panels={props.scrollyData2.panels}
             onMarker={() => {}}
@@ -281,7 +281,7 @@ export default props => {
           </Scrollyteller>
         </Portal>
 
-        <Portal node={document.querySelector(".scrollystagemount3")}>
+        <Portal node={document.getElementById("scrollystagemount3")}>
           <Scrollyteller
             panels={props.scrollyData3.panels}
             onMarker={() => {}}
@@ -308,7 +308,7 @@ export default props => {
           </Scrollyteller>
         </Portal>
 
-        <Portal node={document.querySelector(".averagechartmount")}>
+        <Portal node={document.getElementById("averagechartmount")}>
           <AverageLineChart
             chartType={"average"}
             yMax={2500}

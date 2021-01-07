@@ -46,7 +46,7 @@
   //   visibility: hidden;
   // }
 
-  .pre-header-hero {
+  #pre-header-hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,51 +200,51 @@
     overflow: hidden;
   }
 
-  .distancegraphic,
-  .accessingcaregraphic {
+  #distancegraphic,
+  #accessingcaregraphic {
     padding-top: 48px;
     margin-bottom: -30px;
   }
 
-  .taxdollarsgraphic {
+  #taxdollarsgraphic {
     padding-top: 55px;
     margin-bottom: -40px;
   }
 
-  .whatsgoingongraphic,
-  .itsavedmegraphic {
+  #whatsgoingongraphic,
+  #itsavedmegraphic {
     padding-top: 40px;
     margin-bottom: -38px;
   }
 
-  .affordablecaregraphic {
+  #affordablecaregraphic {
     margin-bottom: 0px;
   }
 
   @include for-size(tablet-portrait-up) {
-    .distancegraphic,
-    .accessingcaregraphic {
+    #distancegraphic,
+    #accessingcaregraphic {
       padding-top: 48px;
       margin-bottom: -60px;
     }
 
-    .taxdollarsgraphic {
+    #taxdollarsgraphic {
       padding-top: 55px;
       margin-bottom: -80px;
     }
 
-    .whatsgoingongraphic,
-    .itsavedmegraphic {
+    #whatsgoingongraphic,
+    #itsavedmegraphic {
       padding-top: 40px;
       margin-bottom: -68px;
     }
 
-    .affordablecaregraphic {
+    #affordablecaregraphic {
       margin-bottom: 0px;
     }
   }
 
-  .averagechartmount {
+  #averagechartmount {
     padding-top: 20px;
     padding-bottom: 20px;
   }
