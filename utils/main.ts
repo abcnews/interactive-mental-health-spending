@@ -21,5 +21,5 @@ const onParseComplete = (results: any) => {
 // Parse the file
 Papa.parse(data, {
   complete: onParseComplete,
-  header: true
+  header: true,
 });
