@@ -28,12 +28,7 @@ const d3 = {
 };
 
 // Local library imports
-import {
-  calculateMargins,
-  xTicks5,
-  xTicks6,
-  usePrevious,
-} from "./lib";
+import { calculateMargins, xTicks5, xTicks6, usePrevious } from "./lib";
 
 // File scoped constants
 const LINE_ANIMATION_DURATION = 2000;
@@ -251,7 +246,7 @@ const AverageLineChart = props => {
     const isYAxisTransition = prevYMax === props.yMax;
 
     const width = component.svg.node().getBoundingClientRect().width;
-    const height = window.innerHeight * 0.8;
+    const height = Math.min(width * 2, window.innerHeight * 0.8);
 
     component.svg.attr("width", width);
     component.svg.attr("height", height);
